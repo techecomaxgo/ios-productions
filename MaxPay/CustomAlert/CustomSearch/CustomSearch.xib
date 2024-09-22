@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomSearch" customModule="MaxPay" customModuleProvider="target">
+            <connections>
+                <outlet property="tblCity" destination="i6N-gL-iLk" id="eJX-my-JUj"/>
+                <outlet property="vwMain" destination="iN0-l3-epB" id="zOk-7j-vMf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qot-C0-w9Y">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" name="card-number-color"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zkq-kD-Htt">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kka-d5-Hw6">
+                    <rect key="frame" x="0.0" y="252" width="393" height="600"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhS-ud-leQ">
+                            <rect key="frame" x="323" y="13" width="55" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="0a0-S8-gz5"/>
+                                <constraint firstAttribute="height" constant="40" id="Tnj-Jg-oe7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="CLOSE">
+                                <color key="titleColor" name="text-red-color"/>
+                            </state>
+                            <connections>
+                                <action selector="btnCloseAction:" destination="-1" eventType="touchUpInside" id="hfh-Qd-Vyd"/>
+                            </connections>
+                        </button>
+                        <searchBar contentMode="redraw" placeholder="City" translatesAutoresizingMaskIntoConstraints="NO" id="dWH-CV-E12">
+                            <rect key="frame" x="8" y="0.0" width="305" height="66"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="66" id="627-oV-Jxp"/>
+                            </constraints>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="1II-JA-arm"/>
+                            </connections>
+                        </searchBar>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="i6N-gL-iLk">
+                            <rect key="frame" x="8" y="55" width="377" height="545"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="ujs-pK-YZG"/>
+                                <outlet property="delegate" destination="-1" id="7Z0-6F-d8Y"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="600" id="2rN-bF-Qml"/>
+                        <constraint firstAttribute="bottom" secondItem="i6N-gL-iLk" secondAttribute="bottom" id="75H-wY-KDr"/>
+                        <constraint firstItem="xhS-ud-leQ" firstAttribute="leading" secondItem="dWH-CV-E12" secondAttribute="trailing" constant="10" id="98T-Zw-IUe"/>
+                        <constraint firstAttribute="trailing" secondItem="xhS-ud-leQ" secondAttribute="trailing" constant="15" id="E72-Qp-iu7"/>
+                        <constraint firstItem="i6N-gL-iLk" firstAttribute="top" secondItem="xhS-ud-leQ" secondAttribute="bottom" constant="2" id="Ghn-JJ-ezI"/>
+                        <constraint firstItem="xhS-ud-leQ" firstAttribute="centerY" secondItem="dWH-CV-E12" secondAttribute="centerY" id="JtT-n2-oh6"/>
+                        <constraint firstItem="dWH-CV-E12" firstAttribute="top" secondItem="Kka-d5-Hw6" secondAttribute="top" id="PRM-sy-rlG"/>
+                        <constraint firstItem="dWH-CV-E12" firstAttribute="leading" secondItem="Kka-d5-Hw6" secondAttribute="leading" constant="8" id="m4i-qw-jqu"/>
+                        <constraint firstAttribute="trailing" secondItem="i6N-gL-iLk" secondAttribute="trailing" constant="8" id="nMf-xe-sYe"/>
+                        <constraint firstItem="i6N-gL-iLk" firstAttribute="leading" secondItem="Kka-d5-Hw6" secondAttribute="leading" constant="8" id="ywF-Wd-58y"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Kka-d5-Hw6" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="74I-Zx-r5U"/>
+                <constraint firstAttribute="bottom" secondItem="Zkq-kD-Htt" secondAttribute="bottom" id="Hcw-7R-zII"/>
+                <constraint firstAttribute="bottom" secondItem="Qot-C0-w9Y" secondAttribute="bottom" id="JWg-h5-CN8"/>
+                <constraint firstAttribute="bottom" secondItem="Kka-d5-Hw6" secondAttribute="bottom" id="PZI-2n-Q4H"/>
+                <constraint firstItem="Qot-C0-w9Y" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="T4Y-g8-Vs7"/>
+                <constraint firstItem="Qot-C0-w9Y" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UDa-Dq-iIq"/>
+                <constraint firstItem="Zkq-kD-Htt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cFv-KH-Rbd"/>
+                <constraint firstItem="Qot-C0-w9Y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hxw-0m-SDr"/>
+                <constraint firstItem="Zkq-kD-Htt" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="sYd-AS-RnP"/>
+                <constraint firstItem="Zkq-kD-Htt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="z1b-ps-IEM"/>
+                <constraint firstItem="Kka-d5-Hw6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zSv-16-ELL"/>
+            </constraints>
+            <point key="canvasLocation" x="133.58778625954199" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="card-number-color">
+            <color red="0.47843137254901963" green="0.47843137254901963" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="text-red-color">
+            <color red="0.87058823529411766" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,310 @@
+//
+//  BhimUPIHistoryVC.swift
+//  MaxPay
+//
+//  Created by india on 14/11/23.
+//
+
+import UIKit
+import DatePicker
+import OlivePayLibrary
+import SwiftLoader
+import MessageUI
+
+class BhimUPIHistoryVC: BaseVC {
+    
+    private var checksumViewModel = SIMSelectionViewModel()
+    var accountDetails: AccountDetailsOnIIN?
+    @IBOutlet weak var btnEndDate: UIButton!
+    @IBOutlet weak var btnStartDate: UIButton!
+    @IBOutlet weak var tblTrasactionHistory: UITableView!
+    @IBOutlet weak var vwEndDate: UIView!
+    @IBOutlet weak var vwStartDate: UIView!
+    @IBOutlet weak var lblNoDataAvailable: UILabel!
+    
+    var tranHistoryArr: [TranHistoryModel] = []
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        vwStartDate.layer.applyCornerRadiusShadow()
+        vwEndDate.layer.applyCornerRadiusShadow()
+        
+        
+        self.btnStartDate.setTitle(getCurrentDateAddingOneMonth(), for: .normal)
+        self.btnEndDate.setTitle(getCurrentDateTime(), for: .normal)
+        
+        
+        getTransactionHistory()
+    }
+    
+    func getCurrentDateTime() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/yyyy"
+        let dateString = formatter.string(from: Date())
+        return dateString
+    }
+    
+    func getCurrentDateAddingOneMonth() -> String {
+        
+        let currentDate = Date()
+        // Create a calendar instance
+        var calendar = Calendar.current
+
+        // Add one month to the current date
+        if let nextMonth = calendar.date(byAdding: .month, value: -1, to: currentDate) {
+            // Define date components for formatting
+            let components = calendar.dateComponents([.day, .month, .year], from: nextMonth)
+
+            // Extract day, month, and year components
+            if let day = components.day, let month = components.month, let year = components.year {
+                // Format the date as "dd/mm/yyyy"
+                let formattedDate = String(format: "%02d/%02d/%04d", day, month, year)
+                return formattedDate
+            }
+        }
+
+        // Return an empty string if unable to get the formatted date
+        return ""
+    }
+    
+    @IBAction func btnBackAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func btnStartDateAction(_ sender: UIButton) {
+        let minDate = DatePickerHelper.shared.dateFrom(day: 01, month: 08, year: 2021)!
+        let maxDate = DatePickerHelper.shared.dateFrom(day: 01, month: 08, year: 2024)!
+        let today = Date()
+        // Create picker object
+        let datePicker = DatePicker()
+        // Setup
+        datePicker.setup(beginWith: today, min: minDate, max: maxDate) { (selected, date) in
+            if selected, let selectedDate = date {
+               // print(selectedDate.string())
+                let formatter = DateFormatter()
+                formatter.dateFormat = "dd/MM/yyyy"
+                self.btnStartDate.setTitle("\(formatter.string(from: selectedDate))", for: .normal)
+            } else {
+                print("Cancelled")
+            }
+        }
+        // Display
+        datePicker.show(in: self, on: sender)
+    }
+    
+    @IBAction func btnEndDateAction(_ sender: UIButton) {
+        let minDate = DatePickerHelper.shared.dateFrom(day: 01, month: 08, year: 2021)!
+        let maxDate = DatePickerHelper.shared.dateFrom(day: 01, month: 08, year: 2024)!
+        let today = Date()
+        // Create picker object
+        let datePicker = DatePicker()
+        // Setup
+        datePicker.setup(beginWith: today, min: minDate, max: maxDate) { (selected, date) in
+            if selected, let selectedDate = date {
+               // print(selectedDate.string())
+                let formatter = DateFormatter()
+                formatter.dateFormat = "dd/MM/yyyy"
+                self.btnEndDate.setTitle("\(formatter.string(from: selectedDate))", for: .normal)
+            } else {
+                print("Cancelled")
+            }
+        }
+        // Display
+        datePicker.show(in: self, on: sender)
+    }
+    
+    @IBAction func btnApplyAction(_ sender: Any) {
+        SwiftLoader.show(animated: true)
+        getTransactionHistory()
+    }
+    
+    func getTransactionHistory() {
+        
+        
+        let fromDateStr = self.btnStartDate.titleLabel?.text
+        
+        let toDateStr = self.btnEndDate.titleLabel?.text
+        
+        if let fromDate = fromDateStr, let toDate = toDateStr {
+            
+            DispatchQueue.main.async {
+                SwiftLoader.show(animated: true)
+            }
+            
+            DispatchQueue.global(qos: .background).async {
+                
+                OliveUpiManager.tranHistory(fromDate: fromDate, toDate: toDate) { data, error in
+                    
+                    if let err = error {
+                        if err.code == 102 { // VPA not allowed for this customer
+                            DispatchQueue.main.async {
+                                self.showErrorAlert(err.localizedDescription)
+                            }
+                        } else if err.code == 401 || err.code == 107 {
+                            
+                            self.configuration()
+                            return
+                            
+                        }
+                        DispatchQueue.main.async {
+                            SwiftLoader.hide()
+                        }
+                        
+                    } else {
+                        
+                        
+                        self.tranHistoryArr.removeAll()
+                        
+                        if let dt = data {
+                            
+                            if let data = SelectBankVC.convertToData(dt) {
+                                do {
+                                    let beneficiaryList = try JSONDecoder().decode([TranHistoryModel].self, from: data)
+                                    for beneficiary in beneficiaryList {
+                                        self.tranHistoryArr.append(beneficiary)
+                                    }
+                                } catch {
+                                    print(error.localizedDescription)
+                                }
+                                
+                                DispatchQueue.main.async {
+                                    self.tblTrasactionHistory.reloadData()
+                                    self.lblNoDataAvailable.isHidden = self.tranHistoryArr.count != 0
+                                    SwiftLoader.hide()
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+extension BhimUPIHistoryVC : UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tranHistoryArr.count
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 230
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BhimUPITrasactionHistoryCell", for: indexPath) as! BhimUPITrasactionHistoryCell
+        
+        cell.setTranHistoryData(data: tranHistoryArr[indexPath.row], accountDetails: accountDetails!)
+        
+        cell.selectionStyle = .none
+        return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "BhimTrasactionDetailsVC") as! BhimTrasactionDetailsVC
+        vc.tranHistoryObj = tranHistoryArr[indexPath.row]
+        vc.accountDetails = self.accountDetails
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+}
+
+extension BhimUPIHistoryVC: MFMessageComposeViewControllerDelegate {
+    
+    func configuration() {
+        initViewModel()
+        observeEvent()
+    }
+    
+    //MARK Network checking
+    func initViewModel() {
+        
+        let isConnected = ReachabilityClass.isConnectedToNetwork()
+        
+        if isConnected == true {
+            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.token ?? "")
+        }else{
+            DispatchQueue.main.async {
+                SwiftLoader.hide()
+                self.showErrorAlert("Please check your internet connection.")
+            }
+            
+        }
+    }
+    
+    //MARK: Observing the data
+    func observeEvent() {
+        
+        checksumViewModel.eventHandler = { [weak self] event in
+            guard self != nil else { return }
+            
+            switch event {
+            case .loading:
+                
+                print("loading....")
+                
+            case .stopLoading:
+                
+                print("Stop loading...")
+
+            case .dataLoaded:
+                print("Data loaded...")
+
+                if self?.checksumViewModel.checksumModel?.result == "Success" {
+                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.merchantauthtoken ?? ""
+                    self?.performMerchantHandshake()
+                }else{
+                    DispatchQueue.main.async {
+                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.result ?? "")
+                        SwiftLoader.hide()
+                    }
+                }
+                
+            case .error(let error):
+                print(error!)
+                DispatchQueue.main.async {
+                    SwiftLoader.hide()
+                }
+            }
+        }
+    }
+    
+    func performMerchantHandshake(){
+        
+        let sdkHandShake = SDKHandshake(emailId: "", merchId: MerchantId, merchChanId: MerchantId, submerchantid: SubMerchantId, mcccode: MCC, unqCustId: "91\(Common.shared.phoneNo ?? "")", mobileNo: "91\(Common.shared.phoneNo ?? "")", deviceid: Common.shared.getDeviceID(), appid: appId, custname: "MAX", merchantauthtoken: Common.shared.merchantauthtoken ?? "", unqTxnId:SDKHandshake.shared.generateRandomDigits(12))
+        
+        let jsonString = sdkHandShake.jsonString(sdkHandShake)
+        
+        OliveUpiManager.initiateSDK(sdkHandshake: jsonString,view: self , delegate: self) { (data, err) in
+            print("The data is:\(String(describing: data))")
+            self.getTransactionHistory()
+        }
+    }
+    
+    public func messageComposeViewController(_ controller: MFMessageComposeViewController,didFinishWith didFinishWithresult: MessageComposeResult) {
+        controller.dismiss(animated: true, completion: {})
+        switch didFinishWithresult {
+        case .cancelled:
+            print("Cancelled")
+        case .sent:
+            print("Message Sent")
+            OliveUpiManager.sendMobileBindReqst(callback: { (data, err) in
+                if let er = err{
+                    DispatchQueue.main.async {
+                        self.showToast(message: "SMS Sent failed", font: .systemFont(ofSize: 12))
+                        SwiftLoader.hide()
+                    }
+                } else {
+                    self.getTransactionHistory()
+                    DispatchQueue.main.async {
+                        self.showToast(message: "SMS Delivered", font: .systemFont(ofSize: 12))
+                    }
+                }
+            })
+            break
+        default:
+            break
+        }
+    }
+}
+

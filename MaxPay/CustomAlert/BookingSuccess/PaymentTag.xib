@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentTag" customModule="MaxPay" customModuleProvider="target">
+            <connections>
+                <outlet property="constraintTableHeight" destination="2rN-bF-Qml" id="itu-l9-J6a"/>
+                <outlet property="viewTags" destination="Kka-d5-Hw6" id="7ev-cL-lKZ"/>
+                <outlet property="vwMain" destination="iN0-l3-epB" id="wSa-uM-s3U"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qot-C0-w9Y">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" name="card-number-color"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zkq-kD-Htt">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kka-d5-Hw6" customClass="CardView" customModule="MaxPay" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="482" width="393" height="370"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ida-YN-OIX" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
+                            <rect key="frame" x="16" y="280" width="361" height="50"/>
+                            <color key="backgroundColor" name="primary-green"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="m6m-ff-R2p"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnDoneAction:" destination="-1" eventType="touchUpInside" id="RsC-AU-XeQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaL-NR-z8R" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
+                            <rect key="frame" x="16" y="76" width="45" height="27"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Price - Low to High">
+                                <color key="titleColor" name="card-number-color"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="OTT">
+                                <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="baseForegroundColor" name="card-number-color"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="card-number-color"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnTags:" destination="-1" eventType="touchUpInside" id="fwf-Zg-rID"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXz-7Z-JUT" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
+                            <rect key="frame" x="77" y="76" width="62" height="27"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Best Rated first">
+                                <color key="titleColor" name="card-number-color"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="Grocery">
+                                <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="baseForegroundColor" name="card-number-color"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="card-number-color"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnTags:" destination="-1" eventType="touchUpInside" id="JmH-eG-Zka"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWe-eT-iUj" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
+                            <rect key="frame" x="241.33333333333337" y="76" width="43" height="27"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Late Departure">
+                                <color key="titleColor" name="card-number-color"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="EMI">
+                                <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="baseForegroundColor" name="card-number-color"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="card-number-color"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnTags:" destination="-1" eventType="touchUpInside" id="pBh-Fw-6Nk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQg-G3-c6n" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
+                            <rect key="frame" x="155" y="76" width="70.333333333333314" height="27"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Early Departure">
+                                <color key="titleColor" name="card-number-color"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="Shopping">
+                                <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="baseForegroundColor" name="card-number-color"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="card-number-color"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnTags:" destination="-1" eventType="touchUpInside" id="4aa-2i-qV6"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Tag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZF-6g-wat">
+                            <rect key="frame" x="20" y="20" width="93" height="19"/>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                            <color key="textColor" name="reload-grey-color"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vzr-na-7Ql">
+                            <rect key="frame" x="0.0" y="55" width="393" height="1"/>
+                            <color key="backgroundColor" name="grey-line-color"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="ABo-vh-nIl"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfe-Lq-ld8" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
+                            <rect key="frame" x="16" y="123" width="53" height="27"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Late Departure">
+                                <color key="titleColor" name="card-number-color"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="Travel">
+                                <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="baseForegroundColor" name="card-number-color"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="card-number-color"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnTags:" destination="-1" eventType="touchUpInside" id="pEb-EA-9Jz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KtL-rq-Qq2" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
+                            <rect key="frame" x="85" y="123" width="54" height="27"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Price - Low to High">
+                                <color key="titleColor" name="card-number-color"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="Movie">
+                                <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="baseForegroundColor" name="card-number-color"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="card-number-color"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnTags:" destination="-1" eventType="touchUpInside" id="GiY-PM-VmG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZH-Wk-UjO" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
+                            <rect key="frame" x="155" y="123" width="56" height="27"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Best Rated first">
+                                <color key="titleColor" name="card-number-color"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="Health">
+                                <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="baseForegroundColor" name="card-number-color"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="card-number-color"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnTags:" destination="-1" eventType="touchUpInside" id="Snc-Nc-QuK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72p-j2-5Xz" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
+                            <rect key="frame" x="227" y="123" width="44.666666666666686" height="27"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Early Departure">
+                                <color key="titleColor" name="card-number-color"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="Bills">
+                                <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="baseForegroundColor" name="card-number-color"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="card-number-color"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnTags:" destination="-1" eventType="touchUpInside" id="ITS-1F-KqX"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpG-fS-QMe" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
+                            <rect key="frame" x="103" y="170" width="38" height="27"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Late Departure">
+                                <color key="titleColor" name="card-number-color"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="TV">
+                                <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="baseForegroundColor" name="card-number-color"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="card-number-color"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnTags:" destination="-1" eventType="touchUpInside" id="vwu-zC-yup"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Men-AW-61C" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
+                            <rect key="frame" x="157" y="170" width="49" height="27"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Price - Low to High">
+                                <color key="titleColor" name="card-number-color"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="Food">
+                                <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="baseForegroundColor" name="card-number-color"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="card-number-color"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnTags:" destination="-1" eventType="touchUpInside" id="tP2-qI-bE8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fin-jk-emZ" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
+                            <rect key="frame" x="222" y="170" width="50" height="27"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Best Rated first">
+                                <color key="titleColor" name="card-number-color"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="Party">
+                                <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="baseForegroundColor" name="card-number-color"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="card-number-color"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnTags:" destination="-1" eventType="touchUpInside" id="7q1-7k-swD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFk-BG-ygt" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
+                            <rect key="frame" x="16.000000000000004" y="217" width="43.333333333333343" height="27"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Early Departure">
+                                <color key="titleColor" name="card-number-color"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="TAX">
+                                <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="baseForegroundColor" name="card-number-color"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="card-number-color"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnTags:" destination="-1" eventType="touchUpInside" id="uGS-4l-luS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dD7-qj-PBs" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
+                            <rect key="frame" x="75.333333333333329" y="217" width="45" height="27"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Late Departure">
+                                <color key="titleColor" name="card-number-color"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="Fuel">
+                                <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="baseForegroundColor" name="card-number-color"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="card-number-color"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnTags:" destination="-1" eventType="touchUpInside" id="877-xP-fDh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euh-2W-j42" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
+                            <rect key="frame" x="136.33333333333334" y="217" width="60" height="27"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Late Departure">
+                                <color key="titleColor" name="card-number-color"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="Fitness">
+                                <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="baseForegroundColor" name="card-number-color"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="card-number-color"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnTags:" destination="-1" eventType="touchUpInside" id="B1U-mg-XZd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9na-kI-VCA" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
+                            <rect key="frame" x="212.33333333333334" y="217" width="57.000000000000028" height="27"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Price - Low to High">
+                                <color key="titleColor" name="card-number-color"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="Others">
+                                <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="baseForegroundColor" name="card-number-color"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="card-number-color"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnTags:" destination="-1" eventType="touchUpInside" id="tMP-IO-b71"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcC-Lc-8QN" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
+                            <rect key="frame" x="16" y="170" width="71" height="27"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Late Departure">
+                                <color key="titleColor" name="card-number-color"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="Recharge">
+                                <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="baseForegroundColor" name="card-number-color"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="card-number-color"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnTags:" destination="-1" eventType="touchUpInside" id="inq-sT-SQT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="LZF-6g-wat" firstAttribute="top" secondItem="Kka-d5-Hw6" secondAttribute="top" constant="20" id="0cN-C0-ahm"/>
+                        <constraint firstAttribute="height" constant="370" id="2rN-bF-Qml"/>
+                        <constraint firstItem="Men-AW-61C" firstAttribute="top" secondItem="ZpG-fS-QMe" secondAttribute="top" id="3p3-v7-tWw"/>
+                        <constraint firstItem="PFk-BG-ygt" firstAttribute="leading" secondItem="KcC-Lc-8QN" secondAttribute="leading" id="5mR-Ew-UcQ"/>
+                        <constraint firstItem="PFk-BG-ygt" firstAttribute="top" secondItem="KcC-Lc-8QN" secondAttribute="bottom" constant="20" id="6yR-YD-jTh"/>
+                        <constraint firstItem="72p-j2-5Xz" firstAttribute="top" secondItem="KtL-rq-Qq2" secondAttribute="top" id="A6O-bc-G7A"/>
+                        <constraint firstItem="ZpG-fS-QMe" firstAttribute="top" secondItem="KcC-Lc-8QN" secondAttribute="top" id="Ekt-eu-gmO"/>
+                        <constraint firstAttribute="bottom" secondItem="ida-YN-OIX" secondAttribute="bottom" constant="40" id="G9y-eN-Qil"/>
+                        <constraint firstItem="VaL-NR-z8R" firstAttribute="top" secondItem="Vzr-na-7Ql" secondAttribute="bottom" constant="20" id="K6j-3d-GNk"/>
+                        <constraint firstItem="DXz-7Z-JUT" firstAttribute="top" secondItem="VaL-NR-z8R" secondAttribute="top" id="KT9-1A-weC"/>
+                        <constraint firstItem="KtL-rq-Qq2" firstAttribute="leading" secondItem="jfe-Lq-ld8" secondAttribute="trailing" constant="16" id="QRe-eP-yPV"/>
+                        <constraint firstItem="fQg-G3-c6n" firstAttribute="top" secondItem="VaL-NR-z8R" secondAttribute="top" id="QaS-hA-sQI"/>
+                        <constraint firstAttribute="trailing" secondItem="Vzr-na-7Ql" secondAttribute="trailing" id="SVA-aT-9FL"/>
+                        <constraint firstItem="Vzr-na-7Ql" firstAttribute="top" secondItem="LZF-6g-wat" secondAttribute="bottom" constant="16" id="V8V-oE-TeY"/>
+                        <constraint firstItem="dD7-qj-PBs" firstAttribute="top" secondItem="PFk-BG-ygt" secondAttribute="top" id="Vob-5n-Xi3"/>
+                        <constraint firstItem="KcC-Lc-8QN" firstAttribute="leading" secondItem="jfe-Lq-ld8" secondAttribute="leading" id="WIp-yn-d9D"/>
+                        <constraint firstItem="Men-AW-61C" firstAttribute="leading" secondItem="ZpG-fS-QMe" secondAttribute="trailing" constant="16" id="WXF-M4-TgE"/>
+                        <constraint firstItem="euh-2W-j42" firstAttribute="leading" secondItem="dD7-qj-PBs" secondAttribute="trailing" constant="16" id="YLa-Ob-WYW"/>
+                        <constraint firstItem="KtL-rq-Qq2" firstAttribute="top" secondItem="jfe-Lq-ld8" secondAttribute="top" id="YMm-FD-nj9"/>
+                        <constraint firstItem="Vzr-na-7Ql" firstAttribute="leading" secondItem="Kka-d5-Hw6" secondAttribute="leading" id="ZkM-kt-1XR"/>
+                        <constraint firstItem="9na-kI-VCA" firstAttribute="top" secondItem="euh-2W-j42" secondAttribute="top" id="a5M-4O-g4g"/>
+                        <constraint firstItem="YZH-Wk-UjO" firstAttribute="top" secondItem="KtL-rq-Qq2" secondAttribute="top" id="biT-h2-YUh"/>
+                        <constraint firstItem="9na-kI-VCA" firstAttribute="leading" secondItem="euh-2W-j42" secondAttribute="trailing" constant="16" id="btQ-6I-zz2"/>
+                        <constraint firstItem="euh-2W-j42" firstAttribute="top" secondItem="dD7-qj-PBs" secondAttribute="top" id="cUp-jA-OqN"/>
+                        <constraint firstItem="KcC-Lc-8QN" firstAttribute="top" secondItem="jfe-Lq-ld8" secondAttribute="bottom" constant="20" id="cts-lp-TQB"/>
+                        <constraint firstItem="YZH-Wk-UjO" firstAttribute="leading" secondItem="KtL-rq-Qq2" secondAttribute="trailing" constant="16" id="hD4-9F-SCR"/>
+                        <constraint firstItem="OWe-eT-iUj" firstAttribute="leading" secondItem="fQg-G3-c6n" secondAttribute="trailing" constant="16" id="hDD-Up-R0w"/>
+                        <constraint firstItem="fin-jk-emZ" firstAttribute="leading" secondItem="Men-AW-61C" secondAttribute="trailing" constant="16" id="ipJ-7p-M08"/>
+                        <constraint firstItem="ida-YN-OIX" firstAttribute="leading" secondItem="Kka-d5-Hw6" secondAttribute="leading" constant="16" id="lei-SL-n6V"/>
+                        <constraint firstItem="fin-jk-emZ" firstAttribute="top" secondItem="Men-AW-61C" secondAttribute="top" id="njU-Re-bfh"/>
+                        <constraint firstItem="dD7-qj-PBs" firstAttribute="leading" secondItem="PFk-BG-ygt" secondAttribute="trailing" constant="16" id="oZ8-6b-akt"/>
+                        <constraint firstItem="DXz-7Z-JUT" firstAttribute="leading" secondItem="VaL-NR-z8R" secondAttribute="trailing" constant="16" id="on4-9u-VXb"/>
+                        <constraint firstItem="72p-j2-5Xz" firstAttribute="leading" secondItem="YZH-Wk-UjO" secondAttribute="trailing" constant="16" id="pJp-CN-FFR"/>
+                        <constraint firstItem="jfe-Lq-ld8" firstAttribute="leading" secondItem="VaL-NR-z8R" secondAttribute="leading" id="prl-GH-8jT"/>
+                        <constraint firstItem="ZpG-fS-QMe" firstAttribute="leading" secondItem="KcC-Lc-8QN" secondAttribute="trailing" constant="16" id="rBQ-ZM-IJJ"/>
+                        <constraint firstItem="LZF-6g-wat" firstAttribute="leading" secondItem="Kka-d5-Hw6" secondAttribute="leading" constant="20" id="sUb-hg-1gX"/>
+                        <constraint firstAttribute="trailing" secondItem="ida-YN-OIX" secondAttribute="trailing" constant="16" id="scj-Sc-Nj1"/>
+                        <constraint firstItem="OWe-eT-iUj" firstAttribute="top" secondItem="VaL-NR-z8R" secondAttribute="top" id="syh-r6-AKq"/>
+                        <constraint firstItem="VaL-NR-z8R" firstAttribute="leading" secondItem="Kka-d5-Hw6" secondAttribute="leading" constant="16" id="tbe-YK-6aP"/>
+                        <constraint firstItem="jfe-Lq-ld8" firstAttribute="top" secondItem="VaL-NR-z8R" secondAttribute="bottom" constant="20" id="vA5-Sx-AEE"/>
+                        <constraint firstItem="fQg-G3-c6n" firstAttribute="leading" secondItem="DXz-7Z-JUT" secondAttribute="trailing" constant="16" id="xlI-fA-rHO"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Kka-d5-Hw6" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="74I-Zx-r5U"/>
+                <constraint firstAttribute="bottom" secondItem="Zkq-kD-Htt" secondAttribute="bottom" id="Hcw-7R-zII"/>
+                <constraint firstAttribute="bottom" secondItem="Qot-C0-w9Y" secondAttribute="bottom" id="JWg-h5-CN8"/>
+                <constraint firstAttribute="bottom" secondItem="Kka-d5-Hw6" secondAttribute="bottom" id="PZI-2n-Q4H"/>
+                <constraint firstItem="Qot-C0-w9Y" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="T4Y-g8-Vs7"/>
+                <constraint firstItem="Qot-C0-w9Y" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UDa-Dq-iIq"/>
+                <constraint firstItem="Zkq-kD-Htt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cFv-KH-Rbd"/>
+                <constraint firstItem="Qot-C0-w9Y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hxw-0m-SDr"/>
+                <constraint firstItem="Zkq-kD-Htt" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="sYd-AS-RnP"/>
+                <constraint firstItem="Zkq-kD-Htt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="z1b-ps-IEM"/>
+                <constraint firstItem="Kka-d5-Hw6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zSv-16-ELL"/>
+            </constraints>
+            <point key="canvasLocation" x="133.58778625954199" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="72p-j2-5Xz">
+            <size key="intrinsicContentSize" width="44.666666666666664" height="27"/>
+        </designable>
+        <designable name="9na-kI-VCA">
+            <size key="intrinsicContentSize" width="56.666666666666664" height="27"/>
+        </designable>
+        <designable name="DXz-7Z-JUT">
+            <size key="intrinsicContentSize" width="62" height="27"/>
+        </designable>
+        <designable name="KcC-Lc-8QN">
+            <size key="intrinsicContentSize" width="70.333333333333329" height="27"/>
+        </designable>
+        <designable name="KtL-rq-Qq2">
+            <size key="intrinsicContentSize" width="53.666666666666664" height="27"/>
+        </designable>
+        <designable name="Men-AW-61C">
+            <size key="intrinsicContentSize" width="49" height="27"/>
+        </designable>
+        <designable name="OWe-eT-iUj">
+            <size key="intrinsicContentSize" width="43" height="27"/>
+        </designable>
+        <designable name="PFk-BG-ygt">
+            <size key="intrinsicContentSize" width="44.333333333333336" height="27"/>
+        </designable>
+        <designable name="VaL-NR-z8R">
+            <size key="intrinsicContentSize" width="44.666666666666664" height="27"/>
+        </designable>
+        <designable name="YZH-Wk-UjO">
+            <size key="intrinsicContentSize" width="56" height="27"/>
+        </designable>
+        <designable name="ZpG-fS-QMe">
+            <size key="intrinsicContentSize" width="37.666666666666664" height="27"/>
+        </designable>
+        <designable name="dD7-qj-PBs">
+            <size key="intrinsicContentSize" width="44.666666666666664" height="27"/>
+        </designable>
+        <designable name="euh-2W-j42">
+            <size key="intrinsicContentSize" width="59.666666666666664" height="27"/>
+        </designable>
+        <designable name="fQg-G3-c6n">
+            <size key="intrinsicContentSize" width="70.333333333333329" height="27"/>
+        </designable>
+        <designable name="fin-jk-emZ">
+            <size key="intrinsicContentSize" width="49.666666666666664" height="27"/>
+        </designable>
+        <designable name="ida-YN-OIX">
+            <size key="intrinsicContentSize" width="33" height="29"/>
+        </designable>
+        <designable name="jfe-Lq-ld8">
+            <size key="intrinsicContentSize" width="53.333333333333336" height="27"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="card-number-color">
+            <color red="0.47843137254901963" green="0.47843137254901963" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grey-line-color">
+            <color red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary-green">
+            <color red="0.62352941176470589" green="0.7686274509803922" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="reload-grey-color">
+            <color red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

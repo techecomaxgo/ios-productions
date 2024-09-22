@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="W27-yp-amF" customClass="ListPickerView" customModule="PharmaStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="227"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fJh-cq-rtP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <items>
+                        <barButtonItem title="Cancel" id="F0d-bn-fST">
+                            <color key="tintColor" name="AccentColor"/>
+                            <connections>
+                                <action selector="barBtnActionWithSender:" destination="W27-yp-amF" id="rlO-Lk-Mr0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="LAZ-a6-fpb"/>
+                        <barButtonItem tag="1" title="Done" id="hDH-4r-ZbR">
+                            <color key="tintColor" name="AccentColor"/>
+                            <connections>
+                                <action selector="barBtnActionWithSender:" destination="W27-yp-amF" id="vpo-ns-rgK"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wY7-WW-hGL">
+                    <rect key="frame" x="0.0" y="44" width="375" height="183"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </pickerView>
+            </subviews>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnCancel" destination="F0d-bn-fST" id="5bK-nd-Kge"/>
+                <outlet property="btnDone" destination="hDH-4r-ZbR" id="Kgu-EG-auZ"/>
+                <outlet property="listPicker" destination="wY7-WW-hGL" id="Peb-7k-Qoh"/>
+            </connections>
+            <point key="canvasLocation" x="-235.5" y="10.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="15b-gG-TIe" customClass="MultipleSelecetionListPicker" customModule="PharmaStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="227"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="877-nv-aCp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <items>
+                        <barButtonItem title="Cancel" id="4MZ-cI-sFK">
+                            <connections>
+                                <action selector="barBtnActionWithSender:" destination="15b-gG-TIe" id="MnR-sR-J9z"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="dhc-vU-7or"/>
+                        <barButtonItem tag="1" title="Done" id="yUL-ws-p3o">
+                            <connections>
+                                <action selector="barBtnActionWithSender:" destination="15b-gG-TIe" id="T06-dj-Mzy"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pfs-gN-FCt">
+                    <rect key="frame" x="0.0" y="44" width="375" height="183"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tblMultipleOption" destination="pfs-gN-FCt" id="dSw-cg-8QH"/>
+            </connections>
+            <point key="canvasLocation" x="-236" y="-260"/>
+        </view>
+        <view contentMode="scaleToFill" id="jDi-Qp-FY2" customClass="DatePickerView" customModule="PharmaStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="227"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cBf-6x-fvY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.42352941179999998" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <items>
+                        <barButtonItem title="Cancel" id="cCo-SY-D7i">
+                            <color key="tintColor" red="0.49803921569999998" green="0.2901960784" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="barBtnActionWithSender:" destination="jDi-Qp-FY2" id="Emm-4s-MGf"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="mcW-tQ-Ikr"/>
+                        <barButtonItem tag="1" title="Done" id="8AJ-Sg-129">
+                            <color key="tintColor" red="0.49803921569999998" green="0.2901960784" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="barBtnActionWithSender:" destination="jDi-Qp-FY2" id="t56-g2-G52"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="xwx-Mn-HRI">
+                    <rect key="frame" x="0.0" y="44" width="375" height="183"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnCancel" destination="cCo-SY-D7i" id="ceP-yL-0Nm"/>
+                <outlet property="btnDone" destination="8AJ-Sg-129" id="WB1-oj-MkN"/>
+                <outlet property="dtPicker" destination="xwx-Mn-HRI" id="ShB-WV-l0U"/>
+            </connections>
+            <point key="canvasLocation" x="-236" y="304"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.49799999594688416" blue="0.85100001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

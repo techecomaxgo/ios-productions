@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FloatingMenuView" customModule="MaxPay" customModuleProvider="target">
+            <connections>
+                <outlet property="btnHome" destination="nxv-sR-R27" id="zfG-Y7-Vyl"/>
+                <outlet property="btnMyPost" destination="ar6-aF-KH8" id="q3x-N9-TlN"/>
+                <outlet property="ivHomeBorder" destination="ddU-9v-LYc" id="KwJ-Ia-Y2I"/>
+                <outlet property="ivMyPostBorder" destination="CkU-kL-08K" id="rnR-ST-vEC"/>
+                <outlet property="vwFloatingMenu" destination="iN0-l3-epB" id="DGu-m5-gQz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FloatingControlBg" translatesAutoresizingMaskIntoConstraints="NO" id="mrE-hl-q5l">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="110"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nfw-gB-9Pj">
+                    <rect key="frame" x="80.666666666666686" y="10" width="232" height="90"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FloatingMenuBG" translatesAutoresizingMaskIntoConstraints="NO" id="XM5-zp-JMe">
+                            <rect key="frame" x="-8.6666666666666714" y="15" width="249.33333333333337" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="C5W-oa-cmd"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPx-oi-Lxc">
+                            <rect key="frame" x="83.999999999999986" y="0.0" width="64.000000000000014" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="4Qw-OL-RGF"/>
+                                <constraint firstAttribute="width" constant="64" id="zxc-Ru-uCj"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="1"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain">
+                                <backgroundConfiguration key="background" cornerRadius="32" image="openBg" imageContentMode="scaleToFill"/>
+                                <attributedString key="attributedTitle">
+                                    <fragment content="         ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="smallSystem"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="baseForegroundColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="btnPostClicked:" destination="-1" eventType="touchUpInside" id="J3S-wS-6ix"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="open" translatesAutoresizingMaskIntoConstraints="NO" id="2wA-jx-rH9">
+                            <rect key="frame" x="105.99999999999999" y="18" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="7iI-I3-1d2"/>
+                                <constraint firstAttribute="width" constant="20" id="w1a-hn-FKD"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krb-ox-Ith">
+                            <rect key="frame" x="104.33333333333333" y="42" width="23" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="12" id="wrn-Fx-C3s"/>
+                            </constraints>
+                            <attributedString key="attributedText">
+                                <fragment content="Post">
+                                    <attributes>
+                                        <font key="NSFont" metaFont="smallSystem"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxv-sR-R27">
+                            <rect key="frame" x="10" y="41.666666666666664" width="70" height="28.333333333333336"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="M33-33-pTZ"/>
+                            </constraints>
+                            <color key="tintColor" red="0.81176470590000005" green="0.8980392157" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="Home">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="cellTitle"/>
+                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="btnHomeClicked:" destination="-1" eventType="touchUpInside" id="Hkc-7U-y4V"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectedBg" translatesAutoresizingMaskIntoConstraints="NO" id="ddU-9v-LYc">
+                            <rect key="frame" x="28.333333333333329" y="82" width="33" height="3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="3" id="BVj-C0-yRi"/>
+                            </constraints>
+                        </imageView>
+                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectedBg" translatesAutoresizingMaskIntoConstraints="NO" id="CkU-kL-08K">
+                            <rect key="frame" x="167" y="82" width="44" height="3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="3" id="8ia-aB-ghd"/>
+                                <constraint firstAttribute="width" constant="44" id="Jr4-61-gV2"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ar6-aF-KH8">
+                            <rect key="frame" x="154" y="41.666666666666664" width="70" height="28.333333333333336"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="mMt-1g-voN"/>
+                            </constraints>
+                            <color key="tintColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="My Post">
+                                        <attributes>
+                                            <color key="NSColor" red="0.47843137254901957" green="0.47843137254901957" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="btnMyPostClicked:" destination="-1" eventType="touchUpInside" id="khi-tN-D4d"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="nPx-oi-Lxc" firstAttribute="centerX" secondItem="Nfw-gB-9Pj" secondAttribute="centerX" id="1xD-DN-TRM"/>
+                        <constraint firstItem="ar6-aF-KH8" firstAttribute="centerY" secondItem="nxv-sR-R27" secondAttribute="centerY" id="3NC-SN-3Nl"/>
+                        <constraint firstAttribute="bottom" secondItem="XM5-zp-JMe" secondAttribute="bottom" constant="-5" id="5XF-tW-0ST"/>
+                        <constraint firstItem="ddU-9v-LYc" firstAttribute="centerX" secondItem="nxv-sR-R27" secondAttribute="centerX" id="FVI-5E-lh7"/>
+                        <constraint firstItem="nxv-sR-R27" firstAttribute="leading" secondItem="Nfw-gB-9Pj" secondAttribute="leading" constant="10" id="Jii-L4-cCX"/>
+                        <constraint firstItem="2wA-jx-rH9" firstAttribute="centerX" secondItem="nPx-oi-Lxc" secondAttribute="centerX" id="NcG-Oc-oOm"/>
+                        <constraint firstItem="XM5-zp-JMe" firstAttribute="centerX" secondItem="Nfw-gB-9Pj" secondAttribute="centerX" id="W4D-Vp-yfN"/>
+                        <constraint firstAttribute="height" constant="90" id="Yqj-vw-pfd"/>
+                        <constraint firstItem="nxv-sR-R27" firstAttribute="bottom" secondItem="XM5-zp-JMe" secondAttribute="bottom" constant="-25" id="aIK-i9-0hr"/>
+                        <constraint firstItem="2wA-jx-rH9" firstAttribute="top" secondItem="nPx-oi-Lxc" secondAttribute="top" constant="18" id="bbP-gp-Fm1"/>
+                        <constraint firstItem="krb-ox-Ith" firstAttribute="top" secondItem="2wA-jx-rH9" secondAttribute="bottom" constant="4" id="lbn-Au-xbY"/>
+                        <constraint firstAttribute="width" constant="232" id="nw1-Td-iRz"/>
+                        <constraint firstAttribute="bottom" secondItem="ddU-9v-LYc" secondAttribute="bottom" constant="5" id="rXc-ad-0dZ"/>
+                        <constraint firstItem="nPx-oi-Lxc" firstAttribute="top" secondItem="Nfw-gB-9Pj" secondAttribute="top" id="snS-av-w58"/>
+                        <constraint firstItem="krb-ox-Ith" firstAttribute="centerX" secondItem="2wA-jx-rH9" secondAttribute="centerX" id="tKt-9N-WIb"/>
+                        <constraint firstAttribute="trailing" secondItem="ar6-aF-KH8" secondAttribute="trailing" constant="8" id="udt-q0-yB7"/>
+                        <constraint firstItem="CkU-kL-08K" firstAttribute="centerY" secondItem="ddU-9v-LYc" secondAttribute="centerY" id="vpt-KH-uHa"/>
+                        <constraint firstItem="CkU-kL-08K" firstAttribute="centerX" secondItem="ar6-aF-KH8" secondAttribute="centerX" id="whT-qO-bAL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mrE-hl-q5l" secondAttribute="trailing" id="B7D-vz-Suu"/>
+                <constraint firstAttribute="bottom" secondItem="mrE-hl-q5l" secondAttribute="bottom" id="JOP-Rb-Ufw"/>
+                <constraint firstItem="Nfw-gB-9Pj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LID-4O-ycE"/>
+                <constraint firstItem="mrE-hl-q5l" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="e68-mA-d4u"/>
+                <constraint firstItem="mrE-hl-q5l" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wez-9H-gQG"/>
+                <constraint firstItem="Nfw-gB-9Pj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="x1I-9Z-E9E"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="18" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FloatingControlBg" width="360" height="117"/>
+        <image name="FloatingMenuBG" width="249.33332824707031" height="65.333335876464844"/>
+        <image name="open" width="10" height="10"/>
+        <image name="openBg" width="72" height="72"/>
+        <image name="selectedBg" width="33" height="3"/>
+    </resources>
+</document>
