@@ -21,6 +21,8 @@
  */
 
 import Foundation
+import UIKit
+
 final class RegistractionViewModel {
     
     var registractionModel:RegistractionModel?
@@ -29,13 +31,13 @@ final class RegistractionViewModel {
     
     //MARK: Data featching form server
     func registractionCall(_ strPhoneNumber:String) {
-        let params : [String:Any]  = ["phone":strPhoneNumber,"skey":skey,"country_code":"+91","device_id":"Hello 123","imei":Common.shared.getDeviceID(),"os":"ios","device_name":Common.shared.getDeviceName(),"referral_code" : "","latitude": "","longitude": ""]
+        let params : [String:Any]  = ["country_code":"+91","device_id":Common.shared.getDeviceID(),"latitude":Common.shared.latitude ?? "28.78","longitude":Common.shared.longitude ?? "77.17" , "mobile" : strPhoneNumber,  "device_name": Utils.getDeviceModelIdentifier(), "device_ip" : Common.shared.getDeviceIP(),  "os_version" : Common.shared.getOSVersion(),"registration_timestamp"  : Date().getCurrentDateTime(), "source" : "mobile_app",  "language_preference" : "en" , "device_brand" : "Apple" , "referral_code" : ""]
         print("The dictionary is : \(params)")
         self.eventHandler?(.loading)
         ApiManager.sharedInstance.registractionServiceApi(dict:params as NSDictionary, completion: { (model, err) in
             self.eventHandler?(.stopLoading)
             if let err = err {
-                print("Failed to fetch courses:", err)
+                print("Failed to fetch:", err)
                 return
             }
             if let model = model {

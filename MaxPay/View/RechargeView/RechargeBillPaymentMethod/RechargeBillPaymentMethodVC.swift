@@ -163,7 +163,7 @@ class RechargeBillPaymentMethodVC: BaseVC {
             
             if isConnected == true {
                 
-                paymentWalletDeductVM.PaymentDeductCall(skeyStr: "142418AgQWGaSEHXoQ58ae75c4",deduct_amountStr: priceStr, categoryStr: "recharge")
+                paymentWalletDeductVM.PaymentDeductCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME",deduct_amountStr: priceStr, categoryStr: "recharge")
 
 //                circleView_Model.CircleZoneCall(skeyStr: "142418AgQWGaSEHXoQ58ae75c4")
 
@@ -213,7 +213,7 @@ class RechargeBillPaymentMethodVC: BaseVC {
                          //   print("result :", self?.paymentWalletDeductVM.paymentDeductModel?.data)
                           //  print(self?.paymentWalletDeductVM.paymentDeductModel?.data?.txn_id ?? "")
                             
-                            self?.rechargeModelView.RechargeModelApiCall(skeyStr: "142418AgQWGaSEHXoQ58ae75c4", amountStr: self?.priceStr ?? 0, rechargenumberStr: Common.shared.userMobile_NUMBER ?? "", phoneStr: Common.shared.phoneNo ?? "", txnIdStr:self?.paymentWalletDeductVM.paymentDeductModel?.data?.txn_id ?? "", ViaStr: "swallet")
+                            self?.rechargeModelView.RechargeModelApiCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME", amountStr: self?.priceStr ?? 0, rechargenumberStr: Common.shared.userMobile_NUMBER ?? "", phoneStr: Common.shared.phoneNo ?? "", txnIdStr:self?.paymentWalletDeductVM.paymentDeductModel?.data?.txn_id ?? "", ViaStr: "swallet")
                             
                             ObserveRechargeModelViewApi()
                             

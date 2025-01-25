@@ -23,7 +23,7 @@ final class RankViewModel {
     
     //MARK: Data featching form server
     func RankModelApiCall(skeyStr:String) {
-        let params : [String:Any]  = ["skey":skeyStr]
+        let params : [String:Any]  = ["skey":skey]
         print("The dictionary is : \(params)")
         self.eventHandler?(.loading)
         ApiManager.sharedInstance.RankAllModelApi(completion: { (model, err) in

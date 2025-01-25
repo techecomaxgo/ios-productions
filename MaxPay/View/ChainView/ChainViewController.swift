@@ -39,7 +39,7 @@ class ChainViewController: BaseVC {
         
         if isConnected == true {
             
-            chainViewModel.ChainModelApiCall(skeyStr: "142418AgQWGaSEHXoQ58ae75c4")
+            chainViewModel.ChainModelApiCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME")
             
             observeChainApi()
             

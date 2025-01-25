@@ -24,7 +24,9 @@ class UPISetUPIPinVC: BaseVC {
     @IBOutlet weak var lblBankName: UILabel!
     
     var accountDetails: AccountDetailsOnIIN?
+    var primaryAccountDetails: AccountDetails?
     private var checkSumviewModel = SIMSelectionViewModel()
+    private var addUpiUserViewModel = AddUpiUserViewModel()
     var strSixDigitCardNumber = ""
     var expiryCard = ""
     
@@ -119,6 +121,7 @@ class UPISetUPIPinVC: BaseVC {
         if let iin = accountDetails?.iin {
             
             let accountDetails = AccountDetails(name: accountDetails?.name ?? "", aeba: accountDetails?.aeba ?? "", mbeba: accountDetails?.mbeba ?? "", accRefNumber: accountDetails?.accRefNumber ?? "", ifsc: accountDetails?.ifsc ?? "", maskedAccnumber: accountDetails?.maskedAccnumber ?? "", status: accountDetails?.status ?? "", type: accountDetails?.type ?? "", vpa: accountDetails?.vpa ?? "", dLength: accountDetails?.dLength ?? "", dType: accountDetails?.dType ?? "", balance: accountDetails?.balance ?? "", balTime: accountDetails?.balTime ?? "", atmpinFormat: accountDetails?.atmpinFormat ?? "", atmpinLength: accountDetails?.atmpinLength ?? "", iin: accountDetails?.iin ?? "", internationlActive: "N", otpFormat: accountDetails?.otpFormat ?? "")
+            primaryAccountDetails = accountDetails
                             
             var jsonObjectString = ""
             
@@ -140,7 +143,7 @@ class UPISetUPIPinVC: BaseVC {
             
             DispatchQueue.global(qos: .background).async {
                 // Working Properly
-                OliveUpiManager.activateAccount(iin: iin, account: jsonObjectString, cardNo: self.strSixDigitCardNumber, exp: self.expiryCard, cardDetailsFlag: false, viewController: self) { data, error in
+                OliveUpiManager.activateAccount(iin: iin, account: jsonObjectString, cardNo: self.strSixDigitCardNumber, exp: self.expiryCard, viewController: self) { data, error in
                     
                     if let err = error {
                         
@@ -165,23 +168,7 @@ class UPISetUPIPinVC: BaseVC {
                     } else {
                        
                         //print(data)
-                        
-                        // store new card's vpa locally
-                        self.retriveAndStoreAccount()
-                        
-                        DispatchQueue.main.async {
-                            SwiftLoader.hide()
-                            
-                            print(self.navigationController?.viewControllers)
-                            
-                            for controller in self.navigationController!.viewControllers as Array {
-                                if controller.isKind(of: DashboardVC.self) {
-                                    self.navigationController!.popToViewController(controller, animated: true)
-                                    break
-                                }
-                            }
-                            
-                        }
+                        self.addUpiUserConfiguration()
                     }
                 }
             }
@@ -318,7 +305,7 @@ extension UPISetUPIPinVC: MFMessageComposeViewControllerDelegate {
         let isConnected = ReachabilityClass.isConnectedToNetwork()
         
         if isConnected == true {
-            checkSumviewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.token ?? "")
+            checkSumviewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.getDeviceID() ?? "")
         }else{
             DispatchQueue.main.async {
                 SwiftLoader.hide()
@@ -345,14 +332,14 @@ extension UPISetUPIPinVC: MFMessageComposeViewControllerDelegate {
             case .dataLoaded:
                 print("Data loaded...")
 
-                if self?.checkSumviewModel.checksumModel?.result == "Success" {
-                    Common.shared.merchantauthtoken = self?.checkSumviewModel.checksumModel?.data?.merchantauthtoken ?? ""
+                if self?.checkSumviewModel.checksumModel?.status == "Success" {
+                    Common.shared.merchantauthtoken = self?.checkSumviewModel.checksumModel?.data?.data?.merchantauthtoken ?? ""
                     
                     self?.performMerchantHandshake()
                     
                 }else{
                     DispatchQueue.main.async {
-                        self?.showErrorAlert(self?.checkSumviewModel.checksumModel?.result ?? "")
+                        self?.showErrorAlert(self?.checkSumviewModel.checksumModel?.message ?? "")
                     }
                 }
                 
@@ -423,4 +410,74 @@ extension UPISetUPIPinVC: MFMessageComposeViewControllerDelegate {
         }
     }
 
+}
+
+extension UPISetUPIPinVC {
+    
+    //MARK: API Calling
+    func addUpiUserConfiguration() {
+        
+        SwiftLoader.show(animated: true)
+        initViewModel()
+        observeEvent()
+    }
+    //MARK Network checking
+    func initViewModel() {
+        let isConnected = ReachabilityClass.isConnectedToNetwork()
+        
+        if isConnected == true {
+            self.addUpiUserViewModel.addUpiUserCall(account: primaryAccountDetails!)
+        }else{
+            SwiftLoader.hide()
+            self.showErrorAlert("Please check your internetconnection.")
+            
+        }
+    }
+    //MARK: Observing the data
+    func addUpiUserObserveEvent() {
+        addUpiUserViewModel.eventHandler = { [weak self] event in
+            guard self != nil else { return }
+            
+            switch event {
+                
+            case .loading:
+                print("Loading...")
+                
+            case .stopLoading:
+                print("stopLoading...")
+                
+            case .dataLoaded:
+                DispatchQueue.main.async {
+                    SwiftLoader.hide()
+                    if self?.addUpiUserViewModel.addUpiUserModel?.status == "success" {
+                        // store new card's vpa locally
+                        self?.retriveAndStoreAccount()
+                        
+                        DispatchQueue.main.async {
+                            SwiftLoader.hide()
+                            if let nav = self?.navigationController?.viewControllers {
+                                print(nav)
+                            }
+                            
+                            for controller in (self?.navigationController!.viewControllers)! as Array {
+                                if controller.isKind(of: DashboardVC.self) {
+                                    self?.navigationController!.popToViewController(controller, animated: true)
+                                    break
+                                }
+                            }
+                            
+                        }
+                    } else{
+                        self?.showErrorAlert(self?.addUpiUserViewModel.addUpiUserModel?.message ?? "")
+                    }
+                }
+                
+            case .error(let error):
+                print(error!)
+                DispatchQueue.main.async {
+                    SwiftLoader.hide()
+                }
+            }
+        }
+    }
 }

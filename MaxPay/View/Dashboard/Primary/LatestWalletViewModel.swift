@@ -23,7 +23,7 @@ class LatestWalletViewModel {
    
    // func fetchLatestWalletTransaction(skey: String) {
     func fetchLatestWalletTransaction(skey: String) {
-        guard let url = URL(string: "https://uat.maxupi.in/api/v1/wallet/p-latest-wallet") else {
+        guard let url = URL(string: "https://api.maxupi.in/api/v1/wallet/p-latest-wallet") else {
             onError?("Invalid URL")
             return
         }
@@ -105,7 +105,7 @@ class LatestWalletViewModel {
     
     //-date-range
     func fetchTransactions(skey: String, startDate: String, endDate: String) {
-        guard let url = URL(string: "https://uat.maxupi.in/api/v1/wallet/p-by-date-range") else { return }
+        guard let url = URL(string: "https://api.maxupi.in/api/v1/wallet/p-by-date-range") else { return }
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -187,7 +187,7 @@ class LatestWalletViewModel {
     //by-date
     
     func fetchTransactions(skey: String, date: String) {
-        guard let url = URL(string: "https://uat.maxupi.in/api/v1/wallet/p-by-date") else { return }
+        guard let url = URL(string: "https://api.maxupi.in/api/v1/wallet/p-by-date") else { return }
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -267,7 +267,7 @@ class LatestWalletViewModel {
     
     //old-wallet
     func fetchOldWalletTransactions(skey: String) {
-        guard let url = URL(string: "https://uat.maxupi.in/api/v1/wallet/p-old-wallet") else { return }
+        guard let url = URL(string: "https://api.maxupi.in/api/v1/wallet/p-old-wallet") else { return }
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"

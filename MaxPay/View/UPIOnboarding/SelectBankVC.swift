@@ -22,6 +22,7 @@ class SelectBankVC: BaseVC, MFMessageComposeViewControllerDelegate,CLLocationMan
     @IBOutlet weak var textFieldSearch: UITextField!
     @IBOutlet weak var tblBankSearch: UITableView!
     private var checksumViewModel = SIMSelectionViewModel()
+    private var validateUpiOTPViewModel = ValidateUpiOTPViewModel()
     var accountDetails = [AccountDetailsOnIIN]()
 
     var filteredData: [Banks] = []
@@ -104,10 +105,10 @@ class SelectBankVC: BaseVC, MFMessageComposeViewControllerDelegate,CLLocationMan
             DispatchQueue.global(qos: .userInitiated).async {
                 let sdkHandShake = SDKHandshake(
                     emailId: "",
-                    merchId: "MAXPE",
-                    merchChanId: "MAXPE",
-                    submerchantid: "OLIVE",
-                    mcccode: "7322",
+                    merchId: "ECOMAXGOPROD1234",
+                    merchChanId: "ECOMAXGOPROD1234",
+                    submerchantid: "ECOMAXGOPROD1234",
+                    mcccode: "6211",
                     unqCustId: "91\(Common.shared.phoneNo ?? "")",
                     mobileNo: "91\(Common.shared.phoneNo ?? "")",
                     deviceid: Common.shared.getDeviceID(),
@@ -175,7 +176,7 @@ class SelectBankVC: BaseVC, MFMessageComposeViewControllerDelegate,CLLocationMan
                         if let dt = data{
                             print(dt)
                             DispatchQueue.main.async {
-                                self.fetchListBanks()
+                                self.validateUpiOTPconfiguration()
                                 self.showToast(message: "SMS Delivered", font: .systemFont(ofSize: 12))
                             }
                         }
@@ -380,7 +381,7 @@ extension SelectBankVC: UITableViewDataSource, UITableViewDelegate {
         let isConnected = ReachabilityClass.isConnectedToNetwork()
         
         if isConnected == true {
-            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.token ?? "")
+            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.getDeviceID())
         }else{
             DispatchQueue.main.async {
                 SwiftLoader.hide()
@@ -406,14 +407,14 @@ extension SelectBankVC: UITableViewDataSource, UITableViewDelegate {
             case .dataLoaded:
                 print("Data loaded...")
                 
-                    if self?.checksumViewModel.checksumModel?.result == "Success" {
-                        Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.merchantauthtoken ?? ""
+                if self?.checksumViewModel.checksumModel?.data?.result == "Success" {
+                        Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.data?.merchantauthtoken ?? ""
                         
                         self?.fetchAccountsiin(bankAccount: (self?.selectedFilteredData)!)
                         
                     }else{
                         DispatchQueue.main.async {
-                            self?.showErrorAlert(self?.checksumViewModel.checksumModel?.result ?? "")
+                            self?.showErrorAlert(self?.checksumViewModel.checksumModel?.data?.result ?? "")
                         }
                     }
             case .error(let error):
@@ -440,4 +441,60 @@ extension SelectBankVC: UITextFieldDelegate {
         return true
     }
     
+}
+
+extension SelectBankVC {
+    // validate Upi OTP configuration
+    func validateUpiOTPconfiguration() {
+        validateUpiOTPInitViewModel()
+        validateUpiOTPObserveEvent()
+    }
+    
+    //MARK Network checking
+    func validateUpiOTPInitViewModel() {
+        let isConnected = ReachabilityClass.isConnectedToNetwork()
+        
+        if isConnected == true {
+            validateUpiOTPViewModel.validateUpiOTPCall(Common.shared.phoneNo ?? "")
+        }else{
+            DispatchQueue.main.async {
+                SwiftLoader.hide()
+                self.showErrorAlert("Please check your internet connection.")
+            }
+        }
+    }
+    
+    //MARK: Observing the data
+    func validateUpiOTPObserveEvent() {
+        validateUpiOTPViewModel.eventHandler = { [weak self] event in
+            guard self != nil else { return }
+            
+            switch event {
+            case .loading:
+                
+                print("loading....")
+                
+            case .stopLoading:
+                
+                print("Stop loading...")
+                
+            case .dataLoaded:
+                print("Data loaded...")
+                
+                if self?.validateUpiOTPViewModel.validateUpiOTPModel?.status == "Success" {
+                    print(self?.validateUpiOTPViewModel.validateUpiOTPModel?.data?.otp,self?.validateUpiOTPViewModel.validateUpiOTPModel?.data?.otp)
+                    self?.fetchListBanks()
+                }else{
+                    DispatchQueue.main.async {
+                        self?.showErrorAlert(self?.validateUpiOTPViewModel.validateUpiOTPModel?.message ?? "")
+                    }
+                }
+            case .error(let error):
+                print(error!)
+                DispatchQueue.main.async {
+                    SwiftLoader.hide()
+                }
+            }
+        }
+    }
 }

@@ -71,7 +71,7 @@ extension TabbarVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollect
             cell.labelTap.isHidden = false
             cell.constraintImgHeight.constant = 22
 
-            cell.labelTap.text = "My Expense"
+            cell.labelTap.text = "History"
             cell.imageTab.image = UIImage(named: "tab-myexpense-ic")
             if (intIndex == indexPath.row){
                 

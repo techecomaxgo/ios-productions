@@ -196,7 +196,7 @@ class LoginMPIN: UIViewController, UITextFieldDelegate, MFMessageComposeViewCont
         //    sdkHandShake.unqTxnId = Utils.generateRandomDigits(13)
         //    let sdkHandShakeInput = sdkHandShake.toJSONString()
         
-        let sdkHandShake = SDKHandshake(emailId: "", merchId: "MAXPE", merchChanId: "MAXPE", submerchantid: "OLIVE", mcccode: "7322", unqCustId: "91\(Common.shared.phoneNo ?? "")", mobileNo: "91\(Common.shared.phoneNo ?? "")", deviceid: Common.shared.getDeviceID(), appid: appId, custname: "MAX", merchantauthtoken: Common.shared.merchantauthtoken ?? "", unqTxnId:SDKHandshake.shared.generateRandomDigits(12))
+        let sdkHandShake = SDKHandshake(emailId: "", merchId: MerchantId, merchChanId: MerchChanId, submerchantid: SubMerchantId, mcccode: MCC, unqCustId: "91\(Common.shared.phoneNo ?? "")", mobileNo: "91\(Common.shared.phoneNo ?? "")", deviceid: Common.shared.getDeviceID(), appid: appId, custname: "MAX", merchantauthtoken: Common.shared.merchantauthtoken ?? "", unqTxnId:SDKHandshake.shared.generateRandomDigits(12))
         let jsonString = sdkHandShake.jsonString(sdkHandShake)
         OliveUpiManager.initiateSDK(sdkHandshake: jsonString,view: self , delegate: self) { (data, err) in
             self.fetchAccounts()
@@ -351,6 +351,11 @@ extension LoginMPIN {
                 Common.shared.token = self?.loginViewModel.loginModel?.token ?? ""
                 Common.shared.userFirstName = self?.loginViewModel.loginModel?.dataLogin?.f_name ?? ""
                 Common.shared.userLastName = self?.loginViewModel.loginModel?.dataLogin?.l_name ?? ""
+                Common.shared.UserProfileImage = self?.loginViewModel.loginModel?.dataLogin?.image
+                Utils.storeUserInfo(token: self?.loginViewModel.loginModel?.token ?? "", userFirstName: self?.loginViewModel.loginModel?.dataLogin?.f_name ?? "", userLastName: self?.loginViewModel.loginModel?.dataLogin?.l_name ?? "", isLoggedIn: "true")
+                
+                defaults.setValue("true", forKey: "ISLOGGEDINFInal")
+//                Utils.storeUserLoginInfo(token: <#T##String#>, isLoggedIn: <#T##String#>)
 
                 DispatchQueue.main.async {
                     

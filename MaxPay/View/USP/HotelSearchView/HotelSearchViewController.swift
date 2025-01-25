@@ -93,7 +93,7 @@ class HotelSearchViewController: BaseVC {
         if isConnected == true {
             
            
-            hotelSearchVM.GetHotelSearchModelApiCall(skeyStr: "142418AgQWGaSEHXoQ58ae75c4", city: selectedCity, CheckInDate: checkInDateStr, CheckOutDate: checkOutDateStr, RoomCount: totalHSRoomsStr, Adults: totalHSAdultsStr, Child: totalHSChildrenStr, Nights: 1, HotelCount: 30, RoomDetails: roomDetails, maxPrice: "100000", minPrice: "100", sorttype: "Popular|DESC")
+            hotelSearchVM.GetHotelSearchModelApiCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME", city: selectedCity, CheckInDate: checkInDateStr, CheckOutDate: checkOutDateStr, RoomCount: totalHSRoomsStr, Adults: totalHSAdultsStr, Child: totalHSChildrenStr, Nights: 1, HotelCount: 30, RoomDetails: roomDetails, maxPrice: "100000", minPrice: "100", sorttype: "Popular|DESC")
             
             
             //milesTotalViewModel.GetMilesApiCall(skeyStr: "142418AgQWGaSEHXoQ58ae75c4")

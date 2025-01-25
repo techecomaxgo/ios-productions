@@ -43,10 +43,11 @@ let ItemNotPosted = "Item could not Posted successfully!"
 let isoDateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
 
 //MARK: - API
+//UAT Server URL  27 Nov
+// let baseUrl = "https://uat.maxupi.in"
 
- let baseUrl = "https://uat.maxupi.in"
-
-//let baseUrl = "https://api.maxupi.in"
+//Production Server URL
+let baseUrl = "https://api.maxupi.in"
 let apiVersion = "/api/v1/"
 
 let getAllCategories = "lfcategories/all-categories"
@@ -81,10 +82,13 @@ let filterClaimByLatest = "lf-claim/list-by-latest"
 let filterClaimByOldest = "lf-claim/list-by-old"
 let filterClaimByDate = "lf-claim/list-by-date"
 
+let termsConditions_PrivacyPolicy = "https://www.ecomaxgo.in/"
+
+
 //API Values
 let KTokenValue = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI3IiwicGhvbmUiOiI3NDk4OTI4NDI1IiwidWlkIjoiMjE2OWY2MjQtOTY0My00YmRiLTlhMjQtMWI2NTMyYWU0NTY2IiwiaWF0IjoxNjk3NDM5NzgxfQ.lZUoUM2voWlJnDr-wzPlZ4PNODarOb9MD64IZkatiIA"
 
-let KSkeyValue = "142418AgQWGaSEHXoQ58ae75c4"
+let KSkeyValue = "AVJQIdwn79iR0zlP0iKNKumME"
 
 let KJWTTokenValue = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiIxMyIsInBob25lIjoiNzAwNzQzOTY1MSIsInVpZCI6IjRkODE2N2ZkLTgxOWEtNGFiNS04MjI3LTM5YjhiYjQyNjExMSIsImlhdCI6MTcxNjg4MDk4N30.-syhhd1i_dAF-e7NL2rP1LYi7mqTicfyvP2qVFP-0fY"
 

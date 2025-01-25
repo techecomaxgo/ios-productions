@@ -358,27 +358,47 @@ struct ResponseObject: Codable {
 }
 
 
+//struct AccountCheckBalance: Codable {
+//    var name: String?
+//    var mmid: String?
+//    var aeba: String?
+//    var mbeba: String?
+//    var accRefNumber: String?
+//    var ifsc: String?
+//    var maskedAccnumber: String?
+//    var status: String?
+//    var type: String?
+//    var vpa: String?
+//    var dLength: String?
+//    var dType: String?
+//    var balance: String?
+//    var balTime: String?
+//
+//    enum CodingKeys: String, CodingKey {
+//        case name, mmid, aeba, mbeba, accRefNumber, ifsc, maskedAccnumber, status, type, vpa, dLength, dType, balance, balTime
+//    }
+//}
+
 struct AccountCheckBalance: Codable {
-    var name: String
-    var mmid: String
-    var aeba: String
-    var mbeba: String
-    var accRefNumber: String
-    var ifsc: String
-    var maskedAccnumber: String
-    var status: String
-    var type: String
-    var vpa: String
-    var dLength: String
-    var dType: String
-    var balance: String
-    var balTime: String
+    var name: String?
+    var mmid: String?
+    var aeba: String?
+    var mbeba: String?
+    var accRefNumber: String?
+    var ifsc: String?
+    var maskedAccnumber: String?
+    var status: String?
+    var type: String?
+    var vpa: String?
+    var dLength: String?
+    var dType: String?
+    var balance: String?
+    var balTime: String?
 
     enum CodingKeys: String, CodingKey {
         case name, mmid, aeba, mbeba, accRefNumber, ifsc, maskedAccnumber, status, type, vpa, dLength, dType, balance, balTime
     }
 }
-
 
 
 

@@ -9,8 +9,9 @@ import UIKit
 import OlivePayLibrary
 import SwiftLoader
 import MessageUI
+import AVFoundation
 
-class PaymentUPIIDNewVC: BaseVC {
+class PaymentUPIIDNewVC: BaseVC, AVAudioPlayerDelegate {
     
     var mccCodeDNewVC = ""
     
@@ -42,6 +43,8 @@ class PaymentUPIIDNewVC: BaseVC {
     var isFromRequestScreen = false
     var isFromQrScan = false
     var amtDecimal = ""
+    var player: AVPlayer?
+    var lastPlayTime: Date?
 
     @IBOutlet weak var viewTextNameBg: UIView!
     @IBOutlet weak var viewBeneficiaryBg: UIView!
@@ -60,7 +63,8 @@ class PaymentUPIIDNewVC: BaseVC {
     
     @IBOutlet weak var imgCheckUncheck: UIImageView!
     @IBOutlet weak var btnAddBeneficiary: UIButton!
-//    
+    var audioPlayer: AVAudioPlayer!
+//
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
 //        
@@ -526,6 +530,32 @@ class PaymentUPIIDNewVC: BaseVC {
 
     }
     
+    func playDeductionAlertSound() {
+           let now = Date()
+           
+           // Check if the sound was played recently
+           if let lastPlayTime = lastPlayTime, now.timeIntervalSince(lastPlayTime) < 4 {
+               print("Sound played recently. Please wait before playing again.")
+               return
+           }
+
+           // Update the last play time
+           lastPlayTime = now
+
+           if let soundURL = Bundle.main.url(forResource: "deduction_alert_hindi", withExtension: "mp3") {
+               do {
+                   audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
+                   audioPlayer.delegate = self
+                   audioPlayer.prepareToPlay()
+                   audioPlayer.play()
+               } catch {
+                   print("Error loading audio file: \(error.localizedDescription)")
+               }
+           } else {
+               print("Could not find the audio file in the app bundle.")
+           }
+       }
+    
     
     func convertToSomeAnyData(_ object: Any) -> Data? {
         
@@ -952,77 +982,100 @@ class PaymentUPIIDNewVC: BaseVC {
     @IBAction func btnContinueAction(_ sender: UIButton) {
         
         // mamDigit = Double(qrData["mam"] as? String ?? "0")
+        showAlertMessageWithActionButtonAndCancelButton(title: "Be Alert | सावधान रहें", message: "\nIs this transaction a fraud? \n\nक्या यह लेनदेन धोखाधड़ी है?", actionButtonText: "No", cancelActionButtonText: "Yes", vc: self) { status in
+            if status == 1 {
+                self.oliveBlockApiCall()
+            }else if status == 0 {
+                if self.isFromQrScan == true {
                     
-        if isFromQrScan == true {
-            
-           // let checkAmount = Double(txtAmount.text ?? "0")
-            minValue  =  Double(qrData["mam"] as? String ?? "")
-            
-            maxValue = Double(qrData["am"] as? String ?? "")
-            
-            if txtAmount.text?.count == 0 || Double(txtAmount.text ?? "0") == 0 {
-                self.showErrorAlert("Please enter amount")
-                return
-            }else if Double(txtAmount.text ?? "0")! < minValue! {
+                    // let checkAmount = Double(txtAmount.text ?? "0")
+                    self.minValue  =  Double(self.qrData["mam"] as? String ?? "")
+                    
+                    self.maxValue = Double(self.qrData["am"] as? String ?? "")
+                    
+                    if (self.minValue != nil) || (self.maxValue != nil) {
+                        if self.txtAmount.text?.count == 0 || Double(self.txtAmount.text ?? "0") == 0 {
+                            self.showErrorAlert("Please enter amount")
+                            return
+                        }else if Double(self.txtAmount.text ?? "0")! < self.minValue! {
+                            
+                            self.showErrorAlert("Please enter minimum amount \(self.minValue!)")
+                        }
+                        
+                        
+                        if self.txtAmount.text?.count == 0 || Double(self.txtAmount.text ?? "0") == 0 {
+                            self.showErrorAlert("Please enter amount")
+                            return
+                        }else if Double(self.txtAmount.text ?? "0")! > self.maxValue! {
+                            
+                            self.showErrorAlert("Maximum amount \(self.maxValue!)")
+                        }
+                        
+                        
+                        
+                    }else{
+                        if self.txtAmount.text?.count == 0 || Double(self.txtAmount.text ?? "0") == 0 {
+                            self.showErrorAlert("Please enter amount")
+                            return
+                        }else{
+                            let storyboard = UIStoryboard(name: "BhimUpi", bundle: nil)
+                            
+                            let vc = storyboard.instantiateViewController(withIdentifier: "PaymentUPIIDNewConfirmationVC") as! PaymentUPIIDNewConfirmationVC
+                            
+                            vc.accountDetails = self.accountDetails
+                            vc.beneVpa = self.beneVpa
+                            vc.beneName = self.beneName
+                            vc.transId = self.transId
+                            vc.amtDecimal = self.txtAmount.text ?? ""
+                            vc.remark =  self.txtRemark.text ?? ""
+                            vc.mccCodeStr =  self.mccCodeDNewVC
+                            self.navigationController?.pushViewController(vc, animated: true)
+                        }
+                        
+                    }
+                    
+                }else{
+                    if self.txtAmount.text?.count == 0 || Double(self.txtAmount.text ?? "0") == 0 {
+                        self.showErrorAlert("Please enter amount")
+                        return
+                    }
+                    
+                }
                 
-                self.showErrorAlert("Please enter minimum amount \(minValue!)")
+//                if self.txtAmount.text?.count == 0 || Double(self.txtAmount.text ?? "0") == 0 {
+//                    self.showErrorAlert("Please enter amount")
+//                    return
+//                }else{
+//                    let storyboard = UIStoryboard(name: "BhimUpi", bundle: nil)
+//                    
+//                    let vc = storyboard.instantiateViewController(withIdentifier: "PaymentUPIIDNewConfirmationVC") as! PaymentUPIIDNewConfirmationVC
+//                    
+//                    vc.accountDetails = self.accountDetails
+//                    vc.beneVpa = self.beneVpa
+//                    vc.beneName = self.beneName
+//                    vc.transId = self.transId
+//                    vc.amtDecimal = self.txtAmount.text ?? ""
+//                    vc.remark =  self.txtRemark.text ?? ""
+//                    vc.mccCodeStr =  self.mccCodeDNewVC
+//                    self.navigationController?.pushViewController(vc, animated: true)
+//                }
             }
-            
-            
-            if txtAmount.text?.count == 0 || Double(txtAmount.text ?? "0") == 0 {
-                self.showErrorAlert("Please enter amount")
-                return
-            }else if Double(txtAmount.text ?? "0")! > maxValue! {
-                
-                self.showErrorAlert("Maximum amount \(maxValue!)")
-            }
-            
-            
-
-        }else{
-            
-            if txtAmount.text?.count == 0 || Double(txtAmount.text ?? "0") == 0 {
-                self.showErrorAlert("Please enter amount")
-                return
-            }
-            
         }
                     
-         
         
-            
-                                        
-            let storyboard = UIStoryboard(name: "BhimUpi", bundle: nil)
         
-            let vc = storyboard.instantiateViewController(withIdentifier: "PaymentUPIIDNewConfirmationVC") as! PaymentUPIIDNewConfirmationVC
-        
-            vc.accountDetails = self.accountDetails
-            vc.beneVpa = self.beneVpa
-            vc.beneName = self.beneName
-            vc.transId = self.transId
-            vc.amtDecimal = self.txtAmount.text ?? ""
-            vc.remark =  self.txtRemark.text ?? ""
-            vc.mccCodeStr =  mccCodeDNewVC
-                        
-            self.navigationController?.pushViewController(vc, animated: true)
-            
-            
-//                            let vc = storyboard.instantiateViewController(withIdentifier: "PaymentSuccessfulVC") as! PaymentSuccessfulVC
-//
-//                            vc.accountDetails = self.accountDetails
-//                            vc.beneVpa = self.beneVpa
-//                            vc.beneName = self.beneName
-//                            vc.transId = self.transId
-//                            vc.amount = "\(self.amtDecimal)"
-//                            vc.fromScreenOption = "pay"
-//
-//                            self.navigationController?.pushViewController(vc, animated: true)
-            
-            
-            
-        
-
-        
+//        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+//        
+//        let vc = storyboard.instantiateViewController(withIdentifier: "PaymentSuccessfulVC") as! PaymentSuccessfulVC
+//        
+//        vc.accountDetails = self.accountDetails
+//        vc.beneVpa = self.beneVpa
+//        vc.beneName = self.beneName
+//        vc.transId = self.transId
+//        vc.amount = "\(self.amtDecimal)"
+//        vc.fromScreenOption = "pay"
+//        
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func btnCheckBalanceAction(_ sender: UIButton) {
@@ -1053,7 +1106,7 @@ class PaymentUPIIDNewVC: BaseVC {
             
             if self.accountDetails?.vpa != "" {
                 
-                DispatchQueue.global(qos: .background).async {
+                DispatchQueue.global(qos:.background).async {
 
                     // Working Properly
                     OliveUpiManager.checkBalance(account: jsonObjectString, viewController: self) { data, error in
@@ -1105,6 +1158,46 @@ class PaymentUPIIDNewVC: BaseVC {
             }
         }
         
+    }
+    
+    func oliveBlockApiCall() {
+        
+        DispatchQueue.main.async {
+            SwiftLoader.show(animated: true)
+        }
+        
+        DispatchQueue.global(qos: .background).async {
+            
+            OliveUpiManager.collectBlockUnblock(vpa: self.beneVpa, block: "B", reason: "") { data, error in
+                
+                if let err = error {
+                    
+                    if err.code == 102 || err.code == 108 { // Customer Accounts not found
+                        DispatchQueue.main.async {
+                            self.showErrorAlert(err.localizedDescription)
+                        }
+                    } else if err.code == 401 || err.code == 107 {
+                        
+                        self.configuration()
+                        return
+                        
+                    }
+                    DispatchQueue.main.async {
+                        SwiftLoader.hide()
+                    }
+                    
+                } else  {
+
+                    DispatchQueue.main.async {
+                        SwiftLoader.hide()
+                        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+                        let vc = storyBoard.instantiateViewController(withIdentifier: "BlockUPIListVC") as! BlockUPIListVC
+                        vc.isFromBlockAlert = true
+                        self.navigationController?.pushViewController(vc, animated: true)
+                    }
+                }
+            }
+        }
     }
     
     func saveBeneficary(dataResp: String) {
@@ -1220,6 +1313,10 @@ extension PaymentUPIIDNewVC: UITextFieldDelegate {
             // Limit to only two digits after the decimal point
             if let text = textField.text, let range = Range(range, in: text) {
                 let newText = text.replacingCharacters(in: range, with: string)
+                if newText.count == 1 {
+                    // play Deduction Sound
+                    playDeductionAlertSound()
+                }
                 let components = newText.components(separatedBy: ".")
                 if components.count == 2 {
                     if components[1].count > 2 {
@@ -1284,7 +1381,7 @@ extension PaymentUPIIDNewVC: MFMessageComposeViewControllerDelegate {
         let isConnected = ReachabilityClass.isConnectedToNetwork()
         
         if isConnected == true {
-            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.token ?? "")
+            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.getDeviceID() ?? "")
         }else{
             DispatchQueue.main.async {
                 SwiftLoader.hide()
@@ -1309,14 +1406,14 @@ extension PaymentUPIIDNewVC: MFMessageComposeViewControllerDelegate {
                 print("Stop loading...")
             case .dataLoaded:
                 print("Data loaded...")
-                if self?.checksumViewModel.checksumModel?.result == "Success" {
-                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.merchantauthtoken ?? ""
+                if self?.checksumViewModel.checksumModel?.data?.result == "Success" {
+                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.data?.merchantauthtoken ?? ""
                     
                     self?.performMerchantHandshake()
                     
                 }else{
                     DispatchQueue.main.async {
-                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.result ?? "")
+                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.data?.result ?? "")
                         SwiftLoader.hide()
                     }
                 }

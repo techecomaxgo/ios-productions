@@ -102,7 +102,7 @@ class FlightOnwWayViewController: BaseVC, flightfilterSelectedDelegate {
                 
             }
             
-            searchFlightOneVm.flightOneSearchApiCall(skeyStr: "142418AgQWGaSEHXoQ58ae75c4", travelDateStr: travelFDateStr, originStr: originCode, destinationStr: destinationCode, adultStr: 1, childStr: 0, infantStr: 0, tripTypeStr: 0, cabinStr: 0)
+            searchFlightOneVm.flightOneSearchApiCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME", travelDateStr: travelFDateStr, originStr: originCode, destinationStr: destinationCode, adultStr: 1, childStr: 0, infantStr: 0, tripTypeStr: 0, cabinStr: 0)
             
             observeFlightOneApi()
             

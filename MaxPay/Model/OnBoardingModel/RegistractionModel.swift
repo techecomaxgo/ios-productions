@@ -4,6 +4,14 @@
 //
 //  Created by india on 08/11/23.
 //
+ 
+//{
+//    "status": "success",
+//    "message": "User Exist : details updated",
+//    "data": {
+//        "mobile": "8076396267"
+//    }
+//}
 
 import Foundation
 struct RegistractionModel : Codable {

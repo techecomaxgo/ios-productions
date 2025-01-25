@@ -12,7 +12,8 @@ class UserProfileView: UIViewController,UICollectionViewDataSource,UICollectionV
     private var cardsArr:[AccountDetailsOnIIN] = []
 
     var primaryAccount: AccountDetailsOnIIN?
-
+    
+    @IBOutlet weak var profileImageView: UIImageView!
     
     @IBOutlet weak var lblUserName: UILabel!
     
@@ -34,7 +35,7 @@ class UserProfileView: UIViewController,UICollectionViewDataSource,UICollectionV
     
     @IBOutlet weak var pageControl: UIPageControl!
     
-    let numberOfItems = 10 // Number of items in the collection view
+    let numberOfItems = 0 // Number of items in the collection view
 
     @IBOutlet weak var btnLogout: UIButton!
     
@@ -50,6 +51,19 @@ class UserProfileView: UIViewController,UICollectionViewDataSource,UICollectionV
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        profileImageView.image = UIImage(named: "milstonebrandstarPics")
+        btnVerify.layer.cornerRadius = 10
+        btnVerify.layer.borderColor = UIColor.black.cgColor
+        btnVerify.layer.borderWidth = 1.0
+        lblUserName.text = "\(Common.shared.userFirstName ?? "") \(Common.shared.userLastName ?? "")"
+        lblMobileNumber.text = Common.shared.hideFirstSixDigits(of: Common.shared.phoneNo ?? "", hideCount: 6)
+        
+        NSLayoutConstraint.activate([
+            customButton.widthAnchor.constraint(equalToConstant: 329),
+            customButton.heightAnchor.constraint(equalToConstant: 187)
+        ])
+        
+        self.customButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         
         if cardsArr.count <= 0 {
             
@@ -110,10 +124,10 @@ class UserProfileView: UIViewController,UICollectionViewDataSource,UICollectionV
         collectionCardView.delegate = self
         // Enable paging
         collectionCardView.isPagingEnabled = true // Disable default paging
-
             
         let nib = UINib(nibName: "ProfileCardCVC", bundle: nil)
         collectionCardView.register(nib, forCellWithReuseIdentifier: "ProfileCardCVC")
+        
         
         // Set up the page control
         pageControl.numberOfPages = numberOfItems
@@ -182,30 +196,66 @@ class UserProfileView: UIViewController,UICollectionViewDataSource,UICollectionV
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return numberOfItems
-        }
+        return numberOfItems == 0 ? 1 : numberOfItems
+    }
     
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-           
-        let cell = collectionCardView.dequeueReusableCell(withReuseIdentifier: "ProfileCardCVC", for: indexPath) as! ProfileCardCVC
+        if numberOfItems != 0 {
+            let cell = collectionCardView.dequeueReusableCell(withReuseIdentifier: "ProfileCardCVC", for: indexPath) as! ProfileCardCVC
             
             cell.lblName.text = "Kotak Mahindra Bank"
-          //  cell.accountLabel.text = "XXXX 2973"
-          //  cell.upiLabel.text = "thakurhira.1999@okkotak"
-          //  cell.manageButton.setTitle("Manage", for: .normal)
-        //cell.btnClickProfil
-        
-        cell.btnManage.tag = indexPath.row
-        cell.btnClickProfile.tag = indexPath.row
-        
-        cell.btnManage.addTarget(self, action:#selector(buttonManageTapped), for: .touchUpInside)
-        cell.btnClickProfile.addTarget(self, action:#selector(buttonEditTapped), for: .touchUpInside)
-
+            //  cell.accountLabel.text = "XXXX 2973"
+            //  cell.upiLabel.text = "thakurhira.1999@okkotak"
+            //  cell.manageButton.setTitle("Manage", for: .normal)
+            //cell.btnClickProfil
+            
+            cell.btnManage.tag = indexPath.row
+            cell.btnClickProfile.tag = indexPath.row
+            
+            cell.btnManage.addTarget(self, action:#selector(buttonManageTapped), for: .touchUpInside)
+            cell.btnClickProfile.addTarget(self, action:#selector(buttonEditTapped), for: .touchUpInside)
+            
+            
+            return cell
+        }else{
+            
+            let cell = collectionCardView.dequeueReusableCell(withReuseIdentifier: "ProfileCardCVC", for: indexPath) as! ProfileCardCVC
+            cell.contentView.addSubview(self.customButton)
+                    
+                    // Set button constraints
+                    
+                    
+                    // Add button action
+                    
+            cell.lblName.text = ""
+            cell.imgBack.image = UIImage(named: "my-card2-ic")
+            
+            cell.btnManage.tag = indexPath.row
+            cell.btnClickProfile.tag = indexPath.row
+            
+            cell.btnManage.addTarget(self, action:#selector(buttonManageTapped), for: .touchUpInside)
+            cell.btnClickProfile.addTarget(self, action:#selector(buttonEditTapped), for: .touchUpInside)
+            
             
             return cell
         }
+    }
+    
+    let customButton: UIButton = {
+            let button = UIButton(type: .custom)
+            button.setTitle("Add Card", for: .normal)
+        button.backgroundColor  = .clear
+            button.setTitleColor(.white, for: .normal)
+            button.translatesAutoresizingMaskIntoConstraints = false
+        button.setBackgroundImage(UIImage(named: "my-card2-ic"), for: .normal)
+            return button
+        }()
+    
+    @objc private func buttonTapped() {
+           print("Button was tapped!")
+       }
     
     @objc func buttonEditTapped() {
         print("Button was tapped!")
@@ -223,9 +273,8 @@ class UserProfileView: UIViewController,UICollectionViewDataSource,UICollectionV
         self.navigationController?.pushViewController(vc,animated: true)
         
     }
-
     
-    
+    @objc func addCardBtn(_ sender: UIButton) {}
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -265,6 +314,22 @@ class UserProfileView: UIViewController,UICollectionViewDataSource,UICollectionV
             
         }
     
+    
+    
+    @IBAction func btnProfileClicked(_ sender: UIButton) {
+        
+        
+//        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "PollsViewController") as! PollsViewController
+//        self.navigationController?.pushViewController(vc,animated: true)
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "ProfileVC") as! ProfileVC
+        self.navigationController?.pushViewController(vc, animated: true)
+
+        
+        
+    }
     
     
     @IBAction func btnMilstoneClicked(_ sender: Any) {

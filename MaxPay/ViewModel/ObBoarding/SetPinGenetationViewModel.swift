@@ -21,7 +21,7 @@ final class SetPinGenetationViewModel {
     
     //MARK: Data featching form server
     func setPinGenerationCall(_ strPhoneNumber:String,_ strMPin:String) {
-        let params : [String:Any]  = ["phone":strPhoneNumber,"skey":skey,"mpin":strMPin]
+        let params : [String:Any]  = ["mobile":strPhoneNumber,"mpin":strMPin]
         print("The dictionary is : \(params)")
         self.eventHandler?(.loading)
         ApiManager.sharedInstance.pinGenerationServiceApi(dict:params as NSDictionary, completion: { (model, err) in

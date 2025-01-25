@@ -344,7 +344,7 @@ class QuizQuesViewController: BaseVC {
         
         if isConnected == true {
             
-            attendQuizVM.AttendQuizModelApiCall(skeyStr: "142418AgQWGaSEHXoQ58ae75c4", questionid: quizdata?.id ?? 0, answerStr: ansTypeOptStr, punchinStr: punchinStr, punchoutStr: punchoutStr)
+            attendQuizVM.AttendQuizModelApiCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME", questionid: quizdata?.id ?? 0, answerStr: ansTypeOptStr, punchinStr: punchinStr, punchoutStr: punchoutStr)
             
             observeAttendQuizApi()
 

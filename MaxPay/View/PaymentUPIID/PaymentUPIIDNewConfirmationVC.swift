@@ -34,6 +34,7 @@ class PaymentUPIIDNewConfirmationVC: BaseVC, CLLocationManagerDelegate, bankSele
     var btnAddBeneficiaryTag: Int!
     var remark = ""
     var nickName = ""
+    var  isFromPayNow = false
     
     @IBOutlet weak var viewRemarkBg: UIView!
     @IBOutlet weak var viewTextNameBg: UIView!
@@ -111,225 +112,208 @@ class PaymentUPIIDNewConfirmationVC: BaseVC, CLLocationManagerDelegate, bankSele
         self.navigationController?.popViewController(animated: true)
     }
     
-    
-    func popBankSelected(cardInfo: AccountDetailsOnIIN) {
+   
+    func popBankSelected(cardInfo: AccountDetailsOnIIN, isFromPayNow:Bool) {
         
-        print(cardInfo)
-        // self.ApiCallForPay()
+        print("MB card info: \(cardInfo)")
+        print(isFromPayNow)
+//         self.ApiCallForPay()
         
         
         DispatchQueue.main.async {
-            
             SwiftLoader.show(animated: true)
-            
         }
         
-        
-        // Prepare the account details
-        let account = AccountPay(
-            
-            name: cardInfo.name ?? "",
-            mmid: cardInfo.mmid ?? "",
-            aeba: cardInfo.aeba ?? "",
-            mbeba: cardInfo.mbeba ?? "",
-            accRefNumber: cardInfo.accRefNumber ?? "",
-            ifsc: cardInfo.ifsc ?? "",
-            maskedAccnumber: cardInfo.maskedAccnumber ?? "",
-            status: cardInfo.status ?? "",
-            type: cardInfo.type ?? "",
-            vpa: cardInfo.vpa ?? "",
-            dLength: cardInfo.dLength ?? "",
-            dType: cardInfo.dType ?? "",
-            balance: cardInfo.balance ?? "",
-            balTime: cardInfo.balTime ?? "",
-            accountIfsc: cardInfo.ifsc ?? "",
-            iin:cardInfo.iin ?? ""
-            
-        )
-        
-        var strAccountDetails = ""
-        do {
-            let encoder = JSONEncoder()
-            encoder.outputFormatting = .prettyPrinted
-            let jsonData = try encoder.encode(account)
-            if let jsonString = String(data: jsonData, encoding: .utf8) {
-                strAccountDetails = jsonString
-            }
-        } catch {
-            print("Error encoding JSON: \(error)")
-        }
-        
-        print(strAccountDetails)
-        
-        self.apiCallOption = "pay"
-        
-        let nickName = self.txtName.text ?? ""
-        
-        
-        
-        let beneVpa = BeneVpa(name: self.beneName, vpa: self.beneVpa, nickName: nickName)
-        var strBeneVpa = ""
-        do {
-            
-            let encoder = JSONEncoder()
-            encoder.outputFormatting = .prettyPrinted
-            let jsonData = try encoder.encode(beneVpa)
-            if let jsonString = String(data: jsonData, encoding: .utf8) {
-                strBeneVpa = jsonString
-            }
-            
-        } catch {
-            print("Error encoding JSON: \(error)")
-        }
-        
-        let x = Double(self.txtAmount.text ?? "0") ?? 0
-        self.amtDecimal = String(format: "%.2f", Double(round(100 * x) / 100))
-        
-        remrkStr = self.txtRemark.text ?? ""
-        
-        if remrkStr == "" {
-            
-            remrkStr = "UPI"
-        }
-        
-        if mccCodeStr == "0000"{
-            
-            
-            tranTypeStr = "P2P"
-            
-        }else{
-            
-            tranTypeStr = "P2M"
-            
-        }
-        
-        let paymentInput = PaymentInput(
-            amount: "\(self.amtDecimal)",
-            merchantVpa: MerchantVpa,
-            merchantId: MerchantId,
-            submerchantid: SubMerchantId,
-            merchantChannelId: MerchChanId,
-            tranType: tranTypeStr,
-            mcc: mccCodeStr,
-            remarks: remrkStr,
-            initMode: "00",
-            purpose: "00",
-            refCategory: "00"
-        )
-        var strPaymentInput = ""
-        
-        do {
-            let encoder = JSONEncoder()
-            encoder.outputFormatting = .prettyPrinted
-            let jsonData = try encoder.encode(paymentInput)
-            if let jsonString = String(data: jsonData, encoding: .utf8) {
-                strPaymentInput = jsonString
+            // Prepare the account details
+            let account = AccountPay(
                 
-                print("strPaymentInput",strPaymentInput)
+                name: cardInfo.name ?? "",
+                mmid: cardInfo.mmid ?? "",
+                aeba: cardInfo.aeba ?? "",
+                mbeba: cardInfo.mbeba ?? "",
+                accRefNumber: cardInfo.accRefNumber ?? "",
+                ifsc: cardInfo.ifsc ?? "",
+                maskedAccnumber: cardInfo.maskedAccnumber ?? "",
+                status: cardInfo.status ?? "",
+                type: cardInfo.type ?? "",
+                vpa: cardInfo.vpa ?? "",
+                dLength: cardInfo.dLength ?? "",
+                dType: cardInfo.dType ?? "",
+                balance: cardInfo.balance ?? "",
+                balTime: cardInfo.balTime ?? "",
+                accountIfsc: cardInfo.ifsc ?? "",
+                iin:cardInfo.iin ?? ""
+                
+            )
+            
+            let strAccountDetails = encodeToJSON(account)
+            
+            
+            print(strAccountDetails)
+            
+            self.apiCallOption = "pay"
+            
+            let nickName = self.txtName.text ?? ""
+            
+            
+            
+            let beneVpa = BeneVpa(name: self.beneName, vpa: self.beneVpa, nickName: nickName)
+            let strBeneVpa = encodeToJSON(beneVpa)
+            
+            
+            let x = Double(self.txtAmount.text ?? "0") ?? 0
+            self.amtDecimal = String(format: "%.2f", Double(round(100 * x) / 100))
+            
+            remrkStr = self.txtRemark.text ?? ""
+            
+            if remrkStr == "" {
+                
+                remrkStr = "UPI"
             }
-        } catch {
-            print("Error encoding JSON: \(error)")
-        }
+            
+            if mccCodeStr == "0000"{
+                
+                
+                tranTypeStr = "P2P"
+                
+            }else{
+                
+                tranTypeStr = "P2M"
+                
+            }
+            
+            let paymentInput = PaymentInput(
+                amount: "\(self.amtDecimal)",
+                merchantVpa: MerchantVpa,
+                merchantId: MerchantId,
+                submerchantid: SubMerchantId,
+                merchantChannelId: MerchChanId,
+                tranType: tranTypeStr,
+                mcc: mccCodeStr,
+                remarks: remrkStr,
+                initMode: "00",
+                purpose: "00",
+                refCategory: "00"
+            )
         
+            let strPaymentInput = encodeToJSON(paymentInput)
+        
+            //        let operationQueue = OperationQueue()
+            //        let backgroundOperation = BlockOperation {
+            
+            print("strAccountDetails: \(strAccountDetails)")
+            print("strBeneVpa: \(strBeneVpa)")
+            print("strPaymentInput: \(strPaymentInput)")
+            
+            
+            //     DispatchQueue.global(qos: .background).async { [weak self] in
+            
+            //            guard let strongSelf = self else {
+            //                print("Self was deallocated before the operation completed.")
+            //                return
+            //            }
+        
+
         // Perform API call in the background
-        DispatchQueue.global(qos: .background).async { [weak self] in
-            
-            guard let strongSelf = self else { return }
-            //
-            //            OliveUpiManager.initiatePay(account: strAccountDetails, benevpa: strBeneVpa, paymentInput: strPaymentInput, viewController: strongSelf) { data, error in
-            
-            
-            OliveUpiManager.initiatePay(account: strAccountDetails, benevpa: strBeneVpa, paymentInput: strPaymentInput, viewController: self!) { (result, error) in
+        DispatchQueue.global(qos: .background).async {
+                            
+            OliveUpiManager.initiatePay(account: strAccountDetails, benevpa: strBeneVpa, paymentInput: strPaymentInput, viewController: self) { (result, error) in
+                 
+                    // Ensure UI updates are on the main thread
                 
-                
-                // Switch to main thread to update UI
-                DispatchQueue.main.async {
+                                    DispatchQueue.main.async {
+                                        if let err = error {
+                                            if err.code == 102 || err.code == 108 {
+                                                self.showErrorAlert(err.localizedDescription)
+                                            } else if err.code == 401 || err.code == 107 {
+                                                SwiftLoader.hide()
+                                                self.configuration()
+                                            }
+                                            SwiftLoader.hide()
+                                        } else {
+                                            if let result = result {
+                                                SwiftLoader.hide()
+                                                self.transId = result as! String
                     
-                    if let err = error {
-                        
-                        if err.code == 102 || err.code == 108 {
-                            
-                            strongSelf.showErrorAlert(err.localizedDescription)
-                            
-                        } else if err.code == 401 || err.code == 107 {
-                            
-                            SwiftLoader.hide()
-                            strongSelf.configuration()
-                            //return
-                        }
-                        
-                        SwiftLoader.hide()
-                        
-                    }
-                    else {
-                        
-                        
-                        if result != nil {
-                            
-                            SwiftLoader.hide()
-                            strongSelf.transId = result as! String
-                            
-                            if strongSelf.btnAddBeneficiaryTag == 1 {
-                                
-                                strongSelf.saveBeneficary(dataResp: strongSelf.transId)
-                                //return
-                            }
-                            
-                            let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
-                            
-                            if let vc = storyboard.instantiateViewController(withIdentifier: "PaymentSuccessfulVC") as? PaymentSuccessfulVC {
-                                
-                                vc.accountDetails = strongSelf.accountDetails
-                                vc.beneVpa = strongSelf.beneVpa
-                                vc.beneName = strongSelf.beneName
-                                vc.transId = strongSelf.transId
-                                vc.amount = "\(strongSelf.amtDecimal)"
-                                vc.fromScreenOption = "pay"
-                                vc.paymentStatus = "00"
-                                
-                                strongSelf.navigationController?.pushViewController(vc, animated: true)
-                                
-                            }
-                        }else {
-                            
-                            print("Data nil")
-                            
-                        }
-                        
-                        print("Data nil2ww")
-                        
-                    }
+                                                if self.btnAddBeneficiaryTag == 1 {
+                                                    self.saveBeneficary(dataResp: self.transId)
+                                                }
                     
-                    print("Data nil2")
-                }
-                
-                print("Data nil3")
-                
-            }
+                                                self.isFromPayNow = false
+                                                let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+                                                if let vc = storyboard.instantiateViewController(withIdentifier: "PaymentSuccessfulVC") as? PaymentSuccessfulVC {
+                                                    vc.accountDetails = self.accountDetails
+                                                    vc.beneVpa = self.beneVpa
+                                                    vc.beneName = self.beneName
+                                                    vc.transId = self.transId
+                                                    vc.amount = "\(self.amtDecimal)"
+                                                    vc.fromScreenOption = "pay"
+                                                    vc.paymentStatus = "00"
+                                                    self.navigationController?.pushViewController(vc, animated: true)
+                                                }
+                                            } else {
+                                                print("Data nil")
+                                            }
+                                        }
+                                    }
+                       }
+               }
             
-            
+        
         }
-        
-        
+     
+    
+   
+    // Helper function to encode an object to JSON
+    func encodeToJSON<T: Encodable>(_ object: T) -> String {
+        do {
+            let encoder = JSONEncoder()
+            encoder.outputFormatting = .prettyPrinted
+            let jsonData = try encoder.encode(object)
+            if let jsonString = String(data: jsonData, encoding: .utf8) {
+                return jsonString
+            }
+        } catch {
+            print("Error encoding JSON: \(error)")
+            return ""
+        }
+        return ""
     }
+
+//
+//    func jsonString(_ sdkHandShake:SDKHandshake) ->String{
+//         do {
+//             let jsonEncoder = JSONEncoder()
+//             jsonEncoder.outputFormatting = .prettyPrinted // Optional: Makes the JSON readable
+//             let jsonData = try jsonEncoder.encode(sdkHandShake)
+//             if let jsonString = String(data: jsonData, encoding: .utf8) {
+//                 print(jsonString)
+//                 // Now jsonString contains the JSON representation of sdkHandShake
+//                 return jsonString
+//             }
+//         } catch {
+//             print("Error: \(error.localizedDescription)")
+//             return ""
+//         }
+//         return ""
+//     }
+
     
     
     
     
     @IBAction func btnContinuePayAction(_ sender: UIButton) {
         
+        DispatchQueue.main.async {
+            let popOverVC = self.storyboard?.instantiateViewController(withIdentifier: "AccountSelectionPopVc")  as! AccountSelectionPopVc
+            
+            popOverVC.delegatePopupBankSelected = self
+            
+            popOverVC.view.frame = self.view.frame
+            self.view.addSubview(popOverVC.view)
+            self.addChild(popOverVC)
+        }
         
-        let popOverVC = self.storyboard?.instantiateViewController(withIdentifier: "AccountSelectionPopVc")  as! AccountSelectionPopVc
-        
-        //popOverVC.userName = contracterData.name ?? ""
-        //popOverVC.ContractorPassData = contracterData
-        //popOverVC.delegateYesSelectContractor = self
-        
-        popOverVC.delegatePopupBankSelected = self
-        
-        popOverVC.view.frame = self.view.frame
-        self.view.addSubview(popOverVC.view)
-        self.addChild(popOverVC)
         
         
         
@@ -345,29 +329,35 @@ class PaymentUPIIDNewConfirmationVC: BaseVC, CLLocationManagerDelegate, bankSele
     }
     
     func checkLocationAuthorizationStatus() {
-        let status = locationManager.authorizationStatus
-        
-        switch status {
-        case .notDetermined:
-            // Request when-in-use authorization
-            //locationManager.requestWhenInUseAuthorization()
-            
-            ApiCallForPay()
-            
-        case .restricted, .denied:
-            
-            // Handle the lack of authorization (e.g., show an alert)
-            showAlertWithSettings()
-            
-            
-            
-        case .authorizedWhenInUse, .authorizedAlways:
-            // Authorization granted, proceed with your function
-            ApiCallForPay()
-            
-        @unknown default:
-            // Handle other potential future cases
-            fatalError("Unknown authorization status")
+        if #available(iOS 14.0, *) {
+            let status = locationManager.authorizationStatus
+            switch status {
+            case .notDetermined:
+                // Request when-in-use authorization
+                //locationManager.requestWhenInUseAuthorization()
+                if isFromPayNow{
+                    ApiCallForPay()
+                }
+                
+            case .restricted, .denied:
+                
+                // Handle the lack of authorization (e.g., show an alert)
+                showAlertWithSettings()
+                
+                
+                
+            case .authorizedWhenInUse, .authorizedAlways:
+                // Authorization granted, proceed with your function
+                if isFromPayNow{
+                    ApiCallForPay()
+                }
+                
+            @unknown default:
+                // Handle other potential future cases
+                fatalError("Unknown authorization status")
+            }
+        } else {
+            // Fallback on earlier versions
         }
     }
     
@@ -380,7 +370,9 @@ class PaymentUPIIDNewConfirmationVC: BaseVC, CLLocationManagerDelegate, bankSele
         print("Authorization status changed to: \(status.rawValue)")
         switch status {
         case .authorizedWhenInUse, .authorizedAlways:
-            ApiCallForPay()
+            if isFromPayNow{
+                ApiCallForPay()
+            }
         case .denied, .restricted:
             print("Location access denied or restricted")
             showAlertWithSettings()
@@ -717,7 +709,7 @@ class PaymentUPIIDNewConfirmationVC: BaseVC, CLLocationManagerDelegate, bankSele
             encoder.outputFormatting = .prettyPrinted  // Add this line if you want the output to be formatted for better readability
             let jsonData = try encoder.encode(accountDetails)
             if let jsonString = String(data: jsonData, encoding: .utf8) {
-                //print(jsonString)
+                print(jsonString)
                 jsonObjectString = jsonString
             }
         } catch {
@@ -730,6 +722,7 @@ class PaymentUPIIDNewConfirmationVC: BaseVC, CLLocationManagerDelegate, bankSele
                 
                 DispatchQueue.global(qos: .background).async {
                     
+                    print("MB test jsonobject for check balance\(jsonObjectString)")
                     // Working Properly
                     OliveUpiManager.checkBalance(account: jsonObjectString, viewController: self) { data, error in
                         
@@ -903,14 +896,14 @@ extension PaymentUPIIDNewConfirmationVC: MFMessageComposeViewControllerDelegate 
                 print("Stop loading...")
             case .dataLoaded:
                 //print("Data loaded...")
-                if self?.checksumViewModel.checksumModel?.result == "Success" {
-                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.merchantauthtoken ?? ""
+                if self?.checksumViewModel.checksumModel?.data?.result == "Success" {
+                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.data?.merchantauthtoken ?? ""
                     
                     self?.performMerchantHandshake()
                     
                 }else{
                     DispatchQueue.main.async {
-                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.result ?? "")
+                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.data?.result ?? "")
                         SwiftLoader.hide()
                     }
                 }
@@ -930,10 +923,15 @@ extension PaymentUPIIDNewConfirmationVC: MFMessageComposeViewControllerDelegate 
         
         let jsonString = sdkHandShake.jsonString(sdkHandShake)
         
-        OliveUpiManager.initiateSDK(sdkHandshake: jsonString,view: self , delegate: self) { (data, err) in
+        OliveUpiManager.initiateSDK(sdkHandshake: jsonString,view: self , delegate: self) {[weak self] (data, err) in
+            guard let `self` = self else {
+                return
+            }
             //print("The data is:\(String(describing: data))")
             if self.apiCallOption == "pay" {
-                self.btnContinuePayAction(UIButton())
+                DispatchQueue.main.async {
+                    self.btnContinuePayAction(UIButton())
+                }
             } else if self.apiCallOption == "bene" {
                 self.saveBeneficary(dataResp: self.transId)
             } else if self.apiCallOption == "chkbal" {

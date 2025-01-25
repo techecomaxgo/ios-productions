@@ -9,19 +9,21 @@ import UIKit
 import CoreLocation
 import Foundation
 import Security
-
+let defaults = UserDefaults.standard
 class Common {
+    
     static let shared = Common()
     private init(){}
     
      var primaryAccRefNumber: String = ""
 
     
-    let defaults = UserDefaults.standard
+    
     let PHONE_NUMBER   = "PHONE_NUMBER"
     
     let UMobile_NUMBER   = "MOBILE_NUMBER"
-    
+    let UserImage   = "User_Image"
+
     let ISLOGGEDIN   = "ISLOGGEDIN"
     let ISINTRO   = "ISINTRO"
     let TOKEN = "TOKEN"
@@ -33,6 +35,7 @@ class Common {
     let USERFIRSTNAME = "USERFIRSTNAME"
     let USERLASTNAME = "USERLASTNAME"
     let MERCHANTAUTHTOKEN = "MERCHANTAUTHTOKEN"
+    let UNIQUEMERCHANTAUTHTOKEN = "UNIQUEMERCHANTAUTHTOKEN"
     let MY_CARDS = "MY_CARDS"
     let BBPS_FAVOURITE_CATEGORY = "BBPS_FAVOURITE_CATEGORY"
     let RECENT_CONTACTS = "RECENT_CONTACTS"
@@ -42,6 +45,8 @@ class Common {
     let DEVICE_BINDING_LIMIT = "DEVICE_BINDING_LIMIT"
     let COLLECT_REQUEST_LIMIT = "COLLECT_REQUEST_LIMIT"
     let PRIMARY_ACC_NO = "PRIMARY_ACC_NO"
+    let LATITUDE = "lat"
+    let LONGITUDE = "long"
     
     func isValidPhone(phone: String) -> Bool {
             let phoneRegex = "^[0-9+]{0,1}+[0-9]{5,16}$"
@@ -54,7 +59,12 @@ class Common {
     func getDeviceName() -> String {
         return UIDevice.current.name
     }
-    
+    func getDeviceIP() -> String {
+        return Utils.getIpAddress() ?? ""
+    }
+     func getOSVersion() -> String {
+        return (UIDevice.current.systemVersion)
+    }
     var isIntroDone:Bool?{
         get{
             return (defaults.value(forKey: ISINTRO) as? Bool)
@@ -169,6 +179,14 @@ class Common {
             defaults.set(newValue, forKey: USERFIRSTNAME)
         }
     }
+    //User  Image
+    var UserProfileImage:String?{
+        get{
+            return (defaults.value(forKey: UserImage) as? String)
+        }set{
+            defaults.set(newValue, forKey: UserImage)
+        }
+    }
     var userLastName:String?{
         get{
             return (defaults.value(forKey: USERLASTNAME) as? String)
@@ -181,6 +199,13 @@ class Common {
             return (defaults.value(forKey: MERCHANTAUTHTOKEN) as? String)
         }set{
             defaults.set(newValue, forKey: MERCHANTAUTHTOKEN)
+        }
+    }
+    var uniqueMerchantauthtoken:String?{
+        get{
+            return (defaults.value(forKey: UNIQUEMERCHANTAUTHTOKEN) as? String)
+        }set{
+            defaults.set(newValue, forKey: UNIQUEMERCHANTAUTHTOKEN)
         }
     }
     
@@ -221,6 +246,21 @@ class Common {
             return (defaults.value(forKey: TRAVEL_BUS_SEARCHES) as? Data)
         }set{
             defaults.set(newValue, forKey: TRAVEL_BUS_SEARCHES)
+        }
+    }
+    
+    var latitude:String?{
+        get{
+            return (defaults.value(forKey: LATITUDE) as? String)
+        }set{
+            defaults.set(newValue, forKey: LATITUDE)
+        }
+    }
+    var longitude:String?{
+        get{
+            return (defaults.value(forKey: LONGITUDE) as? String)
+        }set{
+            defaults.set(newValue, forKey: LONGITUDE)
         }
     }
     
@@ -393,5 +433,16 @@ class Common {
         return rrn
     }
     
+    func hideFirstSixDigits(of hideString: String, hideCount: Int) -> String {
+        guard hideString.count > hideCount else {
+            return hideString
+        }
+        
+        let startIndex = hideString.index(hideString.startIndex, offsetBy: hideCount)
+        let hiddenPart = String(repeating: "*", count: hideCount)
+        let visiblePart = hideString[startIndex...]
+
+        return hiddenPart + visiblePart
+    }
     
 }

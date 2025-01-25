@@ -112,7 +112,7 @@ class HotelRoomTypesVC: BaseVC {
         if isConnected == true {
         
             
-            hotelRoomTypesViewModel.GetHotelTypeApiCall(skeyStr: "142418AgQWGaSEHXoQ58ae75c4", city: "New Delhi, India", CheckInDate: "2024-06-16", CheckOutDate: "2024-06-17", RoomCount: 1, hotelID: "101098017", engineID: 32, eMTCommonID: "EMTHOTEL-1134482", hotelName: "CALISTA RESORT", Adults: 2, Child: 0, Nights: 1, HotelCount: 30, RoomDetails: roomDetails, maxPrice: "100000", minPrice: "100", sorttype: "Popular|DESC")
+            hotelRoomTypesViewModel.GetHotelTypeApiCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME", city: "New Delhi, India", CheckInDate: "2024-06-16", CheckOutDate: "2024-06-17", RoomCount: 1, hotelID: "101098017", engineID: 32, eMTCommonID: "EMTHOTEL-1134482", hotelName: "CALISTA RESORT", Adults: 2, Child: 0, Nights: 1, HotelCount: 30, RoomDetails: roomDetails, maxPrice: "100000", minPrice: "100", sorttype: "Popular|DESC")
            
 
             observeHotelRoomTypeApi()

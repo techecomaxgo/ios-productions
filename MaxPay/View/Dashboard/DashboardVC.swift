@@ -29,6 +29,8 @@ class DashboardVC: BaseVC {
     @IBOutlet weak var lblSecondaryWalletAmt: UILabel!
     @IBOutlet weak var lblRank: UILabel!
     @IBOutlet weak var lblCardNumber: UILabel!
+    @IBOutlet weak var imgUser: UIImageView!
+
 //    @IBOutlet weak var vwBackWalletBalance: UIView!
     @IBOutlet weak var vwBackBalance: UIView!
 //    @IBOutlet weak var imgCardBlackWallet: UIImageView!
@@ -46,6 +48,7 @@ class DashboardVC: BaseVC {
     
     @IBOutlet weak var lblFogo: UILabel!
     private var checksumViewModel = SIMSelectionViewModel()
+    private var validateUpiOTPViewModel = ValidateUpiOTPViewModel()
     var strTagForCardMenuSelection: String = ""
     var btnTagForCardMenuSelection: UIButton?
     var lblBalance = UILabel()
@@ -56,13 +59,14 @@ class DashboardVC: BaseVC {
     private let totalLimitAmountLabel = UILabel()
     private let editButton = UIButton()
     private let donutChartView = DonutChartViewss()
+    private var rankVM =  RankViewModel()
     
     private let totalSpentContainer = UIView()
-        private let totalSpentLabel = UILabel()
-        private let totalSpentAmountLabel = UILabel()
-        private let availableBalanceContainer = UIView()
-        private let availableBalanceLabel = UILabel()
-        private let availableBalanceAmountLabel = UILabel()
+    private let totalSpentLabel = UILabel()
+    private let totalSpentAmountLabel = UILabel()
+    private let availableBalanceContainer = UIView()
+    private let availableBalanceLabel = UILabel()
+    private let availableBalanceAmountLabel = UILabel()
     
 
     @IBOutlet weak var scrollViewBanner: UIScrollView!{
@@ -120,7 +124,7 @@ class DashboardVC: BaseVC {
 //        setupOvalView()
         setupAdBanner()
         
- 
+ /*
         // validation for User, should be able to add 3 accounts in a day, after 12am object will be reseted
         if Common.shared.deviceBindingLimit != nil {
             if Common.shared.deviceBindingLimit! >= DEVICE_BINDING_LIMIT  {
@@ -144,14 +148,22 @@ class DashboardVC: BaseVC {
                 self.removeCollectRequestObjectAtMidnight()
             }
         }
-        
+      */
         
         setupUILayouts()
         setupConstraintsLayouts()
-
+       // setupCollectionView()
         
     }
-    
+    func setupCollectionView() {
+        let layout = UICollectionViewFlowLayout()
+        layout.sectionInset = .zero
+        layout.minimumLineSpacing = 0 //as per your requirement
+        layout.minimumInteritemSpacing = 0 //as per your requirement
+        layout.scrollDirection = .horizontal
+        layout.itemSize = CGSize(width: self.collVWCard.frame.width / 2, height: self.collVWCard.frame.height - 100)
+        self.collVWCard.collectionViewLayout = layout
+    }
     
     @IBAction func btnSecoundaryTapped(_ sender: Any) {
         
@@ -176,9 +188,8 @@ class DashboardVC: BaseVC {
     
     
     
-    
-    
     func setupUILayouts(){
+        self.lblRank.text = "Rank \(self.rankVM.rankModelBase?.data?.myrank?.rank ?? 0)"
         
         view.backgroundColor = .white
         
@@ -189,7 +200,7 @@ class DashboardVC: BaseVC {
         scrollView.addSubview(totalLimitLabel)
 
                 // Total Limit Amount Label
-                totalLimitAmountLabel.text = "₹27,500"
+                totalLimitAmountLabel.text = "₹ -----"
                 totalLimitAmountLabel.font = UIFont.systemFont(ofSize: 22, weight: .bold)
                 totalLimitAmountLabel.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(totalLimitAmountLabel)
@@ -219,7 +230,7 @@ class DashboardVC: BaseVC {
                totalSpentContainer.addSubview(totalSpentLabel)
 
                // Total Spent Amount Label
-               totalSpentAmountLabel.text = "₹25,000"
+               totalSpentAmountLabel.text = "₹ -----"
                totalSpentAmountLabel.font = UIFont.systemFont(ofSize: 20, weight: .bold)
                totalSpentAmountLabel.translatesAutoresizingMaskIntoConstraints = false
                totalSpentContainer.addSubview(totalSpentAmountLabel)
@@ -238,24 +249,19 @@ class DashboardVC: BaseVC {
                availableBalanceContainer.addSubview(availableBalanceLabel)
 
                // Available Balance Amount Label
-               availableBalanceAmountLabel.text = "₹2,500"
+               availableBalanceAmountLabel.text = "₹ -----"
                availableBalanceAmountLabel.font = UIFont.systemFont(ofSize: 20, weight: .bold)
                availableBalanceAmountLabel.textColor = UIColor(red: 0.32, green: 0.78, blue: 0.47, alpha: 1.00)
                availableBalanceAmountLabel.translatesAutoresizingMaskIntoConstraints = false
                availableBalanceContainer.addSubview(availableBalanceAmountLabel)
         
-        
         scrollViewBanner.translatesAutoresizingMaskIntoConstraints = false
            view.addSubview(scrollViewBanner)
         
-        
         cardViewlistData.translatesAutoresizingMaskIntoConstraints = false
            view.addSubview(cardViewlistData)
-        
     }
-    
 
-//  
     
     private func setupConstraintsLayouts() {
         NSLayoutConstraint.activate([
@@ -274,8 +280,8 @@ class DashboardVC: BaseVC {
             editButton.widthAnchor.constraint(equalTo: editButton.heightAnchor),
             
             // Donut Chart View Constraints
-                     donutChartView.topAnchor.constraint(equalTo: totalLimitLabel.bottomAnchor, constant: 30),
-                     donutChartView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+                     donutChartView.topAnchor.constraint(equalTo: totalLimitLabel.bottomAnchor, constant: 0),
+                     donutChartView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
                      donutChartView.widthAnchor.constraint(equalToConstant: 220),
                      donutChartView.heightAnchor.constraint(equalTo: donutChartView.widthAnchor),
 
@@ -403,6 +409,14 @@ class DashboardVC: BaseVC {
     }
     
     func setUIData(){
+        self.imgUser.layer.cornerRadius = imgUser.frame.width / 2
+        self.imgUser.layer.masksToBounds = true
+        
+//        let image =  defaults.object(forKey:"UserImage")
+//        let UserName =  defaults.object(forKey:"UserName")
+//       // imgUser..setImage(with: "SHJAa")
+
+        self.imgUser.sd_setImage(with: URL(string: "\(Common.shared.UserProfileImage ?? "")") , placeholderImage: UIImage(named: "placeholder.png"))
         lblCustomerName.text = "\(Common.shared.userFirstName ?? "") \(Common.shared.userLastName ?? "")"
         setCardNumber(label: lblCardNumber)
     }
@@ -476,6 +490,18 @@ class DashboardVC: BaseVC {
         super.viewWillAppear(animated)
         
         navigationController?.setNavigationBarHidden(true, animated: animated)
+        
+        let isConnected = ReachabilityClass.isConnectedToNetwork()
+        
+        if isConnected == true {
+            rankVM.RankModelApiCall(skeyStr: "")
+            
+        }else{
+            
+            SwiftLoader.hide()
+            self.showErrorAlert("Please check your internet connection.")
+            
+        }
       
         
         cardsArr = []
@@ -538,7 +564,11 @@ class DashboardVC: BaseVC {
                 print(error.localizedDescription)
             }
         }
-        viewUPIOptionsGg.isHidden = cardsArr.count == 0
+       //Nitin
+        if cardsArr.count == 0 {
+            viewUPIOptionsGg.isHidden = cardsArr.count == 0
+            viewUPIOptionsGg.frame.size.height = 0
+        }
         collVWCard.reloadData()
         
     }
@@ -781,12 +811,12 @@ class DashboardVC: BaseVC {
             
         case 206:
             print("1")
-            
+            self.showToast(message: "coming Soon")
             //RechargeViewController
             
-            let storyBoard: UIStoryboard = UIStoryboard(name: "USP", bundle: nil)
-            let vc = storyBoard.instantiateViewController(withIdentifier: "RechargeViewController") as! RechargeViewController
-            self.navigationController?.pushViewController(vc, animated: true)
+//            let storyBoard: UIStoryboard = UIStoryboard(name: "USP", bundle: nil)
+//            let vc = storyBoard.instantiateViewController(withIdentifier: "RechargeViewController") as! RechargeViewController
+//            self.navigationController?.pushViewController(vc, animated: true)
             
         case 207:
             let storyBoard: UIStoryboard = UIStoryboard(name: "Complaint", bundle: nil)
@@ -868,7 +898,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource,UIColl
         if section == 0 {
             return cardsArr.count
         }else{
-            return 1
+            return 2
         }
     }
     
@@ -903,21 +933,42 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource,UIColl
     }
     
     // didSelectItemAt
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        if indexPath.section == 0 {
-            return CGSize(width: self.collVWCard.frame.width/1.2, height: self.collVWCard.frame.size.height)
-        }
-        
-        return CGSize(width: cardsArr.count == 0 ? self.collVWCard.frame.width/1.2 : self.collVWCard.frame.width/4.5, height: self.collVWCard.frame.size.height)
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        
+//        if indexPath.section == 0 {
+//            return CGSize(width: self.collVWCard.frame.width/1.2, height: self.collVWCard.frame.size.height)
+//        }
+//        
+//        return CGSize(width: cardsArr.count == 0 ? self.collVWCard.frame.width/1.2 : self.collVWCard.frame.width/4.5, height: self.collVWCard.frame.size.height)
+//    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0.0
+        return 10
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0.0
+        return 10
     }
+    
+    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let height = collectionView.bounds.size.height-2
+//        let width = height-20
+//        return CGSize(width: width, height:height)
+//    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+            let xPadding = 0
+            let spacing = 0
+            let rightPadding = 10
+            let width = (CGFloat(UIScreen.main.bounds.size.width - 30) - CGFloat(xPadding + spacing + rightPadding))/2
+            let height = CGFloat(215)
+
+            return CGSize(width: width, height: height)
+        }
     
     @objc func btnMenu(_ sender: UIButton) {
         let vw = SetMPIN()
@@ -934,7 +985,7 @@ extension DashboardVC {
     func configuration() {
        // ProgressHUD.showSucceed()
         initViewModel()
-        observeEvent()
+       // observeEvent()
     }
     //MARK Network checking
     func initViewModel() {
@@ -1172,7 +1223,7 @@ extension DashboardVC: MFMessageComposeViewControllerDelegate {
         let isConnected = ReachabilityClass.isConnectedToNetwork()
         
         if isConnected == true {
-            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.token ?? "")
+            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.getDeviceID())
         }else{
             DispatchQueue.main.async {
                 SwiftLoader.hide()
@@ -1198,15 +1249,15 @@ extension DashboardVC: MFMessageComposeViewControllerDelegate {
             case .dataLoaded:
                 print("Data loaded...")
                 
-                if self?.checksumViewModel.checksumModel?.result == "Success" {
+                if self?.checksumViewModel.checksumModel?.data?.result == "Success" {
                     
-                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.merchantauthtoken ?? ""
+                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.data?.merchantauthtoken ?? ""
                     
                     self?.performMerchantHandshake()
                     
                 }else{
                     DispatchQueue.main.async {
-                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.result ?? "")
+                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.data?.result ?? "")
                     }
                 }
                 
@@ -1400,23 +1451,39 @@ extension DashboardVC: SetMPINDelegate {
             SwiftLoader.show(animated: true)
         }
         
-        let accountDetailsTemp = self.cardsArr[sender.tag]
-        
-        let accountDetails = AccountCheckBalance(name: accountDetailsTemp.name ?? "", mmid: accountDetailsTemp.mmid ?? "", aeba: accountDetailsTemp.aeba ?? "", mbeba: accountDetailsTemp.mbeba ?? "", accRefNumber: accountDetailsTemp.accRefNumber ?? "", ifsc: accountDetailsTemp.ifsc ?? "", maskedAccnumber: accountDetailsTemp.maskedAccnumber ?? "", status: accountDetailsTemp.status ?? "", type: accountDetailsTemp.type ?? "", vpa: accountDetailsTemp.vpa ?? "", dLength: accountDetailsTemp.dLength ?? "", dType: accountDetailsTemp.dType ?? "", balance: accountDetailsTemp.balance ?? "", balTime: accountDetailsTemp.balTime ?? "")
-        
-        var jsonObjectString = ""
-        
-        do {
-            let encoder = JSONEncoder()
-            encoder.outputFormatting = .prettyPrinted  // Add this line if you want the output to be formatted for better readability
-            let jsonData = try encoder.encode(accountDetails)
-            if let jsonString = String(data: jsonData, encoding: .utf8) {
-                print(jsonString)
-                jsonObjectString = jsonString
-            }
-        } catch {
-            print("Error encoding JSON: \(error)")
-        }
+     let accountDetailsTemp = self.cardsArr[sender.tag]
+     
+//     // Prepare the account details for encoding
+//     let accountDetails = AccountCheckBalance(
+//         name: accountDetailsTemp.name ?? "",
+//         mmid: accountDetailsTemp.mmid ?? "",
+//         aeba: accountDetailsTemp.aeba ?? "",
+//         mbeba: accountDetailsTemp.mbeba ?? "",
+//         accRefNumber: accountDetailsTemp.accRefNumber ?? "",
+//         ifsc: accountDetailsTemp.ifsc ?? "",
+//         maskedAccnumber: accountDetailsTemp.maskedAccnumber ?? "",
+//         status: accountDetailsTemp.status ?? "",
+//         type: accountDetailsTemp.type ?? "",
+//         vpa: accountDetailsTemp.vpa ?? "",
+//         dLength: accountDetailsTemp.dLength ?? "",
+//         dType: accountDetailsTemp.dType ?? "",
+//         balance: accountDetailsTemp.balance ?? "",
+//         balTime: accountDetailsTemp.balTime ?? ""
+//     )
+//        
+//        var jsonObjectString = ""
+//        
+//        do {
+//            let encoder = JSONEncoder()
+//            encoder.outputFormatting = .prettyPrinted  // Add this line if you want the output to be formatted for better readability
+//            let jsonData = try encoder.encode(accountDetails)
+//            if let jsonString = String(data: jsonData, encoding: .utf8) {
+//                print(jsonString)
+//                jsonObjectString = jsonString
+//            }
+//        } catch {
+//            print("Error encoding JSON: \(error)")
+//        }
         
         
         if accountDetailsTemp.vpa != "" {
@@ -1433,6 +1500,38 @@ extension DashboardVC: SetMPINDelegate {
             } else {
                 
                 DispatchQueue.global(qos: .background).async {
+                    
+                    // Prepare the account details for encoding
+                    let accountDetails = AccountCheckBalance(
+                        name: accountDetailsTemp.name ?? "",
+                        mmid: accountDetailsTemp.mmid ?? "",
+                        aeba: accountDetailsTemp.aeba ?? "",
+                        mbeba: accountDetailsTemp.mbeba ?? "",
+                        accRefNumber: accountDetailsTemp.accRefNumber ?? "",
+                        ifsc: accountDetailsTemp.ifsc ?? "",
+                        maskedAccnumber: accountDetailsTemp.maskedAccnumber ?? "",
+                        status: accountDetailsTemp.status ?? "",
+                        type: accountDetailsTemp.type ?? "",
+                        vpa: accountDetailsTemp.vpa ?? "",
+                        dLength: accountDetailsTemp.dLength ?? "",
+                        dType: accountDetailsTemp.dType ?? "",
+                        balance: accountDetailsTemp.balance ?? "",
+                        balTime: accountDetailsTemp.balTime ?? ""
+                    )
+                       
+                       var jsonObjectString = ""
+                       
+                       do {
+                           let encoder = JSONEncoder()
+                           encoder.outputFormatting = .prettyPrinted  // Add this line if you want the output to be formatted for better readability
+                           let jsonData = try encoder.encode(accountDetails)
+                           if let jsonString = String(data: jsonData, encoding: .utf8) {
+                               print(jsonString)
+                               jsonObjectString = jsonString
+                           }
+                       } catch {
+                           print("Error encoding JSON: \(error)")
+                       }
                     
                     // Working Properly
                     OliveUpiManager.checkBalance(account: jsonObjectString, viewController: self) { data, error in
@@ -1482,6 +1581,8 @@ extension DashboardVC: SetMPINDelegate {
         
         
     }
+    
+    
     
     
     

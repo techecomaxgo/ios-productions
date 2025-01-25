@@ -6,7 +6,7 @@
 //
 protocol bankSelectedDelegate {
     
-    func popBankSelected(cardInfo:AccountDetailsOnIIN)
+    func popBankSelected(cardInfo:AccountDetailsOnIIN, isFromPayNow: Bool)
     
 }
 
@@ -139,7 +139,7 @@ class AccountSelectionPopVc: UIViewController {
             
             // print(selectedBankIndex)
              
-             delegatePopupBankSelected?.popBankSelected(cardInfo: selectedCard!)
+            delegatePopupBankSelected?.popBankSelected(cardInfo: selectedCard!, isFromPayNow: true)
 
              removeAnimate()
             

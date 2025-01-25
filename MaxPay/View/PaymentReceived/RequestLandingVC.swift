@@ -31,7 +31,7 @@ class RequestLandingCell: UITableViewCell {
     public func setReceivedData(object: PendingNotificationsListModel) {
         lblName.text = object.beneName
         lblVpa.text = object.payeeVpa
-        lblValidDate.text = object.expdate
+        lblValidDate.text = "Valid up to \(object.expdate?.prefix(11) ?? "")"
         lblAmount.text = "₹\(object.amount ?? "0")"
         
 //        if let imageData = object.thumbnailImageData {
@@ -388,7 +388,14 @@ extension RequestLandingVC: UITableViewDelegate, UITableViewDataSource {
     @objc func btnApproveAction(_ sender:UIButton) {
         
         selectedRequestIndex = sender.tag
-        oliveApproveApiCall(selectedRequestIndex)
+        
+        showAlertMessageWithActionButtonAndCancelButton(title: "Be Alert | सावधान रहें", message: "\nIs this transaction a fraud? \n\nक्या यह लेनदेन धोखाधड़ी है?", actionButtonText: "No", cancelActionButtonText: "Yes", vc: self) { status in
+            if status == 1 {
+                self.oliveBlockApiCall()
+            }else if status == 0 {
+                self.oliveApproveApiCall(self.selectedRequestIndex)
+            }
+        }
         
     }
     
@@ -667,7 +674,7 @@ extension RequestLandingVC: MFMessageComposeViewControllerDelegate {
         let isConnected = ReachabilityClass.isConnectedToNetwork()
         
         if isConnected == true {
-            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.token ?? "")
+            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.getDeviceID() ?? "")
         }else{
             DispatchQueue.main.async {
                 SwiftLoader.hide()
@@ -691,14 +698,14 @@ extension RequestLandingVC: MFMessageComposeViewControllerDelegate {
                 print("Stop loading...")
             case .dataLoaded:
                 print("Data loaded...")
-                if self?.checksumViewModel.checksumModel?.result == "Success" {
-                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.merchantauthtoken ?? ""
+                if self?.checksumViewModel.checksumModel?.data?.result == "Success" {
+                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.data?.merchantauthtoken ?? ""
                     
                     self?.performMerchantHandshake()
                     
                 }else{
                     DispatchQueue.main.async {
-                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.result ?? "")
+                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.data?.result ?? "")
                     }
                 }
                 

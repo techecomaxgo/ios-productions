@@ -70,7 +70,7 @@ class DonutChartViewss: UIView {
             .foregroundColor: UIColor.darkGray
         ])
         
-        attributedText.append(NSAttributedString(string: "₹27,500", attributes: [
+        attributedText.append(NSAttributedString(string: "₹ -----", attributes: [
             .font: UIFont.systemFont(ofSize: 16, weight: .bold), // Reduced font size
             .foregroundColor: UIColor.black
         ]))

@@ -67,12 +67,12 @@ class MilesViewController: BaseVC {
         
         if isConnected == true {
             
-            milesTotalViewModel.GetMilesApiCall(skeyStr: "142418AgQWGaSEHXoQ58ae75c4")
+            milesTotalViewModel.GetMilesApiCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME")
 
             observeGetTotalMilesApi()
             
             
-            allmilesTransactionViewModel.GetAllMilesApiCall(skeyStr: "142418AgQWGaSEHXoQ58ae75c4")
+            allmilesTransactionViewModel.GetAllMilesApiCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME")
             
             observeGetAllMilesApi()
             

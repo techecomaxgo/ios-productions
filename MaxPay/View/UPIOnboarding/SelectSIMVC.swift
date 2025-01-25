@@ -76,13 +76,13 @@ extension SelectSIMVC {
                 print("Data loaded...")
                 SwiftLoader.hide()
                 DispatchQueue.main.async {
-                    if self?.simSelectionViewModel.checksumModel?.result == "Success" {
-                        Common.shared.merchantauthtoken = self?.simSelectionViewModel.checksumModel?.data?.merchantauthtoken ?? ""
+                    if self?.simSelectionViewModel.checksumModel?.data?.result == "Success" {
+                        Common.shared.merchantauthtoken = self?.simSelectionViewModel.checksumModel?.data?.data?.merchantauthtoken ?? ""
                        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
                        let vc = storyboard.instantiateViewController(withIdentifier: "SelectBankVC") as! SelectBankVC
                        self?.navigationController?.pushViewController(vc,animated: true)
                     }else{
-                        self?.showErrorAlert(self?.simSelectionViewModel.checksumModel?.message ?? "")
+                        self?.showErrorAlert(self?.simSelectionViewModel.checksumModel?.data?.result ?? "")
                     }
                 }
             case .error(let error):

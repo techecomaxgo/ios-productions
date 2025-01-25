@@ -1048,17 +1048,34 @@ class ScanQRVC: BaseVC, AVCaptureMetadataOutputObjectsDelegate {
                 
                 DispatchQueue.main.async {
                 
-                let storyboard = UIStoryboard(name: "BhimUpi", bundle: nil)
-                let vc = storyboard.instantiateViewController(withIdentifier: "PaymentUPIIDNewVC") as! PaymentUPIIDNewVC
-                vc.qrData = data
-                vc.accountDetails = self.accountDetails
-                vc.beneVpa = data["pa"] as! String
-                vc.beneName = data["pn"] as! String
-                vc.isFromQrScan = true
-               // self.navigationItem.setHidesBackButton(true, animated: false)
-                self.navigationController?.pushViewController(vc, animated: true)
+//                let storyboard = UIStoryboard(name: "BhimUpi", bundle: nil)
+//                let vc = storyboard.instantiateViewController(withIdentifier: "PaymentUPIIDNewVC") as! PaymentUPIIDNewVC
+//                vc.qrData = data
+//                vc.accountDetails = self.accountDetails
+//                
+//                vc.beneVpa = data["pa"] as! String
+//                vc.beneName = data["pn"] as! String
+//                vc.isFromQrScan = true
+//               // self.navigationItem.setHidesBackButton(true, animated: false)
+//                self.navigationController?.pushViewController(vc, animated: true)
+//                    
+                   
+                    let storyboard = UIStoryboard(name: "BhimUpi", bundle: nil)
+                    if let vc = storyboard.instantiateViewController(withIdentifier: "PaymentUPIIDNewVC") as? PaymentUPIIDNewVC {
+                        vc.qrData = data
+                        vc.accountDetails = self.accountDetails
+                        vc.beneVpa = data["pa"] as? String ?? ""
+                        vc.beneName = data["pn"] as? String ?? ""
+                        vc.isFromQrScan = true
+                        self.navigationController?.pushViewController(vc, animated: true)
+                    } else {
+                        print("Failed to instantiate PaymentUPIIDNewVC.")
+                    }
                     
             }
+                
+               
+
                 
                 
                 
@@ -1168,7 +1185,7 @@ extension ScanQRVC: MFMessageComposeViewControllerDelegate {
         let isConnected = ReachabilityClass.isConnectedToNetwork()
         
         if isConnected == true {
-            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.token ?? "")
+            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.getDeviceID())
         }else{
             DispatchQueue.main.async {
                 SwiftLoader.hide()
@@ -1194,13 +1211,13 @@ extension ScanQRVC: MFMessageComposeViewControllerDelegate {
                 
             case .dataLoaded:
                 print("Data loaded...")
-                if self?.checksumViewModel.checksumModel?.result == "Success" {
-                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.merchantauthtoken ?? ""
+                if self?.checksumViewModel.checksumModel?.data?.result == "Success" {
+                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.data?.merchantauthtoken ?? ""
                     
                     self?.performMerchantHandshake()
                 }else{
                     DispatchQueue.main.async {
-                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.result ?? "")
+                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.data?.result ?? "")
                     }
                 }
                 

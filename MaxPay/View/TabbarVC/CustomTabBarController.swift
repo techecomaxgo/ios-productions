@@ -23,15 +23,10 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-     
-
         let appTabBar = AppTabBar()
         self.setValue(appTabBar, forKey: "tabBar")
-
         NotificationCenter.default.addObserver(self, selector: #selector(handleNotification(_:)), name: .accountNotification, object: nil)
 
-        
         // Create instances of view controllers
         //let homeVC = HomeVC()
         
@@ -44,14 +39,21 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
 
 
         //let expenseVC = MyExpenseVC()
+//        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+//        let vc = storyBoard.instantiateViewController(withIdentifier: "BhimUPIHistoryVC") as! BhimUPIHistoryVC
+//        vc.accountDetails = accountDetails
+//        self.navigationController?.pushViewController(vc, animated: true)
+        let expenseVC = UIStoryboard(name: "Dashboard", bundle: nil).instantiateViewController(withIdentifier: "BhimUPIHistoryVC") as! BhimUPIHistoryVC
+        expenseVC.accountDetails = self.primaryAccount
+//        self.present(vc, animated: true)//navigationController?.pushViewController(vc, animated: true)
         
-        let expenseVC = storyBoard.instantiateViewController(withIdentifier: "TrasactionVC") as! TrasactionVC
+//        let expenseVC = storyBoard.instantiateViewController(withIdentifier: "TrasactionVC") as! TrasactionVC
 
         expenseVC.view.backgroundColor = .white
-        expenseVC.tabBarItem = UITabBarItem(title: "My Expense", image: UIImage(named: "tab-myexpense-ic"), selectedImage: UIImage(named: "expenseIcon"))
+        expenseVC.tabBarItem = UITabBarItem(title: "History", image: UIImage(named: "tab-myexpense-ic"), selectedImage: UIImage(named: "expenseIcon"))
         let nav2 = UINavigationController(rootViewController: expenseVC)
 
-        
+        //MB - test for  scan QR call
         let qrVC = storyBoard.instantiateViewController(withIdentifier: "ScanQRVC") as! ScanQRVC
 
         qrVC.view.backgroundColor = .white

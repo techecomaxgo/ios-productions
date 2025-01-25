@@ -8,7 +8,7 @@
 import Foundation
 
 struct TranHistoryModel: Codable {
-    
+    var code:String?
     var amount: String?
     var beneficiaryName: String?
     var creditAccount: String?
@@ -43,6 +43,7 @@ struct TranHistoryModel: Codable {
     
     
     enum CodingKeys: CodingKey {
+        case code
         case amount
         case beneficiaryName
         case creditAccount
@@ -418,45 +419,37 @@ struct UpdatableMandateInput: Codable {
     var umn: String?
     var remarks: String?
     var mcc:String?
-    var payermobile:String?
+    var payerMobile:String?
     var purpose : String?
-    var sharetopayee : String?
-    var validitystart : String?
-    var validityend : String?
-    var mandatename : String?
+    var shareToPayee : String?
+    var validityStart : String?
+    var validityEnd : String?
+    var mandateName : String?
     var revocable: String?
-    var amountrule:String?
+    var amountRule:String?
     var amount: String?
     var recurrence: String?
-    var rulevalue: String?
-    var ruletype: String?
-    var initiatedby : String?
-
-    //var txnid: String?
-   // var action: String?
-    //var merchanttxnid: String?
+    var ruleValue: String?
+    var ruleType: String?
+    var initiatedBy : String?
 
     enum CodingKeys: CodingKey {
         case umn
         case remarks
         case mcc
-        case payermobile
+        case payerMobile
         case purpose
-        //case merchanttxnid
-        case sharetopayee
-        case validitystart
-        case validityend
-        case mandatename
+        case shareToPayee
+        case validityStart
+        case validityEnd
+        case mandateName
         case revocable
-        //case merchanttxnid
-        
-        case amountrule
+        case amountRule
         case amount
         case recurrence
-        case rulevalue
-        case ruletype
-        //case merchanttxnid
-        case initiatedby
+        case ruleValue
+        case ruleType
+        case initiatedBy
         
     }
 }

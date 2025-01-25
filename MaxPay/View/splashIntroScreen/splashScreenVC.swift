@@ -13,14 +13,15 @@ class splashScreenVC: UIViewController {
         super.viewDidLoad()
         UserDefaults.standard.set(0, forKey: "selectIndex")
         
-        
+        let values =  defaults.object(forKey:"ISLOGGEDINFInal")
+
         if Common.shared.isIntroDone == false || Common.shared.isIntroDone == nil {
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "Intro1VC") as! Intro1VC
             self.navigationController?.pushViewController(vc,animated: true)
             
-        } else if Common.shared.isLoggedIn ?? false {
+        } else if values as? String == "true" {
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "LoginMPIN") as! LoginMPIN

@@ -57,3 +57,20 @@ func showAlertMessageWithOkAction(title: String, message: String, vc: UIViewCont
     }))
     vc.present(alert, animated: true, completion: nil)
 }
+
+func showAlertMessageWithActionButtonAndCancelButton(title: String, message: String, actionButtonText: String,cancelActionButtonText: String, vc: UIViewController, complitionHandeler: @escaping(_ status: Int)-> (Void)){
+    
+    let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    //alert.view.backgroundColor = APP_THEAM_COLOUR
+    alert.addAction(UIAlertAction(title: cancelActionButtonText,
+                                  style: .destructive,
+                                  handler: {(_: UIAlertAction!) in
+        complitionHandeler(1)
+    }))
+    alert.addAction(UIAlertAction(title: actionButtonText, style: .default, handler: { (action) in
+        complitionHandeler(0)
+    }))
+    DispatchQueue.main.async {
+        vc.present(alert, animated: true, completion: nil)
+    }
+}

@@ -466,7 +466,7 @@ extension RechargePlanViewController {
             
             // 7007439651
             
-            rechargeAllPlanVM.rechargePlanCall(numStr: "7007439651", skey: "142418AgQWGaSEHXoQ58ae75c4")
+            rechargeAllPlanVM.rechargePlanCall(numStr: "7007439651", skey: "AVJQIdwn79iR0zlP0iKNKumME")
             
             
         }else{

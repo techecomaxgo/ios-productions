@@ -32,17 +32,19 @@ let AppStoreUpdateMajorPoUpStatement = "A new version of this App is available. 
 
 let AppStoreUpdateMinorPoUpStatement = "A new version of this App is available. Kindly update the App for a better experience."
 
-let FAndBBaseUrl = "https://oneapp.dev.smartler.in"
-//let  FAndBBaseUrl = "https://oneapp.qa.smartler.in"
-let MemberbenefitsURL = "https://www.itchotels.com/in/en/clubitc/membership-tiers"
-let AboutClubITC = "https://www.itchotels.com/in/en/clubitc"
-let offerURL = "https://www.itchotels.com/in/en/offers.html"
-let LegalURL = "https://www.itchotels.com/in/en/terms"
-let AboutusURL = "https://www.itchotels.com/in/en"
-let termsCondURL = "https://www.itchotels.com/in/en/terms"
-let collinairURl = "https://www.itchotels.com/in/en/clubitc-culinaire"
-let ITCImagePath = FAndBBaseUrl + "/images/clubitc/icon/"
-let termsCondURLITCLub = "https://www.itchotels.com/in/en/clubitc/terms"
+
+//Unwant ed Url In Code 27 Nov
+//let FAndBBaseUrl = "https://oneapp.dev.smartler.in"
+////let  FAndBBaseUrl = "https://oneapp.qa.smartler.in"
+//let MemberbenefitsURL = "https://www.itchotels.com/in/en/clubitc/membership-tiers"
+//let AboutClubITC = "https://www.itchotels.com/in/en/clubitc"
+//let offerURL = "https://www.itchotels.com/in/en/offers.html"
+//let LegalURL = "https://www.itchotels.com/in/en/terms"
+//let AboutusURL = "https://www.itchotels.com/in/en"
+//let termsCondURL = "https://www.itchotels.com/in/en/terms"
+//let collinairURl = "https://www.itchotels.com/in/en/clubitc-culinaire"
+//let ITCImagePath = FAndBBaseUrl + "/images/clubitc/icon/"
+//let termsCondURLITCLub = "https://www.itchotels.com/in/en/clubitc/terms"
 let AppHeaderTitle = ""
 //var FAndBBrownColor: UIColor {
 //    Utility.getColorFromHexString("A4805F") ?? .black
@@ -65,7 +67,7 @@ var strFCMToken: String = ""
 var dictBusList = JSON()
 var dictBusSeatList = JSON()
 var strBookingID:String?
-var skey = "142418AgQWGaSEHXoQ58ae75c4"
+var skey = "AVJQIdwn79iR0zlP0iKNKumME"
 
 //let AggregtorCode = "MAXPE"
 //let MerchantId = "MAXPE"

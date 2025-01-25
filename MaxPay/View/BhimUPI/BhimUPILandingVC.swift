@@ -36,7 +36,7 @@ class BhimUPILandingVC: BaseVC {
     @IBOutlet weak var tableUpiOptions: UITableView!
 //    var arrUpiOptions = ["Send Money to Contact or UPI ID", "Send Money to Bank Account", "Request Money", "UPI Autopay", "Manage UPI ID", "Manage UPI Number", "Transaction History"]
     
-    var arrUpiOptions = ["Send Money to Contact or UPI ID", "Send Money to Bank Account", "Request Money", "UPI Autopay", "DeRegister UPI","Manage UPI Number", "Transaction History","Remove All Cache"]
+    var arrUpiOptions = ["Send Money to Contact or UPI ID", "Request Money to Contact or UPI ID", "Send Money to Bank Account", "UPI Autopay", "Beneficiary","Block List", "Transaction History"]
 
     
     override func viewDidLoad() {
@@ -155,36 +155,34 @@ extension BhimUPILandingVC: UITableViewDelegate, UITableViewDataSource {
             vc.sendOption = "bank"
             self.navigationController?.pushViewController(vc, animated: true)
             
-        } else if option == "Request Money" {
+        } else if option == "Request Money to Contact or UPI ID" {
             
             let storyBoard: UIStoryboard = UIStoryboard(name: "BhimUpi", bundle: nil)
             let vc = storyBoard.instantiateViewController(withIdentifier: "RequestLandingVC") as! RequestLandingVC
             vc.accountDetails = accountDetails
             self.navigationController?.pushViewController(vc, animated: true)
             
-        } 
-        
-        else if option == "UPI Autopay" {
+        } else if option == "UPI Autopay" {
             
             let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
             let vc = storyBoard.instantiateViewController(withIdentifier: "MandateListVC") as! MandateListVC
             vc.accountDetails = accountDetails
             self.navigationController?.pushViewController(vc, animated: true)
             
-        } 
-        
-        
-        
-        
-        
-        else if option == "Manage UPI ID" {
+        } else if option == "Manage UPI ID" {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "MandateListVC") as! MandateListVC
+            vc.accountDetails = accountDetails
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else if option == "Beneficiary" {
             
+        } else if option == "Block List" {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "BlockUPIListVC") as! BlockUPIListVC
+            vc.accountDetails = accountDetails
+            self.navigationController?.pushViewController(vc, animated: true)
             
-        } 
-        
-        
-        
-        else if option == "DeRegister UPI" {
+        } else if option == "DeRegister UPI" {
             
             deRegisterUpi()
             
@@ -362,7 +360,7 @@ extension BhimUPILandingVC: MFMessageComposeViewControllerDelegate {
         let isConnected = ReachabilityClass.isConnectedToNetwork()
         
         if isConnected == true {
-            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.token ?? "")
+            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.getDeviceID() ?? "")
         }else{
             DispatchQueue.main.async {
                 SwiftLoader.hide()
@@ -390,12 +388,12 @@ extension BhimUPILandingVC: MFMessageComposeViewControllerDelegate {
             case .dataLoaded:
                 print("Data loaded...")
 
-                if self?.checksumViewModel.checksumModel?.result == "Success" {
-                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.merchantauthtoken ?? ""
+                if self?.checksumViewModel.checksumModel?.data?.result == "Success" {
+                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.data?.merchantauthtoken ?? ""
                     self?.performMerchantHandshake()
                 }else{
                     DispatchQueue.main.async {
-                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.result ?? "")
+                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.data?.result ?? "")
                     }
                 }
                 

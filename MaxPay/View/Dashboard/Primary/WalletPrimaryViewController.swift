@@ -92,13 +92,13 @@ class WalletPrimaryViewController: UIViewController, UITableViewDelegate, UITabl
     
     
     func fetchLatestWalletTransaction() {
-            let urlString = "https://uat.maxupi.in/api/v1/wallet/p-latest-wallet"
+            let urlString = "https://api.maxupi.in/api/v1/wallet/p-latest-wallet"
             guard let url = URL(string: urlString) else { return }
             
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
             request.addValue("Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiIyIiwicGhvbmUiOiI4MDc2Mzk2MjY3IiwidWlkIjoiYTFkYWZiZDYtZTA2ZC00ZmE0LWE5NzktOWRlMmFhMzI1ZGI5IiwiaWF0IjoxNzI1MjU3OTg5LCJleHAiOjE3MzMwMzM5ODl9.XGFhoKFB7Zy_uN_EUqwRDaRI0yXgGo4t5w9ZluUlwS4", forHTTPHeaderField: "Authorization")
-            let body: [String: Any] = ["skey": "142418AgQWGaSEHXoQ58ae75c4"]
+            let body: [String: Any] = ["skey": "AVJQIdwn79iR0zlP0iKNKumME"]
             request.httpBody = try? JSONSerialization.data(withJSONObject: body)
             
             let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
@@ -424,7 +424,7 @@ class WalletPrimaryViewController: UIViewController, UITableViewDelegate, UITabl
     }
 
     func fetchLatestWalletTransaction(skey: String) {
-        guard let url = URL(string: "https://uat.maxupi.in/api/v1/wallet/p-latest-wallet") else {
+        guard let url = URL(string: "https://api.maxupi.in/api/v1/wallet/p-latest-wallet") else {
             onError?("Invalid URL")
             return
         }

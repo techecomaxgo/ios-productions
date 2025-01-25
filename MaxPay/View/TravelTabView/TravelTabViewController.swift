@@ -56,9 +56,9 @@ class TravelTabViewController: BaseVC,UIPageViewControllerDataSource, UIPageView
         
         // Set up the view controllers
                let storyboard = UIStoryboard(name: "USP", bundle: nil)
-               let firstVC = storyboard.instantiateViewController(withIdentifier: "PageOneViewController")
+               let firstVC = storyboard.instantiateViewController(withIdentifier: "SearchBusVC")
                let secondVC = storyboard.instantiateViewController(withIdentifier: "FlightBookViewController")
-               let thirdVC = storyboard.instantiateViewController(withIdentifier: "PageTwoViewController")
+               let thirdVC = storyboard.instantiateViewController(withIdentifier: "HotelSearchVC")
                viewControllers = [firstVC, secondVC, thirdVC]
                
                // Set up the page view controller

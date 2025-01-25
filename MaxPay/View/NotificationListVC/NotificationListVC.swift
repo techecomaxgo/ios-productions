@@ -121,8 +121,13 @@ extension NotificationListVC {
             case .dataLoaded:
                 print("Data loaded...")
 
-                self?.arrNotifications.append(contentsOf: (self?.notificationViewModel.notificationListModel?.notifications)!)
-                
+                //self?.arrNotifications.append(contentsOf: //(self?.notificationViewModel.notificationLis*/tModel?.notifications)!)
+                if let notifications = self?.notificationViewModel.notificationListModel?.notifications {
+                    self?.arrNotifications.append(contentsOf: notifications)
+                } else {
+                    print("No notifications available or notificationListModel is nil")
+                }
+
                 DispatchQueue.main.async {
                     SwiftLoader.hide()
                     self?.tableNotifications.reloadData()

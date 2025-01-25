@@ -23,9 +23,8 @@ class CreateQRMandateVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-  
     @IBAction func btnCreateTapped(_ sender: Any) {
+        
     }
     
 }

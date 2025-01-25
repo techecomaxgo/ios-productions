@@ -44,11 +44,11 @@ class RegistractionVC: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func btnTermConditionAction(_ sender: Any) {
-        openURL("https://maxpaywallet.com/term.html")
+        openURL(termsConditions_PrivacyPolicy)
     }
     
     @IBAction func btnPrivacyPolicyAction(_ sender: Any) {
-        openURL("https://maxpaywallet.com/privacy.html")
+        openURL(termsConditions_PrivacyPolicy)
     }
     
     func isValidPhone(phone: String) -> Bool {

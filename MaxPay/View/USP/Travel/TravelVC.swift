@@ -140,7 +140,7 @@ class TravelVC: BaseVC, DatePickerDelegate, popRoomsSelectedDelegate {
         super.viewDidLoad()
         
         
-        selectedTab = 2
+        selectedTab = 0
         
         // Usage
         
@@ -472,9 +472,9 @@ class TravelVC: BaseVC, DatePickerDelegate, popRoomsSelectedDelegate {
 extension TravelVC: CustomSearchDelegate { // Bus
     
     @objc func didTapBusSearchButton(sender: UIButton) {
-//        let storyBoard: UIStoryboard = UIStoryboard(name: "USP", bundle: nil)
-//        let vc = storyBoard.instantiateViewController(withIdentifier: "BusSearchListVC") as! BusSearchListVC
-//        self.navigationController?.pushViewController(vc, animated: true)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "USP", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "BusSearchListVC") as! BusSearchListVC
+        self.navigationController?.pushViewController(vc, animated: true)
         
         isBolCity = false
         configurationForCity()

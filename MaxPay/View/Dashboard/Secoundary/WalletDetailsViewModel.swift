@@ -15,7 +15,7 @@ class WalletDetailsViewModel {
     private(set) var balance: String? // Property to store the balance
     
     func fetchWalletDetails(skey: String, phone: String) {
-        guard let url = URL(string: "https://uat.maxupi.in/api/v1/wallet/swallet/get-swallet-balance") else {
+        guard let url = URL(string: "https://api.maxupi.in/api/v1/wallet/swallet/get-swallet-balance") else {
             onError?("Invalid URL")
             return
         }

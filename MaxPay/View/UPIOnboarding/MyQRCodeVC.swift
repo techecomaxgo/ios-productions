@@ -41,28 +41,26 @@ class MyQRCodeVC: UIViewController {
         lblName.text = accountDetails?.name
         lblUpi.text = "UPI ID: \(accountDetails?.vpa ?? "")"
         if let bankName = accountDetails?.bankName, let maskedAccnumber = accountDetails?.maskedAccnumber {
-            lblBankName.text = bankName + " - " + maskedAccnumber.suffix(4)
+//            lblBankName.text = bankName  ??  "" + " - " + maskedAccnumber.suffix(4) ?? ""
         }
         
         if let logo = accountDetails?.bankLogo {
             if logo == "" {
-                imgBankIcon.image = UIImage(named: "bank_logo")
+//                imgBankIcon.image = UIImage(named: "bank_logo")
             } else {
                 Alamofire.request(logo).response { response in
                     if let data = response.data {
                         let image = UIImage(data: data)
-                        self.imgBankIcon.image = image
+//                        self.imgBankIcon.image = image
                     } else {
                         print("Data is nil. I don't know what to do :(")
-                        self.imgBankIcon.image = UIImage(named: "bank_logo")
+//                        self.imgBankIcon.image = UIImage(named: "bank_logo")
                     }
                 }
             }
-        } else {
-            imgBankIcon.image = UIImage(named: "bank_logo")
         }
                 
-        let URI = "upi://pay?pa=\(accountDetails?.vpa ?? "")&cu=INR&am=0&pn=\(accountDetails?.name ?? "")&refUrl=https://www.axisbank.com&orgid=400005&mode=01&purpose=00"
+        let URI = "upi://pay?pa=\(accountDetails?.vpa ?? "")&cu=INR&am=0&pn=\(accountDetails?.name ?? "")&refUrl=https://www.axisbank.com&orgid=400005&mode=01&purpose=00&mc=0000"
         
         imgQRCode.image = generateQRCode(from: URI)
     }

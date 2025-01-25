@@ -79,7 +79,7 @@ class SelectCityViewController: BaseVC,UITextFieldDelegate {
                 
             }
             
-            originCityViewModel.OriginCityModelApiCall(skeyStr: "142418AgQWGaSEHXoQ58ae75c4", pageStr: 500)
+            originCityViewModel.OriginCityModelApiCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME", pageStr: 500)
             observeCityApi()
             
         }else{
@@ -142,7 +142,7 @@ class SelectCityViewController: BaseVC,UITextFieldDelegate {
                         
                     }
                     
-                    originCityViewModel.OriginCityModelApiCall(skeyStr: "142418AgQWGaSEHXoQ58ae75c4", pageStr: 500)
+                    originCityViewModel.OriginCityModelApiCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME", pageStr: 500)
                     observeCityApi()
                     
                 }else{

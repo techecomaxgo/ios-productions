@@ -18,7 +18,7 @@ class RaiseQueryPopUpView: UIViewController {
     var selectedTag: Int?
     private var checksumViewModel = SIMSelectionViewModel()
     var tranHistoryObjss: TranHistoryModel?
-    
+    var selectedComplaintReason: ReqComplientVo?
     
     
     
@@ -37,7 +37,7 @@ class RaiseQueryPopUpView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.configuration()
         
         print("tranHistoryObjss ====>",tranHistoryObjss)
 
@@ -181,11 +181,14 @@ class RaiseQueryPopUpView: UIViewController {
     func raiseQuery(reqAdjFlag: String, reqAdjCode: String) {
         print("Raising query with reqAdjFlag: \(reqAdjFlag), reqAdjCode: \(reqAdjCode)")
         
-        popView_Ctrl.isHidden = true
-        bgView_ctrl.isHidden = true
+   //     popView_Ctrl.isHidden = true
+//        bgView_ctrl.isHidden = true
         
-        let raisedDetails = ReqComplientVo(orgTxnId: responseDictFromCheck?["tranid"] as? String ?? tranHistoryObjss?.tranid , reqAdjFlag: reqAdjFlag, reqAdjCode: reqAdjCode , initiationMode: "U1", subType: "PAYER", type: "COMPLAINT")
-        
+        let raisedDetails = ReqComplientVo(orgTxnId: tranHistoryObjss?.tranid , reqAdjFlag: reqAdjFlag, reqAdjCode: reqAdjCode , initiationMode: "U1", subType: "PAYER", type: "COMPLAINT")
+        self.selectedComplaintReason = raisedDetails
+        DispatchQueue.main.async {
+            SwiftLoader.show(animated: true)
+        }
         var strraisedDetails = ""
         do {
             let encoder = JSONEncoder()
@@ -207,28 +210,27 @@ class RaiseQueryPopUpView: UIViewController {
                         self.showErrorAlert(err.localizedDescription)
                     } else if err.code == 401 || err.code == 107 {
                         self.configuration()
-                        return
+                        
                     } else {
                         self.showErrorAlert(err.localizedDescription)
                     }
                 }
                 
-            } else if let dt = data as? [String: Any], let crnNumber = dt["crnNumber"] as? String {
-                
+            } else if let dt = data as? [String: Any] {
+                let crnNumber = dt["crn"] as? String ?? ""
                 print("dt=========================>> ",dt)
                 
                 
                 DispatchQueue.main.async {
                     SwiftLoader.hide()
-                    self.showToast(message: "Your complaint is raised successfully with CRN no: \(crnNumber)", font: .systemFont(ofSize: 12))
-                    self.popView_Ctrl.isHidden = true
-                    
-                    let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
-                    let vc = storyBoard.instantiateViewController(withIdentifier: "BhimTransactionNextDetailsVC") as! BhimTransactionNextDetailsVC
-                 
-                    self.navigationController?.pushViewController(vc, animated: true)
-                    
-                    
+                    showAlertMessageWithOkAction(title: "MaxUPI", message: "Your complaint is raised successfully with CRN no: \(crnNumber)", vc: self) {[weak self] _ in
+                        DispatchQueue.main.async {
+                            self?.parent?.viewWillAppear(false)
+                            self?.view?.removeFromSuperview()
+                            self?.dismiss(animated: true)
+                            self?.removeFromParent()
+                        }
+                    }
                     
                 }
             } else {
@@ -251,26 +253,7 @@ class RaiseQueryPopUpView: UIViewController {
     
 
     @IBAction func btnRaiseQueryClicked(_ sender: UIButton) {
-    //    removeAnimate()
-//        uncheck()
-//        sender.isSelected = true
-//        
-//        print("Selected Button Tag: \(sender.tag)")
-//        
-//        switch sender.tag {
-//        case 1:
-//            raiseQuery(reqAdjFlag: "PBRB", reqAdjCode: "008")
-//        case 2:
-//            raiseQuery(reqAdjFlag: "PBRB", reqAdjCode: "U021")
-//        case 3:
-//            raiseQuery(reqAdjFlag: "PBRB", reqAdjCode: "U022")
-//        case 4:
-//            raiseQuery(reqAdjFlag: "PBRB", reqAdjCode: "U023")
-//        default:
-//            print("No matching case for tag \(sender.tag)")
-//        }
-        
-        
+   
         guard let tag = selectedTag else {
             print("No button selected")
             return
@@ -290,6 +273,7 @@ class RaiseQueryPopUpView: UIViewController {
             raiseQuery(reqAdjFlag: "PBRB", reqAdjCode: "U022")
         case 4:
             raiseQuery(reqAdjFlag: "PBRB", reqAdjCode: "U023")
+        
       
             
             
@@ -385,7 +369,7 @@ extension RaiseQueryPopUpView: MFMessageComposeViewControllerDelegate {
         let isConnected = ReachabilityClass.isConnectedToNetwork()
         
         if isConnected == true {
-            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.token ?? "")
+            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.getDeviceID() ?? "")
         }else{
             DispatchQueue.main.async {
                 SwiftLoader.hide()
@@ -442,12 +426,12 @@ extension RaiseQueryPopUpView: MFMessageComposeViewControllerDelegate {
             case .dataLoaded:
                 print("Data loaded...")
 
-                if self?.checksumViewModel.checksumModel?.result == "Success" {
-                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.merchantauthtoken ?? ""
+                if self?.checksumViewModel.checksumModel?.data?.result == "Success" {
+                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.data?.merchantauthtoken ?? ""
                     self?.performMerchantHandshake()
                 }else{
                     DispatchQueue.main.async {
-                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.result ?? "")
+                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.data?.result ?? "")
                     }
                 }
                 
@@ -466,13 +450,17 @@ extension RaiseQueryPopUpView: MFMessageComposeViewControllerDelegate {
         
         let jsonString = sdkHandShake.jsonString(sdkHandShake)
         
-        OliveUpiManager.initiateSDK(sdkHandshake: jsonString,view: self , delegate: self) { (data, err) in
+        OliveUpiManager.initiateSDK(sdkHandshake: jsonString,view: self , delegate: self) {[weak self] (data, err) in
             print("The data is:\(String(describing: data))")
-//            if self.apiCall == "PendingMandates" {
-//                self.getPendingMandates()
-//            } else {
-//                self.getMandateTransactions()
-//            }
+            guard let `self` = self else {
+                return
+            }
+            if self.selectedComplaintReason != nil {
+                DispatchQueue.global(qos:.background).async {
+                    self.raiseQuery(reqAdjFlag: self.selectedComplaintReason?.reqAdjFlag ?? "", reqAdjCode: self.selectedComplaintReason?.reqAdjCode ?? "")
+                }
+                
+            }
         }
     }
     

@@ -22,15 +22,15 @@
 
 private var selectedBank: Int = 0
 
-let AggregtorCode = "MAXPE"
-let MerchantId = "MAXPE"
-let MerchChanId = "OLIVEAPP"
+let AggregtorCode = "ECOMAXGOPROD1234"
+let MerchantId = "ECOMAXGOPROD1234"
+let MerchChanId = "ECOMAXGOPROD1234"
 //let SubMerchantId = "OLIVE"
-let SubMerchantId = "674545454"
+let SubMerchantId = "ECOMAXGOPROD1234"
 
-let MerchantVpa = "maxpe@maxaxis"
-let MCC = "7322"
-let appId = "com.max.ecomaxgo.maxpe"
+let MerchantVpa = "ecomaxgo@maxaxis"
+let MCC = "6211"
+let appId = "com.maxupi.in.maxpay"
 let TranTypeP2P = "P2P"
 let TranTypeP2M = "P2M"
 
@@ -47,6 +47,7 @@ import Foundation
 struct SDKHandshake:Codable {
     static let shared = SDKHandshake()
     var emailId = ""
+    var subscriptionId = 0
     var merchId = ""
     var merchChanId = ""
     var submerchantid = ""
@@ -58,6 +59,9 @@ struct SDKHandshake:Codable {
     var custname = ""
     var merchantauthtoken = ""
     var unqTxnId = ""
+    
+    
+    
     func jsonString(_ sdkHandShake:SDKHandshake) ->String{
         do {
             let jsonEncoder = JSONEncoder()
@@ -74,6 +78,7 @@ struct SDKHandshake:Codable {
         }
         return ""
     }
+    
     func generateRandomDigits(_ count: Int) -> String {
         var result = ""
         for _ in 0..<count {

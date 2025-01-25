@@ -108,7 +108,7 @@ class FlightTwoWayViewController: BaseVC, flightfilterSelectedDelegate {
                 
             }
             
-            searchFlightTwoVm.flightTwoSearchApiCall(skeyStr: "142418AgQWGaSEHXoQ58ae75c4", travelDateStr: departTwoDateStr, returnDateStr: returnTwoDateStr, originStr: originCode, destinationStr: destinationCode, adultStr: 1, childStr: 0, infantStr: 0, tripTypeStr: 1, cabinStr: 0)
+            searchFlightTwoVm.flightTwoSearchApiCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME", travelDateStr: departTwoDateStr, returnDateStr: returnTwoDateStr, originStr: originCode, destinationStr: destinationCode, adultStr: 1, childStr: 0, infantStr: 0, tripTypeStr: 1, cabinStr: 0)
             
             
             /*

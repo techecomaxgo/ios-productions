@@ -82,7 +82,7 @@ class CardDetailsViewModel {
     var cardDetails: CardDetailsResponse?
 
     func fetchCardDetails(skey: String) {
-        guard let url = URL(string: "https://uat.maxupi.in/api/v1/wallet/get-card-details") else { return }
+        guard let url = URL(string: "https://api.maxupi.in/api/v1/wallet/get-card-details") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")

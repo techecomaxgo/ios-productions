@@ -53,7 +53,7 @@ class QuizVC: BaseVC {
         
         if isConnected == true {
             
-            getQuizViewModel.GetQuizModelBaseCall(skeyStr: "142418AgQWGaSEHXoQ58ae75c4")
+            getQuizViewModel.GetQuizModelBaseCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME")
             
             observeGetQuizApi()
 

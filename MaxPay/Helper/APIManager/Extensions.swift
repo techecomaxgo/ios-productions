@@ -83,6 +83,9 @@ protocol DesignableBorder {
         text = placeholderText
     }
 }
+
+private var __maxLengths = [UITextField: Int]()
+
 extension UITextField{
    @IBInspectable var placeHolderColor: UIColor? {
         get {
@@ -92,6 +95,24 @@ extension UITextField{
             self.attributedPlaceholder = NSAttributedString(string:self.placeholder != nil ? self.placeholder! : "", attributes:[NSAttributedString.Key.foregroundColor: newValue!])
         }
     }
+    
+        @IBInspectable var maxLength: Int {
+            get {
+                guard let l = __maxLengths[self] else {
+                   return 150 // (default int limit)
+                }
+                return l
+            }
+            set {
+                __maxLengths[self] = newValue
+                addTarget(self, action: #selector(setMaxLength), for: .editingChanged)
+            }
+        }
+
+        @objc func setMaxLength(textField: UITextField) {
+            let t = textField.text
+            textField.text = t?.prefix(maxLength).description
+        }
 }
 
 extension PHAsset {
@@ -222,4 +243,16 @@ extension UITextField {
         self.rightView = paddingView
         self.rightViewMode = .always
     }
+}
+
+extension Date {
+    func getCurrentDateTime()->String {
+        // Get the current date and time
+        let currentDate = Date()
+        let isoFormatter = ISO8601DateFormatter()
+        isoFormatter.timeZone = TimeZone(secondsFromGMT: 0) // Set to UTC
+        let isoDateString = isoFormatter.string(from: currentDate)
+        return isoDateString
+    }
+
 }

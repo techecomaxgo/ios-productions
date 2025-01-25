@@ -145,7 +145,7 @@ class HotelDetailsViewController: BaseVC {
                 
             }
             
-            hotelDetailVM.GetHotelDetailsModelApiCall(skeyStr: "142418AgQWGaSEHXoQ58ae75c4", hotelIDStr: SelectedhotelsData?.hotelID ?? "", engineIDStr: SelectedhotelsData?.engineType ?? 0, eMTCommonIDStr: SelectedhotelsData?.eMTCommonID ?? "")
+            hotelDetailVM.GetHotelDetailsModelApiCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME", hotelIDStr: SelectedhotelsData?.hotelID ?? "", engineIDStr: SelectedhotelsData?.engineType ?? 0, eMTCommonIDStr: SelectedhotelsData?.eMTCommonID ?? "")
             
             observeSearchDetailsApi()
             

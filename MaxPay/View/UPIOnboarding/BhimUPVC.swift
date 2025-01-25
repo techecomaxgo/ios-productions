@@ -91,10 +91,12 @@ class BhimUPVC: BaseVC {
                     switch interfaceType {
                     case .wifi:
                         print("Connected via Wi-Fi")
+                        
+
                         DispatchQueue.main.async {
                             
                             self.showErrorAlert("Sim registration failed due to non-cellular network")
-                            
+
                         }
                     case .cellular:
                         print("Connected via Cellular")
@@ -104,7 +106,7 @@ class BhimUPVC: BaseVC {
                     }
                 }
             } else {
-                print("No internet connection")
+//                print("No internet connection")
             }
             
         
@@ -249,7 +251,7 @@ extension BhimUPVC {
         let isConnected = ReachabilityClass.isConnectedToNetwork()
         
         if isConnected == true {
-            simSelectionViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.token ?? "")
+            simSelectionViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.getDeviceID())
         }else{
             SwiftLoader.hide()
             self.showErrorAlert("Please check your internet connection.")
@@ -276,14 +278,14 @@ extension BhimUPVC {
                 print("Data loaded...")
                 SwiftLoader.hide()
                 DispatchQueue.main.async {
-                    if self?.simSelectionViewModel.checksumModel?.result == "Success" {
-                        Common.shared.merchantauthtoken = self?.simSelectionViewModel.checksumModel?.data?.merchantauthtoken ?? ""
+                    if self?.simSelectionViewModel.checksumModel?.data?.result == "Success" {
+                        Common.shared.merchantauthtoken = self?.simSelectionViewModel.checksumModel?.data?.data?.merchantauthtoken ?? ""
                        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
                        let vc = storyboard.instantiateViewController(withIdentifier: "SelectBankVC") as! SelectBankVC
                        self?.navigationController?.pushViewController(vc,animated: true)
                     }else{
                         
-                        self?.showErrorAlert(self?.simSelectionViewModel.checksumModel?.message ?? "")
+                        self?.showErrorAlert(self?.simSelectionViewModel.checksumModel?.data?.result ?? "")
                         
                     }
                 }

@@ -14,6 +14,7 @@ import MessageUI
 class BhimUPIHistoryVC: BaseVC {
     
     private var checksumViewModel = SIMSelectionViewModel()
+    var refreshControl: UIRefreshControl!
     var accountDetails: AccountDetailsOnIIN?
     @IBOutlet weak var btnEndDate: UIButton!
     @IBOutlet weak var btnStartDate: UIButton!
@@ -23,9 +24,15 @@ class BhimUPIHistoryVC: BaseVC {
     @IBOutlet weak var lblNoDataAvailable: UILabel!
     
     var tranHistoryArr: [TranHistoryModel] = []
+    var isFromTabbar = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Setup Refresh Control
+        refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+        tblTrasactionHistory.refreshControl = refreshControl
         
         vwStartDate.layer.applyCornerRadiusShadow()
         vwEndDate.layer.applyCornerRadiusShadow()
@@ -38,11 +45,33 @@ class BhimUPIHistoryVC: BaseVC {
         getTransactionHistory()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if isFromTabbar == true{
+            
+        }else{
+            
+        }
+    }
+    
     func getCurrentDateTime() -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd/MM/yyyy"
         let dateString = formatter.string(from: Date())
         return dateString
+    }
+    
+    @objc func refreshData() {
+        // Simulate data fetching or refreshing
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            // Update your dataArray with new data here if needed
+            self.getTransactionHistory()
+            
+            // Reload the table view
+            self.tblTrasactionHistory.reloadData()
+            
+            // End the refreshing
+            self.refreshControl.endRefreshing()
+        }
     }
     
     func getCurrentDateAddingOneMonth() -> String {
@@ -120,58 +149,58 @@ class BhimUPIHistoryVC: BaseVC {
     }
     
     func getTransactionHistory() {
-        
-        
-        let fromDateStr = self.btnStartDate.titleLabel?.text
-        
-        let toDateStr = self.btnEndDate.titleLabel?.text
-        
-        if let fromDate = fromDateStr, let toDate = toDateStr {
+        DispatchQueue.main.async {
+            let fromDateStr = self.btnStartDate.titleLabel?.text
             
-            DispatchQueue.main.async {
-                SwiftLoader.show(animated: true)
-            }
+            let toDateStr = self.btnEndDate.titleLabel?.text
             
-            DispatchQueue.global(qos: .background).async {
+            if let fromDate = fromDateStr, let toDate = toDateStr {
                 
-                OliveUpiManager.tranHistory(fromDate: fromDate, toDate: toDate) { data, error in
+                DispatchQueue.main.async {
+                    SwiftLoader.show(animated: true)
+                }
+                
+                DispatchQueue.global(qos: .background).async {
                     
-                    if let err = error {
-                        if err.code == 102 { // VPA not allowed for this customer
-                            DispatchQueue.main.async {
-                                self.showErrorAlert(err.localizedDescription)
-                            }
-                        } else if err.code == 401 || err.code == 107 {
-                            
-                            self.configuration()
-                            return
-                            
-                        }
-                        DispatchQueue.main.async {
-                            SwiftLoader.hide()
-                        }
+                    OliveUpiManager.tranHistory(fromDate: fromDate, toDate: toDate) { data, error in
                         
-                    } else {
-                        
-                        
-                        self.tranHistoryArr.removeAll()
-                        
-                        if let dt = data {
-                            
-                            if let data = SelectBankVC.convertToData(dt) {
-                                do {
-                                    let beneficiaryList = try JSONDecoder().decode([TranHistoryModel].self, from: data)
-                                    for beneficiary in beneficiaryList {
-                                        self.tranHistoryArr.append(beneficiary)
-                                    }
-                                } catch {
-                                    print(error.localizedDescription)
-                                }
-                                
+                        if let err = error {
+                            if err.code == 102 { // VPA not allowed for this customer
                                 DispatchQueue.main.async {
-                                    self.tblTrasactionHistory.reloadData()
-                                    self.lblNoDataAvailable.isHidden = self.tranHistoryArr.count != 0
-                                    SwiftLoader.hide()
+                                    self.showErrorAlert(err.localizedDescription)
+                                }
+                            } else if err.code == 401 || err.code == 107 {
+                                
+                                self.configuration()
+                                return
+                                
+                            }
+                            DispatchQueue.main.async {
+                                SwiftLoader.hide()
+                            }
+                            
+                        } else {
+                            
+                            
+                            self.tranHistoryArr.removeAll()
+                            
+                            if let dt = data {
+                                
+                                if let data = SelectBankVC.convertToData(dt) {
+                                    do {
+                                        let beneficiaryList = try JSONDecoder().decode([TranHistoryModel].self, from: data)
+                                        for beneficiary in beneficiaryList {
+                                            self.tranHistoryArr.append(beneficiary)
+                                        }
+                                    } catch {
+                                        print(error.localizedDescription)
+                                    }
+                                    
+                                    DispatchQueue.main.async {
+                                        self.tblTrasactionHistory.reloadData()
+                                        self.lblNoDataAvailable.isHidden = self.tranHistoryArr.count != 0
+                                        SwiftLoader.hide()
+                                    }
                                 }
                             }
                         }
@@ -185,6 +214,7 @@ class BhimUPIHistoryVC: BaseVC {
 extension BhimUPIHistoryVC : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        tranHistoryArr.reverse()
         return tranHistoryArr.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -192,8 +222,45 @@ extension BhimUPIHistoryVC : UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BhimUPITrasactionHistoryCell", for: indexPath) as! BhimUPITrasactionHistoryCell
+//        if let accountData = accountDetails{
+//            cell.setTranHistoryData(data: tranHistoryArr[indexPath.row], accountDetails: accountData)
+//        }
+        cell.lblTxnId.text = tranHistoryArr[indexPath.row].tranid
+        cell.lblTxnDate.text = tranHistoryArr[indexPath.row].dateTime
         
-        cell.setTranHistoryData(data: tranHistoryArr[indexPath.row], accountDetails: accountDetails!)
+        cell.lblStatus.text = Status.getStatus(from: tranHistoryArr[indexPath.row].status ?? "")
+        
+        cell.imgFromToStatusIc.image = tranHistoryArr[indexPath.row].status == "C" ? UIImage(systemName: "checkmark.circle.fill")?.withRenderingMode(.alwaysTemplate) : UIImage(systemName: "multiply.circle.fill")?.withRenderingMode(.alwaysTemplate)
+        cell.imgFromToStatusIc.tintColor = tranHistoryArr[indexPath.row].status == "C" ? UIColor.init(named: "primary-green") : tranHistoryArr[indexPath.row].status == "P" ? UIColor.orange : UIColor.init(named: "status-red-color")
+        
+        
+        cell.imgSendReceiveIc.image = tranHistoryArr[indexPath.row].type == "PAY" ? UIImage(named: "ic_arrow_up")?.withRenderingMode(.alwaysTemplate) : UIImage(named: "ic_arrow_down")?.withRenderingMode(.alwaysTemplate)
+        
+        cell.imgSendReceiveIc.tintColor = tranHistoryArr[indexPath.row].status == "C" ? UIColor.init(named: "primary-green") : tranHistoryArr[indexPath.row].status == "P" ? UIColor.orange : UIColor.init(named: "status-red-color")
+        
+        cell.lblAmount.text = "₹ " + (tranHistoryArr[indexPath.row].amount ?? "0")
+        
+        if tranHistoryArr[indexPath.row].type == "PAY" {
+            if accountDetails?.vpa == tranHistoryArr[indexPath.row].creditVpa {
+                cell.lblFromToLabel.text = "Received from"
+                cell.lblVpa.text = tranHistoryArr[indexPath.row].debitVpa
+                cell.lblName.text = tranHistoryArr[indexPath.row].remitterName == nil ? "No Name" : tranHistoryArr[indexPath.row].remitterName
+            } else {
+                cell.lblFromToLabel.text = "Pay to"
+                cell.lblVpa.text = tranHistoryArr[indexPath.row].creditVpa
+                cell.lblName.text = tranHistoryArr[indexPath.row].beneficiaryName == nil ? "No Name" : tranHistoryArr[indexPath.row].beneficiaryName
+            }
+        } else if tranHistoryArr[indexPath.row].type == "COLLECT" {
+            if accountDetails?.vpa == tranHistoryArr[indexPath.row].creditVpa {
+                cell.lblFromToLabel.text = "Request to"
+                cell.lblVpa.text = tranHistoryArr[indexPath.row].debitVpa
+                cell.lblName.text = tranHistoryArr[indexPath.row].remitterName == nil ? "No Name" : tranHistoryArr[indexPath.row].remitterName
+            } else {
+                cell.lblFromToLabel.text = "Request from"
+                cell.lblVpa.text = tranHistoryArr[indexPath.row].creditVpa
+                cell.lblName.text = tranHistoryArr[indexPath.row].beneficiaryName == nil ? "No Name" : tranHistoryArr[indexPath.row].beneficiaryName
+            }
+        }
         
         cell.selectionStyle = .none
         return cell
@@ -222,7 +289,7 @@ extension BhimUPIHistoryVC: MFMessageComposeViewControllerDelegate {
         let isConnected = ReachabilityClass.isConnectedToNetwork()
         
         if isConnected == true {
-            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.token ?? "")
+            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.getDeviceID() ?? "")
         }else{
             DispatchQueue.main.async {
                 SwiftLoader.hide()
@@ -250,12 +317,12 @@ extension BhimUPIHistoryVC: MFMessageComposeViewControllerDelegate {
             case .dataLoaded:
                 print("Data loaded...")
 
-                if self?.checksumViewModel.checksumModel?.result == "Success" {
-                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.merchantauthtoken ?? ""
+                if self?.checksumViewModel.checksumModel?.data?.result == "Success" {
+                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.data?.merchantauthtoken ?? ""
                     self?.performMerchantHandshake()
                 }else{
                     DispatchQueue.main.async {
-                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.result ?? "")
+                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.data?.result ?? "")
                         SwiftLoader.hide()
                     }
                 }

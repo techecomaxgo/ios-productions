@@ -20,6 +20,7 @@ class BhimTrasactionDetailsVC: BaseVC {
     @IBOutlet weak var lblTxnDate: UILabel!
     @IBOutlet weak var lblStatus: UILabel!
     @IBOutlet weak var lblAmount: UILabel!
+    @IBOutlet weak var lblfiveMinutes: UILabel!
     
     @IBOutlet weak var lblTime: UILabel!
     @IBOutlet weak var lblRemark: UILabel!
@@ -99,7 +100,7 @@ class BhimTrasactionDetailsVC: BaseVC {
         lblTxnDate.text = data.refid
         lblTime.text = data.dateTime
         lblRemark.text = data.remarks
-        
+    
         lblStatus.text = Status.getStatus(from: data.status ?? "")
         
         lblStatus.textColor = data.status == "C" ? UIColor.init(named: "primary-green") : data.status == "P" ? UIColor.orange : UIColor.init(named: "status-red-color")
@@ -140,6 +141,12 @@ class BhimTrasactionDetailsVC: BaseVC {
                 lblVpa.text = data.creditVpa
                 lblName.text = data.beneficiaryName == nil ? "No Name" : data.beneficiaryName
             }
+        }
+        
+        if data.mcc == "0000" {
+            lblfiveMinutes.isHidden=true
+        }else{
+            lblfiveMinutes.isHidden=false
         }
     }
 
@@ -284,6 +291,31 @@ class BhimTrasactionDetailsVC: BaseVC {
               
                         else if err.code == 401 || err.code == 107 {
                             self.configuration()
+                            
+                            let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+                            let vc = storyBoard.instantiateViewController(withIdentifier: "BhimTransactionNextDetailsVC") as! BhimTransactionNextDetailsVC
+                            
+                            vc.tranHistoryObjs = self.tranHistoryObj
+                            
+                        //    vc.tranHistoryObjdata  = TranHistoryModel
+                            
+                    //        vc.tranHistoryObjdata = tranHistoryObjs
+                            
+                         //   vc.tranHistoryObj = self.tranHistoryObjs
+                            
+                            
+                            
+                         //   vc.tranHistoryObjdata = tranHistoryObjs
+                            
+                      //      vc.dataall = data as! String
+                            
+                            vc.tranIdData = (self.tranHistoryObj?.tranid)!
+                            vc.refidData = (self.tranHistoryObj?.refid)!
+                            vc.dateTimeData = (self.tranHistoryObj?.dateTime)!
+                            vc.remarksData = (self.tranHistoryObj?.remarks)!
+                            
+                        //    vc.responseDictFromCheck = dt as NSDictionary
+                            self.navigationController?.pushViewController(vc, animated: true)
                         }
                     }
                     return
@@ -519,7 +551,7 @@ extension BhimTrasactionDetailsVC: MFMessageComposeViewControllerDelegate {
         let isConnected = ReachabilityClass.isConnectedToNetwork()
         
         if isConnected == true {
-            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.token ?? "")
+            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.getDeviceID() ?? "")
         }else{
             DispatchQueue.main.async {
                 SwiftLoader.hide()
@@ -545,14 +577,14 @@ extension BhimTrasactionDetailsVC: MFMessageComposeViewControllerDelegate {
                 print("Stop loading...")
                 
             case .dataLoaded:
-                print("Data loaded...")
+                print("Data loaded...",self?.checksumViewModel.checksumModel?.data?.result)
                 
-                if self?.checksumViewModel.checksumModel?.result == "Success" {
-                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.merchantauthtoken ?? ""
+                if self?.checksumViewModel.checksumModel?.data?.result == "Success" {
+                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.data?.merchantauthtoken ?? ""
                     self?.performMerchantHandshake()
                 }else{
                     DispatchQueue.main.async {
-                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.result ?? "")
+                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.data?.result ?? "")
                         SwiftLoader.hide()
                     }
                 }

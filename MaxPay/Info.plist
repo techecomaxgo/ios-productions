@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSContactsUsageDescription</key>
-	<string>We need access to your contacts to show them in the app.</string>
-	<key>NSCameraReactionEffectGesturesEnabledDefault</key>
-	<false/>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -29,11 +25,20 @@
 			</array>
 		</dict>
 	</array>
+	<key>MinimumOSVersion</key>
+	<string>17.0</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>https://pingupi.axisbank.co.in/</key>
+			<string>NSExceptionAllowsinsecureHTTPLoads</string>
+		</dict>
 	</dict>
+	<key>NSCameraReactionEffectGesturesEnabledDefault</key>
+	<false/>
 	<key>UIAppFonts</key>
 	<array>
 		<string>cards.ttf</string>

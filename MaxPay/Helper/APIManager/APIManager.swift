@@ -23,6 +23,7 @@ class APIManager{
     static func setHeader()->[String:String]
      {
          //isClaimed ? KJWTTokenValue : KTokenValue
+         print("JWTToken", Common.shared.token ?? "")
          let header = ["Authorization":KJWTTokenValue]
          return header
      }

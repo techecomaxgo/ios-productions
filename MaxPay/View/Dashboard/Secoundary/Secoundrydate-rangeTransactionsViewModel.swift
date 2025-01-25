@@ -15,7 +15,7 @@ class TransactionsViewModel {
     var onError: ((Error) -> Void)?
     
     func fetchTransactions(skey: String, startDate: String, endDate: String) {
-        let urlString = "https://uat.maxupi.in/api/v1/wallet/s-by-date-range"
+        let urlString = "https://api.maxupi.in/api/v1/wallet/s-by-date-range"
         guard let url = URL(string: urlString) else { return }
         
         var request = URLRequest(url: url)
@@ -73,7 +73,7 @@ class TransactionsViewModel {
     
 
     func fetchTransactionsByDate(skey: String, date: String) {
-        let urlString = "https://uat.maxupi.in/api/v1/wallet/s-by-date"
+        let urlString = "https://api.maxupi.in/api/v1/wallet/s-by-date"
         guard let url = URL(string: urlString) else { return }
 
         var request = URLRequest(url: url)
@@ -136,7 +136,7 @@ class TransactionsViewModel {
     
     
     func fetchOldWalletTransactions(skey: String) {
-        let urlString = "https://uat.maxupi.in/api/v1/wallet/s-old-wallet"
+        let urlString = "https://api.maxupi.in/api/v1/wallet/s-old-wallet"
         guard let url = URL(string: urlString) else { return }
         
         var request = URLRequest(url: url)

@@ -206,7 +206,7 @@ class HotelCheckoutViewController: UIViewController {
         let createHotelReservationInfo = createHotelReservationInfo(ageStr: "34", pasTypeStr: "0", prefixStr: "Mr", firstNameStr: "Chandan", lastNameStr: "Mishra")
         
         
-        bookHotel_ViewModel.GetHotelBookApiCall(skeyStr: "142418AgQWGaSEHXoQ58ae75c4", city: selectedCity, CheckInDate: checkInDate, CheckOutDate: checkOutDate, RoomCount: 1, hotelID: RoomhotelsData?.hotelID ?? "", engineID: RoomhotelsData?.engineType ?? 0, eMTCommonID: RoomhotelsData?.eMTCommonID ?? "", hotelName: RoomhotelsData?.hotelName ?? "", Adults: 2, Child: 0, Nights: 1, MealTypeStr: "Room Only", chargeableRateStr: 1771, RateCodeStr: "0002239716", RateKeyStr: "0002239716", RoomType: "Single Room Only", RoomTypeCode: "0000456306", CancellationPolicy: "Free Cancellation", hotelReservInfo: hotelReservationInfo, adultsDetails: createHotelReservationInfo, ChildDetails: [0])
+        bookHotel_ViewModel.GetHotelBookApiCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME", city: selectedCity, CheckInDate: checkInDate, CheckOutDate: checkOutDate, RoomCount: 1, hotelID: RoomhotelsData?.hotelID ?? "", engineID: RoomhotelsData?.engineType ?? 0, eMTCommonID: RoomhotelsData?.eMTCommonID ?? "", hotelName: RoomhotelsData?.hotelName ?? "", Adults: 2, Child: 0, Nights: 1, MealTypeStr: "Room Only", chargeableRateStr: 1771, RateCodeStr: "0002239716", RateKeyStr: "0002239716", RoomType: "Single Room Only", RoomTypeCode: "0000456306", CancellationPolicy: "Free Cancellation", hotelReservInfo: hotelReservationInfo, adultsDetails: createHotelReservationInfo, ChildDetails: [0])
         
         
 

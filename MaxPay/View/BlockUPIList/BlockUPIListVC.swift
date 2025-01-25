@@ -19,6 +19,7 @@ class BlockUPIListVC: BaseVC {
     private var checksumViewModel = SIMSelectionViewModel()
     var apiOption = ""
     var deleteVpaButton = UIButton()
+    var isFromBlockAlert = false
 
     var blockList = [BlockListModel]()
     
@@ -28,7 +29,16 @@ class BlockUPIListVC: BaseVC {
         collectBlocklist()
     }
     @IBAction func btnBackAction(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        if isFromBlockAlert{
+            if let tabBarController = self.navigationController?.tabBarController {
+                tabBarController.selectedIndex = 0 // Set the first tab as selected
+                tabBarController.navigationController?.popToRootViewController(animated: true)
+            }else{
+                self.navigationController?.popViewController(animated: true)
+            }
+        }else{
+            self.navigationController?.popViewController(animated: true)
+        }
     }
 
     
@@ -189,7 +199,7 @@ extension BlockUPIListVC: MFMessageComposeViewControllerDelegate {
         let isConnected = ReachabilityClass.isConnectedToNetwork()
         
         if isConnected == true {
-            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.token ?? "")
+            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.getDeviceID() ?? "")
         }else{
             DispatchQueue.main.async {
                 SwiftLoader.hide()
@@ -217,12 +227,12 @@ extension BlockUPIListVC: MFMessageComposeViewControllerDelegate {
             case .dataLoaded:
                 print("Data loaded...")
 
-                if self?.checksumViewModel.checksumModel?.result == "Success" {
-                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.merchantauthtoken ?? ""
+                if self?.checksumViewModel.checksumModel?.data?.result == "Success" {
+                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.data?.merchantauthtoken ?? ""
                     self?.performMerchantHandshake()
                 }else{
                     DispatchQueue.main.async {
-                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.result ?? "")
+                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.data?.result ?? "")
                     }
                 }
                 

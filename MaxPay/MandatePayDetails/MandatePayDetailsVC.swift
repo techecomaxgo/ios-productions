@@ -486,7 +486,6 @@ class MandatePayDetailsVC: BaseVC {
             print("Error encoding JSON: \(error)")
         }
         
-        
         do {
             let encoder = JSONEncoder()
             encoder.outputFormatting = .prettyPrinted  // Add this line if you want the output to be formatted for better readability
@@ -505,9 +504,7 @@ class MandatePayDetailsVC: BaseVC {
         }
         
         DispatchQueue.global(qos: .background).async {
-            
-
-            
+                        
             OliveUpiManager.createMandate(account: strAccountDetails,  beneVpa: strBaneObj, mandateInput:strMandateInput, viewController: self) { data, error in
 
            // OliveUpiManager.declineMandate(account: strAccountDetails, mandateInput: strMandateInput, viewController: self) { data, error in
@@ -708,15 +705,17 @@ class MandatePayDetailsVC: BaseVC {
         let pMobile = mandateTransactionObject?.payerMobile ?? ""
         let pShareto = mandateTransactionObject?.shareToPayee ?? ""
         
-       // let validitySt = mandateTransactionObject?.validity_start ?? ""
+        let validityStart = mandateTransactionObject?.validity_start ?? ""
         
         let validityEnd = mandateTransactionObject?.validity_end ?? ""
         
         let mandaName = mandateTransactionObject?.mandateName ?? ""
       //  let amounRule = mandateTransactionObject?.amountRule ?? ""
         let amountStr = mandateTransactionObject?.amount ?? ""
+        
+        print("mandateTransactionObject====>",mandateTransactionObject)
 
-        let mandateInput = UpdatableMandateInput(umn:mandateTransactionObject?.umn ?? "", remarks: "UPI MANDATE", mcc: "0000", payermobile:pMobile , purpose: "00", sharetopayee:pShareto, validitystart: "16052024", validityend:validityEnd, mandatename: mandaName ,revocable: "Y", amountrule:"EXACT" , amount: amountStr , recurrence: mandateTransactionObject?.recurrencePattern ?? "" , rulevalue:"14", ruletype: "ON" , initiatedby: "PAYER_INITIATED")
+        let mandateInput = UpdatableMandateInput(umn:mandateTransactionObject?.umn ?? "", remarks: "UPI MANDATE", mcc: "0000", payerMobile:pMobile , purpose: "00", shareToPayee:pShareto, validityStart: validityStart, validityEnd:validityEnd, mandateName: mandateTransactionObject?.mandateName ?? ""  ,revocable: "Y", amountRule:mandateTransactionObject?.amountRule ?? ""  , amount: amountStr , recurrence: mandateTransactionObject?.recurrencePattern ?? "" , ruleValue:"14" , ruleType: mandateTransactionObject?.recurrenceRuleType ?? "" , initiatedBy: "PAYER_INITIATED")
         
         print(mandateInput)
         
@@ -744,9 +743,13 @@ class MandatePayDetailsVC: BaseVC {
         
         DispatchQueue.global(qos: .background).async {
             
+            print("Accounts ", strAccountDetails)
+            print("strMandateInput ", strMandateInput)
             
             OliveUpiManager.updateMandate(account: strAccountDetails,  mandateInput:strMandateInput, newState: "REVOKE", viewController: self) { data, error in
 
+                print("data ===>", data)
+                print("error", error)
            // OliveUpiManager.declineMandate(account: strAccountDetails, mandateInput: strMandateInput, viewController: self) { data, error in
                 if let err = error {
                     if err.code == 102 || err.code == 108 { // 102 VPA not allowed for this customer, 108 Location has No access
@@ -811,7 +814,7 @@ extension MandatePayDetailsVC: MFMessageComposeViewControllerDelegate {
         
         if isConnected == true {
             
-            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.token ?? "")
+            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.getDeviceID() ?? "")
             
         }else{
             
@@ -841,12 +844,12 @@ extension MandatePayDetailsVC: MFMessageComposeViewControllerDelegate {
             case .dataLoaded:
                 print("Data loaded...")
 
-                if self?.checksumViewModel.checksumModel?.result == "Success" {
-                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.merchantauthtoken ?? ""
+                if self?.checksumViewModel.checksumModel?.data?.result == "Success" {
+                    Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.data?.merchantauthtoken ?? ""
                     self?.performMerchantHandshake()
                 }else{
                     DispatchQueue.main.async {
-                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.result ?? "")
+                        self?.showErrorAlert(self?.checksumViewModel.checksumModel?.data?.result ?? "")
                     }
                 }
                 

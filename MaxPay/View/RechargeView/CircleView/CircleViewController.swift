@@ -40,7 +40,7 @@ class CircleViewController: BaseVC {
         
         if isConnected == true {
             
-            circleView_Model.CircleZoneCall(skeyStr: "142418AgQWGaSEHXoQ58ae75c4")
+            circleView_Model.CircleZoneCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME")
 
             observeOperatorApi()
             
