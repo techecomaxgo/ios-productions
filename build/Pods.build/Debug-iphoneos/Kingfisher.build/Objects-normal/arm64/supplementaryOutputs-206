@@ -1,0 +1,24 @@
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/General/KingfisherManager.swift":
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherManager.d"
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherManager.dia"
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherManager.o"
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherManager.swiftdeps"
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherManager.swiftconstvalues"
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/General/KingfisherError.swift":
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherError.d"
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherError.swiftdeps"
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherError.swiftconstvalues"
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherError.dia"
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherError.o"
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/General/KingfisherOptionsInfo.swift":
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherOptionsInfo.swiftdeps"
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherOptionsInfo.o"
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherOptionsInfo.swiftconstvalues"
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherOptionsInfo.d"
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/KingfisherOptionsInfo.dia"
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/Cache/MemoryStorage.swift":
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/MemoryStorage.o"
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/MemoryStorage.d"
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/MemoryStorage.swiftconstvalues"
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/MemoryStorage.swiftdeps"
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/MemoryStorage.dia"

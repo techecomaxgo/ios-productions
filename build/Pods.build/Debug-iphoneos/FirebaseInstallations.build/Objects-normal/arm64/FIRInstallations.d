@@ -1,0 +1,52 @@
+dependencies: \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/build/Pods.build/Debug-iphoneos/FirebaseInstallations.build/module.modulemap \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallations.m \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallations.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromises.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/build/Pods.build/Debug-iphoneos/PromisesObjC.build/module.modulemap \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/Target\ Support\ Files/PromisesObjC/PromisesObjC-umbrella.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+All.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromiseError.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Always.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Any.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Async.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Await.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Catch.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Delay.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Do.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Race.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Recover.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Reduce.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Retry.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Testing.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Then.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Timeout.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Validate.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Wrap.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseInstallations/FirebaseCore/Extension/FirebaseCoreInternal.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/build/Pods.build/Debug-iphoneos/FirebaseCore.build/module.modulemap \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRApp.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRConfiguration.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRLoggerLevel.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FirebaseCore.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIROptions.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRTimestamp.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRVersion.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRAppInternal.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRComponent.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRComponentContainer.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRComponentType.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRHeartbeatLogger.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRLibrary.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseInstallations/FirebaseCore/Extension/FIRLogger.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallationsAuthTokenResultInternal.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallationsAuthTokenResult.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Errors/FIRInstallationsErrorUtil.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallationsErrors.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallationsItem.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsStatus.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallationsLogger.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsIDController.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStoredAuthToken.h

@@ -1,0 +1,23 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Debug-iphoneos/DatePicker/DatePicker.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DatePicker.build/unextended-module.modulemap",
+    }]
+    },
+    {
+    'type': 'directory',
+    'name': "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Debug-iphoneos/DatePicker/DatePicker.framework/Headers"
+    'contents': [{
+      'type': 'file',
+      'name': "DatePicker-Swift.h",
+      'external-contents': "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DatePicker.build/unextended-interface-header.h",
+    }]
+    }]
+}

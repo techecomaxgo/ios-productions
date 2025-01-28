@@ -1,0 +1,98 @@
+{
+  "" : {
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePicker-master.dia",
+    "emit-module-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePicker-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePicker-master-emit-module.dia",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePicker-master.swiftdeps"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/OpalImagePicker/OpalImagePicker/Source/Bundle+Helper.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/Bundle+Helper.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/Bundle+Helper.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/Bundle+Helper.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/Bundle+Helper.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/Bundle+Helper.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/Bundle+Helper.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/Bundle+Helper.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/Bundle+Helper~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/OpalImagePicker/OpalImagePicker/Source/ImagePickerCollectionViewCell.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/ImagePickerCollectionViewCell.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/ImagePickerCollectionViewCell.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/ImagePickerCollectionViewCell.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/ImagePickerCollectionViewCell.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/ImagePickerCollectionViewCell.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/ImagePickerCollectionViewCell.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/ImagePickerCollectionViewCell.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/ImagePickerCollectionViewCell~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/OpalImagePicker/OpalImagePicker/Source/OpalImagePickerCollectionViewLayout.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerCollectionViewLayout.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerCollectionViewLayout.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerCollectionViewLayout.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerCollectionViewLayout.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerCollectionViewLayout.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerCollectionViewLayout.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerCollectionViewLayout.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerCollectionViewLayout~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/OpalImagePicker/OpalImagePicker/Source/OpalImagePickerConfiguration.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerConfiguration.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerConfiguration.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerConfiguration.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerConfiguration.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerConfiguration.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerConfiguration.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerConfiguration.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerConfiguration~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/OpalImagePicker/OpalImagePicker/Source/OpalImagePickerController.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerController.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerController.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerController.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerController.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerController.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerController.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerController.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerController~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/OpalImagePicker/OpalImagePicker/Source/OpalImagePickerRootViewController.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerRootViewController.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerRootViewController.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerRootViewController.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerRootViewController.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerRootViewController.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerRootViewController.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerRootViewController.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/OpalImagePickerRootViewController~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/OpalImagePicker/OpalImagePicker/Source/TimeInterval+String.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/TimeInterval+String.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/TimeInterval+String.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/TimeInterval+String.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/TimeInterval+String.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/TimeInterval+String.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/TimeInterval+String.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/TimeInterval+String.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/TimeInterval+String~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/OpalImagePicker/OpalImagePicker/Source/UIView+Helper.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/UIView+Helper.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/UIView+Helper.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/UIView+Helper.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/UIView+Helper.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/UIView+Helper.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/UIView+Helper.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/UIView+Helper.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/UIView+Helper~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/OpalImagePicker/OpalImagePicker/Source/UIViewController+OpalImagePicker.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/UIViewController+OpalImagePicker.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/UIViewController+OpalImagePicker.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/UIViewController+OpalImagePicker.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/UIViewController+OpalImagePicker.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/UIViewController+OpalImagePicker.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/UIViewController+OpalImagePicker.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/UIViewController+OpalImagePicker.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/OpalImagePicker.build/Objects-normal/arm64/UIViewController+OpalImagePicker~partial.swiftmodule"
+  }
+}

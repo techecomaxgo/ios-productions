@@ -1,0 +1,4 @@
+module Cosmos {
+header "Cosmos-Swift.h"
+export *
+}

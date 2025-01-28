@@ -72,17 +72,17 @@ class BhimUPVC: BaseVC {
         
         print(isAirplaneModeEnabled())
         
-        if isAirplaneModeEnabled() == true{
-            
-            DispatchQueue.main.async {
-                
-                SwiftLoader.hide()
-                
-                self.showErrorAlert("Sim registration failed due to non-cellular network or unavailable connection")
-                
-            }
-            
-        }else{
+//        if isAirplaneModeEnabled() == true{
+//            
+//            DispatchQueue.main.async {
+//                
+//                SwiftLoader.hide()
+//                
+//                self.showErrorAlert("Sim registration failed due to non-cellular network or unavailable connection")
+//                
+//            }
+//            
+//        }else{
         
             let networkMonitor = NetworkMonitor.shared
 
@@ -92,10 +92,10 @@ class BhimUPVC: BaseVC {
                     case .wifi:
                         print("Connected via Wi-Fi")
                         
-
+                        configuration()
                         DispatchQueue.main.async {
                             
-                            self.showErrorAlert("Sim registration failed due to non-cellular network")
+                            //self.showErrorAlert("Sim registration failed due to non-cellular network")
 
                         }
                     case .cellular:
@@ -107,7 +107,7 @@ class BhimUPVC: BaseVC {
                 }
             } else {
 //                print("No internet connection")
-            }
+            //}
             
         
             

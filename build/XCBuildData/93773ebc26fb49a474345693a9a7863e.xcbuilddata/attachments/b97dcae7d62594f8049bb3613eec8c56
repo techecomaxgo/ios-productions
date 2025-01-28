@@ -1,0 +1,28 @@
+{
+  "" : {
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITests-master.dia",
+    "emit-module-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITests-master.swiftdeps"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPayUITests/MaxPayUITests.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITests.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITests.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITests.dia",
+    "index-unit-output-path" : "/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITests.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITests.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITests.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITests.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITests~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPayUITests/MaxPayUITestsLaunchTests.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITestsLaunchTests.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITestsLaunchTests.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITestsLaunchTests.dia",
+    "index-unit-output-path" : "/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITestsLaunchTests.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITestsLaunchTests.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITestsLaunchTests.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITestsLaunchTests.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayUITests.build/Objects-normal/arm64/MaxPayUITestsLaunchTests~partial.swiftmodule"
+  }
+}

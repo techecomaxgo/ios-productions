@@ -1,0 +1,11 @@
+framework module DatePicker {
+  umbrella header "DatePicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module DatePicker.Swift {
+  header "DatePicker-Swift.h"
+  requires objc
+}

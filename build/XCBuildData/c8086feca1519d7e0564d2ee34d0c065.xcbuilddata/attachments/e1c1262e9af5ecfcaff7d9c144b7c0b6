@@ -1,0 +1,168 @@
+{
+  "" : {
+    "diagnostics" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/Cosmos-master.dia",
+    "emit-module-dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/Cosmos-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/Cosmos-master-emit-module.dia",
+    "swift-dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/Cosmos-master.swiftdeps"
+  },
+  "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/DerivedSources/resource_bundle_accessor.swift" : {
+    "const-values" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/resource_bundle_accessor.swiftconstvalues",
+    "dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/resource_bundle_accessor.d",
+    "diagnostics" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/resource_bundle_accessor.dia",
+    "index-unit-output-path" : "/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/resource_bundle_accessor.o",
+    "llvm-bc" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/resource_bundle_accessor.bc",
+    "object" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/resource_bundle_accessor.o",
+    "swift-dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/resource_bundle_accessor.swiftdeps",
+    "swiftmodule" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/resource_bundle_accessor~partial.swiftmodule"
+  },
+  "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/Cosmos/CosmosAccessibility.swift" : {
+    "const-values" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosAccessibility.swiftconstvalues",
+    "dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosAccessibility.d",
+    "diagnostics" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosAccessibility.dia",
+    "index-unit-output-path" : "/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosAccessibility.o",
+    "llvm-bc" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosAccessibility.bc",
+    "object" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosAccessibility.o",
+    "swift-dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosAccessibility.swiftdeps",
+    "swiftmodule" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosAccessibility~partial.swiftmodule"
+  },
+  "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/Cosmos/CosmosDefaultSettings.swift" : {
+    "const-values" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosDefaultSettings.swiftconstvalues",
+    "dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosDefaultSettings.d",
+    "diagnostics" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosDefaultSettings.dia",
+    "index-unit-output-path" : "/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosDefaultSettings.o",
+    "llvm-bc" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosDefaultSettings.bc",
+    "object" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosDefaultSettings.o",
+    "swift-dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosDefaultSettings.swiftdeps",
+    "swiftmodule" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosDefaultSettings~partial.swiftmodule"
+  },
+  "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/Cosmos/CosmosLayerHelper.swift" : {
+    "const-values" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLayerHelper.swiftconstvalues",
+    "dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLayerHelper.d",
+    "diagnostics" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLayerHelper.dia",
+    "index-unit-output-path" : "/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLayerHelper.o",
+    "llvm-bc" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLayerHelper.bc",
+    "object" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLayerHelper.o",
+    "swift-dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLayerHelper.swiftdeps",
+    "swiftmodule" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLayerHelper~partial.swiftmodule"
+  },
+  "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/Cosmos/CosmosLayers.swift" : {
+    "const-values" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLayers.swiftconstvalues",
+    "dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLayers.d",
+    "diagnostics" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLayers.dia",
+    "index-unit-output-path" : "/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLayers.o",
+    "llvm-bc" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLayers.bc",
+    "object" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLayers.o",
+    "swift-dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLayers.swiftdeps",
+    "swiftmodule" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLayers~partial.swiftmodule"
+  },
+  "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/Cosmos/CosmosLocalizedRating.swift" : {
+    "const-values" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLocalizedRating.swiftconstvalues",
+    "dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLocalizedRating.d",
+    "diagnostics" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLocalizedRating.dia",
+    "index-unit-output-path" : "/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLocalizedRating.o",
+    "llvm-bc" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLocalizedRating.bc",
+    "object" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLocalizedRating.o",
+    "swift-dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLocalizedRating.swiftdeps",
+    "swiftmodule" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosLocalizedRating~partial.swiftmodule"
+  },
+  "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/Cosmos/CosmosRating.swift" : {
+    "const-values" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosRating.swiftconstvalues",
+    "dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosRating.d",
+    "diagnostics" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosRating.dia",
+    "index-unit-output-path" : "/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosRating.o",
+    "llvm-bc" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosRating.bc",
+    "object" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosRating.o",
+    "swift-dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosRating.swiftdeps",
+    "swiftmodule" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosRating~partial.swiftmodule"
+  },
+  "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/Cosmos/CosmosSettings.swift" : {
+    "const-values" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosSettings.swiftconstvalues",
+    "dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosSettings.d",
+    "diagnostics" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosSettings.dia",
+    "index-unit-output-path" : "/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosSettings.o",
+    "llvm-bc" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosSettings.bc",
+    "object" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosSettings.o",
+    "swift-dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosSettings.swiftdeps",
+    "swiftmodule" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosSettings~partial.swiftmodule"
+  },
+  "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/Cosmos/CosmosSize.swift" : {
+    "const-values" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosSize.swiftconstvalues",
+    "dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosSize.d",
+    "diagnostics" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosSize.dia",
+    "index-unit-output-path" : "/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosSize.o",
+    "llvm-bc" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosSize.bc",
+    "object" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosSize.o",
+    "swift-dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosSize.swiftdeps",
+    "swiftmodule" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosSize~partial.swiftmodule"
+  },
+  "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/Cosmos/CosmosText.swift" : {
+    "const-values" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosText.swiftconstvalues",
+    "dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosText.d",
+    "diagnostics" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosText.dia",
+    "index-unit-output-path" : "/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosText.o",
+    "llvm-bc" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosText.bc",
+    "object" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosText.o",
+    "swift-dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosText.swiftdeps",
+    "swiftmodule" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosText~partial.swiftmodule"
+  },
+  "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/Cosmos/CosmosTouch.swift" : {
+    "const-values" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosTouch.swiftconstvalues",
+    "dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosTouch.d",
+    "diagnostics" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosTouch.dia",
+    "index-unit-output-path" : "/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosTouch.o",
+    "llvm-bc" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosTouch.bc",
+    "object" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosTouch.o",
+    "swift-dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosTouch.swiftdeps",
+    "swiftmodule" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosTouch~partial.swiftmodule"
+  },
+  "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/Cosmos/CosmosView.swift" : {
+    "const-values" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosView.swiftconstvalues",
+    "dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosView.d",
+    "diagnostics" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosView.dia",
+    "index-unit-output-path" : "/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosView.o",
+    "llvm-bc" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosView.bc",
+    "object" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosView.o",
+    "swift-dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosView.swiftdeps",
+    "swiftmodule" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosView~partial.swiftmodule"
+  },
+  "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/Cosmos/Helpers/CosmosTouchTarget.swift" : {
+    "const-values" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosTouchTarget.swiftconstvalues",
+    "dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosTouchTarget.d",
+    "diagnostics" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosTouchTarget.dia",
+    "index-unit-output-path" : "/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosTouchTarget.o",
+    "llvm-bc" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosTouchTarget.bc",
+    "object" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosTouchTarget.o",
+    "swift-dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosTouchTarget.swiftdeps",
+    "swiftmodule" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/CosmosTouchTarget~partial.swiftmodule"
+  },
+  "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/Cosmos/Helpers/RightToLeft.swift" : {
+    "const-values" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/RightToLeft.swiftconstvalues",
+    "dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/RightToLeft.d",
+    "diagnostics" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/RightToLeft.dia",
+    "index-unit-output-path" : "/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/RightToLeft.o",
+    "llvm-bc" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/RightToLeft.bc",
+    "object" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/RightToLeft.o",
+    "swift-dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/RightToLeft.swiftdeps",
+    "swiftmodule" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/RightToLeft~partial.swiftmodule"
+  },
+  "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/Cosmos/StarFillMode.swift" : {
+    "const-values" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/StarFillMode.swiftconstvalues",
+    "dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/StarFillMode.d",
+    "diagnostics" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/StarFillMode.dia",
+    "index-unit-output-path" : "/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/StarFillMode.o",
+    "llvm-bc" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/StarFillMode.bc",
+    "object" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/StarFillMode.o",
+    "swift-dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/StarFillMode.swiftdeps",
+    "swiftmodule" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/StarFillMode~partial.swiftmodule"
+  },
+  "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/Cosmos/StarLayer.swift" : {
+    "const-values" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/StarLayer.swiftconstvalues",
+    "dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/StarLayer.d",
+    "diagnostics" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/StarLayer.dia",
+    "index-unit-output-path" : "/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/StarLayer.o",
+    "llvm-bc" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/StarLayer.bc",
+    "object" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/StarLayer.o",
+    "swift-dependencies" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/StarLayer.swiftdeps",
+    "swiftmodule" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/SourcePackages/checkouts/Cosmos/build/Cosmos.build/Debug-iphoneos/Cosmos.build/Objects-normal/arm64/StarLayer~partial.swiftmodule"
+  }
+}

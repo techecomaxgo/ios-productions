@@ -1,0 +1,23 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Debug-iphoneos/PieCharts/PieCharts.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/unextended-module.modulemap",
+    }]
+    },
+    {
+    'type': 'directory',
+    'name': "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Debug-iphoneos/PieCharts/PieCharts.framework/Headers"
+    'contents': [{
+      'type': 'file',
+      'name': "PieCharts-Swift.h",
+      'external-contents': "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/unextended-interface-header.h",
+    }]
+    }]
+}

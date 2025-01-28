@@ -1,0 +1,26 @@
+dependencies: \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/build/Pods.build/Debug-iphoneos/FirebaseCore.build/module.modulemap \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseCore/FirebaseCore/Sources/FIRBundleUtil.m \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/FirebaseCore/FirebaseCore/Sources/FIRBundleUtil.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/build/Pods.build/Debug-iphoneos/GoogleUtilities.build/module.modulemap \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/Target\ Support\ Files/GoogleUtilities/GoogleUtilities-umbrella.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities/GULAppDelegateSwizzler.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities/GULApplication.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities/GULSceneDelegateSwizzler.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULAppEnvironmentUtil.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULKeychainStorage.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULKeychainUtils.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULNetworkInfo.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/Logger/Public/GoogleUtilities/GULLogger.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/Logger/Public/GoogleUtilities/GULLoggerLevel.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/MethodSwizzler/Public/GoogleUtilities/GULOriginalIMPConvenienceMacros.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/MethodSwizzler/Public/GoogleUtilities/GULSwizzler.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/NSData+zlib/Public/GoogleUtilities/GULNSData+zlib.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities/GULMutableDictionary.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities/GULNetwork.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities/GULNetworkConstants.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities/GULNetworkLoggerProtocol.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities/GULNetworkMessageCode.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities/GULNetworkURLSession.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/Reachability/Public/GoogleUtilities/GULReachabilityChecker.h \
+  /Users/admin/Desktop/MSB/Run\ Code/MaxPay\ 2/Pods/GoogleUtilities/GoogleUtilities/UserDefaults/Public/GoogleUtilities/GULUserDefaults.h

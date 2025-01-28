@@ -1,0 +1,188 @@
+{
+  "" : {
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Extended-master.dia",
+    "emit-module-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Extended-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Extended-master-emit-module.dia",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Extended-master.swiftdeps"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Extended/Extended/Classes/Array.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Array.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Array.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Array.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Array.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Array.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Array.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Array.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Array~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Extended/Extended/Classes/Collection.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Collection.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Collection.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Collection.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Collection.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Collection.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Collection.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Collection.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Collection~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Extended/Extended/Classes/Color.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Color.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Color.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Color.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Color.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Color.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Color.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Color.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Color~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Extended/Extended/Classes/Date.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Date.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Date.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Date.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Date.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Date.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Date.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Date.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Date~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Extended/Extended/Classes/DeviceOrientation.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/DeviceOrientation.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/DeviceOrientation.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/DeviceOrientation.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/DeviceOrientation.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/DeviceOrientation.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/DeviceOrientation.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/DeviceOrientation.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/DeviceOrientation~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Extended/Extended/Classes/Double.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Double.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Double.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Double.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Double.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Double.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Double.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Double.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Double~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Extended/Extended/Classes/Int.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Int.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Int.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Int.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Int.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Int.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Int.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Int.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Int~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Extended/Extended/Classes/Map.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Map.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Map.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Map.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Map.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Map.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Map.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Map.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/Map~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Extended/Extended/Classes/NSAttributedString.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/NSAttributedString.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/NSAttributedString.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/NSAttributedString.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/NSAttributedString.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/NSAttributedString.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/NSAttributedString.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/NSAttributedString.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/NSAttributedString~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Extended/Extended/Classes/String.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/String.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/String.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/String.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/String.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/String.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/String.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/String.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/String~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Extended/Extended/Classes/TimeInterval.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/TimeInterval.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/TimeInterval.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/TimeInterval.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/TimeInterval.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/TimeInterval.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/TimeInterval.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/TimeInterval.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/TimeInterval~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Extended/Extended/Classes/UIApplication.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIApplication.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIApplication.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIApplication.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIApplication.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIApplication.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIApplication.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIApplication.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIApplication~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Extended/Extended/Classes/UICollectionView.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UICollectionView.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UICollectionView.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UICollectionView.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UICollectionView.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UICollectionView.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UICollectionView.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UICollectionView.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UICollectionView~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Extended/Extended/Classes/UIImage.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIImage.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIImage.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIImage.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIImage.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIImage.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIImage.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIImage.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIImage~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Extended/Extended/Classes/UILabel.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UILabel.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UILabel.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UILabel.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UILabel.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UILabel.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UILabel.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UILabel.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UILabel~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Extended/Extended/Classes/UIScrollView.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIScrollView.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIScrollView.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIScrollView.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIScrollView.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIScrollView.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIScrollView.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIScrollView.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIScrollView~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Extended/Extended/Classes/UIView.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIView.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIView.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIView.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIView.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIView.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIView.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIView.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIView~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Extended/Extended/Classes/UIViewController.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIViewController.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIViewController.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIViewController.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIViewController.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIViewController.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIViewController.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIViewController.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/Objects-normal/arm64/UIViewController~partial.swiftmodule"
+  }
+}

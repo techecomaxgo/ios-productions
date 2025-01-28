@@ -103,6 +103,21 @@ class SelectBankVC: BaseVC, MFMessageComposeViewControllerDelegate,CLLocationMan
 
             // Background queue for the handshake process
             DispatchQueue.global(qos: .userInitiated).async {
+//                let sdkHandShake = SDKHandshake(
+//                    emailId: "",
+//                    merchId: "ECOMAXGOPROD1234",
+//                    merchChanId: "ECOMAXGOPROD1234",
+//                    submerchantid: "ECOMAXGOPROD1234",
+//                    mcccode: "6211",
+//                    unqCustId: "918077019446",
+//                    mobileNo: "918077019446",
+//                    deviceid: Common.shared.getDeviceID(),
+//                    appid: appId,
+//                    custname: "MAX",
+//                    merchantauthtoken: Common.shared.merchantauthtoken ?? "",
+//                    unqTxnId: SDKHandshake.shared.generateRandomDigits(12)
+//                )
+                
                 let sdkHandShake = SDKHandshake(
                     emailId: "",
                     merchId: "ECOMAXGOPROD1234",
@@ -123,26 +138,19 @@ class SelectBankVC: BaseVC, MFMessageComposeViewControllerDelegate,CLLocationMan
                 OliveUpiManager.initiateSDK(sdkHandshake: jsonString, view: self, delegate: self) { (data, err) in
                     // Ensure fetchListBanks() runs on the main thread
                     DispatchQueue.main.async {
+                        
                         if let error = err {
-                            
                             print("Error: \(error)")
                             // Handle the error accordingly (e.g., show an alert)
-                            
                             DispatchQueue.main.async {
-                                
                                 self.showErrorAlert(error.localizedDescription)
-                                
                                 SwiftLoader.hide()
-                                
                             }
-                            
-                            
                         } else {
-                            
                             print("The data is: \(String(describing: data))")
                             self.fetchListBanks()
-                            
                         }
+//                        self.fetchListBanks()
                         SwiftLoader.hide()
                     }
                 }
@@ -261,14 +269,14 @@ extension SelectBankVC: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return filteredData.count
+        return self.filteredData.count
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         textFieldSearch.resignFirstResponder()
         
-        selectedFilteredData = filteredData[indexPath.row]
+        selectedFilteredData = self.filteredData[indexPath.row]
         
         self.fetchAccountsiin(bankAccount: self.filteredData[indexPath.row])
     }

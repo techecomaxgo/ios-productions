@@ -1,0 +1,24 @@
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/Cache/ImageCache.swift":
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageCache.o"
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageCache.d"
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageCache.dia"
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageCache.swiftconstvalues"
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageCache.swiftdeps"
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/SwiftUI/ImageBinder.swift":
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageBinder.swiftconstvalues"
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageBinder.d"
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageBinder.dia"
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageBinder.o"
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageBinder.swiftdeps"
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/Networking/ImageDataProcessor.swift":
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageDataProcessor.o"
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageDataProcessor.d"
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageDataProcessor.swiftdeps"
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageDataProcessor.swiftconstvalues"
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageDataProcessor.dia"
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/SwiftUI/ImageContext.swift":
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageContext.dia"
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageContext.d"
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageContext.swiftconstvalues"
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageContext.swiftdeps"
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/ImageContext.o"

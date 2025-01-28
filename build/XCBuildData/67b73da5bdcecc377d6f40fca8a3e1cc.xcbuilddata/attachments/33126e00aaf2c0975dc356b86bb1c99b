@@ -1,0 +1,10 @@
+framework module Extended {
+  umbrella header "Extended-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module Extended.__Swift {
+  exclude header "Extended-Swift.h"
+}

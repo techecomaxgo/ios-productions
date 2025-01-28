@@ -1,0 +1,24 @@
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/Networking/SessionDelegate.swift":
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/SessionDelegate.swiftdeps"
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/SessionDelegate.dia"
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/SessionDelegate.swiftconstvalues"
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/SessionDelegate.o"
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/SessionDelegate.d"
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/Networking/SessionDataTask.swift":
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/SessionDataTask.dia"
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/SessionDataTask.o"
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/SessionDataTask.d"
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/SessionDataTask.swiftconstvalues"
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/SessionDataTask.swiftdeps"
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/Utility/Runtime.swift":
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Runtime.dia"
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Runtime.swiftconstvalues"
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Runtime.d"
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Runtime.o"
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Runtime.swiftdeps"
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/Networking/RetryStrategy.swift":
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/RetryStrategy.o"
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/RetryStrategy.dia"
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/RetryStrategy.swiftconstvalues"
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/RetryStrategy.d"
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/RetryStrategy.swiftdeps"

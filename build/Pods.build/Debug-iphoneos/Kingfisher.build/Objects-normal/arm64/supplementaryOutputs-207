@@ -1,0 +1,24 @@
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/General/ImageSource/PHPickerResultImageDataProvider.swift":
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/PHPickerResultImageDataProvider.swiftconstvalues"
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/PHPickerResultImageDataProvider.d"
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/PHPickerResultImageDataProvider.o"
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/PHPickerResultImageDataProvider.swiftdeps"
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/PHPickerResultImageDataProvider.dia"
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/Extensions/NSButton+Kingfisher.swift":
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/NSButton+Kingfisher.dia"
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/NSButton+Kingfisher.swiftconstvalues"
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/NSButton+Kingfisher.o"
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/NSButton+Kingfisher.d"
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/NSButton+Kingfisher.swiftdeps"
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/Extensions/NSTextAttachment+Kingfisher.swift":
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/NSTextAttachment+Kingfisher.swiftdeps"
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/NSTextAttachment+Kingfisher.d"
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/NSTextAttachment+Kingfisher.o"
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/NSTextAttachment+Kingfisher.dia"
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/NSTextAttachment+Kingfisher.swiftconstvalues"
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/Image/Placeholder.swift":
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Placeholder.dia"
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Placeholder.o"
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Placeholder.d"
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Placeholder.swiftdeps"
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Placeholder.swiftconstvalues"

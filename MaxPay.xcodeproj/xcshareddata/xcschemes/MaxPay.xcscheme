@@ -80,6 +80,11 @@
             value = "YES"
             isEnabled = "YES">
          </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "API_KEY"
+            value = "AIzaSyBMxmqKGQxucSWe8EULUrXFf8lG4v78sVU"
+            isEnabled = "YES">
+         </EnvironmentVariable>
       </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction

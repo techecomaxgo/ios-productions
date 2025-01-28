@@ -1,0 +1,24 @@
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/General/ImageSource/Source.swift":
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Source.o"
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Source.d"
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Source.dia"
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Source.swiftdeps"
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Source.swiftconstvalues"
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/Cache/Storage.swift":
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Storage.d"
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Storage.swiftdeps"
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Storage.swiftconstvalues"
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Storage.o"
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/Storage.dia"
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/Utility/SizeExtensions.swift":
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/SizeExtensions.swiftdeps"
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/SizeExtensions.swiftconstvalues"
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/SizeExtensions.d"
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/SizeExtensions.dia"
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/SizeExtensions.o"
+"/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/Kingfisher/Sources/Utility/String+MD5.swift":
+  diagnostics: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/String+MD5.dia"
+  swift-dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/String+MD5.swiftdeps"
+  dependencies: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/String+MD5.d"
+  const-values: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/String+MD5.swiftconstvalues"
+  object: "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Kingfisher.build/Objects-normal/arm64/String+MD5.o"

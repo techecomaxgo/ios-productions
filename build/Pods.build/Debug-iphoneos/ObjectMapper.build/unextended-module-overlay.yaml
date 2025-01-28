@@ -1,0 +1,23 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Debug-iphoneos/ObjectMapper/ObjectMapper.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/unextended-module.modulemap",
+    }]
+    },
+    {
+    'type': 'directory',
+    'name': "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Debug-iphoneos/ObjectMapper/ObjectMapper.framework/Headers"
+    'contents': [{
+      'type': 'file',
+      'name': "ObjectMapper-Swift.h",
+      'external-contents': "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/unextended-interface-header.h",
+    }]
+    }]
+}

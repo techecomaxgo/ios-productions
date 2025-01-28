@@ -24,6 +24,18 @@
 				<string>collect</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLIconFile</key>
+			<string>ss</string>
+			<key>CFBundleURLName</key>
+			<string>smartech</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>smartech</string>
+			</array>
+		</dict>
 	</array>
 	<key>MinimumOSVersion</key>
 	<string>17.0</string>
@@ -39,6 +51,17 @@
 	</dict>
 	<key>NSCameraReactionEffectGesturesEnabledDefault</key>
 	<false/>
+	<key>SmartechKeys</key>
+	<dict>
+		<key>SmartechAppGroup</key>
+		<string>com.maxupi.in.maxpay</string>
+		<key>SmartechAppId</key>
+		<string>f9cf6c1d5e781ddd45d109204b5861a6</string>
+		<key>SmartechAutoFetchLocation</key>
+		<true/>
+		<key>SmartechUseAdvId</key>
+		<true/>
+	</dict>
 	<key>UIAppFonts</key>
 	<array>
 		<string>cards.ttf</string>

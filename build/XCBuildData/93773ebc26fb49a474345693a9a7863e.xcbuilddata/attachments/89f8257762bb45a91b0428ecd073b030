@@ -1,0 +1,18 @@
+{
+  "" : {
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayTests.build/Objects-normal/arm64/MaxPayTests-master.dia",
+    "emit-module-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayTests.build/Objects-normal/arm64/MaxPayTests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayTests.build/Objects-normal/arm64/MaxPayTests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayTests.build/Objects-normal/arm64/MaxPayTests-master.swiftdeps"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPayTests/MaxPayTests.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayTests.build/Objects-normal/arm64/MaxPayTests.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayTests.build/Objects-normal/arm64/MaxPayTests.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayTests.build/Objects-normal/arm64/MaxPayTests.dia",
+    "index-unit-output-path" : "/MaxPay.build/Debug-iphoneos/MaxPayTests.build/Objects-normal/arm64/MaxPayTests.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayTests.build/Objects-normal/arm64/MaxPayTests.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayTests.build/Objects-normal/arm64/MaxPayTests.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayTests.build/Objects-normal/arm64/MaxPayTests.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/MaxPay.build/Debug-iphoneos/MaxPayTests.build/Objects-normal/arm64/MaxPayTests~partial.swiftmodule"
+  }
+}

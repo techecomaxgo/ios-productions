@@ -1,0 +1,69 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "9df857f9c5e4c289557b8b9af28b86e143cc517594a140a1768d07362755b0f5"
+    }
+  ],
+  "containerPath" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay.xcworkspace",
+  "continueBuildingAfterErrors" : true,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos17.5",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64v8",
+        "arm64",
+        "armv8"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/admin/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone12,1",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "17.5.1",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone12,1",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "CLANG_COVERAGE_MAPPING" : "YES",
+          "CLANG_PROFILE_DATA_DIRECTORY" : "/Users/admin/Library/Developer/Xcode/DerivedData/MaxPay-anapcqcuvnaudefrnlkrukuhrhvx/CodeCoverage/ProfileData",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "00008030-001268CE0A79802E",
+          "TARGET_DEVICE_MODEL" : "iPhone12,1",
+          "TARGET_DEVICE_OS_VERSION" : "17.5.1",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphoneos"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

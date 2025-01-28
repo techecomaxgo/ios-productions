@@ -1,0 +1,139 @@
+{
+  "main_library": {
+    "exported_symbols": [
+      {
+        "data": {
+          "global": [
+            "_$s15SSSwiftUILoader17ActivityIndicatorV12$isAnimating7SwiftUI7BindingVySbGvg",
+            "_$s15SSSwiftUILoader13DefaultConfigV17loaderWindowColorSo7UIColorCvg",
+            "_$s15SSSwiftUILoader13DefaultConfigV18loaderCornerRadius12CoreGraphics7CGFloatVvs",
+            "_$s15SSSwiftUILoader13DefaultConfigV15loaderTextColor0e10BackgroundG00E12CornerRadius0e6WindowG0017activityIndicatorG00lM5StyleAC7SwiftUI0G0V_AL12CoreGraphics7CGFloatVSo7UIColorCAQSo010UIActivitym4ViewN0VtcfcfA_",
+            "_$s15SSSwiftUILoader17ActivityIndicatorV11isAnimating5style5colorAC7SwiftUI7BindingVySbG_So010UIActivityD9ViewStyleVSo7UIColorCtcfC",
+            "_$s15SSSwiftUILoader17ActivityIndicatorV5styleSo010UIActivityD9ViewStyleVvpMV",
+            "_$s15SSSwiftUILoader13DefaultConfigVN",
+            "_$s15SSSwiftUILoader13DefaultConfigV15loaderTextColor0e10BackgroundG00E12CornerRadius0e6WindowG0017activityIndicatorG00lM5StyleAC7SwiftUI0G0V_AL12CoreGraphics7CGFloatVSo7UIColorCAQSo010UIActivitym4ViewN0VtcfcfA3_",
+            "_$s15SSSwiftUILoader19LoaderConfigurationTL",
+            "_$s15SSSwiftUILoader17ActivityIndicatorVN",
+            "_$s15SSSwiftUILoader8SSLoaderC11popupWindow33_BD7DE1273B677F68D10C562ECFBD5DE5LLAA06LoaderE0AELLCSgvg",
+            "_$s15SSSwiftUILoader17ActivityIndicatorV11isAnimatingSbvg",
+            "_$s15SSSwiftUILoader8SSLoaderC11startloader_6configySS_AA14ConfigSettingsOtFTq",
+            "_$s15SSSwiftUILoader13DefaultConfigV15loaderTextColor7SwiftUI0G0VvpMV",
+            "_$s15SSSwiftUILoader13DefaultConfigV15loaderTextColor0e10BackgroundG00E12CornerRadius0e6WindowG0017activityIndicatorG00lM5StyleAC7SwiftUI0G0V_AL12CoreGraphics7CGFloatVSo7UIColorCAQSo010UIActivitym4ViewN0VtcfC",
+            "_$s15SSSwiftUILoader8SSLoaderCACyc33_BD7DE1273B677F68D10C562ECFBD5DE5LlfC",
+            "_$s15SSSwiftUILoader14ConfigSettingsOMn",
+            "_$s15SSSwiftUILoader8SSLoaderC6sharedACvau",
+            "_$s15SSSwiftUILoader17ActivityIndicatorV10makeUIView7contextSo010UIActivityD4ViewC7SwiftUI0F20RepresentableContextVyACG_tF",
+            "_$s15SSSwiftUILoader17ActivityIndicatorV12$isAnimating7SwiftUI7BindingVySbGvpMV",
+            "_$s15SSSwiftUILoader17ActivityIndicatorV12updateUIView_7contextySo010UIActivityD4ViewC_7SwiftUI0F20RepresentableContextVyACGtF",
+            "_$s15SSSwiftUILoader17ActivityIndicatorV5styleSo010UIActivityD9ViewStyleVvg",
+            "_$s15SSSwiftUILoader14ConfigSettingsOMa",
+            "_$s15SSSwiftUILoader17ActivityIndicatorV11isAnimatingSbvs",
+            "_$s15SSSwiftUILoader8SSLoaderC10stopLoaderyyF",
+            "_$s15SSSwiftUILoader13DefaultConfigV17loaderWindowColorSo7UIColorCvpfi",
+            "_$s15SSSwiftUILoader13DefaultConfigV15loaderTextColor0e10BackgroundG00E12CornerRadius0e6WindowG0017activityIndicatorG00lM5StyleAC7SwiftUI0G0V_AL12CoreGraphics7CGFloatVSo7UIColorCAQSo010UIActivitym4ViewN0VtcfcfA2_",
+            "_$s15SSSwiftUILoader13DefaultConfigV21loaderBackgroundColor7SwiftUI0G0Vvpfi",
+            "_$s15SSSwiftUILoader17ActivityIndicatorV7SwiftUI19UIViewRepresentableAAMc",
+            "_$s15SSSwiftUILoader13DefaultConfigV22activityIndicatorColorSo7UIColorCvg",
+            "_$s15SSSwiftUILoader13DefaultConfigV15loaderTextColor0e10BackgroundG00E12CornerRadius0e6WindowG0017activityIndicatorG00lM5StyleAC7SwiftUI0G0V_AL12CoreGraphics7CGFloatVSo7UIColorCAQSo010UIActivitym4ViewN0VtcfcfA4_",
+            "_$s15SSSwiftUILoader13DefaultConfigV22activityIndicatorColorSo7UIColorCvs",
+            "_$s15SSSwiftUILoader13DefaultConfigV15loaderTextColor7SwiftUI0G0Vvpfi",
+            "_$s15SSSwiftUILoader13DefaultConfigV22activityIndicatorColorSo7UIColorCvpfi",
+            "_$s15SSSwiftUILoader13DefaultConfigV21loaderBackgroundColor7SwiftUI0G0VvpMV",
+            "_$s15SSSwiftUILoader17ActivityIndicatorV5colorSo7UIColorCvpMV",
+            "_$s15SSSwiftUILoader17ActivityIndicatorVMa",
+            "_$s15SSSwiftUILoader17ActivityIndicatorV5colorSo7UIColorCvg",
+            "_$s15SSSwiftUILoader13DefaultConfigV18loaderCornerRadius12CoreGraphics7CGFloatVvg",
+            "_$s15SSSwiftUILoader13DefaultConfigV15loaderTextColor0e10BackgroundG00E12CornerRadius0e6WindowG0017activityIndicatorG00lM5StyleAC7SwiftUI0G0V_AL12CoreGraphics7CGFloatVSo7UIColorCAQSo010UIActivitym4ViewN0VtcfcfA0_",
+            "_$s15SSSwiftUILoader13DefaultConfigVMa",
+            "_$s15SSSwiftUILoader8SSLoaderCN",
+            "_$s15SSSwiftUILoader8SSLoaderCMn",
+            "_$s15SSSwiftUILoader13DefaultConfigV15loaderTextColor7SwiftUI0G0Vvg",
+            "_$s15SSSwiftUILoader8SSLoaderCMa",
+            "_$s15SSSwiftUILoader13DefaultConfigVMn",
+            "_$s15SSSwiftUILoader17ActivityIndicatorV11isAnimatingSbvpMV",
+            "_SSSwiftUILoaderVersionNumber",
+            "_$s15SSSwiftUILoader8SSLoaderCMm",
+            "_$s15SSSwiftUILoader13DefaultConfigV15loaderTextColor7SwiftUI0G0VvM",
+            "_$s15SSSwiftUILoader13DefaultConfigV17loaderWindowColorSo7UIColorCvpMV",
+            "_$s15SSSwiftUILoader14ConfigSettingsO13configurationAA19LoaderConfiguration_pyF",
+            "_$s15SSSwiftUILoader13DefaultConfigV22activityIndicatorStyleSo010UIActivityf4ViewG0Vvg",
+            "_$s15SSSwiftUILoader8SSLoaderC6sharedACvMZ",
+            "_$s15SSSwiftUILoader13DefaultConfigV22activityIndicatorStyleSo010UIActivityf4ViewG0VvM",
+            "_$s15SSSwiftUILoader17ActivityIndicatorVMn",
+            "_Swift51Overrides",
+            "_$s15SSSwiftUILoader13DefaultConfigV17loaderWindowColorSo7UIColorCvs",
+            "_$s15SSSwiftUILoader19LoaderConfigurationMp",
+            "_$s15SSSwiftUILoader13DefaultConfigV21loaderBackgroundColor7SwiftUI0G0Vvs",
+            "_$s15SSSwiftUILoader8SSLoaderC11startloader_6configySS_AA14ConfigSettingsOtF",
+            "_$s15SSSwiftUILoader13DefaultConfigV15loaderTextColor0e10BackgroundG00E12CornerRadius0e6WindowG0017activityIndicatorG00lM5StyleAC7SwiftUI0G0V_AL12CoreGraphics7CGFloatVSo7UIColorCAQSo010UIActivitym4ViewN0VtcfcfA1_",
+            "_$s15SSSwiftUILoader8SSLoaderC11popupWindow33_BD7DE1273B677F68D10C562ECFBD5DE5LLAA06LoaderE0AELLCSgvpfi",
+            "_$s15SSSwiftUILoader13DefaultConfigV21loaderBackgroundColor7SwiftUI0G0VvM",
+            "_$s15SSSwiftUILoader13DefaultConfigV18loaderCornerRadius12CoreGraphics7CGFloatVvM",
+            "_$s15SSSwiftUILoader8SSLoaderC11popupWindow33_BD7DE1273B677F68D10C562ECFBD5DE5LLAA06LoaderE0AELLCSgvs",
+            "_$s15SSSwiftUILoader8SSLoaderCfd",
+            "_$s15SSSwiftUILoader13DefaultConfigV22activityIndicatorColorSo7UIColorCvM",
+            "_$s15SSSwiftUILoader13DefaultConfigV22activityIndicatorStyleSo010UIActivityf4ViewG0Vvpfi",
+            "_SSSwiftUILoaderVersionString",
+            "_$s15SSSwiftUILoader13DefaultConfigVAA19LoaderConfigurationAAMc",
+            "_$s15SSSwiftUILoader13DefaultConfigV22activityIndicatorStyleSo010UIActivityf4ViewG0Vvs",
+            "_$s15SSSwiftUILoader8SSLoaderC6sharedACvsZ",
+            "_$s15SSSwiftUILoader13DefaultConfigV18loaderCornerRadius12CoreGraphics7CGFloatVvpfi",
+            "_$s15SSSwiftUILoader13DefaultConfigV15loaderTextColor7SwiftUI0G0Vvs",
+            "_$s15SSSwiftUILoader13DefaultConfigV21loaderBackgroundColor7SwiftUI0G0Vvg",
+            "_$s15SSSwiftUILoader13DefaultConfigV22activityIndicatorColorSo7UIColorCvpMV",
+            "_$s15SSSwiftUILoader13DefaultConfigV22activityIndicatorStyleSo010UIActivityf4ViewG0VvpMV",
+            "_$s15SSSwiftUILoader13DefaultConfigVAA19LoaderConfigurationAAWP",
+            "_$s15SSSwiftUILoader13DefaultConfigV17loaderWindowColorSo7UIColorCvM",
+            "_$s15SSSwiftUILoader8SSLoaderC10stopLoaderyyFTq",
+            "_$s15SSSwiftUILoader8SSLoaderC6sharedACvpZ",
+            "_$s15SSSwiftUILoader14ConfigSettingsON",
+            "_$s15SSSwiftUILoader13DefaultConfigV18loaderCornerRadius12CoreGraphics7CGFloatVvpMV",
+            "_$s15SSSwiftUILoader13DefaultConfigVACycfC",
+            "_$s15SSSwiftUILoader17ActivityIndicatorV7SwiftUI4ViewAAMc",
+            "_$s15SSSwiftUILoader8SSLoaderC11popupWindow33_BD7DE1273B677F68D10C562ECFBD5DE5LLAA06LoaderE0AELLCSgvM",
+            "_$s15SSSwiftUILoader17ActivityIndicatorV11isAnimatingSbvM",
+            "_$s15SSSwiftUILoader8SSLoaderCfD",
+            "_$s15SSSwiftUILoader8SSLoaderC6sharedACvgZ"
+          ],
+          "objc_class": [
+            "PodsDummy_SSSwiftUILoader"
+          ],
+          "weak": [
+            "___llvm_profile_raw_version",
+            "___llvm_profile_filename"
+          ]
+        },
+        "text": {
+          "global": [
+            "__ZN5swift39swift51override_conformsToSwiftProtocolEPKNS_14TargetMetadataINS_9InProcessEEEPKNS_24TargetProtocolDescriptorIS1_EEN7__swift9__runtime4llvm9StringRefEPFPKNS_35TargetProtocolConformanceDescriptorIS1_EES4_S8_SC_E",
+            "__Z34_swiftoverride_class_getSuperclassPKN5swift14TargetMetadataINS_9InProcessEEE"
+          ]
+        }
+      }
+    ],
+    "flags": [
+      {
+        "attributes": [
+          "not_app_extension_safe"
+        ]
+      }
+    ],
+    "install_names": [
+      {
+        "name": "@rpath/SSSwiftUILoader.framework/SSSwiftUILoader"
+      }
+    ],
+    "swift_abi": [
+      {
+        "abi": 7
+      }
+    ],
+    "target_info": [
+      {
+        "min_deployment": "13",
+        "target": "arm64-ios"
+      }
+    ]
+  },
+  "tapi_tbd_version": 5
+}

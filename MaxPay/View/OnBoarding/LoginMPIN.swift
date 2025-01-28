@@ -418,7 +418,9 @@ extension LoginMPIN {
                 print("loading....")
                 
             case .stopLoading:
-                
+//                                let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+//                                let vc = storyboard.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
+//                                self?.navigationController?.pushViewController(vc,animated: true)
                 print("Stop loading...")
                 
             case .dataLoaded:

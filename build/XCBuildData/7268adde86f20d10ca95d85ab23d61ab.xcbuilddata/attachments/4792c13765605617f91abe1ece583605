@@ -1,0 +1,68 @@
+{
+  "" : {
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown-master.dia",
+    "emit-module-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown-master-emit-module.dia",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown-master.swiftdeps"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/DropDown/DropDown/helpers/DPDConstants.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDConstants.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDConstants.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDConstants.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDConstants.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDConstants.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDConstants.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDConstants.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDConstants~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/DropDown/DropDown/helpers/DPDKeyboardListener.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDKeyboardListener.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDKeyboardListener.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDKeyboardListener.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDKeyboardListener.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDKeyboardListener.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDKeyboardListener.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDKeyboardListener.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDKeyboardListener~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/DropDown/DropDown/helpers/DPDUIView+Extension.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDUIView+Extension.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDUIView+Extension.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDUIView+Extension.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDUIView+Extension.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDUIView+Extension.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDUIView+Extension.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDUIView+Extension.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DPDUIView+Extension~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/DropDown/DropDown/src/DropDown.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/DropDown/DropDown/src/DropDown+Appearance.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown+Appearance.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown+Appearance.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown+Appearance.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown+Appearance.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown+Appearance.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown+Appearance.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown+Appearance.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDown+Appearance~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/DropDown/DropDown/src/DropDownCell.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDownCell.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDownCell.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDownCell.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDownCell.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDownCell.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDownCell.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDownCell.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/DropDown.build/Objects-normal/arm64/DropDownCell~partial.swiftmodule"
+  }
+}

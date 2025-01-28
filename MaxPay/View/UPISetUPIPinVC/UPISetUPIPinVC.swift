@@ -30,6 +30,8 @@ class UPISetUPIPinVC: BaseVC {
     var strSixDigitCardNumber = ""
     var expiryCard = ""
     
+    var jsonObjectString = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -123,7 +125,7 @@ class UPISetUPIPinVC: BaseVC {
             let accountDetails = AccountDetails(name: accountDetails?.name ?? "", aeba: accountDetails?.aeba ?? "", mbeba: accountDetails?.mbeba ?? "", accRefNumber: accountDetails?.accRefNumber ?? "", ifsc: accountDetails?.ifsc ?? "", maskedAccnumber: accountDetails?.maskedAccnumber ?? "", status: accountDetails?.status ?? "", type: accountDetails?.type ?? "", vpa: accountDetails?.vpa ?? "", dLength: accountDetails?.dLength ?? "", dType: accountDetails?.dType ?? "", balance: accountDetails?.balance ?? "", balTime: accountDetails?.balTime ?? "", atmpinFormat: accountDetails?.atmpinFormat ?? "", atmpinLength: accountDetails?.atmpinLength ?? "", iin: accountDetails?.iin ?? "", internationlActive: "N", otpFormat: accountDetails?.otpFormat ?? "")
             primaryAccountDetails = accountDetails
                             
-            var jsonObjectString = ""
+            //var jsonObjectString = ""
             
             do {
                 let encoder = JSONEncoder()
@@ -131,7 +133,7 @@ class UPISetUPIPinVC: BaseVC {
                 let jsonData = try encoder.encode(accountDetails)
                 if let jsonString = String(data: jsonData, encoding: .utf8) {
                     print(jsonString)
-                    jsonObjectString = jsonString
+                    self.jsonObjectString = jsonString
                 }
             } catch {
                 print("Error encoding JSON: \(error)")
@@ -143,7 +145,7 @@ class UPISetUPIPinVC: BaseVC {
             
             DispatchQueue.global(qos: .background).async {
                 // Working Properly
-                OliveUpiManager.activateAccount(iin: iin, account: jsonObjectString, cardNo: self.strSixDigitCardNumber, exp: self.expiryCard, viewController: self) { data, error in
+                OliveUpiManager.activateAccount(iin: iin, account: self.jsonObjectString, cardNo: self.strSixDigitCardNumber, exp: self.expiryCard, viewController: self) { data, error in
                     
                     if let err = error {
                         

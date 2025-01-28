@@ -1,0 +1,248 @@
+{
+  "" : {
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ObjectMapper-master.dia",
+    "emit-module-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ObjectMapper-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ObjectMapper-master-emit-module.dia",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ObjectMapper-master.swiftdeps"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/CodableTransform.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/CodableTransform.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/CodableTransform.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/CodableTransform.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/CodableTransform.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/CodableTransform.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/CodableTransform.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/CodableTransform.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/CodableTransform~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/CustomDateFormatTransform.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/CustomDateFormatTransform.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/CustomDateFormatTransform.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/CustomDateFormatTransform.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/CustomDateFormatTransform.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/CustomDateFormatTransform.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/CustomDateFormatTransform.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/CustomDateFormatTransform.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/CustomDateFormatTransform~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/DataTransform.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DataTransform.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DataTransform.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DataTransform.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DataTransform.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DataTransform.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DataTransform.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DataTransform.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DataTransform~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/DateFormatterTransform.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DateFormatterTransform.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DateFormatterTransform.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DateFormatterTransform.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DateFormatterTransform.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DateFormatterTransform.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DateFormatterTransform.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DateFormatterTransform.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DateFormatterTransform~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/DateTransform.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DateTransform.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DateTransform.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DateTransform.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DateTransform.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DateTransform.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DateTransform.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DateTransform.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DateTransform~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/DictionaryTransform.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DictionaryTransform.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DictionaryTransform.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DictionaryTransform.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DictionaryTransform.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DictionaryTransform.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DictionaryTransform.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DictionaryTransform.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/DictionaryTransform~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/EnumOperators.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/EnumOperators.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/EnumOperators.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/EnumOperators.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/EnumOperators.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/EnumOperators.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/EnumOperators.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/EnumOperators.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/EnumOperators~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/EnumTransform.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/EnumTransform.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/EnumTransform.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/EnumTransform.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/EnumTransform.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/EnumTransform.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/EnumTransform.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/EnumTransform.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/EnumTransform~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/FromJSON.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/FromJSON.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/FromJSON.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/FromJSON.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/FromJSON.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/FromJSON.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/FromJSON.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/FromJSON.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/FromJSON~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/HexColorTransform.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/HexColorTransform.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/HexColorTransform.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/HexColorTransform.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/HexColorTransform.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/HexColorTransform.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/HexColorTransform.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/HexColorTransform.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/HexColorTransform~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/ImmutableMappable.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ImmutableMappable.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ImmutableMappable.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ImmutableMappable.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ImmutableMappable.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ImmutableMappable.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ImmutableMappable.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ImmutableMappable.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ImmutableMappable~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/IntegerOperators.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/IntegerOperators.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/IntegerOperators.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/IntegerOperators.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/IntegerOperators.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/IntegerOperators.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/IntegerOperators.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/IntegerOperators.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/IntegerOperators~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/ISO8601DateTransform.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ISO8601DateTransform.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ISO8601DateTransform.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ISO8601DateTransform.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ISO8601DateTransform.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ISO8601DateTransform.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ISO8601DateTransform.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ISO8601DateTransform.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ISO8601DateTransform~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/Map.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Map.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Map.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Map.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Map.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Map.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Map.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Map.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Map~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/MapError.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/MapError.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/MapError.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/MapError.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/MapError.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/MapError.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/MapError.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/MapError.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/MapError~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/Mappable.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Mappable.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Mappable.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Mappable.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Mappable.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Mappable.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Mappable.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Mappable.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Mappable~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/Mapper.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Mapper.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Mapper.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Mapper.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Mapper.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Mapper.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Mapper.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Mapper.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Mapper~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/NSDecimalNumberTransform.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/NSDecimalNumberTransform.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/NSDecimalNumberTransform.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/NSDecimalNumberTransform.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/NSDecimalNumberTransform.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/NSDecimalNumberTransform.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/NSDecimalNumberTransform.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/NSDecimalNumberTransform.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/NSDecimalNumberTransform~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/Operators.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Operators.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Operators.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Operators.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Operators.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Operators.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Operators.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Operators.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/Operators~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/ToJSON.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ToJSON.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ToJSON.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ToJSON.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ToJSON.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ToJSON.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ToJSON.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ToJSON.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/ToJSON~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/TransformOf.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformOf.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformOf.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformOf.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformOf.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformOf.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformOf.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformOf.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformOf~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/TransformOperators.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformOperators.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformOperators.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformOperators.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformOperators.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformOperators.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformOperators.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformOperators.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformOperators~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/TransformType.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformType.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformType.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformType.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformType.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformType.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformType.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformType.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/TransformType~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/ObjectMapper/Sources/URLTransform.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/URLTransform.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/URLTransform.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/URLTransform.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/URLTransform.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/URLTransform.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/URLTransform.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/URLTransform.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/ObjectMapper.build/Objects-normal/arm64/URLTransform~partial.swiftmodule"
+  }
+}

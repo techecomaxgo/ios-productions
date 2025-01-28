@@ -693,38 +693,60 @@ class PaymentUPIIDNewConfirmationVC: BaseVC, CLLocationManagerDelegate, bankSele
     
     
     @IBAction func btnCheckBalanceAction(_ sender: UIButton) {
-        
-        DispatchQueue.main.async {
-            SwiftLoader.show(animated: true)
+        Task {
+            CheckBalance()
         }
         
-        apiCallOption = "chkbal"
+//        func performFirstTask() async {
+//             await CheckBalance()
+//        }
+//        
+//        let semaphore = DispatchSemaphore(value: 0)
+//        
+//        Task {
+//            await CheckBalance()
+//            semaphore.signal()
+//        }
+//        
+//        semaphore.wait()
+    }
+    
+    func CheckBalance(){
         
-        let accountDetails = AccountCheckBalance(name: accountDetails?.name ?? "", mmid: accountDetails?.mmid ?? "", aeba: accountDetails?.aeba ?? "", mbeba: accountDetails?.mbeba ?? "", accRefNumber: accountDetails?.accRefNumber ?? "", ifsc: accountDetails?.ifsc ?? "", maskedAccnumber: accountDetails?.maskedAccnumber ?? "", status: accountDetails?.status ?? "", type: accountDetails?.type ?? "", vpa: accountDetails?.vpa ?? "", dLength: accountDetails?.dLength ?? "", dType: accountDetails?.dType ?? "", balance: accountDetails?.balance ?? "", balTime: accountDetails?.balTime ?? "")
-        
-        var jsonObjectString = ""
-        
-        do {
-            let encoder = JSONEncoder()
-            encoder.outputFormatting = .prettyPrinted  // Add this line if you want the output to be formatted for better readability
-            let jsonData = try encoder.encode(accountDetails)
-            if let jsonString = String(data: jsonData, encoding: .utf8) {
-                print(jsonString)
-                jsonObjectString = jsonString
-            }
-        } catch {
-            print("Error encoding JSON: \(error)")
-        }
-        
-        if self.accountDetails?.status == "A" { // Account active
+        Task { @MainActor in
             
-            if self.accountDetails?.vpa != "" {
+            DispatchQueue.main.async {
+                SwiftLoader.show(animated: true)
+            }
+            
+            apiCallOption = "chkbal"
+            
+            let accountDetails = AccountCheckBalance(name: accountDetails?.name ?? "", mmid: accountDetails?.mmid ?? "", aeba: accountDetails?.aeba ?? "", mbeba: accountDetails?.mbeba ?? "", accRefNumber: accountDetails?.accRefNumber ?? "", ifsc: accountDetails?.ifsc ?? "", maskedAccnumber: accountDetails?.maskedAccnumber ?? "", status: accountDetails?.status ?? "", type: accountDetails?.type ?? "", vpa: accountDetails?.vpa ?? "", dLength: accountDetails?.dLength ?? "", dType: accountDetails?.dType ?? "", balance: accountDetails?.balance ?? "", balTime: accountDetails?.balTime ?? "")
+            
+            var jsonObjectString = ""
+            
+            do {
+                let encoder = JSONEncoder()
+                encoder.outputFormatting = .prettyPrinted  // Add this line if you want the output to be formatted for better readability
+                let jsonData = try encoder.encode(accountDetails)
+                if let jsonString = String(data: jsonData, encoding: .utf8) {
+                    print(jsonString)
+                    jsonObjectString = jsonString
+                }
+            } catch {
+                print("Error encoding JSON: \(error)")
+            }
+            
+            if self.accountDetails?.status == "A" { // Account active
                 
-                DispatchQueue.global(qos: .background).async {
+                if self.accountDetails?.vpa != "" {
+                    
+                    //DispatchQueue.global(qos: .background).async {
+                        DispatchQueue.global(qos: .userInitiated).async {
                     
                     print("MB test jsonobject for check balance\(jsonObjectString)")
                     // Working Properly
-                    OliveUpiManager.checkBalance(account: jsonObjectString, viewController: self) { data, error in
+                     OliveUpiManager.checkBalance(account: jsonObjectString, viewController: self) { data, error in
                         
                         if let err = error {
                             
@@ -750,28 +772,29 @@ class PaymentUPIIDNewConfirmationVC: BaseVC, CLLocationManagerDelegate, bankSele
                             }
                         }
                     }
+                    }
+                } else {
+                    
+                    DispatchQueue.main.async {
+                        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+                        let vc = storyboard.instantiateViewController(withIdentifier: "UPILinkUpdateVC") as! UPILinkUpdateVC
+                        vc.accountDetails = self.accountDetails
+                        self.navigationController?.pushViewController(vc, animated: true)
+                    }
                 }
-            } else {
                 
+            } else if accountDetails.status == "R" { // Account Not active
+                
+                // call activate account function
                 DispatchQueue.main.async {
                     let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
-                    let vc = storyboard.instantiateViewController(withIdentifier: "UPILinkUpdateVC") as! UPILinkUpdateVC
+                    let vc = storyboard.instantiateViewController(withIdentifier: "UPISetUPIPinVC") as! UPISetUPIPinVC
                     vc.accountDetails = self.accountDetails
                     self.navigationController?.pushViewController(vc, animated: true)
                 }
             }
             
-        } else if accountDetails.status == "R" { // Account Not active
-            
-            // call activate account function
-            DispatchQueue.main.async {
-                let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
-                let vc = storyboard.instantiateViewController(withIdentifier: "UPISetUPIPinVC") as! UPISetUPIPinVC
-                vc.accountDetails = self.accountDetails
-                self.navigationController?.pushViewController(vc, animated: true)
-            }
         }
-        
     }
     
     func saveBeneficary(dataResp: String) {

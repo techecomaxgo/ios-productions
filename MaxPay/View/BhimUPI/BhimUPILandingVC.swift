@@ -36,7 +36,7 @@ class BhimUPILandingVC: BaseVC {
     @IBOutlet weak var tableUpiOptions: UITableView!
 //    var arrUpiOptions = ["Send Money to Contact or UPI ID", "Send Money to Bank Account", "Request Money", "UPI Autopay", "Manage UPI ID", "Manage UPI Number", "Transaction History"]
     
-    var arrUpiOptions = ["Send Money to Contact or UPI ID", "Request Money to Contact or UPI ID", "Send Money to Bank Account", "UPI Autopay", "Beneficiary","Block List", "Transaction History"]
+    var arrUpiOptions = ["Send Money to Contact or UPI ID", "Request Money to Contact or UPI ID", "Send Money to Bank Account", "UPI Autopay", "Beneficiary","Block List", "Transaction History","Remove All Cache"]
 
     
     override func viewDidLoad() {

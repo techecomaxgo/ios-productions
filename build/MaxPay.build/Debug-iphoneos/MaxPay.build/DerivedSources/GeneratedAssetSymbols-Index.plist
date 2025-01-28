@@ -1,0 +1,3234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>colors</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameBlackColor</string>
+			<key>relativePath</key>
+			<string>./Color/black-color.colorset</string>
+			<key>swiftSymbol</key>
+			<string>black</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameCardNumber</string>
+			<key>relativePath</key>
+			<string>./Color/card-number.colorset</string>
+			<key>swiftSymbol</key>
+			<string>cardNumber</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameCardNumberColor</string>
+			<key>relativePath</key>
+			<string>./Color/card-number-color.colorset</string>
+			<key>swiftSymbol</key>
+			<string>cardNumber</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameGrey</string>
+			<key>relativePath</key>
+			<string>./Color/grey.colorset</string>
+			<key>swiftSymbol</key>
+			<string>grey</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameGreyChipColor</string>
+			<key>relativePath</key>
+			<string>./Color/grey-chip-color.colorset</string>
+			<key>swiftSymbol</key>
+			<string>greyChip</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameGreyLineColor</string>
+			<key>relativePath</key>
+			<string>./Color/grey-line-color.colorset</string>
+			<key>swiftSymbol</key>
+			<string>greyLine</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameLadiesSitBorderRedColor</string>
+			<key>relativePath</key>
+			<string>./Color/ladies-sit- border-red-color.colorset</string>
+			<key>swiftSymbol</key>
+			<string>ladiesSitBorderRed</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameMilesLogoRed</string>
+			<key>relativePath</key>
+			<string>./Color/miles-logo-red.colorset</string>
+			<key>swiftSymbol</key>
+			<string>milesLogoRed</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNamePayCardBgColor</string>
+			<key>relativePath</key>
+			<string>./Color/pay-card-bg-color.colorset</string>
+			<key>swiftSymbol</key>
+			<string>payCardBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNamePinkColor</string>
+			<key>relativePath</key>
+			<string>./Color/pink-color.colorset</string>
+			<key>swiftSymbol</key>
+			<string>pink</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNamePrimaryGreen</string>
+			<key>relativePath</key>
+			<string>./Color/primary-green.colorset</string>
+			<key>swiftSymbol</key>
+			<string>primaryGreen</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameReloadGreyColor</string>
+			<key>relativePath</key>
+			<string>./Color/reload-grey-color.colorset</string>
+			<key>swiftSymbol</key>
+			<string>reloadGrey</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameSecondaryGreen</string>
+			<key>relativePath</key>
+			<string>./Color/secondary-green.colorset</string>
+			<key>swiftSymbol</key>
+			<string>secondaryGreen</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameStatusRedColor</string>
+			<key>relativePath</key>
+			<string>./Color/status-red-color.colorset</string>
+			<key>swiftSymbol</key>
+			<string>statusRed</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameTextRedColor</string>
+			<key>relativePath</key>
+			<string>./Color/text-red-color.colorset</string>
+			<key>swiftSymbol</key>
+			<string>textRed</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameThemeGreen</string>
+			<key>relativePath</key>
+			<string>./theme_green.colorset</string>
+			<key>swiftSymbol</key>
+			<string>themeGreen</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameThemeGreenLight</string>
+			<key>relativePath</key>
+			<string>./theme_green_light.colorset</string>
+			<key>swiftSymbol</key>
+			<string>themeGreenLight</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameThemeTextDark</string>
+			<key>relativePath</key>
+			<string>./theme_text_dark.colorset</string>
+			<key>swiftSymbol</key>
+			<string>themeTextDark</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameThemeTextDark2</string>
+			<key>relativePath</key>
+			<string>./theme_text_dark2.colorset</string>
+			<key>swiftSymbol</key>
+			<string>themeTextDark2</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameWhiteColor</string>
+			<key>relativePath</key>
+			<string>./Color/white-color.colorset</string>
+			<key>swiftSymbol</key>
+			<string>white</string>
+		</dict>
+	</array>
+	<key>images</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAC</string>
+			<key>relativePath</key>
+			<string>./Travel/Amenities/AC.imageset</string>
+			<key>swiftSymbol</key>
+			<string>AC</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBeneficiary</string>
+			<key>relativePath</key>
+			<string>./UPI/Beneficiary.imageset</string>
+			<key>swiftSymbol</key>
+			<string>beneficiary</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBlanket</string>
+			<key>relativePath</key>
+			<string>./Travel/Amenities/Blanket.imageset</string>
+			<key>swiftSymbol</key>
+			<string>blanket</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBlockList</string>
+			<key>relativePath</key>
+			<string>./UPI/Block List.imageset</string>
+			<key>swiftSymbol</key>
+			<string>blockList</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameChargingPoint</string>
+			<key>relativePath</key>
+			<string>./Travel/Amenities/Charging-Point.imageset</string>
+			<key>swiftSymbol</key>
+			<string>chargingPoint</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameDeRegisterUPI</string>
+			<key>relativePath</key>
+			<string>./UPI/DeRegister UPI.imageset</string>
+			<key>swiftSymbol</key>
+			<string>deRegisterUPI</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameEmergencyExit</string>
+			<key>relativePath</key>
+			<string>./Travel/Amenities/Emergency-Exit.imageset</string>
+			<key>swiftSymbol</key>
+			<string>emergencyExit</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFireExtinguisher</string>
+			<key>relativePath</key>
+			<string>./Travel/Amenities/Fire-Extinguisher.imageset</string>
+			<key>swiftSymbol</key>
+			<string>fireExtinguisher</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFirstAidBox</string>
+			<key>relativePath</key>
+			<string>./Travel/Amenities/First-Aid-Box.imageset</string>
+			<key>swiftSymbol</key>
+			<string>firstAidBox</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFloatingControlBg</string>
+			<key>relativePath</key>
+			<string>./FloatingControlBg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>floatingControlBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFloatingMenuBG</string>
+			<key>relativePath</key>
+			<string>./FloatingMenuBG.imageset</string>
+			<key>swiftSymbol</key>
+			<string>floatingMenuBG</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameGPSTracking</string>
+			<key>relativePath</key>
+			<string>./Travel/Amenities/GPS-Tracking.imageset</string>
+			<key>swiftSymbol</key>
+			<string>gpsTracking</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameHammer</string>
+			<key>relativePath</key>
+			<string>./Travel/Amenities/Hammer.imageset</string>
+			<key>swiftSymbol</key>
+			<string>hammer</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameHandSanitizer</string>
+			<key>relativePath</key>
+			<string>./Travel/Amenities/Hand-Sanitizer.imageset</string>
+			<key>swiftSymbol</key>
+			<string>handSanitizer</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameImage</string>
+			<key>relativePath</key>
+			<string>./UPI/Image.imageset</string>
+			<key>swiftSymbol</key>
+			<string>image</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIntro1</string>
+			<key>relativePath</key>
+			<string>./Intro/Intro1.imageset</string>
+			<key>swiftSymbol</key>
+			<string>intro1</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIntro2</string>
+			<key>relativePath</key>
+			<string>./Intro/Intro2.imageset</string>
+			<key>swiftSymbol</key>
+			<string>intro2</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIntro3</string>
+			<key>relativePath</key>
+			<string>./Intro/Intro3.imageset</string>
+			<key>swiftSymbol</key>
+			<string>intro3</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIntro4</string>
+			<key>relativePath</key>
+			<string>./Intro/Intro4.imageset</string>
+			<key>swiftSymbol</key>
+			<string>intro4</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIntro5</string>
+			<key>relativePath</key>
+			<string>./Intro/Intro5.imageset</string>
+			<key>swiftSymbol</key>
+			<string>intro5</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameManageUPIID</string>
+			<key>relativePath</key>
+			<string>./UPI/Manage UPI ID.imageset</string>
+			<key>swiftSymbol</key>
+			<string>manageUPIID</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameManageUPINumber</string>
+			<key>relativePath</key>
+			<string>./UPI/Manage UPI Number.imageset</string>
+			<key>swiftSymbol</key>
+			<string>manageUPINumber</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePillow</string>
+			<key>relativePath</key>
+			<string>./Travel/Amenities/Pillow.imageset</string>
+			<key>swiftSymbol</key>
+			<string>pillow</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameQeflight</string>
+			<key>relativePath</key>
+			<string>./UPI/Qeflight.imageset</string>
+			<key>swiftSymbol</key>
+			<string>qeflight</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameReadingLight</string>
+			<key>relativePath</key>
+			<string>./Travel/Amenities/Reading-Light.imageset</string>
+			<key>swiftSymbol</key>
+			<string>readingLight</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRectanglecard</string>
+			<key>relativePath</key>
+			<string>./Rectanglecard.imageset</string>
+			<key>swiftSymbol</key>
+			<string>rectanglecard</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRemoveAllCache</string>
+			<key>relativePath</key>
+			<string>./UPI/Remove All Cache.imageset</string>
+			<key>swiftSymbol</key>
+			<string>removeAllCache</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRequestMoney</string>
+			<key>relativePath</key>
+			<string>./UPI/Request Money.imageset</string>
+			<key>swiftSymbol</key>
+			<string>requestMoney</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRequestMoneyToContactOrUPIID</string>
+			<key>relativePath</key>
+			<string>./Request Money to Contact or UPI ID.imageset</string>
+			<key>swiftSymbol</key>
+			<string>requestMoneyToContactOrUPIID</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSendMoneyToBankAccount</string>
+			<key>relativePath</key>
+			<string>./UPI/Send Money to Bank Account.imageset</string>
+			<key>swiftSymbol</key>
+			<string>sendMoneyToBankAccount</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSendMoneyToContactOrUPIID</string>
+			<key>relativePath</key>
+			<string>./UPI/Send Money to Contact or UPI ID.imageset</string>
+			<key>swiftSymbol</key>
+			<string>sendMoneyToContactOrUPIID</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameStaff</string>
+			<key>relativePath</key>
+			<string>./Travel/Amenities/Staff.imageset</string>
+			<key>swiftSymbol</key>
+			<string>staff</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTV</string>
+			<key>relativePath</key>
+			<string>./Travel/Amenities/TV.imageset</string>
+			<key>swiftSymbol</key>
+			<string>TV</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameToilet</string>
+			<key>relativePath</key>
+			<string>./Travel/Amenities/Toilet.imageset</string>
+			<key>swiftSymbol</key>
+			<string>toilet</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTransactionHistory</string>
+			<key>relativePath</key>
+			<string>./UPI/Transaction History.imageset</string>
+			<key>swiftSymbol</key>
+			<string>transactionHistory</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameUPIAutopay</string>
+			<key>relativePath</key>
+			<string>./UPI/UPI Autopay.imageset</string>
+			<key>swiftSymbol</key>
+			<string>upiAutopay</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameUPIIconIImage</string>
+			<key>relativePath</key>
+			<string>./UPIIconIImage.imageset</string>
+			<key>swiftSymbol</key>
+			<string>upiIconI</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameUPIPayment</string>
+			<key>relativePath</key>
+			<string>./UPIPayment.imageset</string>
+			<key>swiftSymbol</key>
+			<string>upiPayment</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameWaterBottle</string>
+			<key>relativePath</key>
+			<string>./Travel/Amenities/Water-Bottle.imageset</string>
+			<key>swiftSymbol</key>
+			<string>waterBottle</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameWiFi</string>
+			<key>relativePath</key>
+			<string>./Travel/Amenities/WiFi.imageset</string>
+			<key>swiftSymbol</key>
+			<string>wiFi</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAdd</string>
+			<key>relativePath</key>
+			<string>./add.imageset</string>
+			<key>swiftSymbol</key>
+			<string>add</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAddFPop</string>
+			<key>relativePath</key>
+			<string>./UPI/addFPop.imageset</string>
+			<key>swiftSymbol</key>
+			<string>addFPop</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAddpriv</string>
+			<key>relativePath</key>
+			<string>./addpriv.imageset</string>
+			<key>swiftSymbol</key>
+			<string>addpriv</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAvSeat</string>
+			<key>relativePath</key>
+			<string>./avSeat.imageset</string>
+			<key>swiftSymbol</key>
+			<string>avSeat</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBackarrow</string>
+			<key>relativePath</key>
+			<string>./backarrow.imageset</string>
+			<key>swiftSymbol</key>
+			<string>backarrow</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBackgroundImg</string>
+			<key>relativePath</key>
+			<string>./Quiz/backgroundImg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>backgroundImg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBankLogo</string>
+			<key>relativePath</key>
+			<string>./UPI/bank_logo.imageset</string>
+			<key>swiftSymbol</key>
+			<string>bankLogo</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBannerQuiz</string>
+			<key>relativePath</key>
+			<string>./Quiz/bannerQuiz.imageset</string>
+			<key>swiftSymbol</key>
+			<string>bannerQuiz</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBarcodeFlight</string>
+			<key>relativePath</key>
+			<string>./UPI/barcodeFlight.imageset</string>
+			<key>swiftSymbol</key>
+			<string>barcodeFlight</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBbpsLogo</string>
+			<key>relativePath</key>
+			<string>./bbps_logo.imageset</string>
+			<key>swiftSymbol</key>
+			<string>bbpsLogo</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBeneficiaryNameIc</string>
+			<key>relativePath</key>
+			<string>./Pay/beneficiary-name-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>beneficiaryNameIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBeneficiaryUpiidIc</string>
+			<key>relativePath</key>
+			<string>./Pay/beneficiary-upiid-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>beneficiaryUpiidIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBgHomeHeaderGreen</string>
+			<key>relativePath</key>
+			<string>./Dashboard/bg-home-header-green.imageset</string>
+			<key>swiftSymbol</key>
+			<string>bgHomeHeaderGreen</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBgHomeHeaderWhite</string>
+			<key>relativePath</key>
+			<string>./Dashboard/bg-home-header-white.imageset</string>
+			<key>swiftSymbol</key>
+			<string>bgHomeHeaderWhite</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBhim</string>
+			<key>relativePath</key>
+			<string>./bhim.imageset</string>
+			<key>swiftSymbol</key>
+			<string>bhim</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBhimUpiIc</string>
+			<key>relativePath</key>
+			<string>./bhim-upi-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>bhimUpiIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBhimImg</string>
+			<key>relativePath</key>
+			<string>./Login Flow/bhimImg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>bhimImg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBill</string>
+			<key>relativePath</key>
+			<string>./bill.imageset</string>
+			<key>swiftSymbol</key>
+			<string>bill</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBlackSeat</string>
+			<key>relativePath</key>
+			<string>./Travel/black_seat.imageset</string>
+			<key>swiftSymbol</key>
+			<string>blackSeat</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBnkImg</string>
+			<key>relativePath</key>
+			<string>./bnkImg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>bnkImg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBookedSeat</string>
+			<key>relativePath</key>
+			<string>./bookedSeat.imageset</string>
+			<key>swiftSymbol</key>
+			<string>bookedSeat</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBorderGreenPic</string>
+			<key>relativePath</key>
+			<string>./Quiz/borderGreenPic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>borderGreenPic</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBusDropPointTab</string>
+			<key>relativePath</key>
+			<string>./Travel/bus-drop-point-tab.imageset</string>
+			<key>swiftSymbol</key>
+			<string>busDropPointTab</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBusPickupPointTab</string>
+			<key>relativePath</key>
+			<string>./Travel/bus-pickup-point-tab.imageset</string>
+			<key>swiftSymbol</key>
+			<string>busPickupPointTab</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBusSelectSeatTab</string>
+			<key>relativePath</key>
+			<string>./Travel/bus-select-seat-tab.imageset</string>
+			<key>swiftSymbol</key>
+			<string>busSelectSeatTab</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBusSerchticketBg</string>
+			<key>relativePath</key>
+			<string>./Travel/bus-serchticket-bg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>busSerchticketBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCalenderHistoryIc</string>
+			<key>relativePath</key>
+			<string>./Complaints/calender-history-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>calenderHistoryIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCard</string>
+			<key>relativePath</key>
+			<string>./card.imageset</string>
+			<key>swiftSymbol</key>
+			<string>card</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCardBgviewIc</string>
+			<key>relativePath</key>
+			<string>./Dashboard/card-bgview-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>cardBgviewIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCardChipIc</string>
+			<key>relativePath</key>
+			<string>./Dashboard/card-chip-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>cardChipIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCardHomeUpper</string>
+			<key>relativePath</key>
+			<string>./Dashboard/card-home-upper.imageset</string>
+			<key>swiftSymbol</key>
+			<string>cardHomeUpper</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCardUparrowIc</string>
+			<key>relativePath</key>
+			<string>./Dashboard/card-uparrow-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>cardUparrowIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCardBBack</string>
+			<key>relativePath</key>
+			<string>./cardBBack.imageset</string>
+			<key>swiftSymbol</key>
+			<string>cardBBack</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCardBackPro</string>
+			<key>relativePath</key>
+			<string>./cardBackPro.imageset</string>
+			<key>swiftSymbol</key>
+			<string>cardBackPro</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCardFBack</string>
+			<key>relativePath</key>
+			<string>./cardFBack.imageset</string>
+			<key>swiftSymbol</key>
+			<string>cardFBack</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCardGrBack</string>
+			<key>relativePath</key>
+			<string>./UPI/cardGrBack.imageset</string>
+			<key>swiftSymbol</key>
+			<string>cardGrBack</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCardRBack</string>
+			<key>relativePath</key>
+			<string>./cardRBack.imageset</string>
+			<key>swiftSymbol</key>
+			<string>cardRBack</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCatagoryBg</string>
+			<key>relativePath</key>
+			<string>./catagory_bg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>catagoryBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCatagoryItem</string>
+			<key>relativePath</key>
+			<string>./catagory_item.imageset</string>
+			<key>swiftSymbol</key>
+			<string>catagoryItem</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameChainPic</string>
+			<key>relativePath</key>
+			<string>./profile/chainPic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>chainPic</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameChainProgressLine</string>
+			<key>relativePath</key>
+			<string>./chainProgressLine.imageset</string>
+			<key>swiftSymbol</key>
+			<string>chainProgressLine</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameChainTopImg</string>
+			<key>relativePath</key>
+			<string>./chainTopImg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>chainTopImg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCheck</string>
+			<key>relativePath</key>
+			<string>./check.imageset</string>
+			<key>swiftSymbol</key>
+			<string>check</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCircleBoardingNotselected</string>
+			<key>relativePath</key>
+			<string>./Travel/circle-boarding-notselected.imageset</string>
+			<key>swiftSymbol</key>
+			<string>circleBoardingNotselected</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCircleBoardingSelected</string>
+			<key>relativePath</key>
+			<string>./Travel/circle-boarding-selected.imageset</string>
+			<key>swiftSymbol</key>
+			<string>circleBoardingSelected</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameClaimBg</string>
+			<key>relativePath</key>
+			<string>./claimBg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>claimBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameClose</string>
+			<key>relativePath</key>
+			<string>./close.imageset</string>
+			<key>swiftSymbol</key>
+			<string>close</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCloseButtonIc</string>
+			<key>relativePath</key>
+			<string>./Travel/close-button-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>closeButtonIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameComplaintSubmittedIc</string>
+			<key>relativePath</key>
+			<string>./Complaints/complaint-submitted-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>complaintSubmittedIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCompleteStatusImg</string>
+			<key>relativePath</key>
+			<string>./complete_statusImg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>completeStatusImg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameConplaintHome</string>
+			<key>relativePath</key>
+			<string>./conplaint-home.imageset</string>
+			<key>swiftSymbol</key>
+			<string>conplaintHome</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCreateQRMandateVC</string>
+			<key>relativePath</key>
+			<string>./UPI/createQRMandateVC.imageset</string>
+			<key>swiftSymbol</key>
+			<string>createQRMandateVC</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameDeactivePhone</string>
+			<key>relativePath</key>
+			<string>./deactivePhone.imageset</string>
+			<key>swiftSymbol</key>
+			<string>deactivePhone</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameDebitCdBack</string>
+			<key>relativePath</key>
+			<string>./debit_cd_back.imageset</string>
+			<key>swiftSymbol</key>
+			<string>debitCdBack</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameDebitImage</string>
+			<key>relativePath</key>
+			<string>./debit_image.imageset</string>
+			<key>swiftSymbol</key>
+			<string>debit</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameDefaultMaxpeProfile</string>
+			<key>relativePath</key>
+			<string>./default_maxpe_profile.imageset</string>
+			<key>swiftSymbol</key>
+			<string>defaultMaxpeProfile</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameDefaultMaxpeProfile1</string>
+			<key>relativePath</key>
+			<string>./default_maxpe_profile 1.imageset</string>
+			<key>swiftSymbol</key>
+			<string>defaultMaxpeProfile1</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameDelete</string>
+			<key>relativePath</key>
+			<string>./delete.imageset</string>
+			<key>swiftSymbol</key>
+			<string>delete</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameDottedHorizontalLineIc</string>
+			<key>relativePath</key>
+			<string>./Travel/dotted-horizontal-line-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>dottedHorizontalLineIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameDottedVerticalLineIc</string>
+			<key>relativePath</key>
+			<string>./Travel/dotted-vertical-line-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>dottedVerticalLineIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameDottedVerticalPointLineIc</string>
+			<key>relativePath</key>
+			<string>./Travel/dotted-vertical-point-line-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>dottedVerticalPointLineIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameDownld</string>
+			<key>relativePath</key>
+			<string>./Quiz/downld.imageset</string>
+			<key>swiftSymbol</key>
+			<string>downld</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameEclanatyionmark</string>
+			<key>relativePath</key>
+			<string>./eclanatyionmark.imageset</string>
+			<key>swiftSymbol</key>
+			<string>eclanatyionmark</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameElipse</string>
+			<key>relativePath</key>
+			<string>./UPI/elipse.imageset</string>
+			<key>swiftSymbol</key>
+			<string>elipse</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameEmergencyExit</string>
+			<key>relativePath</key>
+			<string>./emergencyExit.imageset</string>
+			<key>swiftSymbol</key>
+			<string>emergencyExit</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameEnglish</string>
+			<key>relativePath</key>
+			<string>./english.imageset</string>
+			<key>swiftSymbol</key>
+			<string>english</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameEnterPinScreenBg</string>
+			<key>relativePath</key>
+			<string>./Login Flow/enter_pin_screen_bg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>enterPinScreenBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameExtraLSeat</string>
+			<key>relativePath</key>
+			<string>./extraLSeat.imageset</string>
+			<key>swiftSymbol</key>
+			<string>extraLSeat</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameEyeIc</string>
+			<key>relativePath</key>
+			<string>./UPI/eye-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>eyeIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFailed</string>
+			<key>relativePath</key>
+			<string>./Quiz/failed.imageset</string>
+			<key>swiftSymbol</key>
+			<string>failed</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFilterHistoryIc</string>
+			<key>relativePath</key>
+			<string>./Complaints/filter-history-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>filterHistoryIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFlashOffIc</string>
+			<key>relativePath</key>
+			<string>./flash-off-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>flashOffIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFlashOnIc</string>
+			<key>relativePath</key>
+			<string>./flash-on-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>flashOnIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFlightFromto</string>
+			<key>relativePath</key>
+			<string>./flightFromto.imageset</string>
+			<key>swiftSymbol</key>
+			<string>flightFromto</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFlightPic</string>
+			<key>relativePath</key>
+			<string>./UPI/flightPic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>flightPic</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFlightTicketBackPic</string>
+			<key>relativePath</key>
+			<string>./UPI/flightTicketBackPic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>flightTicketBackPic</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFlightTopPic</string>
+			<key>relativePath</key>
+			<string>./flightTopPic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>flightTopPic</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFoundSmilyBgGreen</string>
+			<key>relativePath</key>
+			<string>./foundSmilyBgGreen.imageset</string>
+			<key>swiftSymbol</key>
+			<string>foundSmilyBgGreen</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameGreenSeat</string>
+			<key>relativePath</key>
+			<string>./Travel/green_seat.imageset</string>
+			<key>swiftSymbol</key>
+			<string>greenSeat</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameGreySeat</string>
+			<key>relativePath</key>
+			<string>./Travel/grey_seat.imageset</string>
+			<key>swiftSymbol</key>
+			<string>greySeat</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameHandle</string>
+			<key>relativePath</key>
+			<string>./handle.imageset</string>
+			<key>swiftSymbol</key>
+			<string>handle</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameHotelsamplePic</string>
+			<key>relativePath</key>
+			<string>./UPI/hotelsamplePic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>hotelsamplePic</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcComplaint</string>
+			<key>relativePath</key>
+			<string>./Complaints/icComplaint.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icComplaint</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcMaxUPI</string>
+			<key>relativePath</key>
+			<string>./icMaxUPI.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icMaxUPI</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcProfile</string>
+			<key>relativePath</key>
+			<string>./icProfile.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icProfile</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcScanQR</string>
+			<key>relativePath</key>
+			<string>./profile/icScanQR.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icScanQR</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcShareQR</string>
+			<key>relativePath</key>
+			<string>./profile/icShareQR.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icShareQR</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcArrowBack24</string>
+			<key>relativePath</key>
+			<string>./ic_arrow_back_24.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icArrowBack24</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcArrowDown</string>
+			<key>relativePath</key>
+			<string>./ic_arrow_down.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icArrowDown</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcArrowUp</string>
+			<key>relativePath</key>
+			<string>./ic_arrow_up.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icArrowUp</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcBaselineAddCircle24</string>
+			<key>relativePath</key>
+			<string>./ic_baseline_add_circle_24.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icBaselineAddCircle24</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcBaselineBlock24</string>
+			<key>relativePath</key>
+			<string>./ic_baseline_block_24.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icBaselineBlock24</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcBaselineCalendar</string>
+			<key>relativePath</key>
+			<string>./ic_baseline_calendar.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icBaselineCalendar</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcBaselineCalendarToday24</string>
+			<key>relativePath</key>
+			<string>./ic_baseline_calendar_today_24.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icBaselineCalendarToday24</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcBaselineHistory24</string>
+			<key>relativePath</key>
+			<string>./ic_baseline_history_24.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icBaselineHistory24</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcBaselineKeyboardArrowDown24</string>
+			<key>relativePath</key>
+			<string>./ic_baseline_keyboard_arrow_down_24.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icBaselineKeyboardArrowDown24</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcBaselineKeyboardArrowRight241</string>
+			<key>relativePath</key>
+			<string>./ic_baseline_keyboard_arrow_right_24 1.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icBaselineKeyboardArrowRight241</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcBaselinePeopleAlt24</string>
+			<key>relativePath</key>
+			<string>./ic_baseline_people_alt_24.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icBaselinePeopleAlt24</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcBaselineQrCode24</string>
+			<key>relativePath</key>
+			<string>./ic_baseline_qr_code_24.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icBaselineQrCode24</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcBaselineSearch24</string>
+			<key>relativePath</key>
+			<string>./ic_baseline_search_24.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icBaselineSearch24</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcBaselineSimCard24</string>
+			<key>relativePath</key>
+			<string>./ic_baseline_sim_card_24.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icBaselineSimCard24</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcBaselineTransfer</string>
+			<key>relativePath</key>
+			<string>./ic_baseline_transfer.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icBaselineTransfer</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcBaselineTrendingFlat24</string>
+			<key>relativePath</key>
+			<string>./ic_baseline_trending_flat_24.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icBaselineTrendingFlat24</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcHomeTransfer</string>
+			<key>relativePath</key>
+			<string>./ic_home_transfer.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icHomeTransfer</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcOnboarding1</string>
+			<key>relativePath</key>
+			<string>./Dashboard/ic_onboarding_1.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icOnboarding1</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIcOptionsBg</string>
+			<key>relativePath</key>
+			<string>./ic_options_bg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>icOptionsBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIdeaExchange</string>
+			<key>relativePath</key>
+			<string>./idea-exchange.imageset</string>
+			<key>swiftSymbol</key>
+			<string>ideaExchange</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameImgThumb</string>
+			<key>relativePath</key>
+			<string>./Quiz/imgThumb.imageset</string>
+			<key>swiftSymbol</key>
+			<string>imgThumb</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameImgphone</string>
+			<key>relativePath</key>
+			<string>./imgphone.imageset</string>
+			<key>swiftSymbol</key>
+			<string>imgphone</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameIndia</string>
+			<key>relativePath</key>
+			<string>./india.imageset</string>
+			<key>swiftSymbol</key>
+			<string>india</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameInfoIc</string>
+			<key>relativePath</key>
+			<string>./Dashboard/info-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>infoIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameInfoPics</string>
+			<key>relativePath</key>
+			<string>./infoPics.imageset</string>
+			<key>swiftSymbol</key>
+			<string>infoPics</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameItemBg</string>
+			<key>relativePath</key>
+			<string>./itemBg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>itemBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameItemBgLarge</string>
+			<key>relativePath</key>
+			<string>./itemBgLarge.imageset</string>
+			<key>swiftSymbol</key>
+			<string>itemBgLarge</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameItemHeaderBg</string>
+			<key>relativePath</key>
+			<string>./itemHeaderBg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>itemHeaderBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameItemMenu</string>
+			<key>relativePath</key>
+			<string>./itemMenu.imageset</string>
+			<key>swiftSymbol</key>
+			<string>itemMenu</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameItemPlaceholder</string>
+			<key>relativePath</key>
+			<string>./itemPlaceholder.imageset</string>
+			<key>swiftSymbol</key>
+			<string>itemPlaceholder</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameLineFlight</string>
+			<key>relativePath</key>
+			<string>./lineFlight.imageset</string>
+			<key>swiftSymbol</key>
+			<string>lineFlight</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameLocation</string>
+			<key>relativePath</key>
+			<string>./location.imageset</string>
+			<key>swiftSymbol</key>
+			<string>location</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameLocationPin</string>
+			<key>relativePath</key>
+			<string>./location-pin.imageset</string>
+			<key>swiftSymbol</key>
+			<string>locationPin</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameLogoPics</string>
+			<key>relativePath</key>
+			<string>./Quiz/logoPics.imageset</string>
+			<key>swiftSymbol</key>
+			<string>logoPics</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameLogoutMain</string>
+			<key>relativePath</key>
+			<string>./logout_main.imageset</string>
+			<key>swiftSymbol</key>
+			<string>logoutMain</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameLogoutback</string>
+			<key>relativePath</key>
+			<string>./profile/logoutback.imageset</string>
+			<key>swiftSymbol</key>
+			<string>logoutback</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameLostAndFound</string>
+			<key>relativePath</key>
+			<string>./lost-and-found.imageset</string>
+			<key>swiftSymbol</key>
+			<string>lostAndFound</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameLostSmilyGreen</string>
+			<key>relativePath</key>
+			<string>./lostSmilyGreen.imageset</string>
+			<key>swiftSymbol</key>
+			<string>lostSmilyGreen</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameLowerbackImg</string>
+			<key>relativePath</key>
+			<string>./lowerbackImg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>lowerbackImg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMandateAlert</string>
+			<key>relativePath</key>
+			<string>./mandate_alert.imageset</string>
+			<key>swiftSymbol</key>
+			<string>mandateAlert</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMaxHomeHeader</string>
+			<key>relativePath</key>
+			<string>./Dashboard/max-home-header.imageset</string>
+			<key>swiftSymbol</key>
+			<string>maxHomeHeader</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMaxQrScanBg</string>
+			<key>relativePath</key>
+			<string>./QrScan/max-qr-scan-bg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>maxQrScanBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMaxThemeLogi</string>
+			<key>relativePath</key>
+			<string>./QrScan/max-theme-logi.imageset</string>
+			<key>swiftSymbol</key>
+			<string>maxThemeLogi</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMaxpayWalletLogo</string>
+			<key>relativePath</key>
+			<string>./maxpay_wallet_logo.imageset</string>
+			<key>swiftSymbol</key>
+			<string>maxpayWalletLogo</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMaxupi</string>
+			<key>relativePath</key>
+			<string>./maxupi.imageset</string>
+			<key>swiftSymbol</key>
+			<string>maxupi</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMeChain</string>
+			<key>relativePath</key>
+			<string>./me_chain.imageset</string>
+			<key>swiftSymbol</key>
+			<string>meChain</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMeLogout</string>
+			<key>relativePath</key>
+			<string>./me_logout.imageset</string>
+			<key>swiftSymbol</key>
+			<string>meLogout</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMeMilestone</string>
+			<key>relativePath</key>
+			<string>./me_milestone.imageset</string>
+			<key>swiftSymbol</key>
+			<string>meMilestone</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMeMonthlyContest</string>
+			<key>relativePath</key>
+			<string>./me_monthly_contest.imageset</string>
+			<key>swiftSymbol</key>
+			<string>meMonthlyContest</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMePpolicy</string>
+			<key>relativePath</key>
+			<string>./me_ppolicy.imageset</string>
+			<key>swiftSymbol</key>
+			<string>mePpolicy</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMeProfile</string>
+			<key>relativePath</key>
+			<string>./me_profile.imageset</string>
+			<key>swiftSymbol</key>
+			<string>meProfile</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMeRank</string>
+			<key>relativePath</key>
+			<string>./me_rank.imageset</string>
+			<key>swiftSymbol</key>
+			<string>meRank</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMeSettings</string>
+			<key>relativePath</key>
+			<string>./me_settings.imageset</string>
+			<key>swiftSymbol</key>
+			<string>meSettings</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMenu</string>
+			<key>relativePath</key>
+			<string>./menu.imageset</string>
+			<key>swiftSymbol</key>
+			<string>menu</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMenuCardIc</string>
+			<key>relativePath</key>
+			<string>./Dashboard/menu-card-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>menuCardIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMenuIc</string>
+			<key>relativePath</key>
+			<string>./Dashboard/menu-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>menuIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMiles</string>
+			<key>relativePath</key>
+			<string>./profile/miles.imageset</string>
+			<key>swiftSymbol</key>
+			<string>miles</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMilesIc</string>
+			<key>relativePath</key>
+			<string>./Travel/miles-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>milesIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMilesBannermile</string>
+			<key>relativePath</key>
+			<string>./milesBannermile.imageset</string>
+			<key>swiftSymbol</key>
+			<string>milesBannermile</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMilesprogress</string>
+			<key>relativePath</key>
+			<string>./milesprogress.imageset</string>
+			<key>swiftSymbol</key>
+			<string>milesprogress</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMilstone40Piller</string>
+			<key>relativePath</key>
+			<string>./milstone40Piller.imageset</string>
+			<key>swiftSymbol</key>
+			<string>milstone40Piller</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMilstone50Piller</string>
+			<key>relativePath</key>
+			<string>./milstone50Piller.imageset</string>
+			<key>swiftSymbol</key>
+			<string>milstone50Piller</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMilstoneCardImg</string>
+			<key>relativePath</key>
+			<string>./milstoneCardImg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>milstoneCardImg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMilstoneb2</string>
+			<key>relativePath</key>
+			<string>./milstoneb2.imageset</string>
+			<key>swiftSymbol</key>
+			<string>milstoneb2</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMilstonebrandMacPics</string>
+			<key>relativePath</key>
+			<string>./milstonebrandMacPics.imageset</string>
+			<key>swiftSymbol</key>
+			<string>milstonebrandMacPics</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMilstonebrandstarPics</string>
+			<key>relativePath</key>
+			<string>./milstonebrandstarPics.imageset</string>
+			<key>swiftSymbol</key>
+			<string>milstonebrandstarPics</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMilstoneroadPiller</string>
+			<key>relativePath</key>
+			<string>./milstoneroadPiller.imageset</string>
+			<key>swiftSymbol</key>
+			<string>milstoneroadPiller</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMilstonetoback</string>
+			<key>relativePath</key>
+			<string>./milstonetoback.imageset</string>
+			<key>swiftSymbol</key>
+			<string>milstonetoback</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMilstonneroad</string>
+			<key>relativePath</key>
+			<string>./milstonneroad.imageset</string>
+			<key>swiftSymbol</key>
+			<string>milstonneroad</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMinusFPop</string>
+			<key>relativePath</key>
+			<string>./UPI/minusFPop.imageset</string>
+			<key>swiftSymbol</key>
+			<string>minusFPop</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMinusImg</string>
+			<key>relativePath</key>
+			<string>./minusImg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>minusImg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMobileOnlinePayment</string>
+			<key>relativePath</key>
+			<string>./mobile-online-payment.imageset</string>
+			<key>swiftSymbol</key>
+			<string>mobileOnlinePayment</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMobileNumberScreenBg</string>
+			<key>relativePath</key>
+			<string>./Login Flow/mobile_number_screen_bg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>mobileNumberScreenBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMobileVerificationScreenBg</string>
+			<key>relativePath</key>
+			<string>./Login Flow/mobile_verification_screen_bg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>mobileVerificationScreenBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMpinMatch</string>
+			<key>relativePath</key>
+			<string>./Login Flow/mpin_match.imageset</string>
+			<key>swiftSymbol</key>
+			<string>mpinMatch</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMultiEarthpic</string>
+			<key>relativePath</key>
+			<string>./UPI/multiEarthpic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>multiEarthpic</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMyCardIc</string>
+			<key>relativePath</key>
+			<string>./my-card-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>myCardIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMyCard2Ic</string>
+			<key>relativePath</key>
+			<string>./my-card2-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>myCard2Ic</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMyQrButton</string>
+			<key>relativePath</key>
+			<string>./UPI/my-qr-button.imageset</string>
+			<key>swiftSymbol</key>
+			<string>myQrButton</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameNetbanking</string>
+			<key>relativePath</key>
+			<string>./netbanking.imageset</string>
+			<key>swiftSymbol</key>
+			<string>netbanking</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameNextArrow</string>
+			<key>relativePath</key>
+			<string>./nextArrow.imageset</string>
+			<key>swiftSymbol</key>
+			<string>nextArrow</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameNonRecSeat</string>
+			<key>relativePath</key>
+			<string>./nonRecSeat.imageset</string>
+			<key>swiftSymbol</key>
+			<string>nonRecSeat</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameNotAvSeat</string>
+			<key>relativePath</key>
+			<string>./notAvSeat.imageset</string>
+			<key>swiftSymbol</key>
+			<string>notAvSeat</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameNotificationIc</string>
+			<key>relativePath</key>
+			<string>./Dashboard/notification-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>notificationIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameOpen</string>
+			<key>relativePath</key>
+			<string>./open.imageset</string>
+			<key>swiftSymbol</key>
+			<string>open</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameOpenBg</string>
+			<key>relativePath</key>
+			<string>./openBg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>openBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePaid</string>
+			<key>relativePath</key>
+			<string>./Quiz/paid.imageset</string>
+			<key>swiftSymbol</key>
+			<string>paid</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePaymentFailedIc</string>
+			<key>relativePath</key>
+			<string>./Pay/payment-failed-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>paymentFailedIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePaymentFailedProgress</string>
+			<key>relativePath</key>
+			<string>./payment-failed-progress.imageset</string>
+			<key>swiftSymbol</key>
+			<string>paymentFailedProgress</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePaymentPendingIc</string>
+			<key>relativePath</key>
+			<string>./Pay/payment-pending-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>paymentPendingIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePaymentSuccessfulIc</string>
+			<key>relativePath</key>
+			<string>./Pay/payment-successful-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>paymentSuccessfulIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePenBlack</string>
+			<key>relativePath</key>
+			<string>./UPI/penBlack.imageset</string>
+			<key>swiftSymbol</key>
+			<string>penBlack</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePencil</string>
+			<key>relativePath</key>
+			<string>./pencil.imageset</string>
+			<key>swiftSymbol</key>
+			<string>pencil</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePinkSeat</string>
+			<key>relativePath</key>
+			<string>./Travel/pink_seat.imageset</string>
+			<key>swiftSymbol</key>
+			<string>pinkSeat</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePlusIcon</string>
+			<key>relativePath</key>
+			<string>./plusIcon.imageset</string>
+			<key>swiftSymbol</key>
+			<string>plusIcon</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePlusPic</string>
+			<key>relativePath</key>
+			<string>./plusPic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>plusPic</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePolsSeprator</string>
+			<key>relativePath</key>
+			<string>./polsSeprator.imageset</string>
+			<key>swiftSymbol</key>
+			<string>polsSeprator</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePoweredByUpi</string>
+			<key>relativePath</key>
+			<string>./UPI/powered_by_upi.imageset</string>
+			<key>swiftSymbol</key>
+			<string>poweredByUpi</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePoweredByUpiSteps</string>
+			<key>relativePath</key>
+			<string>./UPI/powered_by_upi_steps.imageset</string>
+			<key>swiftSymbol</key>
+			<string>poweredByUpiSteps</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePoweredCountOne</string>
+			<key>relativePath</key>
+			<string>./UPI/powered_count_one.imageset</string>
+			<key>swiftSymbol</key>
+			<string>poweredCountOne</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePoweredCountThree</string>
+			<key>relativePath</key>
+			<string>./UPI/powered_count_three.imageset</string>
+			<key>swiftSymbol</key>
+			<string>poweredCountThree</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePoweredCountTwo</string>
+			<key>relativePath</key>
+			<string>./UPI/powered_count_two.imageset</string>
+			<key>swiftSymbol</key>
+			<string>poweredCountTwo</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePreviousArrow</string>
+			<key>relativePath</key>
+			<string>./previousArrow.imageset</string>
+			<key>swiftSymbol</key>
+			<string>previousArrow</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameProfileBackground</string>
+			<key>relativePath</key>
+			<string>./profileBackground.imageset</string>
+			<key>swiftSymbol</key>
+			<string>profileBackground</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameQrScannerBg</string>
+			<key>relativePath</key>
+			<string>./UPI/qr-scanner-bg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>qrScannerBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameQrPic</string>
+			<key>relativePath</key>
+			<string>./profile/qrPic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>qrPic</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameQui02</string>
+			<key>relativePath</key>
+			<string>./qui02.imageset</string>
+			<key>swiftSymbol</key>
+			<string>qui02</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameQuizPicBanner</string>
+			<key>relativePath</key>
+			<string>./quizPicBanner.imageset</string>
+			<key>swiftSymbol</key>
+			<string>quizPicBanner</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRadioButton</string>
+			<key>relativePath</key>
+			<string>./radio-button.imageset</string>
+			<key>swiftSymbol</key>
+			<string>radioButton</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRadioOnButton</string>
+			<key>relativePath</key>
+			<string>./radio-on-button.imageset</string>
+			<key>swiftSymbol</key>
+			<string>radioOnButton</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRankPic</string>
+			<key>relativePath</key>
+			<string>./profile/rankPic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>rankPic</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRefresh</string>
+			<key>relativePath</key>
+			<string>./refresh.imageset</string>
+			<key>swiftSymbol</key>
+			<string>refresh</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRightIc</string>
+			<key>relativePath</key>
+			<string>./UPI/right-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>rightIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRightarrowflight</string>
+			<key>relativePath</key>
+			<string>./rightarrowflight.imageset</string>
+			<key>swiftSymbol</key>
+			<string>rightarrowflight</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRupay</string>
+			<key>relativePath</key>
+			<string>./rupay.imageset</string>
+			<key>swiftSymbol</key>
+			<string>rupay</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameScanAgainButtonBg</string>
+			<key>relativePath</key>
+			<string>./UPI/scan-again-button-bg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>scanAgainButtonBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameScanQrButtonIc</string>
+			<key>relativePath</key>
+			<string>./UPI/scan-qr-button-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>scanQrButtonIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameScanOverflow</string>
+			<key>relativePath</key>
+			<string>./scan_overflow.imageset</string>
+			<key>swiftSymbol</key>
+			<string>scanOverflow</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSearch</string>
+			<key>relativePath</key>
+			<string>./search.imageset</string>
+			<key>swiftSymbol</key>
+			<string>search</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSearchBarBg</string>
+			<key>relativePath</key>
+			<string>./UPI/search-bar-bg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>searchBarBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSearchBackgroundIc</string>
+			<key>relativePath</key>
+			<string>./UPI/search_background_ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>searchBackgroundIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSeatBackPic</string>
+			<key>relativePath</key>
+			<string>./seatBackPic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>seatBackPic</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSecondryWalletImg</string>
+			<key>relativePath</key>
+			<string>./secondry_wallet_img.imageset</string>
+			<key>swiftSymbol</key>
+			<string>secondryWalletImg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSecure</string>
+			<key>relativePath</key>
+			<string>./secure.imageset</string>
+			<key>swiftSymbol</key>
+			<string>secure</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSelectFromGallery</string>
+			<key>relativePath</key>
+			<string>./UPI/select-from-gallery.imageset</string>
+			<key>swiftSymbol</key>
+			<string>selectFromGallery</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSelectedTabLine</string>
+			<key>relativePath</key>
+			<string>./Travel/selected-tab-line.imageset</string>
+			<key>swiftSymbol</key>
+			<string>selectedTabLine</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSelectedBg</string>
+			<key>relativePath</key>
+			<string>./selectedBg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>selectedBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSentFromIc</string>
+			<key>relativePath</key>
+			<string>./Pay/sent-from-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>sentFromIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSettingPic</string>
+			<key>relativePath</key>
+			<string>./profile/settingPic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>settingPic</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSetypinScreenBg</string>
+			<key>relativePath</key>
+			<string>./Login Flow/setypin_screen_bg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>setypinScreenBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameShareHistoryIc</string>
+			<key>relativePath</key>
+			<string>./Complaints/share-history-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>shareHistoryIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameShareIc</string>
+			<key>relativePath</key>
+			<string>./Pay/share-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>shareIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameShareQrIc</string>
+			<key>relativePath</key>
+			<string>./UPI/share-qr-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>shareQrIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSharePic</string>
+			<key>relativePath</key>
+			<string>./Quiz/sharePic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>sharePic</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSkipbutton</string>
+			<key>relativePath</key>
+			<string>./skipbutton.imageset</string>
+			<key>swiftSymbol</key>
+			<string>skipbutton</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSofa</string>
+			<key>relativePath</key>
+			<string>./sofa.imageset</string>
+			<key>swiftSymbol</key>
+			<string>sofa</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSpinnerdownarr</string>
+			<key>relativePath</key>
+			<string>./spinnerdownarr.imageset</string>
+			<key>swiftSymbol</key>
+			<string>spinnerdownarr</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSplash</string>
+			<key>relativePath</key>
+			<string>./splash.imageset</string>
+			<key>swiftSymbol</key>
+			<string>splash</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSwapArrow</string>
+			<key>relativePath</key>
+			<string>./swap_arrow.imageset</string>
+			<key>swiftSymbol</key>
+			<string>swapArrow</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTabHomeIc</string>
+			<key>relativePath</key>
+			<string>./Dashboard/tab-home-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>tabHomeIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTabMyexpenseIc</string>
+			<key>relativePath</key>
+			<string>./Dashboard/tab-myexpense-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>tabMyexpenseIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTabProfileIc</string>
+			<key>relativePath</key>
+			<string>./Dashboard/tab-profile-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>tabProfileIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTabQrscan</string>
+			<key>relativePath</key>
+			<string>./Dashboard/tab-qrscan.imageset</string>
+			<key>swiftSymbol</key>
+			<string>tabQrscan</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTabQuizIc</string>
+			<key>relativePath</key>
+			<string>./Dashboard/tab-quiz-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>tabQuizIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTabQrscan</string>
+			<key>relativePath</key>
+			<string>./Dashboard/tabQrscan.imageset</string>
+			<key>swiftSymbol</key>
+			<string>tabQrscan</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTarget</string>
+			<key>relativePath</key>
+			<string>./target.imageset</string>
+			<key>swiftSymbol</key>
+			<string>target</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTermsPics</string>
+			<key>relativePath</key>
+			<string>./profile/termsPics.imageset</string>
+			<key>swiftSymbol</key>
+			<string>termsPics</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTimePic</string>
+			<key>relativePath</key>
+			<string>./Quiz/timePic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>timePic</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameToggleOffButton</string>
+			<key>relativePath</key>
+			<string>./toggle-off-button.imageset</string>
+			<key>swiftSymbol</key>
+			<string>toggleOffButton</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameToggleOnButton</string>
+			<key>relativePath</key>
+			<string>./toggle-on-button.imageset</string>
+			<key>swiftSymbol</key>
+			<string>toggleOnButton</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTransIndicatiorFour</string>
+			<key>relativePath</key>
+			<string>./UPI/transIndicatior_Four.imageset</string>
+			<key>swiftSymbol</key>
+			<string>transIndicatiorFour</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTransIndicatiorOne</string>
+			<key>relativePath</key>
+			<string>./UPI/transIndicatior_One.imageset</string>
+			<key>swiftSymbol</key>
+			<string>transIndicatiorOne</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTransIndicatiorThree</string>
+			<key>relativePath</key>
+			<string>./UPI/transIndicatior_Three.imageset</string>
+			<key>swiftSymbol</key>
+			<string>transIndicatiorThree</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTransIndicatiorTwo</string>
+			<key>relativePath</key>
+			<string>./UPI/transIndicatior_Two.imageset</string>
+			<key>swiftSymbol</key>
+			<string>transIndicatiorTwo</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTransIndicatiorFive</string>
+			<key>relativePath</key>
+			<string>./UPI/transIndicatior_five.imageset</string>
+			<key>swiftSymbol</key>
+			<string>transIndicatiorFive</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTransactionIndicatorPendingProgress</string>
+			<key>relativePath</key>
+			<string>./UPI/transactionIndicator_pending_progress.imageset</string>
+			<key>swiftSymbol</key>
+			<string>transactionIndicatorPendingProgress</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTransactionRowBg</string>
+			<key>relativePath</key>
+			<string>./transaction_row_bg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>transactionRowBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTransferAmountIc</string>
+			<key>relativePath</key>
+			<string>./Pay/transfer-amount-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>transferAmountIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTravelBusIc</string>
+			<key>relativePath</key>
+			<string>./Travel/travel-bus-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>travelBusIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTravelFlightIc</string>
+			<key>relativePath</key>
+			<string>./Travel/travel-flight-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>travelFlightIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTravelHotelIc</string>
+			<key>relativePath</key>
+			<string>./Travel/travel-hotel-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>travelHotelIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTravelLuggage</string>
+			<key>relativePath</key>
+			<string>./travel-luggage.imageset</string>
+			<key>swiftSymbol</key>
+			<string>travelLuggage</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTrend</string>
+			<key>relativePath</key>
+			<string>./trend.imageset</string>
+			<key>swiftSymbol</key>
+			<string>trend</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameTwayPic</string>
+			<key>relativePath</key>
+			<string>./UPI/twayPic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>twayPic</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameUmbrella</string>
+			<key>relativePath</key>
+			<string>./umbrella.imageset</string>
+			<key>swiftSymbol</key>
+			<string>umbrella</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameUncheck</string>
+			<key>relativePath</key>
+			<string>./uncheck.imageset</string>
+			<key>swiftSymbol</key>
+			<string>uncheck</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameUpArrowIc</string>
+			<key>relativePath</key>
+			<string>./Travel/up-arrow-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>upArrowIc</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameUpiHomeHeader</string>
+			<key>relativePath</key>
+			<string>./Dashboard/upi-home-header.imageset</string>
+			<key>swiftSymbol</key>
+			<string>upiHomeHeader</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameUserPic</string>
+			<key>relativePath</key>
+			<string>./Quiz/userPic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>userPic</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameWalletSecondryImg</string>
+			<key>relativePath</key>
+			<string>./wallet_secondry_img.imageset</string>
+			<key>swiftSymbol</key>
+			<string>walletSecondryImg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameWealth</string>
+			<key>relativePath</key>
+			<string>./wealth.imageset</string>
+			<key>swiftSymbol</key>
+			<string>wealth</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameWeather</string>
+			<key>relativePath</key>
+			<string>./weather.imageset</string>
+			<key>swiftSymbol</key>
+			<string>weather</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameWhiteShadowedBg</string>
+			<key>relativePath</key>
+			<string>./Login Flow/white_shadowed_bg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>whiteShadowedBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameWinnerToppic</string>
+			<key>relativePath</key>
+			<string>./Quiz/winnerToppic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>winnerToppic</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/admin/Desktop/MSB/Run Code/MaxPay 2/MaxPay/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameWrongIc</string>
+			<key>relativePath</key>
+			<string>./UPI/wrong-ic.imageset</string>
+			<key>swiftSymbol</key>
+			<string>wrongIc</string>
+		</dict>
+	</array>
+	<key>symbols</key>
+	<array/>
+</dict>
+</plist>

@@ -46,7 +46,7 @@ class CollViewCardCell: UICollectionViewCell {
         // Combine the groups with a specific spacing between them (e.g., 6 spaces)
         let groupedNumber = matches.map {
             (cleanNumber as NSString).substring(with: $0.range)
-        }.joined(separator: "      ") // 6 spaces for visual separation
+        }.joined(separator: "   ") // 6 spaces for visual separation
         
         // Create an attributed string without additional kerning inside groups
         let attributedString = NSMutableAttributedString(string: groupedNumber)

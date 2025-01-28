@@ -18,6 +18,8 @@ class UPILinkUpdateVC: BaseVC, MFMessageComposeViewControllerDelegate {
     @IBOutlet weak var vwBack: UIView!
     var accountDetails: AccountDetailsOnIIN?
     private var notificationViewModel = NotificationViewModel()
+    
+    var jsonStringJson = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +33,7 @@ class UPILinkUpdateVC: BaseVC, MFMessageComposeViewControllerDelegate {
     @objc func poptoDashboard() {
         for controller in self.navigationController!.viewControllers as Array {
             if controller.isKind(of: DashboardVC.self) {
-                
+                SwiftLoader.hide()
                 self.navigationController!.popToViewController(controller, animated: true)
                 // Create the alert controller
                         let alert = UIAlertController(title: "Alert!", message: "Screen toggling not allowed while onboarding", preferredStyle: .alert)
@@ -91,7 +93,7 @@ class UPILinkUpdateVC: BaseVC, MFMessageComposeViewControllerDelegate {
         
         let accountDetails = AccountDetails(name: accountDetails?.name ?? "", aeba: accountDetails?.aeba ?? "", mbeba: accountDetails?.mbeba ?? "", accRefNumber: accountDetails?.accRefNumber ?? "", ifsc: accountDetails?.ifsc ?? "", maskedAccnumber: accountDetails?.maskedAccnumber ?? "", status: accountDetails?.status ?? "", type: accountDetails?.type ?? "", vpa: accountDetails?.vpa ?? "", dLength: accountDetails?.dLength ?? "", dType: accountDetails?.dType ?? "", balance: accountDetails?.balance ?? "", balTime: accountDetails?.balTime ?? "", atmpinFormat: accountDetails?.atmpinFormat ?? "", atmpinLength: accountDetails?.atmpinLength ?? "", iin: accountDetails?.iin ?? "", internationlActive: "N", otpFormat: accountDetails?.otpFormat ?? "")
         
-        var jsonStringJson = ""
+        //var jsonStringJson = ""
         
         do {
             let encoder = JSONEncoder()
@@ -99,7 +101,7 @@ class UPILinkUpdateVC: BaseVC, MFMessageComposeViewControllerDelegate {
             let jsonData = try encoder.encode(accountDetails)
             if let jsonString = String(data: jsonData, encoding: .utf8) {
                 print(jsonString)
-                jsonStringJson = jsonString
+                self.jsonStringJson = jsonString
             }
         } catch {
             print("Error encoding JSON: \(error)")
@@ -114,7 +116,7 @@ class UPILinkUpdateVC: BaseVC, MFMessageComposeViewControllerDelegate {
         DispatchQueue.global(qos: .background).async {
             
             // working properly
-            OliveUpiManager.updateVPA(vpa: uipId, account: jsonStringJson) { data, error in
+            OliveUpiManager.updateVPA(vpa: uipId, account: self.jsonStringJson) { data, error in
                 
                 if let err = error {
                     if err.code == 102 { // VPA not allowed for this customer

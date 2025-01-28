@@ -12,9 +12,10 @@ import FirebaseCore
 import FirebaseMessaging
 import CoreLocation
 import ScreenProtectorKit
+import Smartech
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, SmartechDelegate {
     
     var refidStr = ""
     var window: UIWindow?
@@ -120,6 +121,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print(error.localizedDescription)
             }
         }
+        
+        Smartech.sharedInstance().initSDK(with: self, withLaunchOptions: launchOptions)
+        
         
         return true
     }

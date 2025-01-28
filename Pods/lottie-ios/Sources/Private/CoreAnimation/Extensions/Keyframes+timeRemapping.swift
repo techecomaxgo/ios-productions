@@ -21,10 +21,7 @@ extension Keyframes {
     var localTimeCache = [AnimationFrameTime: T]()
 
     let interpolatedRemappedKeyframes = animationLocalTimeRange.compactMap { globalTime -> Keyframe<T>? in
-    
-        // let remappedLocalTime = context.timeRemapping(globalTime) (globalTime)
-
-        let remappedLocalTime = context.timeRemapping(globalTime)
+      let remappedLocalTime = context.complexTimeRemapping(globalTime)
 
       let valueAtRemappedTime: T
       if let cachedValue = localTimeCache[remappedLocalTime] {

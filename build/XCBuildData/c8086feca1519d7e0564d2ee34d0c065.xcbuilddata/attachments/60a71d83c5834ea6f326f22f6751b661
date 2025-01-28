@@ -1,0 +1,4 @@
+module FSPopoverView {
+header "FSPopoverView-Swift.h"
+export *
+}

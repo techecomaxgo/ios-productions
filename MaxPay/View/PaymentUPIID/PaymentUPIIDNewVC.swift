@@ -1042,23 +1042,23 @@ class PaymentUPIIDNewVC: BaseVC, AVAudioPlayerDelegate {
                     
                 }
                 
-//                if self.txtAmount.text?.count == 0 || Double(self.txtAmount.text ?? "0") == 0 {
-//                    self.showErrorAlert("Please enter amount")
-//                    return
-//                }else{
-//                    let storyboard = UIStoryboard(name: "BhimUpi", bundle: nil)
-//                    
-//                    let vc = storyboard.instantiateViewController(withIdentifier: "PaymentUPIIDNewConfirmationVC") as! PaymentUPIIDNewConfirmationVC
-//                    
-//                    vc.accountDetails = self.accountDetails
-//                    vc.beneVpa = self.beneVpa
-//                    vc.beneName = self.beneName
-//                    vc.transId = self.transId
-//                    vc.amtDecimal = self.txtAmount.text ?? ""
-//                    vc.remark =  self.txtRemark.text ?? ""
-//                    vc.mccCodeStr =  self.mccCodeDNewVC
-//                    self.navigationController?.pushViewController(vc, animated: true)
-//                }
+                if self.txtAmount.text?.count == 0 || Double(self.txtAmount.text ?? "0") == 0 {
+                    self.showErrorAlert("Please enter amount")
+                    return
+                }else{
+                    let storyboard = UIStoryboard(name: "BhimUpi", bundle: nil)
+                    
+                    let vc = storyboard.instantiateViewController(withIdentifier: "PaymentUPIIDNewConfirmationVC") as! PaymentUPIIDNewConfirmationVC
+                    
+                    vc.accountDetails = self.accountDetails
+                    vc.beneVpa = self.beneVpa
+                    vc.beneName = self.beneName
+                    vc.transId = self.transId
+                    vc.amtDecimal = self.txtAmount.text ?? ""
+                    vc.remark =  self.txtRemark.text ?? ""
+                    vc.mccCodeStr =  self.mccCodeDNewVC
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
             }
         }
                     

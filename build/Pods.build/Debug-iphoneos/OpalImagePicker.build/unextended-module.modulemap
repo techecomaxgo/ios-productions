@@ -1,0 +1,10 @@
+framework module OpalImagePicker {
+  umbrella header "OpalImagePicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module OpalImagePicker.__Swift {
+  exclude header "OpalImagePicker-Swift.h"
+}

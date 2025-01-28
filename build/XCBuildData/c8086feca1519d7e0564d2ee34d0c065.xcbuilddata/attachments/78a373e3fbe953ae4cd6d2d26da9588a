@@ -1,0 +1,228 @@
+{
+  "" : {
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieCharts-master.dia",
+    "emit-module-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieCharts-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieCharts-master-emit-module.dia",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieCharts-master.swiftdeps"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Core/Chart/PieChart.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChart.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChart.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChart.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChart.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChart.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChart.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChart.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChart~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Core/Chart/PieChartDelegate.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartDelegate.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartDelegate.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartDelegate.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartDelegate.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartDelegate.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartDelegate.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartDelegate.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartDelegate~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Core/Slice/PieSlice.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSlice.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSlice.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSlice.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSlice.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSlice.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSlice.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSlice.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSlice~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Core/Slice/PieSliceDelegate.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceDelegate.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceDelegate.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceDelegate.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceDelegate.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceDelegate.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceDelegate.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceDelegate.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceDelegate~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Core/Slice/PieSliceLayer.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceLayer.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceLayer.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceLayer.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceLayer.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceLayer.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceLayer.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceLayer.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceLayer~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Extensions/CGPoint.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGPoint.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGPoint.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGPoint.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGPoint.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGPoint.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGPoint.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGPoint.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGPoint~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Extensions/CGRect.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGRect.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGRect.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGRect.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGRect.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGRect.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGRect.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGRect.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGRect~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Extensions/CGSize.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGSize.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGSize.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGSize.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGSize.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGSize.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGSize.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGSize.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/CGSize~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Extensions/FloatingPoint.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/FloatingPoint.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/FloatingPoint.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/FloatingPoint.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/FloatingPoint.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/FloatingPoint.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/FloatingPoint.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/FloatingPoint.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/FloatingPoint~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Extensions/Int.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/Int.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/Int.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/Int.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/Int.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/Int.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/Int.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/Int.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/Int~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Layer/Impl/Common/PieChartLabelSettings.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartLabelSettings.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartLabelSettings.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartLabelSettings.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartLabelSettings.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartLabelSettings.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartLabelSettings.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartLabelSettings.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartLabelSettings~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Layer/Impl/LineText/Anim/AlphaPieLineTextLayerAnimator.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/AlphaPieLineTextLayerAnimator.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/AlphaPieLineTextLayerAnimator.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/AlphaPieLineTextLayerAnimator.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/AlphaPieLineTextLayerAnimator.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/AlphaPieLineTextLayerAnimator.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/AlphaPieLineTextLayerAnimator.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/AlphaPieLineTextLayerAnimator.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/AlphaPieLineTextLayerAnimator~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Layer/Impl/LineText/Anim/PieLineTextLayerAnimator.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieLineTextLayerAnimator.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieLineTextLayerAnimator.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieLineTextLayerAnimator.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieLineTextLayerAnimator.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieLineTextLayerAnimator.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieLineTextLayerAnimator.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieLineTextLayerAnimator.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieLineTextLayerAnimator~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Layer/Impl/LineText/PieLineTextLayer.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieLineTextLayer.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieLineTextLayer.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieLineTextLayer.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieLineTextLayer.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieLineTextLayer.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieLineTextLayer.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieLineTextLayer.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieLineTextLayer~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Layer/Impl/PlainText/PiePlainTextLayer.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PiePlainTextLayer.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PiePlainTextLayer.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PiePlainTextLayer.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PiePlainTextLayer.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PiePlainTextLayer.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PiePlainTextLayer.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PiePlainTextLayer.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PiePlainTextLayer~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Layer/Impl/View/Anim/AlphaPieViewLayerAnimator.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/AlphaPieViewLayerAnimator.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/AlphaPieViewLayerAnimator.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/AlphaPieViewLayerAnimator.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/AlphaPieViewLayerAnimator.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/AlphaPieViewLayerAnimator.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/AlphaPieViewLayerAnimator.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/AlphaPieViewLayerAnimator.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/AlphaPieViewLayerAnimator~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Layer/Impl/View/Anim/PieViewLayerAnimator.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieViewLayerAnimator.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieViewLayerAnimator.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieViewLayerAnimator.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieViewLayerAnimator.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieViewLayerAnimator.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieViewLayerAnimator.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieViewLayerAnimator.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieViewLayerAnimator~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Layer/Impl/View/PieCustomViewsLayer.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieCustomViewsLayer.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieCustomViewsLayer.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieCustomViewsLayer.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieCustomViewsLayer.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieCustomViewsLayer.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieCustomViewsLayer.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieCustomViewsLayer.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieCustomViewsLayer~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Layer/PieChartLayer.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartLayer.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartLayer.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartLayer.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartLayer.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartLayer.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartLayer.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartLayer.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieChartLayer~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Model/PieSliceData.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceData.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceData.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceData.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceData.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceData.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceData.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceData.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceData~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Model/PieSliceModel.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceModel.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceModel.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceModel.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceModel.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceModel.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceModel.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceModel.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/PieSliceModel~partial.swiftmodule"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/PieCharts/PieCharts/Util/Globals.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/Globals.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/Globals.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/Globals.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/Globals.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/Globals.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/Globals.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/Globals.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/PieCharts.build/Objects-normal/arm64/Globals~partial.swiftmodule"
+  }
+}

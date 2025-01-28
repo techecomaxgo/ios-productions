@@ -1,0 +1,18 @@
+{
+  "" : {
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/SwiftLoader.build/Objects-normal/arm64/SwiftLoader-master.dia",
+    "emit-module-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/SwiftLoader.build/Objects-normal/arm64/SwiftLoader-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/SwiftLoader.build/Objects-normal/arm64/SwiftLoader-master-emit-module.dia",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/SwiftLoader.build/Objects-normal/arm64/SwiftLoader-master.swiftdeps"
+  },
+  "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/Pods/SwiftLoader/src/SwiftLoader/SwiftLoader.swift" : {
+    "const-values" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/SwiftLoader.build/Objects-normal/arm64/SwiftLoader.swiftconstvalues",
+    "dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/SwiftLoader.build/Objects-normal/arm64/SwiftLoader.d",
+    "diagnostics" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/SwiftLoader.build/Objects-normal/arm64/SwiftLoader.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/SwiftLoader.build/Objects-normal/arm64/SwiftLoader.o",
+    "llvm-bc" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/SwiftLoader.build/Objects-normal/arm64/SwiftLoader.bc",
+    "object" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/SwiftLoader.build/Objects-normal/arm64/SwiftLoader.o",
+    "swift-dependencies" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/SwiftLoader.build/Objects-normal/arm64/SwiftLoader.swiftdeps",
+    "swiftmodule" : "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/SwiftLoader.build/Objects-normal/arm64/SwiftLoader~partial.swiftmodule"
+  }
+}

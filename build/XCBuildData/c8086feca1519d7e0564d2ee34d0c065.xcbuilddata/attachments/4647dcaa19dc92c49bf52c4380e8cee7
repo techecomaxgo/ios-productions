@@ -1,0 +1,23 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Debug-iphoneos/Extended/Extended.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/unextended-module.modulemap",
+    }]
+    },
+    {
+    'type': 'directory',
+    'name': "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Debug-iphoneos/Extended/Extended.framework/Headers"
+    'contents': [{
+      'type': 'file',
+      'name': "Extended-Swift.h",
+      'external-contents': "/Users/admin/Desktop/MSB/Run Code/MaxPay 2/build/Pods.build/Debug-iphoneos/Extended.build/unextended-interface-header.h",
+    }]
+    }]
+}

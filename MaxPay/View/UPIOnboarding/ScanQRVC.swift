@@ -1185,7 +1185,7 @@ extension ScanQRVC: MFMessageComposeViewControllerDelegate {
         let isConnected = ReachabilityClass.isConnectedToNetwork()
         
         if isConnected == true {
-            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.getDeviceID())
+           // checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.getDeviceID())
         }else{
             DispatchQueue.main.async {
                 SwiftLoader.hide()

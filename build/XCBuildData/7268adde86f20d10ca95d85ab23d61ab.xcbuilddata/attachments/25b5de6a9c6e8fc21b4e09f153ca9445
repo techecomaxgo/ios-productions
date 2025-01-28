@@ -1,0 +1,10 @@
+framework module SSSwiftUILoader {
+  umbrella header "SSSwiftUILoader-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module SSSwiftUILoader.__Swift {
+  exclude header "SSSwiftUILoader-Swift.h"
+}

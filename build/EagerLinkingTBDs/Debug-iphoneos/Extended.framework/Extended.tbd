@@ -1,0 +1,139 @@
+{
+  "main_library": {
+    "exported_symbols": [
+      {
+        "data": {
+          "global": [
+            "_$s10Foundation4DateV8ExtendedE6stringSSyF",
+            "_$sSo19UIDeviceOrientationV8ExtendedE010getUIImageB10FromDeviceSo0eB0VyF",
+            "_$sSS8ExtendedE31replacingLastOccurrenceOfString_4with15caseInsensitiveS2S_SSSbtF",
+            "_$sSS8ExtendedE20convertFromCamelCaseSSyF",
+            "_$sSo16UIViewControllerC8ExtendedE9showAlert4with7messageySS_SStF",
+            "_$sSo16UICollectionViewC8ExtendedE11centerPointSo7CGPointVvpMV",
+            "_$s10Foundation4DateV8ExtendedE7setTime4hour3min3sec14timeZoneAbbrevACSgSi_S2iSStF",
+            "_$sSo12UIScrollViewC8ExtendedE15isScrolledToTopSbvg",
+            "_$sSo25NSMutableAttributedStringC8ExtendedE7coloredyABSo7UIColorCF",
+            "_$sSa8ExtendedE13middleElement9roundedUpxSgSb_tF",
+            "_$s10Foundation4DateV8ExtendedE5monthSiyF",
+            "_$sSd8ExtendedE5hoursSivpMV",
+            "_$sSo6UIViewC8ExtendedE12roundCorners7corners6radiusySo12UIRectCornerV_12CoreGraphics7CGFloatVtF",
+            "_$sSi8ExtendedE6randomSivgZ",
+            "_$sSo12UIScrollViewC8ExtendedE18isScrolledToBottomSbvg",
+            "_$s10Foundation4DateV8ExtendedE5toUTCSSyF",
+            "_$sSa8ExtendedE6sampleySayxGSiF",
+            "_$sSo25NSMutableAttributedStringC8ExtendedE10underlined5color5styleABSo7UIColorCSg_So16NSUnderlineStyleVtF",
+            "_$sSo6UIViewC8ExtendedE7fromNib6bundlexSo8NSBundleCSg_tABRbzlFZ",
+            "_$sSd8ExtendedE7minutesSivpMV",
+            "_$sSS8ExtendedE17removeWhitespacesSSyF",
+            "_ExtendedVersionString",
+            "_$sSS8ExtendedE5isIntSbvg",
+            "_$sSS8ExtendedE6height20withConstrainedWidth4font12CoreGraphics7CGFloatVAG_So6UIFontCtF",
+            "_$sSd8ExtendedE7secondsSivpMV",
+            "_$sSo12UIScrollViewC8ExtendedE21isScrolledToRightSideSbvpMV",
+            "_$sSo7UILabelC8ExtendedE6change9kernValueySd_tF",
+            "_$sSd8ExtendedE14roundToDecimalySdSiF",
+            "_$sSo9MKMapViewC8ExtendedE4pinsSaySo12MKAnnotation_pGyF",
+            "_Swift51Overrides",
+            "_$sSo12UIScrollViewC8ExtendedE20isScrolledToLeftSideSbvpMV",
+            "_$sSo9MKMapViewC8ExtendedE9clearPinsyyF",
+            "_$sSi8ExtendedE6random1nS2i_tFZ",
+            "_ExtendedVersionNumber",
+            "_$sSS8ExtendedE12attributableSo25NSMutableAttributedStringCyF",
+            "_$sSS8ExtendedE14charactersUpTo5indexSSSi_tF",
+            "_$sSS8ExtendedE8isDoubleSbvpMV",
+            "_$sSo7UILabelC8ExtendedE16increaseFontSize2byy12CoreGraphics7CGFloatV_tF",
+            "_$sSS8ExtendedE5isIntSbvpMV",
+            "_$sSo12UIScrollViewC8ExtendedE16isScrolledWithin18distanceFromBottomSb12CoreGraphics7CGFloatV_tF",
+            "_$s10Foundation4DateV8ExtendedE3daySiyF",
+            "_$sSo6UIViewC8ExtendedE20parentViewControllerSo0aE0CSgvg",
+            "_$sSS8ExtendedE8isDoubleSbvg",
+            "_$sSd8ExtendedE10stringTimeSSvg",
+            "_$sSo16UICollectionViewC8ExtendedE19centerCellIndexPath10Foundation0fG0VSgvpMV",
+            "_$sSo25NSMutableAttributedStringC8ExtendedE7alignedyABSo15NSTextAlignmentVF",
+            "_$s10Foundation4DateV8ExtendedE11stringShortSSyF",
+            "_$sSo25NSMutableAttributedStringC8ExtendedE17backgroundColoredyABSo7UIColorCF",
+            "_$sSo12UIScrollViewC8ExtendedE23maxVerticalScrollOffset12CoreGraphics7CGFloatVvpMV",
+            "_$sSd8ExtendedE12millisecondsSivg",
+            "_$sSo7UIImageC8ExtendedE6bufferSo11CVBufferRefaSgyF",
+            "_$sSo9MKMapViewC8ExtendedE7dropPin2at4nameySo10CLLocationC_SStF",
+            "_$s10Foundation4DateV8ExtendedE3day9shortHandSSSbSg_tF",
+            "_$sSo9MKMapViewC8ExtendedE7focusOn8location6radiusySo10CLLocationC_SdtF",
+            "_$s10Foundation4DateV8ExtendedE4yearSiyF",
+            "_$s10Foundation4DateV8ExtendedE7startOfACSgyF",
+            "_$sSS8ExtendedE8fromHTMLSSvg",
+            "_$s10Foundation4DateV8ExtendedE5month9shortHandSSSbSg_tF",
+            "_$sSS8ExtendedE8fromHTMLSSvpMV",
+            "_$sSo12UIScrollViewC8ExtendedE20isScrolledToLeftSideSbvg",
+            "_$sSo6UIViewC8ExtendedE20parentViewControllerSo0aE0CSgvpMV",
+            "_$sSo12UIScrollViewC8ExtendedE16isScrolledWithin17distanceFromRightSb12CoreGraphics7CGFloatV_tF",
+            "_$sSo16UIViewControllerC8ExtendedE18storyboardInstanceABSgyFZ",
+            "_$sSd8ExtendedE10stringTimeSSvpMV",
+            "_$sSo12UIScrollViewC8ExtendedE23maxVerticalScrollOffset12CoreGraphics7CGFloatVvg",
+            "_$s10Foundation4DateV8ExtendedE7fromUTC6stringACSS_tF",
+            "_$sSS8ExtendedE22htmlToAttributedStringSo012NSAttributedE0CSgvpMV",
+            "_$sSi8ExtendedE6random3min3maxS2i_SitFZ",
+            "_$sSd8ExtendedE12millisecondsSivpMV",
+            "_$sSS8ExtendedE5width21withConstrainedHeight4font12CoreGraphics7CGFloatVAG_So6UIFontCtF",
+            "_$sSo12UIScrollViewC8ExtendedE18isScrolledToBottomSbvpMV",
+            "_$sSo7UIColorC8ExtendedE19adjustingBrightness10byMultipleAB12CoreGraphics7CGFloatV_tF",
+            "_$sSd8ExtendedE7minutesSivg",
+            "_$sSl8ExtendedE2aty7ElementQzSg5IndexQzF",
+            "_$sSo16UICollectionViewC8ExtendedE11centerPointSo7CGPointVvg",
+            "_$sSo13UIApplicationC8ExtendedE24getTopMostViewController4baseSo06UIViewG0CSgAH_tF",
+            "_$sSo12UIScrollViewC8ExtendedE25maxHorizontalScrollOffset12CoreGraphics7CGFloatVvg",
+            "_$sSS8ExtendedE22htmlToAttributedStringSo012NSAttributedE0CSgvg",
+            "_$s10Foundation4DateV8ExtendedE14stringWithTimeSSyF",
+            "_$sSo16UICollectionViewC8ExtendedE19centerCellIndexPath10Foundation0fG0VSgvg",
+            "_$sSo25NSMutableAttributedStringC8ExtendedE3add11lineSpacingAB12CoreGraphics7CGFloatV_tF",
+            "_$sSd8ExtendedE5hoursSivg",
+            "_$sSd8ExtendedE7secondsSivg",
+            "_$sSo12UIScrollViewC8ExtendedE15isScrolledToTopSbvpMV",
+            "_$sSo12UIScrollViewC8ExtendedE21isScrolledToRightSideSbvg",
+            "_$sSo7UIColorC8ExtendedE3hexABSS_tcfC",
+            "_$sSo25NSMutableAttributedStringC8ExtendedE3add7kerningAB12CoreGraphics7CGFloatV_tF",
+            "_$sSo7UIImageC8ExtendedE15getAverageColor6inRectSo7UIColorCSo6CGRectVSg_tF",
+            "_$sSo6UIViewC8ExtendedE7toImageSo7UIImageCyF",
+            "_$sSo12UIScrollViewC8ExtendedE25maxHorizontalScrollOffset12CoreGraphics7CGFloatVvpMV"
+          ],
+          "objc_class": [
+            "PodsDummy_Extended"
+          ],
+          "weak": [
+            "___llvm_profile_raw_version",
+            "___llvm_profile_filename"
+          ]
+        },
+        "text": {
+          "global": [
+            "__ZN5swift39swift51override_conformsToSwiftProtocolEPKNS_14TargetMetadataINS_9InProcessEEEPKNS_24TargetProtocolDescriptorIS1_EEN7__swift9__runtime4llvm9StringRefEPFPKNS_35TargetProtocolConformanceDescriptorIS1_EES4_S8_SC_E",
+            "__Z34_swiftoverride_class_getSuperclassPKN5swift14TargetMetadataINS_9InProcessEEE"
+          ]
+        }
+      }
+    ],
+    "flags": [
+      {
+        "attributes": [
+          "not_app_extension_safe"
+        ]
+      }
+    ],
+    "install_names": [
+      {
+        "name": "@rpath/Extended.framework/Extended"
+      }
+    ],
+    "swift_abi": [
+      {
+        "abi": 7
+      }
+    ],
+    "target_info": [
+      {
+        "min_deployment": "13",
+        "target": "arm64-ios"
+      }
+    ]
+  },
+  "tapi_tbd_version": 5
+}

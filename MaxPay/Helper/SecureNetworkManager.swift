@@ -23,7 +23,7 @@ class SecureNetworkManager {
     }
 
     // Create ServerTrustPolicy to pin the certificate
-    private func createServerTrustPolicy() -> ServerTrustPolicy {
+    /*private func createServerTrustPolicy() -> ServerTrustPolicy {
         // Use the certificate data to perform pinning
         guard let certificateData = getCertificateData() else {
             fatalError("Failed to load certificate data.")
@@ -72,4 +72,5 @@ class SecureNetworkManager {
                 }
             }
     }
+     */
 }
