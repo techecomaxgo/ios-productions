@@ -463,7 +463,7 @@ extension SelectBankVC {
         let isConnected = ReachabilityClass.isConnectedToNetwork()
         
         if isConnected == true {
-            validateUpiOTPViewModel.validateUpiOTPCall(Common.shared.phoneNo ?? "")
+           // validateUpiOTPViewModel.validateUpiOTPCall(Common.shared.getDeviceID())
         }else{
             DispatchQueue.main.async {
                 SwiftLoader.hide()

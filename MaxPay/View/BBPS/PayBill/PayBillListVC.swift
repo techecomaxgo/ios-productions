@@ -124,6 +124,7 @@ extension PayBillListVC {
                 SwiftLoader.hide()
             }
         }
+        SwiftLoader.hide()
     }
     func encodeToBase64(_ string: String) -> String? {
         if let data = string.data(using: .utf8) {

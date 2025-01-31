@@ -105,7 +105,7 @@ struct ConstantApi{
         static let regenarateOTP = "auth/account/otp-re-generate"
         static let pinGeneration = "auth/account/generate-verify-pin"
         static let login = "auth/account/login"
-        static let  getBalanceDetails = "wallet/get-card-details"
+        static let  getBalanceDetails = "wallet/v2/get-card-details"
         static let  getSecondaryWalletBalance = "wallet/swallet/get-wallet-details"
         static let  payBillList = "biller/master-data"
         static let   catagoryList = "biller/billers-by-category"
@@ -1041,7 +1041,9 @@ class ApiManager: NSObject {
     
     
     func dashboardBalanceServiceApi(dict:NSDictionary,completion: @escaping (BalanceDetailsModel?, Error?) -> ()) {
-        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.getBalanceDetails)", method: .post, parameters: dict as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headers).responseJSON {  response in
+        let encryptedData = EncryptionService.shared.finalParam(dict)
+        let endpoint = "/api/wallet/2.0/get-card-details"
+        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(endpoint)", method: .post, parameters: encryptedData as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headers).responseJSON {  response in
             if response.result.isSuccess{
                 guard let dictResponse = response.data, dictResponse.count > 0 else {
                     return
@@ -1063,8 +1065,11 @@ class ApiManager: NSObject {
             }
         }
     }
+    
     func dashboardSecondaryBalanceServiceApi(dict:NSDictionary,completion: @escaping (SecondaryWalletBalance?, Error?) -> ()) {
-        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.getSecondaryWalletBalance)", method: .post, parameters: dict as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headers).responseJSON {  response in
+        let encryptedData = EncryptionService.shared.finalParam(dict)
+        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.BaseURL.apiVersionNew)\(ConstantApi.SubURL.getSecondaryWalletBalance)", method: .post, parameters: encryptedData as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.appVersionHeaders).responseJSON {  response in
+            print(response)
             if response.result.isSuccess{
                 guard let dictResponse = response.data, dictResponse.count > 0 else {
                     return
@@ -1749,7 +1754,8 @@ class ApiManager: NSObject {
     }
     
     func validateUpiOtpServiceApi(dict:NSDictionary,completion: @escaping (ValidateUpiOTPModel?, Error?) -> ()) {
-        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.validateUpiOtp)", method: .post, parameters: dict as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headersWithSkey).responseJSON {  response in
+        let encryptedData = EncryptionService.shared.finalParam(dict)
+        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.validateUpiOtp)", method: .post, parameters: encryptedData as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.appVersionHeaders).responseJSON {  response in
             if response.result.isSuccess{
                 guard let dictResponse = response.data, dictResponse.count > 0 else {
                     return

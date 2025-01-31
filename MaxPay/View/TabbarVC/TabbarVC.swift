@@ -70,7 +70,7 @@ extension TabbarVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollect
         else if (indexPath.row == 1){
             cell.labelTap.isHidden = false
             cell.constraintImgHeight.constant = 22
-
+            cell.labelTap.font = UIFont(name: "Roboto-Medium", size: 15)
             cell.labelTap.text = "History"
             cell.imageTab.image = UIImage(named: "tab-myexpense-ic")
             if (intIndex == indexPath.row){
@@ -103,7 +103,7 @@ extension TabbarVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollect
         else if (indexPath.row == 3){
             cell.labelTap.isHidden = false
             cell.constraintImgHeight.constant = 22
-
+            cell.labelTap.font = UIFont(name: "System-bold", size: 15)
             cell.labelTap.text = "Quiz"
             cell.imageTab.image = UIImage(named: "tab-quiz-ic")
             if (intIndex == indexPath.row){

@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -12,9 +11,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Iceland-Regular.ttf">
-            <string>Iceland-Regular</string>
-        </array>
         <array key="Roboto-Bold.ttf">
             <string>Roboto-Bold</string>
         </array>
@@ -618,7 +614,7 @@
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LZH-h4-dFu">
                                                             <rect key="frame" x="24" y="8.9999999999999964" width="22" height="21.333333333333336"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <color key="tintColor" red="0.62352941176470589" green="0.76862745098039209" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="tintColor" red="0.62352941179999999" green="0.76862745099999996" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="LZH-h4-dFu" secondAttribute="height" multiplier="1:1" id="jGx-aC-KLt"/>
                                                                 <constraint firstAttribute="height" constant="22" id="o6S-nH-KGK"/>
@@ -626,7 +622,7 @@
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reservations" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gi3-s0-wfT">
                                                             <rect key="frame" x="0.0" y="33.666666666666664" width="70" height="27.333333333333336"/>
-                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="10"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -20436,6 +20432,13 @@ back for failed P2P transaction</string>
                                             <constraint firstAttribute="height" constant="24" id="by4-vk-tv7"/>
                                         </constraints>
                                     </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin" translatesAutoresizingMaskIntoConstraints="NO" id="GTA-d2-0S7">
+                                        <rect key="frame" x="286" y="10" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Bob-6j-GOn"/>
+                                            <constraint firstAttribute="height" constant="40" id="P3A-XR-tQL"/>
+                                        </constraints>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVl-4e-Olz">
                                         <rect key="frame" x="341" y="6" width="50" height="50"/>
                                         <constraints>
@@ -20456,7 +20459,7 @@ back for failed P2P transaction</string>
                                         </constraints>
                                         <color key="tintColor" red="0.98823529409999999" green="0.99215686270000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="wallet.bifold" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
                                         <connections>
                                             <action selector="btnPrimaryTapped:" destination="bC7-Id-oXi" eventType="touchUpInside" id="bNV-jh-Kat"/>
                                         </connections>
@@ -20465,10 +20468,12 @@ back for failed P2P transaction</string>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="oJB-7w-0cR" firstAttribute="top" secondItem="Aan-WB-IX1" secondAttribute="top" constant="6" id="7Pm-bL-6Hm"/>
+                                    <constraint firstItem="GTA-d2-0S7" firstAttribute="top" secondItem="Aan-WB-IX1" secondAttribute="top" constant="10" id="7mF-8N-8iU"/>
                                     <constraint firstItem="m6X-gM-1Ad" firstAttribute="top" secondItem="Aan-WB-IX1" secondAttribute="top" id="9TH-Cu-Io7"/>
                                     <constraint firstAttribute="bottom" secondItem="m6X-gM-1Ad" secondAttribute="bottom" id="9aJ-qE-pWL"/>
                                     <constraint firstItem="UVl-4e-Olz" firstAttribute="leading" secondItem="pfM-7g-BSM" secondAttribute="trailing" constant="10" id="Bhq-G1-JVo"/>
                                     <constraint firstItem="Pja-SA-FyZ" firstAttribute="leading" secondItem="oJB-7w-0cR" secondAttribute="trailing" constant="5" id="Gob-PR-Yfw"/>
+                                    <constraint firstItem="UVl-4e-Olz" firstAttribute="leading" secondItem="GTA-d2-0S7" secondAttribute="trailing" constant="15" id="IKg-3c-VXn"/>
                                     <constraint firstItem="oJB-7w-0cR" firstAttribute="leading" secondItem="Aan-WB-IX1" secondAttribute="leading" constant="5" id="MVl-FT-Aq5"/>
                                     <constraint firstItem="pfM-7g-BSM" firstAttribute="top" secondItem="Aan-WB-IX1" secondAttribute="top" constant="6" id="MeL-Tr-XBu"/>
                                     <constraint firstItem="5sS-Fz-lSi" firstAttribute="centerY" secondItem="UVl-4e-Olz" secondAttribute="centerY" id="MpM-5E-umS"/>
@@ -20500,11 +20505,15 @@ back for failed P2P transaction</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTT-i5-44C">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Kwr-n0-2ql">
+                                <rect key="frame" x="0.0" y="117" width="393" height="1811"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTT-i5-44C">
                                 <rect key="frame" x="0.0" y="117" width="393" height="1826"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tYd-AM-CtE">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1507"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1577"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lox-Jh-l2d">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="280"/>
@@ -20512,7 +20521,7 @@ back for failed P2P transaction</string>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SBD-S2-KBz">
                                                         <rect key="frame" x="16" y="17" width="361" height="230"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="pfV-yj-9bX" customClass="DesignableImageView" customModule="MaxPay" customModuleProvider="target">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card2" translatesAutoresizingMaskIntoConstraints="NO" id="pfV-yj-9bX" customClass="DesignableImageView" customModule="MaxPay" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="361" height="230"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -20527,14 +20536,14 @@ back for failed P2P transaction</string>
                                                                     <action selector="btnBalanceBackAction:" destination="bC7-Id-oXi" eventType="touchUpInside" id="Jcl-OS-GUV"/>
                                                                 </connections>
                                                             </button>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234    2123    3234    3432" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiv-PH-m6C">
-                                                                <rect key="frame" x="30" y="134.33333333333331" width="301" height="25.333333333333343"/>
-                                                                <fontDescription key="fontDescription" name="Iceland-Regular" family="Iceland" pointSize="26"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXXX      XXXX      XXXX      XXXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiv-PH-m6C">
+                                                                <rect key="frame" x="16" y="134" width="329" height="26.333333333333343"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                                 <color key="textColor" name="card-number"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdR-kp-Hih">
-                                                                <rect key="frame" x="30.000000000000007" y="75" width="116.66666666666669" height="19"/>
+                                                                <rect key="frame" x="16.000000000000007" y="92" width="116.66666666666669" height="19"/>
                                                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
                                                                 <color key="textColor" name="reload-grey-color"/>
                                                                 <nil key="highlightedColor"/>
@@ -20552,30 +20561,24 @@ back for failed P2P transaction</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rank" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lm-cb-82d">
-                                                                <rect key="frame" x="30" y="197" width="36" height="19"/>
+                                                                <rect key="frame" x="16" y="197" width="36" height="19"/>
                                                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
                                                                 <color key="textColor" name="black-color"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card-chip-ic" translatesAutoresizingMaskIntoConstraints="NO" id="gJS-yf-7hT">
-                                                                <rect key="frame" x="30" y="20" width="48" height="48"/>
+                                                                <rect key="frame" x="16" y="16" width="56" height="56"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="48" id="8eZ-Pk-Swa"/>
-                                                                    <constraint firstAttribute="width" constant="48" id="Zt0-ix-6Ik"/>
+                                                                    <constraint firstAttribute="width" secondItem="gJS-yf-7hT" secondAttribute="height" multiplier="1:1" id="5s4-OT-zz2"/>
+                                                                    <constraint firstAttribute="height" constant="56" id="Kcf-RV-oV9"/>
+                                                                    <constraint firstAttribute="width" constant="56" id="gkb-al-AvH"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="max-qr-scan-bg" translatesAutoresizingMaskIntoConstraints="NO" id="EPQ-QK-OWb">
-                                                                <rect key="frame" x="221" y="5" width="120" height="60"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maxlogo" translatesAutoresizingMaskIntoConstraints="NO" id="EPQ-QK-OWb">
+                                                                <rect key="frame" x="221" y="0.0" width="120" height="70"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="60" id="ZgX-SE-F7E"/>
+                                                                    <constraint firstAttribute="height" constant="70" id="ZgX-SE-F7E"/>
                                                                     <constraint firstAttribute="width" constant="120" id="t2z-PS-dL1"/>
-                                                                </constraints>
-                                                            </imageView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upi-home-header" translatesAutoresizingMaskIntoConstraints="NO" id="70p-Je-vnR">
-                                                                <rect key="frame" x="285" y="51" width="56" height="32"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="56" id="H8B-k9-Jd2"/>
-                                                                    <constraint firstAttribute="height" constant="32" id="i7b-yJ-xlq"/>
                                                                 </constraints>
                                                             </imageView>
                                                         </subviews>
@@ -20583,37 +20586,29 @@ back for failed P2P transaction</string>
                                                         <constraints>
                                                             <constraint firstItem="rub-VH-Ojo" firstAttribute="leading" secondItem="SBD-S2-KBz" secondAttribute="leading" id="0LU-Sm-br3"/>
                                                             <constraint firstAttribute="trailing" secondItem="rub-VH-Ojo" secondAttribute="trailing" id="1bm-ou-cES"/>
-                                                            <constraint firstItem="70p-Je-vnR" firstAttribute="trailing" secondItem="EPQ-QK-OWb" secondAttribute="trailing" id="7LH-UW-whl"/>
-                                                            <constraint firstItem="OdR-kp-Hih" firstAttribute="top" secondItem="gJS-yf-7hT" secondAttribute="bottom" constant="7" id="BPL-P4-NcE"/>
                                                             <constraint firstItem="enH-lJ-1fQ" firstAttribute="leading" secondItem="L0x-fQ-9Yl" secondAttribute="trailing" constant="2" id="Cjb-tc-c2R"/>
                                                             <constraint firstAttribute="trailing" secondItem="enH-lJ-1fQ" secondAttribute="trailing" constant="20" id="KR8-U8-Mt4"/>
+                                                            <constraint firstItem="gJS-yf-7hT" firstAttribute="leading" secondItem="SBD-S2-KBz" secondAttribute="leading" constant="16" id="QMA-Mc-d5d"/>
+                                                            <constraint firstItem="OdR-kp-Hih" firstAttribute="leading" secondItem="gJS-yf-7hT" secondAttribute="leading" id="Qbi-Gl-pbj"/>
                                                             <constraint firstAttribute="bottom" secondItem="pfV-yj-9bX" secondAttribute="bottom" id="SIW-A3-vEV"/>
                                                             <constraint firstAttribute="trailing" secondItem="EPQ-QK-OWb" secondAttribute="trailing" constant="20" symbolic="YES" id="T7V-H7-HTy"/>
                                                             <constraint firstItem="wiv-PH-m6C" firstAttribute="centerY" secondItem="SBD-S2-KBz" secondAttribute="centerY" constant="32" id="UE6-k9-gIn"/>
                                                             <constraint firstItem="rub-VH-Ojo" firstAttribute="top" secondItem="SBD-S2-KBz" secondAttribute="top" id="Ust-bb-Vt8"/>
                                                             <constraint firstAttribute="width" secondItem="SBD-S2-KBz" secondAttribute="height" multiplier="361:230" id="V3Z-JS-LgT"/>
                                                             <constraint firstAttribute="trailing" secondItem="pfV-yj-9bX" secondAttribute="trailing" id="c9q-Sl-wHd"/>
-                                                            <constraint firstItem="gJS-yf-7hT" firstAttribute="centerY" secondItem="SBD-S2-KBz" secondAttribute="centerY" constant="-70.999999999999943" id="duS-XJ-2JU"/>
-                                                            <constraint firstAttribute="trailing" secondItem="wiv-PH-m6C" secondAttribute="trailing" constant="30" id="hRA-Wq-exR"/>
+                                                            <constraint firstItem="gJS-yf-7hT" firstAttribute="top" secondItem="SBD-S2-KBz" secondAttribute="top" constant="16" id="gS7-sR-AKo"/>
+                                                            <constraint firstAttribute="trailing" secondItem="wiv-PH-m6C" secondAttribute="trailing" constant="16" id="hRA-Wq-exR"/>
                                                             <constraint firstItem="3Lm-cb-82d" firstAttribute="centerY" secondItem="enH-lJ-1fQ" secondAttribute="centerY" id="hTx-zU-x4h"/>
                                                             <constraint firstItem="enH-lJ-1fQ" firstAttribute="centerY" secondItem="L0x-fQ-9Yl" secondAttribute="centerY" id="mEz-66-QTi"/>
                                                             <constraint firstAttribute="bottom" secondItem="rub-VH-Ojo" secondAttribute="bottom" id="o8r-Az-VaO"/>
                                                             <constraint firstAttribute="bottom" secondItem="3Lm-cb-82d" secondAttribute="bottom" constant="14" id="oAl-uJ-HR9"/>
-                                                            <constraint firstItem="wiv-PH-m6C" firstAttribute="leading" secondItem="SBD-S2-KBz" secondAttribute="leading" constant="30" id="qMK-kI-viF"/>
-                                                            <constraint firstItem="3Lm-cb-82d" firstAttribute="leading" secondItem="SBD-S2-KBz" secondAttribute="leading" constant="30" id="t12-ie-s6B"/>
-                                                            <constraint firstItem="OdR-kp-Hih" firstAttribute="top" secondItem="SBD-S2-KBz" secondAttribute="top" constant="75" id="uIt-Xi-HAK"/>
-                                                            <constraint firstItem="EPQ-QK-OWb" firstAttribute="top" secondItem="SBD-S2-KBz" secondAttribute="top" constant="5" id="uP5-hN-k97"/>
-                                                            <constraint firstItem="gJS-yf-7hT" firstAttribute="leading" secondItem="OdR-kp-Hih" secondAttribute="leading" id="vhP-3j-KGL"/>
+                                                            <constraint firstItem="wiv-PH-m6C" firstAttribute="leading" secondItem="SBD-S2-KBz" secondAttribute="leading" constant="16" id="qMK-kI-viF"/>
+                                                            <constraint firstItem="3Lm-cb-82d" firstAttribute="leading" secondItem="SBD-S2-KBz" secondAttribute="leading" constant="16" id="t12-ie-s6B"/>
+                                                            <constraint firstItem="OdR-kp-Hih" firstAttribute="top" secondItem="gJS-yf-7hT" secondAttribute="bottom" constant="20" id="tje-co-W6o"/>
+                                                            <constraint firstItem="EPQ-QK-OWb" firstAttribute="top" secondItem="SBD-S2-KBz" secondAttribute="top" id="uP5-hN-k97"/>
                                                             <constraint firstItem="pfV-yj-9bX" firstAttribute="top" secondItem="SBD-S2-KBz" secondAttribute="top" id="w2R-U8-VjE"/>
-                                                            <constraint firstItem="wiv-PH-m6C" firstAttribute="top" secondItem="70p-Je-vnR" secondAttribute="bottom" constant="51.329999999999998" id="xbk-cz-7Qu"/>
                                                             <constraint firstItem="pfV-yj-9bX" firstAttribute="leading" secondItem="SBD-S2-KBz" secondAttribute="leading" id="z3G-u5-MZX"/>
-                                                            <constraint firstItem="wiv-PH-m6C" firstAttribute="leading" secondItem="gJS-yf-7hT" secondAttribute="leading" id="zfo-vs-gxD"/>
                                                         </constraints>
-                                                        <variation key="default">
-                                                            <mask key="constraints">
-                                                                <exclude reference="uIt-Xi-HAK"/>
-                                                            </mask>
-                                                        </variation>
                                                     </view>
                                                 </subviews>
                                                 <constraints>
@@ -20675,10 +20670,10 @@ back for failed P2P transaction</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rSS-dx-6ua">
-                                                <rect key="frame" x="0.0" y="315" width="393" height="130"/>
+                                                <rect key="frame" x="0.0" y="315" width="393" height="200"/>
                                                 <subviews>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bza-4z-ZYb">
-                                                        <rect key="frame" x="8" y="8" width="377" height="122"/>
+                                                        <rect key="frame" x="8" y="8" width="377" height="192"/>
                                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RwW-21-jdA">
                                                             <size key="itemSize" width="262" height="140"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -20687,7 +20682,7 @@ back for failed P2P transaction</string>
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollViewCardCell" id="CqJ-8Y-BTB" customClass="CollViewCardCell" customModule="MaxPay" customModuleProvider="target">
-                                                                <rect key="frame" x="10" y="-9" width="262" height="140"/>
+                                                                <rect key="frame" x="10" y="26" width="262" height="140"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tSo-wh-jmk">
                                                                     <rect key="frame" x="0.0" y="0.0" width="262" height="140"/>
@@ -20814,7 +20809,7 @@ back for failed P2P transaction</string>
                                                                 </connections>
                                                             </collectionViewCell>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollViewAddCardCell" id="zbY-fI-8uw" customClass="CollViewAddCardCell" customModule="MaxPay" customModuleProvider="target">
-                                                                <rect key="frame" x="282" y="-9" width="262" height="140"/>
+                                                                <rect key="frame" x="282" y="26" width="262" height="140"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tyU-QV-Ofe">
                                                                     <rect key="frame" x="0.0" y="0.0" width="262" height="140"/>
@@ -20827,14 +20822,14 @@ back for failed P2P transaction</string>
                                                                                     <rect key="frame" x="0.0" y="0.0" width="262" height="116"/>
                                                                                 </imageView>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jo2-cu-hKX">
-                                                                                    <rect key="frame" x="8" y="65.666666666666671" width="236" height="19"/>
-                                                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                                                                                    <rect key="frame" x="8" y="66.666666666666671" width="236" height="16.666666666666671"/>
+                                                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                                                                     <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrd-Tp-Pf2">
-                                                                                    <rect key="frame" x="113" y="31.666666666666664" width="26" height="26"/>
-                                                                                    <color key="backgroundColor" name="primary-green"/>
+                                                                                    <rect key="frame" x="113" y="32.666666666666664" width="26" height="26"/>
+                                                                                    <color key="backgroundColor" red="0.81176470588235294" green="0.89803921568627454" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="width" constant="26" id="CuV-pO-ffl"/>
                                                                                         <constraint firstAttribute="height" constant="26" id="daH-dP-w8H"/>
@@ -20896,7 +20891,7 @@ back for failed P2P transaction</string>
                                                     </collectionView>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="130" id="Ane-aH-pYx"/>
+                                                    <constraint firstAttribute="height" constant="200" id="Ane-aH-pYx"/>
                                                     <constraint firstAttribute="bottom" secondItem="bza-4z-ZYb" secondAttribute="bottom" id="QR2-Sq-o8i"/>
                                                     <constraint firstItem="bza-4z-ZYb" firstAttribute="top" secondItem="rSS-dx-6ua" secondAttribute="top" constant="8" id="cK4-S3-m9m"/>
                                                     <constraint firstItem="bza-4z-ZYb" firstAttribute="leading" secondItem="rSS-dx-6ua" secondAttribute="leading" constant="8" id="nyj-7j-Ezn"/>
@@ -20904,7 +20899,7 @@ back for failed P2P transaction</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jPY-PO-Ihh">
-                                                <rect key="frame" x="0.0" y="445" width="393" height="142"/>
+                                                <rect key="frame" x="0.0" y="515" width="393" height="142"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Edl-2y-nVI">
                                                         <rect key="frame" x="10" y="8" width="373" height="126"/>
@@ -21302,10 +21297,15 @@ back for failed P2P transaction</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nrQ-mI-4Vb">
-                                                <rect key="frame" x="0.0" y="587" width="393" height="200"/>
+                                                <rect key="frame" x="0.0" y="657" width="393" height="200"/>
                                                 <subviews>
                                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43H-7T-aTH">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <outlet property="delegate" destination="bC7-Id-oXi" id="Da8-mq-QKF"/>
                                                         </connections>
@@ -21335,7 +21335,7 @@ back for failed P2P transaction</string>
                                                 </variation>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ii1-Pi-bOg">
-                                                <rect key="frame" x="0.0" y="787" width="393" height="284"/>
+                                                <rect key="frame" x="0.0" y="857" width="393" height="284"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHR-x2-F1u" customClass="CardView" customModule="MaxPay" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="16" width="361" height="252"/>
@@ -21377,7 +21377,7 @@ back for failed P2P transaction</string>
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </view>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z4f-Y2-T8V">
-                                                                                        <rect key="frame" x="23.666666666666664" y="21.333333333333371" width="30" height="30"/>
+                                                                                        <rect key="frame" x="23.666666666666664" y="21.333333333333258" width="30" height="30"/>
                                                                                         <color key="tintColor" name="theme_green"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="height" constant="30" id="McB-6n-ofO"/>
@@ -21402,12 +21402,12 @@ back for failed P2P transaction</string>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </view>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electricity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uK-jg-v98">
-                                                                                <rect key="frame" x="10.000000000000004" y="80.666666666666629" width="57.333333333333343" height="15.333333333333329"/>
+                                                                                <rect key="frame" x="10.000000000000004" y="80.666666666666742" width="57.333333333333343" height="15.333333333333329"/>
                                                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6t2-Jp-vES">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6t2-Jp-vES">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="76"/>
                                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                             </button>
@@ -21455,7 +21455,7 @@ back for failed P2P transaction</string>
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </view>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditcard" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gs0-FJ-IGA">
-                                                                                        <rect key="frame" x="23.666666666666671" y="23.333333333333371" width="30" height="26"/>
+                                                                                        <rect key="frame" x="23.666666666666671" y="23.333333333333258" width="30" height="26"/>
                                                                                         <color key="tintColor" name="theme_green"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="width" constant="30" id="62Z-hM-NOz"/>
@@ -21479,12 +21479,12 @@ back for failed P2P transaction</string>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </view>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit Card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQj-kp-Uc0">
-                                                                                <rect key="frame" x="2" y="80.666666666666629" width="73.333333333333329" height="15.333333333333329"/>
+                                                                                <rect key="frame" x="2" y="80.666666666666742" width="73.333333333333329" height="15.333333333333329"/>
                                                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <button opaque="NO" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7U-kq-TkM">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7U-kq-TkM">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="76"/>
                                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                             </button>
@@ -21532,7 +21532,7 @@ back for failed P2P transaction</string>
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </view>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gas" translatesAutoresizingMaskIntoConstraints="NO" id="4h9-o8-ApL">
-                                                                                        <rect key="frame" x="23.333333333333343" y="21.333333333333371" width="30" height="30"/>
+                                                                                        <rect key="frame" x="23.333333333333343" y="21.333333333333258" width="30" height="30"/>
                                                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="height" constant="30" id="DSN-8U-PgS"/>
@@ -21556,12 +21556,12 @@ back for failed P2P transaction</string>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </view>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Li7-6O-3Io">
-                                                                                <rect key="frame" x="10" y="80.666666666666629" width="57" height="15.333333333333329"/>
+                                                                                <rect key="frame" x="10" y="80.666666666666742" width="57" height="15.333333333333329"/>
                                                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <button opaque="NO" tag="202" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWk-5n-P58">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWk-5n-P58">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="77" height="76"/>
                                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -21610,7 +21610,7 @@ back for failed P2P transaction</string>
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </view>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Water" translatesAutoresizingMaskIntoConstraints="NO" id="uZv-IQ-jKE">
-                                                                                        <rect key="frame" x="23.666666666666629" y="21.333333333333371" width="30" height="30"/>
+                                                                                        <rect key="frame" x="23.666666666666629" y="21.333333333333258" width="30" height="30"/>
                                                                                         <color key="tintColor" name="theme_green"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="height" constant="30" id="9oV-mx-w2t"/>
@@ -21634,12 +21634,12 @@ back for failed P2P transaction</string>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </view>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59D-Dy-r3R">
-                                                                                <rect key="frame" x="10.000000000000004" y="80.666666666666629" width="57.333333333333343" height="15.333333333333329"/>
+                                                                                <rect key="frame" x="10.000000000000004" y="80.666666666666742" width="57.333333333333343" height="15.333333333333329"/>
                                                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <button opaque="NO" tag="203" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSV-e1-zWH">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSV-e1-zWH">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="76"/>
                                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                             </button>
@@ -21779,13 +21779,10 @@ back for failed P2P transaction</string>
                                                                                             <constraint firstAttribute="width" constant="30" id="QrK-Tk-w2s"/>
                                                                                         </constraints>
                                                                                     </imageView>
-                                                                                    <button opaque="NO" tag="205" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpW-18-eNm">
+                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpW-18-eNm">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="73.666666666666671"/>
                                                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                                        <connections>
-                                                                                            <action selector="btnNavigateAction:" destination="bC7-Id-oXi" eventType="touchUpInside" id="nmc-7H-wvB"/>
-                                                                                        </connections>
                                                                                     </button>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -21882,12 +21879,9 @@ back for failed P2P transaction</string>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <button opaque="NO" tag="206" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erz-PS-5uM">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erz-PS-5uM">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="77" height="76"/>
                                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                                <connections>
-                                                                                    <action selector="btnNavigateAction:" destination="bC7-Id-oXi" eventType="touchUpInside" id="uRq-hC-fbW"/>
-                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -21962,12 +21956,9 @@ back for failed P2P transaction</string>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <button opaque="NO" tag="207" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbo-kS-leH">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbo-kS-leH">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="76"/>
                                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                                <connections>
-                                                                                    <action selector="btnNavigateAction:" destination="bC7-Id-oXi" eventType="touchUpInside" id="xr1-g6-I4F"/>
-                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -22042,7 +22033,7 @@ back for failed P2P transaction</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4n8-gY-n38">
-                                                <rect key="frame" x="0.0" y="1071" width="393" height="152"/>
+                                                <rect key="frame" x="0.0" y="1141" width="393" height="152"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9w9-M1-3ct">
                                                         <rect key="frame" x="16" y="8" width="361" height="136"/>
@@ -22113,7 +22104,7 @@ back for failed P2P transaction</string>
                                                                                 <color key="textColor" name="reload-grey-color"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4p5-ku-zqX">
+                                                                            <button opaque="NO" tag="203" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4p5-ku-zqX">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="114.33333333333333" height="76"/>
                                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                             </button>
@@ -22311,7 +22302,7 @@ back for failed P2P transaction</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7SV-cg-0Pu">
-                                                <rect key="frame" x="0.0" y="1223" width="393" height="284"/>
+                                                <rect key="frame" x="0.0" y="1293" width="393" height="284"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5Q-Gp-a1t" customClass="CardView" customModule="MaxPay" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="16" width="361" height="252"/>
@@ -22626,9 +22617,6 @@ back for failed P2P transaction</string>
                                                                             <button opaque="NO" tag="203" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9c-1e-MaQ">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="76"/>
                                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                                <connections>
-                                                                                    <action selector="btnNavigateAction:" destination="bC7-Id-oXi" eventType="touchUpInside" id="2CG-Pz-mz2"/>
-                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -23072,6 +23060,7 @@ back for failed P2P transaction</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Aan-WB-IX1" firstAttribute="leading" secondItem="O6s-b9-hl9" secondAttribute="leading" id="4if-lH-Vcq"/>
+                            <constraint firstItem="O6s-b9-hl9" firstAttribute="trailing" secondItem="Kwr-n0-2ql" secondAttribute="trailing" id="9HD-wN-2Cp"/>
                             <constraint firstItem="lTT-i5-44C" firstAttribute="trailing" secondItem="O6s-b9-hl9" secondAttribute="trailing" id="A60-bu-Wwb"/>
                             <constraint firstItem="Aan-WB-IX1" firstAttribute="trailing" secondItem="O6s-b9-hl9" secondAttribute="trailing" id="IkM-J2-Ssx"/>
                             <constraint firstItem="Aan-WB-IX1" firstAttribute="leading" secondItem="O6s-b9-hl9" secondAttribute="leading" id="Mtb-M3-ru5"/>
@@ -23081,10 +23070,13 @@ back for failed P2P transaction</string>
                             <constraint firstItem="lTT-i5-44C" firstAttribute="leading" secondItem="O6s-b9-hl9" secondAttribute="leading" id="UaA-cK-7lH"/>
                             <constraint firstItem="EA8-6T-tYJ" firstAttribute="top" secondItem="lTT-i5-44C" secondAttribute="bottom" constant="-15" id="Vyo-8z-kjj"/>
                             <constraint firstItem="lTT-i5-44C" firstAttribute="height" secondItem="O8d-k5-P4e" secondAttribute="height" multiplier="0.905625" priority="250" constant="15" id="c1a-pA-s5L"/>
+                            <constraint firstItem="Kwr-n0-2ql" firstAttribute="leading" secondItem="O6s-b9-hl9" secondAttribute="leading" id="dgG-xr-fZb"/>
                             <constraint firstItem="EA8-6T-tYJ" firstAttribute="bottom" secondItem="O6s-b9-hl9" secondAttribute="bottom" id="hTS-Gm-S2v"/>
                             <constraint firstItem="O6s-b9-hl9" firstAttribute="trailing" secondItem="EA8-6T-tYJ" secondAttribute="trailing" id="ol9-bt-Ppm"/>
+                            <constraint firstItem="EA8-6T-tYJ" firstAttribute="top" secondItem="Kwr-n0-2ql" secondAttribute="bottom" id="rUS-OJ-nSO"/>
                             <constraint firstItem="EA8-6T-tYJ" firstAttribute="leading" secondItem="O6s-b9-hl9" secondAttribute="leading" id="tX9-Eh-i5o"/>
                             <constraint firstItem="lTT-i5-44C" firstAttribute="width" secondItem="O8d-k5-P4e" secondAttribute="width" id="ulg-mr-hi1"/>
+                            <constraint firstItem="Kwr-n0-2ql" firstAttribute="top" secondItem="Aan-WB-IX1" secondAttribute="bottom" id="xIk-iw-90C"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XMM-M6-W8d"/>
@@ -23105,7 +23097,9 @@ back for failed P2P transaction</string>
                         <outlet property="pageControl" destination="T5S-my-wcp" id="g7x-7s-rJd"/>
                         <outlet property="scrollView" destination="lTT-i5-44C" id="ktn-Sn-bxT"/>
                         <outlet property="scrollViewBanner" destination="43H-7T-aTH" id="elf-NM-ngy"/>
+                        <outlet property="tableViewDashboard" destination="Kwr-n0-2ql" id="qnj-dp-PrE"/>
                         <outlet property="viewBills" destination="wHR-x2-F1u" id="YR3-T2-Est"/>
+                        <outlet property="viewCollection" destination="rSS-dx-6ua" id="Ha0-EZ-Nd9"/>
                         <outlet property="viewStatusBg" destination="13H-8s-HDR" id="2kO-1a-HgK"/>
                         <outlet property="viewTravel" destination="9w9-M1-3ct" id="0kA-Tm-IIs"/>
                         <outlet property="viewUPIOptionsGg" destination="jPY-PO-Ihh" id="tSc-Xv-37s"/>
@@ -23426,8 +23420,8 @@ UEBYAAAAAAAAAgEAAAAAAAAAaAAAAAAAAAAAAAAAAAAAQFs
 </mutableData>
         </image>
         <image name="camera" width="20" height="19"/>
-        <image name="card" width="328" height="205"/>
         <image name="card-chip-ic" width="56" height="36"/>
+        <image name="card2" width="328" height="205"/>
         <image name="catagory_bg" width="59" height="59"/>
         <image name="catagory_item" width="20.333333969116211" height="26"/>
         <image name="chainPic" width="56" height="56"/>
@@ -23437,6 +23431,7 @@ UEBYAAAAAAAAAgEAAAAAAAAAaAAAAAAAAAAAAAAAAAAAQFs
         <image name="checkmark.circle.fill" catalog="system" width="128" height="123"/>
         <image name="claimBg" width="116.33333587646484" height="46.333332061767578"/>
         <image name="close" width="256" height="256"/>
+        <image name="coin" width="512" height="512"/>
         <image name="conplaint-home" width="17" height="23"/>
         <image name="createQRMandateVC" width="229" height="30"/>
         <image name="creditcard" catalog="system" width="128" height="88"/>
@@ -23481,8 +23476,8 @@ UEBYAAAAAAAAAgEAAAAAAAAAaAAAAAAAAAAAAAAAAAAAQFs
         <image name="mandate_ON" width="24" height="24"/>
         <image name="mandate_alert" width="126" height="131.5"/>
         <image name="max-home-header" width="64" height="16"/>
-        <image name="max-qr-scan-bg" width="64" height="16"/>
         <image name="max-theme-logi" width="64" height="16"/>
+        <image name="maxlogo" width="61.333332061767578" height="22.666666030883789"/>
         <image name="me_milestone" width="205.5" height="163"/>
         <image name="menu-ic" width="24" height="24"/>
         <image name="miles" width="56" height="56"/>
@@ -23539,7 +23534,6 @@ UEBYAAAAAAAAAgEAAAAAAAAAaAAAAAAAAAAAAAAAAAAAQFs
         <image name="uncheck" width="20" height="20"/>
         <image name="upi-home-header" width="34" height="12"/>
         <image name="userPic" width="32" height="32"/>
-        <image name="wallet.bifold" catalog="system" width="128" height="103"/>
         <image name="winnerToppic" width="360" height="271"/>
         <namedColor name="black-color">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -23590,22 +23584,22 @@ UEBYAAAAAAAAAgEAAAAAAAAAaAAAAAAAAAAAAAAAAAAAQFs
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

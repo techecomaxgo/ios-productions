@@ -14,8 +14,8 @@ final class ValidateUpiOTPViewModel {
     var eventHandler: ((_ event: Event) -> Void)?
     
     //MARK: Data featching form server
-    func validateUpiOTPCall(_ strPhoneNumber:String) {
-        let params : [String:Any]  = ["mobileNumber":strPhoneNumber]
+    func validateUpiOTPCall(_ strDeviceid:String) {
+        let params : [String:Any]  = ["device_id": strDeviceid ]
         print("The dictionary is : \(params)")
         self.eventHandler?(.loading)
         ApiManager.sharedInstance.validateUpiOtpServiceApi(dict:params as NSDictionary, completion: { (model, err) in

@@ -35,6 +35,8 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
         let homeVC = storyBoard.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
        homeVC.view.backgroundColor = .white
         homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "tab-home-ic"), selectedImage: UIImage(named: "homeIcon"))
+        //homeVC.tabBarItem.badgeColor = UIColor(hexString: "000000")
+        
         let nav1 = UINavigationController(rootViewController: homeVC)
 
 
@@ -84,7 +86,7 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
         viewControllers = [nav1, nav2,nav3, nav4,nav5]
 
         // Customize the tab bar appearance
-        tabBar.tintColor = .systemGreen
+        tabBar.tintColor = UIColor(hexString: "637F13")//.systemGreen
         tabBar.unselectedItemTintColor = .black
 
         // Adjust the middle button (if needed)

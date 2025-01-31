@@ -173,6 +173,10 @@
 		840502122C89A70200F8E72E /* RaiseQueryPopUpView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840502112C89A70200F8E72E /* RaiseQueryPopUpView2.swift */; };
 		8406829E2C08682100249D55 /* ChainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406829D2C08682100249D55 /* ChainViewController.swift */; };
 		840682A02C08967700249D55 /* ChainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406829F2C08967700249D55 /* ChainTableViewCell.swift */; };
+		8406CC3E2D4B864D0082CD01 /* OlivePayLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8406CC3D2D4B864D0082CD01 /* OlivePayLibrary.framework */; platformFilter = ios; };
+		8406CC402D4B864D0082CD01 /* OlivePayLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8406CC3D2D4B864D0082CD01 /* OlivePayLibrary.framework */; platformFilter = ios; };
+		8406CC412D4B865D0082CD01 /* OlivePayLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8406CC3D2D4B864D0082CD01 /* OlivePayLibrary.framework */; };
+		8406CC422D4B865D0082CD01 /* OlivePayLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8406CC3D2D4B864D0082CD01 /* OlivePayLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84070B4B2C40B3EB00F7C0EB /* FlightFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84070B4A2C40B3EB00F7C0EB /* FlightFilterView.swift */; };
 		840B87FD2C3E6088002D4D76 /* FlightTwoWayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B87FC2C3E6088002D4D76 /* FlightTwoWayViewController.swift */; };
 		840B88002C3E61D0002D4D76 /* FlightTwoWayCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B87FF2C3E61D0002D4D76 /* FlightTwoWayCVC.swift */; };
@@ -324,14 +328,8 @@
 		84A3C05D2C1727AF0044DC7B /* Suite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C0562C1727AF0044DC7B /* Suite.swift */; };
 		84A3C05E2C1727AF0044DC7B /* DeluxeDuplex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C0572C1727AF0044DC7B /* DeluxeDuplex.swift */; };
 		84A3C0612C172E6F0044DC7B /* HotelRoomTypes_ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C0602C172E6F0044DC7B /* HotelRoomTypes_ViewModel.swift */; };
-		84B014DF2D27F85900239744 /* OlivePayLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B014DE2D27F85900239744 /* OlivePayLibrary.framework */; platformFilter = ios; };
-		84B014E12D27F85900239744 /* OlivePayLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B014DE2D27F85900239744 /* OlivePayLibrary.framework */; platformFilter = ios; };
-		84B014E42D27F86D00239744 /* CommonLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B014E22D27F86D00239744 /* CommonLibrary.framework */; platformFilter = ios; };
-		84B014E52D27F86D00239744 /* CommonLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B014E22D27F86D00239744 /* CommonLibrary.framework */; platformFilter = ios; };
-		84B014E62D27F93000239744 /* CommonLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B014E22D27F86D00239744 /* CommonLibrary.framework */; };
-		84B014E72D27F93000239744 /* CommonLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B014E22D27F86D00239744 /* CommonLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		84B014E82D27F93500239744 /* OlivePayLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B014DE2D27F85900239744 /* OlivePayLibrary.framework */; };
-		84B014E92D27F93500239744 /* OlivePayLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B014DE2D27F85900239744 /* OlivePayLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84ABC2382D4A567900E63991 /* MoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84ABC2372D4A567900E63991 /* MoreTableViewCell.xib */; };
+		84ABC2392D4A567900E63991 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABC2362D4A567900E63991 /* MoreTableViewCell.swift */; };
 		84B014FA2D42751100239744 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 84B014F92D42751100239744 /* Alamofire */; };
 		84B5A6632C1C6CD100B9D48D /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5A6612C1C6CD100B9D48D /* Users.swift */; };
 		84B5A6642C1C6CD100B9D48D /* ChainModel_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5A6622C1C6CD100B9D48D /* ChainModel_Base.swift */; };
@@ -358,6 +356,27 @@
 		84CB80E72C145CC3003620DA /* ClaimPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB80E32C145CC2003620DA /* ClaimPopUpVC.swift */; };
 		84CB80E82C145CC3003620DA /* FilterTexPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB80E42C145CC3003620DA /* FilterTexPopUpVC.swift */; };
 		84CB80E92C145CC3003620DA /* FilterDatePopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB80E52C145CC3003620DA /* FilterDatePopUpVC.swift */; };
+		84CCC0592D4939A4004E462B /* CommonLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CCC0582D4939A4004E462B /* CommonLibrary.framework */; };
+		84CCC05A2D4939A4004E462B /* CommonLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CCC0582D4939A4004E462B /* CommonLibrary.framework */; platformFilter = ios; };
+		84CCC05B2D4939A4004E462B /* CommonLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CCC0582D4939A4004E462B /* CommonLibrary.framework */; platformFilter = ios; };
+		84CCC05C2D4939EC004E462B /* CommonLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CCC0582D4939A4004E462B /* CommonLibrary.framework */; };
+		84CCC05D2D4939EC004E462B /* CommonLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84CCC0582D4939A4004E462B /* CommonLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84CCC0642D49E88C004E462B /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCC0622D49E88C004E462B /* UserDetailTableViewCell.swift */; };
+		84CCC0652D49E88C004E462B /* UserDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CCC0632D49E88C004E462B /* UserDetailTableViewCell.xib */; };
+		84CCC06A2D49EDB0004E462B /* PayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCC0682D49EDB0004E462B /* PayTableViewCell.swift */; };
+		84CCC06B2D49EDB0004E462B /* PayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CCC0692D49EDB0004E462B /* PayTableViewCell.xib */; };
+		84CCC06E2D49EDFA004E462B /* BillsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCC06C2D49EDFA004E462B /* BillsTableViewCell.swift */; };
+		84CCC06F2D49EDFA004E462B /* BillsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CCC06D2D49EDFA004E462B /* BillsTableViewCell.xib */; };
+		84CCC0722D49EE36004E462B /* CardDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCC0702D49EE36004E462B /* CardDetailTableViewCell.swift */; };
+		84CCC0732D49EE36004E462B /* CardDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CCC0712D49EE36004E462B /* CardDetailTableViewCell.xib */; };
+		84CCC0762D49F7E4004E462B /* BannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCC0742D49F7E4004E462B /* BannerTableViewCell.swift */; };
+		84CCC0772D49F7E4004E462B /* BannerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CCC0752D49F7E4004E462B /* BannerTableViewCell.xib */; };
+		84CCC07A2D49F868004E462B /* GraffTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCC0782D49F868004E462B /* GraffTableViewCell.swift */; };
+		84CCC07B2D49F868004E462B /* GraffTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CCC0792D49F868004E462B /* GraffTableViewCell.xib */; };
+		84CCC07E2D49F89F004E462B /* TravelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCC07C2D49F89F004E462B /* TravelTableViewCell.swift */; };
+		84CCC07F2D49F89F004E462B /* TravelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CCC07D2D49F89F004E462B /* TravelTableViewCell.xib */; };
+		84CCC0822D49FF3D004E462B /* CardDetaiilCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCC0802D49FF3D004E462B /* CardDetaiilCollectionViewCell.swift */; };
+		84CCC0832D49FF3D004E462B /* CardDetaiilCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CCC0812D49FF3D004E462B /* CardDetaiilCollectionViewCell.xib */; };
 		84D1CF8A2C0D92E8003F0A5A /* HotelSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1CF892C0D92E8003F0A5A /* HotelSearchViewController.swift */; };
 		84D1CF8D2C0DAE41003F0A5A /* HotelSearchTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1CF8C2C0DAE41003F0A5A /* HotelSearchTVC.swift */; };
 		84D1CF902C0DE150003F0A5A /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1CF8F2C0DE150003F0A5A /* NetworkMonitor.swift */; };
@@ -374,6 +393,8 @@
 		84DFEFB22C29411D007A4F2B /* ManageUPIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFEFB12C29411D007A4F2B /* ManageUPIVC.swift */; };
 		84DFEFB62C294981007A4F2B /* ManageLinkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFEFB52C294981007A4F2B /* ManageLinkVC.swift */; };
 		84E9299B2C14274D00DDC0A0 /* LostAndFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9299A2C14274C00DDC0A0 /* LostAndFoundViewController.swift */; };
+		84EE57E32D4A21C900B58C4A /* AddCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE57E12D4A21C900B58C4A /* AddCardTableViewCell.swift */; };
+		84EE57E42D4A21C900B58C4A /* AddCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EE57E22D4A21C900B58C4A /* AddCardTableViewCell.xib */; };
 		84F1E8A42C296CE000F8EB10 /* UPINumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1E8A32C296CE000F8EB10 /* UPINumberVC.swift */; };
 		84F1E8A92C29779D00F8EB10 /* UPIFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1E8A82C29779D00F8EB10 /* UPIFeature.swift */; };
 		84F41C9B2C3FE7C0007CACD6 /* FlightCheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F41C9A2C3FE7C0007CACD6 /* FlightCheckoutViewController.swift */; };
@@ -618,8 +639,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				84B014E72D27F93000239744 /* CommonLibrary.framework in Embed Frameworks */,
-				84B014E92D27F93500239744 /* OlivePayLibrary.framework in Embed Frameworks */,
+				84CCC05D2D4939EC004E462B /* CommonLibrary.framework in Embed Frameworks */,
+				8406CC422D4B865D0082CD01 /* OlivePayLibrary.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -802,6 +823,7 @@
 		840502112C89A70200F8E72E /* RaiseQueryPopUpView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaiseQueryPopUpView2.swift; sourceTree = "<group>"; };
 		8406829D2C08682100249D55 /* ChainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainViewController.swift; sourceTree = "<group>"; };
 		8406829F2C08967700249D55 /* ChainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainTableViewCell.swift; sourceTree = "<group>"; };
+		8406CC3D2D4B864D0082CD01 /* OlivePayLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OlivePayLibrary.framework; sourceTree = "<group>"; };
 		84070B4A2C40B3EB00F7C0EB /* FlightFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightFilterView.swift; sourceTree = "<group>"; };
 		840B87FC2C3E6088002D4D76 /* FlightTwoWayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTwoWayViewController.swift; sourceTree = "<group>"; };
 		840B87FF2C3E61D0002D4D76 /* FlightTwoWayCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTwoWayCVC.swift; sourceTree = "<group>"; };
@@ -963,11 +985,11 @@
 		84A3C0562C1727AF0044DC7B /* Suite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suite.swift; sourceTree = "<group>"; };
 		84A3C0572C1727AF0044DC7B /* DeluxeDuplex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeluxeDuplex.swift; sourceTree = "<group>"; };
 		84A3C0602C172E6F0044DC7B /* HotelRoomTypes_ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelRoomTypes_ViewModel.swift; sourceTree = "<group>"; };
+		84ABC2362D4A567900E63991 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
+		84ABC2372D4A567900E63991 /* MoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreTableViewCell.xib; sourceTree = "<group>"; };
 		84B014D32D27E2F700239744 /* MaxPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaxPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B014D42D27E2F700239744 /* MaxPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaxPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B014D52D27E2F700239744 /* MaxPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaxPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		84B014DE2D27F85900239744 /* OlivePayLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OlivePayLibrary.framework; sourceTree = "<group>"; };
-		84B014E22D27F86D00239744 /* CommonLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CommonLibrary.framework; sourceTree = "<group>"; };
 		84B5A6612C1C6CD100B9D48D /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		84B5A6622C1C6CD100B9D48D /* ChainModel_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainModel_Base.swift; sourceTree = "<group>"; };
 		84B5A6662C1C6DA000B9D48D /* ChainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainViewModel.swift; sourceTree = "<group>"; };
@@ -994,6 +1016,23 @@
 		84CB80E32C145CC2003620DA /* ClaimPopUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClaimPopUpVC.swift; sourceTree = "<group>"; };
 		84CB80E42C145CC3003620DA /* FilterTexPopUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTexPopUpVC.swift; sourceTree = "<group>"; };
 		84CB80E52C145CC3003620DA /* FilterDatePopUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterDatePopUpVC.swift; sourceTree = "<group>"; };
+		84CCC0582D4939A4004E462B /* CommonLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CommonLibrary.framework; sourceTree = "<group>"; };
+		84CCC0622D49E88C004E462B /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
+		84CCC0632D49E88C004E462B /* UserDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailTableViewCell.xib; sourceTree = "<group>"; };
+		84CCC0682D49EDB0004E462B /* PayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayTableViewCell.swift; sourceTree = "<group>"; };
+		84CCC0692D49EDB0004E462B /* PayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayTableViewCell.xib; sourceTree = "<group>"; };
+		84CCC06C2D49EDFA004E462B /* BillsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillsTableViewCell.swift; sourceTree = "<group>"; };
+		84CCC06D2D49EDFA004E462B /* BillsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BillsTableViewCell.xib; sourceTree = "<group>"; };
+		84CCC0702D49EE36004E462B /* CardDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailTableViewCell.swift; sourceTree = "<group>"; };
+		84CCC0712D49EE36004E462B /* CardDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardDetailTableViewCell.xib; sourceTree = "<group>"; };
+		84CCC0742D49F7E4004E462B /* BannerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTableViewCell.swift; sourceTree = "<group>"; };
+		84CCC0752D49F7E4004E462B /* BannerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerTableViewCell.xib; sourceTree = "<group>"; };
+		84CCC0782D49F868004E462B /* GraffTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraffTableViewCell.swift; sourceTree = "<group>"; };
+		84CCC0792D49F868004E462B /* GraffTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraffTableViewCell.xib; sourceTree = "<group>"; };
+		84CCC07C2D49F89F004E462B /* TravelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTableViewCell.swift; sourceTree = "<group>"; };
+		84CCC07D2D49F89F004E462B /* TravelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelTableViewCell.xib; sourceTree = "<group>"; };
+		84CCC0802D49FF3D004E462B /* CardDetaiilCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetaiilCollectionViewCell.swift; sourceTree = "<group>"; };
+		84CCC0812D49FF3D004E462B /* CardDetaiilCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardDetaiilCollectionViewCell.xib; sourceTree = "<group>"; };
 		84D1CF892C0D92E8003F0A5A /* HotelSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelSearchViewController.swift; sourceTree = "<group>"; };
 		84D1CF8C2C0DAE41003F0A5A /* HotelSearchTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelSearchTVC.swift; sourceTree = "<group>"; };
 		84D1CF8F2C0DE150003F0A5A /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
@@ -1010,6 +1049,9 @@
 		84DFEFB12C29411D007A4F2B /* ManageUPIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageUPIVC.swift; sourceTree = "<group>"; };
 		84DFEFB52C294981007A4F2B /* ManageLinkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageLinkVC.swift; sourceTree = "<group>"; };
 		84E9299A2C14274C00DDC0A0 /* LostAndFoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostAndFoundViewController.swift; sourceTree = "<group>"; };
+		84EE57E12D4A21C900B58C4A /* AddCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardTableViewCell.swift; sourceTree = "<group>"; };
+		84EE57E22D4A21C900B58C4A /* AddCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCardTableViewCell.xib; sourceTree = "<group>"; };
+		84EE57E52D4A30BC00B58C4A /* MaxPayRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MaxPayRelease.entitlements; sourceTree = "<group>"; };
 		84F1E8A32C296CE000F8EB10 /* UPINumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPINumberVC.swift; sourceTree = "<group>"; };
 		84F1E8A82C29779D00F8EB10 /* UPIFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPIFeature.swift; sourceTree = "<group>"; };
 		84F41C9A2C3FE7C0007CACD6 /* FlightCheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightCheckoutViewController.swift; sourceTree = "<group>"; };
@@ -1236,12 +1278,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B014E62D27F93000239744 /* CommonLibrary.framework in Frameworks */,
+				84CCC0592D4939A4004E462B /* CommonLibrary.framework in Frameworks */,
 				8431670A2D0E1D7E0040AC4A /* ScreenProtectorKit in Frameworks */,
 				8445A2FE2D0DF45600D95088 /* Cosmos in Frameworks */,
 				84B014FA2D42751100239744 /* Alamofire in Frameworks */,
 				8E3595704C3F7DDB2BFD4674 /* Pods_MaxPay.framework in Frameworks */,
-				84B014E82D27F93500239744 /* OlivePayLibrary.framework in Frameworks */,
+				84CCC05C2D4939EC004E462B /* CommonLibrary.framework in Frameworks */,
+				8406CC412D4B865D0082CD01 /* OlivePayLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1249,8 +1292,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B014E12D27F85900239744 /* OlivePayLibrary.framework in Frameworks */,
-				84B014E42D27F86D00239744 /* CommonLibrary.framework in Frameworks */,
+				84CCC05A2D4939A4004E462B /* CommonLibrary.framework in Frameworks */,
+				8406CC3E2D4B864D0082CD01 /* OlivePayLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1258,8 +1301,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B014DF2D27F85900239744 /* OlivePayLibrary.framework in Frameworks */,
-				84B014E52D27F86D00239744 /* CommonLibrary.framework in Frameworks */,
+				84CCC05B2D4939A4004E462B /* CommonLibrary.framework in Frameworks */,
+				8406CC402D4B864D0082CD01 /* OlivePayLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2419,6 +2462,33 @@
 			path = DataModel;
 			sourceTree = "<group>";
 		};
+		84CCC0612D49E5C0004E462B /* DashboardNew */ = {
+			isa = PBXGroup;
+			children = (
+				84CCC0622D49E88C004E462B /* UserDetailTableViewCell.swift */,
+				84CCC0632D49E88C004E462B /* UserDetailTableViewCell.xib */,
+				84CCC0702D49EE36004E462B /* CardDetailTableViewCell.swift */,
+				84CCC0712D49EE36004E462B /* CardDetailTableViewCell.xib */,
+				84CCC0682D49EDB0004E462B /* PayTableViewCell.swift */,
+				84CCC0692D49EDB0004E462B /* PayTableViewCell.xib */,
+				84CCC0742D49F7E4004E462B /* BannerTableViewCell.swift */,
+				84CCC0752D49F7E4004E462B /* BannerTableViewCell.xib */,
+				84CCC06C2D49EDFA004E462B /* BillsTableViewCell.swift */,
+				84CCC06D2D49EDFA004E462B /* BillsTableViewCell.xib */,
+				84CCC0782D49F868004E462B /* GraffTableViewCell.swift */,
+				84CCC0792D49F868004E462B /* GraffTableViewCell.xib */,
+				84CCC07C2D49F89F004E462B /* TravelTableViewCell.swift */,
+				84CCC07D2D49F89F004E462B /* TravelTableViewCell.xib */,
+				84CCC0802D49FF3D004E462B /* CardDetaiilCollectionViewCell.swift */,
+				84CCC0812D49FF3D004E462B /* CardDetaiilCollectionViewCell.xib */,
+				84EE57E12D4A21C900B58C4A /* AddCardTableViewCell.swift */,
+				84EE57E22D4A21C900B58C4A /* AddCardTableViewCell.xib */,
+				84ABC2362D4A567900E63991 /* MoreTableViewCell.swift */,
+				84ABC2372D4A567900E63991 /* MoreTableViewCell.xib */,
+			);
+			path = DashboardNew;
+			sourceTree = "<group>";
+		};
 		84D1CF882C0D9294003F0A5A /* HotelSearchView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2751,6 +2821,7 @@
 		A1285D0D2AF8D54A00F034B7 /* MaxPay */ = {
 			isa = PBXGroup;
 			children = (
+				84EE57E52D4A30BC00B58C4A /* MaxPayRelease.entitlements */,
 				84BD3E742D143BE500FEC395 /* server.pem */,
 				846D6E102C81D0FC00BC59DF /* Font */,
 				847B4A6F2C7CB9AA00EDC32A /* Mandate */,
@@ -2768,6 +2839,7 @@
 				A1E38FEA2AFB53650012C9D3 /* UtilityClass */,
 				A1285D482AF8EAFB00F034B7 /* Extension+UI */,
 				8422B71D2D450B3A0002A92B /* CommonOliveApi */,
+				84CCC0612D49E5C0004E462B /* DashboardNew */,
 				A1285D452AF8D5D400F034B7 /* View */,
 				A1285D442AF8D5CA00F034B7 /* ViewModel */,
 				A1285D422AF8D5A700F034B7 /* Model */,
@@ -3867,8 +3939,8 @@
 		D69754B8D443AFD1D03C3A53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				84B014E22D27F86D00239744 /* CommonLibrary.framework */,
-				84B014DE2D27F85900239744 /* OlivePayLibrary.framework */,
+				8406CC3D2D4B864D0082CD01 /* OlivePayLibrary.framework */,
+				84CCC0582D4939A4004E462B /* CommonLibrary.framework */,
 				6E4796D284FEC75C2DB79F90 /* Pods_MaxPay.framework */,
 			);
 			name = Frameworks;
@@ -4003,6 +4075,7 @@
 				445D47C92B7382A200EE4A2A /* CancellationPolicyCell.xib in Resources */,
 				445D47D02B7399DE00EE4A2A /* CancellationPolicyFooter.xib in Resources */,
 				A1ED93F02B2B38D9005407F0 /* HotelAdultCell.xib in Resources */,
+				84ABC2382D4A567900E63991 /* MoreTableViewCell.xib in Resources */,
 				445D47BF2B73443700EE4A2A /* BoardingDropOff.xib in Resources */,
 				A1285D1E2AF8D54D00F034B7 /* LaunchScreen.storyboard in Resources */,
 				44B6EB942B6FA3260093C0B8 /* GoogleService-Info.plist in Resources */,
@@ -4011,6 +4084,7 @@
 				A1E0F1B52B20909E004BF7A2 /* CustomSearch.xib in Resources */,
 				A166D8D12B078D75004454EE /* WalletShow.xib in Resources */,
 				440DA5B42B60DAC200825DD7 /* Dashboard.storyboard in Resources */,
+				84CCC0772D49F7E4004E462B /* BannerTableViewCell.xib in Resources */,
 				A184AEB72B2AA7850093E100 /* cards.ttf in Resources */,
 				8413E2452CC8C56B0013038D /* deduction_alert_hindi.mp3 in Resources */,
 				44F73DB42B7C7D09003B67FE /* PriceBreakup.xib in Resources */,
@@ -4019,6 +4093,7 @@
 				4465AC572B564C3800AE824D /* Slide.xib in Resources */,
 				445D47CC2B738E3100EE4A2A /* CancellationPolicyTitleCell.xib in Resources */,
 				443D41BC2BFB42FD0080A671 /* RechargePopupVC.xib in Resources */,
+				84CCC0832D49FF3D004E462B /* CardDetaiilCollectionViewCell.xib in Resources */,
 				A185177E2B08807300771A8E /* USP.storyboard in Resources */,
 				A1840D1C2B29CCFB0088BE95 /* BookingViewSuccess.xib in Resources */,
 				A1C488C62B10A83300FC8E3C /* SearchFlightMultiCityCell.xib in Resources */,
@@ -4029,21 +4104,28 @@
 				449270A62B84DD47002FF906 /* pay.mp3 in Resources */,
 				A166D8C92B078078004454EE /* ListPickerView.xib in Resources */,
 				A15BFEC72B2A1C9900AC7208 /* TrasactionPercentageCell.xib in Resources */,
+				84CCC0652D49E88C004E462B /* UserDetailTableViewCell.xib in Resources */,
 				440F352D2B50181300D69070 /* Harmattan-Regular.ttf in Resources */,
 				A1ED93E22B2AFB50005407F0 /* IncreaseRoomCell.xib in Resources */,
 				A1C5A51B2B04D5790037EA68 /* BlockalertView.xib in Resources */,
+				84CCC0732D49EE36004E462B /* CardDetailTableViewCell.xib in Resources */,
 				A1ED93D02B2AC0D2005407F0 /* HotelSearchCell.xib in Resources */,
+				84EE57E42D4A21C900B58C4A /* AddCardTableViewCell.xib in Resources */,
 				A1ED93D92B2AE47C005407F0 /* RoomListVC.xib in Resources */,
 				A1E9354F2B0F7B7300D5D5B1 /* SetMPIN.xib in Resources */,
 				440F352E2B50181300D69070 /* Harmattan-SemiBold.ttf in Resources */,
+				84CCC07B2D49F868004E462B /* GraffTableViewCell.xib in Resources */,
 				A1EFDEBA2B2877FE004BF668 /* TravellerNameCell.xib in Resources */,
 				A124B54D2B296A230021713C /* card.otf in Resources */,
 				A1865E932B1EFEBC0095E7CA /* SearchBusCell.xib in Resources */,
+				84CCC06F2D49EDFA004E462B /* BillsTableViewCell.xib in Resources */,
 				A1C488BE2B10752700FC8E3C /* SearchFlightOneWayCell.xib in Resources */,
+				84CCC07F2D49F89F004E462B /* TravelTableViewCell.xib in Resources */,
 				44D7FD012B81042B001FFEB8 /* BhimUpi.storyboard in Resources */,
 				440F352B2B50181300D69070 /* Harmattan-Medium.ttf in Resources */,
 				843F473C2C1436AC00141DD8 /* FloatingMenuView.xib in Resources */,
 				440F352C2B50181300D69070 /* Harmattan-Bold.ttf in Resources */,
+				84CCC06B2D49EDB0004E462B /* PayTableViewCell.xib in Resources */,
 				444C8E352B554DB800D62597 /* Iceland-Regular.ttf in Resources */,
 				A123B8962AFD0C2400D6575A /* VWSecondaryWallet.xib in Resources */,
 				A15BFEC22B2A086D00AC7208 /* TasactionPieChartVC.xib in Resources */,
@@ -4175,6 +4257,7 @@
 				44EB5B882B5110A100F778F1 /* ChecksumModel.swift in Sources */,
 				443D41CC2BFB477D0080A671 /* RechargePlansViewModel.swift in Sources */,
 				A1285E962AF9070C00F034B7 /* SetPINVC.swift in Sources */,
+				84CCC06A2D49EDB0004E462B /* PayTableViewCell.swift in Sources */,
 				849B34292C0DFD0D0008A50E /* HotelSearchModel_Base.swift in Sources */,
 				843F47582C143D2300141DD8 /* SearchLostItemAPIManager.swift in Sources */,
 				84405C122C3787420019B36A /* Journeys.swift in Sources */,
@@ -4215,6 +4298,7 @@
 				44E454122B6BB8CC00FC5020 /* ComplaintListModel.swift in Sources */,
 				44E095AB2BFB4B7000CABDCD /* Operator_Data.swift in Sources */,
 				A1A897E52B21978700418E54 /* DpPoints.swift in Sources */,
+				84CCC0642D49E88C004E462B /* UserDetailTableViewCell.swift in Sources */,
 				44B6EB8A2B6F82780093C0B8 /* Intro1VC.swift in Sources */,
 				443D41E72BFB47D30080A671 /* DataSubPlans.swift in Sources */,
 				840B88032C3E74C2002D4D76 /* LeftTableTVC.swift in Sources */,
@@ -4322,6 +4406,7 @@
 				84DB73CA2C1F53EC0073FB3D /* GetQuizViewModel.swift in Sources */,
 				847DB4182C1B41BF0035FA9E /* CommanRoomTypeModel.swift in Sources */,
 				A1ED93CF2B2AC0D2005407F0 /* HotelSearchCell.swift in Sources */,
+				84CCC0762D49F7E4004E462B /* BannerTableViewCell.swift in Sources */,
 				A1B17D462B0C6D1600011A4E /* CustomerParamGroups.swift in Sources */,
 				A1ECA0402B0B22D900B89E2B /* PayBillListModel.swift in Sources */,
 				847BF4342C3A564E0041EB52 /* PassengersModel.swift in Sources */,
@@ -4358,6 +4443,7 @@
 				A198DB9E2B024CF700B48BC6 /* PaymentUPIIDRequestVC.swift in Sources */,
 				843F47482C143A3B00141DD8 /* Constants.swift in Sources */,
 				843F473B2C1436AC00141DD8 /* FloatingMenuView.swift in Sources */,
+				84CCC06E2D49EDFA004E462B /* BillsTableViewCell.swift in Sources */,
 				44E4540D2B6BAF1400FC5020 /* ComplaintSubmittedVC.swift in Sources */,
 				A123B8802AFCA8D800D6575A /* TrasactionVC.swift in Sources */,
 				8494401D2C84A6B7001F63B2 /* WalletViewModel.swift in Sources */,
@@ -4372,6 +4458,7 @@
 				A1C488C02B109DFE00FC8E3C /* RecentSearchCell.swift in Sources */,
 				8405020C2C88D67400F8E72E /* TransactionSecoundaryDateRange.swift in Sources */,
 				A1ED93E82B2B1C95005407F0 /* HotelListCell.swift in Sources */,
+				84CCC0722D49EE36004E462B /* CardDetailTableViewCell.swift in Sources */,
 				A1E935442B0F2F8800D5D5B1 /* Fetch_data.swift in Sources */,
 				84F6A2B32C3D5075006C35F5 /* FlightSeatTravellerModel.swift in Sources */,
 				849B34352C0E4B870008A50E /* AmenityCell.swift in Sources */,
@@ -4396,6 +4483,7 @@
 				443D41B82BFB42E20080A671 /* SelectOperatorVC.swift in Sources */,
 				A1865EA12B1F4BD30095E7CA /* BusListCell.swift in Sources */,
 				84CB80CF2C145999003620DA /* ClaimItemByLatestAPIManager.swift in Sources */,
+				84ABC2392D4A567900E63991 /* MoreTableViewCell.swift in Sources */,
 				84405C112C3787420019B36A /* FlightSearchModel_Base.swift in Sources */,
 				4426726A2B8710BD00593C45 /* RequestMoneyVC.swift in Sources */,
 				A123B88C2AFCD47600D6575A /* CollViewCardCell.swift in Sources */,
@@ -4482,6 +4570,7 @@
 				849B342D2C0DFD0D0008A50E /* Hotellist.swift in Sources */,
 				44B6EB902B6F82AF0093C0B8 /* Intro4VC.swift in Sources */,
 				A1840D1A2B29CCC70088BE95 /* BookingViewSuccess.swift in Sources */,
+				84CCC07A2D49F868004E462B /* GraffTableViewCell.swift in Sources */,
 				845B9E122C06F2DC00A27FD9 /* PollsViewController.swift in Sources */,
 				44DE030B2BFF375600525C1E /* PayCardsTableViewCell.swift in Sources */,
 				44E454072B6B6F6300FC5020 /* TransactionHistoryForComplaintListCell.swift in Sources */,
@@ -4497,6 +4586,7 @@
 				84CB80E62C145CC3003620DA /* ItemDetailsVC.swift in Sources */,
 				44F73DB32B7C7D09003B67FE /* PriceBreakup.swift in Sources */,
 				A1ECA0412B0B22D900B89E2B /* Filtered_categories.swift in Sources */,
+				84CCC07E2D49F89F004E462B /* TravelTableViewCell.swift in Sources */,
 				84CB80CD2C145999003620DA /* ClaimItemByDateAPIManager.swift in Sources */,
 				A1C488C22B109E2800FC8E3C /* RecentSearchCollCell.swift in Sources */,
 				84A3C0462C16DCA50044DC7B /* RatingView.swift in Sources */,
@@ -4543,6 +4633,7 @@
 				44B756472C05A663009629B6 /* MilesViewController.swift in Sources */,
 				842EEA672C09A780003A6CC4 /* RankModel_Data.swift in Sources */,
 				4420411C2B79F5BA00300430 /* BusTicketPaymentVC.swift in Sources */,
+				84CCC0822D49FF3D004E462B /* CardDetaiilCollectionViewCell.swift in Sources */,
 				A1071DE02B26D77100DF91A1 /* ModificationSearchBus.swift in Sources */,
 				84F6A2B12C3D4DC7006C35F5 /* TravellersCVC.swift in Sources */,
 				8412209A2C3BFB1D00FFB0FD /* MealsAddOnView.swift in Sources */,
@@ -4592,6 +4683,7 @@
 				84A3C05A2C1727AF0044DC7B /* HotelRoomTypes_Data.swift in Sources */,
 				A166D8BC2B073B22004454EE /* ProfileVC.swift in Sources */,
 				8473AB152C0EF56300E02E76 /* RoomTableViewCell.swift in Sources */,
+				84EE57E32D4A21C900B58C4A /* AddCardTableViewCell.swift in Sources */,
 				44B1D9442BFC65BB00892F1A /* MandateListTVC.swift in Sources */,
 				845B9E152C075DB900A27FD9 /* RankingViewController.swift in Sources */,
 				84977D232C2EE3D900933BD8 /* VCSideMenu.swift in Sources */,
@@ -4708,7 +4800,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -4814,7 +4906,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MaxPay/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = MaxUPI;
+				INFOPLIST_KEY_CFBundleDisplayName = "Max UPI";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow camera access to scan QR Code";
 				INFOPLIST_KEY_NSContactsUsageDescription = "We need access to your contacts to show them in the app.";
@@ -4828,7 +4920,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4852,7 +4944,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MaxPay/MaxPay.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MaxPay/MaxPayRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
@@ -4866,7 +4958,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MaxPay/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = MaxUPI;
+				INFOPLIST_KEY_CFBundleDisplayName = "Max UPI";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow camera access to scan QR Code";
 				INFOPLIST_KEY_NSContactsUsageDescription = "We need access to your contacts to show them in the app.";
@@ -4880,7 +4972,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4907,6 +4999,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/MaxPay",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -4930,6 +5023,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/MaxPay",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -4952,6 +5046,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/MaxPay",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -4974,6 +5069,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/MaxPay",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;

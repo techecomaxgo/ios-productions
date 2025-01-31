@@ -17,7 +17,10 @@ class DashboardVC: BaseVC {
     var primBalance = 0.00
     var secondBalance = 0.00
     var sumBalance = 0.00
-
+    
+    //arun
+    @IBOutlet weak var tableViewDashboard: UITableView!
+    
     @IBOutlet weak var lblQuizeTime: UILabel!
     @IBOutlet weak var vwTop: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -31,6 +34,8 @@ class DashboardVC: BaseVC {
     @IBOutlet weak var lblCardNumber: UILabel!
     @IBOutlet weak var imgUser: UIImageView!
 
+    
+    @IBOutlet weak var viewCollection: UIView!
     @IBOutlet weak var viewTravel: UIView!
     @IBOutlet weak var viewBills: CardView!
     //    @IBOutlet weak var vwBackWalletBalance: UIView!
@@ -48,6 +53,7 @@ class DashboardVC: BaseVC {
     @IBOutlet weak var lblUpiId: UILabel!
     @IBOutlet weak var viewUPIOptionsGg: UIView!
     
+    @IBOutlet weak var cvHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var btnAddAccount: UIButton!
     @IBOutlet weak var lblFogo: UILabel!
     private var checksumViewModel = SIMSelectionViewModel()
@@ -55,6 +61,10 @@ class DashboardVC: BaseVC {
     var strTagForCardMenuSelection: String = ""
     var btnTagForCardMenuSelection: UIButton?
     var lblBalance = UILabel()
+    
+    //arun
+    var strBalance = ""
+    var strCardNumber = ""
     
     
     //
@@ -97,6 +107,22 @@ class DashboardVC: BaseVC {
         
         super.viewDidLoad()
         
+        
+        self.tableViewDashboard.delegate = self
+        self.tableViewDashboard.dataSource = self
+        tableViewDashboard.estimatedRowHeight = 200
+        tableViewDashboard.rowHeight = UITableView.automaticDimension
+
+        self.tableViewDashboard.register(UINib(nibName: "UserDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "UserDetailTableViewCell")
+        self.tableViewDashboard.register(UINib(nibName: "CardDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "CardDetailTableViewCell")
+        self.tableViewDashboard.register(UINib(nibName: "PayTableViewCell", bundle: nil), forCellReuseIdentifier: "PayTableViewCell")
+        self.tableViewDashboard.register(UINib(nibName: "BannerTableViewCell", bundle: nil), forCellReuseIdentifier: "BannerTableViewCell")
+        self.tableViewDashboard.register(UINib(nibName: "BillsTableViewCell", bundle: nil), forCellReuseIdentifier: "BillsTableViewCell")
+        self.tableViewDashboard.register(UINib(nibName: "GraffTableViewCell", bundle: nil), forCellReuseIdentifier: "GraffTableViewCell")
+        self.tableViewDashboard.register(UINib(nibName: "TravelTableViewCell", bundle: nil), forCellReuseIdentifier: "TravelTableViewCell")
+        self.tableViewDashboard.register(UINib(nibName: "AddCardTableViewCell", bundle: nil), forCellReuseIdentifier: "AddCardTableViewCell")
+        self.tableViewDashboard.register(UINib(nibName: "MoreTableViewCell", bundle: nil), forCellReuseIdentifier: "MoreTableViewCell")
+       
         // piechart
         
 //        totalLimitAmountLabel.text = "₹27,500"
@@ -266,8 +292,8 @@ class DashboardVC: BaseVC {
                availableBalanceAmountLabel.translatesAutoresizingMaskIntoConstraints = false
                availableBalanceContainer.addSubview(availableBalanceAmountLabel)
         
-        scrollViewBanner.translatesAutoresizingMaskIntoConstraints = false
-           view.addSubview(scrollViewBanner)
+       // scrollViewBanner.translatesAutoresizingMaskIntoConstraints = false
+         //  view.addSubview(scrollViewBanner)
         viewTravel.translatesAutoresizingMaskIntoConstraints = false
            view.addSubview(viewTravel)
         cardViewlistData.translatesAutoresizingMaskIntoConstraints = false
@@ -581,13 +607,17 @@ class DashboardVC: BaseVC {
         }
        //Nitin
         if cardsArr.count == 0 {
-           // viewUPIOptionsGg.isHidden = cardsArr.count == 0
-            //viewUPIOptionsGg.frame.size.height = 0 =
-            viewStatusBg.isHidden = true
+            
+            viewUPIOptionsGg.isHidden = true
+            //viewUPIOptionsGg.frame.size.height = 0
+            //viewStatusBg.isHidden = true
             btnAddAccount.isHidden = true
         }else{
+            
+            viewUPIOptionsGg.isHidden = false
+            //viewUPIOptionsGg.frame.size.height = 0
             btnAddAccount.isHidden = false
-            viewStatusBg.isHidden = false
+            //viewStatusBg.isHidden = false
         }
         collVWCard.reloadData()
         
@@ -969,14 +999,25 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource,UIColl
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if indexPath.section == 0 {
             let xPadding = 0
-            let spacing = 0
+            let spacing = 10
+            let rightPadding = 10
+            let width = (CGFloat(UIScreen.main.bounds.size.width - 10) - CGFloat(xPadding + spacing + rightPadding))/1.5
+            let height = CGFloat(200)
+            
+            return CGSize(width: width, height: height)
+        } else {
+            let xPadding = 0
+            let spacing = 10
             let rightPadding = 10
             let width = (CGFloat(UIScreen.main.bounds.size.width - 50) - CGFloat(xPadding + spacing + rightPadding))/2
             let height = CGFloat(160)
-
+            
             return CGSize(width: width, height: height)
         }
+        //return CGSize(width: 0, height: 0)
+    }
     
     @objc func btnMenu(_ sender: UIButton) {
         let vw = SetMPIN()
@@ -1002,7 +1043,7 @@ extension DashboardVC {
         if isConnected == true {
             
             dashboardViewModel.getBalanceDetailsCall(phoneStr: Common.shared.phoneNo ?? "")
-            dashboardViewModel.getSecondaryWalletBalanceDetailsCall(phoneStr: Common.shared.phoneNo ?? "")
+            //dashboardViewModel.getSecondaryWalletBalanceDetailsCall(phoneStr: Common.shared.phoneNo ?? "")
             
         }else{
             ProgressHUD.remove()
@@ -1043,6 +1084,8 @@ extension DashboardVC {
                             let components = str.components(separatedBy: " ").joined(separator: "     ")
                             
                             self?.lblCardNumber.text = "\(components)"
+                            self?.strCardNumber = components
+                            self?.tableViewDashboard.reloadData()
                         }
                         
                         let balance  = self?.dashboardViewModel.balanceDetailsModel?.messageBalance?.primary_wallet_balance ?? ""
@@ -1571,7 +1614,8 @@ extension DashboardVC: SetMPINDelegate {
                                 
                                 lblBalance.isHidden = false
                                 lblBalance.text = "₹\(dataObject["data"] as! String)"
-                                
+                                self.strBalance = "₹\(dataObject["data"] as! String)"
+                                self.tableViewDashboard.reloadData()
                             }
                         }
                     }
@@ -1792,3 +1836,277 @@ extension UILabel {
         configuration(self)
     }
 }
+
+extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDelegate {
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        9
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row == 0 {
+            let cell = tableViewDashboard.dequeueReusableCell(withIdentifier: "UserDetailTableViewCell") as! UserDetailTableViewCell
+            if cardsArr.count > 0  {
+                cell.lblUserName.text = Common.shared.userFirstName ?? "" + " " + (Common.shared.userLastName ?? "")
+                if strBalance == "" {
+                    cell.lblBalance.text = "0.0"
+                } else {
+                    cell.lblBalance.text =  strBalance
+                }
+                ///let index = strCardNumber.index(strCardNumber.endIndex, offsetBy: -4)
+                //let lastFour = String(strCardNumber.suffix(from: index))
+                //let components = strCardNumber.components(separatedBy: " ").joined(separator: "     ")
+                cell.lblCardNo.text =  strCardNumber
+                cell.lblRank.text = "Rank:\(self.rankVM.rankModelBase?.data?.myrank?.rank ?? 0)"
+                cell.imgProfile.sd_setImage(with: URL(string: "\(Common.shared.UserProfileImage ?? "")") , placeholderImage: UIImage(named: "placeholder.png"))
+            }
+            return cell
+        } else if indexPath.row == 1 {
+            let cell = tableViewDashboard.dequeueReusableCell(withIdentifier: "CardDetailTableViewCell") as! CardDetailTableViewCell
+            cell.delegate = self
+            if cardsArr.count > 0  {
+                cell.cardsDetailArr = cardsArr
+//                cell.collectionView.delegate = self
+//                cell.collectionView.reloadData()
+//                cell.collectionView.layoutIfNeeded()
+            }
+            cell.btnAddAccount.addTarget(self, action: #selector(addAccountActon(_:)), for: .touchUpInside)
+            return cell
+            
+        }else if indexPath.row == 2 {
+            
+            let cell = tableViewDashboard.dequeueReusableCell(withIdentifier: "AddCardTableViewCell") as! AddCardTableViewCell
+            
+            cell.btnAddAccount.addTarget(self, action: #selector(addAccountActon(_:)), for: .touchUpInside)
+            cell.btnAddAccount2.addTarget(self, action: #selector(addAccountActon(_:)), for: .touchUpInside)
+            return cell
+            
+        }  else if indexPath.row == 3 {
+            
+            let cell = tableViewDashboard.dequeueReusableCell(withIdentifier: "PayTableViewCell") as! PayTableViewCell
+            if cardsArr.count > 0  {
+                cell.btnPay.addTarget(self, action: #selector(paBillAction(_:)), for: .touchUpInside)
+                cell.btnRequest.addTarget(self, action: #selector(requestAction(_:)), for: .touchUpInside)
+                cell.btnTransfer.addTarget(self, action: #selector(transferAction(_:)), for: .touchUpInside)
+                cell.btnMyQr.addTarget(self, action: #selector(myQRAction(_:)), for: .touchUpInside)
+            }
+            return cell
+            
+        }else if indexPath.row == 4 {
+            let cell = tableViewDashboard.dequeueReusableCell(withIdentifier: "BannerTableViewCell") as! BannerTableViewCell
+            return cell
+        }else if indexPath.row == 5 {
+            let cell = tableViewDashboard.dequeueReusableCell(withIdentifier: "BillsTableViewCell") as! BillsTableViewCell
+            return cell
+        }else if indexPath.row == 6 {
+            let cell = tableViewDashboard.dequeueReusableCell(withIdentifier: "GraffTableViewCell") as! GraffTableViewCell
+            return cell
+        } else  if indexPath.row == 7 {
+            let cell = tableViewDashboard.dequeueReusableCell(withIdentifier: "TravelTableViewCell") as! TravelTableViewCell
+            return cell
+        } else  {
+            let cell = tableViewDashboard.dequeueReusableCell(withIdentifier: "MoreTableViewCell") as! MoreTableViewCell
+            cell.btnFavourit.addTarget(self, action: #selector(favouriteAction(_:)), for: .touchUpInside)
+            cell.btnUPI.addTarget(self, action: #selector(uPIAction(_:)), for: .touchUpInside)
+            cell.btnPaybill.addTarget(self, action: #selector(payBillMoreAction(_:)), for: .touchUpInside)
+            cell.btnShareIdea.addTarget(self, action: #selector(shaaredIdeaAction(_:)), for: .touchUpInside)
+            cell.btnLoustAndFound.addTarget(self, action: #selector(lostAnsFound(_:)), for: .touchUpInside)
+            cell.btnRecharge.addTarget(self, action: #selector(rechargeAction(_:)), for: .touchUpInside)
+            
+            return cell
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+            return  280
+        } else if indexPath.row == 1 {
+            if cardsArr.count > 0  {
+                return 280
+            } else {
+                return 50
+            }
+        } else if indexPath.row == 2 {
+            if cardsArr.count > 0  {
+                return 0
+            } else {
+                return 140
+            }
+        } else if indexPath.row == 3 {
+            return 160
+        } else if indexPath.row == 4 {
+            return 250
+        } else if indexPath.row == 5 {
+            return 370
+        }else if indexPath.row == 6 {
+            return 300
+        }else if indexPath.row == 7 {
+            return 170
+        }else {
+            return 320
+        }
+    }
+    
+    @objc func addAccountActon(_ sender: UIButton) {
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "BhimUPVC") as! BhimUPVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    func checkAccountDetail()->AccountDetailsOnIIN?{
+        
+        var primaryAccount: AccountDetailsOnIIN?
+
+        if cardsArr.count <= 0 {
+            
+            //return
+            
+        } else {
+            
+            for card in cardsArr {
+                
+                
+                if card.maskedAccnumber == Common.shared.primaryAccNo {
+                                        
+                    primaryAccount = card
+                    Common.shared.primaryAccRefNumber = primaryAccount?.accRefNumber ?? ""
+                    
+                    
+                   // break
+                    
+                }else{
+                    
+                    primaryAccount = card
+                    Common.shared.primaryAccRefNumber = primaryAccount?.accRefNumber ?? ""
+
+                
+                    
+                }
+            }
+        }
+        return primaryAccount
+    }
+    
+    @objc func paBillAction(_ sender: UIButton) {
+        let primaryAccount  = self.checkAccountDetail()
+        if cardsArr.count > 0 {
+            
+            let storyBoard: UIStoryboard = UIStoryboard(name: "BhimUpi", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "SendMoneyVC") as! SendMoneyVC
+            vc.accountDetails = primaryAccount
+          
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        } else {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "BhimUPVC") as! BhimUPVC
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    @objc func requestAction(_ sender: UIButton) {
+        let primaryAccount  = self.checkAccountDetail()
+        let storyBoard: UIStoryboard = UIStoryboard(name: "BhimUpi", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "RequestLandingVC") as! RequestLandingVC
+        
+        vc.accountDetails = primaryAccount
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @objc func transferAction(_ sender: UIButton) {
+        let primaryAccount  = self.checkAccountDetail()
+        if cardsArr.count > 0 {
+            
+            let storyBoard: UIStoryboard = UIStoryboard(name: "BhimUpi", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "SendMoneyVC") as! SendMoneyVC
+            vc.accountDetails = primaryAccount
+          
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        } else {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "BhimUPVC") as! BhimUPVC
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    @objc func myQRAction(_ sender: UIButton) {
+        let primaryAccount  = self.checkAccountDetail()
+        if cardsArr.count > 0 {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "MyQRCodeVC") as! MyQRCodeVC
+            vc.accountDetails = primaryAccount
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else {
+            self.showErrorAlert("First you have to add your Bank account.")
+        }
+    }
+    
+    @objc func favouriteAction(_ sender: UIButton) {
+        
+        
+    }
+    @objc func uPIAction(_ sender: UIButton) {
+        let primaryAccount  = self.checkAccountDetail()
+        if cardsArr.count > 0 {
+            // Go to UPI Options
+//                let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+//                let vc = storyBoard.instantiateViewController(withIdentifier: "BhimUPIVC") as! BhimUPIVC
+//                vc.accountDetails = cardsArr.first
+//                self.navigationController?.pushViewController(vc, animated: true)
+            let storyBoard: UIStoryboard = UIStoryboard(name: "BhimUpi", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "BhimUPILandingVC") as! BhimUPILandingVC
+            vc.accountDetails = primaryAccount
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else {
+            // add New Account
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "BhimUPVC") as! BhimUPVC
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+    }
+    
+    @objc func payBillMoreAction(_ sender: UIButton) {
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "BBPS", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "PayBillListVC") as! PayBillListVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    @objc func shaaredIdeaAction(_ sender: UIButton) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "MandateNewReqVC") as! MandateNewReqVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func lostAnsFound(_ sender: UIButton) {
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "LostAndFoundViewController") as! LostAndFoundViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    @objc func rechargeAction(_ sender: UIButton) {
+        
+    }
+    
+    func buttonTag(index: Int) {
+        let vw = SetMPIN()
+        vw.setupUI()
+        vw.frame = UIScreen.main.bounds
+        vw.delegate = self
+        vw.selectedMenuInde = index
+        self.view.addSubview(vw)
+    }
+}
+
+
+

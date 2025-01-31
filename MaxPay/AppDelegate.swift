@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SmartechDelegate {
         //Author: Mohit Bisht
         //Date: 15/12/2024
         // jailbreak check
-        if UIDevice.current.isJailBroken || UIDevice.current.isFridaDetected {
+         if UIDevice.current.isJailBroken || UIDevice.current.isFridaDetected {
             exit(0)
         }
         
@@ -68,13 +68,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SmartechDelegate {
 //            screenProtectorKit.disableBlurScreen()
 //        }
         // Configure Firebase
-        let firebaseOptions = FirebaseOptions(googleAppID: getGoogleServiceInfo(valueName: "GOOGLE_APP_ID") ?? "", gcmSenderID: getGoogleServiceInfo(valueName: "GCM_SENDER_ID") ?? "")
+       // 28-01-2025 crash issue app not loanch without debug mode
+        /*let firebaseOptions = FirebaseOptions(googleAppID: getGoogleServiceInfo(valueName: "GOOGLE_APP_ID") ?? "", gcmSenderID: getGoogleServiceInfo(valueName: "GCM_SENDER_ID") ?? "")
         firebaseOptions.projectID = getGoogleServiceInfo(valueName: "PROJECT_ID")
         firebaseOptions.apiKey = ProcessInfo.processInfo.environment["API_KEY"]
         
         // Initialize Firebase with the options
         FirebaseApp.configure(options: firebaseOptions)
-        
+         */
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
@@ -122,9 +123,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SmartechDelegate {
             }
         }
         
-        Smartech.sharedInstance().initSDK(with: self, withLaunchOptions: launchOptions)
+        //Smartech.sharedInstance().initSDK(with: self, withLaunchOptions: launchOptions)
         
-        
+    
         return true
     }
     //Author: Mohit Bisht
@@ -353,7 +354,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SmartechDelegate {
     
     // MARK: - Core Data stack
     
-    lazy var persistentContainer: NSPersistentContainer = {
+  /*  lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
          creates and returns a container, having loaded the store for the
@@ -394,7 +395,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SmartechDelegate {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
-    }
+    }*/
     
     
     // MARK: - Push Notification

@@ -29,3 +29,4 @@ FOUNDATION_EXPORT const unsigned char OlivePayLibraryVersionString[];
 #import <CommonLibrary/CLServices.h>
 #import "EncryptString.h"
 #import "MFMessageComposeViewController+EditDisabled.h"
+#import "MessageUI/MFMessageComposeViewController+UPI.h"
