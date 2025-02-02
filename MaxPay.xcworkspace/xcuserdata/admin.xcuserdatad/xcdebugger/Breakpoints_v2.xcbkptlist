@@ -39,22 +39,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0914C241-D315-4525-B178-A5CA704F7B35"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MaxPay/View/Dashboard/DashboardVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1076"
-            endingLineNumber = "1076"
-            landmarkName = "observeEvent()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "5A9B0E15-9C57-476A-9E95-C923CA85C3B4"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -87,52 +71,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "807543AB-D50C-40AE-A874-B8A465DB870E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MaxPay/View/Dashboard/DashboardVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1718"
-            endingLineNumber = "1718"
-            landmarkName = "btnSetMpin(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "807543AB-D50C-40AE-A874-B8A465DB870E - 967667399242ec2a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #4 @Swift.MainActor () -&gt; () in MaxPay.DashboardVC.btnSetMpin(__C.UIButton) -&gt; ()"
-                  moduleName = "MaxPay.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Desktop/MB%202/MaxPay/MaxPay/View/Dashboard/DashboardVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1718"
-                  endingLineNumber = "1718">
-               </Location>
-               <Location
-                  uuid = "807543AB-D50C-40AE-A874-B8A465DB870E - 6b257836b4a94635"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; () in closure #4 @Swift.MainActor () -&gt; () in MaxPay.DashboardVC.btnSetMpin(__C.UIButton) -&gt; ()"
-                  moduleName = "MaxPay.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Desktop/MB%202/MaxPay/MaxPay/View/Dashboard/DashboardVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1718"
-                  endingLineNumber = "1718">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "12D6EA4F-249E-4B8A-9CA1-DEB085C122C5"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -140,8 +78,8 @@
             filePath = "MaxPay/View/Dashboard/DashboardVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1721"
-            endingLineNumber = "1721"
+            startingLineNumber = "1727"
+            endingLineNumber = "1727"
             landmarkName = "btnSetMpin(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -156,8 +94,8 @@
             filePath = "MaxPay/View/Dashboard/DashboardVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1693"
-            endingLineNumber = "1693"
+            startingLineNumber = "1699"
+            endingLineNumber = "1699"
             landmarkName = "btnSetMpin(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -172,8 +110,8 @@
             filePath = "MaxPay/View/Dashboard/DashboardVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1669"
-            endingLineNumber = "1669"
+            startingLineNumber = "1675"
+            endingLineNumber = "1675"
             landmarkName = "btnSetMpin(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -188,8 +126,8 @@
             filePath = "MaxPay/View/Dashboard/DashboardVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1664"
-            endingLineNumber = "1664"
+            startingLineNumber = "1670"
+            endingLineNumber = "1670"
             landmarkName = "btnSetMpin(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -204,8 +142,8 @@
             filePath = "MaxPay/View/Dashboard/DashboardVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1712"
-            endingLineNumber = "1712"
+            startingLineNumber = "1718"
+            endingLineNumber = "1718"
             landmarkName = "btnSetMpin(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -220,8 +158,8 @@
             filePath = "MaxPay/View/PaymentUPIID/PaymentUPIIDNewVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "986"
-            endingLineNumber = "986"
+            startingLineNumber = "989"
+            endingLineNumber = "989"
             landmarkName = "btnContinueAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -236,8 +174,8 @@
             filePath = "MaxPay/View/PaymentUPIID/PaymentUPIIDNewVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "989"
-            endingLineNumber = "989"
+            startingLineNumber = "992"
+            endingLineNumber = "992"
             landmarkName = "btnContinueAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -468,8 +406,8 @@
             filePath = "MaxPay/View/Dashboard/DashboardVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1672"
-            endingLineNumber = "1672"
+            startingLineNumber = "1678"
+            endingLineNumber = "1678"
             landmarkName = "btnSetMpin(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -500,8 +438,8 @@
             filePath = "MaxPay/View/Dashboard/DashboardVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1676"
-            endingLineNumber = "1676"
+            startingLineNumber = "1682"
+            endingLineNumber = "1682"
             landmarkName = "btnSetMpin(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -920,13 +858,13 @@
             filePath = "MaxPay/Helper/ApiManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "318"
-            endingLineNumber = "318"
+            startingLineNumber = "321"
+            endingLineNumber = "321"
             landmarkName = "pinGenerationServiceApi(dict:completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "591C3B22-7723-4990-B2E1-146F959FD255 - 77669716fd626517"
+                  uuid = "591C3B22-7723-4990-B2E1-146F959FD255 - 77669716fd6264b2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -936,11 +874,11 @@
                   urlString = "file:///Users/admin/Desktop/MB%202/MaxPay/MaxPay/Helper/ApiManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "318"
-                  endingLineNumber = "318">
+                  startingLineNumber = "321"
+                  endingLineNumber = "321">
                </Location>
                <Location
-                  uuid = "591C3B22-7723-4990-B2E1-146F959FD255 - c6656cf187a0a0c"
+                  uuid = "591C3B22-7723-4990-B2E1-146F959FD255 - c6656cf187a0ba9"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -950,8 +888,8 @@
                   urlString = "file:///Users/admin/Desktop/MB%202/MaxPay/MaxPay/Helper/ApiManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "318"
-                  endingLineNumber = "318">
+                  startingLineNumber = "321"
+                  endingLineNumber = "321">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -966,8 +904,8 @@
             filePath = "MaxPay/Helper/ApiManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "300"
-            endingLineNumber = "300"
+            startingLineNumber = "303"
+            endingLineNumber = "303"
             landmarkName = "otpRegenarateOTPServiceApi(dict:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -998,8 +936,8 @@
             filePath = "MaxPay/Helper/ApiManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1492"
-            endingLineNumber = "1492"
+            startingLineNumber = "1659"
+            endingLineNumber = "1659"
             landmarkName = "addNotificationTokenServiceApi(dict:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1156,8 +1094,8 @@
             filePath = "MaxPay/View/PaymentUPIID/PaymentUPIIDNewVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1384"
-            endingLineNumber = "1384"
+            startingLineNumber = "1388"
+            endingLineNumber = "1388"
             landmarkName = "initViewModel()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1277,22 +1215,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3A069C41-0FD2-455C-B0D4-14ABDA7B3490"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MaxPay/View/BhimUPI/SendMoneyVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "824"
-            endingLineNumber = "824"
-            landmarkName = "initViewModel()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "44188035-75F1-4A02-8224-6D3899E857DA"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -1332,8 +1254,8 @@
             filePath = "MaxPay/View/BhimTrasactionDetails/BhimTrasactionDetailsVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "554"
-            endingLineNumber = "554"
+            startingLineNumber = "552"
+            endingLineNumber = "552"
             landmarkName = "initViewModel()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1533,22 +1455,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2A042096-8CFA-4D08-9E29-EE03FE8C9823"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MaxPay/View/USP/MandateNewReqVc/MandateNewReqVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "initViewModel()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "21895D20-81EE-49D3-A2DF-A810A1B38225"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -1716,8 +1622,8 @@
             filePath = "MaxPay/View/Dashboard/DashboardVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1473"
-            endingLineNumber = "1473"
+            startingLineNumber = "1480"
+            endingLineNumber = "1480"
             landmarkName = "fetchMyAccounts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1732,13 +1638,13 @@
             filePath = "MaxPay/Helper/ApiManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1763"
-            endingLineNumber = "1763"
+            startingLineNumber = "1930"
+            endingLineNumber = "1930"
             landmarkName = "validateUpiOtpServiceApi(dict:completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "6F99A3AE-0BE8-4B76-9F91-605698149541 - 543a8378d4d9cdad"
+                  uuid = "6F99A3AE-0BE8-4B76-9F91-605698149541 - 543a8378d4d9272a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1748,11 +1654,11 @@
                   urlString = "file:///Users/admin/Desktop/MB%202/MaxPay/MaxPay/Helper/ApiManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1763"
-                  endingLineNumber = "1763">
+                  startingLineNumber = "1930"
+                  endingLineNumber = "1930">
                </Location>
                <Location
-                  uuid = "6F99A3AE-0BE8-4B76-9F91-605698149541 - 543a8378d4d9cdad"
+                  uuid = "6F99A3AE-0BE8-4B76-9F91-605698149541 - 543a8378d4d9272a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1762,8 +1668,8 @@
                   urlString = "file:///Users/admin/Desktop/MB%202/MaxPay/MaxPay/Helper/ApiManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1763"
-                  endingLineNumber = "1763">
+                  startingLineNumber = "1930"
+                  endingLineNumber = "1930">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1788,14 +1694,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "F9CBABC1-CB65-45E3-82D2-BF243A2B46E5"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MaxPay/View/Dashboard/DashboardVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1617"
-            endingLineNumber = "1617"
+            startingLineNumber = "1624"
+            endingLineNumber = "1624"
             landmarkName = "btnCheckBalance(_:lblBalance:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1804,14 +1710,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "D5811A22-CEF8-4E5F-A81E-DE59D61CEE1D"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MaxPay/View/Dashboard/DashboardVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1612"
-            endingLineNumber = "1612"
+            startingLineNumber = "1619"
+            endingLineNumber = "1619"
             landmarkName = "btnCheckBalance(_:lblBalance:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1820,182 +1726,16 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0D48868C-FA27-41CF-8FAE-A994384E8E8A"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MaxPay/View/Dashboard/DashboardVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1120"
-            endingLineNumber = "1120"
+            startingLineNumber = "1127"
+            endingLineNumber = "1127"
             landmarkName = "observeEvent()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9B6AF3D7-4A03-4E67-99CC-3500C32A7583"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MaxPay/View/Dashboard/DashboardVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1056"
-            endingLineNumber = "1056"
-            landmarkName = "observeEvent()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "9B6AF3D7-4A03-4E67-99CC-3500C32A7583 - c318c3206ac02bac"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MaxPay.DashboardVC.observeEvent() -&gt; ()"
-                  moduleName = "MaxPay.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Desktop/MB%202/MaxPay/MaxPay/View/Dashboard/DashboardVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1056"
-                  endingLineNumber = "1056">
-               </Location>
-               <Location
-                  uuid = "9B6AF3D7-4A03-4E67-99CC-3500C32A7583 - 957e0b3247ecc733"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (MaxPay.DashboardViewModel.Event) -&gt; () in MaxPay.DashboardVC.observeEvent() -&gt; ()"
-                  moduleName = "MaxPay.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Desktop/MB%202/MaxPay/MaxPay/View/Dashboard/DashboardVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1056"
-                  endingLineNumber = "1056">
-               </Location>
-               <Location
-                  uuid = "9B6AF3D7-4A03-4E67-99CC-3500C32A7583 - 4cfe67fc8432dac2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (MaxPay.DashboardViewModel.Event) -&gt; () in MaxPay.DashboardVC.observeEvent() -&gt; ()"
-                  moduleName = "MaxPay.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Desktop/MB%202/MaxPay/MaxPay/View/Dashboard/DashboardVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1056"
-                  endingLineNumber = "1056">
-               </Location>
-               <Location
-                  uuid = "9B6AF3D7-4A03-4E67-99CC-3500C32A7583 - 3f56e7a4bfe4f0ed"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 @Swift.MainActor () -&gt; () in closure #1 (MaxPay.DashboardViewModel.Event) -&gt; () in MaxPay.DashboardVC.observeEvent() -&gt; ()"
-                  moduleName = "MaxPay.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Desktop/MB%202/MaxPay/MaxPay/View/Dashboard/DashboardVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1056"
-                  endingLineNumber = "1056">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "77169A3B-AA6D-444F-B674-7A53A15508CB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MaxPay/ViewModel/Dashboard/DashboardViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "getBalanceDetailsCall(phoneStr:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "77169A3B-AA6D-444F-B674-7A53A15508CB - c032bed116d2ad80"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;MaxPay.BalanceDetailsModel&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MaxPay.DashboardViewModel.getBalanceDetailsCall(phoneStr: Swift.String) -&gt; ()"
-                  moduleName = "MaxPay.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Desktop/MB%202/MaxPay/MaxPay/ViewModel/Dashboard/DashboardViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28">
-               </Location>
-               <Location
-                  uuid = "77169A3B-AA6D-444F-B674-7A53A15508CB - c032bed116d2ad80"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;MaxPay.BalanceDetailsModel&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MaxPay.DashboardViewModel.getBalanceDetailsCall(phoneStr: Swift.String) -&gt; ()"
-                  moduleName = "MaxPay.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Desktop/MB%202/MaxPay/MaxPay/ViewModel/Dashboard/DashboardViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EA8EB5B5-94E8-4A8A-897E-C89FC622E758"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MaxPay/ViewModel/Dashboard/DashboardViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "getBalanceDetailsCall(phoneStr:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "EA8EB5B5-94E8-4A8A-897E-C89FC622E758 - c032bed116d2ac0c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;MaxPay.BalanceDetailsModel&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MaxPay.DashboardViewModel.getBalanceDetailsCall(phoneStr: Swift.String) -&gt; ()"
-                  moduleName = "MaxPay.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Desktop/MB%202/MaxPay/MaxPay/ViewModel/Dashboard/DashboardViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24">
-               </Location>
-               <Location
-                  uuid = "EA8EB5B5-94E8-4A8A-897E-C89FC622E758 - c032bed116d2ac0c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;MaxPay.BalanceDetailsModel&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MaxPay.DashboardViewModel.getBalanceDetailsCall(phoneStr: Swift.String) -&gt; ()"
-                  moduleName = "MaxPay.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Desktop/MB%202/MaxPay/MaxPay/ViewModel/Dashboard/DashboardViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2008,13 +1748,13 @@
             filePath = "MaxPay/ViewModel/Dashboard/DashboardViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "getSecondaryWalletBalanceDetailsCall(phoneStr:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "99D2F6B9-3D83-4B51-B464-C8EAFF1A9226 - f2dc839b21a9a25c"
+                  uuid = "99D2F6B9-3D83-4B51-B464-C8EAFF1A9226 - f2dc839b21a9a27d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -2024,11 +1764,11 @@
                   urlString = "file:///Users/admin/Desktop/MB%202/MaxPay/MaxPay/ViewModel/Dashboard/DashboardViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42">
+                  startingLineNumber = "43"
+                  endingLineNumber = "43">
                </Location>
                <Location
-                  uuid = "99D2F6B9-3D83-4B51-B464-C8EAFF1A9226 - f2dc839b21a9a25c"
+                  uuid = "99D2F6B9-3D83-4B51-B464-C8EAFF1A9226 - f2dc839b21a9a27d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -2038,8 +1778,8 @@
                   urlString = "file:///Users/admin/Desktop/MB%202/MaxPay/MaxPay/ViewModel/Dashboard/DashboardViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42">
+                  startingLineNumber = "43"
+                  endingLineNumber = "43">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -2054,9 +1794,201 @@
             filePath = "MaxPay/Helper/ApiManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1072"
-            endingLineNumber = "1072"
+            startingLineNumber = "1239"
+            endingLineNumber = "1239"
             landmarkName = "dashboardSecondaryBalanceServiceApi(dict:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FE299558-38D8-43BE-BF62-956BE8714708"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MaxPay/Helper/ApiManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1231"
+            endingLineNumber = "1231"
+            landmarkName = "dashboardBalanceServiceApi(dict:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72488374-6433-4C5D-A4E4-8B47C6D07F7A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MaxPay/View/Dashboard/DashboardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "553"
+            endingLineNumber = "553"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "528E0DB8-FE61-4DAF-AB74-0EF2134F14A8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MaxPay/Helper/ApiManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1205"
+            endingLineNumber = "1205"
+            landmarkName = "dashboardBalanceServiceApi(dict:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0EEBF39C-6FA1-4C19-AB79-349B1FAC2F9C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MaxPay/Helper/ApiManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1206"
+            endingLineNumber = "1206"
+            landmarkName = "dashboardBalanceServiceApi(dict:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0E45A8E7-6934-42DB-8D52-464E6C4DBD12"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MaxPay/View/Dashboard/DashboardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1078"
+            endingLineNumber = "1078"
+            landmarkName = "observeEvent()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06255702-D02D-4FE0-8802-D6DA93AC3410"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MaxPay/View/Dashboard/DashboardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1080"
+            endingLineNumber = "1080"
+            landmarkName = "observeEvent()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60947CF0-E6A3-49A2-A5DE-94CD4B1D2CA4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MaxPay/Helper/ApiManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "977"
+            endingLineNumber = "977"
+            landmarkName = "GetQuizModelApi(dict:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CFF5979A-1326-4D6A-9DA2-00CC34DCDFD8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MaxPay/Helper/ApiManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1010"
+            endingLineNumber = "1010"
+            landmarkName = "GetQuizModelApi(dict:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "45C6A4C5-1DD4-4878-8833-0C1B76822D45"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MaxPay/Helper/ApiManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1930"
+            endingLineNumber = "1930"
+            landmarkName = "validateUpiOtpServiceApi(dict:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C1FA1366-4896-4854-9AE2-6CF54F56B89A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MaxPay/Helper/ApiManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1136"
+            endingLineNumber = "1136"
+            landmarkName = "ResultQuizModelApi(dict:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "282AB610-5AA6-442C-8EE8-43A06C8B43AA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MaxPay/ViewModel/ResultQuizViewModel/ResultQuizViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "ResultQuizModelBaseCall(skeyStr:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E8A5C441-161C-4CBF-A8AB-BCE78E5EF369"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MaxPay/View/QuizView/QuizWinnerViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

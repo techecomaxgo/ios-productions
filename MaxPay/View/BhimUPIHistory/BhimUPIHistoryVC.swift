@@ -218,15 +218,34 @@ extension BhimUPIHistoryVC : UITableViewDelegate, UITableViewDataSource {
         return tranHistoryArr.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 230
+        return 180
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BhimUPITrasactionHistoryCell", for: indexPath) as! BhimUPITrasactionHistoryCell
 //        if let accountData = accountDetails{
 //            cell.setTranHistoryData(data: tranHistoryArr[indexPath.row], accountDetails: accountData)
 //        }
-        cell.lblTxnId.text = tranHistoryArr[indexPath.row].tranid
-        cell.lblTxnDate.text = tranHistoryArr[indexPath.row].dateTime
+        cell.lblTxnId.text = tranHistoryArr[indexPath.row].debitBankName
+        
+        let inputFormatter = DateFormatter()
+        inputFormatter.dateFormat = "dd/MM/yyyy hh:mm:ss a"
+        inputFormatter.amSymbol = "AM"
+        inputFormatter.pmSymbol = "PM"
+
+        // Convert string to Date object
+        if let date = inputFormatter.date(from: tranHistoryArr[indexPath.row].dateTime ?? "") {
+            
+            // Step 2: Format the Date into the desired output format
+            let outputFormatter = DateFormatter()
+            outputFormatter.dateFormat = "dd MMM, hh:mm a"
+            
+            cell.lblTxnDate.text = "on \(outputFormatter.string(from: date))"
+            //print(formattedDate)  // Output: "01 Feb, 12:44 PM"
+            
+        } else {
+            print("Invalid date format")
+        }
+        
         
         cell.lblStatus.text = Status.getStatus(from: tranHistoryArr[indexPath.row].status ?? "")
         
@@ -234,30 +253,30 @@ extension BhimUPIHistoryVC : UITableViewDelegate, UITableViewDataSource {
         cell.imgFromToStatusIc.tintColor = tranHistoryArr[indexPath.row].status == "C" ? UIColor.init(named: "primary-green") : tranHistoryArr[indexPath.row].status == "P" ? UIColor.orange : UIColor.init(named: "status-red-color")
         
         
-        cell.imgSendReceiveIc.image = tranHistoryArr[indexPath.row].type == "PAY" ? UIImage(named: "ic_arrow_up")?.withRenderingMode(.alwaysTemplate) : UIImage(named: "ic_arrow_down")?.withRenderingMode(.alwaysTemplate)
+        //cell.imgSendReceiveIc.image = tranHistoryArr[indexPath.row].type == "PAY" ? UIImage(named: "ic_arrow_up")?.withRenderingMode(.alwaysTemplate) : UIImage(named: "ic_arrow_down")?.withRenderingMode(.alwaysTemplate)
         
-        cell.imgSendReceiveIc.tintColor = tranHistoryArr[indexPath.row].status == "C" ? UIColor.init(named: "primary-green") : tranHistoryArr[indexPath.row].status == "P" ? UIColor.orange : UIColor.init(named: "status-red-color")
+        //cell.imgSendReceiveIc.tintColor = tranHistoryArr[indexPath.row].status == "C" ? UIColor.init(named: "primary-green") : tranHistoryArr[indexPath.row].status == "P" ? UIColor.orange : UIColor.init(named: "status-red-color")
         
         cell.lblAmount.text = "₹ " + (tranHistoryArr[indexPath.row].amount ?? "0")
         
         if tranHistoryArr[indexPath.row].type == "PAY" {
             if accountDetails?.vpa == tranHistoryArr[indexPath.row].creditVpa {
                 cell.lblFromToLabel.text = "Received from"
-                cell.lblVpa.text = tranHistoryArr[indexPath.row].debitVpa
+                //cell.lblVpa.text = tranHistoryArr[indexPath.row].debitVpa
                 cell.lblName.text = tranHistoryArr[indexPath.row].remitterName == nil ? "No Name" : tranHistoryArr[indexPath.row].remitterName
             } else {
-                cell.lblFromToLabel.text = "Pay to"
-                cell.lblVpa.text = tranHistoryArr[indexPath.row].creditVpa
+                cell.lblFromToLabel.text = "Paid to"
+               // cell.lblVpa.text = tranHistoryArr[indexPath.row].creditVpa
                 cell.lblName.text = tranHistoryArr[indexPath.row].beneficiaryName == nil ? "No Name" : tranHistoryArr[indexPath.row].beneficiaryName
             }
         } else if tranHistoryArr[indexPath.row].type == "COLLECT" {
             if accountDetails?.vpa == tranHistoryArr[indexPath.row].creditVpa {
                 cell.lblFromToLabel.text = "Request to"
-                cell.lblVpa.text = tranHistoryArr[indexPath.row].debitVpa
+                //cell.lblVpa.text = tranHistoryArr[indexPath.row].debitVpa
                 cell.lblName.text = tranHistoryArr[indexPath.row].remitterName == nil ? "No Name" : tranHistoryArr[indexPath.row].remitterName
             } else {
                 cell.lblFromToLabel.text = "Request from"
-                cell.lblVpa.text = tranHistoryArr[indexPath.row].creditVpa
+                //cell.lblVpa.text = tranHistoryArr[indexPath.row].creditVpa
                 cell.lblName.text = tranHistoryArr[indexPath.row].beneficiaryName == nil ? "No Name" : tranHistoryArr[indexPath.row].beneficiaryName
             }
         }

@@ -77,7 +77,7 @@ class SendMoneyVC: BaseVC {
                 for contact in contactList {
                     arrRecentContactList.append(contact)
                 }
-                self.collectionRecentCOntacts.reloadData()
+                //self.collectionRecentCOntacts.reloadData()
             } catch {
                 print(error.localizedDescription)
             }
@@ -469,11 +469,11 @@ class SendMoneyVC: BaseVC {
         self.tabBarController?.tabBar.isHidden = true
 
         
-        self.collectionRecentCOntacts.isHidden = self.arrRecentContactList.count <= 0
+       // self.collectionRecentCOntacts.isHidden = self.arrRecentContactList.count <= 0
         self.lblRecentContact.isHidden = self.arrRecentContactList.count <= 0
 //                    self.constraintFavouriteCollectionBottom.constant = self.favouriteCategories.count <= 0 ? 0 : 20
-        self.collectionRecentCOntacts.reloadData()
-        self.collectionRecentCOntacts.layoutIfNeeded()
+        //self.collectionRecentCOntacts.reloadData()
+       // self.collectionRecentCOntacts.layoutIfNeeded()
         
 
     }

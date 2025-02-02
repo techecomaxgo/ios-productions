@@ -13,10 +13,17 @@ class CardDetailTableViewCell: UITableViewCell {
     weak var delegate: AccountDetailDelegate? = nil
     @IBOutlet weak var btnAddAccount: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var imgUpi: UIImageView!
     var cardsDetailArr:[AccountDetailsOnIIN] = []
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+//        imgUpi.layer.shadowColor = UIColor.black.cgColor
+//        imgUpi.layer.shadowOpacity = 0.3
+//        imgUpi.layer.shadowOffset = CGSize(width: 1, height: 1)
+//        imgUpi.layer.shadowRadius = 1
         collectionView.delegate = self
         collectionView.dataSource = self
         self.collectionView.register(UINib(nibName: "CardDetaiilCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CardDetaiilCollectionViewCell")

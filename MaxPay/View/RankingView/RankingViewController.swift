@@ -17,44 +17,30 @@ class RankingViewController: BaseVC {
     var addRankArr : [Allrank]? = []
 
     @IBOutlet weak var lblUserName: UILabel!
-    
-    @IBOutlet weak var lblUserSpent: UILabel!
-    
+   
     
     @IBOutlet weak var tableViewRank: UITableView!
     
     @IBOutlet weak var lblUserRank: UILabel!
+   
     
-    @IBOutlet weak var imgUserView: UIImageView!
     
+    @IBOutlet weak var viewSafe: UIView!
+    @IBOutlet weak var lblSagesan: UILabel!
+    @IBOutlet weak var lblWarning: UILabel!
+    @IBOutlet weak var imgBackGrround: UIImageView!
     
     var firstRankName = ""
     var firstRankId = ""
     var firstRankSpent = 0
     var firstRankStr = 0
     
-    @IBOutlet weak var lblFirstName: UILabel!
-    
-    @IBOutlet weak var lblFirstSpent: UILabel!
-    
-    
-    @IBOutlet weak var lblSecondName: UILabel!
-    
+   
     
     @IBOutlet weak var lblSecondSpent: UILabel!
     
     
-    @IBOutlet weak var lblThirdName: UILabel!
-    
-    @IBOutlet weak var lblThirdSpent: UILabel!
-    
-    
-    
-    @IBOutlet weak var viewOne: UIView!
-    
-    @IBOutlet weak var viewTwo: UIView!
-    
-    @IBOutlet weak var viewThree: UIView!
+  
     
     @IBOutlet weak var viewUserGreen: UIView!
     
@@ -66,20 +52,15 @@ class RankingViewController: BaseVC {
 
         // Do any additional setup after loading the view.
         
-        viewOne.layer.cornerRadius = 12
-        viewOne.layer.masksToBounds = true
         
-        viewTwo.layer.cornerRadius = 12
-        viewTwo.layer.masksToBounds = true
-        
-        viewThree.layer.cornerRadius = 12
-        viewThree.layer.masksToBounds = true
         
         viewUserGreen.layer.cornerRadius = 12
         viewUserGreen.layer.masksToBounds = true
         
-        
-        
+        imgBackGrround.layer.cornerRadius = imgBackGrround.frame.size.height / 2
+        imgBackGrround.layer.borderWidth = 2
+        imgBackGrround.layer.borderColor = UIColor.red.cgColor
+        imgBackGrround.clipsToBounds = true
        // viewTopBorder.backgroundColor = UIColor.clear
 //        viewTopBorder.roundCorners(4.0)
 //        viewTopBorder.addViewShadow()
@@ -153,9 +134,17 @@ class RankingViewController: BaseVC {
                     SwiftLoader.hide()
                     
                     if self?.rankVM.rankModelBase?.status == "success" {
-                        
+                        if self?.rankVM.rankModelBase?.data?.myrank?.spent ?? 0 > 500 {
+                            self?.lblWarning.isHidden = true
+                            self?.lblSagesan.isHidden = true
+                            self?.viewSafe.isHidden = false
+                        } else {
+                            self?.viewSafe.isHidden = true
+                            self?.lblWarning.isHidden = false
+                            self?.lblSagesan.isHidden = false
+                        }
                         //print(self?.rankVM.rankModelBase?.data?.allrank)
-                        
+                        self?.imgBackGrround.layer.borderColor = UIColor.themeGreen.cgColor
                         self?.addRankArr = self?.rankVM.rankModelBase?.data?.allrank
                         
                        // self?.operatorResData = self?.operatorVM.OperatorBaseModel?.responseData
@@ -165,20 +154,20 @@ class RankingViewController: BaseVC {
                         DispatchQueue.main.async {
                             
                             
-                            self?.lblUserName.text = self?.rankVM.rankModelBase?.data?.myrank?.full_name ?? ""
+                            //self?.lblUserName.text = self?.rankVM.rankModelBase?.data?.myrank?.full_name ?? ""
 
                             self?.lblUserRank.text = "\(self?.rankVM.rankModelBase?.data?.myrank?.rank ?? 0)"
 
-                            self?.lblUserSpent.text = "\(self?.rankVM.rankModelBase?.data?.myrank?.spent ?? 0)"
+                            //self?.lblUserSpent.text = "\(self?.rankVM.rankModelBase?.data?.myrank?.spent ?? 0)"
                             
-                            self?.lblFirstName.text = self?.rankVM.rankModelBase?.data?.allrank?[0].full_name ?? ""
-                            self?.lblFirstSpent.text = "₹\(self?.rankVM.rankModelBase?.data?.allrank?[0].spent ?? 0)/-"
+                            //self?.lblFirstName.text = self?.rankVM.rankModelBase?.data?.allrank?[0].full_name ?? ""
+                            //self?.lblFirstSpent.text = "₹\(self?.rankVM.rankModelBase?.data?.allrank?[0].spent ?? 0)/-"
 
-                            self?.lblSecondName.text = self?.rankVM.rankModelBase?.data?.allrank?[1].full_name ?? ""
-                            self?.lblSecondSpent.text = "₹\(self?.rankVM.rankModelBase?.data?.allrank?[1].spent ?? 0)/-"
+                            //self?.lblSecondName.text = self?.rankVM.rankModelBase?.data?.allrank?[1].full_name ?? ""
+                            self?.lblSecondSpent.text = "₹\(self?.rankVM.rankModelBase?.data?.myrank?.spent ?? 0)/-"
                             
-                            self?.lblThirdName.text = self?.rankVM.rankModelBase?.data?.allrank?[2].full_name ?? ""
-                            self?.lblThirdSpent.text = "₹\(self?.rankVM.rankModelBase?.data?.allrank?[2].spent ?? 0)/-"
+                            //self?.lblThirdName.text = self?.rankVM.rankModelBase?.data?.allrank?[2].full_name ?? ""
+                            //self?.lblThirdSpent.text = "₹\(self?.rankVM.rankModelBase?.data?.allrank?[2].spent ?? 0)/-"
                             
                             
                             self?.tableViewRank.reloadData()
@@ -189,7 +178,7 @@ class RankingViewController: BaseVC {
                         }
                         
                     }else{
-                        
+                        self?.viewSafe.isHidden = true
                         self?.showErrorAlert(self?.rankVM.rankModelBase?.status ?? "")
                         
                     }
@@ -237,7 +226,11 @@ extension RankingViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableViewRank.dequeueReusableCell(withIdentifier: "RankTVC") as! RankTVC
         
         cell.setRankCellData(rankCellData: self.addRankArr?[indexPath.row])
-        
+        if self.rankVM.rankModelBase?.data?.myrank?.id == self.rankVM.rankModelBase?.data?.allrank?[indexPath.row].id {
+            cell.viewBg.backgroundColor = .themeGreenLight
+        } else {
+            cell.viewBg.backgroundColor = .clear
+        }
     //cell.setOperatorCellData(operatorCellData: operatorResData?[indexPath.row])
         
 //        let contact = operatorResData?[indexPath.row]

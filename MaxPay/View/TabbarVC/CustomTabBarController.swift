@@ -88,13 +88,19 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
         // Customize the tab bar appearance
         tabBar.tintColor = UIColor(hexString: "637F13")//.systemGreen
         tabBar.unselectedItemTintColor = .black
-
+        tabBar.items?[0].setTitleTextAttributes([.font: UIFont.systemFont(ofSize: 12, weight: .bold)], for: .normal)
+        tabBar.items?[1].setTitleTextAttributes([.font: UIFont.systemFont(ofSize: 12, weight: .bold)], for: .normal)
+        tabBar.items?[2].setTitleTextAttributes([.font: UIFont.systemFont(ofSize: 12, weight: .bold)], for: .normal)
+        tabBar.items?[3].setTitleTextAttributes([.font: UIFont.systemFont(ofSize: 12, weight: .bold)], for: .normal)
+        tabBar.items?[4].setTitleTextAttributes([.font: UIFont.systemFont(ofSize: 12, weight: .bold)], for: .normal)
+        
         // Adjust the middle button (if needed)
         if let items = tabBar.items {
-            items[2].title = ""
+            items[2].titlePositionAdjustment = UIOffset(horizontal: 0, vertical: 10)
+            items[2].title = "Scan QR"
             items[2].imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
         }
-                
+            
         
     }
     

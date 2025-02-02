@@ -112,6 +112,7 @@
             <connections>
                 <outlet property="btnAddAccount" destination="zwx-mR-bXu" id="mFv-au-ONe"/>
                 <outlet property="collectionView" destination="2RZ-QQ-JQp" id="ECC-HH-jXp"/>
+                <outlet property="imgUpi" destination="NyG-vv-oKY" id="oob-HB-mU4"/>
             </connections>
             <point key="canvasLocation" x="293.12977099236639" y="66.901408450704224"/>
         </tableViewCell>

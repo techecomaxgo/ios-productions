@@ -41,9 +41,13 @@ class QuizVC: BaseVC {
 //        let vc = storyBoard.instantiateViewController(withIdentifier: "QuizQuesViewController") as! QuizQuesViewController
 //     
 //        self.navigationController?.pushViewController(vc, animated: true)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "QuizResultVC") as! QuizResultVC
+        //vc.quizdata = self?.getQuizViewModel.getQuizModelBase?.data
+
+        self.navigationController?.pushViewController(vc, animated: true)
         
-        
-        DispatchQueue.main.async {
+       /* DispatchQueue.main.async {
             
             SwiftLoader.show(animated: true)
             
@@ -126,7 +130,7 @@ class QuizVC: BaseVC {
                 print(error!)
                 SwiftLoader.hide()
             }
-        }
+        }*/
     }
     
     

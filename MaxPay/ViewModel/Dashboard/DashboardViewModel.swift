@@ -16,7 +16,7 @@ final class DashboardViewModel {
     
     //MARK: Data featching form server
     func getBalanceDetailsCall(phoneStr:String) {
-        let params : [String:Any]  = ["skey":skey,"phone":phoneStr]
+        let params : [String:Any]  = ["skey":skey]
         print("The dictionary is : \(params)")
         self.eventHandler?(.loading)
         ApiManager.sharedInstance.dashboardBalanceServiceApi(dict:params as NSDictionary, completion: { (model, err) in
@@ -27,6 +27,7 @@ final class DashboardViewModel {
             }
             if let model = model {
                 self.balanceDetailsModel = model
+                Common.shared.cardNumbe = model.messageBalance?.card_number
                 self.eventHandler?(.dataLoaded)
             }else{
                 self.eventHandler?(.error(err))

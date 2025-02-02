@@ -87,7 +87,7 @@
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookmark.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GpF-iy-XaF">
                                                                 <rect key="frame" x="58" y="28.666666666666664" width="30" height="29.666666666666664"/>
-                                                                <color key="tintColor" name="status-red-color"/>
+                                                                <color key="tintColor" name="text-red-color"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="GBt-dB-y6s"/>
                                                                     <constraint firstAttribute="width" constant="30" id="aJU-CX-7y9"/>
@@ -168,11 +168,11 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bhimImg" translatesAutoresizingMaskIntoConstraints="NO" id="LVX-eF-bji">
-                                                                <rect key="frame" x="58" y="28.333333333333336" width="30" height="30"/>
+                                                                <rect key="frame" x="50.666666666666657" y="20.666666666666664" width="45" height="44.999999999999993"/>
                                                                 <color key="tintColor" name="primary-green"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="30" id="n6s-AT-Pzy"/>
-                                                                    <constraint firstAttribute="width" constant="30" id="vxA-0P-6WY"/>
+                                                                    <constraint firstAttribute="height" constant="45" id="n6s-AT-Pzy"/>
+                                                                    <constraint firstAttribute="width" constant="45" id="vxA-0P-6WY"/>
                                                                 </constraints>
                                                             </imageView>
                                                         </subviews>
@@ -418,10 +418,10 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujr-jE-gL4">
-                                                                <rect key="frame" x="60" y="32" width="26" height="13"/>
+                                                                <rect key="frame" x="60" y="24" width="26" height="20"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                                <color key="backgroundColor" red="0.81176470590000005" green="0.8980392157" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                                <color key="backgroundColor" name="primary-green"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -433,7 +433,7 @@
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FO" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhO-i2-ph6">
                                                                 <rect key="frame" x="51" y="45" width="44" height="13"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                                 <color key="textColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -526,7 +526,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recharge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHv-L6-Apa">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHv-L6-Apa">
                                                         <rect key="frame" x="0.0" y="89.333333333333343" width="146" height="15.666666666666671"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                         <color key="textColor" name="reload-grey-color"/>
@@ -623,8 +623,8 @@
         <namedColor name="reload-grey-color">
             <color red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="status-red-color">
-            <color red="0.9137254901960784" green="0.40000000000000002" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="text-red-color">
+            <color red="0.87058823529411766" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

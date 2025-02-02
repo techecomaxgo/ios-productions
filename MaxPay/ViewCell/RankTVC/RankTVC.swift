@@ -14,12 +14,19 @@ class RankTVC: UITableViewCell {
     @IBOutlet weak var lblName: UILabel!
     
     @IBOutlet weak var lblRank: UILabel!
-    
+    @IBOutlet weak var viewTwoSideCorner: UIView!
     @IBOutlet weak var lblSpent: UILabel!
     
+    @IBOutlet weak var viewBg: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        viewTwoSideCorner.layer.cornerRadius = 10
+                
+                // Apply to specific corners
+        viewTwoSideCorner.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner] // Top-left & Top-right
+                
+        viewTwoSideCorner.layer.masksToBounds = true
     }
     
     func setRankCellData(rankCellData: Allrank?) {
@@ -31,7 +38,7 @@ class RankTVC: UITableViewCell {
         
         lblRank.text = "\(rankCellData?.rank ?? 0)"
         
-        lblSpent.text = "₹\(rankCellData?.spent ?? 0)"
+        lblSpent.text = "₹*****/-"//\(rankCellData?.spent ?? 0)"
         
         
         

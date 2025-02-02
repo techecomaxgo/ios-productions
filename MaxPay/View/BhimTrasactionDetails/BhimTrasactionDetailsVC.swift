@@ -63,10 +63,8 @@ class BhimTrasactionDetailsVC: BaseVC {
         
         
         
-        setTranHistoryData(data: tranHistoryObj!, accountDetails: accountDetails!)
-        print("setTranHistoryData ======>> ", tranHistoryObj)
-        print("setTranHistoryData dateTime ======>> ", tranHistoryObj?.dateTime)
-        print("setTranHistoryData mcc ======>> ", tranHistoryObj?.mcc)
+        setTranHistoryData(data: tranHistoryObj, accountDetails: accountDetails)
+        
         
     }
     @IBAction func btnBackAction(_ sender: Any) {
@@ -94,22 +92,22 @@ class BhimTrasactionDetailsVC: BaseVC {
     
 
     
-    func setTranHistoryData(data: TranHistoryModel, accountDetails: AccountDetailsOnIIN)
+    func setTranHistoryData(data: TranHistoryModel?, accountDetails: AccountDetailsOnIIN?)
     {
-        lblTxnId.text = data.tranid
-        lblTxnDate.text = data.refid
-        lblTime.text = data.dateTime
-        lblRemark.text = data.remarks
+        lblTxnId.text = data?.tranid
+        lblTxnDate.text = data?.refid
+        lblTime.text = data?.dateTime
+        lblRemark.text = data?.remarks
     
-        lblStatus.text = Status.getStatus(from: data.status ?? "")
+        lblStatus.text = Status.getStatus(from: data?.status ?? "")
         
-        lblStatus.textColor = data.status == "C" ? UIColor.init(named: "primary-green") : data.status == "P" ? UIColor.orange : UIColor.init(named: "status-red-color")
+        lblStatus.textColor = data?.status == "C" ? UIColor.init(named: "primary-green") : data?.status == "P" ? UIColor.orange : UIColor.init(named: "status-red-color")
         
-        if data.mcc == tranHistoryObj?.mcc {
+        if data?.mcc == tranHistoryObj?.mcc {
             
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-            if let transactionDate = dateFormatter.date(from: data.dateTime!) {
+            if let transactionDate = dateFormatter.date(from: data?.dateTime ?? "") {
                 // Add 5 minutes to the transaction date
                 let fiveMinutesLater = Calendar.current.date(byAdding: .minute, value: 5, to: transactionDate)
                 let now = Date()
@@ -119,31 +117,31 @@ class BhimTrasactionDetailsVC: BaseVC {
             }
         }
         
-        imgSendReceiveIc.image = data.type == "PAY" ? UIImage(named: "ic_arrow_up")?.withRenderingMode(.alwaysTemplate) : UIImage(named: "ic_arrow_down")?.withRenderingMode(.alwaysTemplate)
+        imgSendReceiveIc.image = data?.type == "PAY" ? UIImage(named: "ic_arrow_up")?.withRenderingMode(.alwaysTemplate) : UIImage(named: "ic_arrow_down")?.withRenderingMode(.alwaysTemplate)
         
-        imgSendReceiveIc.tintColor = data.status == "C" ? UIColor.init(named: "primary-green") : data.status == "P" ? UIColor.orange : UIColor.init(named: "status-red-color")
+        imgSendReceiveIc.tintColor = data?.status == "C" ? UIColor.init(named: "primary-green") : data?.status == "P" ? UIColor.orange : UIColor.init(named: "status-red-color")
         
-        lblAmount.text = "₹ " + (data.amount ?? "0")
+        lblAmount.text = "₹ " + (data?.amount ?? "0")
         
-        if data.type == "PAY" {
-            if accountDetails.vpa == data.creditVpa {
-                lblVpa.text = data.debitVpa
-                lblName.text = data.remitterName == nil ? "No Name" : data.remitterName
+        if data?.type == "PAY" {
+            if accountDetails?.vpa == data?.creditVpa {
+                lblVpa.text = data?.debitVpa
+                lblName.text = data?.remitterName == nil ? "No Name" : data?.remitterName
             } else {
-                lblVpa.text = data.creditVpa
-                lblName.text = data.beneficiaryName == nil ? "No Name" : data.beneficiaryName
+                lblVpa.text = data?.creditVpa
+                lblName.text = data?.beneficiaryName == nil ? "No Name" : data?.beneficiaryName
             }
-        } else if data.type == "COLLECT" {
-            if accountDetails.vpa == data.creditVpa {
-                lblVpa.text = data.debitVpa
-                lblName.text = data.remitterName == nil ? "No Name" : data.remitterName
+        } else if data?.type == "COLLECT" {
+            if accountDetails?.vpa == data?.creditVpa {
+                lblVpa.text = data?.debitVpa
+                lblName.text = data?.remitterName == nil ? "No Name" : data?.remitterName
             } else {
-                lblVpa.text = data.creditVpa
-                lblName.text = data.beneficiaryName == nil ? "No Name" : data.beneficiaryName
+                lblVpa.text = data?.creditVpa
+                lblName.text = data?.beneficiaryName == nil ? "No Name" : data?.beneficiaryName
             }
         }
         
-        if data.mcc == "0000" {
+        if data?.mcc == "0000" {
             lblfiveMinutes.isHidden=true
         }else{
             lblfiveMinutes.isHidden=false

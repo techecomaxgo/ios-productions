@@ -980,84 +980,88 @@ class PaymentUPIIDNewVC: BaseVC, AVAudioPlayerDelegate {
     
     
     @IBAction func btnContinueAction(_ sender: UIButton) {
-        
-        // mamDigit = Double(qrData["mam"] as? String ?? "0")
-        showAlertMessageWithActionButtonAndCancelButton(title: "Be Alert | सावधान रहें", message: "\nIs this transaction a fraud? \n\nक्या यह लेनदेन धोखाधड़ी है?", actionButtonText: "No", cancelActionButtonText: "Yes", vc: self) { status in
-            if status == 1 {
-                self.oliveBlockApiCall()
-            }else if status == 0 {
-                if self.isFromQrScan == true {
-                    
-                    // let checkAmount = Double(txtAmount.text ?? "0")
-                    self.minValue  =  Double(self.qrData["mam"] as? String ?? "")
-                    
-                    self.maxValue = Double(self.qrData["am"] as? String ?? "")
-                    
-                    if (self.minValue != nil) || (self.maxValue != nil) {
-                        if self.txtAmount.text?.count == 0 || Double(self.txtAmount.text ?? "0") == 0 {
-                            self.showErrorAlert("Please enter amount")
-                            return
-                        }else if Double(self.txtAmount.text ?? "0")! < self.minValue! {
+        if self.txtAmount.text?.count == 0 || Double(self.txtAmount.text ?? "0") == 0 {
+            self.showErrorAlert("Please enter amount")
+            return
+        }else {
+            // mamDigit = Double(qrData["mam"] as? String ?? "0")
+            showAlertMessageWithActionButtonAndCancelButton(title: "Be Alert | सावधान रहें", message: "\nIs this transaction a fraud? \n\nक्या यह लेनदेन धोखाधड़ी है?", actionButtonText: "No", cancelActionButtonText: "Yes", vc: self) { status in
+                if status == 1 {
+                    self.oliveBlockApiCall()
+                }else if status == 0 {
+                    if self.isFromQrScan == true {
+                        
+                        // let checkAmount = Double(txtAmount.text ?? "0")
+                        self.minValue  =  Double(self.qrData["mam"] as? String ?? "")
+                        
+                        self.maxValue = Double(self.qrData["am"] as? String ?? "")
+                        
+                        if (self.minValue != nil) || (self.maxValue != nil) {
+                            if self.txtAmount.text?.count == 0 || Double(self.txtAmount.text ?? "0") == 0 {
+                                self.showErrorAlert("Please enter amount")
+                                return
+                            }else if Double(self.txtAmount.text ?? "0")! < self.minValue! {
+                                
+                                self.showErrorAlert("Please enter minimum amount \(self.minValue!)")
+                            }
                             
-                            self.showErrorAlert("Please enter minimum amount \(self.minValue!)")
-                        }
-                        
-                        
-                        if self.txtAmount.text?.count == 0 || Double(self.txtAmount.text ?? "0") == 0 {
-                            self.showErrorAlert("Please enter amount")
-                            return
-                        }else if Double(self.txtAmount.text ?? "0")! > self.maxValue! {
                             
-                            self.showErrorAlert("Maximum amount \(self.maxValue!)")
+                            if self.txtAmount.text?.count == 0 || Double(self.txtAmount.text ?? "0") == 0 {
+                                self.showErrorAlert("Please enter amount")
+                                return
+                            }else if Double(self.txtAmount.text ?? "0")! > self.maxValue! {
+                                
+                                self.showErrorAlert("Maximum amount \(self.maxValue!)")
+                            }
+                            
+                            
+                            
+                        }else{
+                            if self.txtAmount.text?.count == 0 || Double(self.txtAmount.text ?? "0") == 0 {
+                                self.showErrorAlert("Please enter amount")
+                                return
+                            }else{
+                                let storyboard = UIStoryboard(name: "BhimUpi", bundle: nil)
+                                
+                                let vc = storyboard.instantiateViewController(withIdentifier: "PaymentUPIIDNewConfirmationVC") as! PaymentUPIIDNewConfirmationVC
+                                
+                                vc.accountDetails = self.accountDetails
+                                vc.beneVpa = self.beneVpa
+                                vc.beneName = self.beneName
+                                vc.transId = self.transId
+                                vc.amtDecimal = self.txtAmount.text ?? ""
+                                vc.remark =  self.txtRemark.text ?? ""
+                                vc.mccCodeStr =  self.mccCodeDNewVC
+                                self.navigationController?.pushViewController(vc, animated: true)
+                            }
+                            
                         }
-                        
-                        
                         
                     }else{
                         if self.txtAmount.text?.count == 0 || Double(self.txtAmount.text ?? "0") == 0 {
                             self.showErrorAlert("Please enter amount")
                             return
-                        }else{
-                            let storyboard = UIStoryboard(name: "BhimUpi", bundle: nil)
-                            
-                            let vc = storyboard.instantiateViewController(withIdentifier: "PaymentUPIIDNewConfirmationVC") as! PaymentUPIIDNewConfirmationVC
-                            
-                            vc.accountDetails = self.accountDetails
-                            vc.beneVpa = self.beneVpa
-                            vc.beneName = self.beneName
-                            vc.transId = self.transId
-                            vc.amtDecimal = self.txtAmount.text ?? ""
-                            vc.remark =  self.txtRemark.text ?? ""
-                            vc.mccCodeStr =  self.mccCodeDNewVC
-                            self.navigationController?.pushViewController(vc, animated: true)
                         }
                         
                     }
                     
-                }else{
                     if self.txtAmount.text?.count == 0 || Double(self.txtAmount.text ?? "0") == 0 {
                         self.showErrorAlert("Please enter amount")
                         return
+                    }else{
+                        let storyboard = UIStoryboard(name: "BhimUpi", bundle: nil)
+                        
+                        let vc = storyboard.instantiateViewController(withIdentifier: "PaymentUPIIDNewConfirmationVC") as! PaymentUPIIDNewConfirmationVC
+                        
+                        vc.accountDetails = self.accountDetails
+                        vc.beneVpa = self.beneVpa
+                        vc.beneName = self.beneName
+                        vc.transId = self.transId
+                        vc.amtDecimal = self.txtAmount.text ?? ""
+                        vc.remark =  self.txtRemark.text ?? ""
+                        vc.mccCodeStr =  self.mccCodeDNewVC
+                        self.navigationController?.pushViewController(vc, animated: true)
                     }
-                    
-                }
-                
-                if self.txtAmount.text?.count == 0 || Double(self.txtAmount.text ?? "0") == 0 {
-                    self.showErrorAlert("Please enter amount")
-                    return
-                }else{
-                    let storyboard = UIStoryboard(name: "BhimUpi", bundle: nil)
-                    
-                    let vc = storyboard.instantiateViewController(withIdentifier: "PaymentUPIIDNewConfirmationVC") as! PaymentUPIIDNewConfirmationVC
-                    
-                    vc.accountDetails = self.accountDetails
-                    vc.beneVpa = self.beneVpa
-                    vc.beneName = self.beneName
-                    vc.transId = self.transId
-                    vc.amtDecimal = self.txtAmount.text ?? ""
-                    vc.remark =  self.txtRemark.text ?? ""
-                    vc.mccCodeStr =  self.mccCodeDNewVC
-                    self.navigationController?.pushViewController(vc, animated: true)
                 }
             }
         }

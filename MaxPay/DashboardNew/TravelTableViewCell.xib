@@ -24,6 +24,27 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwC-bI-LSh">
                                 <rect key="frame" x="16" y="8" width="568" height="156"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qGG-qU-QVF" customClass="CardView" customModule="MaxPay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="2" width="568" height="152"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" name="card-number"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y85-6f-2lj">
                                         <rect key="frame" x="20.000000000000004" y="10" width="52.333333333333343" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -282,12 +303,16 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="qGG-qU-QVF" firstAttribute="top" secondItem="zwC-bI-LSh" secondAttribute="top" constant="2" id="1lh-K9-Xs8"/>
+                                    <constraint firstAttribute="trailing" secondItem="qGG-qU-QVF" secondAttribute="trailing" id="2dJ-HH-HsY"/>
                                     <constraint firstAttribute="trailing" secondItem="AK4-hd-2xV" secondAttribute="trailing" constant="5" id="DMK-yj-6uW"/>
                                     <constraint firstItem="Y85-6f-2lj" firstAttribute="leading" secondItem="zwC-bI-LSh" secondAttribute="leading" constant="20" symbolic="YES" id="Hko-Dl-LLf"/>
                                     <constraint firstAttribute="bottom" secondItem="AK4-hd-2xV" secondAttribute="bottom" constant="5" id="IzP-29-ELI"/>
                                     <constraint firstItem="Y85-6f-2lj" firstAttribute="leading" secondItem="zwC-bI-LSh" secondAttribute="leading" constant="20" id="Kdy-5H-IRW"/>
+                                    <constraint firstItem="qGG-qU-QVF" firstAttribute="leading" secondItem="zwC-bI-LSh" secondAttribute="leading" id="MjE-f2-MX8"/>
                                     <constraint firstItem="Y85-6f-2lj" firstAttribute="top" secondItem="zwC-bI-LSh" secondAttribute="top" constant="10" id="PiE-nb-YKN"/>
                                     <constraint firstItem="AK4-hd-2xV" firstAttribute="top" secondItem="Y85-6f-2lj" secondAttribute="bottom" constant="10" id="U7p-hn-NDn"/>
+                                    <constraint firstAttribute="bottom" secondItem="qGG-qU-QVF" secondAttribute="bottom" constant="2" id="WCD-S3-6xS"/>
                                     <constraint firstItem="AK4-hd-2xV" firstAttribute="leading" secondItem="zwC-bI-LSh" secondAttribute="leading" constant="5" id="l1V-zH-a63"/>
                                     <constraint firstItem="Y85-6f-2lj" firstAttribute="top" secondItem="zwC-bI-LSh" secondAttribute="top" constant="10" id="ygp-Fr-9W6"/>
                                 </constraints>

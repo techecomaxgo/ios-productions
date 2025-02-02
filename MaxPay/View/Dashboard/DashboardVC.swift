@@ -1034,7 +1034,11 @@ extension DashboardVC {
     func configuration() {
        // ProgressHUD.showSucceed()
         initViewModel()
-       // observeEvent()
+        observeEvent()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+            self.tableViewDashboard.reloadData()
+        }
+
     }
     //MARK Network checking
     func initViewModel() {
@@ -1044,7 +1048,9 @@ extension DashboardVC {
             
             dashboardViewModel.getBalanceDetailsCall(phoneStr: Common.shared.phoneNo ?? "")
             //dashboardViewModel.getSecondaryWalletBalanceDetailsCall(phoneStr: Common.shared.phoneNo ?? "")
-            
+//            DispatchQueue.main.async {
+//                self.tableViewDashboard.reloadData()
+//            }
         }else{
             ProgressHUD.remove()
             self.showErrorAlert("Please check your internet connection.")
@@ -1053,6 +1059,7 @@ extension DashboardVC {
     }
     //MARK: Observing the data
     func observeEvent() {
+        
         dashboardViewModel.eventHandler = { [weak self] event in
             guard self != nil else { return }
 
@@ -1081,11 +1088,10 @@ extension DashboardVC {
                             
                             let index = str.index(str.endIndex, offsetBy: -4)
                             let lastFour = String(str.suffix(from: index))
-                            let components = str.components(separatedBy: " ").joined(separator: "     ")
+                            let components = str.components(separatedBy: " ").joined(separator: "       ")
                             
                             self?.lblCardNumber.text = "\(components)"
                             self?.strCardNumber = components
-                            self?.tableViewDashboard.reloadData()
                         }
                         
                         let balance  = self?.dashboardViewModel.balanceDetailsModel?.messageBalance?.primary_wallet_balance ?? ""
@@ -1093,18 +1099,19 @@ extension DashboardVC {
                         
                         self?.doubleBalance = Double(balance) ?? 0.00
                         Common.shared.primary_wallet_balance = balance
-                        
+                        self?.strBalance = "\(String(self?.doubleBalance ?? 0.00))"
                         
                         self?.lblPrice.text = "\(String(self?.doubleBalance ?? 0.00))"
                         
                         
-                        self?.lblPrimaryWalletAmt.text = "\(String(self?.doubleBalance ?? 0.00))"
+                       // self?.lblPrimaryWalletAmt.text = "\(String(self?.doubleBalance ?? 0.00))"
                         
 
 
                     }else{
 //                        self?.showErrorAlert("")
                     }
+                    self?.tableViewDashboard.reloadData()
                 }
                 DispatchQueue.main.async {
                     if self?.dashboardViewModel.secondaryWalletBalance?.status == "success" {
@@ -1614,8 +1621,7 @@ extension DashboardVC: SetMPINDelegate {
                                 
                                 lblBalance.isHidden = false
                                 lblBalance.text = "₹\(dataObject["data"] as! String)"
-                                self.strBalance = "₹\(dataObject["data"] as! String)"
-                                self.tableViewDashboard.reloadData()
+                                
                             }
                         }
                     }
@@ -1854,10 +1860,9 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
                 } else {
                     cell.lblBalance.text =  strBalance
                 }
-                ///let index = strCardNumber.index(strCardNumber.endIndex, offsetBy: -4)
-                //let lastFour = String(strCardNumber.suffix(from: index))
-                //let components = strCardNumber.components(separatedBy: " ").joined(separator: "     ")
+        
                 cell.lblCardNo.text =  strCardNumber
+                
                 cell.lblRank.text = "Rank:\(self.rankVM.rankModelBase?.data?.myrank?.rank ?? 0)"
                 cell.imgProfile.sd_setImage(with: URL(string: "\(Common.shared.UserProfileImage ?? "")") , placeholderImage: UIImage(named: "placeholder.png"))
             }
@@ -1867,9 +1872,11 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
             cell.delegate = self
             if cardsArr.count > 0  {
                 cell.cardsDetailArr = cardsArr
-//                cell.collectionView.delegate = self
-//                cell.collectionView.reloadData()
+                cell.btnAddAccount.isHidden = true
+//
 //                cell.collectionView.layoutIfNeeded()
+            } else {
+                cell.btnAddAccount.isHidden = true
             }
             cell.btnAddAccount.addTarget(self, action: #selector(addAccountActon(_:)), for: .touchUpInside)
             return cell
@@ -1923,7 +1930,7 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
             return  280
         } else if indexPath.row == 1 {
             if cardsArr.count > 0  {
-                return 280
+                return 250
             } else {
                 return 50
             }
@@ -1934,7 +1941,11 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
                 return 140
             }
         } else if indexPath.row == 3 {
-            return 160
+            if cardsArr.count > 0  {
+                return 160
+            } else {
+                return 0
+            }
         } else if indexPath.row == 4 {
             return 250
         } else if indexPath.row == 5 {
@@ -2022,7 +2033,7 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
         if cardsArr.count > 0 {
             
             let storyBoard: UIStoryboard = UIStoryboard(name: "BhimUpi", bundle: nil)
-            let vc = storyBoard.instantiateViewController(withIdentifier: "SendMoneyVC") as! SendMoneyVC
+            let vc = storyBoard.instantiateViewController(withIdentifier: "TransferVC") as! TransferVC
             vc.accountDetails = primaryAccount
           
             self.navigationController?.pushViewController(vc, animated: true)
@@ -2081,9 +2092,9 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
     }
     
     @objc func shaaredIdeaAction(_ sender: UIButton) {
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "MandateNewReqVC") as! MandateNewReqVC
-        self.navigationController?.pushViewController(vc, animated: true)
+//        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+//        let vc = storyBoard.instantiateViewController(withIdentifier: "MandateNewReqVC") as! MandateNewReqVC
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func lostAnsFound(_ sender: UIButton) {

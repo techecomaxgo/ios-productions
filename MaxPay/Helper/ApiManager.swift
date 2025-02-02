@@ -135,13 +135,16 @@ struct ConstantApi{
         
         static let deductWalletApi = "wallet/swallet/deduct-swallet-balance"
         static let rechargeModelApi = "recharge/recharge"
-        static let rankAllApi = "rank/all-ranker"
+        static let rankAllApi = "rank/2.0/all-ranker"
         
         static let chainReferApi = "refer/total-refer"
         
-        static let getQuizApi = "quiz-user/get-quiz"
-        
-        static let attendQuizApi = "quiz-user/attend-quiz"
+//        1 ) api/v1/quiz-user/get-quiz
+//        2) api/v1/quiz-user/attend-quiz
+//        3) api/v1/quiz-user/quiz-result
+        static let getQuizApi = "api/v1/quiz-user/get-quiz"
+        static let attendQuizApi = "api/v1/quiz-user/attend-quiz"
+        static let resultQuizApi = "api/v1/quiz-user/quiz-result"
         
         static let milesModellApi = "miles/total-amount-miles"
         static let allmilesTransApi = "miles/all-miles-transaction"
@@ -969,30 +972,158 @@ class ApiManager: NSObject {
     
     
     func GetQuizModelApi(dict:NSDictionary,completion: @escaping (GetQuizModel_Base?, Error?) -> ()) {
-        
-        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.getQuizApi)", method: .post, parameters: dict as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headers).responseJSON {  response in
+        let encryptedData = EncryptionService.shared.finalParam(dict)
+        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.getQuizApi)", method: .post, parameters: encryptedData as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headers).responseJSON {  response in
             if response.result.isSuccess{
                 guard let dictResponse = response.data, dictResponse.count > 0 else {
+                    SwiftLoader.hide()
                     return
                 }
-                if let data = response.data, data.count > 0{
-                    //  print(data)
-                    do{
-                        let model = try JSONDecoder().decode(GetQuizModel_Base.self, from: data)
-                        // print(model)
-                        completion(model,nil)
-                        
-                    }catch{}
+                
+               do {
+                    let dict = try JSONSerialization.jsonObject(with: dictResponse, options: []) as? [String: Any]
                     
+                    
+                    // Process base64-encoded string
+                    if let base64Encoded = dict?["data"] as? String {
+                        // Base64 decoding
+                        guard let decodedData = Data(base64Encoded: base64Encoded),
+                              let decodedString = String(data: decodedData, encoding: .utf8) else {
+                            completion(nil, NSError(domain: "APIError", code: 1003, userInfo: [NSLocalizedDescriptionKey: "Base64 decoding failed"]))
+                            return
+                        }
+                        
+                        // Convert the decoded string to a dictionary
+                        if let decodedDict = EncryptionService.shared.convertToDictionary(text: decodedString) {
+                            do {
+                                // Decrypt the data
+                                let decryptedData = try EncryptionService.shared.decrypt(encrypted: decodedDict["encrypted"] as! String, iv: decodedDict["iv"] as! String, authTag: decodedDict["authTag"] as! String, jwtToken: Common.shared.token ?? "")
+                                
+                                if let stringData = decryptedData {
+                                    if let jsonData = stringData.data(using: .utf8) {
+                                        let jsonObject = try JSONSerialization.jsonObject(with: jsonData, options: [])
+                                        if let dictionary = jsonObject as? [String: Any] {
+                                            // Now we have a dictionary, proceed with serialization
+                                            let data = try JSONSerialization.data(withJSONObject: dictionary, options: [])
+                                            // Decode the data into a model
+                                            let model = try JSONDecoder().decode(GetQuizModel_Base.self.self, from: data)
+                                            completion(model, nil)
+                                        }
+                                    }
+                                }
+                                
+                            } catch {
+                                // Handle decryption or decoding errors
+                                print("Decryption or JSON decoding failed: \(error.localizedDescription)")
+                                completion(nil, error)
+                            }
+                        } else {
+                            print("Failed to convert decoded string to dictionary.")
+                            completion(nil, NSError(domain: "APIError", code: 1004, userInfo: [NSLocalizedDescriptionKey: "Invalid decoded string"]))
+                        }
+                        //            } else {
+                        //                print("Base64 string not found in response.")
+                        //                completion(nil, NSError(domain: "APIError", code: 1005, userInfo: [NSLocalizedDescriptionKey: "Base64 encoded data missing in response"]))
+                        //            }
+                        SwiftLoader.hide()
+                        
+                    }
+                } catch {
+                    SwiftLoader.hide()
+                    print(error.localizedDescription)
                 }
+//                if let data = response.data, data.count > 0{
+//                    //  print(data)
+//                    do{
+//                        let model = try JSONDecoder().decode(GetQuizModel_Base.self, from: data)
+//                        // print(model)
+//                        completion(model,nil)
+//                        
+//                    }catch{}
+//                    
+//                }
             }
         }
     }
     
     
     func AttendQuizModelApi(dict:NSDictionary,completion: @escaping (AttendQuizModel_Base?, Error?) -> ()) {
+        let encryptedData = EncryptionService.shared.finalParam(dict)
+        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.attendQuizApi)", method: .post, parameters: encryptedData as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headers).responseJSON {  response in
+            if response.result.isSuccess{
+                guard let dictResponse = response.data, dictResponse.count > 0 else {
+                    return
+                }
+                do {
+                     let dict = try JSONSerialization.jsonObject(with: dictResponse, options: []) as? [String: Any]
+                     
+                     
+                     // Process base64-encoded string
+                     if let base64Encoded = dict?["data"] as? String {
+                         // Base64 decoding
+                         guard let decodedData = Data(base64Encoded: base64Encoded),
+                               let decodedString = String(data: decodedData, encoding: .utf8) else {
+                             completion(nil, NSError(domain: "APIError", code: 1003, userInfo: [NSLocalizedDescriptionKey: "Base64 decoding failed"]))
+                             return
+                         }
+                         
+                         // Convert the decoded string to a dictionary
+                         if let decodedDict = EncryptionService.shared.convertToDictionary(text: decodedString) {
+                             do {
+                                 // Decrypt the data
+                                 let decryptedData = try EncryptionService.shared.decrypt(encrypted: decodedDict["encrypted"] as! String, iv: decodedDict["iv"] as! String, authTag: decodedDict["authTag"] as! String, jwtToken: Common.shared.token ?? "")
+                                 
+                                 if let stringData = decryptedData {
+                                     if let jsonData = stringData.data(using: .utf8) {
+                                         let jsonObject = try JSONSerialization.jsonObject(with: jsonData, options: [])
+                                         if let dictionary = jsonObject as? [String: Any] {
+                                             // Now we have a dictionary, proceed with serialization
+                                             let data = try JSONSerialization.data(withJSONObject: dictionary, options: [])
+                                             // Decode the data into a model
+                                             let model = try JSONDecoder().decode(AttendQuizModel_Base.self.self, from: data)
+                                             completion(model, nil)
+                                         }
+                                     }
+                                 }
+                                 
+                             } catch {
+                                 // Handle decryption or decoding errors
+                                 print("Decryption or JSON decoding failed: \(error.localizedDescription)")
+                                 completion(nil, error)
+                             }
+                         } else {
+                             print("Failed to convert decoded string to dictionary.")
+                             completion(nil, NSError(domain: "APIError", code: 1004, userInfo: [NSLocalizedDescriptionKey: "Invalid decoded string"]))
+                         } 
+                         //            } else {
+                         //                print("Base64 string not found in response.")
+                         //                completion(nil, NSError(domain: "APIError", code: 1005, userInfo: [NSLocalizedDescriptionKey: "Base64 encoded data missing in response"]))
+                         //            }
+                         SwiftLoader.hide()
+                         
+                     }
+                 } catch {
+                     SwiftLoader.hide()
+                     print(error.localizedDescription)
+                 }
+//                if let data = response.data, data.count > 0{
+//                    //  print(data)
+//                    do{
+//                        let model = try JSONDecoder().decode(AttendQuizModel_Base.self, from: data)
+//                        // print(model)
+//                        completion(model,nil)
+//                        
+//                    }catch{}
+//                    
+//                }
+            }
+        }
+    }
+    
+    
+    func ResultQuizModelApi(dict:NSDictionary,completion: @escaping (ResultQuizModel_Base?, Error?) -> ()) {
         
-        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.attendQuizApi)", method: .post, parameters: dict as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headers).responseJSON {  response in
+        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.resultQuizApi)", method: .get, parameters: nil, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headers).responseJSON {  response in
             if response.result.isSuccess{
                 guard let dictResponse = response.data, dictResponse.count > 0 else {
                     return
@@ -1000,7 +1131,7 @@ class ApiManager: NSObject {
                 if let data = response.data, data.count > 0{
                     //  print(data)
                     do{
-                        let model = try JSONDecoder().decode(AttendQuizModel_Base.self, from: data)
+                        let model = try JSONDecoder().decode(ResultQuizModel_Base.self, from: data)
                         // print(model)
                         completion(model,nil)
                         
@@ -1010,9 +1141,6 @@ class ApiManager: NSObject {
             }
         }
     }
-    
-    
-    
     
     
     
@@ -1042,26 +1170,65 @@ class ApiManager: NSObject {
     
     func dashboardBalanceServiceApi(dict:NSDictionary,completion: @escaping (BalanceDetailsModel?, Error?) -> ()) {
         let encryptedData = EncryptionService.shared.finalParam(dict)
-        let endpoint = "/api/wallet/2.0/get-card-details"
+        let endpoint = "api/wallet/2.0/get-card-details"
         Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(endpoint)", method: .post, parameters: encryptedData as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headers).responseJSON {  response in
             if response.result.isSuccess{
                 guard let dictResponse = response.data, dictResponse.count > 0 else {
                     return
                 }
-                if let data = response.data, data.count > 0{
-                    //  print(data)
-                    print(ConstantApi.headers)
-                    do{
-                        let model = try JSONDecoder().decode(BalanceDetailsModel.self, from: data)
-                        // print(model)
-                        completion(model,nil)
+                do {
+                    let dict = try JSONSerialization.jsonObject(with: dictResponse, options: []) as? [String: Any]
+                    //oprint(dict)
+                    
+                    // Process base64-encoded string
+                    if let base64Encoded = dict?["data"] as? String {
+                        // Base64 decoding
+                        guard let decodedData = Data(base64Encoded: base64Encoded),
+                              let decodedString = String(data: decodedData, encoding: .utf8) else {
+                            completion(nil, NSError(domain: "APIError", code: 1003, userInfo: [NSLocalizedDescriptionKey: "Base64 decoding failed"]))
+                            return
+                        }
                         
-                    }catch{
-                        
+                        // Convert the decoded string to a dictionary
+                        if let decodedDict = EncryptionService.shared.convertToDictionary(text: decodedString) {
+                            do {
+                                // Decrypt the data
+                                let decryptedData = try EncryptionService.shared.decrypt(encrypted: decodedDict["encrypted"] as! String, iv: decodedDict["iv"] as! String, authTag: decodedDict["authTag"] as! String, jwtToken: Common.shared.token ?? "")
+                                
+                                if let stringData = decryptedData {
+                                    if let jsonData = stringData.data(using: .utf8) {
+                                        let jsonObject = try JSONSerialization.jsonObject(with: jsonData, options: [])
+                                        if let dictionary = jsonObject as? [String: Any] {
+                                            // Now we have a dictionary, proceed with serialization
+                                            let data = try JSONSerialization.data(withJSONObject: dictionary, options: [])
+                                            // Decode the data into a model
+                                            let model = try JSONDecoder().decode(BalanceDetailsModel.self, from: data)
+                                            completion(model, nil)
+                                        }
+                                    }
+                                }
+                                
+                            } catch {
+                                // Handle decryption or decoding errors
+                                print("Decryption or JSON decoding failed: \(error.localizedDescription)")
+                                completion(nil, error)
+                            }
+                        } else {
+                            print("Failed to convert decoded string to dictionary.")
+                            completion(nil, NSError(domain: "APIError", code: 1004, userInfo: [NSLocalizedDescriptionKey: "Invalid decoded string"]))
+                        }
+                        //            } else {
+                        //                print("Base64 string not found in response.")
+                        //                completion(nil, NSError(domain: "APIError", code: 1005, userInfo: [NSLocalizedDescriptionKey: "Base64 encoded data missing in response"]))
+                        //            }
+                        SwiftLoader.hide()
                         
                     }
-                    
+                } catch {
+                    print(error.localizedDescription)
                 }
+                
+            
             }
         }
     }

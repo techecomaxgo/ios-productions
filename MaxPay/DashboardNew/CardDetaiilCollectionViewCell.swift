@@ -20,13 +20,16 @@ class CardDetaiilCollectionViewCell: UICollectionViewCell {
         // Initialization code
         
     }
+    
     func setValues(accountDetailsOnIIN: AccountDetailsOnIIN) {
+        let name = accountDetailsOnIIN.name
         
-        lblBankName.text = accountDetailsOnIIN.bankName
+        let nameAraay = name?.components(separatedBy: "SO").first
+        lblUserName.text = nameAraay
        
         lblCardNo.attributedText = formatCardNumber(accountDetailsOnIIN.maskedAccnumber ?? "")
         
-        lblUserName.text = accountDetailsOnIIN.name
+        lblBankName.text = accountDetailsOnIIN.bankName
         imgBankLogo.sd_setImage(with: URL(string: "\(accountDetailsOnIIN.bankLogo ?? "")") , placeholderImage: UIImage(named: "placeholder.png"))
     }
     
@@ -54,4 +57,18 @@ class CardDetaiilCollectionViewCell: UICollectionViewCell {
         return attributedString
     }
 
+}
+
+extension CardDetaiilCollectionViewCell {
+    func splitIntoChunks(of size: Int, text: String) -> [String] {
+        var result: [String] = []
+        let characters = Array(text)
+
+        for i in stride(from: 0, to: characters.count, by: size) {
+            let chunk = characters[i..<min(i + size, characters.count)]
+            result.append(String(chunk))
+        }
+
+        return result
+    }
 }

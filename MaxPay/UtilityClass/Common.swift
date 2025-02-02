@@ -47,6 +47,7 @@ class Common {
     let PRIMARY_ACC_NO = "PRIMARY_ACC_NO"
     let LATITUDE = "lat"
     let LONGITUDE = "long"
+    let CADRNUMBER = "cadnumber"
     
     func isValidPhone(phone: String) -> Bool {
             let phoneRegex = "^[0-9+]{0,1}+[0-9]{5,16}$"
@@ -261,6 +262,14 @@ class Common {
             return (defaults.value(forKey: LONGITUDE) as? String)
         }set{
             defaults.set(newValue, forKey: LONGITUDE)
+        }
+    }
+    
+    var cardNumbe:String?{
+        get{
+            return (defaults.value(forKey: CADRNUMBER) as? String)
+        }set{
+            defaults.set(newValue, forKey: CADRNUMBER)
         }
     }
     
