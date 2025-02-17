@@ -6,10 +6,10 @@ import Foundation
 
 struct FRC: Codable {
 
-	let rs: Int
-	let validity: String
-	let desc: String
-	let TypeField: String
+	let rs: Int?
+	let validity: String?
+	let desc: String?
+	let TypeField: String?
 
 	private enum CodingKeys: String, CodingKey {
 		case rs = "rs"

@@ -14,7 +14,7 @@ class MoreTableViewCell: UITableViewCell {
     @IBOutlet weak var btnPaybill: UIButton!
     @IBOutlet weak var btnShareIdea: UIButton!
     @IBOutlet weak var btnLoustAndFound: UIButton!
-    @IBOutlet weak var btnRecharge: UIButton!
+    @IBOutlet weak var btnContest: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

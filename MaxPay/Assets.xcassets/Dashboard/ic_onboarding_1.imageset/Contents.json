@@ -2,16 +2,7 @@
   "images" : [
     {
       "filename" : "Screenshot 2024-01-16 at 11.32.18 AM.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
+      "idiom" : "universal"
     }
   ],
   "info" : {

@@ -59,10 +59,8 @@ extension QuizWinnerViewController: UICollectionViewDelegate,UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "QuizWinnerCollectionViewCell", for: indexPath) as! QuizWinnerCollectionViewCell
-//        cell.setValues(accountDetailsOnIIN: cardsDetailArr[indexPath.item])
-//        //cell.imgBankLogo.image = indexPath.row == 0 ? UIImage(named: "my-card-ic") : UIImage(named: "my-card2-ic")
-//        cell.contentView.isUserInteractionEnabled = true
-//        cell.btnTap.addTarget(self, action: #selector(handleTap(_:)), for: .touchUpInside)
+        
+        cell.lblName.text = rankedData?.resultQuizViewModelbase?.rankedResult?[indexPath.row].user?.firstName
         return cell
     }
     

@@ -95,9 +95,13 @@ class VCSideMenu: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        let btn = UIButton(type: UIButton.ButtonType.custom)
-        btn.tag = indexPath.row
-        self.onCloseMenuClick(btn)
+        if arrayMenuOptions[indexPath.row]["vc"] == "" {
+            self.showAlert(with: "", message: "Comming Soon")
+        }else {
+            let btn = UIButton(type: UIButton.ButtonType.custom)
+            btn.tag = indexPath.row
+            self.onCloseMenuClick(btn)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat

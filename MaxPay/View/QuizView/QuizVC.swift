@@ -17,7 +17,7 @@ class QuizVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
         
@@ -25,7 +25,11 @@ class QuizVC: BaseVC {
     
     
     override func viewWillAppear(_ animated: Bool) {
-            super.viewWillAppear(animated)
+        // Fetch card array from user defaults
+        
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: animated)
             
            // self.tabBarController?.tabBar.isHidden = true
 
@@ -41,13 +45,9 @@ class QuizVC: BaseVC {
 //        let vc = storyBoard.instantiateViewController(withIdentifier: "QuizQuesViewController") as! QuizQuesViewController
 //     
 //        self.navigationController?.pushViewController(vc, animated: true)
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "QuizResultVC") as! QuizResultVC
-        //vc.quizdata = self?.getQuizViewModel.getQuizModelBase?.data
-
-        self.navigationController?.pushViewController(vc, animated: true)
+//
         
-       /* DispatchQueue.main.async {
+        DispatchQueue.main.async {
             
             SwiftLoader.show(animated: true)
             
@@ -116,8 +116,8 @@ class QuizVC: BaseVC {
                         }
                         
                     }else{
-                        
-                        self?.showErrorAlert(self?.getQuizViewModel.getQuizModelBase?.message ?? "")
+                        self?.showAlert(message: self?.getQuizViewModel.getQuizModelBase?.message ?? "")
+                       // self?.showErrorAlert(self?.getQuizViewModel.getQuizModelBase?.message ?? "")
                         
                     }
                     
@@ -130,9 +130,24 @@ class QuizVC: BaseVC {
                 print(error!)
                 SwiftLoader.hide()
             }
-        }*/
+        }
     }
     
-    
+    func showAlert(message: String) {
+        let alert = UIAlertController(title: "Confirm", message: message, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+            DispatchQueue.main.async {
+                let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+                let vc = storyBoard.instantiateViewController(withIdentifier: "QuizResultVC") as! QuizResultVC
+                
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }))
+        
+        if let topVC = UIApplication.shared.keyWindow?.rootViewController {
+            topVC.present(alert, animated: true)
+        }
+    }
 
 }

@@ -9,8 +9,16 @@ import UIKit
 
 class BillsTableViewCell: UITableViewCell {
 
-    @IBAction func btnViewAll(_ sender: Any) {
-    }
+   
+    @IBOutlet weak var btnViewAll: UIButton!
+    @IBOutlet weak var btnFastTag: UIButton!
+    @IBOutlet weak var btnDTH: UIButton!
+    @IBOutlet weak var btnBroadband: UIButton!
+    @IBOutlet weak var btnWeather: UIButton!
+    @IBOutlet weak var btnGas: UIButton!
+    @IBOutlet weak var btnCrreditCard: UIButton!
+    @IBOutlet weak var btnElectaricity: UIButton!
+    @IBOutlet weak var btnMobileRecharge: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -4,6 +4,8 @@
 <dict>
 	<key>aps-environment</key>
 	<string>development</string>
+	<key>com.apple.developer.associated-domains</key>
+	<array/>
 	<key>com.apple.developer.upi-device-validation</key>
 	<true/>
 </dict>

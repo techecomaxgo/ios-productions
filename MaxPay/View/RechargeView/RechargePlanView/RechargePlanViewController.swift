@@ -466,7 +466,7 @@ extension RechargePlanViewController {
             
             // 7007439651
             
-            rechargeAllPlanVM.rechargePlanCall(numStr: "7007439651", skey: "AVJQIdwn79iR0zlP0iKNKumME")
+            rechargeAllPlanVM.rechargePlanCall(numStr: "9891989203", skey: "AVJQIdwn79iR0zlP0iKNKumME")
             
             
         }else{
@@ -495,134 +495,134 @@ extension RechargePlanViewController {
             case .dataLoaded:
                 
                 print("Data loaded...")
-                DispatchQueue.main.async {
-                                        
-                   // print((self?.rechargeAllPlanVM.rechargeAllModel?.data?.plans)!)
-                    
-                    SwiftLoader.hide()
-                    
-                    self?.topUpAllData = []
-                    self?.fULLTTAllData = []
-                    self?.DATAallData = []
-                    self?.RomaingAllData = []
-                    self?.FRCAllData = []
-                    self?.JioPhoneAllData = []
-                    
-                    if self?.rechargeAllPlanVM.rechargeAllModel?.data.success != false {
-                        
-                    self?.plansViewModelData = self?.rechargeAllPlanVM.rechargeAllModel?.data
-
-                   // print(self!.plansViewModelData)
-                        
-                        // Access the plans dictionary
-                        
-                        self?.plansDict = self?.plansViewModelData?.plans
-                        
- 
-                        // Usage example
-                        let keys = Plans.nonStringKeys()
-                        print(keys)
-                        
-                        self?.segControl.items = keys
-                        
-                        
-                        self?.topUpAllData = self?.plansViewModelData?.plans?.tOPUP
-                        
-                        self?.fULLTTAllData = self?.plansViewModelData?.plans?.fULLTT
-                        
-                        self?.DATAallData = self?.plansViewModelData?.plans?.dATA
-                        
-                        self?.RomaingAllData = self?.plansViewModelData?.plans?.romaing
-                        
-                        self?.FRCAllData = self?.plansViewModelData?.plans?.fRC
-                        
-                        self?.JioPhoneAllData = self?.plansViewModelData?.plans?.jioPhone
-                        
-                        
-                        //if self?.plansViewModelData?.plans
-                        
-                        self?.selectedItemStr = self?.segControl.items[0] ?? ""
-
-                        
-                        if  self?.segControl.items[0] == "TOPUP" {
-                            
-                       
-                            self?.topUpAllData = self?.plansViewModelData?.plans?.tOPUP
-
-                           
-                       }else if  self?.segControl.items[0] == "DATA" {
-                           
-                       
-                           self?.DATAallData = self?.plansViewModelData?.plans?.dATA
-
-                           
-                       }else if  self?.segControl.items[0] == "FULLTT" {
-                           
-                           self?.fULLTTAllData = self?.plansViewModelData?.plans?.fULLTT
-
-                           
-                       }else if  self?.segControl.items[0] == "FRC" {
-                           
-                           self?.FRCAllData = self?.plansViewModelData?.plans?.fRC
-
-                           
-                       }else if  self?.segControl.items[0] == "JioPhone" {
-                   
-                           self?.JioPhoneAllData = self?.plansViewModelData?.plans?.jioPhone
-
-                           
-                       }else if  self?.segControl.items[0] == "Romaing" {
-                           
-                       
-                           self?.RomaingAllData = self?.plansViewModelData?.plans?.romaing
-
-                           
-                       }else {
-                           
-                           
-                       }
-                        
-                        
-                        
-                        
-                        DispatchQueue.main.async
-                        {
-                        
-                            self?.tablePlansView.reloadData()
-
-                        }
-                        
-
-                        
-                        
-                    }else{
-                        
-                        self?.showErrorAlert(self?.rechargeAllPlanVM.rechargeAllModel?.data.message ?? "")
-
-                        //print(self?.rechargeAllPlanVM.rechargeAllModel?.data)
-
-                        
-                    }
-                        
-                        
-                        
-                    
-                    
+//                DispatchQueue.main.async {
+//                                        
+                print((self?.rechargeAllPlanVM.rechargeAllModel?.data?.plans)!)
 //                    
-//                    if self?.rechargeAllPlanVM.checksumModel?.status == "success" {
+//                    SwiftLoader.hide()
+//                    
+//                    self?.topUpAllData = []
+//                    self?.fULLTTAllData = []
+//                    self?.DATAallData = []
+//                    self?.RomaingAllData = []
+//                    self?.FRCAllData = []
+//                    self?.JioPhoneAllData = []
+//                    
+//                    if self?.rechargeAllPlanVM.rechargeAllModel?.data?.status == 0 {
 //                        
-//                        print(self?.rechargeAllPlanVM.rechargeAllModel?.data!)
+//                    self?.plansViewModelData = self?.rechargeAllPlanVM.rechargeAllModel?.data
+//
+//                   // print(self!.plansViewModelData)
 //                        
-//                  
+//                        // Access the plans dictionary
+//                        
+//                        self?.plansDict = self?.plansViewModelData?.plans
+//                        
+// 
+//                        // Usage example
+//                        let keys = Plans.nonStringKeys()
+//                        print(keys)
+//                        
+//                        self?.segControl.items = keys
+//                        
+//                        
+//                        self?.topUpAllData = self?.plansViewModelData?.plans?.tOPUP
+//                        
+//                        self?.fULLTTAllData = self?.plansViewModelData?.plans?.fULLTT
+//                        
+//                        self?.DATAallData = self?.plansViewModelData?.plans?.dATA
+//                        
+//                        self?.RomaingAllData = self?.plansViewModelData?.plans?.romaing
+//                        
+//                        self?.FRCAllData = self?.plansViewModelData?.plans?.fRC
+//                        
+//                        self?.JioPhoneAllData = self?.plansViewModelData?.plans?.jioPhone
+//                        
+//                        
+//                        //if self?.plansViewModelData?.plans
+//                        
+//                        self?.selectedItemStr = self?.segControl.items[0] ?? ""
+//
+//                        
+//                        if  self?.segControl.items[0] == "TOPUP" {
+//                            
+//                       
+//                            self?.topUpAllData = self?.plansViewModelData?.plans?.tOPUP
+//
+//                           
+//                       }else if  self?.segControl.items[0] == "DATA" {
+//                           
+//                       
+//                           self?.DATAallData = self?.plansViewModelData?.plans?.dATA
+//
+//                           
+//                       }else if  self?.segControl.items[0] == "FULLTT" {
+//                           
+//                           self?.fULLTTAllData = self?.plansViewModelData?.plans?.fULLTT
+//
+//                           
+//                       }else if  self?.segControl.items[0] == "FRC" {
+//                           
+//                           self?.FRCAllData = self?.plansViewModelData?.plans?.fRC
+//
+//                           
+//                       }else if  self?.segControl.items[0] == "JioPhone" {
+//                   
+//                           self?.JioPhoneAllData = self?.plansViewModelData?.plans?.jioPhone
+//
+//                           
+//                       }else if  self?.segControl.items[0] == "Romaing" {
+//                           
+//                       
+//                           self?.RomaingAllData = self?.plansViewModelData?.plans?.romaing
+//
+//                           
+//                       }else {
+//                           
+//                           
+//                       }
+//                        
+//                        
+//                        
+//                        
+//                        DispatchQueue.main.async
+//                        {
+//                        
+//                            self?.tablePlansView.reloadData()
+//
+//                        }
+//                        
+//
+//                        
+//                        
 //                    }else{
 //                        
-//                        //self?.showErrorAlert(self?.rechargeAllPlanVM.rechargeAllModel?.data?.message ?? "")
-//                        print(self?.rechargeAllPlanVM.rechargeAllModel?.data)
-//                        SwiftLoader.hide()
+//                        self?.showErrorAlert(self?.rechargeAllPlanVM.rechargeAllModel?.data.message ?? "")
+//
+//                        //print(self?.rechargeAllPlanVM.rechargeAllModel?.data)
+//
+//                        
 //                    }
-                    
-                    
-                }
+//                        
+//                        
+//                        
+//                    
+//                    
+////                    
+////                    if self?.rechargeAllPlanVM.checksumModel?.status == "success" {
+////                        
+////                        print(self?.rechargeAllPlanVM.rechargeAllModel?.data!)
+////                        
+////                  
+////                    }else{
+////                        
+////                        //self?.showErrorAlert(self?.rechargeAllPlanVM.rechargeAllModel?.data?.message ?? "")
+////                        print(self?.rechargeAllPlanVM.rechargeAllModel?.data)
+////                        SwiftLoader.hide()
+////                    }
+//                    
+//                    
+//                }
             case .error(let error):
                 print(error!)
                 SwiftLoader.hide()

@@ -46,6 +46,7 @@ class BhimUPIHistoryVC: BaseVC {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: animated)
         if isFromTabbar == true{
             
         }else{

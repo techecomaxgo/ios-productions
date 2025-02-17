@@ -12,20 +12,16 @@ class ChainViewController: BaseVC {
     
     
     @IBOutlet weak var imgTbUser: UIImageView!
-    
-    
     @IBOutlet weak var lblOne: UILabel!
-    
-    
     @IBOutlet weak var lblTwo: UILabel!
-    
-
     @IBOutlet weak var tableChainView: UITableView!
-    
+    @IBOutlet weak var chainActive: UILabel!
     
     private var chainViewModel =  ChainViewModel()
 
     var usersChainArr : [Users]? = []
+    var referCode = ""
+    var isActive = false
     
  
 
@@ -40,6 +36,7 @@ class ChainViewController: BaseVC {
         if isConnected == true {
             
             chainViewModel.ChainModelApiCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME")
+            chainViewModel.ChainReferDetailsApiCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME")
             
             observeChainApi()
             
@@ -54,8 +51,8 @@ class ChainViewController: BaseVC {
         
         
         
-        imgTbUser.layer.cornerRadius = 12.0
-        imgTbUser.clipsToBounds = true
+        //imgTbUser.layer.cornerRadius = 12.0
+        //imgTbUser.clipsToBounds = true
 
         
         lblTwo.textAlignment = .center
@@ -103,7 +100,25 @@ class ChainViewController: BaseVC {
 
  }
     
-    
+    @IBAction func btnMakeChainAction(_ sender: Any) {
+        //let link = "https://api.maxupi.in/chain/referral?chainid=OBL"
+
+        let message = "Hi,\n" +
+        "Inviting you to join Max UPI\n" +
+        "an interesting app which provides you incredible offers on Mobile Recharge, Bill Payments & many more.\n\n" +
+        "Use my Chain Id:- \(referCode)\n\nDownload app from link:"
+            let link = URL(string: "https://api.maxupi.in/chain/referral?chainid=\(referCode)")!
+            
+            let activityVC = UIActivityViewController(activityItems: [message, link], applicationActivities: nil)
+            
+            // For iPad support (avoids crashes)
+            if let popoverController = activityVC.popoverPresentationController {
+                popoverController.sourceView = sender as! UIView
+            }
+            
+            present(activityVC, animated: true)
+    }
+    //getReferDetailsApi
     //MARK: Observing the data
     func observeChainApi() {
         
@@ -129,6 +144,20 @@ class ChainViewController: BaseVC {
                     SwiftLoader.hide()
                     
                     if self?.chainViewModel.chainModelBase?.status == "success" {
+                        let data = self?.chainViewModel.chainModelBase?.data
+                        let isActive = self?.chainViewModel.chainModelBase?.isActive
+                        self?.referCode = data ?? ""
+                        self?.isActive = isActive ?? false
+                        print("Data refer key \(data ?? "")")
+                        print("Data user isActive\(isActive ?? false)")
+                        if isActive == true{
+                            self?.chainActive.text = "Active"
+                        }else{
+                            self?.chainActive.text = "Inactive"
+                            self?.chainActive.textColor = .red
+                        }
+
+                       
                         
                         //print(self?.rankVM.rankModelBase?.data?.allrank)
                         
@@ -137,15 +166,11 @@ class ChainViewController: BaseVC {
                        // self?.operatorResData = self?.operatorVM.OperatorBaseModel?.responseData
                         
                         self?.usersChainArr = self?.chainViewModel.chainModelBase?.users
-                        
+                        print("Data user isActive \(String(describing: self?.usersChainArr))")
 
                         DispatchQueue.main.async {
-                            
                             self?.tableChainView.reloadData()
-                            
                             SwiftLoader.hide()
-                            
-                            
                         }
                         
                         
@@ -153,14 +178,14 @@ class ChainViewController: BaseVC {
                         
                         // Create the attributed string
                         let countStr = self?.chainViewModel.chainModelBase?.count ?? 0
-                        let fulltText = "\(countStr) members joined"
+                        let fulltText = "\(countStr) My Chain"
                         let attributedRString = NSMutableAttributedString(string: fulltText)
                         
                         // Define attributes
                         let yellowAttributes: [NSAttributedString.Key: Any] = [
                             .font: UIFont.boldSystemFont(ofSize: 16),
-                            .foregroundColor: UIColor(red: 0.81, green: 0.90, blue: 0.31, alpha: 1.00)
-                            
+                            //.foregroundColor: UIColor(red: 0.81, green: 0.90, blue: 0.31, alpha: 1.00)
+                            .foregroundColor: UIColor.black
                         ]
                         
                         let blackAttributes: [NSAttributedString.Key: Any] = [

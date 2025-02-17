@@ -1902,15 +1902,30 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
             
         }else if indexPath.row == 4 {
             let cell = tableViewDashboard.dequeueReusableCell(withIdentifier: "BannerTableViewCell") as! BannerTableViewCell
+            
             return cell
         }else if indexPath.row == 5 {
             let cell = tableViewDashboard.dequeueReusableCell(withIdentifier: "BillsTableViewCell") as! BillsTableViewCell
+            //if cardsArr.count > 0  {
+                cell.btnMobileRecharge.addTarget(self, action: #selector(btnMobileRecharge(_:)), for: .touchUpInside)
+                cell.btnElectaricity.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
+                cell.btnCrreditCard.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
+                cell.btnGas.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
+                cell.btnWeather.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
+                cell.btnFastTag.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
+                cell.btnDTH.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
+                cell.btnBroadband.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
+                cell.btnViewAll.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
+           // }
             return cell
         }else if indexPath.row == 6 {
             let cell = tableViewDashboard.dequeueReusableCell(withIdentifier: "GraffTableViewCell") as! GraffTableViewCell
             return cell
         } else  if indexPath.row == 7 {
             let cell = tableViewDashboard.dequeueReusableCell(withIdentifier: "TravelTableViewCell") as! TravelTableViewCell
+            cell.btnBus.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
+            cell.btnFlight.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
+            cell.btnHotel.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
             return cell
         } else  {
             let cell = tableViewDashboard.dequeueReusableCell(withIdentifier: "MoreTableViewCell") as! MoreTableViewCell
@@ -1919,7 +1934,7 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
             cell.btnPaybill.addTarget(self, action: #selector(payBillMoreAction(_:)), for: .touchUpInside)
             cell.btnShareIdea.addTarget(self, action: #selector(shaaredIdeaAction(_:)), for: .touchUpInside)
             cell.btnLoustAndFound.addTarget(self, action: #selector(lostAnsFound(_:)), for: .touchUpInside)
-            cell.btnRecharge.addTarget(self, action: #selector(rechargeAction(_:)), for: .touchUpInside)
+            cell.btnContest.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
             
             return cell
         }
@@ -2060,7 +2075,7 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
     
     @objc func favouriteAction(_ sender: UIButton) {
         
-        
+        self.showErrorAlert("Comming soon")
     }
     @objc func uPIAction(_ sender: UIButton) {
         let primaryAccount  = self.checkAccountDetail()
@@ -2095,6 +2110,7 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
 //        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
 //        let vc = storyBoard.instantiateViewController(withIdentifier: "MandateNewReqVC") as! MandateNewReqVC
 //        self.navigationController?.pushViewController(vc, animated: true)
+        self.showErrorAlert("Comming soon")
     }
     
     @objc func lostAnsFound(_ sender: UIButton) {
@@ -2104,9 +2120,15 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
-    
-    @objc func rechargeAction(_ sender: UIButton) {
-        
+   // btnMobileRecharge
+    @objc func btnMobileRecharge(_ sender: UIButton) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "USP", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "RechargeViewController") as! RechargeViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+        //self.showErrorAlert("Comming soon")
+    }
+    @objc func messageAction(_ sender: UIButton) {
+        self.showErrorAlert("Comming soon")
     }
     
     func buttonTag(index: Int) {

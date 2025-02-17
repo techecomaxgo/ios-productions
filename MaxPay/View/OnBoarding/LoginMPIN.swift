@@ -345,7 +345,7 @@ extension LoginMPIN {
                 print("Data loaded...")
                 SwiftLoader.hide()
                 
-               // print(self?.loginViewModel.loginModel?.dataLogin)
+                print("login oAuthtoken \(self?.loginViewModel.loginModel?.dataLogin)")
                 
                 Common.shared.isLoggedIn = true
                 Common.shared.token = self?.loginViewModel.loginModel?.token ?? ""

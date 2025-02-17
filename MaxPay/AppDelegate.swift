@@ -52,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SmartechDelegate {
         }
         
         //Configure prevent screenshot
-        screenProtectorKit.configurePreventionScreenshot()
+//        screenProtectorKit.configurePreventionScreenshot()
         
        
         //MB : uncomment for prevent video capturing 
@@ -271,7 +271,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SmartechDelegate {
         //Author: Mohit Bisht
         //Date: 15/12/2024
         //disable prevent from screenshot
-        screenProtectorKit.disablePreventScreenshot()
+//        screenProtectorKit.disablePreventScreenshot()
         if !self.visualEffectView.isDescendant(of: self.window!) {
             let blurEffect = UIBlurEffect(style: .light)
             self.visualEffectView = UIVisualEffectView(effect: blurEffect)
@@ -287,7 +287,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SmartechDelegate {
         //Author: Mohit Bisht
         //Date: 15/12/2024
         //prevent from screenshot
-        screenProtectorKit.enabledPreventScreenshot()
+//        screenProtectorKit.enabledPreventScreenshot()
         //MB: 
         self.visualEffectView.removeFromSuperview()
 

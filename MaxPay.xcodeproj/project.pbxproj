@@ -4939,25 +4939,26 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MaxPay/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Max UPI";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow camera access to scan QR Code";
 				INFOPLIST_KEY_NSContactsUsageDescription = "We need access to your contacts to show them in the app.";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location for necessary to transactions reasons";
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to provide better services.";
-				INFOPLIST_KEY_NSLocationUsageDescription = "We need your location for necessary to transactions reasons";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to provide better services.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Enable location services to securely verify your location during UPI transactions";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "To find nearby merchants for quick UPI payments, we need access to your location only when you are actively using the app";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Enable location services to securely verify your location during UPI transactions";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app requires access to your photo library to allow you to upload photos for payment processing.\n";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use your data to provide a better and personalized experience, including relevant content and ads. Your privacy is important, and you can change your preferences anytime in Settings.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 17.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxupi.in.maxpay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -4991,25 +4992,26 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MaxPay/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Max UPI";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow camera access to scan QR Code";
 				INFOPLIST_KEY_NSContactsUsageDescription = "We need access to your contacts to show them in the app.";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location for necessary to transactions reasons";
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to provide better services.";
-				INFOPLIST_KEY_NSLocationUsageDescription = "We need your location for necessary to transactions reasons";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to provide better services.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Enable location services to securely verify your location during UPI transactions";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "To find nearby merchants for quick UPI payments, we need access to your location only when you are actively using the app";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Enable location services to securely verify your location during UPI transactions";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app requires access to your photo library to allow you to upload photos for payment processing.\n";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use your data to provide a better and personalized experience, including relevant content and ads. Your privacy is important, and you can change your preferences anytime in Settings.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 17.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxupi.in.maxpay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

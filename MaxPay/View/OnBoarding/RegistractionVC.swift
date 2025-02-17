@@ -19,11 +19,10 @@ class RegistractionVC: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         btnSendOTP.layer.applyCornerRadiusShadow()
         txtPhoneNumber.delegate = self
-        
     }
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange,
-                           replacementString string: String) -> Bool
-    {
+                           replacementString string: String) -> Bool {
         let maxLength = 10
         let currentString: NSString = txtPhoneNumber.text! as NSString
         let newString: NSString =  currentString.replacingCharacters(in: range, with: string) as NSString
@@ -118,6 +117,7 @@ extension RegistractionVC {
                         Common.shared.phoneNo = self?.txtPhoneNumber.text!
                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
                        let vc = storyboard.instantiateViewController(withIdentifier: "OTPVerifyVC") as! OTPVerifyVC
+                        vc.isFromForgotPin = true
                         vc.strPhoneNumber = self?.txtPhoneNumber.text! ?? ""
                        self?.navigationController?.pushViewController(vc,animated: true)
                     } else if self?.registractionVWMidel.registractionModel?.status == "redirect" {

@@ -51,7 +51,7 @@
                                         <color key="textColor" name="reload-grey-color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMm-Ej-MOl">
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMm-Ej-MOl" userLabel="View All">
                                         <rect key="frame" x="469.33333333333331" y="10" width="88.666666666666686" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="tintColor" systemColor="systemGreenColor"/>
@@ -59,9 +59,6 @@
                                         <state key="normal" title="View All " image="arrowshape.right.circle.fill" catalog="system">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <action selector="btnViewAll:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hNl-YJ-8Aj"/>
-                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tYq-Q6-7lF">
                                         <rect key="frame" x="5" y="39" width="556" height="110"/>
@@ -807,6 +804,17 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnBroadband" destination="iwp-Gw-Utn" id="xGg-yi-0gl"/>
+                <outlet property="btnCrreditCard" destination="9rN-bk-teP" id="Ec7-2z-wI4"/>
+                <outlet property="btnDTH" destination="TOt-5c-sUq" id="osX-OS-78m"/>
+                <outlet property="btnElectaricity" destination="ZbQ-Om-hJ6" id="tfA-6J-X11"/>
+                <outlet property="btnFastTag" destination="ZLM-Id-Hl6" id="iXw-oX-iJD"/>
+                <outlet property="btnGas" destination="OOx-1o-Eb3" id="Nm6-yR-iDJ"/>
+                <outlet property="btnMobileRecharge" destination="3Co-NP-yym" id="aOq-5O-aIZ"/>
+                <outlet property="btnViewAll" destination="wMm-Ej-MOl" id="Ap1-SG-jd8"/>
+                <outlet property="btnWeather" destination="PUh-gq-lOk" id="zAh-fQ-x4C"/>
+            </connections>
             <point key="canvasLocation" x="200" y="105.28169014084507"/>
         </tableViewCell>
     </objects>
@@ -833,7 +841,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

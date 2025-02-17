@@ -40,6 +40,32 @@ final class ChainViewModel {
         })
     }
 
+    func ChainReferDetailsApiCall(skeyStr:String) {
+        let params : [String:Any]  = ["skey":skeyStr]
+        print("The dictionary is : \(params)")
+        self.eventHandler?(.loading)
+        ApiManager.sharedInstance.ChainReferDetailsApi(dict:params as NSDictionary, completion: { (model, err) in
+            self.eventHandler?(.stopLoading)
+            print("Failed to fetch courses:", model ?? "")
+            if let err = err {
+                print("Failed to fetch courses:", err)
+                return
+            }
+            if let model = model {
+                
+                self.chainModelBase = model
+                
+                self.eventHandler?(.dataLoaded)
+                
+            }else{
+                self.eventHandler?(.error(err))
+            }
+        })
+    }
+    
+    
+    
+    
 }
 extension ChainViewModel {
 

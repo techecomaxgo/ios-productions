@@ -598,10 +598,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="btnContest" destination="Sh0-R1-erl" id="1Hl-8g-Zja"/>
                 <outlet property="btnFavourit" destination="Lyg-94-v48" id="o21-Ol-XUw"/>
                 <outlet property="btnLoustAndFound" destination="FpN-vL-AMw" id="AQ5-r5-MvT"/>
                 <outlet property="btnPaybill" destination="PUf-fi-UPd" id="cJP-y8-uP1"/>
-                <outlet property="btnRecharge" destination="Sh0-R1-erl" id="lCn-fh-gSA"/>
                 <outlet property="btnShareIdea" destination="NEI-jO-sdZ" id="QDF-tw-Xpc"/>
                 <outlet property="btnUPI" destination="0VT-9f-ewZ" id="BbG-pt-cBV"/>
             </connections>
