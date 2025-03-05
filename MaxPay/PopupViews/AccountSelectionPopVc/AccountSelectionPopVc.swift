@@ -19,7 +19,7 @@ class AccountSelectionPopVc: UIViewController {
 
     
     var delegatePopupBankSelected : bankSelectedDelegate?
-
+    var vpaUpdate = ""
     @IBOutlet weak var btnPlayNow: DesignableButton!
     
     @IBOutlet weak var tableViewAccount: UITableView!

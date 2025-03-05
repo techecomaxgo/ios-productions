@@ -39,6 +39,7 @@ target 'MaxPay' do
   pod 'SDWebImage'
   pod 'FSPopoverView'
   pod 'Smartech-iOS-SDK', '~> 3.5.3'
+  pod 'Firebase/DynamicLinks'
 #  pod 'Cosmos', '~> 25.0'
 
 end

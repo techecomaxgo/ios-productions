@@ -20,7 +20,7 @@ class PaymentUPIIDNewVC: BaseVC, AVAudioPlayerDelegate {
     
     var amStr = ""
     var amdigit : Double?
-
+    var vpaUpdate = ""
     var mamStr = ""
     var mamDigit : Double?
     
@@ -271,8 +271,7 @@ class PaymentUPIIDNewVC: BaseVC, AVAudioPlayerDelegate {
     }
 
     
-    
-    func checkvpa(vpa: String) {
+        func checkvpa(vpa: String) {
         
         let payerInfo = PayerInfo(accountnumber: accountDetails?.accRefNumber, mcc: MCC, name: accountDetails?.name, payervpa: accountDetails?.vpa)
         
@@ -458,8 +457,11 @@ class PaymentUPIIDNewVC: BaseVC, AVAudioPlayerDelegate {
                         SwiftLoader.hide()
                     }
                     
-                    print(data)
-                    
+                   // print(data)
+                    if let dt = data as? [String: Any]{
+                        self.vpaUpdate = dt["vpa"] as? String ?? ""
+                        print(self.vpaUpdate)
+                    }
                     if let dt = data {
                         
                         if let data = self.convertToSomeAnyData(dt) {
@@ -469,7 +471,7 @@ class PaymentUPIIDNewVC: BaseVC, AVAudioPlayerDelegate {
                                // print(data)
                                 
                                 print(self.mccCodeDNewVC)
-                                
+                              
                                 print(self.beneName)
                                 
                                 DispatchQueue.main.async {
@@ -1024,7 +1026,7 @@ class PaymentUPIIDNewVC: BaseVC, AVAudioPlayerDelegate {
                                 let storyboard = UIStoryboard(name: "BhimUpi", bundle: nil)
                                 
                                 let vc = storyboard.instantiateViewController(withIdentifier: "PaymentUPIIDNewConfirmationVC") as! PaymentUPIIDNewConfirmationVC
-                                
+                                vc.vpaUpdate = self.vpaUpdate
                                 vc.accountDetails = self.accountDetails
                                 vc.beneVpa = self.beneVpa
                                 vc.beneName = self.beneName
@@ -1032,6 +1034,7 @@ class PaymentUPIIDNewVC: BaseVC, AVAudioPlayerDelegate {
                                 vc.amtDecimal = self.txtAmount.text ?? ""
                                 vc.remark =  self.txtRemark.text ?? ""
                                 vc.mccCodeStr =  self.mccCodeDNewVC
+                                
                                 self.navigationController?.pushViewController(vc, animated: true)
                             }
                             
@@ -1055,6 +1058,7 @@ class PaymentUPIIDNewVC: BaseVC, AVAudioPlayerDelegate {
                         
                         vc.accountDetails = self.accountDetails
                         vc.beneVpa = self.beneVpa
+                        vc.vpaUpdate = self.vpaUpdate
                         vc.beneName = self.beneName
                         vc.transId = self.transId
                         vc.amtDecimal = self.txtAmount.text ?? ""
@@ -1243,6 +1247,7 @@ class PaymentUPIIDNewVC: BaseVC, AVAudioPlayerDelegate {
                             
                             vc.accountDetails = self.accountDetails
                             vc.beneVpa = self.beneVpa
+                            vc.vpaUpdate = self.vpaUpdate
                             vc.beneName = self.beneName
                             vc.transId = dataResp
                             vc.amount = self.amtDecimal
@@ -1275,6 +1280,7 @@ class PaymentUPIIDNewVC: BaseVC, AVAudioPlayerDelegate {
                         
                         vc.accountDetails = self.accountDetails
                         vc.beneVpa = self.beneVpa
+                        vc.vpaUpdate = self.vpaUpdate
                         vc.beneName = self.beneName
                         vc.transId = dataResp
                         vc.amount = self.amtDecimal

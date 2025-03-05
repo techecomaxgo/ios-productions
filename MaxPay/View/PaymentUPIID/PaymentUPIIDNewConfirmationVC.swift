@@ -17,7 +17,7 @@ class PaymentUPIIDNewConfirmationVC: BaseVC, CLLocationManagerDelegate, bankSele
     var tranTypeStr = "P2P"
     var mccCodeStr = "0000"
     var remrkStr = ""
-    
+    var vpaUpdate = ""
     private var limitCheckViewModel =  LimitCheckViewModel()
     var locationManager: CLLocationManager!
     
@@ -193,7 +193,9 @@ class PaymentUPIIDNewConfirmationVC: BaseVC, CLLocationManagerDelegate, bankSele
                 remarks: remrkStr,
                 initMode: "00",
                 purpose: "00",
-                refCategory: "00"
+                refCategory: "00",
+                orderId: "",
+                refUrl: ""
             )
         
             let strPaymentInput = encodeToJSON(paymentInput)
@@ -244,6 +246,7 @@ class PaymentUPIIDNewConfirmationVC: BaseVC, CLLocationManagerDelegate, bankSele
                                                 if let vc = storyboard.instantiateViewController(withIdentifier: "PaymentSuccessfulVC") as? PaymentSuccessfulVC {
                                                     vc.accountDetails = self.accountDetails
                                                     vc.beneVpa = self.beneVpa
+                                                    vc.vpaUpdate = self.vpaUpdate
                                                     vc.beneName = self.beneName
                                                     vc.transId = self.transId
                                                     vc.amount = "\(self.amtDecimal)"
@@ -308,7 +311,7 @@ class PaymentUPIIDNewConfirmationVC: BaseVC, CLLocationManagerDelegate, bankSele
             let popOverVC = self.storyboard?.instantiateViewController(withIdentifier: "AccountSelectionPopVc")  as! AccountSelectionPopVc
             
             popOverVC.delegatePopupBankSelected = self
-            
+            popOverVC.vpaUpdate = self.vpaUpdate
             popOverVC.view.frame = self.view.frame
             self.view.addSubview(popOverVC.view)
             self.addChild(popOverVC)
@@ -511,7 +514,9 @@ class PaymentUPIIDNewConfirmationVC: BaseVC, CLLocationManagerDelegate, bankSele
             remarks: remrkStr,
             initMode: "00",
             purpose: "00",
-            refCategory: "00"
+            refCategory: "00",
+            orderId: "",
+            refUrl: ""
         )
         var strPaymentInput = ""
         

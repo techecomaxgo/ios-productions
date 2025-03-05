@@ -5412,10 +5412,10 @@ in your primary account.</string>
         <image name="circle-boarding-notselected" width="24" height="24"/>
         <image name="doc.on.doc.fill" catalog="system" width="112" height="128"/>
         <image name="eye-ic" width="22" height="11"/>
-        <image name="ic_arrow_back_24" width="256" height="256"/>
+        <image name="ic_arrow_back_24" width="512" height="512"/>
         <image name="ic_baseline_keyboard_arrow_down_24" width="16" height="16"/>
         <image name="imgphone" width="175" height="181"/>
-        <image name="me_profile" width="140.5" height="140"/>
+        <image name="me_profile" width="281" height="280"/>
         <image name="menu-card-ic" width="2" height="10"/>
         <image name="my-card-ic" width="244" height="151"/>
         <image name="notification-ic" width="24" height="24"/>

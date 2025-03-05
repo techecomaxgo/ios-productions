@@ -42,7 +42,7 @@ class PlanViewPopupVC: UIViewController {
         // Do any additional setup after loading the view.
         
         
-        lblOffersHeadLine.text = "No Offers available "
+        //lblOffersHeadLine.text = "No Offers available "
         
         self.bgView_ctrl.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         popView_Ctrl.layer.cornerRadius = 25

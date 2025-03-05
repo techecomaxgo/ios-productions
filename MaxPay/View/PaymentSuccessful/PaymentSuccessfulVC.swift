@@ -12,6 +12,7 @@ class PaymentSuccessfulVC: UIViewController, PaymentTagViewDelegate, AVAudioPlay
 
     var accountDetails: AccountDetailsOnIIN?
     var beneVpa = ""
+    var vpaUpdate = ""
     var beneName = ""
     var transId = ""
     var refNo = ""

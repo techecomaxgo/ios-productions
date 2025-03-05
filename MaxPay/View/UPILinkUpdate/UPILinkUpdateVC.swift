@@ -23,6 +23,7 @@ class UPILinkUpdateVC: BaseVC, MFMessageComposeViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Common.shared.getDeviceID(),
         
         vwBack.layer.applyCornerRadiusShadow()
 
@@ -107,8 +108,8 @@ class UPILinkUpdateVC: BaseVC, MFMessageComposeViewControllerDelegate {
             print("Error encoding JSON: \(error)")
         }
         
-        let uipId = txtUPIID.text! + "@maxaxis"
-        
+       // let uipId = txtUPIID.text! + "@maxaxis"
+        let uipId = (Common.shared.phoneNo ?? "") + "@maxaxis"
         DispatchQueue.main.async {
             SwiftLoader.show(animated: true)
         }

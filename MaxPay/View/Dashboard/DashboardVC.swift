@@ -1483,6 +1483,7 @@ extension DashboardVC: SetMPINDelegate {
                                 DispatchQueue.main.async {
                                     self.lblUpiStatus.text = self.cardsArr.first?.status == "A" ? "ACTIVE" : "INACTIVE"
                                     self.lblUpiId.text = self.cardsArr.first?.vpa ?? ""
+                                                           
                                 }
                             }
                             
@@ -1897,6 +1898,7 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
                 cell.btnRequest.addTarget(self, action: #selector(requestAction(_:)), for: .touchUpInside)
                 cell.btnTransfer.addTarget(self, action: #selector(transferAction(_:)), for: .touchUpInside)
                 cell.btnMyQr.addTarget(self, action: #selector(myQRAction(_:)), for: .touchUpInside)
+                cell.lblUpiID.text = cardsArr.first?.vpa ?? ""
             }
             return cell
             

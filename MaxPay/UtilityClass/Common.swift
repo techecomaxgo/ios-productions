@@ -124,8 +124,6 @@ class Common {
         }
     }
     
-    
-    
     var phoneNo:String?{
         get{
             return (defaults.value(forKey: PHONE_NUMBER) as? String)

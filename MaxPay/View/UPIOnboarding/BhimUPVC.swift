@@ -11,28 +11,28 @@ import SwiftLoader
 
 
 class BhimUPVC: BaseVC {
-
+    
     private var simSelectionViewModel = SIMSelectionViewModel()
     private var limitCheckViewModel =  LimitCheckViewModel()
-
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // detect the count of added account for a day
-//        if Common.shared.deviceBindingLimit != nil {
-//            if Common.shared.deviceBindingLimit! >= DEVICE_BINDING_LIMIT  {
-//                showAlertMessageWithOkAction(title: "MaxUPI", message: "You can add 3 accounts in a day", vc: self) { status in
-//                    if status == 1 {
-//                        self.navigationController?.popViewController(animated: true)
-//                    }
-//                }
-//            }
-//        }
-//        
+        //        if Common.shared.deviceBindingLimit != nil {
+        //            if Common.shared.deviceBindingLimit! >= DEVICE_BINDING_LIMIT  {
+        //                showAlertMessageWithOkAction(title: "MaxUPI", message: "You can add 3 accounts in a day", vc: self) { status in
+        //                    if status == 1 {
+        //                        self.navigationController?.popViewController(animated: true)
+        //                    }
+        //                }
+        //            }
+        //        }
+        //
         
     }
-
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -45,21 +45,21 @@ class BhimUPVC: BaseVC {
     }
     @IBAction func btnBackAction(_ sender: Any) {
         
-
+        
         self.navigationController?.popViewController(animated: true)
         self.tabBarController?.tabBar.isHidden = false
-
+        
         // navigate or pop to Home scren
     }
     
     
     func isAirplaneModeEnabled() -> Bool? {
         
-      let networkInfo = CTTelephonyNetworkInfo()
-      guard let radioAccessTechnology = networkInfo.serviceCurrentRadioAccessTechnology else {
-        return nil
-      }
-    
+        let networkInfo = CTTelephonyNetworkInfo()
+        guard let radioAccessTechnology = networkInfo.serviceCurrentRadioAccessTechnology else {
+            return nil
+        }
+        
         return radioAccessTechnology.isEmpty
         
     }
@@ -72,71 +72,71 @@ class BhimUPVC: BaseVC {
         
         print(isAirplaneModeEnabled())
         
-//        if isAirplaneModeEnabled() == true{
-//            
-//            DispatchQueue.main.async {
-//                
-//                SwiftLoader.hide()
-//                
-//                self.showErrorAlert("Sim registration failed due to non-cellular network or unavailable connection")
-//                
-//            }
-//            
-//        }else{
+        //        if isAirplaneModeEnabled() == true{
+        //
+        //            DispatchQueue.main.async {
+        //
+        //                SwiftLoader.hide()
+        //
+        //                self.showErrorAlert("Sim registration failed due to non-cellular network or unavailable connection")
+        //
+        //            }
+        //
+        //        }else{
         
-            let networkMonitor = NetworkMonitor.shared
-
-            if networkMonitor.isConnected {
-                if let interfaceType = networkMonitor.interfaceType {
-                    switch interfaceType {
-                    case .wifi:
-                        print("Connected via Wi-Fi")
+        let networkMonitor = NetworkMonitor.shared
+        
+        if networkMonitor.isConnected {
+            if let interfaceType = networkMonitor.interfaceType {
+                switch interfaceType {
+                case .wifi:
+                    print("Connected via Wi-Fi")
+                    
+                    configuration()
+                    DispatchQueue.main.async {
                         
-                        configuration()
-                        DispatchQueue.main.async {
-                            
-                            //self.showErrorAlert("Sim registration failed due to non-cellular network")
-
-                        }
-                    case .cellular:
-                        print("Connected via Cellular")
-                        configuration()
-                    default:
-                        print("Connected via other interface")
+                        //self.showErrorAlert("Sim registration failed due to non-cellular network")
+                        
                     }
+                case .cellular:
+                    print("Connected via Cellular")
+                    configuration()
+                default:
+                    print("Connected via other interface")
                 }
-            } else {
-//                print("No internet connection")
+            }
+        } else {
+            //                print("No internet connection")
             //}
             
-        
             
-           // limitCheckViewModel.limitCheckCall(action: "device_bind")
             
-           // observeLimitCheckApi()
-
+            // limitCheckViewModel.limitCheckCall(action: "device_bind")
+            
+            // observeLimitCheckApi()
+            
             
             
         }
         
-      
-       
         
         
-      
         
         
-//        getSIMInformation()
-        
-//        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "UPISetUPIPinVC") as! UPISetUPIPinVC
-//        vc.accountDetails = self?.accountDetails
-//        self.navigationController?.pushViewController(vc, animated: true)
         
         
-//        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
-//        let vc = storyBoard.instantiateViewController(withIdentifier: "SelectSIMVC") as! SelectSIMVC
-//        self.navigationController?.pushViewController(vc, animated: true)
+        
+        //        getSIMInformation()
+        
+        //        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        //        let vc = storyboard.instantiateViewController(withIdentifier: "UPISetUPIPinVC") as! UPISetUPIPinVC
+        //        vc.accountDetails = self?.accountDetails
+        //        self.navigationController?.pushViewController(vc, animated: true)
+        
+        
+        //        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        //        let vc = storyBoard.instantiateViewController(withIdentifier: "SelectSIMVC") as! SelectSIMVC
+        //        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
@@ -147,7 +147,7 @@ class BhimUPVC: BaseVC {
         
         limitCheckViewModel.eventHandler = { [weak self] event in
             guard self != nil else { return }
-
+            
             switch event {
             case .loading:
                 
@@ -162,8 +162,8 @@ class BhimUPVC: BaseVC {
                 print("Data loaded...")
                 
                 DispatchQueue.main.async {
-                                        
-                   // print((self?.rechargeAllPlanVM.rechargeAllModel?.data?.plans)!)
+                    
+                    // print((self?.rechargeAllPlanVM.rechargeAllModel?.data?.plans)!)
                     
                     SwiftLoader.hide()
                     
@@ -171,7 +171,7 @@ class BhimUPVC: BaseVC {
                     if self?.limitCheckViewModel.limitCheckModel?.status ?? "" != "failed" {
                         
                         print(self?.limitCheckViewModel.limitCheckModel?.data?.bindAttemptLimit ?? 0)
-
+                        
                         if self?.limitCheckViewModel.limitCheckModel?.data?.bindAttemptLimit ?? 0 != 0{
                             
                             
@@ -199,15 +199,15 @@ class BhimUPVC: BaseVC {
     func getSIMInformation() {
         
         
-//        let sub = CTSubscriberInfo.subscriber()
-//        
-//        if let token = sub.carrierToken {
-//            let carrierToken:NSString? = NSString(data: token, encoding: NSUTF8StringEncoding)
-//            
-//            print(carrierToken)
-//            
-//        }
-//        return
+        //        let sub = CTSubscriberInfo.subscriber()
+        //
+        //        if let token = sub.carrierToken {
+        //            let carrierToken:NSString? = NSString(data: token, encoding: NSUTF8StringEncoding)
+        //
+        //            print(carrierToken)
+        //
+        //        }
+        //        return
         
         
         let info = CTTelephonyNetworkInfo()
@@ -240,12 +240,14 @@ class BhimUPVC: BaseVC {
 }
 
 extension BhimUPVC {
-   //MARK: API Calling
+    
+    //MARK: API Calling
     func configuration() {
         SwiftLoader.show(animated: true)
         initViewModel()
         observeEvent()
     }
+    
     //MARK Network checking
     func initViewModel() {
         let isConnected = ReachabilityClass.isConnectedToNetwork()
@@ -262,16 +264,13 @@ extension BhimUPVC {
     func observeEvent() {
         
         simSelectionViewModel.eventHandler = { [weak self] event in
-           
+            
             guard self != nil else { return }
-
+            
             switch event {
             case .loading:
-                
                 print("loading....")
-                
             case .stopLoading:
-                
                 print("Stop loading...")
                 SwiftLoader.hide()
             case .dataLoaded:
@@ -280,13 +279,11 @@ extension BhimUPVC {
                 DispatchQueue.main.async {
                     if self?.simSelectionViewModel.checksumModel?.data?.result == "Success" {
                         Common.shared.merchantauthtoken = self?.simSelectionViewModel.checksumModel?.data?.data?.merchantauthtoken ?? ""
-                       let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
-                       let vc = storyboard.instantiateViewController(withIdentifier: "SelectBankVC") as! SelectBankVC
-                       self?.navigationController?.pushViewController(vc,animated: true)
+                        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+                        let vc = storyboard.instantiateViewController(withIdentifier: "SelectBankVC") as! SelectBankVC
+                        self?.navigationController?.pushViewController(vc,animated: true)
                     }else{
-                        
                         self?.showErrorAlert(self?.simSelectionViewModel.checksumModel?.data?.result ?? "")
-                        
                     }
                 }
             case .error(let error):
@@ -295,5 +292,5 @@ extension BhimUPVC {
             }
         }
     }
-
+    
 }
