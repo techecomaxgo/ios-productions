@@ -57,6 +57,9 @@ extension CardDetailTableViewCell: UICollectionViewDelegate,UICollectionViewData
         //cell.imgBankLogo.image = indexPath.row == 0 ? UIImage(named: "my-card-ic") : UIImage(named: "my-card2-ic")
         cell.contentView.isUserInteractionEnabled = true
         cell.btnTap.addTarget(self, action: #selector(handleTap(_:)), for: .touchUpInside)
+      
+        //btnAddAccount.isHidden = false
+        
         return cell
     }
     

@@ -103,15 +103,18 @@ class DashboardVC: BaseVC {
     var isShowHideWallet = true
     private var cardsArr:[AccountDetailsOnIIN] = []
     
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
         
         self.tableViewDashboard.delegate = self
         self.tableViewDashboard.dataSource = self
         tableViewDashboard.estimatedRowHeight = 200
         tableViewDashboard.rowHeight = UITableView.automaticDimension
+        tableViewDashboard.showsVerticalScrollIndicator = false
+        tableViewDashboard.showsHorizontalScrollIndicator = false
 
         self.tableViewDashboard.register(UINib(nibName: "UserDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "UserDetailTableViewCell")
         self.tableViewDashboard.register(UINib(nibName: "CardDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "CardDetailTableViewCell")
@@ -183,7 +186,24 @@ class DashboardVC: BaseVC {
         setupConstraintsLayouts()
        // setupCollectionView()
         
+        
+        setStatusBarBackgroundColor(color: UIColor.themeGreenLight)
+        
+        
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+           return .lightContent  // This makes the status bar text white
+       }
+       
+       func setStatusBarBackgroundColor(color: UIColor) {
+           let statusBarHeight = UIApplication.shared.statusBarFrame.height
+           let statusBarView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: statusBarHeight))
+           statusBarView.backgroundColor = color
+           
+           self.view.addSubview(statusBarView)
+       }
+    
     func setupCollectionView() {
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = .zero
@@ -520,7 +540,7 @@ class DashboardVC: BaseVC {
 //        super.viewWillDisappear(animated)
 //        navigationController?.setNavigationBarHidden(true, animated: animated)
 //    }
-//    
+//
     
         
         
@@ -632,7 +652,7 @@ class DashboardVC: BaseVC {
 //        viewStatusBg.layer.shadowOpacity = 1
 //        viewStatusBg.layer.shadowRadius = 20
 //        viewStatusBg.layer.shadowOffset = CGSize(width: 0, height: 0)
-//        
+//
         let shadowPath = UIBezierPath(rect: viewStatusBg.bounds)
             viewStatusBg.layer.shadowPath = shadowPath.cgPath
             
@@ -814,7 +834,7 @@ class DashboardVC: BaseVC {
 //            let storyBoard: UIStoryboard = UIStoryboard(name: "USP", bundle: nil)
 //            let vc = storyBoard.instantiateViewController(withIdentifier: "TravelVC") as! TravelVC
 //            self.navigationController?.pushViewController(vc, animated: true)
-//            
+//
             
             //TravelTabViewController
             
@@ -827,7 +847,7 @@ class DashboardVC: BaseVC {
             
             print("Share Idea")
             //HotelViewController
-//            
+//
 //            let storyBoard: UIStoryboard = UIStoryboard(name: "USP", bundle: nil)
 //            let vc = storyBoard.instantiateViewController(withIdentifier: "HotelViewController") as! HotelViewController
 //            self.navigationController?.pushViewController(vc, animated: true)
@@ -989,7 +1009,7 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource,UIColl
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
 //        return 10
 //    }
-//    
+//
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
 //        return 10
 //    }
@@ -1092,6 +1112,7 @@ extension DashboardVC {
                             
                             self?.lblCardNumber.text = "\(components)"
                             self?.strCardNumber = components
+                            self?.tableViewDashboard.reloadData()
                         }
                         
                         let balance  = self?.dashboardViewModel.balanceDetailsModel?.messageBalance?.primary_wallet_balance ?? ""
@@ -1483,7 +1504,6 @@ extension DashboardVC: SetMPINDelegate {
                                 DispatchQueue.main.async {
                                     self.lblUpiStatus.text = self.cardsArr.first?.status == "A" ? "ACTIVE" : "INACTIVE"
                                     self.lblUpiId.text = self.cardsArr.first?.vpa ?? ""
-                                                           
                                 }
                             }
                             
@@ -1529,9 +1549,9 @@ extension DashboardVC: SetMPINDelegate {
 //         balance: accountDetailsTemp.balance ?? "",
 //         balTime: accountDetailsTemp.balTime ?? ""
 //     )
-//        
+//
 //        var jsonObjectString = ""
-//        
+//
 //        do {
 //            let encoder = JSONEncoder()
 //            encoder.outputFormatting = .prettyPrinted  // Add this line if you want the output to be formatted for better readability
@@ -1863,6 +1883,7 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
                 }
         
                 cell.lblCardNo.text =  strCardNumber
+              
                 
                 cell.lblRank.text = "Rank:\(self.rankVM.rankModelBase?.data?.myrank?.rank ?? 0)"
                 cell.imgProfile.sd_setImage(with: URL(string: "\(Common.shared.UserProfileImage ?? "")") , placeholderImage: UIImage(named: "placeholder.png"))
@@ -1871,15 +1892,22 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
         } else if indexPath.row == 1 {
             let cell = tableViewDashboard.dequeueReusableCell(withIdentifier: "CardDetailTableViewCell") as! CardDetailTableViewCell
             cell.delegate = self
+            
+           
+            
             if cardsArr.count > 0  {
                 cell.cardsDetailArr = cardsArr
-                cell.btnAddAccount.isHidden = true
+                cell.btnAddAccount.isHidden = false
 //
 //                cell.collectionView.layoutIfNeeded()
             } else {
                 cell.btnAddAccount.isHidden = true
             }
             cell.btnAddAccount.addTarget(self, action: #selector(addAccountActon(_:)), for: .touchUpInside)
+           
+            cell.collectionView.showsHorizontalScrollIndicator = false
+
+            
             return cell
             
         }else if indexPath.row == 2 {
@@ -1898,7 +1926,8 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
                 cell.btnRequest.addTarget(self, action: #selector(requestAction(_:)), for: .touchUpInside)
                 cell.btnTransfer.addTarget(self, action: #selector(transferAction(_:)), for: .touchUpInside)
                 cell.btnMyQr.addTarget(self, action: #selector(myQRAction(_:)), for: .touchUpInside)
-                cell.lblUpiID.text = cardsArr.first?.vpa ?? ""
+                
+                cell.lblUpiID.text =  cardsArr.first?.vpa ?? ""
             }
             return cell
             
@@ -2142,6 +2171,5 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
         self.view.addSubview(vw)
     }
 }
-
 
 

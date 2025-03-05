@@ -170,46 +170,46 @@ extension RechargePlanViewController: UITableViewDelegate, UITableViewDataSource
         
         
 //        var countData = 0
-//        
+//
 //        if  selectedItemStr == "TOPUP" {
-//       
+//
 //            countData = topUpAllData?.count ?? 0
 //
-//           
+//
 //       }else if  selectedItemStr == "DATA" {
-//           
-//       
+//
+//
 //           countData = DATAallData?.count ?? 0
 //
-//           
+//
 //       }else if  selectedItemStr == "FULLTT" {
-//           
+//
 //           countData = fULLTTAllData?.count ?? 0
 //
-//           
+//
 //       }else if  selectedItemStr == "FRC" {
-//           
+//
 //           countData = FRCAllData?.count ?? 0
 //
-//           
+//
 //       }else if  selectedItemStr == "JioPhone" {
-//   
+//
 //           countData = JioPhoneAllData?.count ?? 0
-//      
 //
-//           
+//
+//
 //       }else if  selectedItemStr == "Romaing" {
-//           
-//       
-//           countData = RomaingAllData?.count ?? 0
-//           
 //
-//           
+//
+//           countData = RomaingAllData?.count ?? 0
+//
+//
+//
 //       }else {
-//           
-//           
+//
+//
 //       }
-//        
+//
 //        return countData
 
         
@@ -228,28 +228,28 @@ extension RechargePlanViewController: UITableViewDelegate, UITableViewDataSource
   //          cell.setTopUpDataData(topUpData: topUpAllData?[indexPath.row])
            
 //       }else if  selectedItemStr == "DATA" {
-//           
+//
 //           cell.setAllData(topUpData: DATAallData?[indexPath.row])
-//           
+//
 //       }else if  selectedItemStr == "FULLTT" {
-//           
+//
 //           cell.setFULLData(topUpData: fULLTTAllData?[indexPath.row])
-//           
+//
 //       }else if  selectedItemStr == "FRC" {
-//           
+//
 //           cell.setFRCData(topUpData: FRCAllData?[indexPath.row])
-//           
+//
 //       }else if  selectedItemStr == "JioPhone" {
-//   
+//
 //           cell.setJioPhData(topUpData: JioPhoneAllData?[indexPath.row])
 //
 //       }else if  selectedItemStr == "Romaing" {
-//                  
+//
 //           cell.setRomDataData(topUpData: RomaingAllData?[indexPath.row])
-//           
+//
 //       }else {
-//           
-//           
+//
+//
 //       }
         
         
@@ -288,35 +288,35 @@ extension RechargePlanViewController: UITableViewDelegate, UITableViewDataSource
 //        if  selectedItemStr == "TOPUP" {
 //           // cell.setTopUpDataData(topUpData: topUpAllData?[indexPath.row])
 //            //print(topUpAllData?[indexPath.row])
-//            
+//
 //            popOverVC.priceStr = "\(topUpAllData?[indexPath.row].rs ?? 0)"
 //            popOverVC.validityStr = "\(topUpAllData?[indexPath.row].validity ?? "0")"
 //            popOverVC.descriptionStr = "\(topUpAllData?[indexPath.row].desc ?? "0")"
-//            
+//
 //           // popOverVC.setTopUpDataData(topUpData: topUpAllData?[indexPath.row])
 //
-//            
+//
 //
 //       }else if  selectedItemStr == "DATA" {
-//           
+//
 //
 //           popOverVC.priceStr = "\(DATAallData?[indexPath.row].rs ?? 0)"
 //           popOverVC.validityStr = "\(DATAallData?[indexPath.row].validity ?? "0")"
 //           popOverVC.descriptionStr = "\(DATAallData?[indexPath.row].desc ?? "0")"
 //
 //          // print(DATAallData?[indexPath.row])
-//           
+//
 //       }else if  selectedItemStr == "FULLTT" {
-//           
+//
 //           popOverVC.priceStr = "\(fULLTTAllData?[indexPath.row].rs ?? 0)"
 //           popOverVC.validityStr = "\(fULLTTAllData?[indexPath.row].validity ?? "0")"
 //           popOverVC.descriptionStr = "\(fULLTTAllData?[indexPath.row].desc ?? "0")"
 //           popOverVC.descriptionStr = "\(fULLTTAllData?[indexPath.row].desc ?? "0")"
 //
 //
-//           
+//
 //           // print(fULLTTAllData?[indexPath.row])
-//           
+//
 //       }else if  selectedItemStr == "FRC" {
 //
 //           popOverVC.priceStr = "\(FRCAllData?[indexPath.row].rs ?? 0)"
@@ -325,9 +325,9 @@ extension RechargePlanViewController: UITableViewDelegate, UITableViewDataSource
 //
 //
 //           //print(FRCAllData?[indexPath.row])
-//           
+//
 //       }else if  selectedItemStr == "JioPhone" {
-//   
+//
 //           popOverVC.priceStr = "\(JioPhoneAllData?[indexPath.row].rs ?? 0)"
 //           popOverVC.validityStr = "\(JioPhoneAllData?[indexPath.row].validity ?? "0")"
 //           popOverVC.descriptionStr = "\(JioPhoneAllData?[indexPath.row].desc ?? "0")"
@@ -335,16 +335,16 @@ extension RechargePlanViewController: UITableViewDelegate, UITableViewDataSource
 //          // print(JioPhoneAllData?[indexPath.row])
 //
 //       }else if  selectedItemStr == "Romaing" {
-//                  
+//
 //           popOverVC.priceStr = "\(RomaingAllData?[indexPath.row].rs ?? 0)"
 //           popOverVC.validityStr = "\(RomaingAllData?[indexPath.row].validity ?? "0")"
 //           popOverVC.descriptionStr = "\(RomaingAllData?[indexPath.row].desc ?? "0")"
 //
 //          // print(RomaingAllData?[indexPath.row])
-//           
+//
 //       }else {
-//           
-//           
+//
+//
 //       }
 
         popOverVC.view.frame = self.view.frame
@@ -545,128 +545,128 @@ extension RechargePlanViewController {
                 }
 //
 //                    SwiftLoader.hide()
-//                    
+//
 //                    self?.topUpAllData = []
 //                    self?.fULLTTAllData = []
 //                    self?.DATAallData = []
 //                    self?.RomaingAllData = []
 //                    self?.FRCAllData = []
 //                    self?.JioPhoneAllData = []
-//                    
+//
 //                    if self?.rechargeAllPlanVM.rechargeAllModel?.data?.status == 0 {
-//                        
+//
 //                    self?.plansViewModelData = self?.rechargeAllPlanVM.rechargeAllModel?.data
 //
 //                   // print(self!.plansViewModelData)
-//                        
+//
 //                        // Access the plans dictionary
-//                        
+//
 //                        self?.plansDict = self?.plansViewModelData?.plans
-//                        
-// 
+//
+//
 //                        // Usage example
 //                        let keys = Plans.nonStringKeys()
 //                        print(keys)
-//                        
+//
 //                        self?.segControl.items = keys
-//                        
-//                        
+//
+//
 //                        self?.topUpAllData = self?.plansViewModelData?.plans?.tOPUP
-//                        
+//
 //                        self?.fULLTTAllData = self?.plansViewModelData?.plans?.fULLTT
-//                        
+//
 //                        self?.DATAallData = self?.plansViewModelData?.plans?.dATA
-//                        
+//
 //                        self?.RomaingAllData = self?.plansViewModelData?.plans?.romaing
-//                        
+//
 //                        self?.FRCAllData = self?.plansViewModelData?.plans?.fRC
-//                        
+//
 //                        self?.JioPhoneAllData = self?.plansViewModelData?.plans?.jioPhone
-//                        
-//                        
+//
+//
 //                        //if self?.plansViewModelData?.plans
-//                        
+//
 //                        self?.selectedItemStr = self?.segControl.items[0] ?? ""
 //
-//                        
+//
 //                        if  self?.segControl.items[0] == "TOPUP" {
-//                            
-//                       
+//
+//
 //                            self?.topUpAllData = self?.plansViewModelData?.plans?.tOPUP
 //
-//                           
+//
 //                       }else if  self?.segControl.items[0] == "DATA" {
-//                           
-//                       
+//
+//
 //                           self?.DATAallData = self?.plansViewModelData?.plans?.dATA
 //
-//                           
+//
 //                       }else if  self?.segControl.items[0] == "FULLTT" {
-//                           
+//
 //                           self?.fULLTTAllData = self?.plansViewModelData?.plans?.fULLTT
 //
-//                           
+//
 //                       }else if  self?.segControl.items[0] == "FRC" {
-//                           
+//
 //                           self?.FRCAllData = self?.plansViewModelData?.plans?.fRC
 //
-//                           
+//
 //                       }else if  self?.segControl.items[0] == "JioPhone" {
-//                   
+//
 //                           self?.JioPhoneAllData = self?.plansViewModelData?.plans?.jioPhone
 //
-//                           
+//
 //                       }else if  self?.segControl.items[0] == "Romaing" {
-//                           
-//                       
+//
+//
 //                           self?.RomaingAllData = self?.plansViewModelData?.plans?.romaing
 //
-//                           
+//
 //                       }else {
-//                           
-//                           
+//
+//
 //                       }
-//                        
-//                        
-//                        
-//                        
+//
+//
+//
+//
 //                        DispatchQueue.main.async
 //                        {
-//                        
+//
 //                            self?.tablePlansView.reloadData()
 //
 //                        }
-//                        
 //
-//                        
-//                        
+//
+//
+//
 //                    }else{
-//                        
+//
 //                        self?.showErrorAlert(self?.rechargeAllPlanVM.rechargeAllModel?.data.message ?? "")
 //
 //                        //print(self?.rechargeAllPlanVM.rechargeAllModel?.data)
 //
-//                        
+//
 //                    }
-//                        
-//                        
-//                        
-//                    
-//                    
-////                    
+//
+//
+//
+//
+//
+////
 ////                    if self?.rechargeAllPlanVM.checksumModel?.status == "success" {
-////                        
+////
 ////                        print(self?.rechargeAllPlanVM.rechargeAllModel?.data!)
-////                        
-////                  
+////
+////
 ////                    }else{
-////                        
+////
 ////                        //self?.showErrorAlert(self?.rechargeAllPlanVM.rechargeAllModel?.data?.message ?? "")
 ////                        print(self?.rechargeAllPlanVM.rechargeAllModel?.data)
 ////                        SwiftLoader.hide()
 ////                    }
-//                    
-//                    
+//
+//
 //                }
             case .error(let error):
                 print(error!)

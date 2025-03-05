@@ -446,7 +446,7 @@ class RechargeBillPaymentMethodVC: BaseVC,UIGestureRecognizerDelegate{
 //                                        let x : Int = self!.priceStr
 //                                        let xNSNumber = x as NSNumber
 //                                        let xString : String = xNSNumber.stringValue
-//                                        
+//
 //                                    self?.rechargeModelView.RechargePayUSecondAPICall(amountStr: xString, phoneStr:rechargeNo, provider:operatorStr, location:circle, txnidnew: txnID, latitude: "77.391029", longitude:"28.535517", device_id: Common.shared.getDeviceID(), client_ip: Common.shared.getDeviceIP())
                                         
                                     
@@ -589,7 +589,7 @@ class RechargeBillPaymentMethodVC: BaseVC,UIGestureRecognizerDelegate{
 //        let storyboard = UIStoryboard(name: "USP", bundle: nil)
 //        let vc = storyboard.instantiateViewController(withIdentifier: "RechargeBillSuccess") as! RechargeBillSuccess
 //       // vc.priceStr = String(pricePStr)
-//        
+//
 //        self.navigationController?.pushViewController(vc, animated: true)
         
     }
@@ -740,7 +740,7 @@ class RechargeBillPaymentMethodVC: BaseVC,UIGestureRecognizerDelegate{
 //    }
 //    func initViewModel() {
 //        let isConnected = ReachabilityClass.isConnectedToNetwork()
-//        
+//
 //        if isConnected == true {
 //            checksumViewModel.loginChecksumCall(Common.shared.phoneNo ?? "", Common.shared.getDeviceID() ?? "")
 //        }else{
@@ -748,7 +748,7 @@ class RechargeBillPaymentMethodVC: BaseVC,UIGestureRecognizerDelegate{
 //                SwiftLoader.hide()
 //                self.showErrorAlert("Please check your internet connection.")
 //            }
-//            
+//
 //        }
 //    }
     

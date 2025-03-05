@@ -44,18 +44,18 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwx-mR-bXu">
                                 <rect key="frame" x="512" y="0.0" width="100" height="35"/>
-                                <color key="backgroundColor" name="theme_green"/>
+                                <color key="backgroundColor" name="theme_green_light"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="OmI-M9-NWF"/>
                                     <constraint firstAttribute="height" constant="35" id="oqi-UV-Y2O"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <color key="tintColor" red="0.98823529409999999" green="0.99215686270000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="ADD A/C" image="plus.circle.fill" catalog="system"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="8"/>
+                                        <real key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
@@ -123,8 +123,8 @@
         <namedColor name="black-color">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="theme_green">
-            <color red="0.62400001287460327" green="0.76899999380111694" blue="0.2199999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="theme_green_light">
+            <color red="0.81199997663497925" green="0.89800000190734863" blue="0.31400001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

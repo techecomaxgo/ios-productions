@@ -29,10 +29,10 @@
                         <rect key="frame" x="16" y="10" width="180" height="110"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectanglecard" translatesAutoresizingMaskIntoConstraints="NO" id="WeH-z9-44M">
-                                <rect key="frame" x="0.0" y="0.0" width="180" height="110"/>
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="110"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jK7-Mr-jpe">
-                                <rect key="frame" x="8" y="76" width="164" height="16.666666666666671"/>
+                                <rect key="frame" x="8" y="76" width="164" height="16.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                 <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -67,7 +67,7 @@
                             <constraint firstAttribute="bottom" secondItem="iw2-ti-3D0" secondAttribute="bottom" id="5yy-xm-yD2"/>
                             <constraint firstItem="jK7-Mr-jpe" firstAttribute="top" secondItem="IKW-2n-dWK" secondAttribute="bottom" constant="8" id="62H-qK-KW0"/>
                             <constraint firstAttribute="trailing" secondItem="jK7-Mr-jpe" secondAttribute="trailing" constant="8" id="9kt-EK-vY8"/>
-                            <constraint firstAttribute="trailing" secondItem="WeH-z9-44M" secondAttribute="trailing" id="FNJ-YQ-a2m"/>
+                            <constraint firstAttribute="trailing" secondItem="WeH-z9-44M" secondAttribute="trailing" constant="10" id="FNJ-YQ-a2m"/>
                             <constraint firstItem="iw2-ti-3D0" firstAttribute="top" secondItem="PEf-nA-1PB" secondAttribute="top" id="K6e-oG-VXJ"/>
                             <constraint firstItem="WeH-z9-44M" firstAttribute="top" secondItem="PEf-nA-1PB" secondAttribute="top" id="SMT-UM-Xum"/>
                             <constraint firstItem="iw2-ti-3D0" firstAttribute="leading" secondItem="PEf-nA-1PB" secondAttribute="leading" id="Zb8-aN-N04"/>
@@ -95,10 +95,10 @@
                         <rect key="frame" x="369" y="10" width="180" height="110"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectanglecard" translatesAutoresizingMaskIntoConstraints="NO" id="s5P-2h-WLt">
-                                <rect key="frame" x="0.0" y="0.0" width="180" height="110"/>
+                                <rect key="frame" x="12" y="0.0" width="170" height="110"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="149-nH-emu">
-                                <rect key="frame" x="8" y="76" width="164" height="16.666666666666671"/>
+                                <rect key="frame" x="8" y="76" width="164" height="16.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                 <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -129,17 +129,17 @@
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="97" id="3El-1s-7SN"/>
                             <constraint firstItem="kp0-5T-f8Y" firstAttribute="centerY" secondItem="EqF-ly-SVt" secondAttribute="centerY" id="4g1-nH-Y8u"/>
                             <constraint firstItem="149-nH-emu" firstAttribute="top" secondItem="kp0-5T-f8Y" secondAttribute="bottom" constant="8" id="7n0-JN-bJx"/>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="Mib-d2-3MK"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Mib-d2-3MK"/>
                             <constraint firstItem="s5P-2h-WLt" firstAttribute="top" secondItem="EqF-ly-SVt" secondAttribute="top" id="N9h-zG-e4X"/>
                             <constraint firstItem="149-nH-emu" firstAttribute="leading" secondItem="EqF-ly-SVt" secondAttribute="leading" constant="8" id="TLd-gg-dl6"/>
                             <constraint firstAttribute="trailing" secondItem="b4b-is-A2M" secondAttribute="trailing" id="YCW-Iq-8ah"/>
-                            <constraint firstItem="s5P-2h-WLt" firstAttribute="leading" secondItem="EqF-ly-SVt" secondAttribute="leading" id="YZp-pR-127"/>
+                            <constraint firstItem="s5P-2h-WLt" firstAttribute="leading" secondItem="EqF-ly-SVt" secondAttribute="leading" constant="12" id="YZp-pR-127"/>
                             <constraint firstItem="kp0-5T-f8Y" firstAttribute="centerX" secondItem="EqF-ly-SVt" secondAttribute="centerX" id="aPf-1P-ski"/>
                             <constraint firstAttribute="bottom" secondItem="s5P-2h-WLt" secondAttribute="bottom" id="c3u-s6-UWA"/>
                             <constraint firstAttribute="trailing" secondItem="149-nH-emu" secondAttribute="trailing" constant="8" id="ft6-nQ-BUF"/>
                             <constraint firstItem="b4b-is-A2M" firstAttribute="leading" secondItem="EqF-ly-SVt" secondAttribute="leading" id="jFJ-Ry-i48"/>
                             <constraint firstAttribute="width" constant="180" id="jtD-c7-1lm"/>
-                            <constraint firstAttribute="trailing" secondItem="s5P-2h-WLt" secondAttribute="trailing" id="kU5-dN-13f"/>
+                            <constraint firstAttribute="trailing" secondItem="s5P-2h-WLt" secondAttribute="trailing" constant="-2" id="kU5-dN-13f"/>
                             <constraint firstAttribute="height" constant="110" id="rVS-v3-dF0"/>
                             <constraint firstItem="b4b-is-A2M" firstAttribute="top" secondItem="EqF-ly-SVt" secondAttribute="top" id="vWr-5B-oGO"/>
                             <constraint firstAttribute="bottom" secondItem="b4b-is-A2M" secondAttribute="bottom" id="yKa-6Q-AAd"/>
