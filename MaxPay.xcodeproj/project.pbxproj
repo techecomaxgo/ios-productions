@@ -193,6 +193,7 @@
 		8418E39F2C39AD9B002FB27F /* TravellersDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418E39E2C39AD9B002FB27F /* TravellersDetailsVC.swift */; };
 		841979102C19C0FB000FE311 /* PhotoGalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419790F2C19C0FB000FE311 /* PhotoGalleryVC.swift */; };
 		841979122C19C176000FE311 /* PhotoGalleryCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841979112C19C176000FE311 /* PhotoGalleryCVC.swift */; };
+		841B4EB02D661C540097A90D /* PayUFirstForRechargeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841B4EAF2D661C540097A90D /* PayUFirstForRechargeModel.swift */; };
 		842267FC2C33EE9500C69F31 /* PageOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842267FB2C33EE9500C69F31 /* PageOneViewController.swift */; };
 		842267FE2C33EEA500C69F31 /* PageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842267FD2C33EEA500C69F31 /* PageTwoViewController.swift */; };
 		842268002C33EEC000C69F31 /* FlightBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842267FF2C33EEC000C69F31 /* FlightBookViewController.swift */; };
@@ -333,6 +334,8 @@
 		84ABC2382D4A567900E63991 /* MoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84ABC2372D4A567900E63991 /* MoreTableViewCell.xib */; };
 		84ABC2392D4A567900E63991 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABC2362D4A567900E63991 /* MoreTableViewCell.swift */; };
 		84B014FA2D42751100239744 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 84B014F92D42751100239744 /* Alamofire */; };
+		84B094F02D6DA0DB00552669 /* Untitled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B094EF2D6DA0CC00552669 /* Untitled.swift */; };
+		84B094F22D6DA17800552669 /* MPinPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B094F12D6DA17800552669 /* MPinPopUpVC.swift */; };
 		84B5A6632C1C6CD100B9D48D /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5A6612C1C6CD100B9D48D /* Users.swift */; };
 		84B5A6642C1C6CD100B9D48D /* ChainModel_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5A6622C1C6CD100B9D48D /* ChainModel_Base.swift */; };
 		84B5A6672C1C6DA000B9D48D /* ChainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5A6662C1C6DA000B9D48D /* ChainViewModel.swift */; };
@@ -844,6 +847,7 @@
 		8418E39E2C39AD9B002FB27F /* TravellersDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravellersDetailsVC.swift; sourceTree = "<group>"; };
 		8419790F2C19C0FB000FE311 /* PhotoGalleryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryVC.swift; sourceTree = "<group>"; };
 		841979112C19C176000FE311 /* PhotoGalleryCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryCVC.swift; sourceTree = "<group>"; };
+		841B4EAF2D661C540097A90D /* PayUFirstForRechargeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayUFirstForRechargeModel.swift; sourceTree = "<group>"; };
 		842267FB2C33EE9500C69F31 /* PageOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageOneViewController.swift; sourceTree = "<group>"; };
 		842267FD2C33EEA500C69F31 /* PageTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTwoViewController.swift; sourceTree = "<group>"; };
 		842267FF2C33EEC000C69F31 /* FlightBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBookViewController.swift; sourceTree = "<group>"; };
@@ -996,6 +1000,8 @@
 		84B014D32D27E2F700239744 /* MaxPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaxPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B014D42D27E2F700239744 /* MaxPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaxPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B014D52D27E2F700239744 /* MaxPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaxPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B094EF2D6DA0CC00552669 /* Untitled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Untitled.swift; sourceTree = "<group>"; };
+		84B094F12D6DA17800552669 /* MPinPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPinPopUpVC.swift; sourceTree = "<group>"; };
 		84B5A6612C1C6CD100B9D48D /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		84B5A6622C1C6CD100B9D48D /* ChainModel_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainModel_Base.swift; sourceTree = "<group>"; };
 		84B5A6662C1C6DA000B9D48D /* ChainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainViewModel.swift; sourceTree = "<group>"; };
@@ -1385,6 +1391,8 @@
 				443D41B92BFB42FD0080A671 /* RechargePopupView */,
 				443D41AF2BFB42A30080A671 /* CircleView */,
 				443D41C62BFB438E0080A671 /* RechargeViewController.swift */,
+				84B094F12D6DA17800552669 /* MPinPopUpVC.swift */,
+				84B094EF2D6DA0CC00552669 /* Untitled.swift */,
 				443D41C72BFB438E0080A671 /* ContactsTableViewCell.swift */,
 			);
 			path = RechargeView;
@@ -1925,6 +1933,14 @@
 				849DDE8C2C19CCEB00C7D97A /* PresentPhotViewController.swift */,
 			);
 			path = PhotoGalleryView;
+			sourceTree = "<group>";
+		};
+		841B4EAE2D661C340097A90D /* PayUForRecharge */ = {
+			isa = PBXGroup;
+			children = (
+				841B4EAF2D661C540097A90D /* PayUFirstForRechargeModel.swift */,
+			);
+			path = PayUForRecharge;
 			sourceTree = "<group>";
 		};
 		842267FA2C33EE7C00C69F31 /* PageViews */ = {
@@ -2900,6 +2916,7 @@
 		A1285D422AF8D5A700F034B7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				841B4EAE2D661C340097A90D /* PayUForRecharge */,
 				84C56C022D4F746E007AD238 /* ResultQuizModel */,
 				84BF85542D117F5100D53A85 /* EncryptDataModel */,
 				84405C082C37872E0019B36A /* FlightSearchModel */,
@@ -4351,6 +4368,7 @@
 				A18E217D2B03E5350002304C /* splashScreenVC.swift in Sources */,
 				A1E38FF22AFB836A0012C9D3 /* ReachabilityClass.swift in Sources */,
 				A1B17D472B0C6D1600011A4E /* Response_data.swift in Sources */,
+				841B4EB02D661C540097A90D /* PayUFirstForRechargeModel.swift in Sources */,
 				84CB80D12C145999003620DA /* MyLostItemAPIManager.swift in Sources */,
 				44DAB4212B67C70E00777E1F /* PaymentIFSCCode.swift in Sources */,
 				44B1D9412BFC63B700892F1A /* RaiseComplainDetailVC.swift in Sources */,
@@ -4457,6 +4475,7 @@
 				443D41B32BFB42A30080A671 /* CircleViewController.swift in Sources */,
 				840502122C89A70200F8E72E /* RaiseQueryPopUpView2.swift in Sources */,
 				84FEDB7C2C0AFF6F0021B765 /* AllmilesTransactionViewModel.swift in Sources */,
+				84B094F02D6DA0DB00552669 /* Untitled.swift in Sources */,
 				84DDFCE62C3020F80084BE17 /* Walletdetails_ViewModel.swift in Sources */,
 				44E4540B2B6B9A4200FC5020 /* ComplaintFormVC.swift in Sources */,
 				A1833AA72B204B2D0015FA32 /* BusReviewVC.swift in Sources */,
@@ -4749,6 +4768,7 @@
 				A1285D192AF8D54A00F034B7 /* MaxPay.xcdatamodeld in Sources */,
 				44A9B4102BFDD7470096BB8B /* QuizWinnerViewController.swift in Sources */,
 				44F57D992B83270D001B9138 /* TransferVC.swift in Sources */,
+				84B094F22D6DA17800552669 /* MPinPopUpVC.swift in Sources */,
 				840B87FD2C3E6088002D4D76 /* FlightTwoWayViewController.swift in Sources */,
 				8486EA8A2C10EBB6002407E5 /* HotelCheckoutViewController.swift in Sources */,
 			);

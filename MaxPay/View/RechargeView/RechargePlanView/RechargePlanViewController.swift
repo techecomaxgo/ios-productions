@@ -39,6 +39,7 @@ class RechargePlanViewController: BaseVC {
     
     var selectedItemStr = ""
 
+    var arrTableData: [Plan]? = []
     //var topUpAllData: [SMS]? = []
 //    var topUpAllData: [TOPUP]? = []
 //    var topUpAllData: [TOPUP]? = []
@@ -156,49 +157,62 @@ class RechargePlanViewController: BaseVC {
 extension RechargePlanViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if selectedItemStr == ""{
+            return 0
+        }
+        for (key, plans) in (self.rechargeAllPlanVM.rechargeAllModel?.data?.plans)! {
+            print("Category: \(key)")
+            if selectedItemStr == key{
+                self.arrTableData = plans
+                break
+            }
+        }
+        print(self.arrTableData!)
+        return self.arrTableData?.count ?? 0
         
-        var countData = 0
         
-        if  selectedItemStr == "TOPUP" {
-       
-            countData = topUpAllData?.count ?? 0
-
-           
-       }else if  selectedItemStr == "DATA" {
-           
-       
-           countData = DATAallData?.count ?? 0
-
-           
-       }else if  selectedItemStr == "FULLTT" {
-           
-           countData = fULLTTAllData?.count ?? 0
-
-           
-       }else if  selectedItemStr == "FRC" {
-           
-           countData = FRCAllData?.count ?? 0
-
-           
-       }else if  selectedItemStr == "JioPhone" {
-   
-           countData = JioPhoneAllData?.count ?? 0
-      
-
-           
-       }else if  selectedItemStr == "Romaing" {
-           
-       
-           countData = RomaingAllData?.count ?? 0
-           
-
-           
-       }else {
-           
-           
-       }
-        
-        return countData
+//        var countData = 0
+//        
+//        if  selectedItemStr == "TOPUP" {
+//       
+//            countData = topUpAllData?.count ?? 0
+//
+//           
+//       }else if  selectedItemStr == "DATA" {
+//           
+//       
+//           countData = DATAallData?.count ?? 0
+//
+//           
+//       }else if  selectedItemStr == "FULLTT" {
+//           
+//           countData = fULLTTAllData?.count ?? 0
+//
+//           
+//       }else if  selectedItemStr == "FRC" {
+//           
+//           countData = FRCAllData?.count ?? 0
+//
+//           
+//       }else if  selectedItemStr == "JioPhone" {
+//   
+//           countData = JioPhoneAllData?.count ?? 0
+//      
+//
+//           
+//       }else if  selectedItemStr == "Romaing" {
+//           
+//       
+//           countData = RomaingAllData?.count ?? 0
+//           
+//
+//           
+//       }else {
+//           
+//           
+//       }
+//        
+//        return countData
 
         
     }
@@ -209,35 +223,36 @@ extension RechargePlanViewController: UITableViewDelegate, UITableViewDataSource
         
         
         let cell = tablePlansView.dequeueReusableCell(withIdentifier: "RechargePlanTVC") as! RechargePlanTVC
+        cell.setTopUpCommonData(topUpData: arrTableData?[indexPath.row])
         
-        if  selectedItemStr == "TOPUP" {
+        //if  selectedItemStr == "TOPUP" {
     
-            cell.setTopUpDataData(topUpData: topUpAllData?[indexPath.row])
+  //          cell.setTopUpDataData(topUpData: topUpAllData?[indexPath.row])
            
-       }else if  selectedItemStr == "DATA" {
-           
-           cell.setAllData(topUpData: DATAallData?[indexPath.row])
-           
-       }else if  selectedItemStr == "FULLTT" {
-           
-           cell.setFULLData(topUpData: fULLTTAllData?[indexPath.row])
-           
-       }else if  selectedItemStr == "FRC" {
-           
-           cell.setFRCData(topUpData: FRCAllData?[indexPath.row])
-           
-       }else if  selectedItemStr == "JioPhone" {
-   
-           cell.setJioPhData(topUpData: JioPhoneAllData?[indexPath.row])
-
-       }else if  selectedItemStr == "Romaing" {
-                  
-           cell.setRomDataData(topUpData: RomaingAllData?[indexPath.row])
-           
-       }else {
-           
-           
-       }
+//       }else if  selectedItemStr == "DATA" {
+//           
+//           cell.setAllData(topUpData: DATAallData?[indexPath.row])
+//           
+//       }else if  selectedItemStr == "FULLTT" {
+//           
+//           cell.setFULLData(topUpData: fULLTTAllData?[indexPath.row])
+//           
+//       }else if  selectedItemStr == "FRC" {
+//           
+//           cell.setFRCData(topUpData: FRCAllData?[indexPath.row])
+//           
+//       }else if  selectedItemStr == "JioPhone" {
+//   
+//           cell.setJioPhData(topUpData: JioPhoneAllData?[indexPath.row])
+//
+//       }else if  selectedItemStr == "Romaing" {
+//                  
+//           cell.setRomDataData(topUpData: RomaingAllData?[indexPath.row])
+//           
+//       }else {
+//           
+//           
+//       }
         
         
         return cell
@@ -266,67 +281,73 @@ extension RechargePlanViewController: UITableViewDelegate, UITableViewDataSource
         popOverVC.selectedPopStr = selectedItemStr
         
         
-        if  selectedItemStr == "TOPUP" {
-           // cell.setTopUpDataData(topUpData: topUpAllData?[indexPath.row])
-            //print(topUpAllData?[indexPath.row])
-            
-            popOverVC.priceStr = "\(topUpAllData?[indexPath.row].rs ?? 0)"
-            popOverVC.validityStr = "\(topUpAllData?[indexPath.row].validity ?? "0")"
-            popOverVC.descriptionStr = "\(topUpAllData?[indexPath.row].desc ?? "0")"
-            
-           // popOverVC.setTopUpDataData(topUpData: topUpAllData?[indexPath.row])
-
-            
-
-       }else if  selectedItemStr == "DATA" {
-           
-
-           popOverVC.priceStr = "\(DATAallData?[indexPath.row].rs ?? 0)"
-           popOverVC.validityStr = "\(DATAallData?[indexPath.row].validity ?? "0")"
-           popOverVC.descriptionStr = "\(DATAallData?[indexPath.row].desc ?? "0")"
-
-          // print(DATAallData?[indexPath.row])
-           
-       }else if  selectedItemStr == "FULLTT" {
-           
-           popOverVC.priceStr = "\(fULLTTAllData?[indexPath.row].rs ?? 0)"
-           popOverVC.validityStr = "\(fULLTTAllData?[indexPath.row].validity ?? "0")"
-           popOverVC.descriptionStr = "\(fULLTTAllData?[indexPath.row].desc ?? "0")"
-           popOverVC.descriptionStr = "\(fULLTTAllData?[indexPath.row].desc ?? "0")"
-
-
-           
-           // print(fULLTTAllData?[indexPath.row])
-           
-       }else if  selectedItemStr == "FRC" {
-
-           popOverVC.priceStr = "\(FRCAllData?[indexPath.row].rs ?? 0)"
-           popOverVC.validityStr = "\(FRCAllData?[indexPath.row].validity ?? "0")"
-           popOverVC.descriptionStr = "\(FRCAllData?[indexPath.row].desc ?? "0")"
-
-
-           //print(FRCAllData?[indexPath.row])
-           
-       }else if  selectedItemStr == "JioPhone" {
-   
-           popOverVC.priceStr = "\(JioPhoneAllData?[indexPath.row].rs ?? 0)"
-           popOverVC.validityStr = "\(JioPhoneAllData?[indexPath.row].validity ?? "0")"
-           popOverVC.descriptionStr = "\(JioPhoneAllData?[indexPath.row].desc ?? "0")"
-
-          // print(JioPhoneAllData?[indexPath.row])
-
-       }else if  selectedItemStr == "Romaing" {
-                  
-           popOverVC.priceStr = "\(RomaingAllData?[indexPath.row].rs ?? 0)"
-           popOverVC.validityStr = "\(RomaingAllData?[indexPath.row].validity ?? "0")"
-           popOverVC.descriptionStr = "\(RomaingAllData?[indexPath.row].desc ?? "0")"
-
-          // print(RomaingAllData?[indexPath.row])
-           
-       }else {
-           
-           
-       }
+        popOverVC.priceStr = "\(arrTableData?[indexPath.row].rs ?? 0)"
+        popOverVC.validityStr = "\(arrTableData?[indexPath.row].validity ?? "0")"
+        popOverVC.descriptionStr = "\(arrTableData?[indexPath.row].desc ?? "0")"
+        
+        
+        
+//        if  selectedItemStr == "TOPUP" {
+//           // cell.setTopUpDataData(topUpData: topUpAllData?[indexPath.row])
+//            //print(topUpAllData?[indexPath.row])
+//            
+//            popOverVC.priceStr = "\(topUpAllData?[indexPath.row].rs ?? 0)"
+//            popOverVC.validityStr = "\(topUpAllData?[indexPath.row].validity ?? "0")"
+//            popOverVC.descriptionStr = "\(topUpAllData?[indexPath.row].desc ?? "0")"
+//            
+//           // popOverVC.setTopUpDataData(topUpData: topUpAllData?[indexPath.row])
+//
+//            
+//
+//       }else if  selectedItemStr == "DATA" {
+//           
+//
+//           popOverVC.priceStr = "\(DATAallData?[indexPath.row].rs ?? 0)"
+//           popOverVC.validityStr = "\(DATAallData?[indexPath.row].validity ?? "0")"
+//           popOverVC.descriptionStr = "\(DATAallData?[indexPath.row].desc ?? "0")"
+//
+//          // print(DATAallData?[indexPath.row])
+//           
+//       }else if  selectedItemStr == "FULLTT" {
+//           
+//           popOverVC.priceStr = "\(fULLTTAllData?[indexPath.row].rs ?? 0)"
+//           popOverVC.validityStr = "\(fULLTTAllData?[indexPath.row].validity ?? "0")"
+//           popOverVC.descriptionStr = "\(fULLTTAllData?[indexPath.row].desc ?? "0")"
+//           popOverVC.descriptionStr = "\(fULLTTAllData?[indexPath.row].desc ?? "0")"
+//
+//
+//           
+//           // print(fULLTTAllData?[indexPath.row])
+//           
+//       }else if  selectedItemStr == "FRC" {
+//
+//           popOverVC.priceStr = "\(FRCAllData?[indexPath.row].rs ?? 0)"
+//           popOverVC.validityStr = "\(FRCAllData?[indexPath.row].validity ?? "0")"
+//           popOverVC.descriptionStr = "\(FRCAllData?[indexPath.row].desc ?? "0")"
+//
+//
+//           //print(FRCAllData?[indexPath.row])
+//           
+//       }else if  selectedItemStr == "JioPhone" {
+//   
+//           popOverVC.priceStr = "\(JioPhoneAllData?[indexPath.row].rs ?? 0)"
+//           popOverVC.validityStr = "\(JioPhoneAllData?[indexPath.row].validity ?? "0")"
+//           popOverVC.descriptionStr = "\(JioPhoneAllData?[indexPath.row].desc ?? "0")"
+//
+//          // print(JioPhoneAllData?[indexPath.row])
+//
+//       }else if  selectedItemStr == "Romaing" {
+//                  
+//           popOverVC.priceStr = "\(RomaingAllData?[indexPath.row].rs ?? 0)"
+//           popOverVC.validityStr = "\(RomaingAllData?[indexPath.row].validity ?? "0")"
+//           popOverVC.descriptionStr = "\(RomaingAllData?[indexPath.row].desc ?? "0")"
+//
+//          // print(RomaingAllData?[indexPath.row])
+//           
+//       }else {
+//           
+//           
+//       }
 
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)
@@ -498,7 +519,16 @@ extension RechargePlanViewController {
 //                DispatchQueue.main.async {
 //                                        
                 print((self?.rechargeAllPlanVM.rechargeAllModel?.data?.plans)!)
-//                    
+                DispatchQueue.main.async {
+                    print("Anand")
+                    let arrKeys: [String] = Array((self?.rechargeAllPlanVM.rechargeAllModel?.data?.plans)!.keys)
+                    self?.segControl.items = arrKeys
+                    if arrKeys.count > 0{
+                        self?.selectedItemStr = arrKeys[0]
+                    }
+                    self?.tablePlansView.reloadData()
+                }
+//
 //                    SwiftLoader.hide()
 //                    
 //                    self?.topUpAllData = []

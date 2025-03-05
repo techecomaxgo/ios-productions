@@ -302,7 +302,7 @@ class TransferVC: BaseVC {
         let x = Double(self.txtAmount.text ?? "0")
         amtDecimal = String(format: "%.2f", Double(round(100 * x!) / 100))
         
-        let paymentInput = PaymentInput(amount: amtDecimal, merchantVpa: MerchantVpa, merchantId: MerchantId, submerchantid: SubMerchantId, merchantChannelId: MerchChanId, tranType: TranTypeP2P, mcc: "0000", remarks: txtRemark.text ?? "", initMode: "00", purpose: "00", refCategory: "00")
+        let paymentInput = PaymentInput(amount: amtDecimal, merchantVpa: MerchantVpa, merchantId: MerchantId, submerchantid: SubMerchantId, merchantChannelId: MerchChanId, tranType: TranTypeP2P, mcc: "0000", remarks: txtRemark.text ?? "", initMode: "00", purpose: "00", refCategory: "00", orderId: "", refUrl: "")
         var strPaymentInput = ""
         do {
             let encoder = JSONEncoder()

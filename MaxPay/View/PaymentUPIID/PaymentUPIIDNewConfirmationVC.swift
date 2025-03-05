@@ -193,7 +193,9 @@ class PaymentUPIIDNewConfirmationVC: BaseVC, CLLocationManagerDelegate, bankSele
                 remarks: remrkStr,
                 initMode: "00",
                 purpose: "00",
-                refCategory: "00"
+                refCategory: "00",
+                orderId: "",
+                refUrl: ""
             )
         
             let strPaymentInput = encodeToJSON(paymentInput)
@@ -511,7 +513,9 @@ class PaymentUPIIDNewConfirmationVC: BaseVC, CLLocationManagerDelegate, bankSele
             remarks: remrkStr,
             initMode: "00",
             purpose: "00",
-            refCategory: "00"
+            refCategory: "00",
+            orderId: "",
+            refUrl: ""
         )
         var strPaymentInput = ""
         

@@ -227,6 +227,38 @@ struct AccountPay: Codable {
         case name, mmid, aeba, mbeba, accRefNumber, ifsc, maskedAccnumber, status, type, vpa, dLength, dType, balance, balTime,accountIfsc,iin /*, atmpinFormat, atmpinLength, iin, internationlActive, otpFormat, bankName, defaultAccount, maskedAadhaarNumber, otpLength*/
     }
 }
+struct AccountPay2: Codable {
+    var name: String
+    var mmid: String
+    var aeba: String
+    var mbeba: String
+    var accRefNumber: String
+    var ifsc: String
+    var maskedAccnumber: String
+    var status: String
+    var type: String
+    var vpa: String
+    var dLength: String
+    var dType: String
+    var balance: String
+    var balTime: String
+    //var accountIfsc: String
+    var iin: String //
+//    var atmpinFormat: String //
+//    var atmpinLength: String // Int
+//    var iin: String //
+//    var internationlActive: String //
+//    var otpFormat: String //
+//    var bankName: String //
+//    var defaultAccount: String //
+//    var maskedAadhaarNumber: String //
+//    var otpLength: String // Int
+
+    enum CodingKeys: String, CodingKey {
+        case name, mmid, aeba, mbeba, accRefNumber, ifsc, maskedAccnumber, status, type, vpa, dLength, dType, balance, balTime,iin /*, atmpinFormat, atmpinLength, iin, internationlActive, otpFormat, bankName, defaultAccount, maskedAadhaarNumber, otpLength*/
+    }
+}
+
 struct BeneVpa: Codable {
     
     var name: String
@@ -251,6 +283,8 @@ struct PaymentInput: Codable {
     var initMode: String // “00”
     var purpose: String // “00”
     var refCategory: String // “00”
+    var orderId: String
+    var refUrl: String
 
 
     enum CodingKeys: CodingKey {
@@ -265,6 +299,41 @@ struct PaymentInput: Codable {
         case initMode
         case purpose
         case refCategory
+        case orderId
+        case refUrl
+    }
+}
+struct PaymentInput2: Codable {
+    var amount: String
+    var merchantVpa: String
+    var merchantId: String
+    var submerchantid: String
+    var merchantChannelId: String
+    var tranType: String // - “P2P”
+    var mcc: String // - “P2P”
+    var remarks: String
+    var initMode: String // “00”
+    var purpose: String // “00”
+    var refCategory: String // “00”
+    var orderId: String
+    var refUrl: String
+    var merchatntTxnId: String
+
+    enum CodingKeys: CodingKey {
+        case amount
+        case merchantVpa
+        case merchantId
+        case submerchantid
+        case merchantChannelId
+        case tranType
+        case mcc
+        case remarks
+        case initMode
+        case purpose
+        case refCategory
+        case orderId
+        case refUrl
+        case merchatntTxnId
     }
 }
 

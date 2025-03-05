@@ -103,15 +103,18 @@ class DashboardVC: BaseVC {
     var isShowHideWallet = true
     private var cardsArr:[AccountDetailsOnIIN] = []
     
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
         
         self.tableViewDashboard.delegate = self
         self.tableViewDashboard.dataSource = self
         tableViewDashboard.estimatedRowHeight = 200
         tableViewDashboard.rowHeight = UITableView.automaticDimension
+        tableViewDashboard.showsVerticalScrollIndicator = false
+        tableViewDashboard.showsHorizontalScrollIndicator = false
 
         self.tableViewDashboard.register(UINib(nibName: "UserDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "UserDetailTableViewCell")
         self.tableViewDashboard.register(UINib(nibName: "CardDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "CardDetailTableViewCell")
@@ -183,7 +186,24 @@ class DashboardVC: BaseVC {
         setupConstraintsLayouts()
        // setupCollectionView()
         
+        
+        setStatusBarBackgroundColor(color: UIColor.themeGreenLight)
+        
+        
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+           return .lightContent  // This makes the status bar text white
+       }
+       
+       func setStatusBarBackgroundColor(color: UIColor) {
+           let statusBarHeight = UIApplication.shared.statusBarFrame.height
+           let statusBarView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: statusBarHeight))
+           statusBarView.backgroundColor = color
+           
+           self.view.addSubview(statusBarView)
+       }
+    
     func setupCollectionView() {
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = .zero
@@ -1092,6 +1112,7 @@ extension DashboardVC {
                             
                             self?.lblCardNumber.text = "\(components)"
                             self?.strCardNumber = components
+                            self?.tableViewDashboard.reloadData()
                         }
                         
                         let balance  = self?.dashboardViewModel.balanceDetailsModel?.messageBalance?.primary_wallet_balance ?? ""
@@ -1862,6 +1883,7 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
                 }
         
                 cell.lblCardNo.text =  strCardNumber
+              
                 
                 cell.lblRank.text = "Rank:\(self.rankVM.rankModelBase?.data?.myrank?.rank ?? 0)"
                 cell.imgProfile.sd_setImage(with: URL(string: "\(Common.shared.UserProfileImage ?? "")") , placeholderImage: UIImage(named: "placeholder.png"))
@@ -1870,15 +1892,22 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
         } else if indexPath.row == 1 {
             let cell = tableViewDashboard.dequeueReusableCell(withIdentifier: "CardDetailTableViewCell") as! CardDetailTableViewCell
             cell.delegate = self
+            
+           
+            
             if cardsArr.count > 0  {
                 cell.cardsDetailArr = cardsArr
-                cell.btnAddAccount.isHidden = true
+                cell.btnAddAccount.isHidden = false
 //
 //                cell.collectionView.layoutIfNeeded()
             } else {
                 cell.btnAddAccount.isHidden = true
             }
             cell.btnAddAccount.addTarget(self, action: #selector(addAccountActon(_:)), for: .touchUpInside)
+           
+            cell.collectionView.showsHorizontalScrollIndicator = false
+
+            
             return cell
             
         }else if indexPath.row == 2 {
@@ -1897,6 +1926,8 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
                 cell.btnRequest.addTarget(self, action: #selector(requestAction(_:)), for: .touchUpInside)
                 cell.btnTransfer.addTarget(self, action: #selector(transferAction(_:)), for: .touchUpInside)
                 cell.btnMyQr.addTarget(self, action: #selector(myQRAction(_:)), for: .touchUpInside)
+                
+                cell.lblUpiID.text =  cardsArr.first?.vpa ?? ""
             }
             return cell
             

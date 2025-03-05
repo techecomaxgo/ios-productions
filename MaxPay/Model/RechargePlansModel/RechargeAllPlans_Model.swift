@@ -17,7 +17,8 @@ struct DataResponse: Codable {
     let error: String?
     let message: String?
     let operatorName: String?
-    let plans: PlansCategory?
+    let plans: [String: [Plan]]?
+    //let plans: PlansCategory?
 
     enum CodingKeys: String, CodingKey {
         case status, circle, error, message, plans

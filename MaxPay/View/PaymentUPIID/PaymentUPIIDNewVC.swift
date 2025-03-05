@@ -271,8 +271,7 @@ class PaymentUPIIDNewVC: BaseVC, AVAudioPlayerDelegate {
     }
 
     
-    
-    func checkvpa(vpa: String) {
+        func checkvpa(vpa: String) {
         
         let payerInfo = PayerInfo(accountnumber: accountDetails?.accRefNumber, mcc: MCC, name: accountDetails?.name, payervpa: accountDetails?.vpa)
         

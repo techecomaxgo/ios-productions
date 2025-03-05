@@ -27,6 +27,7 @@ let MerchantId = "ECOMAXGOPROD1234"
 let MerchChanId = "ECOMAXGOPROD1234"
 //let SubMerchantId = "OLIVE"
 let SubMerchantId = "ECOMAXGOPROD1234"
+//MerchantVpa = "ecomaxgo@maxaxis"
 
 let MerchantVpa = "ecomaxgo@maxaxis"
 let MCC = "6211"

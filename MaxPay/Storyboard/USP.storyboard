@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -43,7 +43,7 @@
                                             <rect key="frame" x="16" y="40" width="361" height="87"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter City Name, Location or Specific Hotel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hC-N2-6k9">
-                                                    <rect key="frame" x="8" y="16" width="209.66666666666666" height="14"/>
+                                                    <rect key="frame" x="8" y="16" width="214" height="14"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="14" id="ujS-Qp-A00"/>
                                                     </constraints>
@@ -311,7 +311,7 @@
                                                     <rect key="frame" x="0.0" y="8" width="361" height="164"/>
                                                 </scrollView>
                                                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="dDb-JO-BSe">
-                                                    <rect key="frame" x="114.00000000000001" y="139.33333333333337" width="133.33333333333337" height="25.666666666666657"/>
+                                                    <rect key="frame" x="135.33333333333334" y="139.33333333333337" width="90.666666666666657" height="25.666666666666657"/>
                                                     <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="currentPageIndicatorTintColor" name="primary-green"/>
                                                 </pageControl>
@@ -1576,7 +1576,7 @@
                                                         <rect key="frame" x="0.0" y="8" width="361" height="184"/>
                                                     </scrollView>
                                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="zrn-78-S82">
-                                                        <rect key="frame" x="114.00000000000001" y="159.33333333333326" width="133.33333333333337" height="25.666666666666657"/>
+                                                        <rect key="frame" x="135.33333333333334" y="159.33333333333326" width="90.666666666666657" height="25.666666666666657"/>
                                                         <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="currentPageIndicatorTintColor" name="primary-green"/>
                                                     </pageControl>
@@ -10497,7 +10497,7 @@ Airport (Terminal 1)</string>
                                                     <rect key="frame" x="0.0" y="8" width="361" height="164"/>
                                                 </scrollView>
                                                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="3T7-Ic-7ZV">
-                                                    <rect key="frame" x="114.00000000000001" y="139.33333333333337" width="133.33333333333337" height="25.666666666666657"/>
+                                                    <rect key="frame" x="135.33333333333334" y="139.33333333333337" width="90.666666666666657" height="25.666666666666657"/>
                                                     <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="currentPageIndicatorTintColor" name="primary-green"/>
                                                 </pageControl>
@@ -10989,7 +10989,7 @@ Airport (Terminal 1)</string>
                                                     <rect key="frame" x="0.0" y="8" width="361" height="164"/>
                                                 </scrollView>
                                                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="DYX-d3-Diu">
-                                                    <rect key="frame" x="114.00000000000001" y="139.33333333333337" width="133.33333333333337" height="25.666666666666657"/>
+                                                    <rect key="frame" x="135.33333333333334" y="139.33333333333337" width="90.666666666666657" height="25.666666666666657"/>
                                                     <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="currentPageIndicatorTintColor" name="primary-green"/>
                                                 </pageControl>
@@ -11200,7 +11200,7 @@ Airport (Terminal 1)</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHU-5n-qjC">
-                                        <rect key="frame" x="83" y="10.33333333333333" width="57.333333333333343" height="24.666666666666671"/>
+                                        <rect key="frame" x="83" y="10.33333333333333" width="55" height="24.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="21"/>
                                         <color key="textColor" name="primary-green"/>
                                         <nil key="highlightedColor"/>
@@ -12149,7 +12149,7 @@ Airport (Terminal 1)</string>
                                                         <rect key="frame" x="8" y="192" width="334" height="60"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nnF-n1-BUb">
-                                                                <rect key="frame" x="8" y="18.666666666666686" width="25" height="23.666666666666671"/>
+                                                                <rect key="frame" x="8" y="18.33333333333335" width="25" height="23.666666666666664"/>
                                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="25" id="8Xr-yq-2nY"/>
@@ -12183,7 +12183,7 @@ Airport (Terminal 1)</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="KfN-Gf-6Zt">
-                                                        <rect key="frame" x="165" y="67" width="20" height="18.666666666666671"/>
+                                                        <rect key="frame" x="165" y="66.666666666666671" width="20" height="18.666666666666671"/>
                                                         <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="OWP-1y-hFO"/>
@@ -14650,13 +14650,13 @@ Airport (Terminal 1)</string>
                                         <rect key="frame" x="0.0" y="8" width="393" height="54"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="InterCity smart Bus" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDp-sq-Luq">
-                                                <rect key="frame" x="16" y="8.0000000000000018" width="361" height="16.666666666666671"/>
+                                                <rect key="frame" x="16" y="7.9999999999999982" width="361" height="16.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
                                                 <color key="textColor" name="reload-grey-color"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volvo A/C Seater Semi Sleeper  (2/2)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05u-3R-Q7V">
-                                                <rect key="frame" x="16" y="30.666666666666671" width="361" height="13"/>
+                                                <rect key="frame" x="16" y="30.333333333333329" width="361" height="13"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
                                                 <color key="textColor" name="card-number-color"/>
                                                 <nil key="highlightedColor"/>
@@ -14702,10 +14702,10 @@ Airport (Terminal 1)</string>
                                                                 </constraints>
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selected-tab-line" translatesAutoresizingMaskIntoConstraints="NO" id="B2L-3U-InP">
-                                                                <rect key="frame" x="8.3333333333333286" y="56" width="81" height="3"/>
+                                                                <rect key="frame" x="8" y="56" width="82" height="3"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKk-eX-ydx">
-                                                                <rect key="frame" x="8.3333333333333286" y="28" width="81" height="31"/>
+                                                                <rect key="frame" x="8" y="28" width="82" height="31"/>
                                                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="Select Seat">
@@ -14804,10 +14804,10 @@ Airport (Terminal 1)</string>
                                                                 </constraints>
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selected-tab-line" translatesAutoresizingMaskIntoConstraints="NO" id="YpH-bL-03S">
-                                                                <rect key="frame" x="11" y="56" width="76" height="3"/>
+                                                                <rect key="frame" x="10.333333333333371" y="56" width="77" height="3"/>
                                                             </imageView>
                                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKO-xO-HKy">
-                                                                <rect key="frame" x="11" y="28" width="76" height="31"/>
+                                                                <rect key="frame" x="10.333333333333371" y="28" width="77" height="31"/>
                                                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="Drop Point">
@@ -14900,7 +14900,7 @@ Airport (Terminal 1)</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Non-Stop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAO-0x-zMn">
-                                        <rect key="frame" x="180" y="44.333333333333314" width="33.333333333333343" height="9.6666666666666643"/>
+                                        <rect key="frame" x="179" y="44.333333333333314" width="35" height="9.3333333333333357"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="8"/>
                                         <color key="textColor" name="card-number-color"/>
                                         <nil key="highlightedColor"/>
@@ -14924,7 +14924,7 @@ Airport (Terminal 1)</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5h 55m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcT-BW-Xrf">
-                                        <rect key="frame" x="179" y="32.666666666666686" width="35" height="9.6666666666666643"/>
+                                        <rect key="frame" x="179" y="33" width="35" height="9.3333333333333357"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="35" id="asb-eN-aZK"/>
                                         </constraints>
@@ -15486,13 +15486,13 @@ Airport (Terminal 1)</string>
                                 <rect key="frame" x="0.0" y="1002" width="393" height="130"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹45600" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMQ-HT-AZ8">
-                                        <rect key="frame" x="16" y="86" width="174" height="19"/>
+                                        <rect key="frame" x="16" y="86.333333333333258" width="174" height="18.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="16"/>
                                         <color key="textColor" name="reload-grey-color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="up-arrow-ic" translatesAutoresizingMaskIntoConstraints="NO" id="ce8-XQ-bpQ">
-                                        <rect key="frame" x="93" y="60.666666666666742" width="16" height="16"/>
+                                        <rect key="frame" x="93" y="61" width="16" height="16"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPQ-Jb-nSM" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
                                         <rect key="frame" x="200" y="55" width="177" height="50"/>
@@ -15515,7 +15515,7 @@ Airport (Terminal 1)</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DcC-nV-5gl">
-                                        <rect key="frame" x="16" y="51" width="100" height="35"/>
+                                        <rect key="frame" x="16" y="51.333333333333258" width="100" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="C90-9m-PSW"/>
                                             <constraint firstAttribute="height" constant="35" id="v6f-0u-b8o"/>
@@ -15530,7 +15530,7 @@ Airport (Terminal 1)</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seats Selected 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFf-7Y-Q3t">
-                                        <rect key="frame" x="16" y="14.333333333333373" width="361" height="16.666666666666671"/>
+                                        <rect key="frame" x="16" y="14.999999999999998" width="361" height="16.333333333333329"/>
                                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
                                         <color key="textColor" name="reload-grey-color"/>
                                         <nil key="highlightedColor"/>
@@ -16179,10 +16179,10 @@ Airport (Terminal 1)</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxZ-8x-7iF" customClass="CardView" customModule="MaxPay" customModuleProvider="target">
-                                <rect key="frame" x="16" y="147" width="361" height="97.666666666666686"/>
+                                <rect key="frame" x="16" y="147" width="361" height="97.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delhi to Mumbai" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SES-j3-VKZ">
-                                        <rect key="frame" x="15.999999999999993" y="37" width="102.33333333333331" height="16.666666666666671"/>
+                                        <rect key="frame" x="16.000000000000007" y="37" width="102.66666666666669" height="16.333333333333329"/>
                                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
                                         <color key="textColor" name="reload-grey-color"/>
                                         <nil key="highlightedColor"/>
@@ -16194,13 +16194,13 @@ Airport (Terminal 1)</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2,Mar,2023" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWi-XG-z2Y">
-                                        <rect key="frame" x="16" y="69.666666666666657" width="54" height="13"/>
+                                        <rect key="frame" x="16" y="69.333333333333343" width="55" height="13"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUo-Kn-DOc">
-                                        <rect key="frame" x="306" y="29" width="40" height="40"/>
+                                        <rect key="frame" x="306" y="28.666666666666657" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="Crm-NJ-SaP"/>
                                             <constraint firstAttribute="height" constant="40" id="XlD-l8-6HZ"/>
@@ -16241,7 +16241,7 @@ Airport (Terminal 1)</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p2r-ld-rga">
-                                <rect key="frame" x="30" y="294.66666666666669" width="333" height="0.0"/>
+                                <rect key="frame" x="30" y="294.33333333333331" width="333" height="0.0"/>
                                 <subviews>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef7-Ru-Urs">
                                         <rect key="frame" x="10" y="20" width="30" height="24"/>
@@ -16264,7 +16264,7 @@ Airport (Terminal 1)</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Bus" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fN8-oI-XQ0">
-                                        <rect key="frame" x="84" y="58.333333333333314" width="227" height="17"/>
+                                        <rect key="frame" x="84" y="58.333333333333371" width="227" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -16316,7 +16316,7 @@ Airport (Terminal 1)</string>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zcF-3N-mMc">
-                                <rect key="frame" x="0.0" y="314.66666666666669" width="393" height="537.33333333333326"/>
+                                <rect key="frame" x="0.0" y="314.33333333333331" width="393" height="537.66666666666674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BusListCell" rowHeight="245" id="aOd-W7-sDB" customClass="BusListCell" customModule="MaxPay" customModuleProvider="target">
@@ -16336,7 +16336,7 @@ Airport (Terminal 1)</string>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="InterCity Smart Bus" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPm-Qm-2OH">
-                                                            <rect key="frame" x="16" y="25" width="246" height="16.666666666666671"/>
+                                                            <rect key="frame" x="16" y="25" width="246" height="16.333333333333329"/>
                                                             <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
                                                             <color key="textColor" name="reload-grey-color"/>
                                                             <nil key="highlightedColor"/>
@@ -16469,7 +16469,7 @@ Airport (Terminal 1)</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Non-Stop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvz-LD-fRK">
-                                                            <rect key="frame" x="160" y="109.33333333333333" width="33.333333333333343" height="9.6666666666666714"/>
+                                                            <rect key="frame" x="159" y="109.33333333333333" width="35" height="9.6666666666666714"/>
                                                             <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="8"/>
                                                             <color key="textColor" name="card-number-color"/>
                                                             <nil key="highlightedColor"/>
@@ -16496,7 +16496,7 @@ Airport (Terminal 1)</string>
                                                             <state key="normal" title="• Dropping Point"/>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPv-7B-Res">
-                                                            <rect key="frame" x="147.66666666666666" y="183" width="58" height="40"/>
+                                                            <rect key="frame" x="147" y="183" width="59" height="40"/>
                                                             <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="8"/>
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                             <state key="normal" title="• Boarding Point"/>
@@ -16548,7 +16548,7 @@ Airport (Terminal 1)</string>
                                                             </connections>
                                                         </collectionView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volvo A/C Seater Semi sleeper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nA-3e-7Hr">
-                                                            <rect key="frame" x="16" y="45.666666666666664" width="249" height="10"/>
+                                                            <rect key="frame" x="16" y="45.333333333333336" width="249" height="10"/>
                                                             <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="8"/>
                                                             <color key="textColor" name="card-number-color"/>
                                                             <nil key="highlightedColor"/>
@@ -16714,13 +16714,13 @@ Airport (Terminal 1)</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bus Service Providers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tP-9Y-3ql">
-                                <rect key="frame" x="16" y="274.66666666666669" width="135" height="17"/>
+                                <rect key="frame" x="16" y="274.33333333333331" width="137.66666666666666" height="17"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                 <color key="textColor" name="card-number-color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfq-tZ-cuq">
-                                <rect key="frame" x="339" y="264.33333333333331" width="38" height="38"/>
+                                <rect key="frame" x="339" y="264" width="38" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="38" id="e9m-6z-ZyR"/>
                                     <constraint firstAttribute="height" constant="38" id="mbV-s5-HOa"/>
@@ -21201,7 +21201,7 @@ Airport (Terminal 1)</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bus Ticket Payment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhM-T3-mNV">
-                                        <rect key="frame" x="20" y="0.0" width="211.33333333333334" height="28"/>
+                                        <rect key="frame" x="20" y="0.0" width="215" height="28"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="24"/>
                                         <color key="textColor" name="primary-green"/>
                                         <nil key="highlightedColor"/>
@@ -21299,7 +21299,7 @@ Airport (Terminal 1)</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹1898" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wji-OX-HpP">
-                                <rect key="frame" x="140.66666666666666" y="156" width="112" height="47"/>
+                                <rect key="frame" x="141.66666666666666" y="156" width="110" height="47"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="40"/>
                                 <color key="textColor" name="reload-grey-color"/>
                                 <nil key="highlightedColor"/>
@@ -21336,7 +21336,7 @@ Airport (Terminal 1)</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Sleeper/ 1 Seating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2u-K2-xsS">
-                                <rect key="frame" x="242.66666666666663" y="283" width="134.33333333333337" height="18"/>
+                                <rect key="frame" x="240.66666666666663" y="283" width="136.33333333333337" height="18"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                 <color key="textColor" name="card-number-color"/>
                                 <nil key="highlightedColor"/>
@@ -21354,7 +21354,7 @@ Airport (Terminal 1)</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Base Fare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wh-uK-VqV">
-                                <rect key="frame" x="16" y="349" width="66" height="18"/>
+                                <rect key="frame" x="16" y="349" width="67.666666666666671" height="18"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                 <color key="textColor" name="card-number-color"/>
                                 <nil key="highlightedColor"/>
@@ -21378,7 +21378,7 @@ Airport (Terminal 1)</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoD-s7-zhj">
-                                <rect key="frame" x="15.999999999999998" y="415" width="28.333333333333329" height="18"/>
+                                <rect key="frame" x="16" y="415" width="30" height="18"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                 <color key="textColor" name="card-number-color"/>
                                 <nil key="highlightedColor"/>
@@ -21397,19 +21397,19 @@ Airport (Terminal 1)</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18 miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5im-6U-3fl">
-                                <rect key="frame" x="243.66666666666666" y="511" width="57.333333333333343" height="18"/>
+                                <rect key="frame" x="245" y="511" width="56" height="18"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
                                 <color key="textColor" name="white-color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay &amp; Get" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsv-BT-nvD">
-                                <rect key="frame" x="91" y="511" width="65.333333333333314" height="18"/>
+                                <rect key="frame" x="91" y="511" width="67.333333333333314" height="18"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
                                 <color key="textColor" name="white-color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18 miles=₹1.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VyC-4o-7du">
-                                <rect key="frame" x="149" y="559" width="95" height="18"/>
+                                <rect key="frame" x="149.66666666666666" y="559" width="93.666666666666657" height="18"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
                                 <color key="textColor" name="miles-logo-red"/>
                                 <nil key="highlightedColor"/>
@@ -21453,13 +21453,13 @@ Airport (Terminal 1)</string>
                                 <rect key="frame" x="0.0" y="818" width="393" height="24"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secured by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlM-5O-MST">
-                                        <rect key="frame" x="144.66666666666666" y="5.6666666666666288" width="54" height="13"/>
+                                        <rect key="frame" x="143.33333333333334" y="5.6666666666666288" width="56.333333333333343" height="13"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
                                         <color key="textColor" name="card-number-color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bbps_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Qip-M8-dKS">
-                                        <rect key="frame" x="214.66666666666666" y="6" width="35" height="12"/>
+                                        <rect key="frame" x="215.66666666666666" y="6" width="35" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="35" id="OvZ-b6-9ZL"/>
                                             <constraint firstAttribute="height" constant="12" id="hgv-oX-AcH"/>
@@ -21602,7 +21602,7 @@ Airport (Terminal 1)</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bus Ticket Payment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgl-fP-0Tx">
-                                        <rect key="frame" x="20" y="0.0" width="211.33333333333334" height="28"/>
+                                        <rect key="frame" x="20" y="0.0" width="215" height="28"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="24"/>
                                         <color key="textColor" name="primary-green"/>
                                         <nil key="highlightedColor"/>
@@ -21692,13 +21692,13 @@ Airport (Terminal 1)</string>
                                 <rect key="frame" x="0.0" y="818" width="393" height="24"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secured by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7W-6H-Kpf">
-                                        <rect key="frame" x="144.66666666666666" y="5.6666666666666288" width="54" height="13"/>
+                                        <rect key="frame" x="143.33333333333334" y="5.6666666666666288" width="56.333333333333343" height="13"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
                                         <color key="textColor" name="card-number-color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bbps_logo" translatesAutoresizingMaskIntoConstraints="NO" id="saI-wm-AiU">
-                                        <rect key="frame" x="214.66666666666666" y="6" width="35" height="12"/>
+                                        <rect key="frame" x="215.66666666666666" y="6" width="35" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="35" id="2pE-2V-2xz"/>
                                             <constraint firstAttribute="height" constant="12" id="3el-rl-ZUo"/>
@@ -21732,7 +21732,7 @@ Airport (Terminal 1)</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paying for Hira Thakur Travels booking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtu-Cl-xdX">
-                                <rect key="frame" x="16" y="143" width="188.33333333333334" height="13"/>
+                                <rect key="frame" x="16" y="143" width="189.66666666666666" height="13"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
                                 <color key="textColor" name="reload-grey-color"/>
                                 <nil key="highlightedColor"/>
@@ -21761,7 +21761,7 @@ Airport (Terminal 1)</string>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pq9-qp-Jgc">
-                                                    <rect key="frame" x="16" y="16" width="123" height="19"/>
+                                                    <rect key="frame" x="16" y="16" width="124" height="19"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
                                                     <color key="textColor" name="reload-grey-color"/>
                                                     <nil key="highlightedColor"/>
@@ -21888,7 +21888,7 @@ Airport (Terminal 1)</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paying through wallet or UPI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvf-U4-hCn">
-                                <rect key="frame" x="127.66666666666669" y="727" width="138" height="13"/>
+                                <rect key="frame" x="126.66666666666669" y="727" width="140" height="13"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
                                 <color key="textColor" name="reload-grey-color"/>
                                 <nil key="highlightedColor"/>
@@ -22019,13 +22019,13 @@ Airport (Terminal 1)</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recharge Mobile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNP-LC-jz3">
-                                        <rect key="frame" x="16.000000000000007" y="88" width="120.66666666666669" height="19"/>
+                                        <rect key="frame" x="15.999999999999993" y="88" width="121.33333333333331" height="18.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
                                         <color key="textColor" name="reload-grey-color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceC-Ue-fiN">
-                                        <rect key="frame" x="16" y="127" width="361" height="60"/>
+                                        <rect key="frame" x="16" y="126.66666666666666" width="361" height="60"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_background_ic" translatesAutoresizingMaskIntoConstraints="NO" id="qbf-JW-Z1p">
                                                 <rect key="frame" x="0.0" y="0.0" width="361" height="60"/>
@@ -22063,8 +22063,8 @@ Airport (Terminal 1)</string>
                                             <constraint firstAttribute="trailing" secondItem="5xt-0h-bQ1" secondAttribute="trailing" constant="10" id="eQ4-Sx-mvH"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSg-0B-WdG">
-                                        <rect key="frame" x="16" y="203" width="361" height="20"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSg-0B-WdG">
+                                        <rect key="frame" x="16" y="202.66666666666669" width="361" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="bc6-gh-EGX"/>
                                         </constraints>
@@ -22072,8 +22072,8 @@ Airport (Terminal 1)</string>
                                         <color key="textColor" name="reload-grey-color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEO-Hl-9Ch">
-                                        <rect key="frame" x="16" y="301" width="361" height="450"/>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEO-Hl-9Ch">
+                                        <rect key="frame" x="16" y="300.66666666666674" width="361" height="450.33333333333326"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Contacts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmg-DH-WLA">
                                                 <rect key="frame" x="8" y="8" width="345" height="21"/>
@@ -22085,7 +22085,7 @@ Airport (Terminal 1)</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WCw-LZ-hL2">
-                                                <rect key="frame" x="0.0" y="45" width="361" height="405"/>
+                                                <rect key="frame" x="0.0" y="45" width="361" height="405.33333333333331"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
@@ -22195,8 +22195,8 @@ Airport (Terminal 1)</string>
                                             <constraint firstAttribute="bottom" secondItem="WCw-LZ-hL2" secondAttribute="bottom" id="yzI-5k-ejf"/>
                                         </constraints>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lJb-Up-FGu">
-                                        <rect key="frame" x="82" y="231" width="295" height="50"/>
+                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lJb-Up-FGu">
+                                        <rect key="frame" x="82" y="230.66666666666669" width="295" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAC-fz-4Vc">
                                                 <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
@@ -22215,8 +22215,8 @@ Airport (Terminal 1)</string>
                                             <constraint firstAttribute="height" constant="50" id="gfn-3K-3X1"/>
                                         </constraints>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Jl-Jv-Klh" customClass="CardView" customModule="MaxPay" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="231" width="50" height="50"/>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Jl-Jv-Klh" customClass="CardView" customModule="MaxPay" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="230.66666666666669" width="50" height="50"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me_profile" translatesAutoresizingMaskIntoConstraints="NO" id="Mze-Rw-0FN" customClass="DesignableImageView" customModule="MaxPay" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -22524,11 +22524,11 @@ Airport (Terminal 1)</string>
                                                                                     <rect key="frame" x="0.0" y="0.0" width="112.33333333333333" height="46"/>
                                                                                     <subviews>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FS5-eF-a3X">
-                                                                                            <rect key="frame" x="3.9999999999999982" y="0.0" width="26.333333333333329" height="40"/>
+                                                                                            <rect key="frame" x="3.9999999999999982" y="3" width="26.333333333333329" height="40"/>
                                                                                             <constraints>
                                                                                                 <constraint firstAttribute="height" constant="40" id="zZe-Jz-hDK"/>
                                                                                             </constraints>
-                                                                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
                                                                                             <nil key="textColor"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
@@ -22545,7 +22545,7 @@ Airport (Terminal 1)</string>
                                                                                     </subviews>
                                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <constraints>
-                                                                                        <constraint firstItem="FS5-eF-a3X" firstAttribute="top" secondItem="2Bi-YV-GmJ" secondAttribute="top" id="8Un-S6-D69"/>
+                                                                                        <constraint firstItem="FS5-eF-a3X" firstAttribute="top" secondItem="2Bi-YV-GmJ" secondAttribute="top" constant="3" id="8Un-S6-D69"/>
                                                                                         <constraint firstItem="cpP-rW-uhG" firstAttribute="centerY" secondItem="2Bi-YV-GmJ" secondAttribute="centerY" id="DIE-wc-Tq9"/>
                                                                                         <constraint firstItem="cpP-rW-uhG" firstAttribute="leading" secondItem="FS5-eF-a3X" secondAttribute="trailing" constant="4" id="bst-8n-0R3"/>
                                                                                         <constraint firstItem="FS5-eF-a3X" firstAttribute="leading" secondItem="2Bi-YV-GmJ" secondAttribute="leading" constant="4" id="mPc-OR-SDj"/>
@@ -22555,26 +22555,14 @@ Airport (Terminal 1)</string>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gzt-9w-hlg">
                                                                                     <rect key="frame" x="120.33333333333334" y="0.0" width="112.33333333333334" height="46"/>
                                                                                     <subviews>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWT-rN-SFG">
-                                                                                            <rect key="frame" x="111.33333333333331" y="16" width="1" height="25"/>
-                                                                                            <constraints>
-                                                                                                <constraint firstAttribute="width" constant="1" id="oKE-Fg-E95"/>
-                                                                                            </constraints>
-                                                                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
-                                                                                            <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                                                            <nil key="highlightedColor"/>
-                                                                                        </label>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validity" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQv-AD-oL5">
-                                                                                            <rect key="frame" x="0.0" y="5" width="36" height="25"/>
-                                                                                            <constraints>
-                                                                                                <constraint firstAttribute="width" constant="36" id="91Q-RQ-QHG"/>
-                                                                                            </constraints>
-                                                                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
-                                                                                            <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQv-AD-oL5">
+                                                                                            <rect key="frame" x="0.0" y="25" width="112.33333333333333" height="21"/>
+                                                                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                                                            <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MM-Ty-Lsg">
-                                                                                            <rect key="frame" x="35.999999999999993" y="5" width="75.333333333333314" height="36"/>
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="112.33333333333333" height="36"/>
                                                                                             <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
                                                                                             <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                                             <nil key="highlightedColor"/>
@@ -22582,31 +22570,29 @@ Airport (Terminal 1)</string>
                                                                                     </subviews>
                                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <constraints>
-                                                                                        <constraint firstAttribute="bottom" secondItem="NQv-AD-oL5" secondAttribute="bottom" constant="16" id="9Jh-pA-5S3"/>
-                                                                                        <constraint firstItem="1MM-Ty-Lsg" firstAttribute="top" secondItem="Gzt-9w-hlg" secondAttribute="top" constant="5" id="EUI-r0-nWg"/>
+                                                                                        <constraint firstAttribute="bottom" secondItem="NQv-AD-oL5" secondAttribute="bottom" id="9Jh-pA-5S3"/>
+                                                                                        <constraint firstItem="1MM-Ty-Lsg" firstAttribute="top" secondItem="Gzt-9w-hlg" secondAttribute="top" id="EUI-r0-nWg"/>
+                                                                                        <constraint firstAttribute="trailing" secondItem="NQv-AD-oL5" secondAttribute="trailing" id="MhW-22-Ebf"/>
                                                                                         <constraint firstItem="NQv-AD-oL5" firstAttribute="leading" secondItem="Gzt-9w-hlg" secondAttribute="leading" id="Ssk-Sp-Lgm"/>
-                                                                                        <constraint firstAttribute="bottom" secondItem="QWT-rN-SFG" secondAttribute="bottom" constant="5" id="VJm-M1-3of"/>
-                                                                                        <constraint firstAttribute="trailing" secondItem="QWT-rN-SFG" secondAttribute="trailing" id="VVT-cP-oHU"/>
-                                                                                        <constraint firstAttribute="bottom" secondItem="1MM-Ty-Lsg" secondAttribute="bottom" constant="5" id="XqV-1Z-b0d"/>
-                                                                                        <constraint firstItem="1MM-Ty-Lsg" firstAttribute="leading" secondItem="NQv-AD-oL5" secondAttribute="trailing" id="h69-lE-esZ"/>
-                                                                                        <constraint firstItem="NQv-AD-oL5" firstAttribute="top" secondItem="Gzt-9w-hlg" secondAttribute="top" constant="5" id="jUb-y4-k2n"/>
-                                                                                        <constraint firstItem="QWT-rN-SFG" firstAttribute="leading" secondItem="1MM-Ty-Lsg" secondAttribute="trailing" id="pnx-IL-niy"/>
-                                                                                        <constraint firstItem="QWT-rN-SFG" firstAttribute="top" secondItem="Gzt-9w-hlg" secondAttribute="top" constant="16" id="rhV-Hw-9tk"/>
+                                                                                        <constraint firstAttribute="bottom" secondItem="1MM-Ty-Lsg" secondAttribute="bottom" constant="10" id="XqV-1Z-b0d"/>
+                                                                                        <constraint firstItem="1MM-Ty-Lsg" firstAttribute="leading" secondItem="Gzt-9w-hlg" secondAttribute="leading" id="h69-lE-esZ"/>
+                                                                                        <constraint firstItem="NQv-AD-oL5" firstAttribute="top" secondItem="Gzt-9w-hlg" secondAttribute="top" constant="25" id="jUb-y4-k2n"/>
+                                                                                        <constraint firstItem="1MM-Ty-Lsg" firstAttribute="trailing" secondItem="Gzt-9w-hlg" secondAttribute="trailing" id="tfG-k8-RFP"/>
                                                                                     </constraints>
                                                                                 </view>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DPR-1E-EU1">
                                                                                     <rect key="frame" x="240.66666666666671" y="0.0" width="112.33333333333334" height="46"/>
                                                                                     <subviews>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7y-iN-Vy9">
-                                                                                            <rect key="frame" x="0.0" y="5" width="36" height="25"/>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7y-iN-Vy9">
+                                                                                            <rect key="frame" x="45" y="25" width="36" height="21"/>
                                                                                             <constraints>
-                                                                                                <constraint firstAttribute="width" constant="36" id="zcJ-Hz-SJy"/>
+                                                                                                <constraint firstAttribute="width" constant="36" id="gGk-1l-RJJ"/>
                                                                                             </constraints>
-                                                                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
-                                                                                            <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                                                            <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GB/Day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCo-80-Img">
+                                                                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GB/Day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCo-80-Img">
                                                                                             <rect key="frame" x="68.333333333333314" y="16" width="36" height="25"/>
                                                                                             <constraints>
                                                                                                 <constraint firstAttribute="width" constant="36" id="VDn-3P-GL0"/>
@@ -22615,8 +22601,8 @@ Airport (Terminal 1)</string>
                                                                                             <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbE-Cy-fLw">
-                                                                                            <rect key="frame" x="36" y="5" width="32.333333333333343" height="36"/>
+                                                                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbE-Cy-fLw">
+                                                                                            <rect key="frame" x="50.333333333333314" y="5" width="18" height="36"/>
                                                                                             <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
                                                                                             <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                                             <nil key="highlightedColor"/>
@@ -22629,11 +22615,10 @@ Airport (Terminal 1)</string>
                                                                                         <constraint firstAttribute="bottom" secondItem="dbE-Cy-fLw" secondAttribute="bottom" constant="5" id="U0Q-2t-QwO"/>
                                                                                         <constraint firstItem="hCo-80-Img" firstAttribute="leading" secondItem="dbE-Cy-fLw" secondAttribute="trailing" id="Vdv-Ys-ugT"/>
                                                                                         <constraint firstAttribute="trailing" secondItem="hCo-80-Img" secondAttribute="trailing" constant="8" id="fan-gr-k0Z"/>
-                                                                                        <constraint firstAttribute="bottom" secondItem="I7y-iN-Vy9" secondAttribute="bottom" constant="16" id="gUF-Lc-dC5"/>
-                                                                                        <constraint firstItem="I7y-iN-Vy9" firstAttribute="top" secondItem="DPR-1E-EU1" secondAttribute="top" constant="5" id="ir6-aB-ZL3"/>
+                                                                                        <constraint firstAttribute="bottom" secondItem="I7y-iN-Vy9" secondAttribute="bottom" id="gUF-Lc-dC5"/>
+                                                                                        <constraint firstItem="I7y-iN-Vy9" firstAttribute="top" secondItem="DPR-1E-EU1" secondAttribute="top" constant="25" id="ir6-aB-ZL3"/>
                                                                                         <constraint firstItem="dbE-Cy-fLw" firstAttribute="top" secondItem="DPR-1E-EU1" secondAttribute="top" constant="5" id="jfI-Gq-LF3"/>
-                                                                                        <constraint firstItem="dbE-Cy-fLw" firstAttribute="leading" secondItem="I7y-iN-Vy9" secondAttribute="trailing" id="wY6-1T-bsx"/>
-                                                                                        <constraint firstItem="I7y-iN-Vy9" firstAttribute="leading" secondItem="DPR-1E-EU1" secondAttribute="leading" id="yXc-c6-Dn9"/>
+                                                                                        <constraint firstItem="I7y-iN-Vy9" firstAttribute="leading" secondItem="DPR-1E-EU1" secondAttribute="leading" constant="45" id="yXc-c6-Dn9"/>
                                                                                     </constraints>
                                                                                 </view>
                                                                             </subviews>
@@ -22691,14 +22676,14 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                                                                 <constraint firstAttribute="height" constant="20" id="Rt5-ky-yfA"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlimited 5G Data" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldG-ae-Jqh">
+                                                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlimited 5G Data" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldG-ae-Jqh">
                                                                             <rect key="frame" x="36" y="0.0" width="201" height="56"/>
                                                                             <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+3 More Offers" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30l-t0-WRG">
-                                                                            <rect key="frame" x="245" y="21" width="100" height="14.333333333333336"/>
+                                                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+3 More Offers" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30l-t0-WRG">
+                                                                            <rect key="frame" x="245" y="21" width="100" height="14"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="100" id="1rw-AY-csA"/>
                                                                             </constraints>
@@ -23351,10 +23336,10 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qab-5m-M6M">
-                                <rect key="frame" x="0.0" y="318" width="393" height="534"/>
+                                <rect key="frame" x="0.0" y="558" width="393" height="294"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khy-3V-Lgz" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="434" width="377" height="50"/>
+                                        <rect key="frame" x="8" y="194" width="377" height="50"/>
                                         <color key="backgroundColor" red="0.81176470590000005" green="0.8980392157" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="dio-vn-Ztf"/>
@@ -23374,7 +23359,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jNC-LO-DQ7">
-                                        <rect key="frame" x="16" y="8" width="361" height="180"/>
+                                        <rect key="frame" x="16" y="8" width="361" height="120"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7g9-IU-cEZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="361" height="60"/>
@@ -23386,11 +23371,11 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                                                 <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="50"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Scr-ux-no4">
-                                                                        <rect key="frame" x="4" y="0.0" width="23.666666666666668" height="40"/>
+                                                                        <rect key="frame" x="4" y="5" width="23.666666666666668" height="40"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="kfD-59-wGm"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -23411,32 +23396,20 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                                                     <constraint firstItem="1Ks-WG-KzG" firstAttribute="centerY" secondItem="0Ad-s5-Kqu" secondAttribute="centerY" id="Nnt-8a-9xE"/>
                                                                     <constraint firstAttribute="trailing" secondItem="1Ks-WG-KzG" secondAttribute="trailing" constant="8" id="Nps-QF-FTh"/>
                                                                     <constraint firstItem="1Ks-WG-KzG" firstAttribute="leading" secondItem="Scr-ux-no4" secondAttribute="trailing" constant="4" id="Qyn-L5-4wQ"/>
-                                                                    <constraint firstItem="Scr-ux-no4" firstAttribute="top" secondItem="0Ad-s5-Kqu" secondAttribute="top" id="axC-by-zxL"/>
+                                                                    <constraint firstItem="Scr-ux-no4" firstAttribute="top" secondItem="0Ad-s5-Kqu" secondAttribute="top" constant="5" id="axC-by-zxL"/>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2s-iK-G49">
                                                                 <rect key="frame" x="117.66666666666666" y="0.0" width="109.66666666666666" height="50"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vk8-WV-B6j">
-                                                                        <rect key="frame" x="108.66666666666669" y="16" width="1" height="29"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="1" id="BSx-4y-VMy"/>
-                                                                        </constraints>
-                                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
-                                                                        <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validity" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMf-zB-mFd">
-                                                                        <rect key="frame" x="0.0" y="5" width="36" height="29"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="36" id="eQT-iO-ZFu"/>
-                                                                        </constraints>
-                                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
-                                                                        <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMf-zB-mFd">
+                                                                        <rect key="frame" x="10" y="25" width="89.666666666666671" height="25"/>
+                                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                                        <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wfd-Te-kni">
-                                                                        <rect key="frame" x="36.000000000000007" y="5" width="72.666666666666686" height="40"/>
+                                                                        <rect key="frame" x="5" y="5" width="99.666666666666671" height="30"/>
                                                                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
                                                                         <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -23444,32 +23417,30 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="trailing" secondItem="Vk8-WV-B6j" secondAttribute="trailing" id="D1d-T0-McL"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="Vk8-WV-B6j" secondAttribute="bottom" constant="5" id="DEH-n8-HpS"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="AMf-zB-mFd" secondAttribute="bottom" constant="16" id="DTd-Od-mvQ"/>
-                                                                    <constraint firstItem="AMf-zB-mFd" firstAttribute="leading" secondItem="d2s-iK-G49" secondAttribute="leading" id="JUq-pH-HcG"/>
-                                                                    <constraint firstItem="Wfd-Te-kni" firstAttribute="top" secondItem="d2s-iK-G49" secondAttribute="top" constant="5" id="Kwt-3Y-5qd"/>
-                                                                    <constraint firstItem="Vk8-WV-B6j" firstAttribute="leading" secondItem="Wfd-Te-kni" secondAttribute="trailing" id="aZD-HM-E3d"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="Wfd-Te-kni" secondAttribute="bottom" constant="5" id="csJ-hp-12B"/>
-                                                                    <constraint firstItem="Vk8-WV-B6j" firstAttribute="top" secondItem="d2s-iK-G49" secondAttribute="top" constant="16" id="dHF-mW-4EH"/>
-                                                                    <constraint firstItem="Wfd-Te-kni" firstAttribute="leading" secondItem="AMf-zB-mFd" secondAttribute="trailing" id="lvV-1L-1A1"/>
-                                                                    <constraint firstItem="AMf-zB-mFd" firstAttribute="top" secondItem="d2s-iK-G49" secondAttribute="top" constant="5" id="nyS-2g-GP8"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="AMf-zB-mFd" secondAttribute="bottom" id="DTd-Od-mvQ"/>
+                                                                    <constraint firstItem="AMf-zB-mFd" firstAttribute="leading" secondItem="d2s-iK-G49" secondAttribute="leading" constant="10" id="JUq-pH-HcG"/>
+                                                                    <constraint firstItem="Wfd-Te-kni" firstAttribute="leading" secondItem="d2s-iK-G49" secondAttribute="leading" constant="5" id="Mry-Ly-M7f"/>
+                                                                    <constraint firstItem="Wfd-Te-kni" firstAttribute="top" secondItem="d2s-iK-G49" secondAttribute="top" constant="5" id="OKD-zQ-nqA"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="AMf-zB-mFd" secondAttribute="trailing" constant="10" id="SVa-Ai-SIB"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Wfd-Te-kni" secondAttribute="bottom" constant="15" id="Yto-w9-XFQ"/>
+                                                                    <constraint firstItem="AMf-zB-mFd" firstAttribute="top" secondItem="d2s-iK-G49" secondAttribute="top" constant="25" id="nyS-2g-GP8"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Wfd-Te-kni" secondAttribute="trailing" constant="5" id="odu-lM-aw0"/>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bf9-d7-GaP">
                                                                 <rect key="frame" x="235.33333333333329" y="0.0" width="109.66666666666666" height="50"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdA-8d-c9E">
-                                                                        <rect key="frame" x="0.0" y="5" width="36" height="29"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdA-8d-c9E">
+                                                                        <rect key="frame" x="45" y="25" width="36" height="25"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="36" id="rT1-89-qUm"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
-                                                                        <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                                        <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GB/Day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJe-h3-J1d">
-                                                                        <rect key="frame" x="65.666666666666686" y="16" width="36" height="29"/>
+                                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GB/Day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJe-h3-J1d">
+                                                                        <rect key="frame" x="99" y="16" width="36" height="29"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="36" id="Xza-N4-73Q"/>
                                                                         </constraints>
@@ -23477,8 +23448,8 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                                                         <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lml-Gd-qtq">
-                                                                        <rect key="frame" x="36" y="5" width="29.666666666666671" height="40"/>
+                                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lml-Gd-qtq">
+                                                                        <rect key="frame" x="81" y="5" width="18" height="40"/>
                                                                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
                                                                         <color key="textColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -23490,11 +23461,11 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                                                     <constraint firstItem="YJe-h3-J1d" firstAttribute="top" secondItem="bf9-d7-GaP" secondAttribute="top" constant="16" id="A58-PG-zSI"/>
                                                                     <constraint firstAttribute="bottom" secondItem="lml-Gd-qtq" secondAttribute="bottom" constant="5" id="CEb-2d-4g8"/>
                                                                     <constraint firstAttribute="bottom" secondItem="YJe-h3-J1d" secondAttribute="bottom" constant="5" id="EA3-of-CiC"/>
-                                                                    <constraint firstItem="OdA-8d-c9E" firstAttribute="leading" secondItem="bf9-d7-GaP" secondAttribute="leading" id="Hgx-JX-MBN"/>
+                                                                    <constraint firstItem="OdA-8d-c9E" firstAttribute="leading" secondItem="bf9-d7-GaP" secondAttribute="leading" constant="45" id="Hgx-JX-MBN"/>
                                                                     <constraint firstItem="YJe-h3-J1d" firstAttribute="leading" secondItem="lml-Gd-qtq" secondAttribute="trailing" id="Qof-pe-bhU"/>
                                                                     <constraint firstItem="lml-Gd-qtq" firstAttribute="top" secondItem="bf9-d7-GaP" secondAttribute="top" constant="5" id="ZgR-7u-jV2"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="OdA-8d-c9E" secondAttribute="bottom" constant="16" id="ckj-Nw-yOO"/>
-                                                                    <constraint firstItem="OdA-8d-c9E" firstAttribute="top" secondItem="bf9-d7-GaP" secondAttribute="top" constant="5" id="sLr-th-yLH"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="OdA-8d-c9E" secondAttribute="bottom" id="ckj-Nw-yOO"/>
+                                                                    <constraint firstItem="OdA-8d-c9E" firstAttribute="top" secondItem="bf9-d7-GaP" secondAttribute="top" constant="25" id="sLr-th-yLH"/>
                                                                     <constraint firstItem="lml-Gd-qtq" firstAttribute="leading" secondItem="OdA-8d-c9E" secondAttribute="trailing" id="vhB-Gr-zgM"/>
                                                                 </constraints>
                                                             </view>
@@ -23523,7 +23494,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOk-fL-EXg">
                                                 <rect key="frame" x="0.0" y="60" width="361" height="60"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mki-ud-zwL">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mki-ud-zwL">
                                                         <rect key="frame" x="0.0" y="0.0" width="361" height="60"/>
                                                         <string key="text">2.5 GB/day + Unlimited calls + 100 SMS/day + Jio TV, Jio Cin
 ema, Jio Security, Jio Cloud app subscriptions</string>
@@ -23540,24 +23511,24 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                                     <constraint firstAttribute="bottom" secondItem="mki-ud-zwL" secondAttribute="bottom" id="nMP-Yv-rWO"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLZ-kX-wjr">
-                                                <rect key="frame" x="0.0" y="120" width="361" height="60"/>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLZ-kX-wjr">
+                                                <rect key="frame" x="0.0" y="120" width="361" height="0.0"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YMB-cj-f5a">
-                                                        <rect key="frame" x="8" y="20" width="20" height="20"/>
+                                                        <rect key="frame" x="8" y="0.0" width="20" height="0.0"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="20" id="VKw-BW-GLb"/>
-                                                            <constraint firstAttribute="height" constant="20" id="woL-gn-eiG"/>
+                                                            <constraint firstAttribute="height" id="woL-gn-eiG"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlimited 5G Data" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcY-3C-GWL">
-                                                        <rect key="frame" x="36" y="0.0" width="249" height="60"/>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlimited 5G Data" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcY-3C-GWL">
+                                                        <rect key="frame" x="36" y="0.0" width="249" height="0.0"/>
                                                         <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+3 More Offers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ah-OU-2KZ">
-                                                        <rect key="frame" x="293" y="23" width="60" height="14"/>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+3 More Offers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ah-OU-2KZ">
+                                                        <rect key="frame" x="293" y="-7" width="60" height="14"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="6rZ-cA-Jfy"/>
                                                         </constraints>
@@ -23570,6 +23541,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="VcY-3C-GWL" secondAttribute="bottom" id="2et-xZ-z8m"/>
                                                     <constraint firstItem="1Ah-OU-2KZ" firstAttribute="centerY" secondItem="wLZ-kX-wjr" secondAttribute="centerY" id="9oS-fI-YJj"/>
+                                                    <constraint firstAttribute="height" id="Egs-xX-Xme"/>
                                                     <constraint firstItem="1Ah-OU-2KZ" firstAttribute="leading" secondItem="VcY-3C-GWL" secondAttribute="trailing" constant="8" id="S0b-Aj-oIl"/>
                                                     <constraint firstItem="VcY-3C-GWL" firstAttribute="leading" secondItem="YMB-cj-f5a" secondAttribute="trailing" constant="8" id="UH4-XA-5Sv"/>
                                                     <constraint firstItem="VcY-3C-GWL" firstAttribute="top" secondItem="wLZ-kX-wjr" secondAttribute="top" id="Usk-ue-efz"/>
@@ -23580,11 +23552,11 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="180" id="aI3-lE-9XP"/>
+                                            <constraint firstAttribute="height" constant="120" id="aI3-lE-9XP"/>
                                         </constraints>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xFQ-4x-oEi">
-                                        <rect key="frame" x="8" y="225" width="377" height="201"/>
+                                        <rect key="frame" x="8" y="165" width="377" height="21"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlansTypesTVC" rowHeight="60" id="a62-Et-8dN" customClass="PlansTypesTVC" customModule="MaxPay" customModuleProvider="target">
@@ -23594,14 +23566,14 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                                     <rect key="frame" x="0.0" y="0.0" width="377" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wtZ-rL-xvy">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wtZ-rL-xvy">
                                                             <rect key="frame" x="8" y="15" width="30" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="30" id="AYv-IR-OTO"/>
                                                                 <constraint firstAttribute="height" constant="30" id="Gac-qB-6sJ"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlimited 5G Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qt9-EB-B3E">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Unlimited 5G Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qt9-EB-B3E">
                                                             <rect key="frame" x="54" y="8" width="307" height="44"/>
                                                             <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                                             <nil key="textColor"/>
@@ -23625,7 +23597,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                         </prototypes>
                                     </tableView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offers Available with This Plan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Els-g7-vfE">
-                                        <rect key="frame" x="16" y="196" width="361" height="21"/>
+                                        <rect key="frame" x="16" y="136" width="361" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="5fM-Ux-DSF"/>
                                         </constraints>
@@ -23647,7 +23619,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                     <constraint firstAttribute="trailing" secondItem="xFQ-4x-oEi" secondAttribute="trailing" constant="8" id="XcX-R0-FSB"/>
                                     <constraint firstAttribute="bottom" secondItem="khy-3V-Lgz" secondAttribute="bottom" constant="50" id="ip4-ls-8Tb"/>
                                     <constraint firstItem="jNC-LO-DQ7" firstAttribute="leading" secondItem="qab-5m-M6M" secondAttribute="leading" constant="16" id="pQk-NQ-2Kc"/>
-                                    <constraint firstAttribute="height" constant="534" id="qTf-w9-Gt5"/>
+                                    <constraint firstAttribute="height" constant="294" id="qTf-w9-Gt5"/>
                                     <constraint firstItem="xFQ-4x-oEi" firstAttribute="top" secondItem="Els-g7-vfE" secondAttribute="bottom" constant="8" id="sFb-cz-guE"/>
                                     <constraint firstAttribute="trailing" secondItem="jNC-LO-DQ7" secondAttribute="trailing" constant="16" id="w5W-Cp-rYy"/>
                                 </constraints>
@@ -23674,7 +23646,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DnE-ya-4Q7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7792" y="4313"/>
+            <point key="canvasLocation" x="7791.6030534351139" y="4312.6760563380285"/>
         </scene>
         <!--RechargePaymentVC-->
         <scene sceneID="h5G-g3-Bb7">
@@ -23842,7 +23814,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Him-bP-hwZ">
-                                <rect key="frame" x="16" y="328" width="55" height="18"/>
+                                <rect key="frame" x="16" y="328" width="56" height="18"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                 <color key="textColor" name="card-number-color"/>
                                 <nil key="highlightedColor"/>
@@ -23854,7 +23826,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Base Fare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQ1-yc-nej">
-                                <rect key="frame" x="16" y="361" width="66" height="18"/>
+                                <rect key="frame" x="16" y="361" width="67.666666666666671" height="18"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                 <color key="textColor" name="card-number-color"/>
                                 <nil key="highlightedColor"/>
@@ -23878,7 +23850,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmG-tg-Td9">
-                                <rect key="frame" x="15.999999999999998" y="427" width="28.333333333333329" height="18"/>
+                                <rect key="frame" x="16" y="427" width="30" height="18"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                 <color key="textColor" name="card-number-color"/>
                                 <nil key="highlightedColor"/>
@@ -23897,13 +23869,13 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18 miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mS2-wZ-XqA">
-                                <rect key="frame" x="243.66666666666666" y="523" width="57.333333333333343" height="18"/>
+                                <rect key="frame" x="245" y="523" width="56" height="18"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
                                 <color key="textColor" name="white-color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay &amp; Get" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewF-Mm-fb2">
-                                <rect key="frame" x="91" y="523" width="65.333333333333314" height="18"/>
+                                <rect key="frame" x="91" y="523" width="67.333333333333314" height="18"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
                                 <color key="textColor" name="white-color"/>
                                 <nil key="highlightedColor"/>
@@ -23950,13 +23922,13 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 <rect key="frame" x="0.0" y="794" width="393" height="24"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secured by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mr-ON-sLj">
-                                        <rect key="frame" x="144.66666666666666" y="5.6666666666666288" width="54" height="13"/>
+                                        <rect key="frame" x="143.33333333333334" y="5.6666666666666288" width="56.333333333333343" height="13"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
                                         <color key="textColor" name="card-number-color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bbps_logo" translatesAutoresizingMaskIntoConstraints="NO" id="qip-NC-dX7">
-                                        <rect key="frame" x="214.66666666666666" y="6" width="35" height="12"/>
+                                        <rect key="frame" x="215.66666666666666" y="6" width="35" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="35" id="4ZF-CM-CLz"/>
                                             <constraint firstAttribute="height" constant="12" id="Acd-N7-vad"/>
@@ -25285,7 +25257,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receipt" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbU-Bo-s1O">
-                                        <rect key="frame" x="83" y="16.666666666666671" width="71" height="24.666666666666671"/>
+                                        <rect key="frame" x="83" y="16.666666666666671" width="72" height="24.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="21"/>
                                         <color key="textColor" name="primary-green"/>
                                         <nil key="highlightedColor"/>
@@ -25335,7 +25307,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biller’s/Payment reciever’s Name Come Here" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5g-4A-H7C">
-                                <rect key="frame" x="16" y="165" width="170" height="56.333333333333343"/>
+                                <rect key="frame" x="16" y="165" width="170" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="pRS-Lq-mcE"/>
                                 </constraints>
@@ -25344,7 +25316,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5n-6K-VOo">
-                                <rect key="frame" x="10" y="258.33333333333331" width="60" height="24"/>
+                                <rect key="frame" x="10" y="258" width="60" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="OCH-tz-gp8"/>
                                     <constraint firstAttribute="width" constant="60" id="x6y-DJ-9dl"/>
@@ -25354,7 +25326,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consumer &amp; Sender’s Name Come Here" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfW-I4-DZg">
-                                <rect key="frame" x="16" y="298.33333333333331" width="170" height="37.666666666666686"/>
+                                <rect key="frame" x="16" y="298" width="170" height="37.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="Tt1-dp-nqs"/>
                                 </constraints>
@@ -25363,14 +25335,14 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDL-vS-jVW">
-                                <rect key="frame" x="16" y="241.33333333333334" width="361" height="1"/>
+                                <rect key="frame" x="16" y="241" width="361" height="1"/>
                                 <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="b01-UG-gVy"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BhB-ma-Y0O">
-                                <rect key="frame" x="16" y="356" width="361" height="1"/>
+                                <rect key="frame" x="16" y="355.33333333333331" width="361" height="1"/>
                                 <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="Zvu-jn-PNV"/>
@@ -25384,14 +25356,14 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r5x-Qs-aT5">
-                                <rect key="frame" x="323" y="258.33333333333331" width="50" height="50"/>
+                                <rect key="frame" x="323" y="258" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="OQ9-VZ-Wob"/>
                                     <constraint firstAttribute="width" constant="50" id="UIh-yH-yf0"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tootal Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bam-4M-Fq4">
-                                <rect key="frame" x="16" y="377" width="160" height="21"/>
+                                <rect key="frame" x="16" y="376.33333333333331" width="160" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Ghx-ny-Sni"/>
                                     <constraint firstAttribute="width" constant="160" id="dP9-uN-USn"/>
@@ -25401,7 +25373,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24,90000.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5g-Bu-Q3b">
-                                <rect key="frame" x="16" y="406" width="150" height="21"/>
+                                <rect key="frame" x="16" y="405.33333333333331" width="150" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="EBt-WG-egm"/>
                                     <constraint firstAttribute="height" constant="21" id="c43-03-XNo"/>
@@ -25411,7 +25383,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sth-Bk-7RC">
-                                <rect key="frame" x="16" y="443" width="361" height="200"/>
+                                <rect key="frame" x="16" y="442.33333333333326" width="361" height="200"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wQY-VV-DGD">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="33.333333333333336"/>
@@ -25431,7 +25403,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ayV-Xh-2uf">
-                                        <rect key="frame" x="0.0" y="33.333333333333314" width="361" height="33.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="33.333333333333371" width="361" height="33.333333333333343"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transcation ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wej-cj-was">
                                                 <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="33.333333333333336"/>
@@ -25465,7 +25437,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5XJ-A4-VUU">
-                                        <rect key="frame" x="0.0" y="100" width="361" height="33.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="100.00000000000006" width="361" height="33.333333333333343"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transcation ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGt-w8-Mkq">
                                                 <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="33.333333333333336"/>
@@ -25482,7 +25454,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5qj-uH-knk">
-                                        <rect key="frame" x="0.0" y="133.33333333333337" width="361" height="33.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="133.33333333333331" width="361" height="33.333333333333343"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transcation ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7T-00-69j">
                                                 <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="33.333333333333336"/>
@@ -25499,7 +25471,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FcZ-vq-YHE">
-                                        <rect key="frame" x="0.0" y="166.66666666666663" width="361" height="33.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="166.66666666666669" width="361" height="33.333333333333343"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transcation ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wg9-ee-Vuv">
                                                 <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="33.333333333333336"/>
@@ -25586,6 +25558,87 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zqb-jJ-51J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="15072.519083969464" y="4328.8732394366198"/>
+        </scene>
+        <!--Pin Pop UpVC-->
+        <scene sceneID="hD8-oj-jug">
+            <objects>
+                <viewController storyboardIdentifier="MPinPopUpVC" id="lJQ-bq-5bT" customClass="MPinPopUpVC" customModule="MaxPay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WFu-et-IMQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="730"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kMH-PB-UIg">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="730"/>
+                                <color key="backgroundColor" name="black-color"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RnZ-9o-TMw">
+                                <rect key="frame" x="50" y="253.66666666666663" width="293" height="223"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRANSACTION IS NOT PERMITTED ON THIS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGY-hM-wXl">
+                                        <rect key="frame" x="20" y="40.000000000000028" width="253" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWD-BY-kJm">
+                                        <rect key="frame" x="40" y="133.00000000000003" width="213" height="60"/>
+                                        <color key="backgroundColor" red="0.81176470590000005" green="0.8980392157" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Fyd-53-h2n"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="OK">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnOkTap:" destination="lJQ-bq-5bT" eventType="touchUpInside" id="O5i-qC-Ag8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cGY-hM-wXl" secondAttribute="trailing" constant="20" id="6ea-tX-i93"/>
+                                    <constraint firstItem="cGY-hM-wXl" firstAttribute="leading" secondItem="RnZ-9o-TMw" secondAttribute="leading" constant="20" id="76e-GY-KrT"/>
+                                    <constraint firstItem="cGY-hM-wXl" firstAttribute="top" secondItem="RnZ-9o-TMw" secondAttribute="top" constant="40" id="7fH-M0-mET"/>
+                                    <constraint firstItem="pWD-BY-kJm" firstAttribute="leading" secondItem="RnZ-9o-TMw" secondAttribute="leading" constant="40" id="TWe-82-iA2"/>
+                                    <constraint firstItem="pWD-BY-kJm" firstAttribute="top" secondItem="cGY-hM-wXl" secondAttribute="bottom" constant="50" id="b5H-Rr-cFW"/>
+                                    <constraint firstAttribute="bottom" secondItem="pWD-BY-kJm" secondAttribute="bottom" constant="30" id="hht-Dr-8fQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="pWD-BY-kJm" secondAttribute="trailing" constant="40" id="lqB-jw-Ieh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ifa-GO-uuf"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ifa-GO-uuf" firstAttribute="trailing" secondItem="RnZ-9o-TMw" secondAttribute="trailing" constant="50" id="HFZ-qD-W9J"/>
+                            <constraint firstAttribute="trailing" secondItem="kMH-PB-UIg" secondAttribute="trailing" id="JRJ-99-MeG"/>
+                            <constraint firstAttribute="bottom" secondItem="kMH-PB-UIg" secondAttribute="bottom" id="NJC-vm-ohG"/>
+                            <constraint firstItem="kMH-PB-UIg" firstAttribute="leading" secondItem="WFu-et-IMQ" secondAttribute="leading" id="cKh-uj-3Nl"/>
+                            <constraint firstItem="RnZ-9o-TMw" firstAttribute="leading" secondItem="Ifa-GO-uuf" secondAttribute="leading" constant="50" id="rr1-he-RVa"/>
+                            <constraint firstItem="kMH-PB-UIg" firstAttribute="top" secondItem="WFu-et-IMQ" secondAttribute="top" id="snp-EB-sAH"/>
+                            <constraint firstItem="RnZ-9o-TMw" firstAttribute="centerY" secondItem="kMH-PB-UIg" secondAttribute="centerY" id="w5n-n0-Wh6"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="730"/>
+                    <connections>
+                        <outlet property="labelDescription" destination="cGY-hM-wXl" id="jgE-Rd-cwF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bNu-RD-Wpb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15810" y="4320"/>
         </scene>
         <!--Hotel Checkout View Controller-->
         <scene sceneID="P6m-TE-zTn">
@@ -28580,7 +28633,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                             <rect key="frame" x="16" y="40" width="361" height="87"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter City Name, Location or Specific Hotel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiY-fE-pZh">
-                                                    <rect key="frame" x="8" y="16" width="209.66666666666666" height="14"/>
+                                                    <rect key="frame" x="8" y="16" width="214" height="14"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="14" id="98P-Bp-Ejr"/>
                                                     </constraints>
@@ -28848,7 +28901,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                                     <rect key="frame" x="0.0" y="8" width="361" height="164"/>
                                                 </scrollView>
                                                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="xXO-lp-k5P">
-                                                    <rect key="frame" x="114.00000000000001" y="139.33333333333337" width="133.33333333333337" height="25.666666666666657"/>
+                                                    <rect key="frame" x="135.33333333333334" y="139.33333333333337" width="90.666666666666657" height="25.666666666666657"/>
                                                     <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="currentPageIndicatorTintColor" name="primary-green"/>
                                                 </pageControl>
@@ -29176,7 +29229,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUe-p7-GKh">
-                                <rect key="frame" x="16" y="328" width="55" height="18"/>
+                                <rect key="frame" x="16" y="328" width="56" height="18"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                 <color key="textColor" name="card-number-color"/>
                                 <nil key="highlightedColor"/>
@@ -29188,7 +29241,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Base Fare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVE-AU-Zyg">
-                                <rect key="frame" x="16" y="361" width="66" height="18"/>
+                                <rect key="frame" x="16" y="361" width="67.666666666666671" height="18"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                 <color key="textColor" name="card-number-color"/>
                                 <nil key="highlightedColor"/>
@@ -29212,7 +29265,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsk-md-BOS">
-                                <rect key="frame" x="15.999999999999998" y="427" width="28.333333333333329" height="18"/>
+                                <rect key="frame" x="16" y="427" width="30" height="18"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                 <color key="textColor" name="card-number-color"/>
                                 <nil key="highlightedColor"/>
@@ -29231,13 +29284,13 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18 miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wn2-Ec-NCM">
-                                <rect key="frame" x="243.66666666666666" y="523" width="57.333333333333343" height="18"/>
+                                <rect key="frame" x="245" y="523" width="56" height="18"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
                                 <color key="textColor" name="white-color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay &amp; Get" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ai-B5-XLP">
-                                <rect key="frame" x="91" y="523" width="65.333333333333314" height="18"/>
+                                <rect key="frame" x="91" y="523" width="67.333333333333314" height="18"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
                                 <color key="textColor" name="white-color"/>
                                 <nil key="highlightedColor"/>
@@ -29281,13 +29334,13 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 <rect key="frame" x="0.0" y="794" width="393" height="24"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secured by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oS-KR-hNj">
-                                        <rect key="frame" x="144.66666666666666" y="5.6666666666666288" width="54" height="13"/>
+                                        <rect key="frame" x="143.33333333333334" y="5.6666666666666288" width="56.333333333333343" height="13"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
                                         <color key="textColor" name="card-number-color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bbps_logo" translatesAutoresizingMaskIntoConstraints="NO" id="N9G-hU-g1E">
-                                        <rect key="frame" x="214.66666666666666" y="6" width="35" height="12"/>
+                                        <rect key="frame" x="215.66666666666666" y="6" width="35" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="35" id="HQP-xh-DXa"/>
                                             <constraint firstAttribute="height" constant="12" id="dWi-mv-osi"/>
@@ -29416,7 +29469,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recharge Bill Pay" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwo-cK-UR1">
-                                        <rect key="frame" x="20" y="0.0" width="184" height="28"/>
+                                        <rect key="frame" x="20" y="0.0" width="188.66666666666666" height="28"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="24"/>
                                         <color key="textColor" name="primary-green"/>
                                         <nil key="highlightedColor"/>
@@ -29499,13 +29552,13 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 <rect key="frame" x="0.0" y="794" width="393" height="24"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secured by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8T-Bf-b9B">
-                                        <rect key="frame" x="144.66666666666666" y="5.6666666666666288" width="54" height="13"/>
+                                        <rect key="frame" x="143.33333333333334" y="5.6666666666666288" width="56.333333333333343" height="13"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
                                         <color key="textColor" name="card-number-color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bbps_logo" translatesAutoresizingMaskIntoConstraints="NO" id="lSL-LD-EMS">
-                                        <rect key="frame" x="214.66666666666666" y="6" width="35" height="12"/>
+                                        <rect key="frame" x="215.66666666666666" y="6" width="35" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="35" id="Jya-Gb-1W1"/>
                                             <constraint firstAttribute="height" constant="12" id="Kd2-bM-poc"/>
@@ -29539,7 +29592,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paying for Hira Thakur Travels booking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKo-ZT-jX0">
-                                <rect key="frame" x="16" y="202" width="188.33333333333334" height="13"/>
+                                <rect key="frame" x="16" y="202" width="189.66666666666666" height="13"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
                                 <color key="textColor" name="reload-grey-color"/>
                                 <nil key="highlightedColor"/>
@@ -29568,7 +29621,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlM-TL-Tlj">
-                                                    <rect key="frame" x="16" y="16" width="123" height="19"/>
+                                                    <rect key="frame" x="16" y="16" width="124" height="19"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
                                                     <color key="textColor" name="reload-grey-color"/>
                                                     <nil key="highlightedColor"/>
@@ -29697,7 +29750,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paying through wallet or UPI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbd-MD-r01">
-                                <rect key="frame" x="127.66666666666669" y="703" width="138" height="13"/>
+                                <rect key="frame" x="126.66666666666669" y="703" width="140" height="13"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
                                 <color key="textColor" name="reload-grey-color"/>
                                 <nil key="highlightedColor"/>
@@ -30128,185 +30181,6 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
             <point key="canvasLocation" x="10253" y="-799"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="0Fo-sl-L94">
-            <size key="intrinsicContentSize" width="110" height="31"/>
-        </designable>
-        <designable name="0Mq-AR-xBO">
-            <size key="intrinsicContentSize" width="124.33333333333333" height="27"/>
-        </designable>
-        <designable name="0dv-Ll-5Ke">
-            <size key="intrinsicContentSize" width="75" height="31"/>
-        </designable>
-        <designable name="1Jr-Rz-kqi">
-            <size key="intrinsicContentSize" width="75" height="31"/>
-        </designable>
-        <designable name="2u7-QK-fCc">
-            <size key="intrinsicContentSize" width="38" height="31"/>
-        </designable>
-        <designable name="55D-RX-dfK">
-            <size key="intrinsicContentSize" width="161" height="17.333333333333332"/>
-        </designable>
-        <designable name="5BK-KD-zhA">
-            <size key="intrinsicContentSize" width="65" height="31"/>
-        </designable>
-        <designable name="819-bP-XgY">
-            <size key="intrinsicContentSize" width="93" height="31"/>
-        </designable>
-        <designable name="8AZ-ZU-cFt">
-            <size key="intrinsicContentSize" width="146.66666666666666" height="27"/>
-        </designable>
-        <designable name="A2q-Rf-xOH">
-            <size key="intrinsicContentSize" width="94" height="31"/>
-        </designable>
-        <designable name="ACD-kJ-sKz">
-            <size key="intrinsicContentSize" width="41" height="31"/>
-        </designable>
-        <designable name="BTD-Iw-l45">
-            <size key="intrinsicContentSize" width="76" height="31"/>
-        </designable>
-        <designable name="C34-hT-PgS">
-            <size key="intrinsicContentSize" width="140.5" height="140"/>
-        </designable>
-        <designable name="FTG-SQ-U9u">
-            <size key="intrinsicContentSize" width="100.33333333333333" height="27"/>
-        </designable>
-        <designable name="Gmj-u3-8TL">
-            <size key="intrinsicContentSize" width="41" height="31"/>
-        </designable>
-        <designable name="K2Q-d8-qKW">
-            <size key="intrinsicContentSize" width="39.333333333333336" height="27"/>
-        </designable>
-        <designable name="KhQ-Mr-Mua">
-            <size key="intrinsicContentSize" width="182" height="27"/>
-        </designable>
-        <designable name="Li0-RL-KS3">
-            <size key="intrinsicContentSize" width="38" height="31"/>
-        </designable>
-        <designable name="MAa-Nd-qLI">
-            <size key="intrinsicContentSize" width="76" height="31"/>
-        </designable>
-        <designable name="MRN-ee-r97">
-            <size key="intrinsicContentSize" width="101" height="31"/>
-        </designable>
-        <designable name="MSA-Ul-FKB">
-            <size key="intrinsicContentSize" width="75" height="31"/>
-        </designable>
-        <designable name="Mze-Rw-0FN">
-            <size key="intrinsicContentSize" width="140.5" height="140"/>
-        </designable>
-        <designable name="Q8U-5g-hGy">
-            <size key="intrinsicContentSize" width="30" height="31"/>
-        </designable>
-        <designable name="QUM-k1-Tp8">
-            <size key="intrinsicContentSize" width="188.66666666666666" height="32.666666666666664"/>
-        </designable>
-        <designable name="Rly-XF-3t0">
-            <size key="intrinsicContentSize" width="67" height="31"/>
-        </designable>
-        <designable name="SWm-yZ-HmW">
-            <size key="intrinsicContentSize" width="101" height="31"/>
-        </designable>
-        <designable name="Se4-U0-uZ4">
-            <size key="intrinsicContentSize" width="296" height="31"/>
-        </designable>
-        <designable name="W8a-Hp-i1i">
-            <size key="intrinsicContentSize" width="64" height="27"/>
-        </designable>
-        <designable name="YWv-gC-6CS">
-            <size key="intrinsicContentSize" width="132.66666666666666" height="27"/>
-        </designable>
-        <designable name="a1A-Vb-Vz3">
-            <size key="intrinsicContentSize" width="97.333333333333329" height="27"/>
-        </designable>
-        <designable name="anO-Xc-I1a">
-            <size key="intrinsicContentSize" width="54" height="28"/>
-        </designable>
-        <designable name="ang-yV-Ic5">
-            <size key="intrinsicContentSize" width="56" height="27"/>
-        </designable>
-        <designable name="cLw-W6-A8R">
-            <size key="intrinsicContentSize" width="124.33333333333333" height="27"/>
-        </designable>
-        <designable name="eZt-NF-B6P">
-            <size key="intrinsicContentSize" width="38.666666666666664" height="17.333333333333332"/>
-        </designable>
-        <designable name="f0D-IR-N35">
-            <size key="intrinsicContentSize" width="61.666666666666664" height="27"/>
-        </designable>
-        <designable name="fEV-X4-g6i">
-            <size key="intrinsicContentSize" width="28.666666666666668" height="18.666666666666668"/>
-        </designable>
-        <designable name="fPQ-Jb-nSM">
-            <size key="intrinsicContentSize" width="34" height="31"/>
-        </designable>
-        <designable name="fca-uH-lKL">
-            <size key="intrinsicContentSize" width="75" height="31"/>
-        </designable>
-        <designable name="gD2-eL-6Pm">
-            <size key="intrinsicContentSize" width="146.66666666666666" height="27"/>
-        </designable>
-        <designable name="gdD-Ca-csi">
-            <size key="intrinsicContentSize" width="137.33333333333334" height="27"/>
-        </designable>
-        <designable name="hxD-ip-1hW">
-            <size key="intrinsicContentSize" width="161" height="31"/>
-        </designable>
-        <designable name="i8m-cW-5mb">
-            <size key="intrinsicContentSize" width="101" height="31"/>
-        </designable>
-        <designable name="iJ7-fT-9vG">
-            <size key="intrinsicContentSize" width="28.666666666666668" height="18.666666666666668"/>
-        </designable>
-        <designable name="ibS-8i-FU0">
-            <size key="intrinsicContentSize" width="100" height="27"/>
-        </designable>
-        <designable name="khy-3V-Lgz">
-            <size key="intrinsicContentSize" width="110" height="31"/>
-        </designable>
-        <designable name="lbg-58-BFV">
-            <size key="intrinsicContentSize" width="119" height="27"/>
-        </designable>
-        <designable name="oGl-Fr-ODb">
-            <size key="intrinsicContentSize" width="75" height="31"/>
-        </designable>
-        <designable name="ocg-Fv-Z2n">
-            <size key="intrinsicContentSize" width="104" height="17.333333333333332"/>
-        </designable>
-        <designable name="qiC-jO-ewi">
-            <size key="intrinsicContentSize" width="132.66666666666666" height="27"/>
-        </designable>
-        <designable name="s9t-dp-l8y">
-            <size key="intrinsicContentSize" width="30" height="31"/>
-        </designable>
-        <designable name="shN-4x-cWH">
-            <size key="intrinsicContentSize" width="60" height="31"/>
-        </designable>
-        <designable name="siU-lo-IX1">
-            <size key="intrinsicContentSize" width="99" height="31"/>
-        </designable>
-        <designable name="tDM-cj-NF1">
-            <size key="intrinsicContentSize" width="75" height="31"/>
-        </designable>
-        <designable name="vgf-Ku-F8l">
-            <size key="intrinsicContentSize" width="129" height="31"/>
-        </designable>
-        <designable name="wwp-vJ-BiU">
-            <size key="intrinsicContentSize" width="76" height="31"/>
-        </designable>
-        <designable name="x50-IV-Lo6">
-            <size key="intrinsicContentSize" width="75" height="31"/>
-        </designable>
-        <designable name="y3E-Ow-a6t">
-            <size key="intrinsicContentSize" width="137.33333333333334" height="27"/>
-        </designable>
-        <designable name="yHk-Cr-SzH">
-            <size key="intrinsicContentSize" width="76" height="31"/>
-        </designable>
-        <designable name="zOB-Uk-dEy">
-            <size key="intrinsicContentSize" width="60" height="31"/>
-        </designable>
-    </designables>
     <resources>
         <image name="Qeflight" width="136" height="136"/>
         <image name="addFPop" width="47" height="46"/>
@@ -30329,7 +30203,7 @@ ema, Jio Security, Jio Cloud app subscriptions</string>
         <image name="circle-boarding-selected" width="24" height="24"/>
         <image name="clock" catalog="system" width="128" height="123"/>
         <image name="computermouse" catalog="system" width="98" height="128"/>
-        <image name="delete" width="25" height="25"/>
+        <image name="delete" width="24" height="24"/>
         <image name="dotted-horizontal-line-ic" width="121" height="3"/>
         <image name="dotted-vertical-line-ic" width="24" height="132"/>
         <image name="dotted-vertical-point-line-ic" width="1.3333333730697632" height="101.33333587646484"/>
@@ -39956,14 +39830,14 @@ AAAAAAQBAAAAAAAAAGgAAAAAAAAAAAAAAAAACMeqA
         <image name="imgThumb" width="52" height="52"/>
         <image name="info-ic" width="18" height="18"/>
         <image name="lineFlight" width="168.66667175292969" height="5.6666665077209473"/>
-        <image name="location" width="48" height="48"/>
+        <image name="location" width="96" height="96"/>
         <image name="lowerbackImg" width="360" height="107"/>
-        <image name="me_profile" width="140.5" height="140"/>
+        <image name="me_profile" width="281" height="280"/>
         <image name="miles-ic" width="306.66665649414062" height="85"/>
         <image name="minusFPop" width="40" height="40"/>
         <image name="minusImg" width="24" height="24"/>
         <image name="multiEarthpic" width="47" height="47.666667938232422"/>
-        <image name="netbanking" width="44" height="31"/>
+        <image name="netbanking" width="88" height="62"/>
         <image name="nonRecSeat" width="32" height="32"/>
         <image name="notAvSeat" width="32" height="32"/>
         <image name="notification-ic" width="24" height="24"/>
@@ -39973,24 +39847,24 @@ AAAAAAQBAAAAAAAAAGgAAAAAAAAAAAAAAAAACMeqA
         <image name="person.text.rectangle" catalog="system" width="128" height="93"/>
         <image name="plusPic" width="24" height="24"/>
         <image name="powered_by_upi" width="108" height="62"/>
-        <image name="radio-button" width="128" height="128"/>
+        <image name="radio-button" width="256" height="256"/>
         <image name="rightarrowflight" width="25" height="11.666666984558105"/>
         <image name="search_background_ic" width="337.33334350585938" height="60.333332061767578"/>
         <image name="seatBackPic" width="352" height="1185"/>
-        <image name="secure" width="116" height="42"/>
+        <image name="secure" width="232" height="84"/>
         <image name="selected-tab-line" width="68" height="3"/>
         <image name="share-ic" width="18" height="19"/>
         <image name="sharePic" width="18" height="19"/>
         <image name="travel-bus-ic" width="24" height="24"/>
         <image name="travel-flight-ic" width="24" height="24"/>
         <image name="travel-hotel-ic" width="24" height="24"/>
-        <image name="trend" width="128" height="128"/>
+        <image name="trend" width="256" height="256"/>
         <image name="twayPic" width="24" height="24"/>
         <image name="uncheck" width="20" height="20"/>
         <image name="up-arrow-ic" width="16" height="16"/>
-        <image name="weather" width="44" height="28"/>
+        <image name="weather" width="88" height="56"/>
         <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.017000000923871994" green="0.19799999892711639" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="black-color">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -40039,6 +39913,9 @@ AAAAAAQBAAAAAAAAAGgAAAAAAAAAAAAAAAAACMeqA
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

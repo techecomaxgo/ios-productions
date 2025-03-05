@@ -29,7 +29,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                <real key="value" value="0.5"/>
+                                                <real key="value" value="0.20000000000000001"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
                                                 <integer key="value" value="3"/>
@@ -46,8 +46,8 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y85-6f-2lj">
-                                        <rect key="frame" x="20.000000000000004" y="10" width="52.333333333333343" height="21"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <rect key="frame" x="19.999999999999996" y="10" width="50.666666666666657" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                         <color key="textColor" name="reload-grey-color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -58,18 +58,18 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="183.33333333333334" height="110"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6CY-QT-AqI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="183.33333333333334" height="86.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="183.33333333333334" height="85"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uoh-De-eUd" customClass="CardView" customModule="MaxPay" customModuleProvider="target">
-                                                                <rect key="frame" x="56.666666666666671" y="5" width="70" height="70"/>
+                                                                <rect key="frame" x="62" y="12" width="55" height="55"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="70" id="MxP-XH-pBw"/>
-                                                                    <constraint firstAttribute="width" constant="70" id="UBQ-cV-nHe"/>
+                                                                    <constraint firstAttribute="height" constant="55" id="MxP-XH-pBw"/>
+                                                                    <constraint firstAttribute="width" constant="55" id="UBQ-cV-nHe"/>
                                                                 </constraints>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                                        <real key="value" value="0.5"/>
+                                                                        <real key="value" value="0.20000000000000001"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
                                                                         <integer key="value" value="3"/>
@@ -86,20 +86,20 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel-bus-ic" translatesAutoresizingMaskIntoConstraints="NO" id="ZnR-cB-Ovh">
-                                                                <rect key="frame" x="74.333333333333329" y="25.666666666666671" width="35" height="35"/>
+                                                                <rect key="frame" x="74.333333333333329" y="25" width="30" height="30"/>
                                                                 <color key="tintColor" name="primary-green"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="35" id="0Bt-U1-uyI"/>
-                                                                    <constraint firstAttribute="width" constant="35" id="ILV-fg-mfu"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="0Bt-U1-uyI"/>
+                                                                    <constraint firstAttribute="width" constant="30" id="ILV-fg-mfu"/>
                                                                 </constraints>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstItem="ZnR-cB-Ovh" firstAttribute="centerX" secondItem="6CY-QT-AqI" secondAttribute="centerX" id="B21-42-9CH"/>
-                                                            <constraint firstItem="ZnR-cB-Ovh" firstAttribute="centerY" secondItem="6CY-QT-AqI" secondAttribute="centerY" id="qID-DY-tcx"/>
-                                                            <constraint firstItem="uoh-De-eUd" firstAttribute="centerX" secondItem="6CY-QT-AqI" secondAttribute="centerX" id="tiL-y6-8CS"/>
-                                                            <constraint firstItem="uoh-De-eUd" firstAttribute="top" secondItem="6CY-QT-AqI" secondAttribute="top" constant="5" id="tjf-Pn-SWB"/>
+                                                            <constraint firstItem="ZnR-cB-Ovh" firstAttribute="centerX" secondItem="6CY-QT-AqI" secondAttribute="centerX" constant="-2.3333333333333428" id="B21-42-9CH"/>
+                                                            <constraint firstItem="ZnR-cB-Ovh" firstAttribute="centerY" secondItem="6CY-QT-AqI" secondAttribute="centerY" constant="-2.5" id="qID-DY-tcx"/>
+                                                            <constraint firstItem="uoh-De-eUd" firstAttribute="centerX" secondItem="6CY-QT-AqI" secondAttribute="centerX" constant="-2.1666666666666714" id="tiL-y6-8CS"/>
+                                                            <constraint firstItem="uoh-De-eUd" firstAttribute="top" secondItem="6CY-QT-AqI" secondAttribute="top" constant="12" id="tjf-Pn-SWB"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -108,8 +108,8 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErK-tD-RuE">
-                                                        <rect key="frame" x="10" y="89.333333333333343" width="163.33333333333334" height="15.666666666666671"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                        <rect key="frame" x="10" y="88" width="163.33333333333334" height="17"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" name="reload-grey-color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -140,18 +140,18 @@
                                                 <rect key="frame" x="187.33333333333331" y="0.0" width="183.33333333333331" height="110"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ALv-2S-KDq">
-                                                        <rect key="frame" x="0.0" y="0.0" width="183.33333333333334" height="86.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="183.33333333333334" height="85"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z9Y-Jn-H0x" customClass="CardView" customModule="MaxPay" customModuleProvider="target">
-                                                                <rect key="frame" x="56.666666666666657" y="5" width="70" height="70"/>
+                                                                <rect key="frame" x="61.999999999999972" y="12" width="55" height="55"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="70" id="95x-GS-pwX"/>
-                                                                    <constraint firstAttribute="height" constant="70" id="dbe-Oi-IJb"/>
+                                                                    <constraint firstAttribute="width" constant="55" id="95x-GS-pwX"/>
+                                                                    <constraint firstAttribute="height" constant="55" id="dbe-Oi-IJb"/>
                                                                 </constraints>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                                        <real key="value" value="0.5"/>
+                                                                        <real key="value" value="0.20000000000000001"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
                                                                         <integer key="value" value="3"/>
@@ -168,25 +168,25 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel-flight-ic" translatesAutoresizingMaskIntoConstraints="NO" id="fMb-UT-Erc">
-                                                                <rect key="frame" x="74.333333333333343" y="25.666666666666671" width="35" height="35"/>
+                                                                <rect key="frame" x="74.333333333333343" y="25" width="30" height="30"/>
                                                                 <color key="tintColor" name="primary-green"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="35" id="7Kr-fM-Tmi"/>
-                                                                    <constraint firstAttribute="height" constant="35" id="M0u-bv-zr4"/>
+                                                                    <constraint firstAttribute="width" constant="30" id="7Kr-fM-Tmi"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="M0u-bv-zr4"/>
                                                                 </constraints>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstItem="fMb-UT-Erc" firstAttribute="centerX" secondItem="ALv-2S-KDq" secondAttribute="centerX" id="27I-VS-pcq"/>
-                                                            <constraint firstItem="fMb-UT-Erc" firstAttribute="centerY" secondItem="ALv-2S-KDq" secondAttribute="centerY" id="Jy9-xP-pkd"/>
-                                                            <constraint firstItem="Z9Y-Jn-H0x" firstAttribute="top" secondItem="ALv-2S-KDq" secondAttribute="top" constant="5" id="KlQ-iO-1Pq"/>
-                                                            <constraint firstItem="Z9Y-Jn-H0x" firstAttribute="centerX" secondItem="ALv-2S-KDq" secondAttribute="centerX" id="wDs-JT-Q90"/>
+                                                            <constraint firstItem="fMb-UT-Erc" firstAttribute="centerX" secondItem="ALv-2S-KDq" secondAttribute="centerX" constant="-2.3333333333333428" id="27I-VS-pcq"/>
+                                                            <constraint firstItem="fMb-UT-Erc" firstAttribute="centerY" secondItem="ALv-2S-KDq" secondAttribute="centerY" constant="-2.5" id="Jy9-xP-pkd"/>
+                                                            <constraint firstItem="Z9Y-Jn-H0x" firstAttribute="top" secondItem="ALv-2S-KDq" secondAttribute="top" constant="12" id="KlQ-iO-1Pq"/>
+                                                            <constraint firstItem="Z9Y-Jn-H0x" firstAttribute="centerX" secondItem="ALv-2S-KDq" secondAttribute="centerX" constant="-2.1666666666666714" id="wDs-JT-Q90"/>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVZ-Kd-csD">
-                                                        <rect key="frame" x="10" y="89.333333333333343" width="163.33333333333334" height="15.666666666666671"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                        <rect key="frame" x="10" y="88" width="163.33333333333334" height="17"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" name="reload-grey-color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -217,18 +217,18 @@
                                                 <rect key="frame" x="374.66666666666669" y="0.0" width="183.33333333333331" height="110"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7r-dY-sOg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="183.33333333333334" height="86.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="183.33333333333334" height="85"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ac-ee-8y6" customClass="CardView" customModule="MaxPay" customModuleProvider="target">
-                                                                <rect key="frame" x="56.666666666666629" y="5" width="70" height="70"/>
+                                                                <rect key="frame" x="62" y="12" width="55" height="55"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="70" id="bnT-oT-tCu"/>
-                                                                    <constraint firstAttribute="width" constant="70" id="qWO-bx-Il0"/>
+                                                                    <constraint firstAttribute="height" constant="55" id="bnT-oT-tCu"/>
+                                                                    <constraint firstAttribute="width" constant="55" id="qWO-bx-Il0"/>
                                                                 </constraints>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                                        <real key="value" value="0.5"/>
+                                                                        <real key="value" value="0.20000000000000001"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
                                                                         <integer key="value" value="3"/>
@@ -245,20 +245,20 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel-hotel-ic" translatesAutoresizingMaskIntoConstraints="NO" id="iIj-IR-Ctw">
-                                                                <rect key="frame" x="74.333333333333314" y="25.666666666666671" width="35" height="35"/>
+                                                                <rect key="frame" x="74.333333333333314" y="25" width="30" height="30"/>
                                                                 <color key="tintColor" name="primary-green"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="35" id="3Jm-0i-RIv"/>
-                                                                    <constraint firstAttribute="width" constant="35" id="VG9-L7-dID"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="3Jm-0i-RIv"/>
+                                                                    <constraint firstAttribute="width" constant="30" id="VG9-L7-dID"/>
                                                                 </constraints>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstItem="3ac-ee-8y6" firstAttribute="top" secondItem="c7r-dY-sOg" secondAttribute="top" constant="5" id="CRT-LS-pkB"/>
-                                                            <constraint firstItem="3ac-ee-8y6" firstAttribute="centerX" secondItem="c7r-dY-sOg" secondAttribute="centerX" id="EG1-wY-T2j"/>
-                                                            <constraint firstItem="iIj-IR-Ctw" firstAttribute="centerX" secondItem="c7r-dY-sOg" secondAttribute="centerX" id="HmK-Ij-w0s"/>
-                                                            <constraint firstItem="iIj-IR-Ctw" firstAttribute="centerY" secondItem="c7r-dY-sOg" secondAttribute="centerY" id="owC-Pe-B79"/>
+                                                            <constraint firstItem="3ac-ee-8y6" firstAttribute="top" secondItem="c7r-dY-sOg" secondAttribute="top" constant="12" id="CRT-LS-pkB"/>
+                                                            <constraint firstItem="3ac-ee-8y6" firstAttribute="centerX" secondItem="c7r-dY-sOg" secondAttribute="centerX" constant="-2.1666666666666714" id="EG1-wY-T2j"/>
+                                                            <constraint firstItem="iIj-IR-Ctw" firstAttribute="centerX" secondItem="c7r-dY-sOg" secondAttribute="centerX" constant="-2.3333333333333428" id="HmK-Ij-w0s"/>
+                                                            <constraint firstItem="iIj-IR-Ctw" firstAttribute="centerY" secondItem="c7r-dY-sOg" secondAttribute="centerY" constant="-2.5" id="owC-Pe-B79"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -267,8 +267,8 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grB-2d-RRI">
-                                                        <rect key="frame" x="0.0" y="89.333333333333343" width="183.33333333333334" height="15.666666666666671"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                        <rect key="frame" x="0.0" y="88" width="183.33333333333334" height="17"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" name="reload-grey-color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>

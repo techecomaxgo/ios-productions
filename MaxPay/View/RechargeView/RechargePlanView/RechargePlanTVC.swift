@@ -33,6 +33,15 @@ class RechargePlanTVC: UITableViewCell {
         viewBackground.layer.applyCornerRadiusShadow()
     }
     
+    func setTopUpCommonData(topUpData: Plan?) {
+        
+        print(topUpData!)
+        lblPrice.text = "\(topUpData?.rs ?? 0)"
+        lblValidity.text = topUpData?.validity
+        lblDescrip.text = topUpData?.desc
+        
+        
+    }
     
     func setTopUpDataData(topUpData: TOPUP?) {
         

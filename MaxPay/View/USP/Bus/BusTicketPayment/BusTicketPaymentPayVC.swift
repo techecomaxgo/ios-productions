@@ -153,7 +153,7 @@ class BusTicketPaymentPayVC: BaseVC {
         let x = totalSeatPrice ?? 0.00
         amtDecimal = String(format: "%.2f", Double(round(100 * x) / 100))
         
-        let paymentInput = PaymentInput(amount: "\(amtDecimal)", merchantVpa: MerchantVpa, merchantId: MerchantId, submerchantid: SubMerchantId, merchantChannelId: MerchChanId, tranType: TranTypeP2M, mcc: "0000", remarks: "Bill payment for \(paymentOf) Booking", initMode: "00", purpose: "00", refCategory: "00")
+        let paymentInput = PaymentInput(amount: "\(amtDecimal)", merchantVpa: MerchantVpa, merchantId: MerchantId, submerchantid: SubMerchantId, merchantChannelId: MerchChanId, tranType: TranTypeP2M, mcc: "0000", remarks: "Bill payment for \(paymentOf) Booking", initMode: "00", purpose: "00", refCategory: "00", orderId: "", refUrl: "")
         var strPaymentInput = ""
         do {
             let encoder = JSONEncoder()

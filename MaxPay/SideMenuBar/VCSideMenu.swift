@@ -41,13 +41,14 @@ class VCSideMenu: UIViewController, UITableViewDataSource, UITableViewDelegate
 
     func updateArrayMenuOptions()
     {
-        arrayMenuOptions.append(["title":"Your Rank", "icon":"rankPic", "vc":"RankingViewController"])
+        arrayMenuOptions.append(["title":"My Rank", "icon":"rankPic", "vc":"RankingViewController"])
         arrayMenuOptions.append(["title":"Your Chain", "icon":"chainPic", "vc":"ChainViewController"])
         arrayMenuOptions.append(["title":"Your Milestone", "icon":"miles", "vc":"MilesViewController"])
-        arrayMenuOptions.append(["title":"Monthly Contest", "icon":"me_monthly_contest", "vc":""])
+        arrayMenuOptions.append(["title":"Subscription", "icon":"tra_history", "vc":"MilesViewController"])
+        arrayMenuOptions.append(["title":"Monthly Contest", "icon":"reward", "vc":""])
        
-        arrayMenuOptions.append(["title":"Setting", "icon":"me_settings", "vc":""])
-       // arrayMenuOptions.append(["title":"Log Out", "icon":"me_logout", "vc":""])
+        arrayMenuOptions.append(["title":"Profile", "icon":"profile_update", "vc":""])
+        arrayMenuOptions.append(["title":"Log Out", "icon":"me_logout", "vc":""])
 
         tblVwMenuOptions.reloadData()
     }

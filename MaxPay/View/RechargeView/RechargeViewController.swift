@@ -563,6 +563,13 @@ extension RechargeViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let searchText = (textField.text! as NSString).replacingCharacters(in: range, with: string)
         filterContentForSearchText(searchText)
+        
+        if textField.text?.count == 9 && string != ""{
+            let vc = UIStoryboard(name: "USP", bundle: nil).instantiateViewController(withIdentifier: "RechargePlanViewController") as! RechargePlanViewController
+            vc.contactNo = ((textField.text ?? "") + string)
+            // vc.skeyStr = accountDetails
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
         return true
     }
     

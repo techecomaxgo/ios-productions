@@ -7,6 +7,8 @@
 
 import UIKit
 import SwiftLoader
+import FirebaseDynamicLinks
+import Firebase
 
 class ChainViewController: BaseVC {
     
@@ -103,20 +105,48 @@ class ChainViewController: BaseVC {
     @IBAction func btnMakeChainAction(_ sender: Any) {
         //let link = "https://api.maxupi.in/chain/referral?chainid=OBL"
 
-        let message = "Hi,\n" +
-        "Inviting you to join Max UPI\n" +
-        "an interesting app which provides you incredible offers on Mobile Recharge, Bill Payments & many more.\n\n" +
-        "Use my Chain Id:- \(referCode)\n\nDownload app from link:"
-            let link = URL(string: "https://api.maxupi.in/chain/referral?chainid=\(referCode)")!
-            
-            let activityVC = UIActivityViewController(activityItems: [message, link], applicationActivities: nil)
-            
-            // For iPad support (avoids crashes)
-            if let popoverController = activityVC.popoverPresentationController {
-                popoverController.sourceView = sender as! UIView
-            }
-            
-            present(activityVC, animated: true)
+//        let message = "Hi,\n" +
+//        "Inviting you to join Max UPI\n" +
+//        "an interesting app which provides you incredible offers on Mobile Recharge, Bill Payments & many more.\n\n" +
+//        "Use my Chain Id:- \(referCode)\n\nDownload app from link:"
+//            let link = URL(string: "https://api.maxupi.in/chain/referral?chainid=\(referCode)")!
+//            
+//            let activityVC = UIActivityViewController(activityItems: [message, link], applicationActivities: nil)
+//            
+//            // For iPad support (avoids crashes)
+//            if let popoverController = activityVC.popoverPresentationController {
+//                popoverController.sourceView = sender as! UIView
+//            }
+//            
+//            present(activityVC, animated: true)
+        //https://example.com/page?param=value"
+        guard let link = URL(string: "https://api.maxupi.in/chain/referral?chainid=\(referCode)") else { return }
+        
+        let dynamicLinkComponents = DynamicLinkComponents(link: link, domainURIPrefix: "https://maxpe.page.link/?")
+        
+        dynamicLinkComponents?.iOSParameters = DynamicLinkIOSParameters(bundleID: "com.maxupi.in.maxpay")
+       // dynamicLinkComponents?.androidParameters = DynamicLinkAndroidParameters(packageName: "com.maxupi.in.maxpay")
+
+        guard let longDynamicLink = dynamicLinkComponents?.url else { return }
+        print("Long Dynamic Link: \(longDynamicLink)")
+        
+                let message = "Hi,\n" +
+                "Inviting you to join Max UPI\n" +
+                "an interesting app which provides you incredible offers on Mobile Recharge, Bill Payments & many more.\n\n" +
+                "Use my Chain Id:- \(referCode)\n\nDownload app from link:"
+        
+                    let activityVC = UIActivityViewController(activityItems: [message, link], applicationActivities: nil)
+        
+                    // For iPad support (avoids crashes)
+                    if let popoverController = activityVC.popoverPresentationController {
+                        popoverController.sourceView = sender as! UIView
+                    }
+        
+                    present(activityVC, animated: true)
+        
+        
+        
+        
     }
     //getReferDetailsApi
     //MARK: Observing the data
