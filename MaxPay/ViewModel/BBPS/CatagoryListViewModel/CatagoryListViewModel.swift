@@ -8,13 +8,13 @@
 import Foundation
 final class CatagoryListViewModel {
     
-    var catagoryListModel:CatagoryListModel?
+    var catagoryListModel:ResponseDataPayU?
     //MARK: Data Binding Closure
     var eventHandler: ((_ event: Event) -> Void)?
     
     //MARK: Data featching form server
     func catagoryListCall(_ strCatagory:String) {
-        let params : [String:Any]  = ["skey":skey, "biller_category":strCatagory]
+        let params : [String:Any]  = ["skey":skey,"pageNumber":"1","pageSize":"500", "category":strCatagory]
         print("The dictionary is : \(params)")
         self.eventHandler?(.loading)
         ApiManager.sharedInstance.catagoryListServiceApi(dict:params as NSDictionary, completion: { (model, err) in

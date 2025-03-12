@@ -54,37 +54,37 @@ final class Recharge_ModelView {
             }
         })
     }
-    func RechargePayUSecondAPICall(amountStr:String, phoneStr:String, provider: String, location: String, txnidnew: String, latitude: String, longitude: String, device_id: String, client_ip: String) {
-       
-        let params : [String:Any]  = ["skey":"AVJQIdwn79iR0zlP0iKNKumME","recharge_number":phoneStr, "amount": amountStr, "isSpecial" : "N", "provider": provider, "location": location, "payment_method": "UPI", "upi_txn_id": txnidnew, "latitude": latitude, "longitude": longitude, "device_id": device_id, "device_ip": client_ip]
-        print("The dictionary is : \(params)")
-        
-        self.eventHandler?(.loading)
-        ApiManager.sharedInstance.PayUSecondForRechargeServiceApi(dict:params as NSDictionary, completion: { (model, err) in
-            self.eventHandler?(.stopLoading)
-            if let err = err {
-                print("Failed to fetch courses:", err)
-                return
-            }
-            if let model = model {
-                
-                self.payUFirstForRecharge = model
-                
-                let params: [String: String] = self.extractParams(uri: self.payUFirstForRecharge?.result?.intentURIData ?? "")
-                print("RechargePayUSecondAPICall:",params)
-                self.beneVpa = BeneVpa(name: params["pn"] ?? "", vpa: params["pa"] ?? "", nickName: "Ecomaxgo llp")
-                self.tr = params["tr"]
-                self.am = params["am"]
-                self.tid = params["tid"]
-                
-                
-                self.eventHandler?(.dataLoaded)
-                
-            }else{
-                self.eventHandler?(.error(err))
-            }
-        })
-    }
+//    func RechargePayUSecondAPICall(amountStr:String, phoneStr:String, provider: String, location: String, txnidnew: String, latitude: String, longitude: String, device_id: String, client_ip: String) {
+//       
+//        let params : [String:Any]  = ["skey":"AVJQIdwn79iR0zlP0iKNKumME","recharge_number":phoneStr, "amount": amountStr, "isSpecial" : "N", "provider": provider, "location": location, "payment_method": "UPI", "upi_txn_id": txnidnew, "latitude": latitude, "longitude": longitude, "device_id": device_id, "device_ip": client_ip]
+//        print("The dictionary is : \(params)")
+//        
+//        self.eventHandler?(.loading)
+//        ApiManager.sharedInstance.PayUSecondForRechargeServiceApi(dict:params as NSDictionary, completion: { (model, err) in
+//            self.eventHandler?(.stopLoading)
+//            if let err = err {
+//                print("Failed to fetch courses:", err)
+//                return
+//            }
+//            if let model = model {
+//                
+//                self.payUFirstForRecharge = model
+//                
+//                let params: [String: String] = self.extractParams(uri: self.payUFirstForRecharge?.result?.intentURIData ?? "")
+//                print("RechargePayUSecondAPICall:",params)
+//                self.beneVpa = BeneVpa(name: params["pn"] ?? "", vpa: params["pa"] ?? "", nickName: "Ecomaxgo llp")
+//                self.tr = params["tr"]
+//                self.am = params["am"]
+//                self.tid = params["tid"]
+//                
+//                
+//                self.eventHandler?(.dataLoaded)
+//                
+//            }else{
+//                self.eventHandler?(.error(err))
+//            }
+//        })
+//    }
     
     func extractParams(uri: String) -> [String: String] {
      var params = [String: String]()
@@ -104,8 +104,41 @@ final class Recharge_ModelView {
      
      return params
     }
-    func RechargeModelApiCall(skeyStr:String,amountStr:Int,rechargenumberStr:String,phoneStr:String,txnIdStr:String,ViaStr:String) {
-        let params : [String:Any]  = ["skey":skeyStr,"amount":amountStr,"recharge_number":rechargenumberStr,"phone":phoneStr,"txn_id":txnIdStr,"via":ViaStr]
+    
+
+    
+              
+               
+    
+    
+
+    func RechargeModelApiCall(
+                              amountStr: Int,
+                              rechargeNumberStr: String,
+                              txnIdStr: String,
+                           operatorName: String,
+                              circleName: String,
+                             
+                              latitude: String,
+                              longitude: String,
+                              deviceId: String,
+                              deviceIp: String) {
+        
+        // Create the params dictionary with all the required properties
+        let params: [String: Any] = [
+            "skey": "AVJQIdwn79iR0zlP0iKNKumME",
+            "amount": "\(amountStr)",
+            "recharge_number": rechargeNumberStr,
+            "isSpecial": "N",           // Add fixed value
+            "provider": operatorName,
+            "location": circleName,
+            "payment_method": "UPI",
+            "upi_txn_id": txnIdStr,    // Assuming txnIdStr is UPI txn ID
+            "latitude": latitude,
+            "longitude": longitude,
+            "device_id": deviceId,
+            "device_ip": deviceIp
+        ]
         print("The dictionary is : \(params)")
         self.eventHandler?(.loading)
         ApiManager.sharedInstance.RechargeModelApi(dict:params as NSDictionary, completion: { (model, err) in

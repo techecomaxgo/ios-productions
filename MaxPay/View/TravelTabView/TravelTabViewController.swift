@@ -46,14 +46,14 @@ class TravelTabViewController: BaseVC,UIPageViewControllerDataSource, UIPageView
     
     @IBOutlet weak var imgHotel: UIImageView!
     
-    
+    var receivedTag: Int?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+      
         // Set up the view controllers
                let storyboard = UIStoryboard(name: "USP", bundle: nil)
                let firstVC = storyboard.instantiateViewController(withIdentifier: "SearchBusVC")
@@ -81,12 +81,41 @@ class TravelTabViewController: BaseVC,UIPageViewControllerDataSource, UIPageView
                ])
      
         
-        
+        if let tag = receivedTag {
+            if tag == 0 {
+                
+                resetBusBackgrounds()
+                
+            } else if tag == 1 {
+                         
+                resetFlightBackgrounds()
+                
+            } else if tag == 2 {
+                
+                resetHotelBackgrounds()
+                
+            }
+                }
             }
     
     
     
-    
+    func loadFlightBookViewController() {
+           // Load the view controller from the storyboard
+           let storyboard = UIStoryboard(name: "USP", bundle: nil)
+           if let secondVC = storyboard.instantiateViewController(withIdentifier: "FlightBookViewController") as? FlightBookViewController {
+               
+               // Add the `secondVC` as a child view controller
+               self.addChild(secondVC)
+               
+               // Set the secondVC's view frame to match the container view
+               secondVC.view.frame = self.containerView.bounds
+               self.containerView.addSubview(secondVC.view)
+               
+               // Notify the child view controller
+               secondVC.didMove(toParent: self)
+           }
+       }
     
     
     // MARK: - UIPageViewControllerDataSource

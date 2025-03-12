@@ -1047,6 +1047,15 @@ extension DashboardVC:UICollectionViewDelegate,UICollectionViewDataSource,UIColl
         vw.selectedMenuInde = sender.tag
         self.view.addSubview(vw)
     }
+    @objc func btntraveller(_ sender: UIButton) {
+        
+        let tag = sender.tag
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "USP", bundle: nil)
+       let vc = storyBoard.instantiateViewController(withIdentifier: "TravelVC") as! TravelVC
+        vc.receivedTag = tag
+       self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension DashboardVC {
@@ -1939,14 +1948,24 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
             let cell = tableViewDashboard.dequeueReusableCell(withIdentifier: "BillsTableViewCell") as! BillsTableViewCell
             //if cardsArr.count > 0  {
                 cell.btnMobileRecharge.addTarget(self, action: #selector(btnMobileRecharge(_:)), for: .touchUpInside)
-                cell.btnElectaricity.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
-                cell.btnCrreditCard.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
-                cell.btnGas.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
-                cell.btnWeather.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
-                cell.btnFastTag.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
-                cell.btnDTH.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
-                cell.btnBroadband.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
-                cell.btnViewAll.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
+                cell.btnElectaricity.addTarget(self, action: #selector(btnBillAll(_:)), for: .touchUpInside)
+                cell.btnCrreditCard.addTarget(self, action: #selector(btnBillAll(_:)), for: .touchUpInside)
+                cell.btnGas.addTarget(self, action: #selector(btnBillAll(_:)), for: .touchUpInside)
+                cell.btnWeather.addTarget(self, action: #selector(btnBillAll(_:)), for: .touchUpInside)
+                cell.btnFastTag.addTarget(self, action: #selector(btnBillAll(_:)), for: .touchUpInside)
+                cell.btnDTH.addTarget(self, action: #selector(btnBillAll(_:)), for: .touchUpInside)
+                cell.btnBroadband.addTarget(self, action: #selector(btnBillAll(_:)), for: .touchUpInside)
+                cell.btnViewAll.addTarget(self, action: #selector(viewAll(_:)), for: .touchUpInside)
+            
+            cell.btnElectaricity.tag = 0
+            cell.btnCrreditCard.tag = 1
+            cell.btnGas.tag = 2
+            cell.btnWeather.tag = 3
+            cell.btnFastTag.tag = 4
+            cell.btnDTH.tag = 5
+            cell.btnBroadband.tag = 6
+
+            
            // }
             return cell
         }else if indexPath.row == 6 {
@@ -1954,9 +1973,13 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
             return cell
         } else  if indexPath.row == 7 {
             let cell = tableViewDashboard.dequeueReusableCell(withIdentifier: "TravelTableViewCell") as! TravelTableViewCell
-            cell.btnBus.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
-            cell.btnFlight.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
-            cell.btnHotel.addTarget(self, action: #selector(messageAction(_:)), for: .touchUpInside)
+            cell.btnBus.addTarget(self, action: #selector(btntraveller(_:)), for: .touchUpInside)
+            cell.btnFlight.addTarget(self, action: #selector(btntraveller(_:)), for: .touchUpInside)
+            cell.btnHotel.addTarget(self, action: #selector(btntraveller(_:)), for: .touchUpInside)
+            cell.btnBus.tag = 0
+            cell.btnFlight.tag = 1
+            cell.btnHotel.tag = 2
+            
             return cell
         } else  {
             let cell = tableViewDashboard.dequeueReusableCell(withIdentifier: "MoreTableViewCell") as! MoreTableViewCell
@@ -2150,12 +2173,56 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
         let vc = storyBoard.instantiateViewController(withIdentifier: "LostAndFoundViewController") as! LostAndFoundViewController
         self.navigationController?.pushViewController(vc, animated: true)
         
+    }   
+    @objc func viewAll(_ sender: UIButton) {
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "BBPS", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "PayBillListVC") as! PayBillListVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
    // btnMobileRecharge
     @objc func btnMobileRecharge(_ sender: UIButton) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "USP", bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "RechargeViewController") as! RechargeViewController
         self.navigationController?.pushViewController(vc, animated: true)
+        //self.showErrorAlert("Comming soon")
+    }
+    
+    
+   // btnMobileRecharge
+    @objc func btnBillAll(_ sender: UIButton) {
+        let tag = sender.tag
+        let storyBoard: UIStoryboard = UIStoryboard(name: "BBPS", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "CatagoryListVC") as! CatagoryListVC
+        if(tag == 0){
+            vc.strCatagoryName = "Electricity"
+            vc.strCatagoryImg = "Electricity Icon"
+        }else if(tag == 1){
+            vc.strCatagoryName = "Credit Card"
+            vc.strCatagoryImg = "creditcardnew"
+        }else if(tag == 2){
+            vc.strCatagoryName = "Gas"
+            vc.strCatagoryImg = "Gas"
+        }else if(tag == 3){
+            vc.strCatagoryName = "Water"
+            vc.strCatagoryImg = "Water"
+        }else if(tag == 4){
+            vc.strCatagoryName = "Fastag"
+            vc.strCatagoryImg = "FastTag"
+        }else if(tag == 5){
+            vc.strCatagoryName = "DTH"
+            vc.strCatagoryImg = "DTH"
+        }else if(tag == 6){
+            vc.strCatagoryName = "Broadband Postpaid"
+            vc.strCatagoryImg = "Broadband"
+        }
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+       
+        
+        
+ 
         //self.showErrorAlert("Comming soon")
     }
     @objc func messageAction(_ sender: UIButton) {

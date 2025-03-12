@@ -1023,19 +1023,19 @@ class PaymentUPIIDNewVC: BaseVC, AVAudioPlayerDelegate {
                                 self.showErrorAlert("Please enter amount")
                                 return
                             }else{
-                                let storyboard = UIStoryboard(name: "BhimUpi", bundle: nil)
-                                
-                                let vc = storyboard.instantiateViewController(withIdentifier: "PaymentUPIIDNewConfirmationVC") as! PaymentUPIIDNewConfirmationVC
-                                vc.vpaUpdate = self.vpaUpdate
-                                vc.accountDetails = self.accountDetails
-                                vc.beneVpa = self.beneVpa
-                                vc.beneName = self.beneName
-                                vc.transId = self.transId
-                                vc.amtDecimal = self.txtAmount.text ?? ""
-                                vc.remark =  self.txtRemark.text ?? ""
-                                vc.mccCodeStr =  self.mccCodeDNewVC
-                                
-                                self.navigationController?.pushViewController(vc, animated: true)
+//                                let storyboard = UIStoryboard(name: "BhimUpi", bundle: nil)
+//                                
+//                                let vc = storyboard.instantiateViewController(withIdentifier: "PaymentUPIIDNewConfirmationVC") as! PaymentUPIIDNewConfirmationVC
+//                                vc.vpaUpdate = self.vpaUpdate
+//                                vc.accountDetails = self.accountDetails
+//                                vc.beneVpa = self.beneVpa
+//                                vc.beneName = self.beneName
+//                                vc.transId = self.transId
+//                                vc.amtDecimal = self.txtAmount.text ?? ""
+//                                vc.remark =  self.txtRemark.text ?? ""
+//                                vc.mccCodeStr =  self.mccCodeDNewVC
+//                                
+//                                self.navigationController?.pushViewController(vc, animated: true)
                             }
                             
                         }
@@ -1416,7 +1416,7 @@ extension PaymentUPIIDNewVC: MFMessageComposeViewControllerDelegate {
                 print("Stop loading...")
             case .dataLoaded:
                 print("Data loaded...")
-                if self?.checksumViewModel.checksumModel?.data?.result.lowercased() == "success" {
+                if self?.checksumViewModel.checksumModel?.data?.result!.lowercased() == "success" {
                     Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.data?.merchantauthtoken ?? ""
                     
                     self?.performMerchantHandshake()

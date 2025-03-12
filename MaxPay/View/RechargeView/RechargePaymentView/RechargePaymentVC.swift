@@ -22,6 +22,7 @@ class RechargePaymentVC: BaseVC {
     var descriptionPStr = ""
     var dataDayPStr = ""
     var userMobile = ""
+    var userMobileNumber = ""
     
     @IBOutlet weak var lblPriceDisp: UILabel!
     
@@ -211,7 +212,7 @@ class RechargePaymentVC: BaseVC {
             }
             return result
         }
-        
+        userMobileNumber = "\(number)"
         return numberWords[number]!
     }
     
@@ -223,7 +224,10 @@ class RechargePaymentVC: BaseVC {
         let vc = storyboard.instantiateViewController(withIdentifier: "RechargeBillPaymentMethodVC") as! RechargeBillPaymentMethodVC
         //vc.priceStr = String(pricePStr)
         vc.priceStr = pricePStr
-        
+     //   vc.OperaterName = userMobileNumber
+        vc.phone = userMobileNumber
+       // vc.CircleName = userMobileNumber
+       
         self.navigationController?.pushViewController(vc, animated: true)
 
         

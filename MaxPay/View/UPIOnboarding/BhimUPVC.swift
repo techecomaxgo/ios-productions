@@ -8,13 +8,15 @@
 import UIKit
 import CoreTelephony
 import SwiftLoader
-
+import Network
 
 class BhimUPVC: BaseVC {
     
     private var simSelectionViewModel = SIMSelectionViewModel()
     private var limitCheckViewModel =  LimitCheckViewModel()
     
+    let monitor = NWPathMonitor()
+    let queue = DispatchQueue(label: "NetworkMonitorQueue")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,12 +94,9 @@ class BhimUPVC: BaseVC {
                 case .wifi:
                     print("Connected via Wi-Fi")
                     
-                    configuration()
-                    DispatchQueue.main.async {
-                        
-                        //self.showErrorAlert("Sim registration failed due to non-cellular network")
-                        
-                    }
+                    startMonitoring()
+                  
+                    
                 case .cellular:
                     print("Connected via Cellular")
                     configuration()
@@ -105,18 +104,6 @@ class BhimUPVC: BaseVC {
                     print("Connected via other interface")
                 }
             }
-        } else {
-            //                print("No internet connection")
-            //}
-            
-            
-            
-            // limitCheckViewModel.limitCheckCall(action: "device_bind")
-            
-            // observeLimitCheckApi()
-            
-            
-            
         }
         
         
@@ -138,7 +125,42 @@ class BhimUPVC: BaseVC {
         //        let vc = storyBoard.instantiateViewController(withIdentifier: "SelectSIMVC") as! SelectSIMVC
         //        self.navigationController?.pushViewController(vc, animated: true)
     }
+
     
+    
+    func startMonitoring() {
+           monitor.pathUpdateHandler = { path in
+        if path.status == .satisfied {
+                   // Check if Wi-Fi is on
+                   let isWiFi = !path.isExpensive
+                   
+                   // Check if Mobile Data is on
+                   let isMobileData = path.isExpensive
+                   
+                   if isWiFi && isMobileData {
+                       
+                       self.configuration()
+                       self.monitor.cancel()
+                    
+                   } else if isWiFi {
+                       
+                       DispatchQueue.main.async {
+                           
+                           self.showErrorAlert("Sim registration failed due to non-cellular network")
+                       }
+                       print("Wi-Fi is ON")
+                   }
+               } else {
+                   print("No internet connection")
+               }
+           }
+
+           monitor.start(queue: queue)
+       }
+
+       func stopMonitoring() {
+           monitor.cancel()
+       }
     
     
     

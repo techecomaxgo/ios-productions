@@ -19,8 +19,8 @@ class CatagoryListVC: BaseVC {
 //    var originalData = [""]
 //    var filteredData: [String]!
     
-    var originalBillers: [BillerResp] = []
-    var filteredBillers: [BillerResp] = []
+    var originalBillers: [ResponseDataPayU.Biller] = []
+    var filteredBillers: [ResponseDataPayU.Biller] = []
     
     
     override func viewDidLoad() {
@@ -44,17 +44,18 @@ extension CatagoryListVC: UITableViewDataSource, UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CatagorySearchCell", for: indexPath) as! CatagorySearchCell
-//        let model:BillerResp = (catagoryListViewModel.catagoryListModel?.responseData?.billerResp?[indexPath.row])!
-//        cell.lblCatagoryName?.text = model.billerName ?? ""
+
         cell.lblCatagoryName?.text = filteredBillers[indexPath.row].billerName
-        let decodedData = NSData(base64Encoded: strCatagoryImg, options: [])
-            if let data = decodedData {
-                let decodedimage = UIImage(data: data as Data)
-                cell.imgCatagory.image = decodedimage
-            } else {
-                print("error with decodedData")
-            }
-        cell.imgCatagory.setImageColors(color: UIColor(named: "primary-green")!)
+      
+//        let decodedData = NSData(base64Encoded: strCatagoryImg, options: [])
+//            if let data = decodedData {
+//                let decodedimage = UIImage(data: data as Data)
+//                cell.imgCatagory.image = decodedimage
+//            } else {
+//                print("error with decodedData")
+//            }
+        cell.imgCatagory.image = UIImage(named: strCatagoryImg)
+        
         cell.selectionStyle = .none
         return cell
     }
@@ -67,6 +68,7 @@ extension CatagoryListVC: UITableViewDataSource, UITableViewDelegate {
         let storyboard = UIStoryboard(name: "BBPS", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "FetchingBillVC") as! FetchingBillVC
         vc.strImg = strCatagoryImg
+        vc.fetchdata = filteredBillers[indexPath.row]
         vc.strCatagoryName = filteredBillers[indexPath.row].billerName ?? ""
         self.navigationController?.pushViewController(vc,animated: true)
         vc.strBillerID = filteredBillers[indexPath.row].billerId ?? ""
@@ -121,7 +123,7 @@ extension CatagoryListVC {
 //                        self?.originalBillers.append(self?.catagoryListViewModel.catagoryListModel?.responseData?.billerResp?[i].billerName ?? "")
 //                    }
                     
-                    self?.originalBillers = self?.catagoryListViewModel.catagoryListModel?.responseData?.billerResp ?? []
+                    self?.originalBillers = self?.catagoryListViewModel.catagoryListModel?.billers ?? []
                     self?.filteredBillers = self?.originalBillers ?? []
                     self?.tblSearchCatagorySearch.reloadData()
                 }else{
@@ -142,10 +144,11 @@ extension CatagoryListVC: UITextFieldDelegate {
 
         let searchText = (textField.text! as NSString).replacingCharacters(in: range, with: string)
 
-        filteredBillers = searchText.isEmpty ? originalBillers : originalBillers.filter({(biller: BillerResp) -> Bool in
-            
-            return biller.billerName?.range(of: searchText, options: .caseInsensitive) != nil
-        })
+        filteredBillers = searchText.isEmpty ? originalBillers : originalBillers.filter { (biller) -> Bool in
+            // Check for nil to safely unwrap optional `billerName`
+            return biller.billerName!.range(of: searchText, options: .caseInsensitive) != nil
+        }
+
 
         tblSearchCatagorySearch.reloadData()
 

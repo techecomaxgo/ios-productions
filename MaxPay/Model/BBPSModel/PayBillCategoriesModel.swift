@@ -1,20 +1,13 @@
 import UIKit
 
-// Define the PayBillCategoriesModel struct
 struct PayBillCategoriesModel {
-    var name: String
-    var image: UIImage?
+    var name: String?
+    var imageName: String?  // Image name as a string
     var isHeader: Bool
     
-    init(name: String, imageName: String, isHeader: Bool) {
+    init(name: String, imageName: String?, isHeader: Bool) {
         self.name = name
-        self.image = UIImage(named: imageName)
-        self.isHeader = isHeader
-    }
-    
-    init(name: String, image: UIImage, isHeader: Bool) {
-        self.name = name
-        self.image = image
+        self.imageName = imageName
         self.isHeader = isHeader
     }
 }

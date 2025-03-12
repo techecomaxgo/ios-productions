@@ -65,6 +65,10 @@ class RechargeBillPaymentMethodVC: BaseVC,UIGestureRecognizerDelegate{
     @IBOutlet weak var viewForUpiCardConst: NSLayoutConstraint!
     
     
+    var OperaterName = ""
+    var phone = ""
+    var CircleName = ""
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -108,6 +112,17 @@ class RechargeBillPaymentMethodVC: BaseVC,UIGestureRecognizerDelegate{
         lblgrandTotal.text = "\(formatPriceWithRupeeSymbol(price: priceStr))"
         
         
+        let getName = UserDefaults.standard.string(forKey: "operatorName")
+        let getcircle = UserDefaults.standard.string(forKey: "circle")
+        let getMobile = UserDefaults.standard.string(forKey: "MOBILE_NUMBER")
+        
+
+        OperaterName = getName ?? ""
+        CircleName = getcircle  ?? ""
+        phone = getMobile  ?? ""
+        
+    
+        
         if cardsArr.count == 1 {
             viewForUpiCardConst.constant = 300
 
@@ -128,7 +143,7 @@ class RechargeBillPaymentMethodVC: BaseVC,UIGestureRecognizerDelegate{
         }
         let userDefaults = UserDefaults.standard
         for (key, value) in userDefaults.dictionaryRepresentation() {
-            print("\(key): \(value)")
+            print("vvvvvv\(key): \(value)")
         }
     }
     
@@ -201,6 +216,7 @@ class RechargeBillPaymentMethodVC: BaseVC,UIGestureRecognizerDelegate{
         let getcircle = UserDefaults.standard.string(forKey: "circle")
         print("getcircle:",getcircle ?? "")
 
+       
         
         // RechargeBillSuccess
         
@@ -214,7 +230,6 @@ class RechargeBillPaymentMethodVC: BaseVC,UIGestureRecognizerDelegate{
            // rechargeMethod()
             
         }else{
-            
             
             let refreshAlert = UIAlertController(title: "Bill Pay", message: "Please select Payment mode", preferredStyle: UIAlertController.Style.alert)
 
@@ -261,63 +276,15 @@ class RechargeBillPaymentMethodVC: BaseVC,UIGestureRecognizerDelegate{
         }
         
         
-        
-        //MARK: Observing the data
-        func observeDeductApi() {
+        func walleteAmountDeduct(){
+          
             
-            paymentWalletDeductVM.eventHandler = { [weak self] event in
-                guard self != nil else { return }
-
-                switch event {
-                case .loading:
-                    
-                    print("loading....")
-                    
-                case .stopLoading:
-                    
-                    print("Stop loading...")
-                    SwiftLoader.hide()
-                case .dataLoaded:
-                    
-                    print("Data loaded...")
-                    DispatchQueue.main.async {
-                                            
-                  //  print(self?.paymentWalletDeductVM.paymentDeductModel?.data)
-                        
-                        SwiftLoader.hide()
-                        
-                        if self?.paymentWalletDeductVM.paymentDeductModel?.status == "success" {
-                            
-                          //  self?.circleNamesArr = self?.circleView_Model.circlezoneModel?.circle_names
-                            
-                         //   print("result :", self?.paymentWalletDeductVM.paymentDeductModel?.data)
-                          //  print(self?.paymentWalletDeductVM.paymentDeductModel?.data?.txn_id ?? "")
-                            
-                            self?.rechargeModelView.RechargeModelApiCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME", amountStr: self?.priceStr ?? 0, rechargenumberStr: Common.shared.userMobile_NUMBER ?? "", phoneStr: Common.shared.phoneNo ?? "", txnIdStr:self?.paymentWalletDeductVM.paymentDeductModel?.data?.txn_id ?? "", ViaStr: "swallet")
-                            
-                            ObserveRechargeModelViewApi()
-                            
-                            DispatchQueue.main.async {
-                               
-                                SwiftLoader.hide()
-                            }
-                            
-                        }else{
-                            
-                            self?.showErrorAlert(self?.paymentWalletDeductVM.paymentDeductModel?.status ?? "")
-
-                        }
-                        
-                        
-                    }
-                case .error(let error):
-                    print(error!)
-                    SwiftLoader.hide()
-                }
-            }
+            paymentWalletDeductVM.PaymentDeductCall(skeyStr: "AVJQIdwn79iR0zlP0iKNKumME",deduct_amountStr: priceStr, categoryStr: "recharge")
+            ObserveRechargeWalleteViewApi()
         }
         
-        func observePayUFirstAPI() { // First Call
+        
+        func ObserveRechargeWalleteViewApi() {
             
             rechargeModelView.eventHandler = { [weak self] event in
                 guard self != nil else { return }
@@ -330,30 +297,129 @@ class RechargeBillPaymentMethodVC: BaseVC,UIGestureRecognizerDelegate{
                 case .stopLoading:
                     
                     print("Stop loading...")
-                    SwiftLoader.hide()
+                   
                 case .dataLoaded:
                     
+                    print("Data loaded...")
+                    DispatchQueue.main.async {
+                           
+                           
+                        
+                        if self?.paymentWalletDeductVM.paymentDeductModel?.status?.lowercased() == "success" {
+                            
+                            let storyboard = UIStoryboard(name: "USP", bundle: nil)
+                            let vc = storyboard.instantiateViewController(withIdentifier: "RechargeBillSuccess") as! RechargeBillSuccess
+                            //vc.priceStr = String(pricePStr)
+                            vc.amountStr = String(self?.priceStr ?? 0)
+
+                            self?.navigationController?.pushViewController(vc, animated: true)
+                          
+                            
+                        }else if  self?.rechargeModelView.rechargeModelBase?.status == "failed" {
+                            
+                            
+                            
+                            let storyboard = UIStoryboard(name: "USP", bundle: nil)
+                            let vc = storyboard.instantiateViewController(withIdentifier: "RechargeBillFailedVC") as! RechargeBillFailedVC
+                            //vc.priceStr = String(pricePStr)
+                            vc.amountStr = String(self?.priceStr ?? 0)
+                            
+                            if self?.paymentMode == "WalletPay" {
+                                
+                                vc.consumerName = "Wallet"
+                                
+                            }else{
+                                vc.consumerName = "UPI"
+                                
+                            }
+                            vc.receiverName = "MaxPay recharge"
+                            
+                           
+                            
+                            self?.navigationController?.pushViewController(vc, animated: true)
+                            
+                            
+                        }
+                        else if  self?.rechargeModelView.rechargeModelBase?.status == "pending" {
+                            
+                            
+                            
+                            let storyboard = UIStoryboard(name: "USP", bundle: nil)
+                            let vc = storyboard.instantiateViewController(withIdentifier: "RechargeBillPendingVC") as! RechargeBillPendingVC
+                            //vc.priceStr = String(pricePStr)
+                            vc.amountStr = String(self?.priceStr ?? 0)
+
+                            self?.navigationController?.pushViewController(vc, animated: true)
+                            
+                            
+                        }
+                        
+                        
+                        else{
+                            
+                            self?.showErrorAlert(self?.paymentWalletDeductVM.paymentDeductModel?.status ?? "")
+
+                            
+                        }
+                      
+                    }
+                case .error(let error):
+                    print(error!)
+                   
+                }
+            }
+        }
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        func observePayUFirstAPI() { // First Call
+            
+            rechargeModelView.eventHandler = { [weak self] event in
+                guard self != nil else { return }
+
+                switch event {
+                case .loading:
+                    print("loading....")
+
+                case .stopLoading:
+                    print("Stop loading...")
+                    SwiftLoader.hide()
+
+                case .dataLoaded:
                     print("Data loaded...")
                     DispatchQueue.main.async { [self] in
                         self?.apiCallOption = "pay"
                         SwiftLoader.hide()
                         print("self?.rechargeModelView.PayUFirstForRecharge: ", self?.rechargeModelView.payUFirstForRecharge)
-                      //  self?.configurationUpiPayment()
                         
+                        // Check if account details are selected
                         if self!.accountDetails == nil {
-                           // self.showErrorAlert("Please Select Payment Method to Pay.")
+                            // showErrorAlert("Please Select Payment Method to Pay.")
                             return
                         }
-                        
+
+                        // Show loader again before initiating the Olive service call
                         DispatchQueue.main.async {
                             SwiftLoader.show(animated: true)
                         }
-                        
+
+                        // Prepare account details
                         let accountDetails = AccountPay2(name: self!.accountDetails?.name ?? "", mmid: self!.accountDetails?.mmid ?? "", aeba: self!.accountDetails?.aeba ?? "", mbeba: self!.accountDetails?.mbeba ?? "", accRefNumber: self!.accountDetails?.accRefNumber ?? "", ifsc: self!.accountDetails?.ifsc ?? "", maskedAccnumber: self?.accountDetails?.maskedAccnumber ?? "", status: self!.accountDetails?.status ?? "", type: self!.accountDetails?.type ?? "", vpa: self!.accountDetails?.vpa ?? "", dLength: self!.accountDetails?.dLength ?? "", dType: self!.accountDetails?.dType ?? "", balance: self!.accountDetails?.balance ?? "", balTime: self!.accountDetails?.balTime ?? "", iin: self!.accountDetails?.iin ?? "")
+                        
                         var strAccountDetails = ""
                         do {
                             let encoder = JSONEncoder()
-                            encoder.outputFormatting = .prettyPrinted  // Add this line if you want the output to be formatted for better readability
+                            encoder.outputFormatting = .prettyPrinted
                             let jsonData = try encoder.encode(accountDetails)
                             if let jsonString = String(data: jsonData, encoding: .utf8) {
                                 strAccountDetails = jsonString
@@ -362,14 +428,14 @@ class RechargeBillPaymentMethodVC: BaseVC,UIGestureRecognizerDelegate{
                             print("Error encoding JSON: \(error)")
                         }
                         print("strAccountDetails: ", strAccountDetails)
-                        
-                        
+
+                        // Prepare payment input details
                         let paymentInput = PaymentInput2(amount: self?.rechargeModelView.am ?? "", merchantVpa: "ecomaxgo@maxaxis", merchantId: "ECOMAXGOPROD1234", submerchantid: "ECOMAXGOPROD1234", merchantChannelId: "ECOMAXGOPROD1234", tranType: "P2M", mcc: "4814", remarks: "Recharge", initMode: "00", purpose: "00", refCategory: "00", orderId: self?.rechargeModelView.tr ?? "id", refUrl: "https://www.maxupi.in", merchatntTxnId: self?.rechargeModelView.payUFirstForRecharge?.metaData?.txnId ?? "")
                         
                         var strPaymentInput = ""
                         do {
                             let encoder = JSONEncoder()
-                            encoder.outputFormatting = .prettyPrinted  // Add this line if you want the output to be formatted for better readability
+                            encoder.outputFormatting = .prettyPrinted
                             let jsonData = try encoder.encode(paymentInput)
                             if let jsonString = String(data: jsonData, encoding: .utf8) {
                                 strPaymentInput = jsonString
@@ -378,8 +444,8 @@ class RechargeBillPaymentMethodVC: BaseVC,UIGestureRecognizerDelegate{
                             print("Error encoding JSON: \(error)")
                         }
                         print("strPaymentInput: ", strPaymentInput)
-                            
-                        
+
+                        // Prepare Bene VPA
                         var strBeneVpa = ""
                         do {
                             let encoder = JSONEncoder()
@@ -392,96 +458,70 @@ class RechargeBillPaymentMethodVC: BaseVC,UIGestureRecognizerDelegate{
                             print("Error encoding JSON: \(error)")
                         }
                         print("strBeneVpa: ", strBeneVpa)
-                        
-                        OliveUpiManager.initiatePay(account: strAccountDetails, benevpa: strBeneVpa, paymentInput: strPaymentInput, viewController: self!) { data, error in
-                            
-                            if let err = error {
-                                DispatchQueue.main.async {
-                                    let storyboard = UIStoryboard(name: "USP", bundle: nil)
-                                    if let vc = storyboard.instantiateViewController(withIdentifier: "MPinPopUpVC") as? MPinPopUpVC {
-                                        vc.desTitle = err.localizedDescription  // Using proper error description
-                                        self?.present(vc, animated: true)
-                                    }
-                                }
 
-        
-                                if err.code == 102 || err.code == 108 { // Customer Accounts not found
-                                    DispatchQueue.main.async {
-                                        self?.showErrorAlert(err.localizedDescription)
-                                    }
-                                } else if err.code == 401 || err.code == 107{
-                                    
-                                    self?.configuration()
-                                    return
-                                    
-                                }
-                                DispatchQueue.main.async {
-                                    SwiftLoader.hide()
-                                }
-
-                            } else {
-                                
-                                
-                               
-                                if let dataResp = data  {
-                                    
-                                    
-                                    //let isConnected = ReachabilityClass.isConnectedToNetwork()
-//                                    if isConnected == true {
-                                        let txnID = dataResp as! String
-                                        
-                                        // Today Task
-                                        
-                                        let rechargeNo = Common.shared.userMobile_NUMBER ?? ""
-                                        print("rechargeNo:",rechargeNo)
-                                        
-//                                        print("OperatorName:",(self?.rechargeAllPlanVM.rechargeAllModel?.data?.operatorName)!)
-//                                        print("Circle:",(self?.rechargeAllPlanVM.rechargeAllModel?.data?.circle)!)
-                                       
-                                        let  operatorStr = self?.rechargeAllPlanVM.rechargeAllModel?.data?.operatorName ?? ""
-                                        let  circle = self?.rechargeAllPlanVM.rechargeAllModel?.data?.circle ?? ""
-
-                                        
-                                        
-//                                        let x : Int = self!.priceStr
-//                                        let xNSNumber = x as NSNumber
-//                                        let xString : String = xNSNumber.stringValue
-//
-//                                    self?.rechargeModelView.RechargePayUSecondAPICall(amountStr: xString, phoneStr:rechargeNo, provider:operatorStr, location:circle, txnidnew: txnID, latitude: "77.391029", longitude:"28.535517", device_id: Common.shared.getDeviceID(), client_ip: Common.shared.getDeviceIP())
-                                        
-                                    
-                                        DispatchQueue.main.async {
-                                            
-                                            if dataResp is [String: Any] {
-                                            
-                                            } else {
-                                                print("Error: Data format is incorrect")  // Handle unexpected response format
-                                            }
-                                        let storyboard = UIStoryboard(name: "USP", bundle: nil)
-                                        if let successVC = storyboard.instantiateViewController(withIdentifier: "RechargeBillSuccess") as? RechargeBillSuccess {
-                                            if let dataDict = dataResp as? [String: Any] {
-                                                successVC.transactionData = dataDict
-                                            } else {
-                                                print("Error: dataResp is not a valid dictionary")
-                                            }
-                                            self?.navigationController?.pushViewController(successVC, animated: true)
-                                        }
-                                        }
-                                    
-                                    
-                                }
-                            }
-                        }
+                        // Call the new function to initiate the Olive payment
+                        initiateOlivePayment(accountDetails: strAccountDetails, beneVpa: strBeneVpa, paymentInput: strPaymentInput)
 
                     }
+
                 case .error(let error):
                     print(error!)
                     SwiftLoader.hide()
                 }
             }
         }
-        
 
+        // MARK: - Olive Payment Request
+        func initiateOlivePayment(accountDetails: String, beneVpa: String, paymentInput: String) {
+            OliveUpiManager.initiatePay(account: accountDetails, benevpa: beneVpa, paymentInput: paymentInput, viewController: self) { data, error in
+                if let err = error {
+                    DispatchQueue.main.async {
+                        let storyboard = UIStoryboard(name: "USP", bundle: nil)
+                        if let vc = storyboard.instantiateViewController(withIdentifier: "MPinPopUpVC") as? MPinPopUpVC {
+                            vc.desTitle = err.localizedDescription
+                            self.present(vc, animated: true)
+                        }
+                    }
+
+                    // Handle specific error codes
+                    if err.code == 102 || err.code == 108 { // Customer Accounts not found
+                        DispatchQueue.main.async {
+                            self.showErrorAlert(err.localizedDescription)
+                        }
+                    } else if err.code == 401 || err.code == 107 {
+                        self.configuration()
+                        return
+                    }
+                    DispatchQueue.main.async {
+                        SwiftLoader.hide()
+                    }
+
+                } else {
+                    if let dataResp = data {
+                        SwiftLoader.hide()
+                        var transId = dataResp as! String
+                        mobileRecharge(transId: transId)
+                        
+                
+
+                    }
+                }
+            }
+        }
+
+
+        func mobileRecharge(transId:String){
+            
+          
+            self.rechargeModelView.RechargeModelApiCall(amountStr: self.priceStr, rechargeNumberStr: phone, txnIdStr: transId, operatorName: OperaterName, circleName: CircleName, latitude: Common.shared.latitude ?? "28.6139", longitude: Common.shared.longitude ?? "77.2090",deviceId :Common.shared.getDeviceID(),deviceIp:Common.shared.getDeviceIP())
+
+            ObserveRechargeModelViewApi()
+        }
+        
+        
+        
+        
+        
         
         //MARK: Observing the data
         func ObserveRechargeModelViewApi() {
@@ -503,23 +543,9 @@ class RechargeBillPaymentMethodVC: BaseVC,UIGestureRecognizerDelegate{
                     print("Data loaded...")
                     DispatchQueue.main.async {
                                             
-                       // print((self?.rechargeAllPlanVM.rechargeAllModel?.data?.plans)!)
-                        
-                 
-                           
                             SwiftLoader.hide()
                         
                         if self?.rechargeModelView.rechargeModelBase?.status == "success" {
-                            
-                          //  self?.circleNamesArr = self?.circleView_Model.circlezoneModel?.circle_names
-                            
-                           // print("result :", self?.rechargeModelView.rechargeModelBase?.data)
-                            
-                            //RechargeBillSuccess
-                                                    
-                            
-//                            self?.showErrorAlert(self?.paymentWalletDeductVM.paymentDeductModel?.status ?? "")
-                            
                             
                             let storyboard = UIStoryboard(name: "USP", bundle: nil)
                             let vc = storyboard.instantiateViewController(withIdentifier: "RechargeBillSuccess") as! RechargeBillSuccess
@@ -531,21 +557,11 @@ class RechargeBillPaymentMethodVC: BaseVC,UIGestureRecognizerDelegate{
                             
                         }else if  self?.rechargeModelView.rechargeModelBase?.status == "failed" {
                             
-                            
-                            
                             let storyboard = UIStoryboard(name: "USP", bundle: nil)
                             let vc = storyboard.instantiateViewController(withIdentifier: "RechargeBillFailedVC") as! RechargeBillFailedVC
                             //vc.priceStr = String(pricePStr)
                             vc.amountStr = String(self?.priceStr ?? 0)
-                            
-                            if self?.paymentMode == "WalletPay" {
-                                
-                                vc.consumerName = "S Wallet"
-                                
-                            }else{
-                                vc.consumerName = "UPI"
-                                
-                            }
+                            vc.consumerName = "UPI"
                             vc.receiverName = "MaxPay recharge"
                             
                            

@@ -18,7 +18,9 @@ final class PaymentWalletDeductViewModel {
     
     //MARK: Data featching form server
     func PaymentDeductCall(skeyStr:String,deduct_amountStr:Int,categoryStr:String) {
-        let params : [String:Any]  = ["skey":skeyStr,"deduct_amount":deduct_amountStr,"reason":categoryStr]
+        
+       
+        let params : [String:Any]  = ["skey":skeyStr,"amount":deduct_amountStr,"phone": Common.shared.phoneNo ?? "","reason":categoryStr]
         print("The dictionary is : \(params)")
         self.eventHandler?(.loading)
         ApiManager.sharedInstance.PaymentWalletDeductModelApi(dict:params as NSDictionary, completion: { (model, err) in

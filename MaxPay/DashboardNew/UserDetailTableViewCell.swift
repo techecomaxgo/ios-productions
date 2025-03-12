@@ -17,6 +17,9 @@ class UserDetailTableViewCell: UITableViewCell {
     @IBOutlet weak var lblBalance: UILabel!
     @IBOutlet weak var lblCardNo: UILabel!
     @IBOutlet weak var lblRank: UILabel!
+    
+    private var cardsArr:[AccountDetailsOnIIN] = []
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -29,15 +32,39 @@ class UserDetailTableViewCell: UITableViewCell {
         let currentTime = formatter.string(from: Date())
         let currentHour = Calendar.current.component(.hour, from: Date())
 
-        if (0...12).contains(currentHour) {
-            lblGoodMorning.text = "Good Morning!"
-        } else if (12...18).contains(currentHour){
-            lblGoodMorning.text = "Good Afternoon!"
-        } else if (18...21).contains(currentHour){
-            lblGoodMorning.text = "Good Evening!"
-        } else {
-            lblGoodMorning.text = "🌙 Bye Bye!"
+        
+        cardsArr = []
+
+        if let decoded = Common.shared.myCards {
+            do {
+                
+                let cardList: [AccountDetailsOnIIN] = try JSONDecoder().decode([AccountDetailsOnIIN].self, from: decoded)
+                
+                for card in cardList {
+                    cardsArr.append(card)
+                }
+                
+                if cardsArr.count > 0 {
+                    if (0...12).contains(currentHour) {
+                        lblGoodMorning.text = "Good Morning! "+Common.shared.userFirstName!
+                    } else if (12...18).contains(currentHour){
+                        lblGoodMorning.text = "Good Afternoon! "+Common.shared.userFirstName!
+                    } else if (18...21).contains(currentHour){
+                        lblGoodMorning.text = "Good Evening! "+Common.shared.userFirstName!
+                    } else {
+                        lblGoodMorning.text = "Namastey! "+Common.shared.userFirstName!
+                    }
+                    }
+                
+              
+                
+                
+            } catch {
+                print(error.localizedDescription)
+            }
         }
+        
+   
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

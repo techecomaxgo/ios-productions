@@ -78,7 +78,10 @@ class FetchingBillVC: BaseVC {
     @IBOutlet weak var tblFetechBill: UITableView!
     
     var strBillerID = "",strCatagoryName = "",strImg = ""
-    private var fetechBillViewModel = FetechBillViewModel()
+   // private var fetechBillViewModel = FetechBillViewModel()
+   
+  
+    var fetchdata: ResponseDataPayU.Biller?
 
     var arrTag = [CustomerParamsValue.Tag(name: "", value: "")]
     // Create a CLLocationManager instance
@@ -94,14 +97,9 @@ class FetchingBillVC: BaseVC {
         bolIsFetech = true
         lblName.text = strCatagoryName
         arrTag.removeAll()
-        let decodedData = NSData(base64Encoded: strImg, options: [])
-            if let data = decodedData {
-                let decodedimage = UIImage(data: data as Data)
-                imgCatagory.image = decodedimage
-            } else {
-                print("error with decodedData")
-            }
-        imgCatagory.setImageColors(color: UIColor(named: "primary-green")!)
+
+        imgCatagory.image = UIImage(named: strImg)
+        
         // Set up the location manager
         locationManager.delegate = self // Ensure your class conforms to CLLocationManagerDelegate
         locationManager.requestWhenInUseAuthorization() // Request location access
@@ -111,6 +109,9 @@ class FetchingBillVC: BaseVC {
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
         }
+        
+        tblFetechBill.showsVerticalScrollIndicator = false
+        tblFetechBill.showsHorizontalScrollIndicator = false
         
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -123,196 +124,238 @@ class FetchingBillVC: BaseVC {
     
     
 }
-
 extension FetchingBillVC: UITextFieldDelegate {
-    
+
+    // This method is called when a text field is about to begin editing
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         let index = IndexPath(row: textField.tag, section: 0)
         let cell: FetechingTextfieldCell = self.tblFetechBill.cellForRow(at: index) as! FetechingTextfieldCell
-        print(cell.txtName.text!)
-        arrTag[textField.tag].value = cell.txtName.text ?? ""
+        let customerParam = cell.cust_params_data
+
+        // Set the keyboard type to numeric for credit card field
+        if customerParam?.dataType == "CREDIT_CARD" {
+            textField.keyboardType = .numberPad  // Set numeric keyboard for credit card
+            textField.placeholder = "Enter Last 4 Digits"  // Show hint for credit card
+        } else if customerParam?.dataType == "NUMERIC" {
+            textField.keyboardType = .numberPad  // Set numeric keyboard for numeric fields
+            textField.placeholder = "Enter Numbers Only"  // Show hint for numeric fields
+        } else {
+            textField.keyboardType = .default  // Default keyboard for other types
+            textField.placeholder = "Enter Value"  // Generic placeholder for other types
+        }
+
         return true
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        
-        let index = IndexPath(row: textField.tag, section: 0)
-        let cell: FetechingTextfieldCell = self.tblFetechBill.cellForRow(at: index) as! FetechingTextfieldCell
-        print(cell.txtName.text!)
-        
-    }
-    
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
-        return true
-        
-//        let indexPath = IndexPath(row: textField.tag, section: 0)
-//        let indexPathBtn = IndexPath(row: textField.tag, section: 1)
-//        let cellBtn: FetechingBillCell = self.tblFetechBill.cellForRow(at: indexPathBtn) as! FetechingBillCell
-//        
-//        guard let currentText = textField.text else { return true }
-//        
-//        // Ensure only numeric characters are allowed
-//        let allowedCharacterSet = CharacterSet.decimalDigits
-//        let characterSet = CharacterSet(charactersIn: string)
-//        guard allowedCharacterSet.isSuperset(of: characterSet) else {
-//            return false
-//        }
-//        
-//        // Check the length of the entered text
-//        let newLength = currentText.count + string.count - range.length
-//        
-//        if let cust_params_data = fetechBillViewModel.fetechBillModel?.cust_params_data?[indexPath.row] {
-//            cellBtn.btnBillFetech.isEnabled = isWithinLengthRange(newLength, cust_params_data: cust_params_data)
-//            return isWithinLengthRange(newLength, cust_params_data: cust_params_data)
-//        }
-//        
-//        return false
     }
 
-    // Additional method to handle validation logic elsewhere, such as on a button press
-//    func validateConsumerNumber() -> Bool {
-//        guard let consumerNumber = consumerNumberTextField.text, !consumerNumber.isEmpty else {
-//            // Consumer number is required
-//            return false
-//        }
-//        
-//        // Check if the length is within the specified range
-//        return isWithinLengthRange(consumerNumber.count)
-//    }
-    
-    // Helper method to check if the length is within the specified range
-    func isWithinLengthRange(_ length: Int, cust_params_data: Cust_params_data) -> Bool {
+    // This method is called when the user has finished editing the text field
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        let index = IndexPath(row: textField.tag, section: 0)
+        let cell: FetechingTextfieldCell = self.tblFetechBill.cellForRow(at: index) as! FetechingTextfieldCell
+        let customerParam = cell.cust_params_data
         
-        guard let minLength = cust_params_data.minLength,
-              let maxLength = cust_params_data.maxLength else {
-            return false
+        // Min/Max length validation after editing
+        guard let minLength = customerParam?.minLength, let maxLength = customerParam?.maxLength else {
+            return
         }
-        
-        return /*length >= minLength &&*/ length <= maxLength
+
+        if let text = textField.text, text.count < minLength || text.count > maxLength {
+            print("Input length is out of range")
+            // Optionally, display an error message or update UI here
+        }
     }
-    
+
+    // This method handles character changes in the text field
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let index = IndexPath(row: textField.tag, section: 0)
+        let cell: FetechingTextfieldCell = self.tblFetechBill.cellForRow(at: index) as! FetechingTextfieldCell
+        let customerParam = cell.cust_params_data
+
+        // If the field is for a credit card number, allow only 4 digits
+        if customerParam?.dataType == "CREDIT_CARD" {
+            let currentText = textField.text ?? ""
+            let newLength = currentText.count + string.count - range.length
+            if newLength > 4 {
+                return false  // Restrict the length to 4 characters for card number
+            }
+            return true
+        }
+
+        // For numeric fields, allow only digits
+        if customerParam?.dataType == "NUMERIC" {
+            let allowedCharacterSet = CharacterSet.decimalDigits
+            let filtered = string.unicodeScalars.filter { allowedCharacterSet.contains($0) }
+            return filtered.count == string.count  // Only allow numeric input
+        }
+
+        return true
+    }
+
+    // Helper method to validate regex patterns (if needed for any input)
+    func isValidregex(_ regex: String, input: String) -> Bool {
+        let regexTest = try? NSRegularExpression(pattern: regex)
+        let range = NSRange(location: 0, length: input.count)
+        return regexTest?.firstMatch(in: input, options: [], range: range) != nil
+    }
 }
 
 extension FetchingBillVC: UITableViewDelegate, UITableViewDataSource {
-        
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0{
-            return fetechBillViewModel.fetechBillModel?.cust_params_data?.count ?? 0
-        }else{
+        if section == 0 {
+            return fetchdata?.customerParams?.count ?? 0
+        } else {
             return 1
         }
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       
-        if indexPath.section == 0{
+        if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "FetechingTextfieldCell", for: indexPath) as! FetechingTextfieldCell
             
-            if let cust_params_data = fetechBillViewModel.fetechBillModel?.cust_params_data?[indexPath.row] {
-                cell.cust_params_data = cust_params_data
-                cell.setCustParamsData(cust_params_data: cust_params_data)
+            if let customerParams = fetchdata?.customerParams, indexPath.row < customerParams.count {
+                let selectedCustomerParam = customerParams[indexPath.row]
+                cell.cust_params_data = selectedCustomerParam
+                cell.setCustParamsData(cust_params_data: selectedCustomerParam)
+                
+                // Handle input visibility and optional fields
+                if !(selectedCustomerParam.visibility ?? true) {
+                    cell.txtName.isHidden = true
+                    cell.txtName.isEnabled = false
+                } else {
+                    cell.txtName.isHidden = false
+                    cell.txtName.isEnabled = true
+                }
+
+                // Set min/max length filters for numeric fields
+                if selectedCustomerParam.dataType == "NUMERIC" {
+                    cell.txtName.delegate = self  // Set delegate to handle text changes
+                    let maxLength = selectedCustomerParam.maxLength ?? 0
+                    cell.txtName.addTarget(self, action: #selector(validateLength(_:)), for: .editingChanged)
+                    cell.txtName.tag = indexPath.row
+                }
+
+                // For Credit Card, handle input length of 4 digits
+                if selectedCustomerParam.dataType == "CREDIT_CARD" {
+                    cell.txtName.delegate = self
+                    cell.txtName.tag = indexPath.row
+                }
             }
-//            cell.txtName.placeholder = fetechBillViewModel.fetechBillModel?.cust_params_data?[indexPath.row].customParamName ?? ""
+
             cell.txtName.tag = indexPath.row
-//            cell.txtName.delegate = self
             cell.selectionStyle = .none
             return cell
-        }else{
+        } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "FetechingBillCell", for: indexPath) as! FetechingBillCell
             cell.selectionStyle = .none
-            cell.btnBillFetech.addTarget(self, action: #selector(buttonClickMethod(_:)), for: .touchUpInside)
+           // cell.btnBillFetech.addTarget(self, action: #selector(buttonClickMethod(_:)), for: .touchUpInside)
             return cell
         }
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.section == 0{
+        if indexPath.section == 0 {
             return 60
-        }else{
+        } else {
             return 70
         }
     }
 
-    // Button click action
-    @objc func buttonClickMethod(_ sender: UIButton) {
+    // Length validation method (called when text changes)
+    @objc func validateLength(_ textField: UITextField) {
+        let index = IndexPath(row: textField.tag, section: 0)
+        let cell: FetechingTextfieldCell = self.tblFetechBill.cellForRow(at: index) as! FetechingTextfieldCell
+        let customerParam = cell.cust_params_data
         
-        let fetechRequirement = fetechBillViewModel.fetechBillModel?.response_data?.fetchRequirement ?? ""
-        let supportedValidation = fetechBillViewModel.fetechBillModel?.response_data?.supportBillValidation ?? ""
-        bolIsFetech = false
-        
-        for i in 0..<(fetechBillViewModel.fetechBillModel?.cust_params_data?.count ?? 0) {
-            let index = IndexPath(row: i, section: 0)
-            let cell: FetechingTextfieldCell = self.tblFetechBill.cellForRow(at: index) as! FetechingTextfieldCell
-            print(cell.txtName.text!)
-            arrTag[i].value = cell.txtName.text ?? ""
+        if let text = textField.text, let maxLength = customerParam?.maxLength, text.count > maxLength {
+            // Handle case when input length exceeds the maxLength
+            textField.text = String(text.prefix(maxLength))  // Trim input if it exceeds max length
         }
-        
-        if fetechRequirement == "MANDATORY" || fetechRequirement == "OPTIONAL"{
-            print("Fetech-Pay")
-            strInputType = "F"
-            createJsonString()
-            configuration()
-        }else if supportedValidation == "MANDATORY" || supportedValidation == "OPTIONAL"{
-            print("validate-Pay")
-            strInputType = "V"
-            createJsonString()
-            configuration()
-        }else if supportedValidation == "NOT_SUPPORTED" && fetechRequirement == "NOT_SUPPORTED"{
-            print("quick-Pay")
-            bolIsFetech = true
-            createJsonStringPayment()
-            configuration()
-        }
-        
     }
-    
+
+
+
+//    @objc func buttonClickMethod(_ sender: UIButton) {
+//        // Uncomment and modify the next lines according to your requirements
+//        let fetechRequirement = fetechBillViewModel.fetechBillModel?.response_data?.fetchRequirement ?? ""
+//        let supportedValidation = fetechBillViewModel.fetechBillModel?.response_data?.supportBillValidation ?? ""
+//        bolIsFetech = false
+//
+//        // Iterate through each text field in the customer params and collect input values
+//        for i in 0..<(fetechBillViewModel.fetechBillModel?.cust_params_data?.count ?? 0) {
+//            let index = IndexPath(row: i, section: 0)
+//            if let cell = self.tblFetechBill.cellForRow(at: index) as? FetechingTextfieldCell {
+//                print(cell.txtName.text ?? "")
+//                // Handle the input text from each cell here
+//                // Instead of using `arrTag[i].value`, you can directly use the text value
+//            }
+//        }
+//
+//        // Conditional logic based on fetchRequirement and supportedValidation
+//        if fetechRequirement == "MANDATORY" || fetechRequirement == "OPTIONAL" {
+//            print("Fetech-Pay")
+//            strInputType = "F"
+//            createJsonString()
+//            configuration()
+//        } else if supportedValidation == "MANDATORY" || supportedValidation == "OPTIONAL" {
+//            print("validate-Pay")
+//            strInputType = "V"
+//            createJsonString()
+//            configuration()
+//        } else if supportedValidation == "NOT_SUPPORTED" && fetechRequirement == "NOT_SUPPORTED" {
+//            print("quick-Pay")
+//            bolIsFetech = true
+//            createJsonStringPayment()
+//            configuration()
+//        }
+//    }
+
+
     func createJsonStringPayment() {
-        let amount = Int(fetechBillViewModel.fetechBillValidationModel?.fetch_data?.billerResponse?.amount ?? "0") ?? 0
-        let customerParams = CustomerParamsValue(tags:arrTag)
-        let paymentRequest = PaymentRequestPayment(skey: skey, ref_id:fetechBillViewModel.fetechBillValidationModel?.fetch_data?.refId ?? "", bill_id: fetechBillViewModel.fetechBillValidationModel?.fetch_data?.billId ?? "", payment_mode: "UPI", biller_id: fetechBillViewModel.fetechBillModel?.response_data?.billerId ?? "", customer_params_request: customerParams, txn_amount:amount, biller_name: fetechBillViewModel.fetechBillModel?.response_data?.billerName ?? "", biller_category: fetechBillViewModel.fetechBillModel?.response_data?.billerCategoryName ?? "", macAdress: Common.shared.getDeviceID(), customer_mob_number: Common.shared.phoneNo ?? "", payment_channel: "Agent", device_block_tags: [DeviceLock(name: "MOBILE", value: Common.shared.phoneNo ?? ""),DeviceLock(name: "GEOCODE", value: Common.shared.getDeviceID()),DeviceLock(name: "POSTAL_CODE", value: Common.shared.getPostalCode(doubleLatitude ?? 0.00, doubleLongitude ?? 0.00)),DeviceLock(name: "TERMINAL_ID", value: "333001")])
-        do {
-            let encoder = JSONEncoder()
-            encoder.outputFormatting = .prettyPrinted // Optional: for pretty printed JSON data
-            
-            let jsonData = try encoder.encode(paymentRequest)
-            // Use jsonData as needed (e.g., send it in a network request)
-            
-            if let jsonString = String(data: jsonData, encoding: .utf8) {
-                print("Encoded JSON String:")
-                print(jsonString)
-                jsonStringPayment = jsonString
-            }
-        } catch {
-            print("Error encoding JSON: \(error)")
-        }
+//        let amount = Int(fetechBillViewModel.fetechBillValidationModel?.fetch_data?.billerResponse?.amount ?? "0") ?? 0
+//        let customerParams = CustomerParamsValue(tags:arrTag)
+//        let paymentRequest = PaymentRequestPayment(skey: skey, ref_id:fetechBillViewModel.fetechBillValidationModel?.fetch_data?.refId ?? "", bill_id: fetechBillViewModel.fetechBillValidationModel?.fetch_data?.billId ?? "", payment_mode: "UPI", biller_id: fetechBillViewModel.fetechBillModel?.response_data?.billerId ?? "", customer_params_request: customerParams, txn_amount:amount, biller_name: fetechBillViewModel.fetechBillModel?.response_data?.billerName ?? "", biller_category: fetechBillViewModel.fetechBillModel?.response_data?.billerCategoryName ?? "", macAdress: Common.shared.getDeviceID(), customer_mob_number: Common.shared.phoneNo ?? "", payment_channel: "Agent", device_block_tags: [DeviceLock(name: "MOBILE", value: Common.shared.phoneNo ?? ""),DeviceLock(name: "GEOCODE", value: Common.shared.getDeviceID()),DeviceLock(name: "POSTAL_CODE", value: Common.shared.getPostalCode(doubleLatitude ?? 0.00, doubleLongitude ?? 0.00)),DeviceLock(name: "TERMINAL_ID", value: "333001")])
+//        do {
+//            let encoder = JSONEncoder()
+//            encoder.outputFormatting = .prettyPrinted // Optional: for pretty printed JSON data
+//            
+//            let jsonData = try encoder.encode(paymentRequest)
+//            // Use jsonData as needed (e.g., send it in a network request)
+//            
+//            if let jsonString = String(data: jsonData, encoding: .utf8) {
+//                print("Encoded JSON String:")
+//                print(jsonString)
+//                jsonStringPayment = jsonString
+//            }
+//        } catch {
+//            print("Error encoding JSON: \(error)")
+//        }
     }
     
     func createJsonString() {
         
         let customerParams = CustomerParamsValue(tags:arrTag)
         
-        let paymentRequest = PaymentRequest(input_type: strInputType ?? "", skey: skey, biller_id: fetechBillViewModel.fetechBillModel?.response_data?.billerId ?? "", customer_params_request: customerParams, biller_name: fetechBillViewModel.fetechBillModel?.response_data?.billerName ?? "", biller_category:fetechBillViewModel.fetechBillModel?.response_data?.billerCategoryName ?? "", macAdress: Common.shared.getDeviceID(), customer_mob_number: Common.shared.phoneNo ?? "", payment_channel: "Agent", device_block_tags: [DeviceLock(name: "MOBILE", value: Common.shared.phoneNo ?? ""),DeviceLock(name: "GEOCODE", value: Common.shared.getDeviceID()),DeviceLock(name: "POSTAL_CODE", value: Common.shared.getPostalCode(doubleLatitude ?? 0.00, doubleLongitude ?? 0.00)),DeviceLock(name: "TERMINAL_ID", value: "333001")])
-        
-        do {
-            let encoder = JSONEncoder()
-            encoder.outputFormatting = .prettyPrinted // Optional: for pretty printed JSON data
-            
-            let jsonData = try encoder.encode(paymentRequest)
-            // Use jsonData as needed (e.g., send it in a network request)
-            
-            if let jsonString = String(data: jsonData, encoding: .utf8) {
-                print("Encoded JSON String:")
-                print(jsonString)
-                jsonstring = jsonString
-            }
-        } catch {
-            print("Error encoding JSON: \(error)")
-        }
+//        let paymentRequest = PaymentRequest(input_type: strInputType ?? "", skey: skey, biller_id: fetechBillViewModel.fetechBillModel?.response_data?.billerId ?? "", customer_params_request: customerParams, biller_name: fetechBillViewModel.fetechBillModel?.response_data?.billerName ?? "", biller_category:fetechBillViewModel.fetechBillModel?.response_data?.billerCategoryName ?? "", macAdress: Common.shared.getDeviceID(), customer_mob_number: Common.shared.phoneNo ?? "", payment_channel: "Agent", device_block_tags: [DeviceLock(name: "MOBILE", value: Common.shared.phoneNo ?? ""),DeviceLock(name: "GEOCODE", value: Common.shared.getDeviceID()),DeviceLock(name: "POSTAL_CODE", value: Common.shared.getPostalCode(doubleLatitude ?? 0.00, doubleLongitude ?? 0.00)),DeviceLock(name: "TERMINAL_ID", value: "333001")])
+//        
+//        do {
+//            let encoder = JSONEncoder()
+//            encoder.outputFormatting = .prettyPrinted // Optional: for pretty printed JSON data
+//            
+//            let jsonData = try encoder.encode(paymentRequest)
+//            // Use jsonData as needed (e.g., send it in a network request)
+//            
+//            if let jsonString = String(data: jsonData, encoding: .utf8) {
+//                print("Encoded JSON String:")
+//                print(jsonString)
+//                jsonstring = jsonString
+//            }
+//        } catch {
+//            print("Error encoding JSON: \(error)")
+//        }
     }
 }
 
@@ -321,7 +364,7 @@ extension FetchingBillVC {
     func configuration() {
         // ProgressHUD.showSucceed()
         initViewModel()
-        observeEvent()
+       // observeEvent()
     }
     //MARK Network checking
     func initViewModel() {
@@ -329,11 +372,11 @@ extension FetchingBillVC {
         let isConnected = ReachabilityClass.isConnectedToNetwork()
         
         if isConnected == true && bolIsFetech == true{
-            fetechBillViewModel.fetechBillCall(strBillerID)
+            //fetechBillViewModel.fetechBillCall(strBillerID)
         } else if isConnected == true && bolIsFetech == false{
-            fetechBillViewModel.fetechBillValidationCall(jsonstring ?? "")
+           // fetechBillViewModel.fetechBillValidationCall(jsonstring ?? "")
         }else if bolIsFetech  == true{
-            fetechBillViewModel.fetechBillValidationPaymentCall(jsonStringPayment ?? "")
+           // fetechBillViewModel.fetechBillValidationPaymentCall(jsonStringPayment ?? "")
         }
         else{
             //  ProgressHUD.remove()
@@ -342,49 +385,49 @@ extension FetchingBillVC {
         }
     }
     //MARK: Observing the data
-    func observeEvent() {
-       // let loader =   self.loader()
-        
-        fetechBillViewModel.eventHandler = { [weak self] event in
-            guard self != nil else { return }
-            
-            switch event {
-            case .loading:
-                
-                print("loading....")
-             //   self?.stopLoader(loader: loader)
-            case .stopLoading:
-                
-                print("Stop loading...")
-              //  self?.stopLoader(loader: loader)
-            case .dataLoaded:
-                print("Data loaded...")
-               // self?.stopLoader(loader: loader)
-                if self?.fetechBillViewModel.fetechBillModel?.status == "success" && self?.bolIsFetech == true{
-                    let count = self?.fetechBillViewModel.fetechBillModel?.cust_params_data?.count ?? 0
-                    for i in 0..<count {
-                        self?.arrTag.append(CustomerParamsValue.Tag(name: self?.fetechBillViewModel.fetechBillModel?.cust_params_data?[i].customParamName ?? "", value: ""))
-                    }
-                        self?.tblFetechBill.reloadData()
-                    }
-                else if self?.fetechBillViewModel.fetechBillValidationModel?.status == "success" && self?.bolIsFetech == true{
-                    self?.showErrorAlert("Success")
-                }
-                else{
-                    if self?.bolIsFetech ?? false{
-                        self?.showErrorAlert("Success")
-                    }else{
-                        self?.showErrorAlert("Please try after some time")
-                    }
-                        
-                    }
-                   // self?.stopLoader(loader: loader)
-            case .error(let error):
-                print(error!)
-               // self?.stopLoader(loader: loader)
-            }
-        }
-    }
+//    func observeEvent() {
+//       // let loader =   self.loader()
+//        
+//        fetechBillViewModel.eventHandler = { [weak self] event in
+//            guard self != nil else { return }
+//            
+//            switch event {
+//            case .loading:
+//                
+//                print("loading....")
+//             //   self?.stopLoader(loader: loader)
+//            case .stopLoading:
+//                
+//                print("Stop loading...")
+//              //  self?.stopLoader(loader: loader)
+//            case .dataLoaded:
+//                print("Data loaded...")
+//               // self?.stopLoader(loader: loader)
+//                if self?.fetechBillViewModel.fetechBillModel?.status == "success" && self?.bolIsFetech == true{
+//                    let count = self?.fetechBillViewModel.fetechBillModel?.cust_params_data?.count ?? 0
+//                    for i in 0..<count {
+//                        self?.arrTag.append(CustomerParamsValue.Tag(name: self?.fetechBillViewModel.fetechBillModel?.cust_params_data?[i].customParamName ?? "", value: ""))
+//                    }
+//                        self?.tblFetechBill.reloadData()
+//                    }
+//                else if self?.fetechBillViewModel.fetechBillValidationModel?.status == "success" && self?.bolIsFetech == true{
+//                    self?.showErrorAlert("Success")
+//                }
+//                else{
+//                    if self?.bolIsFetech ?? false{
+//                        self?.showErrorAlert("Success")
+//                    }else{
+//                        self?.showErrorAlert("Please try after some time")
+//                    }
+//                        
+//                    }
+//                   // self?.stopLoader(loader: loader)
+//            case .error(let error):
+//                print(error!)
+//               // self?.stopLoader(loader: loader)
+//            }
+//        }
+//    }
 }
 
 extension FetchingBillVC: CLLocationManagerDelegate {

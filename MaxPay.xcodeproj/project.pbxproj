@@ -10,7 +10,6 @@
 		4404B24F2C01C0ED00AEB709 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4404B24E2C01C0ED00AEB709 /* ProfileViewController.swift */; };
 		440686112C04606900139D7F /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440686102C04606900139D7F /* EditProfileVC.swift */; };
 		440686132C046F7D00139D7F /* ManageAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440686122C046F7D00139D7F /* ManageAccountVC.swift */; };
-		440DA5B02B60D9BA00825DD7 /* BBPS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440DA5AF2B60D9BA00825DD7 /* BBPS.storyboard */; };
 		440DA5B22B60DA7E00825DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440DA5B12B60DA7E00825DD7 /* Main.storyboard */; };
 		440DA5B42B60DAC200825DD7 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440DA5B32B60DAC200825DD7 /* Dashboard.storyboard */; };
 		440F352B2B50181300D69070 /* Harmattan-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 440F35272B50181200D69070 /* Harmattan-Medium.ttf */; };
@@ -445,6 +444,8 @@
 		A1285E912AF8F9FE00F034B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1285E902AF8F9FE00F034B7 /* Assets.xcassets */; };
 		A1285E942AF8FC7300F034B7 /* OTPVerifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1285E932AF8FC7300F034B7 /* OTPVerifyVC.swift */; };
 		A1285E962AF9070C00F034B7 /* SetPINVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1285E952AF9070C00F034B7 /* SetPINVC.swift */; };
+		A1345E562D7EC2D700B29F24 /* ResponseDataPayU.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1345E552D7EC2D700B29F24 /* ResponseDataPayU.swift */; };
+		A1345E582D7EDD9400B29F24 /* BillerPayuJsonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1345E572D7EDD9400B29F24 /* BillerPayuJsonResponse.swift */; };
 		A15BFEC12B2A086D00AC7208 /* TasactionPieChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BFEBF2B2A086D00AC7208 /* TasactionPieChartVC.swift */; };
 		A15BFEC22B2A086D00AC7208 /* TasactionPieChartVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15BFEC02B2A086D00AC7208 /* TasactionPieChartVC.xib */; };
 		A15BFEC62B2A1C9900AC7208 /* TrasactionPercentageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BFEC42B2A1C9900AC7208 /* TrasactionPercentageCell.swift */; };
@@ -568,6 +569,7 @@
 		A1E0F1B02B208C37004BF7A2 /* BusSearchCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E0F1AF2B208C37004BF7A2 /* BusSearchCityViewModel.swift */; };
 		A1E0F1B32B209076004BF7A2 /* CustomSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E0F1B22B209076004BF7A2 /* CustomSearch.swift */; };
 		A1E0F1B52B20909E004BF7A2 /* CustomSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E0F1B42B20909E004BF7A2 /* CustomSearch.xib */; };
+		A1E1BE192D8053D8004C6295 /* BBPS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E1BE182D8053D8004C6295 /* BBPS.storyboard */; };
 		A1E38FE92AFB45E30012C9D3 /* LoginMPIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E38FE82AFB45E30012C9D3 /* LoginMPIN.swift */; };
 		A1E38FEC2AFB53860012C9D3 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E38FEB2AFB53860012C9D3 /* Common.swift */; };
 		A1E38FF12AFB836A0012C9D3 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E38FEE2AFB836A0012C9D3 /* ApiManager.swift */; };
@@ -659,7 +661,6 @@
 		4404B24E2C01C0ED00AEB709 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		440686102C04606900139D7F /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 		440686122C046F7D00139D7F /* ManageAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAccountVC.swift; sourceTree = "<group>"; };
-		440DA5AF2B60D9BA00825DD7 /* BBPS.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BBPS.storyboard; sourceTree = "<group>"; };
 		440DA5B12B60DA7E00825DD7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		440DA5B32B60DAC200825DD7 /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		440F351B2B50134000D69070 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -1109,6 +1110,8 @@
 		A1285E902AF8F9FE00F034B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1285E932AF8FC7300F034B7 /* OTPVerifyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerifyVC.swift; sourceTree = "<group>"; };
 		A1285E952AF9070C00F034B7 /* SetPINVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPINVC.swift; sourceTree = "<group>"; };
+		A1345E552D7EC2D700B29F24 /* ResponseDataPayU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDataPayU.swift; sourceTree = "<group>"; };
+		A1345E572D7EDD9400B29F24 /* BillerPayuJsonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillerPayuJsonResponse.swift; sourceTree = "<group>"; };
 		A15BFEBF2B2A086D00AC7208 /* TasactionPieChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasactionPieChartVC.swift; sourceTree = "<group>"; };
 		A15BFEC02B2A086D00AC7208 /* TasactionPieChartVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TasactionPieChartVC.xib; sourceTree = "<group>"; };
 		A15BFEC42B2A1C9900AC7208 /* TrasactionPercentageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrasactionPercentageCell.swift; sourceTree = "<group>"; };
@@ -1232,6 +1235,7 @@
 		A1E0F1AF2B208C37004BF7A2 /* BusSearchCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusSearchCityViewModel.swift; sourceTree = "<group>"; };
 		A1E0F1B22B209076004BF7A2 /* CustomSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearch.swift; sourceTree = "<group>"; };
 		A1E0F1B42B20909E004BF7A2 /* CustomSearch.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomSearch.xib; sourceTree = "<group>"; };
+		A1E1BE182D8053D8004C6295 /* BBPS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BBPS.storyboard; sourceTree = "<group>"; };
 		A1E38FE82AFB45E30012C9D3 /* LoginMPIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMPIN.swift; sourceTree = "<group>"; };
 		A1E38FEB2AFB53860012C9D3 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		A1E38FEE2AFB836A0012C9D3 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
@@ -3754,10 +3758,10 @@
 		A1E9945F2AFCA7CE003CCBC1 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				A1E1BE182D8053D8004C6295 /* BBPS.storyboard */,
 				440DA5B32B60DAC200825DD7 /* Dashboard.storyboard */,
 				440DA5B12B60DA7E00825DD7 /* Main.storyboard */,
 				A185177D2B08807300771A8E /* USP.storyboard */,
-				440DA5AF2B60D9BA00825DD7 /* BBPS.storyboard */,
 				44F058542B6B69F100596C6D /* Complaint.storyboard */,
 				44D7FD002B81042B001FFEB8 /* BhimUpi.storyboard */,
 			);
@@ -3801,6 +3805,8 @@
 		A1ECA03B2B0B229700B89E2B /* BBPSModel */ = {
 			isa = PBXGroup;
 			children = (
+				A1345E572D7EDD9400B29F24 /* BillerPayuJsonResponse.swift */,
+				A1345E552D7EC2D700B29F24 /* ResponseDataPayU.swift */,
 				44CE817A2B679C910036D7AC /* Beneficiary */,
 				A1E935472B0F565400D5D5B1 /* FetechValaidationPayment */,
 				A1E935382B0F2F3E00D5D5B1 /* fetechBillValidationModel */,
@@ -4134,7 +4140,6 @@
 				A184AEB72B2AA7850093E100 /* cards.ttf in Resources */,
 				8413E2452CC8C56B0013038D /* deduction_alert_hindi.mp3 in Resources */,
 				44F73DB42B7C7D09003B67FE /* PriceBreakup.xib in Resources */,
-				440DA5B02B60D9BA00825DD7 /* BBPS.storyboard in Resources */,
 				A1285E912AF8F9FE00F034B7 /* Assets.xcassets in Resources */,
 				4465AC572B564C3800AE824D /* Slide.xib in Resources */,
 				445D47CC2B738E3100EE4A2A /* CancellationPolicyTitleCell.xib in Resources */,
@@ -4163,6 +4168,7 @@
 				84CCC07B2D49F868004E462B /* GraffTableViewCell.xib in Resources */,
 				A1EFDEBA2B2877FE004BF668 /* TravellerNameCell.xib in Resources */,
 				A124B54D2B296A230021713C /* card.otf in Resources */,
+				A1E1BE192D8053D8004C6295 /* BBPS.storyboard in Resources */,
 				A1865E932B1EFEBC0095E7CA /* SearchBusCell.xib in Resources */,
 				84CCC06F2D49EDFA004E462B /* BillsTableViewCell.xib in Resources */,
 				A1C488BE2B10752700FC8E3C /* SearchFlightOneWayCell.xib in Resources */,
@@ -4460,6 +4466,7 @@
 				A1ECA0402B0B22D900B89E2B /* PayBillListModel.swift in Sources */,
 				847BF4342C3A564E0041EB52 /* PassengersModel.swift in Sources */,
 				84A3C0612C172E6F0044DC7B /* HotelRoomTypes_ViewModel.swift in Sources */,
+				A1345E582D7EDD9400B29F24 /* BillerPayuJsonResponse.swift in Sources */,
 				847BF4372C3A596C0041EB52 /* PassengersTVC.swift in Sources */,
 				84F1E8A92C29779D00F8EB10 /* UPIFeature.swift in Sources */,
 				847B4A742C7CBA1B00EDC32A /* CreateQRMandateVC.swift in Sources */,
@@ -4530,6 +4537,7 @@
 				841979102C19C0FB000FE311 /* PhotoGalleryVC.swift in Sources */,
 				A1E38FE92AFB45E30012C9D3 /* LoginMPIN.swift in Sources */,
 				44DE85492BFBD34E0054682D /* RechargeBillPaymentMethodVC.swift in Sources */,
+				A1345E562D7EC2D700B29F24 /* ResponseDataPayU.swift in Sources */,
 				443D41B82BFB42E20080A671 /* SelectOperatorVC.swift in Sources */,
 				A1865EA12B1F4BD30095E7CA /* BusListCell.swift in Sources */,
 				84CB80CF2C145999003620DA /* ClaimItemByLatestAPIManager.swift in Sources */,

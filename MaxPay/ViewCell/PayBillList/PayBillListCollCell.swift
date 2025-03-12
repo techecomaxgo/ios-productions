@@ -12,4 +12,6 @@ class PayBillListCollCell: UICollectionViewCell {
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var img: UIImageView!
     
+   
+    
 }

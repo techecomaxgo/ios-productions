@@ -1,9 +1,4 @@
-//
-//  TravelVC.swift
-//  MaxPay
-//
-//  Created by india on 18/11/23.
-//
+
 
 import UIKit
 import SwiftLoader
@@ -27,6 +22,10 @@ class TravelVC: BaseVC, DatePickerDelegate, popRoomsSelectedDelegate {
     
 
     @IBOutlet weak var travelTableView: UITableView!
+   
+    @IBOutlet weak var travelFlightView: UITableView!
+   
+    @IBOutlet weak var travelUiView: UIView!
     
     
     var clickCheckedTag = 0
@@ -133,7 +132,7 @@ class TravelVC: BaseVC, DatePickerDelegate, popRoomsSelectedDelegate {
     @IBOutlet weak var pageHotelControl: UIPageControl!
     
     var inOutDateStr = ""
-    
+    var receivedTag: Int?
     
     override func viewDidLoad() {
         
@@ -141,7 +140,9 @@ class TravelVC: BaseVC, DatePickerDelegate, popRoomsSelectedDelegate {
         
         
         selectedTab = 0
-        
+        if let tag = receivedTag {
+            selectedTab = tag
+                }
         // Usage
         
         let currentWeekDates = getCurrentWeekDates()
@@ -152,9 +153,20 @@ class TravelVC: BaseVC, DatePickerDelegate, popRoomsSelectedDelegate {
              print(dateFormatter.string(from: date))
          }
         
-        setDefautTabs(button: btnBus, lineView: vwBusSeat, imgView: imgLineBus)
-        setDefautTabs(button: btnFlight, lineView: vwFlight, imgView: imgLineFlight)
-        setDefautTabs(button: btnHotel, lineView: vwHotel, imgView: imgLineHotel,isSelected: true)
+       
+        if receivedTag == 1{
+            setDefautTabs(button: btnBus, lineView: vwBusSeat, imgView: imgLineBus)
+            setDefautTabs(button: btnFlight, lineView: vwFlight, imgView: imgLineFlight,isSelected: true)
+            setDefautTabs(button: btnHotel, lineView: vwHotel, imgView: imgLineHotel)
+        }else if receivedTag == 2{
+            setDefautTabs(button: btnBus, lineView: vwBusSeat, imgView: imgLineBus)
+            setDefautTabs(button: btnFlight, lineView: vwFlight, imgView: imgLineFlight)
+            setDefautTabs(button: btnHotel, lineView: vwHotel, imgView: imgLineHotel,isSelected: true)
+        }else {
+            setDefautTabs(button: btnBus, lineView: vwBusSeat, imgView: imgLineBus,isSelected: true)
+            setDefautTabs(button: btnFlight, lineView: vwFlight, imgView: imgLineFlight)
+            setDefautTabs(button: btnHotel, lineView: vwHotel, imgView: imgLineHotel)
+        }
         
         
         btnSearchBus.addTarget(self, action: #selector(didTapBusSearchButton(sender:)), for: .touchUpInside)
@@ -199,6 +211,23 @@ class TravelVC: BaseVC, DatePickerDelegate, popRoomsSelectedDelegate {
 
         didTapClickHTomorrowDate(sender: btnCheckout)
         
+      
+        
+        let storyboard = UIStoryboard(name: "USP", bundle: nil)
+                if let secondVC = storyboard.instantiateViewController(withIdentifier: "FlightBookViewController") as? FlightBookViewController {
+                    
+                    // Add the FlightBookViewController as a child view controller
+                    self.addChild(secondVC)
+                    
+                    // Set the frame of `secondVC.view` to match the bounds of `travelUiView`
+                    secondVC.view.frame = travelUiView.bounds
+                    
+                    // Add `secondVC.view` as a subview of `travelUiView`
+                    travelUiView.addSubview(secondVC.view)
+                    
+                    // Notify the `FlightBookViewController` that it's now a child view controller
+                    secondVC.didMove(toParent: self)
+                }
         
     
     }
@@ -394,19 +423,21 @@ class TravelVC: BaseVC, DatePickerDelegate, popRoomsSelectedDelegate {
             
             selectedTab = 0
             travelTableView.isHidden = false
+            travelFlightView.isHidden = true
             
             hotelTableView.isHidden =  true
             
         }else if selectedTab == 1{
             
             selectedTab = 1
+            travelFlightView.isHidden = false
             travelTableView.isHidden = true
             hotelTableView.isHidden =  true
             
         }else if selectedTab == 2{
             
             selectedTab = 2
-            
+            travelFlightView.isHidden = true
             travelTableView.isHidden = true
             hotelTableView.isHidden =  false
             
@@ -427,7 +458,7 @@ class TravelVC: BaseVC, DatePickerDelegate, popRoomsSelectedDelegate {
     @IBAction func btnFlightAction(_ sender: Any) {
         
         let storyboard = UIStoryboard(name: "USP", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "SearchFlightVC") as! SearchFlightVC
+        let vc = storyboard.instantiateViewController(withIdentifier: "FlightBookViewController") as! FlightBookViewController
         self.navigationController?.pushViewController(vc,animated: true)
     }
     @IBAction func btnHotelAction(_ sender: Any) {
@@ -537,15 +568,7 @@ extension TravelVC: CustomSearchDelegate { // Bus
             
         }
         
-        
-        
-      
-        
-//        strPrevJourneyDate = Common.shared.dateformatForPreviouslySearched(selectedDate)
-     
-
-        
-        
+       
         
     }
     
@@ -589,16 +612,7 @@ extension TravelVC: CustomSearchDelegate { // Bus
             
             
         }
-        
-        
-        
-      
-        
-//        strPrevJourneyDate = Common.shared.dateformatForPreviouslySearched(selectedDate)
-     
-
-        
-        
+   
         
     }
     

@@ -108,8 +108,10 @@ struct ConstantApi{
         static let getBalanceDetails = "wallet/v2/get-card-details"
         static let getSecondaryWalletBalance = "wallet/swallet/get-wallet-details"
         static let payBillList = "biller/master-data"
-        static let catagoryList = "biller/billers-by-category"
-        static let fetechBill = "biller/billers-by-id"
+      //  static let catagoryList = "biller/billers-by-category"
+        static let catagoryList = "api/v2/bill/billers-category-by-name"
+      //  static let fetechBill = "biller/billers-by-id"
+        static let fetechBill = "api/v2/bill/fetch-or-validate-bill"
         static let fetechBiillValF = "biller/fetch-val-bill"
         static let billPayment = "biller/payment"
         static let city = "travel/bus/get-city-list"
@@ -136,8 +138,8 @@ struct ConstantApi{
         static let PayUFirstForRechargeApi = "api/v2/payu/upi/payment"
         static let PayUSecondForRechargeApi = "api/recharge/v2/recharge"
         static let UpiUserTxnStatus = "upi/2.0/user-txn-status"
-        static let deductWalletApi = "wallet/swallet/deduct-swallet-balance"
-        static let rechargeModelApi = "recharge/recharge"
+       // static let deductWalletApi = "wallet/swallet/deduct-swallet-balance"
+       // static let rechargeModelApi = "recharge/recharge"
         static let rankAllApi = "rank/2.0/all-ranker"
         
         static let chainReferApi = "refer/2.0/total-refer"
@@ -163,10 +165,13 @@ struct ConstantApi{
         static let getwalletdetailsApi = "get-wallet-details"
         static let primWalletModellApi = "wallet/get-wallet-balance"
         
-        static let origionCityApi = "travel/flight/get-airport-list"
+        static let origionCityApi = "api/v1/travel/flight/get-airport-list"
         
         static let searchFlightOneApi = "travel/flight/search-flight"
+     
         static let searchFlightRoundApi = "travel/flight/search-flight"
+        
+        static let deductWalletApi = "api/wallet/2.0/pwallet/deduct-wallet-balance"
         
         
     }
@@ -177,10 +182,20 @@ struct ConstantApi{
         "x-my-ipu-app-os": "ios",
         // "user_agent" : Utils.getCustomUserAgent(),
     ]
+    static  let headersNew: HTTPHeaders = [
+        "authorization": "Bearer \(Common.shared.token ?? "")",
+        "x-my-ipu-name": Utils.getBuildNumber() ,
+        "x-my-ipu-code": Utils.getBuildVersion() ,
+        "x-my-ipu-app-os": "ios",
+        KSKEY: KSkeyValue
+    ]
     
     static  let headersWithSkey: HTTPHeaders = [
         "authorization": "Bearer \(Common.shared.token ?? "")",
         KSKEY: KSkeyValue
+    ]
+    static  let headersWithoutSkey: HTTPHeaders = [
+        "authorization": "Bearer \(Common.shared.token ?? "")"
     ]
     
     static  let appVersionHeaders: HTTPHeaders = [
@@ -629,7 +644,7 @@ class ApiManager: NSObject {
         print("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.PayUFirstForRechargeApi)")
         print(dict)
         
-        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.PayUFirstForRechargeApi)", method: .post, parameters: dict as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headers).responseJSON {  response in
+        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.PayUFirstForRechargeApi)", method: .post, parameters: dict as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headersNew).responseJSON {  response in
             if response.result.isSuccess{
                 print(response)
                 guard let dictResponse = response.data, dictResponse.count > 0 else {
@@ -801,7 +816,7 @@ class ApiManager: NSObject {
     
     func PaymentWalletDeductModelApi(dict:NSDictionary,completion: @escaping (PaymentWalletDeduct_Model?, Error?) -> ()) {
         
-        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.deductWalletApi)", method: .post, parameters: dict as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headers).responseJSON {  response in
+        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.deductWalletApi)", method: .post, parameters: dict as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headersWithoutSkey).responseJSON {  response in
             if response.result.isSuccess{
                 guard let dictResponse = response.data, dictResponse.count > 0 else {
                     return
@@ -824,22 +839,83 @@ class ApiManager: NSObject {
     
     func RechargeModelApi(dict:NSDictionary,completion: @escaping (RechargeModel_Base?, Error?) -> ()) {
         
-        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.rechargeModelApi)", method: .post, parameters: dict as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headers).responseJSON {  response in
-            if response.result.isSuccess{
-                guard let dictResponse = response.data, dictResponse.count > 0 else {
-                    return
-                }
-                if let data = response.data, data.count > 0{
-                    //  print(data)
-                    do{
-                        let model = try JSONDecoder().decode(RechargeModel_Base.self, from: data)
-                        // print(model)
-                        completion(model,nil)
-                        
-                    }catch{}
-                    
-                }
-            }
+        let encryptedData = EncryptionService.shared.finalParam(dict)
+        
+        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.PayUSecondForRechargeApi)", method: .post, parameters: encryptedData as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headers).responseJSON {  response in
+           if response.result.isSuccess{
+               guard let responseData = response.data, responseData.count > 0 else {
+                   completion(nil, NSError(domain: "APIError", code: 1002, userInfo: [NSLocalizedDescriptionKey: "No data received"]))
+                   return
+               }
+               do {
+                   let dict = try JSONSerialization.jsonObject(with: responseData, options: []) as? [String: Any]
+                   // Process base64-encoded string
+                   if let base64Encoded = dict?["data"] as? String {
+                       // Base64 decoding
+                       guard let decodedData = Data(base64Encoded: base64Encoded),
+                             let decodedString = String(data: decodedData, encoding: .utf8) else {
+                           completion(nil, NSError(domain: "APIError", code: 1003, userInfo: [NSLocalizedDescriptionKey: "Base64 decoding failed"]))
+                           return
+                       }
+                       
+                       // Convert the decoded string to a dictionary
+                       if let decodedDict = EncryptionService.shared.convertToDictionary(text: decodedString) {
+                           do {
+                               // Decrypt the data
+                               let decryptedData = try EncryptionService.shared.decrypt(encrypted: decodedDict["encrypted"] as! String, iv: decodedDict["iv"] as! String, authTag: decodedDict["authTag"] as! String, jwtToken: Common.shared.token ?? "")
+                               
+                               if let stringData = decryptedData {
+                                   if let jsonData = stringData.data(using: .utf8) {
+                                       let jsonObject = try JSONSerialization.jsonObject(with: jsonData, options: [])
+                                       if let dictionary = jsonObject as? [String: Any] {
+                                           print("dictionary:",dictionary)
+                                           // Now we have a dictionary, proceed with serialization
+                                           let data = try JSONSerialization.data(withJSONObject: dictionary, options: [])
+                                           // Decode the data into a model
+                                           print("Data Results:",data)
+                                           let model = try JSONDecoder().decode(RechargeModel_Base.self, from: data)
+                                           completion(model, nil)
+                                       }
+                                   }
+                               }
+                           } catch {
+                               // Handle decryption or decoding errors
+                               print("Decryption or JSON decoding failed: \(error.localizedDescription)")
+                               completion(nil, error)
+                           }
+                       } else {
+                           print("Failed to convert decoded string to dictionary.")
+                           completion(nil, NSError(domain: "APIError", code: 1004, userInfo: [NSLocalizedDescriptionKey: "Invalid decoded string"]))
+                       }
+                   } else {
+                       print("Base64 string not found in response.")
+                       completion(nil, NSError(domain: "APIError", code: 1005, userInfo: [NSLocalizedDescriptionKey: "Base64 encoded data missing in response"]))
+                   }
+               } catch {
+                   print(error.localizedDescription)
+               }
+           }
+            //{
+//                guard let dictResponse = response.data, dictResponse.count > 0 else {
+//                    return
+//                }
+//                if let data = response.data, data.count > 0{
+//                    
+//                    
+//                    
+//                    
+//                    
+//                    
+//                    //  print(data)
+////                    do{
+////                        let model = try JSONDecoder().decode(RechargeModel_Base.self, from: data)
+////                        // print(model)
+////                        completion(model,nil)
+////                        
+////                    }catch{}
+//                    
+//                }
+//            }
         }
     }
     
@@ -1295,7 +1371,7 @@ class ApiManager: NSObject {
     
     func FlightOriginCityListApi(dict:NSDictionary,completion: @escaping (Origin_Base?, Error?) -> ()) {
         
-        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.origionCityApi)", method: .post, parameters: dict as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headers).responseJSON {  response in
+        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.origionCityApi)", method: .post, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headersNew).responseJSON {  response in
             if response.result.isSuccess{
                 guard let dictResponse = response.data, dictResponse.count > 0 else {
                     return
@@ -1640,17 +1716,22 @@ class ApiManager: NSObject {
             }
         }
     }
-    func catagoryListServiceApi(dict:NSDictionary,completion: @escaping (CatagoryListModel?, Error?) -> ()) {
-        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.catagoryList)", method: .post, parameters: dict as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: nil).responseJSON {  response in
+    func catagoryListServiceApi(dict:NSDictionary,completion: @escaping (ResponseDataPayU?, Error?) -> ()) {
+        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.catagoryList)", method: .post, parameters: dict as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headersWithoutSkey).responseJSON {  response in
             if response.result.isSuccess{
+              
+                print(response)
+                
+                
                 guard let dictResponse = response.data, dictResponse.count > 0 else {
                     return
+                   
                 }
                 if let data = response.data, data.count > 0{
-                    // print(data)
+                     print(data)
                     // print(ConstantApi.headers)
                     do{
-                        let model = try JSONDecoder().decode(CatagoryListModel.self, from: data)
+                        let model = try JSONDecoder().decode(ResponseDataPayU.self, from: data)
                         // print(model)
                         completion(model,nil)
                         
@@ -1724,24 +1805,81 @@ class ApiManager: NSObject {
         }
     }
     func cityServiceApi(dict:NSDictionary,completion: @escaping (CityModel?, Error?) -> ()) {
-        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.BaseURL.apiVersion)\(ConstantApi.SubURL.city)", method: .post, parameters: dict as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: nil).responseJSON {  response in
+        
+        let encryptedData = EncryptionService.shared.finalParam(dict)
+        
+        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.BaseURL.apiVersion)\(ConstantApi.SubURL.city)", method: .post, parameters: encryptedData as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headersWithoutSkey).responseJSON {   response in
             if response.result.isSuccess{
                 guard let dictResponse = response.data, dictResponse.count > 0 else {
                     return
                 }
-                if let data = response.data, data.count > 0{
+                do {
+                    let dict = try JSONSerialization.jsonObject(with: dictResponse, options: []) as? [String: Any]
+                    //oprint(dict)
+                    
+                    // Process base64-encoded string
+                    if let base64Encoded = dict?["data"] as? String {
+                        // Base64 decoding
+                        guard let decodedData = Data(base64Encoded: base64Encoded),
+                              let decodedString = String(data: decodedData, encoding: .utf8) else {
+                            completion(nil, NSError(domain: "APIError", code: 1003, userInfo: [NSLocalizedDescriptionKey: "Base64 decoding failed"]))
+                            return
+                        }
+                        
+                        // Convert the decoded string to a dictionary
+                        if let decodedDict = EncryptionService.shared.convertToDictionary(text: decodedString) {
+                            do {
+                                // Decrypt the data
+                                let decryptedData = try EncryptionService.shared.decrypt(encrypted: decodedDict["encrypted"] as! String, iv: decodedDict["iv"] as! String, authTag: decodedDict["authTag"] as! String, jwtToken: Common.shared.token ?? "")
+                                
+                                if let stringData = decryptedData {
+                                    if let jsonData = stringData.data(using: .utf8) {
+                                        let jsonObject = try JSONSerialization.jsonObject(with: jsonData, options: [])
+                                        if let dictionary = jsonObject as? [String: Any] {
+                                            // Now we have a dictionary, proceed with serialization
+                                            let data = try JSONSerialization.data(withJSONObject: dictionary, options: [])
+                                            // Decode the data into a model
+                                            let model = try JSONDecoder().decode(CityModel.self, from: data)
+                                            completion(model, nil)
+                                        }
+                                    }
+                                }
+                                
+                            } catch {
+                                // Handle decryption or decoding errors
+                                print("Decryption or JSON decoding failed: \(error.localizedDescription)")
+                                completion(nil, error)
+                            }
+                        } else {
+                            print("Failed to convert decoded string to dictionary.")
+                            completion(nil, NSError(domain: "APIError", code: 1004, userInfo: [NSLocalizedDescriptionKey: "Invalid decoded string"]))
+                        }
+                        //            } else {
+                        //                print("Base64 string not found in response.")
+                        //                completion(nil, NSError(domain: "APIError", code: 1005, userInfo: [NSLocalizedDescriptionKey: "Base64 encoded data missing in response"]))
+                        //            }
+                       
+                        
+                    }
+                } catch {
+                    print(error.localizedDescription)
+                }
+                
+            
+            
+        }
                     // print(data)
                     // print(ConstantApi.headers)
-                    do{
-                        // print("The value is : \(String(describing: response.result.value))")
-                        let model = try JSONDecoder().decode(CityModel.self, from: data)
-                        //print(model)
-                        completion(model,nil)
-                        
-                    }catch{}
+//                    do{
+//                        // print("The value is : \(String(describing: response.result.value))")
+//                        let model = try JSONDecoder().decode(CityModel.self, from: data)
+//                        //print(model)
+//                        completion(model,nil)
+//                        
+//                    }catch{}
                     
-                }
-            }
+              //  }
+            //}
         }
     }
     

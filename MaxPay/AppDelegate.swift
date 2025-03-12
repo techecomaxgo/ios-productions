@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SmartechDelegate {
     
     var primaryAccount: AccountDetailsOnIIN?
     private var cardsArr:[AccountDetailsOnIIN] = []
-    
+    //
     let referenceUITabBarController = HHTabBarView.shared.referenceUITabBarController
     let locationManager = CLLocationManager()
     

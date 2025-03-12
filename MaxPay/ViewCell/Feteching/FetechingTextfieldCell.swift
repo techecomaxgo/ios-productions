@@ -17,11 +17,11 @@ class FetechingTextfieldCell: UITableViewCell {
     @IBOutlet weak var txtName: UITextField!
     weak var delegate: CustomCellDelegate?
     var indexPath: IndexPath!
-    var cust_params_data: Cust_params_data?
+    var cust_params_data: ResponseDataPayU.Biller.CustomerParam?
     
-    func setCustParamsData(cust_params_data: Cust_params_data) {
+    func setCustParamsData(cust_params_data: ResponseDataPayU.Biller.CustomerParam) {
         
-        txtName.placeholder = self.cust_params_data?.customParamName ?? ""
+        txtName.placeholder = self.cust_params_data?.paramName ?? ""
         
     }
     

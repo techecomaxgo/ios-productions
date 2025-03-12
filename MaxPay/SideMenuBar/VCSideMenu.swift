@@ -12,7 +12,7 @@ class VCSideMenu: UIViewController, UITableViewDataSource, UITableViewDelegate
     @IBOutlet weak var imgProfilePic: UIImageView!
     @IBOutlet weak var lblUsername: UILabel!
     @IBOutlet weak var btnCloseMenuOverlay: UIButton!
-    
+    @IBOutlet weak var lblphoneno: UILabel!
     var arrayMenuOptions = [Dictionary<String,String>]()
     var btnMenu : UIButton!
     var delegate : SideMenuDelegate?
@@ -22,7 +22,8 @@ class VCSideMenu: UIViewController, UITableViewDataSource, UITableViewDelegate
         super.viewDidLoad()
         
         lblUsername.text = "\(Common.shared.userFirstName ?? "") \(Common.shared.userLastName ?? "")"
-      
+        lblphoneno.text = "\(Common.shared.phoneNo ?? "")"
+        imgProfilePic.sd_setImage(with: URL(string: "\(Common.shared.UserProfileImage ?? "")") , placeholderImage: UIImage(named: "placeholder.png"))
         tblVwMenuOptions.dataSource = self
         tblVwMenuOptions.delegate = self
         tblVwMenuOptions.backgroundColor = UIColor.white
@@ -43,8 +44,8 @@ class VCSideMenu: UIViewController, UITableViewDataSource, UITableViewDelegate
     {
         arrayMenuOptions.append(["title":"My Rank", "icon":"rankPic", "vc":"RankingViewController"])
         arrayMenuOptions.append(["title":"Your Chain", "icon":"chainPic", "vc":"ChainViewController"])
-        arrayMenuOptions.append(["title":"Your Milestone", "icon":"miles", "vc":"MilesViewController"])
-        arrayMenuOptions.append(["title":"Subscription", "icon":"tra_history", "vc":"MilesViewController"])
+        arrayMenuOptions.append(["title":"Your Milestone", "icon":"miles", "vc":"MilestonesViewController"])
+        arrayMenuOptions.append(["title":"Subscription", "icon":"tra_history", "vc":""])
         arrayMenuOptions.append(["title":"Monthly Contest", "icon":"reward", "vc":""])
        
         arrayMenuOptions.append(["title":"Profile", "icon":"profile_update", "vc":""])
@@ -52,6 +53,33 @@ class VCSideMenu: UIViewController, UITableViewDataSource, UITableViewDelegate
 
         tblVwMenuOptions.reloadData()
     }
+    
+    @IBAction func btnTermConditionAction(_ sender: Any) {
+        openURL(termsConditions_PrivacyPolicy)
+    }
+    
+    @IBAction func btnPrivacyPolicyAction(_ sender: Any) {
+        openURL(termsConditions_PrivacyPolicy)
+    }
+    
+    
+    func openURL(_ urlString: String) {
+        guard let url = URL(string: urlString) else {
+            print("Invalid URL")
+            return
+        }
+        
+        // Check if the URL can be opened
+        if UIApplication.shared.canOpenURL(url) {
+            // Open the URL
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            print("Cannot open URL")
+        }
+    
+    
+}
+    
     
     @IBAction func onCloseMenuClick(_ button:UIButton!)
     {
@@ -109,9 +137,9 @@ class VCSideMenu: UIViewController, UITableViewDataSource, UITableViewDelegate
     {
         if(UIDevice.current.userInterfaceIdiom == .pad)
         {
-            return 70;
+            return 85;
         }
-        return 60;
+        return 75;
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
