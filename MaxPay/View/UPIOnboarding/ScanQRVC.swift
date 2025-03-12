@@ -1211,7 +1211,7 @@ extension ScanQRVC: MFMessageComposeViewControllerDelegate {
                 
             case .dataLoaded:
                 print("Data loaded...")
-                if self?.checksumViewModel.checksumModel?.data?.result == "Success" {
+                if self?.checksumViewModel.checksumModel?.data?.result?.lowercased() == "success" {
                     Common.shared.merchantauthtoken = self?.checksumViewModel.checksumModel?.data?.data?.merchantauthtoken ?? ""
                     
                     self?.performMerchantHandshake()

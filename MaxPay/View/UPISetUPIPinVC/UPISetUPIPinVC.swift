@@ -334,7 +334,7 @@ extension UPISetUPIPinVC: MFMessageComposeViewControllerDelegate {
             case .dataLoaded:
                 print("Data loaded...")
 
-                if self?.checkSumviewModel.checksumModel?.status == "Success" {
+                if self?.checkSumviewModel.checksumModel?.status?.lowercased() == "success" {
                     Common.shared.merchantauthtoken = self?.checkSumviewModel.checksumModel?.data?.data?.merchantauthtoken ?? ""
                     
                     self?.performMerchantHandshake()
