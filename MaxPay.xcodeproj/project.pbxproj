@@ -564,12 +564,16 @@
 		A1C5A5242B04E6540037EA68 /* SendAndReceiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C5A5232B04E6540037EA68 /* SendAndReceiveVC.swift */; };
 		A1C5A5262B04E9D80037EA68 /* ReceivedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C5A5252B04E9D80037EA68 /* ReceivedCell.swift */; };
 		A1C5A5292B04F9C00037EA68 /* MandateSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C5A5282B04F9C00037EA68 /* MandateSuccessVC.swift */; };
+		A1D807A62D88188100AF7E62 /* FetechingBillCellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D807A52D88188100AF7E62 /* FetechingBillCellTable.swift */; };
 		A1E0F1AB2B2082B6004BF7A2 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E0F1A92B2082B6004BF7A2 /* CityModel.swift */; };
 		A1E0F1AC2B2082B6004BF7A2 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E0F1AA2B2082B6004BF7A2 /* Cities.swift */; };
 		A1E0F1B02B208C37004BF7A2 /* BusSearchCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E0F1AF2B208C37004BF7A2 /* BusSearchCityViewModel.swift */; };
 		A1E0F1B32B209076004BF7A2 /* CustomSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E0F1B22B209076004BF7A2 /* CustomSearch.swift */; };
 		A1E0F1B52B20909E004BF7A2 /* CustomSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E0F1B42B20909E004BF7A2 /* CustomSearch.xib */; };
 		A1E1BE192D8053D8004C6295 /* BBPS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E1BE182D8053D8004C6295 /* BBPS.storyboard */; };
+		A1E1BE222D816937004C6295 /* SubscriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E1BE202D816937004C6295 /* SubscriptionVC.swift */; };
+		A1E1BE272D816B2B004C6295 /* SubscriptionViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E1BE262D816B2B004C6295 /* SubscriptionViewViewModel.swift */; };
+		A1E1BE292D817046004C6295 /* SubscriptionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E1BE282D817046004C6295 /* SubscriptionResponse.swift */; };
 		A1E38FE92AFB45E30012C9D3 /* LoginMPIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E38FE82AFB45E30012C9D3 /* LoginMPIN.swift */; };
 		A1E38FEC2AFB53860012C9D3 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E38FEB2AFB53860012C9D3 /* Common.swift */; };
 		A1E38FF12AFB836A0012C9D3 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E38FEE2AFB836A0012C9D3 /* ApiManager.swift */; };
@@ -1230,12 +1234,16 @@
 		A1C5A5232B04E6540037EA68 /* SendAndReceiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendAndReceiveVC.swift; sourceTree = "<group>"; };
 		A1C5A5252B04E9D80037EA68 /* ReceivedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedCell.swift; sourceTree = "<group>"; };
 		A1C5A5282B04F9C00037EA68 /* MandateSuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MandateSuccessVC.swift; sourceTree = "<group>"; };
+		A1D807A52D88188100AF7E62 /* FetechingBillCellTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetechingBillCellTable.swift; sourceTree = "<group>"; };
 		A1E0F1A92B2082B6004BF7A2 /* CityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
 		A1E0F1AA2B2082B6004BF7A2 /* Cities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
 		A1E0F1AF2B208C37004BF7A2 /* BusSearchCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusSearchCityViewModel.swift; sourceTree = "<group>"; };
 		A1E0F1B22B209076004BF7A2 /* CustomSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearch.swift; sourceTree = "<group>"; };
 		A1E0F1B42B20909E004BF7A2 /* CustomSearch.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomSearch.xib; sourceTree = "<group>"; };
 		A1E1BE182D8053D8004C6295 /* BBPS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BBPS.storyboard; sourceTree = "<group>"; };
+		A1E1BE202D816937004C6295 /* SubscriptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionVC.swift; sourceTree = "<group>"; };
+		A1E1BE262D816B2B004C6295 /* SubscriptionViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewViewModel.swift; sourceTree = "<group>"; };
+		A1E1BE282D817046004C6295 /* SubscriptionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionResponse.swift; sourceTree = "<group>"; };
 		A1E38FE82AFB45E30012C9D3 /* LoginMPIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMPIN.swift; sourceTree = "<group>"; };
 		A1E38FEB2AFB53860012C9D3 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		A1E38FEE2AFB836A0012C9D3 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
@@ -2983,6 +2991,7 @@
 		A1285D452AF8D5D400F034B7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A1E1BE212D816937004C6295 /* SubscriptionView */,
 				84F8B03E2C45182800FA9719 /* FlightTicketView */,
 				84070B492C40B3C500F7C0EB /* FlightFilterView */,
 				84F41C992C3FE79C007CACD6 /* FlightCheckoutView */,
@@ -3667,6 +3676,25 @@
 				A1E0F1B42B20909E004BF7A2 /* CustomSearch.xib */,
 			);
 			path = CustomSearch;
+			sourceTree = "<group>";
+		};
+		A1E1BE212D816937004C6295 /* SubscriptionView */ = {
+			isa = PBXGroup;
+			children = (
+				A1E1BE242D816AF6004C6295 /* SubscriptionModel */,
+				A1E1BE202D816937004C6295 /* SubscriptionVC.swift */,
+			);
+			path = SubscriptionView;
+			sourceTree = "<group>";
+		};
+		A1E1BE242D816AF6004C6295 /* SubscriptionModel */ = {
+			isa = PBXGroup;
+			children = (
+				A1D807A52D88188100AF7E62 /* FetechingBillCellTable.swift */,
+				A1E1BE282D817046004C6295 /* SubscriptionResponse.swift */,
+				A1E1BE262D816B2B004C6295 /* SubscriptionViewViewModel.swift */,
+			);
+			path = SubscriptionModel;
 			sourceTree = "<group>";
 		};
 		A1E38FEA2AFB53650012C9D3 /* UtilityClass */ = {
@@ -4423,6 +4451,7 @@
 				A1E935492B0F567900D5D5B1 /* FetechValaidationPayment.swift in Sources */,
 				44B1D93A2BFC61E700892F1A /* MandatePauseVC.swift in Sources */,
 				A198DB8A2B0206AE00B48BC6 /* SelectedBankAccountVC.swift in Sources */,
+				A1E1BE222D816937004C6295 /* SubscriptionVC.swift in Sources */,
 				44EB5B862B51100600F778F1 /* SDKHandshake.swift in Sources */,
 				A1B17D2D2B0C697300011A4E /* FetechingBillCell.swift in Sources */,
 				A1754BFB2B1DF10F003BBA89 /* PaymentListVC.swift in Sources */,
@@ -4452,6 +4481,7 @@
 				448F1C252B4FC82A0085AE91 /* SeatDetailsModel.swift in Sources */,
 				A1ECA05B2B0B929700B89E2B /* FetchingBillVC.swift in Sources */,
 				84CB80DC2C1459F4003620DA /* FoundItemListDataModel.swift in Sources */,
+				A1E1BE292D817046004C6295 /* SubscriptionResponse.swift in Sources */,
 				A19FCEED2B246F8900F06044 /* FifthColumn.swift in Sources */,
 				44A73E8F2B6C0B3000F18120 /* RegisterComplaintModel.swift in Sources */,
 				443D41E32BFB47D30080A671 /* Plans.swift in Sources */,
@@ -4647,6 +4677,7 @@
 				84CCC07E2D49F89F004E462B /* TravelTableViewCell.swift in Sources */,
 				84CB80CD2C145999003620DA /* ClaimItemByDateAPIManager.swift in Sources */,
 				A1C488C22B109E2800FC8E3C /* RecentSearchCollCell.swift in Sources */,
+				A1E1BE272D816B2B004C6295 /* SubscriptionViewViewModel.swift in Sources */,
 				84A3C0462C16DCA50044DC7B /* RatingView.swift in Sources */,
 				A123B88E2AFD01AE00D6575A /* CollViewAddCardCell.swift in Sources */,
 				44E954172B6121410020BBC9 /* BeneficiaryListVC.swift in Sources */,
@@ -4711,6 +4742,7 @@
 				44CE817C2B679CF80036D7AC /* BeneficiaryListModel.swift in Sources */,
 				A1A897E82B21978700418E54 /* ST.swift in Sources */,
 				A1C5A5192B04D55D0037EA68 /* BlockalertView.swift in Sources */,
+				A1D807A62D88188100AF7E62 /* FetechingBillCellTable.swift in Sources */,
 				A1ED93DD2B2AE599005407F0 /* AddRoomCell.swift in Sources */,
 				445D47CD2B738E3100EE4A2A /* CancellationPolicyTitleCell.swift in Sources */,
 				84F41C9B2C3FE7C0007CACD6 /* FlightCheckoutViewController.swift in Sources */,
@@ -4955,7 +4987,7 @@
 				CODE_SIGN_ENTITLEMENTS = MaxPay/MaxPay.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = G4WLA9639A;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -4986,7 +5018,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxupi.in.maxpay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -5008,7 +5040,7 @@
 				CODE_SIGN_ENTITLEMENTS = MaxPay/MaxPayRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = G4WLA9639A;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5039,7 +5071,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxupi.in.maxpay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

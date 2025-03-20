@@ -45,7 +45,7 @@ class VCSideMenu: UIViewController, UITableViewDataSource, UITableViewDelegate
         arrayMenuOptions.append(["title":"My Rank", "icon":"rankPic", "vc":"RankingViewController"])
         arrayMenuOptions.append(["title":"Your Chain", "icon":"chainPic", "vc":"ChainViewController"])
         arrayMenuOptions.append(["title":"Your Milestone", "icon":"miles", "vc":"MilestonesViewController"])
-        arrayMenuOptions.append(["title":"Subscription", "icon":"tra_history", "vc":""])
+        arrayMenuOptions.append(["title":"Subscription", "icon":"tra_history", "vc":"SubscriptionVC"])
         arrayMenuOptions.append(["title":"Monthly Contest", "icon":"reward", "vc":""])
        
         arrayMenuOptions.append(["title":"Profile", "icon":"profile_update", "vc":""])

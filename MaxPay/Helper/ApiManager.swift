@@ -145,9 +145,7 @@ struct ConstantApi{
         static let chainReferApi = "refer/2.0/total-refer"
         static let getReferDetailsApi = "refer/2.0/get-refer-details"
         
-//        1 ) api/v1/quiz-user/get-quiz
-//        2) api/v1/quiz-user/attend-quiz
-//        3) api/v1/quiz-user/quiz-result
+
         static let getQuizApi = "api/v1/quiz-user/get-quiz"
         static let attendQuizApi = "api/v1/quiz-user/attend-quiz"
         static let resultQuizApi = "api/v1/quiz-user/quiz-result"
@@ -172,6 +170,8 @@ struct ConstantApi{
         static let searchFlightRoundApi = "travel/flight/search-flight"
         
         static let deductWalletApi = "api/wallet/2.0/pwallet/deduct-wallet-balance"
+      
+        static let subscription = "api/v2/subscriptions/get-subscriptions"
         
         
     }
@@ -191,7 +191,7 @@ struct ConstantApi{
     ]
     
     static  let headersWithSkey: HTTPHeaders = [
-        "authorization": "Bearer \(Common.shared.token ?? "")",
+        "Authorization": "Bearer \(Common.shared.token ?? "")",
         KSKEY: KSkeyValue
     ]
     static  let headersWithoutSkey: HTTPHeaders = [
@@ -2444,6 +2444,39 @@ class ApiManager: NSObject {
         }
     }
     
+    
+    func SubscriptionApiServiceApi(completion: @escaping (SubscriptionResponse?, Error?) -> ()) {
+        let url = "\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.subscription)"
+        let bodyParameters: [String: Any] = [
+            "skey": "AVJQIdwn79iR0zlP0iKNKumME"
+        ]
+        
+        // Send POST request with JSON body
+        Alamofire.request(url, method: .post, parameters: bodyParameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headersWithoutSkey).responseJSON { response in
+           
+
+            if response.result.isSuccess {
+                guard let data = response.data, data.count > 0 else {
+                
+                    completion(nil, NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Empty response data"]))
+                    return
+                }
+                do {
+                    // Decode the response into a SubscriptionResponse object
+                    let model = try JSONDecoder().decode(SubscriptionResponse.self, from: data)
+                
+                    completion(model, nil)
+                } catch {
+                  
+                    completion(nil, error)
+                }
+            } else {
+                // Log any errors
+                 completion(nil, response.error)
+            }
+        }
+    }
+
 }
 
 

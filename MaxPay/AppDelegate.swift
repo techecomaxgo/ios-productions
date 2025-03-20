@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SmartechDelegate {
 
     //Author: Mohit Bisht
     //Date: 15/12/2024
-    private lazy var screenProtectorKit = { return ScreenProtectorKit(window: window) }()
+    private lazy var B = { return ScreenProtectorKit(window: window) }()
     weak var screen : UIView? = nil
     var visualEffectView = UIVisualEffectView()
 
