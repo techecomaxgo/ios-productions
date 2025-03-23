@@ -89,22 +89,8 @@ extension SubscriptionVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Dequeue the custom cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "FetechingBillCellTable", for: indexPath) as! FetechingBillCellTable
-        
-        // Check if there's data to display
-        if let feature = subscriptionResponse?.data?[indexPath.row] {
-            print("Feature: \(feature.feature)") // Debugging feature data
-            if let lblTitle = cell.lblTitle {
-                // If the label exists, set the text
-                lblTitle.text = feature.feature
-                print("Setting text for row \(indexPath.row): \(feature.feature)")
-            } else {
-                // Fallback: If lblTitle is not found or not connected properly
-                print("Error: lblTitle not found in the cell at row \(indexPath.row).")
-            }
-        } else {
-            print("Feature not found for row \(indexPath.row)")  // Debugging: if feature is nil
-        }
-
+        cell.selectionStyle = .none
+        cell.lblTitle.text = subscriptionResponse?.data?[indexPath.row].feature
         return cell
     }
 }

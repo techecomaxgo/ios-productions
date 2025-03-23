@@ -70,11 +70,11 @@ class PayBillListVC: BaseVC {
         
         originalCategories.append(PayBillCategoriesModel(name: "Home & Rentals", imageName: "", isHeader: true))
         
-        originalCategories.append(PayBillCategoriesModel(name: "Clubs and Associations", imageName: "Water", isHeader: false))
-        originalCategories.append(PayBillCategoriesModel(name: "Housing Society", imageName: "Water", isHeader: false))
-        originalCategories.append(PayBillCategoriesModel(name: "Municipal Services", imageName: "Water", isHeader: false))
-        originalCategories.append(PayBillCategoriesModel(name: "Municipal Taxes", imageName: "Water", isHeader: false))
-        originalCategories.append(PayBillCategoriesModel(name: "Rental", imageName: "rental", isHeader: false))
+        originalCategories.append(PayBillCategoriesModel(name: "Clubs and Associations", imageName: "Club Assoction", isHeader: false))
+        originalCategories.append(PayBillCategoriesModel(name: "Housing Society", imageName: "Housing Socitey", isHeader: false))
+        originalCategories.append(PayBillCategoriesModel(name: "Municipal Services", imageName: "Muncipal House", isHeader: false))
+        originalCategories.append(PayBillCategoriesModel(name: "Municipal Taxes", imageName: "Muncipal", isHeader: false))
+        originalCategories.append(PayBillCategoriesModel(name: "Rental", imageName: "Rental", isHeader: false))
         
         originalCategories.append(PayBillCategoriesModel(name: "Entertainment", imageName: "", isHeader: true))
         

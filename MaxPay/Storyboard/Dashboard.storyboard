@@ -16648,7 +16648,7 @@ check your account statement.</string>
                                                 <attributedString key="attributedText">
                                                     <fragment content="or">
                                                         <attributes>
-                                                            <font key="NSFont" metaFont="toolTip"/>
+                                                            <font key="NSFont" metaFont="smallSystem"/>
                                                         </attributes>
                                                     </fragment>
                                                 </attributedString>
@@ -23234,7 +23234,7 @@ back for failed P2P transaction</string>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         </view>
                                         <prototypes>
-                                            <tableViewCell hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FetechingBillCellTable" rowHeight="100" id="xbV-pT-nCC" customClass="FetechingBillCellTable" customModule="MaxPay" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FetechingBillCellTable" rowHeight="100" id="xbV-pT-nCC" customClass="FetechingBillCellTable" customModule="MaxPay" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="50" width="393" height="100"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xbV-pT-nCC" id="Vdh-8Z-L6M">
@@ -23271,6 +23271,10 @@ back for failed P2P transaction</string>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="DRY-wI-ar0" id="Aoe-jf-p6e"/>
+                                            <outlet property="delegate" destination="DRY-wI-ar0" id="BZU-Co-wZc"/>
+                                        </connections>
                                     </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4a-UU-ndA" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
                                         <rect key="frame" x="23" y="600" width="347" height="55"/>

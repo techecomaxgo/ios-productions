@@ -547,6 +547,8 @@
 		A1B17D4B2B0C6D1600011A4E /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B17D3E2B0C6D1600011A4E /* Groups.swift */; };
 		A1B17D4C2B0C6D1600011A4E /* BillerCustomerParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B17D3F2B0C6D1600011A4E /* BillerCustomerParams.swift */; };
 		A1B17D4D2B0C6D1600011A4E /* BillerPlanResponseParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B17D402B0C6D1600011A4E /* BillerPlanResponseParams.swift */; };
+		A1B39A152D8BF9AD000AFEA2 /* NewPayBillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B39A142D8BF9AD000AFEA2 /* NewPayBillVC.swift */; };
+		A1B39A192D8BFFA6000AFEA2 /* PayBillListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B39A182D8BFFA6000AFEA2 /* PayBillListCellTableViewCell.swift */; };
 		A1C488B92B10654A00FC8E3C /* SearchFlightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C488B82B10654A00FC8E3C /* SearchFlightVC.swift */; };
 		A1C488BD2B10752700FC8E3C /* SearchFlightOneWayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C488BB2B10752700FC8E3C /* SearchFlightOneWayCell.swift */; };
 		A1C488BE2B10752700FC8E3C /* SearchFlightOneWayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C488BC2B10752700FC8E3C /* SearchFlightOneWayCell.xib */; };
@@ -564,6 +566,7 @@
 		A1C5A5242B04E6540037EA68 /* SendAndReceiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C5A5232B04E6540037EA68 /* SendAndReceiveVC.swift */; };
 		A1C5A5262B04E9D80037EA68 /* ReceivedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C5A5252B04E9D80037EA68 /* ReceivedCell.swift */; };
 		A1C5A5292B04F9C00037EA68 /* MandateSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C5A5282B04F9C00037EA68 /* MandateSuccessVC.swift */; };
+		A1C7E6532D8C4AF7000C4FE3 /* BillPaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7E6522D8C4AF7000C4FE3 /* BillPaymentVC.swift */; };
 		A1D807A62D88188100AF7E62 /* FetechingBillCellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D807A52D88188100AF7E62 /* FetechingBillCellTable.swift */; };
 		A1E0F1AB2B2082B6004BF7A2 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E0F1A92B2082B6004BF7A2 /* CityModel.swift */; };
 		A1E0F1AC2B2082B6004BF7A2 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E0F1AA2B2082B6004BF7A2 /* Cities.swift */; };
@@ -1217,6 +1220,8 @@
 		A1B17D3E2B0C6D1600011A4E /* Groups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
 		A1B17D3F2B0C6D1600011A4E /* BillerCustomerParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillerCustomerParams.swift; sourceTree = "<group>"; };
 		A1B17D402B0C6D1600011A4E /* BillerPlanResponseParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillerPlanResponseParams.swift; sourceTree = "<group>"; };
+		A1B39A142D8BF9AD000AFEA2 /* NewPayBillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPayBillVC.swift; sourceTree = "<group>"; };
+		A1B39A182D8BFFA6000AFEA2 /* PayBillListCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayBillListCellTableViewCell.swift; sourceTree = "<group>"; };
 		A1C488B82B10654A00FC8E3C /* SearchFlightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightVC.swift; sourceTree = "<group>"; };
 		A1C488BB2B10752700FC8E3C /* SearchFlightOneWayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightOneWayCell.swift; sourceTree = "<group>"; };
 		A1C488BC2B10752700FC8E3C /* SearchFlightOneWayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchFlightOneWayCell.xib; sourceTree = "<group>"; };
@@ -1234,6 +1239,7 @@
 		A1C5A5232B04E6540037EA68 /* SendAndReceiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendAndReceiveVC.swift; sourceTree = "<group>"; };
 		A1C5A5252B04E9D80037EA68 /* ReceivedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedCell.swift; sourceTree = "<group>"; };
 		A1C5A5282B04F9C00037EA68 /* MandateSuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MandateSuccessVC.swift; sourceTree = "<group>"; };
+		A1C7E6522D8C4AF7000C4FE3 /* BillPaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillPaymentVC.swift; sourceTree = "<group>"; };
 		A1D807A52D88188100AF7E62 /* FetechingBillCellTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetechingBillCellTable.swift; sourceTree = "<group>"; };
 		A1E0F1A92B2082B6004BF7A2 /* CityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
 		A1E0F1AA2B2082B6004BF7A2 /* Cities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
@@ -2886,7 +2892,7 @@
 				446E4A322B74A0F3000D6BFD /* MaxPay.entitlements */,
 				8413E2442CC8C56B0013038D /* deduction_alert_hindi.mp3 */,
 				449270A52B84DD47002FF906 /* pay.mp3 */,
-				A123B8852AFCBE2400D6575A /* ViewCell */,
+				A1B39A162D8BFF61000AFEA2 /* NewCell */,
 				A123B88F2AFD0A8A00D6575A /* CustomAlert */,
 				A1E38FED2AFB836A0012C9D3 /* Helper */,
 				A1E38FEF2AFB836A0012C9D3 /* Support */,
@@ -3398,6 +3404,7 @@
 			isa = PBXGroup;
 			children = (
 				A1A03D492AFE17A1002740F0 /* PayBillVC.swift */,
+				A1B39A142D8BF9AD000AFEA2 /* NewPayBillVC.swift */,
 			);
 			path = PayBill;
 			sourceTree = "<group>";
@@ -3478,6 +3485,23 @@
 				A1B17D322B0C6D0100011A4E /* AmountOptions.swift */,
 			);
 			path = FetechBill;
+			sourceTree = "<group>";
+		};
+		A1B39A162D8BFF61000AFEA2 /* NewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A1B39A172D8BFF76000AFEA2 /* PaybillsitCell */,
+				A123B8852AFCBE2400D6575A /* ViewCell */,
+			);
+			path = NewCell;
+			sourceTree = "<group>";
+		};
+		A1B39A172D8BFF76000AFEA2 /* PaybillsitCell */ = {
+			isa = PBXGroup;
+			children = (
+				A1B39A182D8BFFA6000AFEA2 /* PayBillListCellTableViewCell.swift */,
+			);
+			path = PaybillsitCell;
 			sourceTree = "<group>";
 		};
 		A1C488B62B1064B000FC8E3C /* USP */ = {
@@ -3861,6 +3885,7 @@
 				A1B17D2E2B0C6B0F00011A4E /* FetechBillViewModel */,
 				A1ECA0562B0B799D00B89E2B /* CatagoryListViewModel */,
 				A1ECA0442B0B23DF00B89E2B /* PayBillListViewModel */,
+				A1C7E6522D8C4AF7000C4FE3 /* BillPaymentVC.swift */,
 			);
 			path = BBPS;
 			sourceTree = "<group>";
@@ -4410,6 +4435,7 @@
 				44EB5B7A2B51052500F778F1 /* Account.swift in Sources */,
 				44727E852B68DC5500BE7A32 /* TranHistoryModel.swift in Sources */,
 				843F476D2C143D4D00141DD8 /* SearchFoundItemAPIManager.swift in Sources */,
+				A1B39A192D8BFFA6000AFEA2 /* PayBillListCellTableViewCell.swift in Sources */,
 				44B6EB922B6F82BE0093C0B8 /* Intro5VC.swift in Sources */,
 				A10D23962B039E0C00CE0F34 /* BhimUPITrasactionCompletedListVC.swift in Sources */,
 				A1C5A5292B04F9C00037EA68 /* MandateSuccessVC.swift in Sources */,
@@ -4598,6 +4624,7 @@
 				A1E0F1AC2B2082B6004BF7A2 /* Cities.swift in Sources */,
 				448B34782B779B56003189BA /* AddPassengerDetailsVC.swift in Sources */,
 				A10D238D2B03709A00CE0F34 /* BhimTrasactionDetailsVC.swift in Sources */,
+				A1C7E6532D8C4AF7000C4FE3 /* BillPaymentVC.swift in Sources */,
 				849440212C84BDAD001F63B2 /* LatestWalletResponse.swift in Sources */,
 				A1B17D4B2B0C6D1600011A4E /* Groups.swift in Sources */,
 				849B342C2C0DFD0D0008A50E /* CnxPolicy.swift in Sources */,
@@ -4802,6 +4829,7 @@
 				843F47552C143D2300141DD8 /* LostItemListAPIManager.swift in Sources */,
 				84DDFCE22C30206F0084BE17 /* GetWalletDetailsApi_Base.swift in Sources */,
 				A166D8B62B062762004454EE /* UPIPaymentReject.swift in Sources */,
+				A1B39A152D8BF9AD000AFEA2 /* NewPayBillVC.swift in Sources */,
 				84405C1B2C378AD40019B36A /* FlightOneWayViewController.swift in Sources */,
 				44BADF782B95FB7C004B029F /* CreateTransactVC.swift in Sources */,
 				849440252C84C002001F63B2 /* WalletDetailsResponse.swift in Sources */,

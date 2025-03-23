@@ -123,6 +123,12 @@ class FetchingBillVC: BaseVC {
     }
     
     
+    @IBAction func FetchingBill(_ sender: UIButton) {
+    
+        
+    }
+    
+    
 }
 extension FetchingBillVC: UITextFieldDelegate {
 

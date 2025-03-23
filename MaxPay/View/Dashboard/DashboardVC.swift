@@ -2155,7 +2155,8 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
     @objc func payBillMoreAction(_ sender: UIButton) {
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "BBPS", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "PayBillListVC") as! PayBillListVC
+//        let vc = storyBoard.instantiateViewController(withIdentifier: "PayBillListVC") as! PayBillListVC
+        let vc = storyBoard.instantiateViewController(withIdentifier: "NewPayBillVC") as! NewPayBillVC
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
