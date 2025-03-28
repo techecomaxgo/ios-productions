@@ -12,23 +12,106 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 */
 
 import Foundation
+
 struct FetechBillModel : Codable {
+    
 	let status : String?
-	let cust_params_data : [Cust_params_data]?
-	let response_data : Response_data?
+    let message : String
+	let response : FetchBillResponseModel?
 
 	enum CodingKeys: String, CodingKey {
-
 		case status = "status"
-		case cust_params_data = "cust_params_data"
-		case response_data = "response_data"
+		case message, response
 	}
+    
+    init(from decoder: any Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        status = try container.decodeIfPresent(String.self, forKey: .status)
+        message = try container.decode(String.self, forKey: .message)
+        response = try container.decodeIfPresent(FetchBillResponseModel.self, forKey: .response)
+    }
 
-	init(from decoder: Decoder) throws {
-		let values = try decoder.container(keyedBy: CodingKeys.self)
-		status = try values.decodeIfPresent(String.self, forKey: .status)
-		cust_params_data = try values.decodeIfPresent([Cust_params_data].self, forKey: .cust_params_data)
-		response_data = try values.decodeIfPresent(Response_data.self, forKey: .response_data)
-	}
+}
 
+struct FetchBillResponseModel: Codable {
+    
+//    let additionalInfo: [String: String]
+    let code: Int
+    let couCustConvFee: Double
+    let customerConvFee: Double
+//    let customerParams: CustomerParams
+    let payload: FetchBillResponsePayload
+    let paymentAmountExactness: String
+    let platformFee: Double
+    let status: String
+    
+}
+
+struct FetchBillResponsePayload: Codable {
+    let accountHolderName: String?
+    let additionalParams: FetchBillResponseAdditionalParams
+    let amount: Double?
+    let amountDetails: String?
+    let approvalRefNum: String?
+    let billDate: String?
+    let billNumber: String?
+    let billPeriod: String?
+    let billerId: String?
+    let dueDate: String?
+    let refId: String?
+    let requestTimeStamp: String?
+    
+    init(from decoder: any Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        accountHolderName = try container.decodeIfPresent(String.self, forKey: .accountHolderName)
+        additionalParams = try container.decode(FetchBillResponseAdditionalParams.self, forKey: .additionalParams)
+        amount = try container.decodeIfPresent(Double.self, forKey: .amount)
+        amountDetails = try container.decodeIfPresent(String.self, forKey: .amountDetails)
+        approvalRefNum = try container.decodeIfPresent(String.self, forKey: .approvalRefNum)
+        billDate = try container.decodeIfPresent(String.self, forKey: .billDate)
+        billNumber = try container.decodeIfPresent(String.self, forKey: .billNumber)
+        billPeriod = try container.decodeIfPresent(String.self, forKey: .billPeriod)
+        billerId = try container.decodeIfPresent(String.self, forKey: .billerId)
+        dueDate = try container.decodeIfPresent(String.self, forKey: .dueDate)
+        refId = try container.decodeIfPresent(String.self, forKey: .refId)
+        requestTimeStamp = try container.decodeIfPresent(String.self, forKey: .requestTimeStamp)
+    }
+    
+}
+
+struct FetchBillResponseAdditionalParams: Codable {
+    let availableBalance: String?
+    let availableRechargeLimit: String?
+    let status: String?
+    let tagId: String?
+    let vehicleClass: String?
+    let vehicleClassDesc: String?
+    
+    let currentOutstanding: String?
+    let minimumOutstanding: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case availableBalance = "Available Balance"
+        case availableRechargeLimit = "Available Recharge Limit"
+        case currentOutstanding = "Current Outstanding Amount"
+        case minimumOutstanding = "Minimum Amount Due"
+        case status
+        case tagId
+        case vehicleClass
+        case vehicleClassDesc
+    }
+    
+    init(from decoder: any Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        availableBalance = try container.decodeIfPresent(String.self, forKey: .availableBalance)
+        availableRechargeLimit = try container.decodeIfPresent(String.self, forKey: .availableRechargeLimit)
+        status = try container.decodeIfPresent(String.self, forKey: .status)
+        tagId = try container.decodeIfPresent(String.self, forKey: .tagId)
+        vehicleClass = try container.decodeIfPresent(String.self, forKey: .vehicleClass)
+        vehicleClassDesc = try container.decodeIfPresent(String.self, forKey: .vehicleClassDesc)
+        
+        currentOutstanding = try container.decodeIfPresent(String.self, forKey: .currentOutstanding)
+        minimumOutstanding = try container.decodeIfPresent(String.self, forKey: .minimumOutstanding)
+    }
+    
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 final class FetechBillViewModel {
     
     var fetechBillModel:FetechBillModel?
@@ -15,17 +16,41 @@ final class FetechBillViewModel {
     var eventHandler: ((_ event: Event) -> Void)?
     
     //MARK: Data featching form server
-    func fetechBillCall(_ strBillerID:String) {
-        let params : [String:Any]  = ["skey":skey, "biller_id":strBillerID]
+    func fetechBillCall(_ tags: [String: String], providedData: ResponseDataPayU.Biller, completion: @escaping (Result<FetechBillModel, Error>) -> Void) {
+        
+        var customParam: [String: String] = [:]
+        tags.forEach({ customParam[$0.key] = $0.value })
+        
+        let params : [String:Any]  = [
+            "skey": skey,
+            "billerId": providedData.billerId ?? "",
+            "category": providedData.category ?? "",
+            "customerParams": customParam,
+            "customerName": Common.shared.userFirstName ?? "",
+            "customerPhoneNumber": Common.shared.phoneNo ?? "",
+            "deviceDetails": [
+                "APP": "IOS",
+                "IMEI": UIDevice.current.identifierForVendor?.uuidString ?? "",
+                "INITIATING_CHANNEL": "MOB",
+                "IP": Common.shared.getDeviceIP(),
+                "OS": "ios"
+            ],
+            "timeStamp": Date.now.getCurrentDateTime(),
+            "refId": String((providedData.category ?? "" + (providedData.billerId ?? "")).shuffled()),
+            "BillPayType": providedData.billPayType ?? ""
+        ]
+        
         print("The dictionary is : \(params)")
         self.eventHandler?(.loading)
         ApiManager.sharedInstance.fetechBillServiceApi(dict:params as NSDictionary, completion: { (model, err) in
             self.eventHandler?(.stopLoading)
             if let err = err {
                 print("Failed to fetch courses:", err)
+                completion(.failure(err))
                 return
             }
             if let model = model {
+                completion(.success(model))
                 self.fetechBillModel = model
                 self.eventHandler?(.dataLoaded)
             }else{

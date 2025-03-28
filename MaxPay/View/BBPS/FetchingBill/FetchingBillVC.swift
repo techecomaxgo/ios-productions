@@ -78,12 +78,12 @@ class FetchingBillVC: BaseVC {
     @IBOutlet weak var tblFetechBill: UITableView!
     
     var strBillerID = "",strCatagoryName = "",strImg = ""
-   // private var fetechBillViewModel = FetechBillViewModel()
+    private var fetechBillViewModel = FetechBillViewModel()
    
   
     var fetchdata: ResponseDataPayU.Biller?
 
-    var arrTag = [CustomerParamsValue.Tag(name: "", value: "")]
+    var arrTag: [String: String] = [:]
     // Create a CLLocationManager instance
     let locationManager = CLLocationManager()
     var doubleLatitude:Double?
@@ -92,11 +92,15 @@ class FetchingBillVC: BaseVC {
     var strInputType:String?
     var bolIsFetech:Bool?
     var jsonStringPayment:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bolIsFetech = true
         lblName.text = strCatagoryName
-        arrTag.removeAll()
+        
+        fetchdata?.customerParams?.forEach({
+            arrTag[$0.paramName ?? ""] = ""
+        })
 
         imgCatagory.image = UIImage(named: strImg)
         
@@ -124,8 +128,18 @@ class FetchingBillVC: BaseVC {
     
     
     @IBAction func FetchingBill(_ sender: UIButton) {
-    
-        
+        guard let fetchdata else { return }
+        fetechBillViewModel.fetechBillCall(arrTag, providedData: fetchdata) { [weak self] result in
+            switch result {
+            case .success(let success):
+                let storyboard = UIStoryboard(name: "BBPS", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "BillPaymentVC") as! BillPaymentVC
+                vc.providedData = success.response
+                self?.navigationController?.pushViewController(vc,animated: true)
+            case .failure(let failure):
+                self?.showErrorAlert("Please check your internetconnection.")
+            }
+        }
     }
     
     
@@ -167,6 +181,10 @@ extension FetchingBillVC: UITextFieldDelegate {
         if let text = textField.text, text.count < minLength || text.count > maxLength {
             print("Input length is out of range")
             // Optionally, display an error message or update UI here
+        }
+        if let customTag = fetchdata?.customerParams?[index.row] {
+            let value = textField.text ?? ""
+            arrTag[customTag.paramName ?? ""] = customTag.dataType == "ALPHANUMERIC" ? value.uppercased() : value
         }
     }
 
@@ -343,7 +361,7 @@ extension FetchingBillVC: UITableViewDelegate, UITableViewDataSource {
     
     func createJsonString() {
         
-        let customerParams = CustomerParamsValue(tags:arrTag)
+//        let customerParams = CustomerParamsValue(tags:arrTag)
         
 //        let paymentRequest = PaymentRequest(input_type: strInputType ?? "", skey: skey, biller_id: fetechBillViewModel.fetechBillModel?.response_data?.billerId ?? "", customer_params_request: customerParams, biller_name: fetechBillViewModel.fetechBillModel?.response_data?.billerName ?? "", biller_category:fetechBillViewModel.fetechBillModel?.response_data?.billerCategoryName ?? "", macAdress: Common.shared.getDeviceID(), customer_mob_number: Common.shared.phoneNo ?? "", payment_channel: "Agent", device_block_tags: [DeviceLock(name: "MOBILE", value: Common.shared.phoneNo ?? ""),DeviceLock(name: "GEOCODE", value: Common.shared.getDeviceID()),DeviceLock(name: "POSTAL_CODE", value: Common.shared.getPostalCode(doubleLatitude ?? 0.00, doubleLongitude ?? 0.00)),DeviceLock(name: "TERMINAL_ID", value: "333001")])
 //        
@@ -378,14 +396,14 @@ extension FetchingBillVC {
         let isConnected = ReachabilityClass.isConnectedToNetwork()
         
         if isConnected == true && bolIsFetech == true{
-            //fetechBillViewModel.fetechBillCall(strBillerID)
+//            fetechBillViewModel.fetechBillCall(strBillerID, providedData: fetchdata)
         } else if isConnected == true && bolIsFetech == false{
            // fetechBillViewModel.fetechBillValidationCall(jsonstring ?? "")
         }else if bolIsFetech  == true{
            // fetechBillViewModel.fetechBillValidationPaymentCall(jsonStringPayment ?? "")
         }
         else{
-            //  ProgressHUD.remove()
+//              ProgressHUD.remove()
             self.showErrorAlert("Please check your internetconnection.")
             
         }

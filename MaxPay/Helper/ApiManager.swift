@@ -1742,21 +1742,23 @@ class ApiManager: NSObject {
         }
     }
     func fetechBillServiceApi(dict:NSDictionary,completion: @escaping (FetechBillModel?, Error?) -> ()) {
-        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.fetechBill)", method: .post, parameters: dict as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: nil).responseJSON {  response in
+        Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.fetechBill)", method: .post, parameters: dict as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headersWithoutSkey).responseJSON {  response in
             if response.result.isSuccess{
                 guard let dictResponse = response.data, dictResponse.count > 0 else {
                     return
                 }
                 if let data = response.data, data.count > 0{
-                    //print(data)
+//                    print(data)
                     //print(ConstantApi.headers)
                     do{
-                        //print("The value is : \(response.result.value ?? "")")
+                        print("The value is : \(response.result.value ?? "")")
                         let model = try JSONDecoder().decode(FetechBillModel.self, from: data)
                         //print(model)
                         completion(model,nil)
                         
-                    }catch{}
+                    }catch{
+                        print(error)
+                    }
                     
                 }
             }

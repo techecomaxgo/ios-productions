@@ -826,7 +826,7 @@ class DashboardVC: BaseVC {
         case 202:
            
             let storyBoard: UIStoryboard = UIStoryboard(name: "BBPS", bundle: nil)
-            let vc = storyBoard.instantiateViewController(withIdentifier: "PayBillListVC") as! PayBillListVC
+            let vc = storyBoard.instantiateViewController(withIdentifier: "NewPayBillVC") as! NewPayBillVC
             self.navigationController?.pushViewController(vc, animated: true)
             
         case 203:
@@ -2178,7 +2178,7 @@ extension DashboardVC: UITableViewDelegate,UITableViewDataSource,AccountDetailDe
     @objc func viewAll(_ sender: UIButton) {
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "BBPS", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "PayBillListVC") as! PayBillListVC
+        let vc = storyBoard.instantiateViewController(withIdentifier: "NewPayBillVC") as! NewPayBillVC
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
