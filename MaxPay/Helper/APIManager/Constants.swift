@@ -8,6 +8,24 @@
 import Foundation
 
 
+
+//payment key
+
+
+
+let Merchantid = "ECOMAXGOPROD1234"
+let Merchantvpa = "ecomaxgo@maxaxis"
+
+let Submerchantid = "ECOMAXGOPROD1234"
+
+let MerchantChannelId = "ECOMAXGOPROD1234"
+let TranType = "P2M"
+let Mcc = "4814"
+let Codezero = "00"
+let RefUrl = "https://www.maxupi.in"
+
+
+
 let accessMax = "@maxaxis"
 
 

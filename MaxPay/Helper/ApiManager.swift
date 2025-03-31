@@ -172,6 +172,7 @@ struct ConstantApi{
         static let deductWalletApi = "api/wallet/2.0/pwallet/deduct-wallet-balance"
       
         static let subscription = "api/v2/subscriptions/get-subscriptions"
+        static let subscriptionService = "api/v2/subscriptions/subscribe-services"
         
         
     }
@@ -791,6 +792,9 @@ class ApiManager: NSObject {
             }
         }
     }
+   
+    
+    
     func CircleServiceApi(dict:NSDictionary,completion: @escaping (CircleModel_Base?, Error?) -> ()) {
         
         Alamofire.request("\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.circleApi)", method: .post, parameters: dict as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headers).responseJSON {  response in
@@ -2478,6 +2482,82 @@ class ApiManager: NSObject {
             }
         }
     }
+   
+    
+
+
+    func SubscriptionAddRequest(jsonString: String, completion: @escaping (SubscriptionResponseAdd?, Error?) -> ()) {
+        let url = "\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.subscriptionService)"
+        
+        // Convert JSON string to Data
+        guard let jsonData = jsonString.data(using: .utf8) else {
+            print("Error: Invalid JSON String")
+            completion(nil, NSError(domain: "Invalid JSON", code: 400, userInfo: nil))
+            return
+        }
+        
+        // Create a proper URLRequest
+        var request = URLRequest(url: URL(string: url)!)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.allHTTPHeaderFields = ConstantApi.headersWithoutSkey
+        request.httpBody = jsonData
+        
+        // Send the request
+        Alamofire.request(request).responseJSON { response in
+            print("Request Body: \(jsonString)")
+            
+            switch response.result {
+            case .success:
+                guard let data = response.data, !data.isEmpty else {
+                    print("Error: Empty response")
+                    completion(nil, NSError(domain: "Empty Response", code: 204, userInfo: nil))
+                    return
+                }
+                
+                do {
+                    let model = try JSONDecoder().decode(SubscriptionResponseAdd.self, from: data)
+                    print("API Response:", model)
+                    completion(model, nil)
+                } catch let decodingError {
+                    print("JSON Decoding Error:", decodingError)
+                    completion(nil, decodingError)
+                }
+                
+            case .failure(let error):
+                print("API Request Failed:", error)
+                completion(nil, error)
+            }
+        }
+    }
+
+    
+//    func SubscriptionAddRequest(dict:NSDictionary,completion: @escaping (SubscriptionResponseAdd?, Error?) -> ()) {
+//        let url = "\(ConstantApi.BaseURL.baseUrl)\(ConstantApi.SubURL.subscriptionService)"
+//       
+//        
+//        // Send POST request with JSON body
+//        Alamofire.request(url, method: .post, parameters: dict as? Parameters, encoding: JSONEncoding.prettyPrinted, headers: ConstantApi.headersWithoutSkey).responseJSON { response in
+//            
+//            print("vheck7",dict as? Parameters)
+//            print("vheck7")
+//            if response.result.isSuccess{
+//                guard let dictResponse = response.data, dictResponse.count > 0 else {
+//                    return
+//                }
+//                if let data = response.data, data.count > 0{
+//                    //  print(data)
+//                    do{
+//                        let model = try JSONDecoder().decode(SubscriptionResponseAdd.self, from: data)
+//                          print(model)
+//                        completion(model,nil)
+//                        print("vheck8")
+//                    }catch{}
+//                    
+//                }
+//            }
+//        }
+//    }
 
 }
 

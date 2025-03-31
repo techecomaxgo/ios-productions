@@ -253,7 +253,7 @@ class RechargeBillPaymentMethodVC: BaseVC,UIGestureRecognizerDelegate{
                 //configurationUpiPayment()
                 
                 let txnID = self.getUniqueTransId()
-                self.rechargeModelView.RechargePayUFirstAPICall(amountStr: self.priceStr, phoneStr: Common.shared.phoneNo ?? "", txnidnew: txnID, customerEmail: (Common.shared.phoneNo ?? "") + "@maxupi.in", productinfo: "recharge", firstname: Common.shared.userFirstName ?? "", device_id: Common.shared.getDeviceID(), client_ip: Common.shared.getDeviceIP())
+                self.rechargeModelView.RechargePayUFirstAPICall(amountStr: String(priceStr), phoneStr: Common.shared.phoneNo ?? "", txnidnew: txnID, customerEmail: (Common.shared.phoneNo ?? "") + "@maxupi.in", productinfo: "recharge", firstname: Common.shared.userFirstName ?? "", device_id: Common.shared.getDeviceID(), client_ip: Common.shared.getDeviceIP())
 
                 observePayUFirstAPI()
                 
@@ -430,7 +430,7 @@ class RechargeBillPaymentMethodVC: BaseVC,UIGestureRecognizerDelegate{
                         print("strAccountDetails: ", strAccountDetails)
 
                         // Prepare payment input details
-                        let paymentInput = PaymentInput2(amount: self?.rechargeModelView.am ?? "", merchantVpa: "ecomaxgo@maxaxis", merchantId: "ECOMAXGOPROD1234", submerchantid: "ECOMAXGOPROD1234", merchantChannelId: "ECOMAXGOPROD1234", tranType: "P2M", mcc: "4814", remarks: "Recharge", initMode: "00", purpose: "00", refCategory: "00", orderId: self?.rechargeModelView.tr ?? "id", refUrl: "https://www.maxupi.in", merchatntTxnId: self?.rechargeModelView.payUFirstForRecharge?.metaData?.txnId ?? "")
+                        let paymentInput = PaymentInput2(amount: self?.rechargeModelView.am ?? "", merchantVpa: Merchantvpa, merchantId: Merchantid, submerchantid: Submerchantid, merchantChannelId: MerchantChannelId, tranType: TranType, mcc: Mcc, remarks: "Recharge", initMode: Codezero, purpose: Codezero, refCategory: Codezero, orderId: self?.rechargeModelView.tr ?? "id", refUrl: RefUrl, merchatntTxnId: self?.rechargeModelView.payUFirstForRecharge?.metaData?.txnId ?? "")
                         
                         var strPaymentInput = ""
                         do {

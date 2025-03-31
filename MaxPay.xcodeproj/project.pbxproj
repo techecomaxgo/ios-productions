@@ -478,6 +478,8 @@
 		A1865E992B1F113D0095E7CA /* SelectSeatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1865E982B1F113D0095E7CA /* SelectSeatsVC.swift */; };
 		A1865E9C2B1F3C6B0095E7CA /* BusSearchListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1865E9B2B1F3C6B0095E7CA /* BusSearchListVC.swift */; };
 		A1865EA12B1F4BD30095E7CA /* BusListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1865EA02B1F4BD30095E7CA /* BusListCell.swift */; };
+		A18E0B062D96A7BA0003B234 /* SubscriptionAddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E0B052D96A7BA0003B234 /* SubscriptionAddModel.swift */; };
+		A18E0B082D96A80F0003B234 /* SubscriptionResponseAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E0B072D96A80F0003B234 /* SubscriptionResponseAdd.swift */; };
 		A18E217D2B03E5350002304C /* splashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E217C2B03E5350002304C /* splashScreenVC.swift */; };
 		A198DB8A2B0206AE00B48BC6 /* SelectedBankAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A198DB892B0206AE00B48BC6 /* SelectedBankAccountVC.swift */; };
 		A198DB8C2B0209A300B48BC6 /* SelectSIMVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A198DB8B2B0209A300B48BC6 /* SelectSIMVC.swift */; };
@@ -1151,6 +1153,8 @@
 		A1865E982B1F113D0095E7CA /* SelectSeatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSeatsVC.swift; sourceTree = "<group>"; };
 		A1865E9B2B1F3C6B0095E7CA /* BusSearchListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusSearchListVC.swift; sourceTree = "<group>"; };
 		A1865EA02B1F4BD30095E7CA /* BusListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusListCell.swift; sourceTree = "<group>"; };
+		A18E0B052D96A7BA0003B234 /* SubscriptionAddModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionAddModel.swift; sourceTree = "<group>"; };
+		A18E0B072D96A80F0003B234 /* SubscriptionResponseAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionResponseAdd.swift; sourceTree = "<group>"; };
 		A18E217C2B03E5350002304C /* splashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashScreenVC.swift; sourceTree = "<group>"; };
 		A198DB892B0206AE00B48BC6 /* SelectedBankAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBankAccountVC.swift; sourceTree = "<group>"; };
 		A198DB8B2B0209A300B48BC6 /* SelectSIMVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSIMVC.swift; sourceTree = "<group>"; };
@@ -3714,6 +3718,8 @@
 		A1E1BE242D816AF6004C6295 /* SubscriptionModel */ = {
 			isa = PBXGroup;
 			children = (
+				A18E0B072D96A80F0003B234 /* SubscriptionResponseAdd.swift */,
+				A18E0B052D96A7BA0003B234 /* SubscriptionAddModel.swift */,
 				A1D807A52D88188100AF7E62 /* FetechingBillCellTable.swift */,
 				A1E1BE282D817046004C6295 /* SubscriptionResponse.swift */,
 				A1E1BE262D816B2B004C6295 /* SubscriptionViewViewModel.swift */,
@@ -4324,6 +4330,7 @@
 				A1ECA0552B0B788E00B89E2B /* ResponseData.swift in Sources */,
 				849B34332C0E41F30008A50E /* HotelDetailsViewController.swift in Sources */,
 				A1C488C92B10BB8B00FC8E3C /* SearchFlightListVC.swift in Sources */,
+				A18E0B062D96A7BA0003B234 /* SubscriptionAddModel.swift in Sources */,
 				A1B17D422B0C6D1600011A4E /* Cust_params_data.swift in Sources */,
 				84DFEFB62C294981007A4F2B /* ManageLinkVC.swift in Sources */,
 				84CB80E72C145CC3003620DA /* ClaimPopUpVC.swift in Sources */,
@@ -4619,6 +4626,7 @@
 				A1B17D4C2B0C6D1600011A4E /* BillerCustomerParams.swift in Sources */,
 				84C89BC52C3C20F800523534 /* BaggageAddOnView.swift in Sources */,
 				A1A897E72B21978700418E54 /* Stb.swift in Sources */,
+				A18E0B082D96A80F0003B234 /* SubscriptionResponseAdd.swift in Sources */,
 				A198DB9B2B023E1800B48BC6 /* PaymentUPIIDVC.swift in Sources */,
 				A1A897E12B21978700418E54 /* SpecialTrips.swift in Sources */,
 				A1E0F1AC2B2082B6004BF7A2 /* Cities.swift in Sources */,

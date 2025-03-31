@@ -23,8 +23,12 @@ final class Recharge_ModelView {
     //MARK: Data Binding Closure
     var eventHandler: ((_ event: Event) -> Void)?
     
+    
+   
+    
+    
     //MARK: Data featching form server
-    func RechargePayUFirstAPICall(amountStr:Int, phoneStr:String, txnidnew: String, customerEmail: String, productinfo: String, firstname: String, device_id: String, client_ip: String) {
+    func RechargePayUFirstAPICall(amountStr:String, phoneStr:String, txnidnew: String, customerEmail: String, productinfo: String, firstname: String, device_id: String, client_ip: String) {
         let params : [String:Any]  = ["amount":amountStr,"customerPhone":phoneStr, "txnidnew": txnidnew, "customerEmail" : customerEmail, "productinfo": productinfo, "firstname": firstname, "device_id": device_id, "client_ip": client_ip]
         print("The dictionary is : \(params)")
         

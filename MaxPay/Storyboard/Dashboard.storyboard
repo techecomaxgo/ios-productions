@@ -23205,7 +23205,7 @@ back for failed P2P transaction</string>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <view key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" id="FV6-pR-KiE">
-                                            <rect key="frame" x="0.0" y="178" width="393" height="200"/>
+                                            <rect key="frame" x="0.0" y="188" width="393" height="200"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eip-bb-sGg">
@@ -23234,18 +23234,18 @@ back for failed P2P transaction</string>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         </view>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FetechingBillCellTable" rowHeight="100" id="xbV-pT-nCC" customClass="FetechingBillCellTable" customModule="MaxPay" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="50" width="393" height="100"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FetechingBillCellTable" rowHeight="110" id="xbV-pT-nCC" customClass="FetechingBillCellTable" customModule="MaxPay" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="50" width="393" height="110"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xbV-pT-nCC" id="Vdh-8Z-L6M">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="110"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <switch clipsSubviews="YES" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" preferredStyle="sliding" translatesAutoresizingMaskIntoConstraints="NO" id="0EL-bY-Dki">
-                                                            <rect key="frame" x="318" y="34" width="51" height="32"/>
+                                                            <rect key="frame" x="318" y="34" width="51" height="42"/>
                                                         </switch>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TY6-FV-S7H">
-                                                            <rect key="frame" x="20" y="11" width="182" height="78"/>
+                                                            <rect key="frame" x="20" y="11" width="182" height="88"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="182" id="9oE-DP-kdQ"/>
                                                             </constraints>
@@ -23254,6 +23254,53 @@ back for failed P2P transaction</string>
                                                             <nil key="highlightedColor"/>
                                                             <color key="shadowColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkk-mw-XE4">
+                                                            <rect key="frame" x="20" y="63" width="200" height="17"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Label">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="14" name="Roboto-Medium"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JOs-7O-gP3">
+                                                            <rect key="frame" x="20" y="80" width="280" height="14"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Label">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="12" name="Roboto-Regular"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1M-9J-gVq">
+                                                            <rect key="frame" x="250" y="39" width="65" height="17"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Label">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="16" name="Roboto-Medium"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hRh-7A-IZh">
+                                                            <rect key="frame" x="305" y="75" width="80" height="19"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="90" id="Rwl-Gs-mWl"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -23261,13 +23308,27 @@ back for failed P2P transaction</string>
                                                         <constraint firstAttribute="trailingMargin" secondItem="0EL-bY-Dki" secondAttribute="trailing" constant="6" id="0Ls-zf-DVj"/>
                                                         <constraint firstItem="TY6-FV-S7H" firstAttribute="bottom" secondItem="Vdh-8Z-L6M" secondAttribute="bottomMargin" id="Exk-2L-wLU"/>
                                                         <constraint firstItem="TY6-FV-S7H" firstAttribute="top" secondItem="Vdh-8Z-L6M" secondAttribute="topMargin" id="I8m-je-nji"/>
+                                                        <constraint firstItem="hRh-7A-IZh" firstAttribute="top" secondItem="0EL-bY-Dki" secondAttribute="bottom" constant="-1" id="bCX-nI-ysc"/>
                                                         <constraint firstItem="TY6-FV-S7H" firstAttribute="centerY" secondItem="0EL-bY-Dki" secondAttribute="centerY" id="d6l-Cf-K4f"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="hRh-7A-IZh" secondAttribute="trailing" constant="-27" id="oaj-9c-y1N"/>
+                                                        <constraint firstItem="hRh-7A-IZh" firstAttribute="leading" secondItem="JOs-7O-gP3" secondAttribute="trailing" constant="260.33333333333331" id="qCe-gB-aTs"/>
                                                         <constraint firstItem="TY6-FV-S7H" firstAttribute="leading" secondItem="Vdh-8Z-L6M" secondAttribute="leadingMargin" id="wLO-ld-J7a"/>
+                                                        <constraint firstItem="hRh-7A-IZh" firstAttribute="bottom" secondItem="JOs-7O-gP3" secondAttribute="bottom" id="y2F-Fi-p01"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
+                                                    <outlet property="amount" destination="y1M-9J-gVq" id="qT5-dm-QGU"/>
+                                                    <outlet property="descriptiondetail" destination="JOs-7O-gP3" id="o66-7R-I5w"/>
+                                                    <outlet property="isActive" destination="hRh-7A-IZh" id="ZzK-nw-b2n"/>
                                                     <outlet property="lblTitle" destination="TY6-FV-S7H" id="jDN-a0-mPF"/>
+                                                    <outlet property="reamningday" destination="Lkk-mw-XE4" id="H23-va-MQz"/>
+                                                    <outlet property="swichButton" destination="0EL-bY-Dki" id="e43-N4-hjA"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -23276,8 +23337,15 @@ back for failed P2P transaction</string>
                                             <outlet property="delegate" destination="DRY-wI-ar0" id="BZU-Co-wZc"/>
                                         </connections>
                                     </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" ₹ 0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhH-1T-3Ht">
+                                        <rect key="frame" x="171" y="640" width="52" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                                        <color key="textColor" name="reload-grey-color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4a-UU-ndA" customClass="DesignableButton" customModule="MaxPay" customModuleProvider="target">
-                                        <rect key="frame" x="23" y="600" width="347" height="55"/>
+                                        <rect key="frame" x="23" y="680" width="347" height="55"/>
                                         <color key="backgroundColor" name="theme_green_light"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="Ibq-V1-ydj"/>
@@ -23298,6 +23366,9 @@ back for failed P2P transaction</string>
                                                 <real key="value" value="12"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnPay:" destination="DRY-wI-ar0" eventType="touchUpInside" id="NzN-c0-1d6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -23306,13 +23377,13 @@ back for failed P2P transaction</string>
                                     <constraint firstAttribute="trailing" secondItem="Hh1-bk-6vu" secondAttribute="trailing" id="K6E-bG-iN3"/>
                                     <constraint firstItem="4D2-Cr-4KO" firstAttribute="leading" secondItem="WMk-JO-JT2" secondAttribute="leading" id="Mh4-jw-sMn"/>
                                     <constraint firstAttribute="bottom" secondItem="Hh1-bk-6vu" secondAttribute="bottom" constant="144" id="Qyl-bG-Qti"/>
-                                    <constraint firstItem="F4a-UU-ndA" firstAttribute="top" secondItem="WMk-JO-JT2" secondAttribute="top" constant="600" id="SB7-0W-s03"/>
+                                    <constraint firstItem="F4a-UU-ndA" firstAttribute="top" secondItem="WMk-JO-JT2" secondAttribute="top" constant="680" id="SB7-0W-s03"/>
                                     <constraint firstItem="4D2-Cr-4KO" firstAttribute="top" secondItem="WMk-JO-JT2" secondAttribute="top" id="cLl-J8-oFY"/>
                                     <constraint firstItem="Hh1-bk-6vu" firstAttribute="leading" secondItem="WMk-JO-JT2" secondAttribute="leading" id="g2i-XQ-epk"/>
                                     <constraint firstItem="F4a-UU-ndA" firstAttribute="leading" secondItem="WMk-JO-JT2" secondAttribute="leading" constant="23" id="rCV-U1-iik"/>
                                     <constraint firstItem="F4a-UU-ndA" firstAttribute="centerX" secondItem="4D2-Cr-4KO" secondAttribute="centerX" id="sYy-2g-f7G"/>
                                     <constraint firstAttribute="trailing" secondItem="4D2-Cr-4KO" secondAttribute="trailing" id="yA1-BX-8rV"/>
-                                    <constraint firstAttribute="bottom" secondItem="F4a-UU-ndA" secondAttribute="bottom" constant="94" id="z2B-10-204"/>
+                                    <constraint firstAttribute="bottom" secondItem="F4a-UU-ndA" secondAttribute="bottom" constant="14" id="z2B-10-204"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -23326,6 +23397,7 @@ back for failed P2P transaction</string>
                     </view>
                     <connections>
                         <outlet property="tableViewsubscription" destination="Hh1-bk-6vu" id="NTS-fv-HJv"/>
+                        <outlet property="totalAmount" destination="dhH-1T-3Ht" id="aRV-hg-KQv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ym1-hO-P9t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
